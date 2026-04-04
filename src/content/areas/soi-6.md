@@ -43,14 +43,58 @@ Beyond the bars, Soi 6 and its immediate surroundings have solid food options. S
 
 Second Road, one minute to the east, opens up even more dining choices. The area around Soi 6 is one of the best in Pattaya for walking between bars, restaurants, and convenience stores without needing transport.
 
-## Tips for Visiting
+## The Bar Groups
 
-- **Start in the afternoon** if you want the authentic Soi 6 experience. Arriving around 14:00 to 15:00 lets you settle in before the peak hours.
-- **Carry cash.** Most bars on Soi 6 are cash only. ATMs are available on both Beach Road and Second Road.
-- **Expect a direct atmosphere.** Soi 6 is not for everyone. The bars are upfront about what they are, and the social dynamics are straightforward.
-- **Pace yourself.** It is easy to lose track of time when the beer is cheap and the company is good. Soi 6 afternoons have a way of turning into Soi 6 evenings.
-- **Be respectful.** The bar staff and regulars create the atmosphere. Treat them well, and you will be welcomed back.
+Not all Soi 6 bars are independent. Several bar groups operate multiple venues with consistent management and standards:
+
+**Nightwish Group** — the largest operator on Soi 6. Their bars are well-managed with professional staff and consistent pricing. A good starting point if you're visiting for the first time and want a reliable experience.
+
+**Better Group** — runs Booty Call, Benders, Wet Six, Cooters, La La Land, and Saigon Girl. Known for fair pricing, quality staff, and no-pressure atmosphere. Front-open bars with a lively vibe.
+
+**Baba Group** — operates Good Fellas, Baba Bar, Tomcat's, Soi 6 Bar, and Oppa Bar (Korean-style). Slightly more premium positioning with higher lady drink prices (from 200 THB). Quality-focused.
+
+Independently run bars make up the rest, each with their own character and pricing. Walking the full length of the street before committing to a spot is always a good strategy.
+
+## Prices at a Glance
+
+Soi 6 is significantly cheaper than Walking Street. Here's what to expect:
+
+- **Beer:** 80 – 130 THB
+- **Cocktails:** 150 – 250 THB
+- **Lady drinks:** 150 – 210 THB (varies by bar group)
+- **No cover charges** at any bar
+
+Some bar groups have minimum lady drink requirements before barfines, others don't. Ruby Club and Fire Bar are known for their no-pressure approach — you can drink without any expectations.
+
+## Tips for First-Time Visitors
+
+- **Walk the whole street first.** Soi 6 is under 400 meters long. Take 10 minutes to stroll from Beach Road to Second Road before picking a bar. The vibe varies significantly between venues.
+- **Start in the afternoon.** Arriving around 14:00 – 15:00 gives you the authentic Soi 6 experience before peak hours. The atmosphere is more relaxed and conversations flow easier.
+- **Carry cash.** Most bars are cash only. ATMs are on both Beach Road and Second Road. TT Currency Exchange on Second Road offers competitive rates.
+- **Confirm prices upfront.** Always clarify drink prices and any other costs before ordering. Reputable bars have clear pricing — if something feels off, move to the next bar.
+- **Don't film without permission.** This is a strict unwritten rule. Taking photos or videos of staff and other customers without consent will get you asked to leave.
+- **Dress code: none.** Tank tops, shorts, and flip-flops are perfectly fine. Soi 6 is as casual as Pattaya gets.
+- **Pace yourself.** Cheap beer and good company have a way of turning afternoon drinks into an all-day session. Stay hydrated and eat something.
+- **Be respectful.** The staff create the atmosphere. Treat everyone with basic courtesy and you'll be welcomed back warmly.
+- **Grab and baht buses** work well for getting here. Baht buses along Beach Road or Second Road are 10 THB. Grab from anywhere in Pattaya is rarely more than 80 THB.
+
+## Where to Stay Nearby
+
+Soi 6's central location puts hundreds of hotels within walking distance. For the full breakdown, see our [Hotels Near Soi 6 guide](/guides/hotels-near-soi-6/). Quick picks:
+
+- **Budget:** Queen Victoria Inn (on Soi 6 itself), Sawasdee Sunshine
+- **Mid-range:** Season Five Hotel (Soi 5), Pattaya Discovery Beach Hotel
+- **Upscale:** Melia Hotel (nearby on Beach Road), Mera Mare
+
+## Useful Spots Nearby
+
+- **Perry Kaffeine** — quality coffee shop with strong AC, perfect for sobering up mid-afternoon
+- **TT Currency Exchange** — Second Road end, better rates than Beach Road
+- **7-Eleven** — multiple locations within a 1-minute walk on both ends
+- **Lay Beach Club** — beachfront venue just around the corner for a change of scenery
 
 ## Final Thoughts
 
-Soi 6 is Pattaya stripped down to its most essential elements: cold beer, good conversation, and an atmosphere that rewards those who show up with an open mind. It is not polished, it is not for everyone, and it makes no apologies for what it is. For those who connect with it, Soi 6 becomes the reason they keep coming back to Pattaya.
+Soi 6 is Pattaya stripped down to its most essential elements: cold beer, good conversation, and an atmosphere that rewards those who show up with an open mind. It is not polished, it is not for everyone, and it makes no apologies for what it is. With over 90 bars packed into less than 400 meters, the variety is staggering — from well-managed group bars to quirky independent spots.
+
+For those who connect with it, Soi 6 becomes the reason they keep coming back to Pattaya. Start with the recommended bars, find your favorites, and let the street do the rest.
