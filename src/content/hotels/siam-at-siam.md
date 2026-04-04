@@ -1,7 +1,7 @@
 ---
 name: "Siam@Siam Design Hotel Pattaya"
 slug: "siam-at-siam"
-description: "A design-forward hotel with the best rooftop bar in Pattaya and stunning panoramic views."
+description: "Siam@Siam Design Hotel Pattaya 2026 review — boutique rooms, the city's best rooftop bar, and panoramic bay views from North Pattaya. Rates and booking tips."
 rating: 4.4
 priceRange: "luxury"
 area: "North Pattaya"

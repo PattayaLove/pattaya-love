@@ -66,6 +66,50 @@ const publishFormatted = data.publishDate.toLocaleDateString('en-US', {
   month: 'long',
   day: 'numeric',
 });
+
+const hotelSchema = {
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": data.name,
+  "description": data.description,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pattaya",
+    "addressCountry": "TH"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": String(data.rating),
+    "bestRating": "5",
+    "worstRating": "0",
+    "ratingCount": "1"
+  },
+  "amenityFeature": data.amenities.map((amenity: string) => ({
+    "@type": "LocationFeatureSpecification",
+    "name": amenity,
+    "value": true
+  }))
+};
+
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Hotel",
+    "name": data.name
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "pattaya.love Editorial Team"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": String(data.rating),
+    "bestRating": "5"
+  },
+  "datePublished": data.publishDate.toISOString(),
+  "description": data.description
+};
 ---
 
 <BaseLayout
@@ -74,6 +118,10 @@ const publishFormatted = data.publishDate.toLocaleDateString('en-US', {
   image={heroImage}
 >
   <Navigation />
+
+  <!-- Schema.org Hotel + Review -->
+  <script type="application/ld+json" set:html={JSON.stringify(hotelSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(reviewSchema)} />
 
   <!-- ═══════════════════════════════════════════════ -->
   <!-- 1. HERO                                         -->

@@ -68,6 +68,18 @@ const publishDate = new Date(area.data.publishDate).toLocaleDateString('en-US', 
   month: 'long',
   day: 'numeric',
 });
+
+const placeSchema = {
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": area.data.name,
+  "description": area.data.description,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pattaya",
+    "addressCountry": "TH"
+  }
+};
 ---
 
 <BaseLayout
@@ -76,6 +88,9 @@ const publishDate = new Date(area.data.publishDate).toLocaleDateString('en-US', 
   image={area.data.image}
 >
   <Navigation />
+
+  <!-- Schema.org Place -->
+  <script type="application/ld+json" set:html={JSON.stringify(placeSchema)} />
 
   <!-- ═══════════════════════════════════════════════ -->
   <!-- HERO — Full-width area photo                    -->

@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Imprint"
+  description="Legal information and imprint for pattaya.love — site operator details and contact information."
+>
+  <Navigation />
+
+  <main class="pt-32 pb-24 bg-surface-card">
+    <article class="max-w-3xl mx-auto px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-ink-muted mb-8">
+        <a href="/" class="hover:text-primary transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-ink">Imprint</span>
+      </nav>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-ink mb-12">
+        Imprint
+      </h1>
+
+      <div class="prose prose-lg max-w-none text-ink-secondary leading-relaxed space-y-8">
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">Site Operator</h2>
+          <p>
+            <!-- TODO: Replace with your legal name and address -->
+            <strong>[Your Full Legal Name]</strong><br />
+            [Your Street Address]<br />
+            [Postal Code, City]<br />
+            [Country]
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">Contact</h2>
+          <p>
+            Email: <a href="mailto:info@pattaya.love" class="text-primary hover:underline">info@pattaya.love</a>
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">Responsible for Content</h2>
+          <p>
+            <!-- TODO: Replace with responsible person -->
+            [Your Full Legal Name]<br />
+            (Address as above)
+          </p>
+          <p class="text-sm text-ink-muted mt-2">
+            Responsible according to Section 18(2) of the German Interstate Media Treaty (Medienstaatsvertrag — MStV).
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">EU Dispute Resolution</h2>
+          <p>
+            The European Commission provides an online dispute resolution (ODR) platform:
+            <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
+              https://ec.europa.eu/consumers/odr/
+            </a>
+          </p>
+          <p>
+            We are neither obligated nor willing to participate in dispute resolution proceedings before a consumer arbitration board.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">Liability for Content</h2>
+          <p>
+            As a service provider, we are responsible for our own content on these pages in accordance with general legislation pursuant to Section 7(1) of the German Telemedia Act (TMG). According to Sections 8 to 10 TMG, however, we are not obligated as a service provider to monitor transmitted or stored external information or to investigate circumstances that indicate illegal activity.
+          </p>
+          <p>
+            Obligations to remove or block the use of information under general law remain unaffected. However, liability in this regard is only possible from the point in time at which a concrete infringement of the law becomes known. If we become aware of any such infringements, we will remove this content immediately.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">Liability for Links</h2>
+          <p>
+            Our website contains links to external third-party websites over whose content we have no influence. Therefore, we cannot accept any liability for this external content. The respective provider or operator of the linked pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.
+          </p>
+          <p>
+            However, permanent content monitoring of the linked pages is unreasonable without concrete evidence of a legal violation. If we become aware of any infringements, we will remove such links immediately.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">Copyright</h2>
+          <p>
+            The content and works created by the site operators on these pages are subject to copyright law. The reproduction, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.
+          </p>
+          <p>
+            Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. If we become aware of any infringements, we will remove such content immediately.
+          </p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>

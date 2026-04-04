@@ -1,7 +1,7 @@
 ---
 name: "Pin Up A Go Go"
 slug: "pin-up-a-go-go"
-description: "A Pattaya legend — Pin Up A Go Go delivers premium entertainment with exceptional dancers and an electric atmosphere on Walking Street."
+description: "Pin Up A Go Go Walking Street 2026 review — Pattaya's top-rated GoGo bar with exceptional dancers, VIP options, drink prices, and tips for first-timers."
 type: "gogo"
 area: "Walking Street"
 priceLevel: 2

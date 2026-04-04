@@ -1,7 +1,7 @@
 ---
 name: "Hilton Pattaya"
 slug: "hilton-pattaya"
-description: "Luxushotel direkt am Central Festival mit atemberaubendem Meerblick und Rooftop-Pool."
+description: "Hilton Pattaya 2026 review — luxury rooms above Central Festival with bay views and a rooftop infinity pool. Rates, guest-friendly policy, and booking tips."
 rating: 4.5
 priceRange: "luxury"
 area: "Central Pattaya"

@@ -1,7 +1,7 @@
 ---
 title: "Bangkok to Pattaya — All Transport Options Compared (2026)"
 slug: "bangkok-to-pattaya"
-description: "How to get from Bangkok to Pattaya in 2026. Compare buses, minivans, taxis, private transfers, and the new train — with prices and travel times."
+description: "How to get from Bangkok to Pattaya in 2026. Compare buses, minivans, taxis, private transfers, and the new train — with real prices, travel times, and pro tips."
 category: "transport"
 publishDate: 2026-04-04
 draft: false

@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Affiliate Disclosure"
+  description="Affiliate disclosure for pattaya.love — how we earn commissions and our commitment to honest, independent reviews."
+>
+  <Navigation />
+
+  <main class="pt-32 pb-24 bg-surface-card">
+    <article class="max-w-3xl mx-auto px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-ink-muted mb-8">
+        <a href="/" class="hover:text-primary transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-ink">Affiliate Disclosure</span>
+      </nav>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-ink mb-12">
+        Affiliate Disclosure
+      </h1>
+
+      <div class="prose prose-lg max-w-none text-ink-secondary leading-relaxed space-y-8">
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">How We Earn Money</h2>
+          <p>
+            pattaya.love is a free resource. To keep it that way, we participate in affiliate programs with hotel booking platforms, tour operators, and other travel-related services.
+          </p>
+          <p>
+            When you click on certain links on our website and make a purchase or booking, we may earn a small commission at <strong>no additional cost to you</strong>. The price you pay is exactly the same whether you use our affiliate link or go directly to the provider.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">Our Affiliate Partners</h2>
+          <p>We may earn commissions from the following partners (among others):</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Agoda</li>
+            <li>Booking.com</li>
+            <li>Klook</li>
+            <li>GetYourGuide</li>
+            <li>Other travel and lifestyle services</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">Our Promise to You</h2>
+          <p>
+            Affiliate partnerships <strong>never influence our editorial content</strong>. Our reviews, ratings, and recommendations are based on personal experience and independent research by our editorial team.
+          </p>
+          <p>
+            We only recommend products and services that we genuinely believe provide value to our readers. If something isn't good, we'll tell you — even if we could earn a commission by recommending it.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">How to Identify Affiliate Links</h2>
+          <p>
+            Affiliate links on our website are typically labeled with "Check Price", "Book Now", or similar call-to-action buttons. We aim to be transparent about which links are affiliate links.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">Questions?</h2>
+          <p>
+            If you have any questions about our affiliate relationships, please contact us at
+            <a href="mailto:info@pattaya.love" class="text-primary hover:underline">info@pattaya.love</a>.
+          </p>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>

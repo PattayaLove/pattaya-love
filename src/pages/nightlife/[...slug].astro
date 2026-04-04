@@ -55,6 +55,30 @@ const publishDate = new Date(venue.data.publishDate).toLocaleDateString('en-US',
   month: 'long',
   day: 'numeric',
 });
+
+/* ── Schema.org type mapping ── */
+const schemaTypeMap: Record<string, string> = {
+  gogo: 'NightClub',
+  club: 'NightClub',
+  'beer-bar': 'BarOrPub',
+  rooftop: 'BarOrPub',
+  restaurant: 'Restaurant',
+  other: 'LocalBusiness',
+};
+
+const venueSchema = {
+  "@context": "https://schema.org",
+  "@type": schemaTypeMap[venue.data.type] || "LocalBusiness",
+  "name": venue.data.name,
+  "description": venue.data.description,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Walking Street",
+    "addressLocality": "Pattaya",
+    "addressCountry": "TH"
+  },
+  ...(venue.data.openingHours ? { "openingHours": venue.data.openingHours } : {})
+};
 ---
 
 <BaseLayout
@@ -63,6 +87,9 @@ const publishDate = new Date(venue.data.publishDate).toLocaleDateString('en-US',
   image={venue.data.image}
 >
   <Navigation />
+
+  <!-- Schema.org NightClub/BarOrPub/Restaurant -->
+  <script type="application/ld+json" set:html={JSON.stringify(venueSchema)} />
 
   <!-- ═══════════════════════════════════════════════ -->
   <!-- HERO — Full-width venue image, dark overlay     -->

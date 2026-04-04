@@ -1,0 +1,179 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Privacy Policy"
+  description="Privacy policy for pattaya.love — how we handle your data, what we collect, and your rights under GDPR."
+>
+  <Navigation />
+
+  <main class="pt-32 pb-24 bg-surface-card">
+    <article class="max-w-3xl mx-auto px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-ink-muted mb-8">
+        <a href="/" class="hover:text-primary transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-ink">Privacy Policy</span>
+      </nav>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-ink mb-4">
+        Privacy Policy
+      </h1>
+      <p class="text-ink-muted mb-12">Last updated: April 4, 2026</p>
+
+      <div class="prose prose-lg max-w-none text-ink-secondary leading-relaxed space-y-8">
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">1. Overview</h2>
+          <p>
+            We take the protection of your personal data very seriously. This privacy policy informs you about how we handle your personal data when you visit our website and about your rights under data protection law, in particular the EU General Data Protection Regulation (GDPR).
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">2. Data Controller</h2>
+          <p>
+            The data controller responsible for data processing on this website is:
+          </p>
+          <p>
+            <!-- TODO: Replace with your legal details -->
+            <strong>[Your Full Legal Name]</strong><br />
+            [Your Street Address]<br />
+            [Postal Code, City, Country]<br />
+            Email: <a href="mailto:info@pattaya.love" class="text-primary hover:underline">info@pattaya.love</a>
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">3. Hosting</h2>
+          <p>
+            This website is hosted by <strong>Vercel Inc.</strong>, 440 N Barranca Ave #4133, Covina, CA 91723, USA. When you visit our website, Vercel processes your IP address and other technical data necessary to deliver the website to your browser. This processing is based on our legitimate interest in providing a reliable and fast website (Art. 6(1)(f) GDPR).
+          </p>
+          <p>
+            Vercel may transfer data to the United States. Data transfers are safeguarded by Standard Contractual Clauses (SCCs). For more information, see
+            <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Vercel's Privacy Policy</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">4. Data We Collect</h2>
+
+          <h3 class="text-xl font-bold font-headline text-ink mt-8 mb-3">4.1 Server Log Files</h3>
+          <p>
+            Our hosting provider automatically collects and stores information in server log files that your browser transmits. This includes:
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Browser type and version</li>
+            <li>Operating system</li>
+            <li>Referrer URL</li>
+            <li>Hostname of the accessing device</li>
+            <li>Time of the server request</li>
+            <li>IP address (anonymized)</li>
+          </ul>
+          <p>
+            This data cannot be attributed to specific persons. This data is not merged with other data sources. The basis for processing is Art. 6(1)(f) GDPR — our legitimate interest in operating a secure and functional website.
+          </p>
+
+          <h3 class="text-xl font-bold font-headline text-ink mt-8 mb-3">4.2 Vercel Web Analytics</h3>
+          <p>
+            We use <strong>Vercel Web Analytics</strong> to understand how visitors use our website. This service is privacy-focused by design:
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>No cookies are set</li>
+            <li>No personal data is collected</li>
+            <li>No cross-site or cross-device tracking</li>
+            <li>Data is aggregated and anonymous</li>
+            <li>Fully GDPR compliant without consent requirement</li>
+          </ul>
+          <p>
+            For more information, see
+            <a href="https://vercel.com/docs/analytics/privacy-policy" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Vercel Analytics Privacy Policy</a>.
+          </p>
+
+          <h3 class="text-xl font-bold font-headline text-ink mt-8 mb-3">4.3 Vercel Speed Insights</h3>
+          <p>
+            We use Vercel Speed Insights to monitor our website's performance (Core Web Vitals). This tool collects anonymous, aggregated performance metrics without personal data or cookies.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">5. External Resources</h2>
+
+          <h3 class="text-xl font-bold font-headline text-ink mt-8 mb-3">5.1 Self-Hosted Fonts</h3>
+          <p>
+            We use the fonts "Plus Jakarta Sans" and "Inter" which are hosted locally on our own servers. No connection to external font providers (such as Google) is established when loading these fonts. No data is transmitted to third parties.
+          </p>
+
+          <h3 class="text-xl font-bold font-headline text-ink mt-8 mb-3">5.2 Google Material Symbols</h3>
+          <p>
+            We use Google Material Symbols for icons on our website. When you visit our site, your browser loads the icon font from Google's servers, which may result in your IP address being transmitted to Google LLC, USA. This processing is based on our legitimate interest in a consistent and user-friendly icon presentation (Art. 6(1)(f) GDPR). Google's privacy policy:
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">https://policies.google.com/privacy</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">6. Affiliate Links</h2>
+          <p>
+            Our website contains affiliate links to hotel booking platforms and other services. When you click on an affiliate link, you will be redirected to the respective provider's website. The provider may use cookies and tracking technologies on their own website. We have no control over this processing.
+          </p>
+          <p>
+            We clearly mark affiliate links on our pages. Our reviews and recommendations are independent and not influenced by affiliate partnerships.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">7. Newsletter</h2>
+          <p>
+            If you subscribe to our newsletter, we collect your email address. Your email address is used solely for sending our newsletter. We will not share it with third parties.
+          </p>
+          <p>
+            You can unsubscribe at any time using the link provided in every newsletter email. The legal basis for processing is your consent (Art. 6(1)(a) GDPR).
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">8. Your Rights</h2>
+          <p>Under the GDPR, you have the following rights:</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li><strong>Right of access</strong> (Art. 15 GDPR) — You can request information about your stored personal data.</li>
+            <li><strong>Right to rectification</strong> (Art. 16 GDPR) — You can request correction of inaccurate data.</li>
+            <li><strong>Right to erasure</strong> (Art. 17 GDPR) — You can request deletion of your data.</li>
+            <li><strong>Right to restriction of processing</strong> (Art. 18 GDPR) — You can request that we restrict processing of your data.</li>
+            <li><strong>Right to data portability</strong> (Art. 20 GDPR) — You can receive your data in a machine-readable format.</li>
+            <li><strong>Right to object</strong> (Art. 21 GDPR) — You can object to processing based on legitimate interests.</li>
+            <li><strong>Right to lodge a complaint</strong> — You can file a complaint with a data protection supervisory authority.</li>
+          </ul>
+          <p>
+            To exercise any of these rights, please contact us at
+            <a href="mailto:info@pattaya.love" class="text-primary hover:underline">info@pattaya.love</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">9. Cookies</h2>
+          <p>
+            Our website does <strong>not</strong> use cookies for tracking or analytics purposes. We do not set any first-party or third-party cookies. No cookie consent banner is required.
+          </p>
+          <p>
+            If you click on affiliate links, the destination website may set their own cookies according to their own privacy policy.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">10. Changes to This Policy</h2>
+          <p>
+            We may update this privacy policy from time to time. The current version is always available at
+            <a href="/privacy/" class="text-primary hover:underline">pattaya.love/privacy/</a>.
+            The date at the top of this page indicates when the policy was last revised.
+          </p>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>

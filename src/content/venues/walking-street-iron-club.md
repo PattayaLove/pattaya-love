@@ -1,7 +1,7 @@
 ---
 name: "Iron Club"
 slug: "iron-club"
-description: "One of Walking Street's most iconic GoGo bars, known for high-energy performances and a vibrant atmosphere since 2009."
+description: "Iron Club Walking Street Pattaya 2026 review — one of the strip's most iconic GoGo bars with high-energy shows, drink prices, photos, and insider tips."
 type: "gogo"
 area: "Walking Street"
 priceLevel: 2

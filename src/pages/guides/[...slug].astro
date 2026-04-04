@@ -72,6 +72,26 @@ const backfill = relatedArticles.length < 3
       .slice(0, 3 - relatedArticles.length)
   : [];
 const displayRelated = [...relatedArticles, ...backfill];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": guide.data.title,
+  "description": guide.data.description,
+  "datePublished": guide.data.publishDate.toISOString(),
+  "dateModified": (guide.data.updatedDate || guide.data.publishDate).toISOString(),
+  "author": {
+    "@type": "Organization",
+    "name": "pattaya.love Editorial Team",
+    "url": "https://pattaya.love/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "pattaya.love",
+    "url": "https://pattaya.love"
+  },
+  "mainEntityOfPage": `https://pattaya.love/guides/${guide.data.slug}/`
+};
 ---
 
 <BaseLayout
@@ -80,6 +100,9 @@ const displayRelated = [...relatedArticles, ...backfill];
   image={guide.data.image}
 >
   <Navigation />
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 
   <!-- ═══════════════════════════════════════════════ -->
   <!-- ARTICLE HEADER                                  -->

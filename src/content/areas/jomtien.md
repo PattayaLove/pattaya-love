@@ -1,7 +1,7 @@
 ---
 name: "Jomtien Beach"
 slug: "jomtien"
-description: "The relaxed alternative to central Pattaya — quieter beaches, family-friendly resorts, and a growing expat community south of the city."
+description: "Jomtien Beach Pattaya 2026 area guide — cleaner beaches, affordable seafood, family-friendly resorts, and a growing expat scene. Find out if Jomtien is right for you."
 publishDate: 2026-04-04
 draft: false
 ---

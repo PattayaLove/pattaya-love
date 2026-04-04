@@ -1,7 +1,7 @@
 ---
 name: "XS A Go Go"
 slug: "xs-a-go-go"
-description: "XS A Go Go brings a modern club feel to Walking Street with quality shows and a youthful energy."
+description: "XS A Go Go Walking Street Pattaya 2026 review — a modern GoGo bar with a club atmosphere, quality shows, and a younger crowd. Drink prices and tips inside."
 type: "gogo"
 area: "Walking Street"
 priceLevel: 2

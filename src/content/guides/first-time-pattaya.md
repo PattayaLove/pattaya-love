@@ -1,7 +1,7 @@
 ---
 title: "First Time in Pattaya? The Complete 2026 Guide"
 slug: "first-time-pattaya"
-description: "Everything you need to know for your first trip to Pattaya — from getting there, where to stay, nightlife basics, safety tips, and money-saving advice."
+description: "Planning your first trip to Pattaya in 2026? Covers transport, hotels, nightlife, safety tips, and money-saving advice. Start here before you fly."
 category: "general"
 publishDate: 2026-04-04
 draft: false

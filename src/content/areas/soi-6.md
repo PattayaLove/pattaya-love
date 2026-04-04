@@ -1,7 +1,7 @@
 ---
 name: "Soi 6"
 slug: "soi-6"
-description: "Pattaya's most famous daytime entertainment street — bars, restaurants, and a unique atmosphere between Beach Road and Second Road."
+description: "Soi 6 Pattaya 2026 area guide — the city's most famous daytime bar street. What to expect, drink prices, nearby hotels, and tips for first-time visitors."
 publishDate: 2026-04-04
 draft: false
 ---

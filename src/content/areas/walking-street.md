@@ -1,7 +1,7 @@
 ---
 name: "Walking Street"
 slug: "walking-street"
-description: "Pattaya's most famous nightlife strip — GoGo bars, clubs, and restaurants on a pedestrian-only road along the seafront in South Pattaya."
+description: "Walking Street Pattaya 2026 area guide — GoGo bars, clubs, restaurants, drink prices, and safety tips for the world-famous nightlife strip in South Pattaya."
 publishDate: 2026-04-04
 draft: false
 ---
