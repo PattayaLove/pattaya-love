@@ -11,6 +11,15 @@ const hotels = allHotels.sort((a, b) => b.data.rating - a.data.rating);
 /* ─── Unique areas for filter ─── */
 const uniqueAreas = [...new Set(hotels.map(h => h.data.area))].sort();
 
+/* ─── Normalize category to filter key ─── */
+function normalizeCategory(cat: string): string {
+  const c = cat.toLowerCase();
+  if (c.includes('condo')) return 'condo';
+  if (c.includes('villa')) return 'villa';
+  if (c.includes('serviced') || c.includes('apartment')) return 'apartment';
+  return 'hotel'; // Hotel, Resort, Inn, Guest house, Hostel, etc.
+}
+
 /* ─── Helpers ─── */
 const priceLabels: Record<string, string> = {
   budget: 'Budget',
@@ -41,14 +50,17 @@ const amenityIcons: Record<string, string> = {
   'Airport Shuttle': 'airport_shuttle',
   'Rooftop Bar': 'rooftop_deck',
   'Live Music': 'music_note',
+  Kitchen: 'countertops',
+  Security: 'shield',
+  Staff: 'person',
 };
 
 const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW3kCmlM6PmuZYLGPW-S8fTTsXdj-I6SvEY81Pz4kw6bsL8gZtvAlzeQvMDEdmz0x2c6COj9OyVYbfYDxDdjBxdA21JKsyEgP5lpV1Yu_nj0iq5aIrgj1LXnkUiTZmeL_U9B7Qls6HiF0z83vvVp1gH81uBCEyWLMt9SCmWkSBzGCBbW29GmZcezpnYpVhePAkyjy6aK1PSGpocxwdhGVnxdygc-LPBleOgUSZJLtqUlA7q97vtyYZs_DBvxMfmo-1np0IkGzs';
 ---
 
 <BaseLayout
-  title="Best Guest-Friendly Hotels in Pattaya 2026"
-  description="Handpicked Pattaya hotels from budget to luxury — all guest-friendly, no joiner fees. Honest reviews, real photos, and best booking links for 2026."
+  title="Best Places to Stay in Pattaya 2026 — Hotels, Condos, Villas & Apartments"
+  description="Handpicked Pattaya hotels, condos, pool villas, and serviced apartments — from budget to luxury. Honest reviews, real photos, and best booking links for 2026."
 >
   <Navigation transparent />
 
@@ -74,10 +86,10 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
         Handpicked by Experts
       </span>
       <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.05] mb-6 max-w-3xl">
-        Best Hotels in Pattaya 2026
+        Best Places to Stay in Pattaya 2026
       </h1>
       <p class="text-white/65 text-lg md:text-xl max-w-2xl leading-relaxed">
-        Handpicked hotels from budget to luxury — all guest-friendly. Honest reviews, real photos, and the best booking links.
+        Handpicked hotels, condos, pool villas, and serviced apartments — from budget to luxury. Honest reviews, real photos, and the best booking links.
       </p>
 
       <!-- Stats -->
@@ -88,7 +100,7 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
           </div>
           <div>
             <span class="text-white font-bold text-lg">{hotels.length}</span>
-            <span class="text-white/50 text-sm block">Hotels Reviewed</span>
+            <span class="text-white/50 text-sm block">Properties Reviewed</span>
           </div>
         </div>
         <div class="flex items-center gap-3">
@@ -121,7 +133,7 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
       <!-- Mobile: Toggle button -->
       <div class="flex items-center justify-between md:hidden mb-0" id="filter-mobile-header">
         <span id="results-count-mobile" class="text-sm font-semibold text-ink">
-          Showing {hotels.length} of {hotels.length} hotels
+          Showing {hotels.length} of {hotels.length} properties
         </span>
         <button
           id="filter-toggle"
@@ -141,7 +153,7 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
           <input
             id="filter-search"
             type="text"
-            placeholder="Search hotels..."
+            placeholder="Search properties..."
             class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-black/10 bg-surface text-sm text-ink placeholder:text-ink-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
           />
         </div>
@@ -157,6 +169,15 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
               <option value={area}>{area}</option>
             ))}
           </select>
+        </div>
+
+        <!-- Category Pills -->
+        <div class="flex items-center gap-2 flex-shrink-0 overflow-x-auto" id="filter-category-pills">
+          <button type="button" data-category="" class="category-pill active text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-navy text-white">All</button>
+          <button type="button" data-category="hotel" class="category-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Hotels</button>
+          <button type="button" data-category="condo" class="category-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Condos</button>
+          <button type="button" data-category="villa" class="category-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Pool Villas</button>
+          <button type="button" data-category="apartment" class="category-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Apartments</button>
         </div>
 
         <!-- Price Pills -->
@@ -195,7 +216,7 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
         <!-- Results count (desktop) -->
         <div class="hidden md:block flex-shrink-0">
           <span id="results-count-desktop" class="text-sm font-semibold text-ink-muted whitespace-nowrap">
-            Showing {hotels.length} of {hotels.length} hotels
+            Showing {hotels.length} of {hotels.length} properties
           </span>
         </div>
       </div>
@@ -226,6 +247,7 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
               data-price={d.priceRange}
               data-rating={d.rating.toString()}
               data-name={d.name.toLowerCase()}
+              data-category={normalizeCategory(d.category)}
             >
               {/* Image */}
               <div class="relative h-56 md:h-64 overflow-hidden">
@@ -340,7 +362,7 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
           type="button"
           class="inline-flex items-center gap-2 bg-primary text-white px-10 py-3.5 rounded-full text-sm font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20"
         >
-          Load More Hotels
+          Load More
           <span class="material-symbols-outlined text-lg">expand_more</span>
         </button>
       </div>
@@ -348,7 +370,7 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
       <!-- No Results Message -->
       <div id="no-results" class="hidden py-16 text-center">
         <span class="material-symbols-outlined text-5xl text-ink-muted/40 mb-4 block">search_off</span>
-        <h3 class="font-headline font-bold text-xl text-ink mb-2">No hotels found</h3>
+        <h3 class="font-headline font-bold text-xl text-ink mb-2">No properties found</h3>
         <p class="text-ink-muted text-sm">Try adjusting your filters or search term.</p>
       </div>
     </div>
@@ -459,6 +481,7 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
       const ratingSelect = document.getElementById('filter-rating') as HTMLSelectElement;
       const sortSelect = document.getElementById('filter-sort') as HTMLSelectElement;
       const pricePills = document.querySelectorAll('#filter-price-pills .filter-pill') as NodeListOf<HTMLButtonElement>;
+      const categoryPills = document.querySelectorAll('#filter-category-pills .category-pill') as NodeListOf<HTMLButtonElement>;
       const loadMoreBtn = document.getElementById('load-more-btn') as HTMLButtonElement;
       const loadMoreWrapper = document.getElementById('load-more-wrapper') as HTMLElement;
       const noResults = document.getElementById('no-results') as HTMLElement;
@@ -470,6 +493,7 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
       const PAGE_SIZE = 24;
       let visibleLimit = PAGE_SIZE;
       let activePrice = '';
+      let activeCategory = '';
 
       /* ─── Mobile filter toggle ─── */
       filterToggle.addEventListener('click', () => {
@@ -493,6 +517,21 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
           pill.classList.add('active', 'bg-primary', 'text-white');
           pill.classList.remove('bg-surface-low', 'text-ink-muted');
           activePrice = pill.dataset.price || '';
+          visibleLimit = PAGE_SIZE;
+          applyFilters();
+        });
+      });
+
+      /* ─── Category pill click ─── */
+      categoryPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          categoryPills.forEach(p => {
+            p.classList.remove('active', 'bg-navy', 'text-white');
+            p.classList.add('bg-surface-low', 'text-ink-muted');
+          });
+          pill.classList.add('active', 'bg-navy', 'text-white');
+          pill.classList.remove('bg-surface-low', 'text-ink-muted');
+          activeCategory = pill.dataset.category || '';
           visibleLimit = PAGE_SIZE;
           applyFilters();
         });
@@ -535,6 +574,7 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
         const areaVal = areaSelect.value;
         const ratingMin = parseFloat(ratingSelect.value) || 0;
         const priceVal = activePrice;
+        const categoryVal = activeCategory;
 
         // Determine which cards match ALL filters
         const matched: HTMLElement[] = [];
@@ -545,13 +585,15 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
           const cardPrice = card.dataset.price || '';
           const cardRating = parseFloat(card.dataset.rating || '0');
           const cardName = card.dataset.name || '';
+          const cardCategory = card.dataset.category || '';
 
           const passArea = !areaVal || cardArea === areaVal;
           const passPrice = !priceVal || cardPrice === priceVal;
           const passRating = cardRating >= ratingMin;
           const passSearch = !searchTerm || cardName.includes(searchTerm);
+          const passCategory = !categoryVal || cardCategory === categoryVal;
 
-          if (passArea && passPrice && passRating && passSearch) {
+          if (passArea && passPrice && passRating && passSearch && passCategory) {
             matched.push(card);
           } else {
             notMatched.push(card);
@@ -575,7 +617,7 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
 
         // Update count
         const showing = Math.min(visibleLimit, totalMatched);
-        const countText = `Showing ${showing} of ${totalMatched} hotels`;
+        const countText = `Showing ${showing} of ${totalMatched} properties`;
         countDesktop.textContent = countText;
         countMobile.textContent = countText;
 
