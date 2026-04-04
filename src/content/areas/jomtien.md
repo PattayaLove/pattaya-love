@@ -1,7 +1,7 @@
 ---
 name: "Jomtien Beach"
 slug: "jomtien"
-description: "Jomtien Beach Pattaya 2026 area guide — cleaner beaches, affordable seafood, family-friendly resorts, and a growing expat scene. Find out if Jomtien is right for you."
+description: "Jomtien Beach Pattaya 2026 area guide — cleaner beaches, affordable seafood, family resorts, and a growing expat community south of the city."
 publishDate: 2026-04-04
 draft: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: "First Time in Pattaya? The Complete 2026 Guide"
+title: "First Time in Pattaya? 2026 Beginner Guide"
 slug: "first-time-pattaya"
 description: "Planning your first trip to Pattaya in 2026? Covers transport, hotels, nightlife, safety tips, and money-saving advice. Start here before you fly."
 category: "general"
