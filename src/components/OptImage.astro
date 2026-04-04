@@ -57,6 +57,12 @@ const imageMap: Record<string, () => Promise<{ default: ImageMetadata }>> = {
   '/images/areas/bali-hai-sunset.jpg': () => import('../assets/images/areas/bali-hai-sunset.jpg'),
   '/images/brand/heart-sunset.jpg': () => import('../assets/images/brand/heart-sunset.jpg'),
   '/images/brand/logo.png': () => import('../assets/images/brand/logo.png'),
+  '/images/areas/lk-metro-night.jpg': () => import('../assets/images/areas/lk-metro-night.jpg'),
+  '/images/venues/siam-siam-rooftop-sunset.jpg': () => import('../assets/images/venues/siam-siam-rooftop-sunset.jpg'),
+  '/images/guides/siam-siam-sunset-view.jpg': () => import('../assets/images/guides/siam-siam-sunset-view.jpg'),
+  '/images/venues/the-base-building.jpg': () => import('../assets/images/venues/the-base-building.jpg'),
+  '/images/areas/pattaya-city-sign.jpg': () => import('../assets/images/areas/pattaya-city-sign.jpg'),
+  '/images/guides/pattaya-night-bazaar.jpg': () => import('../assets/images/guides/pattaya-night-bazaar.jpg'),
 };
 
 const loader = imageMap[src];

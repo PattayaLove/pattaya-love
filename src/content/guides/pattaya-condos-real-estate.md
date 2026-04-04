@@ -3,6 +3,7 @@ title: "Buying or Renting a Condo in Pattaya — 2026 Guide"
 slug: "pattaya-condos-real-estate"
 description: "The complete guide to Pattaya real estate for expats. Condo rentals, buying property, best areas, new developments like Once Wongamat, and legal tips for foreigners."
 category: "tips"
+image: "/images/venues/the-base-building.jpg"
 publishDate: 2026-04-04
 draft: false
 ---
