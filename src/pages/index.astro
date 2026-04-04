@@ -3,6 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 
+/* ───────────────────────────────────────────────
+   DATA — existing arrays kept, new ones added
+   ─────────────────────────────────────────────── */
+
 const categories = [
   {
     title: 'Stay',
@@ -119,6 +123,149 @@ const amenityLabels: Record<string, string> = {
   restaurant: 'Dining', beach_access: 'Beach', local_bar: 'Bar',
   hot_tub: 'Jacuzzi', ac_unit: 'AC',
 };
+
+/* ── New data arrays for editorial sections ── */
+
+const trendingItems = [
+  {
+    label: 'Gourmet',
+    title: 'Best Rooftop Diners',
+    href: '/guides/rooftop-dining/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAlRLwxu9jOdf9t2vsJL7FhgRxtaYl83vEiZp3htXt9I6LLq7Pdxfj3oCR0TrnywDMrkSVUW7zjkD60L720HWfEzcpyJmJcm0JEahJSYCfJXX470F7Gr4VkctFjnUjqzwOsHESS5sSa2XfNSLNVajQj7benP5IOs0hpbA472fPH0idxiMq2HGj11nG5H2H7Hlo9SPtG_jlXPQvgkO4UQkkUVoo_ZFU0obylvZaLQqmPnvs6zGyaHkaDUm517tYsFSMgMcWxdrFLrTQh',
+  },
+  {
+    label: 'Yachting',
+    title: 'Private Charter Guide',
+    href: '/guides/yacht-charters/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBdTC8jLjvXqZRmEw9uZghmev3ChFBevWxAEE4ZuLebCv6icMSFy7kLu__TwKnWo4Lth-kFkfaM4jprO967WOdKiTSn6fzA3KvQY6KjAQHQppDvTHDDjPE0YwGMRN6qX67fY0f0IzRRmqQdxaiEN-Iaed-B1E5DgJqmTesct5lSV_BatmL-Rhk9ROR_bjPPvEe9OIpoLJoaD88zaRuXgrVruNCXF7WfAy0ZoxMaxyelSFke97qM9fSlMCjvGrYQIDZn7tBjfj4gms04',
+  },
+  {
+    label: 'Stay',
+    title: 'Villas with a View',
+    href: '/stay/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDikwR5kNnS8FswVXsphL94ME9mtwge5r9lb2b2_tazwXyq291JXGKROVveDeJIk_Q_GGjHhM4jZ4QcF10QQI8GWPbZSk9xEV6r4O-ewnfpk2GrZb0jCaWc-iuMV8YkyIC_j8hpJlfNG66q9s4Hri0gRByHH1P86WEuBacKMgAhU9drSiwd6uC9SW15etR9UXHNlEjmTxF9SoI2mrBOtY5ZPtBiRpsfhprbt06_JqZREfU4AC0w-okqsMDxe0IoBdBKZYWXX_GQcAmz',
+  },
+  {
+    label: 'Explore',
+    title: 'Secret Sandbars',
+    href: '/explore/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvwkRsFBhOa756YosmCGf3CHwmXAoocgaLhF2MzugnSuK3qV3hxZqc2rXonfMANuaGVQ0d-erB3FB3jyKVOpzJI2-qV3C34418WGwBKfGDXFF1rKIj1IWMAP01mKKvHu51QPBO1sU2rPxAkbOtWkp18w3-dxl2kpbr0GO2PNreKi0pTP8xeObuXvZY1IWQNADjldQsLuuHz-FhlPOctQ039j57KVXGclS_E7O7bmbGVjhS6zEUYqBzJDqGNpH98QfS3DHCdW-n2vch',
+  },
+  {
+    label: 'Night',
+    title: 'Neon Cocktails',
+    href: '/nightlife/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBg8OJ_A4-T1gXpT8RWGp2ln3OujYPziJ7Rpat7hYtQZrf7CNOSP9u-s8Yv_OnimMn_YieZsvr6sQdDW_GqcOmwC-Wj4UVrXRfdUyJ-cZg5e9fz_Z3haASVWslYjCh1KidcD14gIkdsmuZoOpvhIcjRb8p75o45S5rItf0IrwbFFReYBaZrjlFywC-vWqpttRdWBWutRr3_JHTN_bEa69JwbzOzxrKmviPylkShtADC829pc5avG8sSNb8psIP2SzU4bRGqsf9--VRk',
+  },
+  {
+    label: 'Wellness',
+    title: 'Best Luxury Spas',
+    href: '/lifestyle/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAIey6I8_ASQmaYU26utEC8VlHeLaFMbIJXH7hp4QjG-QNLRU-gzt13R9uih1W6Hf8FYdb5y5cuMZJAbPylmfbk1FCT57RzPngAjBqwCYN0baxeAs1YvXpJxlZyiiqSUllsrFX_kcHnxENGlSP0axfIXumVDbwaz3fgrvKNNPRkM3mYqdcmxMPhG2Q1x_C7FDvdgmFjkZ988DJvU8rsr0574546rIHtKYCbVrYk_iMPuHJZlG1jWkXWqQ01f0vBEkk6hYvnZ6GqfYcl',
+  },
+];
+
+const siloSections = [
+  {
+    id: 'stay',
+    sectionLabel: 'Section One',
+    title: 'Stay',
+    description: 'From private pool villas to five-star oceanfront suites, discover the most exclusive stays in Pattaya. Our editorial team hand-picks every property for quality, privacy, and service.',
+    featureLabel: 'Featured Guide',
+    featureTitle: 'The Top 10 Beachfront Mansions in Na Jomtien',
+    featureDesc: 'A deep dive into the properties redefining luxury on the Gulf\'s southern shore.',
+    featureCta: 'Read the Guide',
+    featureHref: '/guides/beachfront-mansions/',
+    href: '/stay/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDikwR5kNnS8FswVXsphL94ME9mtwge5r9lb2b2_tazwXyq291JXGKROVveDeJIk_Q_GGjHhM4jZ4QcF10QQI8GWPbZSk9xEV6r4O-ewnfpk2GrZb0jCaWc-iuMV8YkyIC_j8hpJlfNG66q9s4Hri0gRByHH1P86WEuBacKMgAhU9drSiwd6uC9SW15etR9UXHNlEjmTxF9SoI2mrBOtY5ZPtBiRpsfhprbt06_JqZREfU4AC0w-okqsMDxe0IoBdBKZYWXX_GQcAmz',
+    imageAlt: 'Luxury villa with infinity pool overlooking the Gulf',
+    imageRight: true,
+  },
+  {
+    id: 'explore',
+    sectionLabel: 'Section Two',
+    title: 'Explore',
+    description: 'Beyond the neon lights lies a coastline of untouched beauty and cultural depth. We map the routes less traveled for the discerning adventurer.',
+    featureLabel: 'Latest Article',
+    featureTitle: 'Secret Sandbars & Hidden Coves',
+    featureDesc: 'Our local experts reveal the best-kept secrets only accessible by boat.',
+    featureCta: 'View Editorial',
+    featureHref: '/guides/secret-sandbars/',
+    href: '/explore/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvwkRsFBhOa756YosmCGf3CHwmXAoocgaLhF2MzugnSuK3qV3hxZqc2rXonfMANuaGVQ0d-erB3FB3jyKVOpzJI2-qV3C34418WGwBKfGDXFF1rKIj1IWMAP01mKKvHu51QPBO1sU2rPxAkbOtWkp18w3-dxl2kpbr0GO2PNreKi0pTP8xeObuXvZY1IWQNADjldQsLuuHz-FhlPOctQ039j57KVXGclS_E7O7bmbGVjhS6zEUYqBzJDqGNpH98QfS3DHCdW-n2vch',
+    imageAlt: 'Tropical islands and turquoise waters near Pattaya',
+    imageRight: false,
+  },
+  {
+    id: 'nightlife',
+    sectionLabel: 'Section Three',
+    title: 'Nightlife',
+    description: 'Experience the most exclusive cocktail lounges, speakeasies, and rooftop bars. Curated recommendations for every kind of night out.',
+    featureLabel: 'Editor\'s Pick',
+    featureTitle: 'Walking Street After Dark — The 2026 Guide',
+    featureDesc: 'Where to find world-class cocktails and the best venues away from the tourist traps.',
+    featureCta: 'Read More',
+    featureHref: '/guides/walking-street/',
+    href: '/nightlife/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBg8OJ_A4-T1gXpT8RWGp2ln3OujYPziJ7Rpat7hYtQZrf7CNOSP9u-s8Yv_OnimMn_YieZsvr6sQdDW_GqcOmwC-Wj4UVrXRfdUyJ-cZg5e9fz_Z3haASVWslYjCh1KidcD14gIkdsmuZoOpvhIcjRb8p75o45S5rItf0IrwbFFReYBaZrjlFywC-vWqpttRdWBWutRr3_JHTN_bEa69JwbzOzxrKmviPylkShtADC829pc5avG8sSNb8psIP2SzU4bRGqsf9--VRk',
+    imageAlt: 'Vibrant Pattaya nightlife scene with neon lights',
+    imageRight: true,
+  },
+  {
+    id: 'lifestyle',
+    sectionLabel: 'Section Four',
+    title: 'Lifestyle & Expat',
+    description: 'Navigating the Gulf\'s premium living, from world-class healthcare to the expat community, visa advice, and practical day-to-day guides.',
+    featureLabel: 'Expat Life',
+    featureTitle: 'Your Complete Guide to Living in Pattaya',
+    featureDesc: 'Visa runs, cost of living, co-working spaces, and everything you need to settle in.',
+    featureCta: 'View Report',
+    featureHref: '/lifestyle/',
+    href: '/lifestyle/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAIey6I8_ASQmaYU26utEC8VlHeLaFMbIJXH7hp4QjG-QNLRU-gzt13R9uih1W6Hf8FYdb5y5cuMZJAbPylmfbk1FCT57RzPngAjBqwCYN0baxeAs1YvXpJxlZyiiqSUllsrFX_kcHnxENGlSP0axfIXumVDbwaz3fgrvKNNPRkM3mYqdcmxMPhG2Q1x_C7FDvdgmFjkZ988DJvU8rsr0574546rIHtKYCbVrYk_iMPuHJZlG1jWkXWqQ01f0vBEkk6hYvnZ6GqfYcl',
+    imageAlt: 'Relaxed lifestyle and wellness in Pattaya',
+    imageRight: false,
+  },
+];
+
+const journalArticles = [
+  {
+    tag: 'Gastronomy',
+    date: 'Mar 2026',
+    title: 'The 5 Best Rooftop Restaurants on Pratamnak Hill',
+    description: 'Elevated dining experiences that combine world-class flavors with the most iconic sunset views in Thailand.',
+    href: '/guides/rooftop-dining/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAlRLwxu9jOdf9t2vsJL7FhgRxtaYl83vEiZp3htXt9I6LLq7Pdxfj3oCR0TrnywDMrkSVUW7zjkD60L720HWfEzcpyJmJcm0JEahJSYCfJXX470F7Gr4VkctFjnUjqzwOsHESS5sSa2XfNSLNVajQj7benP5IOs0hpbA472fPH0idxiMq2HGj11nG5H2H7Hlo9SPtG_jlXPQvgkO4UQkkUVoo_ZFU0obylvZaLQqmPnvs6zGyaHkaDUm517tYsFSMgMcWxdrFLrTQh',
+    aspect: 'aspect-[3/4]',
+  },
+  {
+    tag: 'Adventure',
+    date: 'Feb 2026',
+    title: 'Private Charters: Beyond Koh Larn\'s Main Beaches',
+    description: '',
+    href: '/guides/yacht-charters/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBdTC8jLjvXqZRmEw9uZghmev3ChFBevWxAEE4ZuLebCv6icMSFy7kLu__TwKnWo4Lth-kFkfaM4jprO967WOdKiTSn6fzA3KvQY6KjAQHQppDvTHDDjPE0YwGMRN6qX67fY0f0IzRRmqQdxaiEN-Iaed-B1E5DgJqmTesct5lSV_BatmL-Rhk9ROR_bjPPvEe9OIpoLJoaD88zaRuXgrVruNCXF7WfAy0ZoxMaxyelSFke97qM9fSlMCjvGrYQIDZn7tBjfj4gms04',
+    aspect: 'aspect-square',
+  },
+  {
+    tag: 'Lifestyle',
+    date: 'Jan 2026',
+    title: 'The Ultimate Guide to Premium Living in Jomtien',
+    description: 'Why Jomtien is becoming the new gold standard for discerning expatriates and international residents.',
+    href: '/lifestyle/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCzmjpIvbHvzazTBgQo9SzEpqF6ZfNhFbDcFsRMaf2AK4Cw0qZQ82oIxQFIhZvaARrGpzRj22Jy66UwYtlXHQctT6pBxmsOPtEgkhRGM_1znZEOySc72gr9um1vn4pJj-qpnebpDEfeUj_xL2e1IPVVH9j7TGQu4K8DwU60cnv_-C23zpLzLQ9E6YeR_x5yhBBp-gDKWVM_vDIHFEY1RFcLJL8gwzGJ0T775Cx-TtzU06a-DyWmDmwZui9ydQtTZInVTgjX0wYN6-ph',
+    aspect: 'aspect-[4/5]',
+  },
+  {
+    tag: 'Report',
+    date: 'Dec 2025',
+    title: 'Skyline Transformations: The High-Rise Evolution',
+    description: '',
+    href: '/guides/',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWWCJBVza_vFSrdCCEPF5puHpjnoff7Yo_ugzNZVFPoHyB4B_6BbAIaRjxcw5a4zeXQN0j_ISxX_HESS-tQ3M-gurlXtkHZGRpW0WTcqdaEPZ2xJoUFU1MCxGuFQi2CeMuKPBQbVEiIfXqQRTdZool5AVZca8AiduzjaSIEW_kZBH4ihhoDZ7Zd3OZ_8Mg8bATHNMbJTEz3nCWkf5V3NtAROCgW-hAwQP-CHggspzOobmwwrBhvvK6EmRyuX2Rzd65Eyck1ZCMy1aM',
+    aspect: 'aspect-[2/3]',
+  },
+];
 ---
 
 <BaseLayout
@@ -127,50 +274,40 @@ const amenityLabels: Record<string, string> = {
 >
   <Navigation />
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- HERO                                        -->
-  <!-- ═══════════════════════════════════════════ -->
-  <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 1. HERO — Editorial style                      -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <header class="relative h-[700px] lg:h-[750px] w-full flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0">
       <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYD2OGzWrVyQGX1GEIp15SsIRTKl-ofV890IMqngrO_zV_iyXxqaINdM-b9sCkygPfdceyixhIsnz1Q7ueR_QNI-15AwvwbOS_bVL6MvYNqmE_hgCj3R9SP5T7JibkhKP4RjdX2HRQWFxL0IVkNdT9495xZOLhg57LEnqcesdEoW_gxKO465NNCrVmf3h4FtFZ8eMAvqpAzcqWw1SltndAShcbcIEMuFmd17kpBKc9OIXUziVbnSna9-6LjP1dJOBTLTw6srJAlL4"
-        alt="Aerial view of Pattaya Bay at golden hour"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWWCJBVza_vFSrdCCEPF5puHpjnoff7Yo_ugzNZVFPoHyB4B_6BbAIaRjxcw5a4zeXQN0j_ISxX_HESS-tQ3M-gurlXtkHZGRpW0WTcqdaEPZ2xJoUFU1MCxGuFQi2CeMuKPBQbVEiIfXqQRTdZool5AVZca8AiduzjaSIEW_kZBH4ihhoDZ7Zd3OZ_8Mg8bATHNMbJTEz3nCWkf5V3NtAROCgW-hAwQP-CHggspzOobmwwrBhvvK6EmRyuX2Rzd65Eyck1ZCMy1aM"
+        alt="Pattaya skyline at golden hour overlooking the Gulf of Thailand"
         class="w-full h-full object-cover"
         loading="eager"
       />
-      <div class="absolute inset-0 bg-gradient-to-b from-navy/40 via-navy/30 to-navy/80"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-navy/30 via-navy/40 to-navy/70"></div>
     </div>
 
-    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-      <h1 class="text-5xl sm:text-6xl md:text-8xl font-extrabold text-white mb-6 leading-[0.95] tracking-tight font-headline">
-        Discover Pattaya<br />
-        <span class="text-primary-light">Like Never Before</span>
+    <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+      <span class="font-headline text-[11px] md:text-xs uppercase tracking-[0.4em] text-primary-light mb-6 block font-bold">
+        The Tropical Concierge
+      </span>
+      <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-8 leading-[1.05] tracking-tight font-headline">
+        Curating the Extraordinary<br class="hidden md:block" />
+        in the Gulf of Thailand
       </h1>
-      <p class="text-lg md:text-xl text-white/60 mb-12 font-light max-w-xl mx-auto">
-        Hotels, Nightlife, Hidden Gems & Expat Life — curated by locals who know every corner.
+      <p class="text-white/75 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-12">
+        An editorial guide for those who demand the finest stays, hidden gems, and vibrant nightlife — curated by locals who know every corner.
       </p>
 
-      <div class="glass p-3 md:p-5 rounded-3xl max-w-2xl mx-auto shadow-2xl">
-        <div class="flex flex-wrap gap-2 mb-4 px-1">
-          <button class="px-5 py-2 rounded-full bg-white text-ink text-sm font-semibold transition-all shadow-sm">Hotels</button>
-          <button class="px-5 py-2 rounded-full bg-white/10 text-white hover:bg-white/20 text-sm font-medium transition-all">Nightlife</button>
-          <button class="px-5 py-2 rounded-full bg-white/10 text-white hover:bg-white/20 text-sm font-medium transition-all">Things to Do</button>
-          <button class="px-5 py-2 rounded-full bg-white/10 text-white hover:bg-white/20 text-sm font-medium transition-all">Guides</button>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-3">
-          <div class="relative flex-grow">
-            <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-white/40 text-xl">search</span>
-            <input
-              type="text"
-              placeholder="Search hotels, venues, guides..."
-              class="w-full bg-white/10 border-0 text-white placeholder-white/40 pl-12 pr-4 py-4 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/60 text-sm"
-            />
-          </div>
-          <button class="cta-gradient text-white px-8 py-4 rounded-2xl font-bold text-sm hover:scale-[1.03] active:scale-95 transition-transform duration-200 shadow-lg shadow-primary/30 flex items-center justify-center gap-2">
-            Search
-            <span class="material-symbols-outlined text-lg">arrow_forward</span>
-          </button>
-        </div>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/guides/" class="glass text-white px-8 py-3.5 rounded-full font-headline text-sm font-bold flex items-center gap-2.5 hover:bg-white/15 transition-all duration-300">
+          <span class="material-symbols-outlined text-lg">search</span>
+          Explore Guides
+        </a>
+        <a href="/explore/" class="text-white font-headline text-sm font-bold border-b border-white/30 pb-1 hover:border-white transition-all duration-300">
+          View Interactive Map
+        </a>
       </div>
     </div>
 
@@ -180,101 +317,108 @@ const amenityLabels: Record<string, string> = {
     </div>
   </header>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- CATEGORY CARDS                              -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section class="py-24 px-6 lg:px-8 max-w-7xl mx-auto">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      {categories.map((cat, i) => (
-        <a href={cat.href} class={`reveal reveal-delay-${i + 1} group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer`}>
-          <img
-            src={cat.image}
-            alt={cat.title}
-            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            loading="lazy"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-6">
-            <div class="flex items-center justify-between">
-              <div>
-                <h3 class="text-white font-headline text-xl font-bold mb-1">{cat.title}</h3>
-                <p class="text-white/60 text-sm">{cat.description}</p>
-              </div>
-              <span class="material-symbols-outlined text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300">arrow_forward</span>
-            </div>
-          </div>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- TRENDING GUIDES                             -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section class="py-24 bg-surface">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-14 gap-4 reveal">
-        <div>
-          <h2 class="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-ink">
-            Trending Guides
-          </h2>
-          <div class="h-1 w-16 bg-primary mt-4 rounded-full"></div>
-        </div>
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 2. TRENDING NOW — Floating card overlapping hero -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-6 lg:px-8 -mt-20 relative z-20 reveal">
+    <div class="bg-surface-card rounded-3xl shadow-[0_25px_60px_-12px_rgba(0,0,0,0.15)] p-8 md:p-12">
+      <div class="flex items-center justify-between mb-10">
+        <h2 class="font-headline text-2xl font-bold tracking-tight text-ink">Trending Now</h2>
         <a href="/guides/" class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300">
           View All
           <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
         </a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {guides.map((guide, i) => (
-          <a href={guide.href} class={`reveal reveal-delay-${i + 1} group bg-surface-card rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] overflow-hidden hover:shadow-[0_20px_50px_-12px_rgba(185,5,56,0.1)] transition-all duration-500 hover:-translate-y-1`}>
-            <div class="aspect-video w-full overflow-hidden relative">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5 md:gap-6">
+        {trendingItems.map((item, i) => (
+          <a
+            href={item.href}
+            class:list={['group', i > 3 ? 'hidden sm:block' : '']}
+          >
+            <div class="aspect-square rounded-2xl overflow-hidden mb-3 shadow-[0_4px_15px_-3px_rgba(0,0,0,0.08)]">
               <img
-                src={guide.image}
-                alt={guide.title}
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                src={item.image}
+                alt={item.title}
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
               />
-              <div class="absolute top-4 left-4">
-                <span class="inline-flex items-center px-3.5 py-1.5 bg-primary text-white text-[10px] font-bold uppercase tracking-[0.15em] rounded-full shadow-md">
-                  {guide.category}
-                </span>
-              </div>
             </div>
-            <div class="p-7">
-              <h3 class="text-lg font-bold font-headline text-ink mb-3 group-hover:text-primary transition-colors duration-300 line-clamp-2">
-                {guide.title}
-              </h3>
-              <div class="flex items-center gap-3 text-ink-muted text-sm">
-                <span class="flex items-center gap-1">
-                  <span class="material-symbols-outlined text-base" style="font-variation-settings: 'opsz' 20;">calendar_today</span>
-                  {guide.date}
-                </span>
-                <span class="opacity-30">&middot;</span>
-                <span class="flex items-center gap-1">
-                  <span class="material-symbols-outlined text-base" style="font-variation-settings: 'opsz' 20;">schedule</span>
-                  {guide.readTime}
-                </span>
-              </div>
-            </div>
+            <span class="text-[10px] uppercase font-bold text-primary tracking-widest">{item.label}</span>
+            <p class="text-xs font-bold text-ink mt-1 line-clamp-1">{item.title}</p>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- HOTEL SPOTLIGHT                             -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section class="py-24 bg-surface-card">
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 3–6. SILO SECTIONS — Alternating asymmetric     -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32">
+    <div class="space-y-28 md:space-y-32">
+      {siloSections.map((silo) => (
+        <section id={silo.id} class="reveal grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Text column */}
+          <div class:list={[
+            silo.imageRight ? 'order-2 lg:order-1' : 'order-2 lg:order-2',
+          ]}>
+            <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
+              {silo.sectionLabel}
+            </span>
+            <h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-ink mb-6">
+              {silo.title}
+            </h2>
+            <p class="text-ink-secondary text-lg leading-relaxed mb-8">
+              {silo.description}
+            </p>
+
+            {/* Featured article card */}
+            <div class="bg-surface-low p-7 md:p-8 rounded-2xl">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2 block">
+                {silo.featureLabel}
+              </span>
+              <h4 class="font-headline text-xl font-bold text-ink mb-3 leading-snug">
+                {silo.featureTitle}
+              </h4>
+              <p class="text-sm text-ink-muted mb-6 leading-relaxed">
+                {silo.featureDesc}
+              </p>
+              <a href={silo.featureHref} class="inline-flex items-center text-primary font-bold text-sm uppercase tracking-widest group">
+                {silo.featureCta}
+                <span class="material-symbols-outlined ml-2 transition-transform duration-300 group-hover:translate-x-1">arrow_right_alt</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Image column */}
+          <div class:list={[
+            'rounded-3xl overflow-hidden aspect-square lg:aspect-[4/3] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.12)] relative group',
+            silo.imageRight ? 'order-1 lg:order-2' : 'order-1 lg:order-1',
+          ]}>
+            <img
+              src={silo.image}
+              alt={silo.imageAlt}
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 7. HOTEL SPOTLIGHT — Affiliate CTAs              -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-24 md:py-32 bg-surface">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-14 gap-4 reveal">
         <div>
+          <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">Handpicked by Experts</span>
           <h2 class="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-ink">
             Top-Rated Hotels
           </h2>
-          <p class="text-ink-muted mt-2 text-lg">Handpicked by local experts</p>
         </div>
         <a href="/stay/" class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300">
           View All Hotels
@@ -284,7 +428,10 @@ const amenityLabels: Record<string, string> = {
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         {hotels.map((hotel, i) => (
-          <div class={`reveal reveal-delay-${i + 1} bg-surface-card rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 group border border-surface-high/50`}>
+          <div class:list={[
+            'reveal bg-surface-card rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 group hover:-translate-y-1',
+            `reveal-delay-${i + 1}`,
+          ]}>
             <div class="relative h-56 overflow-hidden">
               <img
                 src={hotel.image}
@@ -309,7 +456,7 @@ const amenityLabels: Record<string, string> = {
                   <span class="text-sm font-bold text-ink">{hotel.rating}</span>
                 </div>
               </div>
-              <div class="flex gap-3 mb-5 py-3 border-y border-surface-high/50">
+              <div class="flex gap-3 mb-5 py-3 bg-surface-low rounded-xl px-3">
                 {hotel.amenities.map((amenity) => (
                   <span class="flex items-center gap-1 text-ink-muted text-sm" title={amenityLabels[amenity]}>
                     <span class="material-symbols-outlined text-lg">{amenity}</span>
@@ -333,87 +480,105 @@ const amenityLabels: Record<string, string> = {
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- AREA SPOTLIGHT                              -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section class="py-24 bg-navy relative grain overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-      <div class="text-center mb-16 reveal">
-        <h2 class="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-white">
-          Explore by Area
-        </h2>
-        <p class="text-ink-faint mt-3 text-lg max-w-xl mx-auto">
-          Each neighborhood has its own character. Find yours.
-        </p>
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 8. THE PATTAYA JOURNAL — Masonry grid            -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6 reveal">
+        <div class="max-w-2xl">
+          <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
+            The Heart of pattaya.love
+          </span>
+          <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink">
+            The Pattaya Journal
+          </h2>
+          <p class="mt-4 text-ink-secondary text-lg md:text-xl leading-relaxed">
+            Immersive long-reads and daily insights for the global resident.
+          </p>
+        </div>
+        <a href="/guides/" class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300 shrink-0">
+          View All Stories
+          <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+        </a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
-        {areas.map((area, i) => (
-          <a href={area.href} class={`reveal reveal-delay-${i + 1} group relative rounded-2xl overflow-hidden ${i === 0 ? 'md:row-span-2' : ''}`}>
-            <img
-              src={area.image}
-              alt={area.name}
-              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              loading="lazy"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-transparent"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-              <h3 class="text-white font-headline text-2xl md:text-3xl font-extrabold mb-1">{area.name}</h3>
-              <p class="text-white/60 text-sm mb-4">{area.tagline}</p>
-              <div class="flex gap-3">
-                <span class="bg-white/10 backdrop-blur-sm text-white/80 text-xs font-semibold px-3 py-1.5 rounded-full">
-                  {area.venues} Venues
-                </span>
-                <span class="bg-white/10 backdrop-blur-sm text-white/80 text-xs font-semibold px-3 py-1.5 rounded-full">
-                  {area.hotels} Hotels
-                </span>
-              </div>
+      <div class="journal-masonry">
+        {journalArticles.map((article) => (
+          <a href={article.href} class="journal-masonry-item group cursor-pointer block">
+            <div class="overflow-hidden rounded-2xl md:rounded-3xl mb-5">
+              <img
+                src={article.image}
+                alt={article.title}
+                class:list={['w-full object-cover group-hover:scale-105 transition-transform duration-700', article.aspect]}
+                loading="lazy"
+              />
             </div>
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-primary bg-primary-light px-3 py-1.5 rounded-full">
+                {article.tag}
+              </span>
+              <span class="text-xs text-ink-muted">{article.date}</span>
+            </div>
+            <h4 class="font-headline text-lg md:text-xl font-bold text-ink mb-2 leading-tight group-hover:text-primary transition-colors duration-300">
+              {article.title}
+            </h4>
+            {article.description && (
+              <p class="text-ink-muted text-sm leading-relaxed line-clamp-3">{article.description}</p>
+            )}
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- TRUST / EEAT SIGNALS                        -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section class="py-20 bg-surface-card">
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 9. TRUST / EEAT SIGNALS                         -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-24 bg-surface">
     <div class="max-w-5xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-14 reveal">
+        <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">Why Trust Us</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">
+          Built on Real Experience
+        </h2>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
-        <div class="text-center">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center">
+        <div class="text-center bg-surface-card rounded-2xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
             <span class="material-symbols-outlined text-primary text-2xl">verified</span>
           </div>
-          <h3 class="font-headline font-bold text-lg mb-2">Local Expertise</h3>
-          <p class="text-ink-muted text-sm leading-relaxed">Written by expats who live and breathe Pattaya. Real insights, not tourist clichés.</p>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink">Local Expertise</h3>
+          <p class="text-ink-muted text-sm leading-relaxed">Written by expats who live and breathe Pattaya. Real insights, not tourist cliches.</p>
         </div>
-        <div class="text-center">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center">
+        <div class="text-center bg-surface-card rounded-2xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
             <span class="material-symbols-outlined text-primary text-2xl">update</span>
           </div>
-          <h3 class="font-headline font-bold text-lg mb-2">Always Up-to-Date</h3>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink">Always Up-to-Date</h3>
           <p class="text-ink-muted text-sm leading-relaxed">We revisit and update every guide regularly. No stale info from 3 years ago.</p>
         </div>
-        <div class="text-center">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center">
+        <div class="text-center bg-surface-card rounded-2xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
             <span class="material-symbols-outlined text-primary text-2xl">handshake</span>
           </div>
-          <h3 class="font-headline font-bold text-lg mb-2">Honest Reviews</h3>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink">Honest Reviews</h3>
           <p class="text-ink-muted text-sm leading-relaxed">No paid placements. Our affiliate partnerships never influence our ratings.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- NEWSLETTER                                  -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section id="newsletter" class="relative bg-coral py-24 overflow-hidden">
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 10. NEWSLETTER                                  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="newsletter" class="relative bg-coral py-24 md:py-28 overflow-hidden">
     <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full"></div>
     <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-white/5 rounded-full"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/[0.03] rounded-full"></div>
 
     <div class="max-w-2xl mx-auto px-6 text-center relative z-10 reveal">
+      <span class="font-headline text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-4 block">Join the Community</span>
       <h2 class="text-white text-3xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">
         Get Pattaya Insider Tips
       </h2>
@@ -437,5 +602,59 @@ const amenityLabels: Record<string, string> = {
     </div>
   </section>
 
+  <!-- 11. Footer -->
   <Footer />
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 12. MOBILE BOTTOM NAV — Fixed glassmorphic       -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="md:hidden">
+    <div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-[env(safe-area-inset-bottom,8px)] h-16 bg-white/95 backdrop-blur-xl z-50 shadow-[0_-8px_25px_rgba(0,0,0,0.05)]">
+      <a href="/" class="flex flex-col items-center justify-center text-primary">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Home</span>
+      </a>
+      <a href="/stay/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">bed</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Stay</span>
+      </a>
+      <a href="/explore/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">explore</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Explore</span>
+      </a>
+      <a href="/nightlife/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">nightlife</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Night</span>
+      </a>
+      <a href="/guides/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">auto_stories</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Journal</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom spacer for mobile nav -->
+  <div class="h-16 md:hidden"></div>
 </BaseLayout>
+
+<style>
+  /* Masonry grid using CSS columns */
+  .journal-masonry {
+    column-count: 1;
+    column-gap: 2rem;
+  }
+  @media (min-width: 768px) {
+    .journal-masonry {
+      column-count: 2;
+    }
+  }
+  @media (min-width: 1024px) {
+    .journal-masonry {
+      column-count: 3;
+    }
+  }
+  .journal-masonry-item {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+  }
+</style>
