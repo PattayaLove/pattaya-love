@@ -5,6 +5,7 @@ type: "other"
 area: "Central Pattaya"
 priceLevel: 3
 openingHours: "11:00 – 22:00"
+image: "/images/venues/lay-beach-club.jpg"
 googleMapsUrl: "https://www.google.com/maps/place/Lay+Beach+Club"
 description: "Boutique beach club near Soi 6 — infinity pool overlooking the sea, sunset sessions, premium cocktails, and a sophisticated crowd. One of Pattaya's best day-to-evening venues."
 publishDate: 2026-04-04
