@@ -7,7 +7,7 @@ area: "Walking Street"
 priceLevel: 2
 openingHours: "22:00 – 05:00"
 publishDate: 2026-04-04
-image: "/images/venues/insomnia-club.webp"
+image: "/images/venues/insomnia-club.jpg"
 draft: false
 ---
 

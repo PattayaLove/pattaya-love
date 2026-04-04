@@ -4,7 +4,7 @@ slug: "hotels-near-soi-6"
 description: "Find the best guest-friendly hotels near Soi 6 Pattaya for 2026. Budget, mid-range, and luxury picks — all within walking distance. No joiner fees, honest reviews."
 category: "hotels"
 publishDate: 2026-04-04
-image: "/images/guides/hotels-soi-6.webp"
+image: "/images/guides/hotels-soi-6.jpg"
 draft: false
 ---
 
