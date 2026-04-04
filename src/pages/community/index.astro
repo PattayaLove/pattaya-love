@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Pattaya.love Community — Connect with Fellow Travelers"
+  description="Join the pattaya.love community. Get insider tips, connect with expats, and stay updated on events and deals in Pattaya."
+>
+  <Navigation />
+
+  <!-- Hero -->
+  <header class="relative pt-32 pb-20 bg-navy grain">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+      <nav class="text-sm text-white/40 mb-8">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-white/70">Community</span>
+      </nav>
+      <h1 class="text-4xl md:text-6xl font-extrabold font-headline tracking-tight text-white mb-4">
+        Community
+      </h1>
+      <p class="text-ink-faint text-lg max-w-2xl">
+        Connect with fellow travelers, expats, and locals. Get insider tips you won't find in any guidebook.
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 lg:px-8 py-24">
+
+    <!-- Newsletter Section -->
+    <section class="mb-20 reveal">
+      <div class="bg-surface-card rounded-2xl p-10 md:p-14 shadow-lg border border-surface-high/30">
+        <div class="flex items-start gap-4 mb-6">
+          <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-primary text-2xl">mail</span>
+          </div>
+          <div>
+            <h2 class="text-2xl font-extrabold font-headline text-ink mb-2">The Pattaya Insider Newsletter</h2>
+            <p class="text-ink-muted">Weekly curated content: new venue openings, hotel deals, event announcements, and tips from locals who know.</p>
+          </div>
+        </div>
+        <form class="flex flex-col sm:flex-row gap-3 max-w-lg">
+          <input type="email" placeholder="Your email address" class="flex-1 h-14 px-6 rounded-xl border border-surface-high bg-surface text-ink placeholder-ink-muted focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" />
+          <button type="submit" class="cta-gradient px-8 h-14 rounded-xl text-white font-bold text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform whitespace-nowrap shadow-md shadow-primary/20">
+            Subscribe
+          </button>
+        </form>
+        <p class="text-ink-faint text-xs mt-4 flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-xs">verified</span>
+          Join 5,000+ readers · No spam · Unsubscribe anytime
+        </p>
+      </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="mb-20 reveal">
+      <h2 class="text-3xl font-extrabold font-headline tracking-tight text-ink mb-10">Follow Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="#" class="group bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
+          <span class="material-symbols-outlined text-4xl text-pink-500 mb-4 block">photo_camera</span>
+          <h3 class="font-headline font-bold text-lg text-ink mb-1">Instagram</h3>
+          <p class="text-ink-muted text-sm">Daily stories, reels & behind-the-scenes from Pattaya</p>
+        </a>
+        <a href="#" class="group bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
+          <span class="material-symbols-outlined text-4xl text-red-500 mb-4 block">smart_display</span>
+          <h3 class="font-headline font-bold text-lg text-ink mb-1">YouTube</h3>
+          <p class="text-ink-muted text-sm">Hotel tours, venue walkthroughs & area guides in video</p>
+        </a>
+        <a href="#" class="group bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
+          <span class="material-symbols-outlined text-4xl text-ink mb-4 block">music_note</span>
+          <h3 class="font-headline font-bold text-lg text-ink mb-1">TikTok</h3>
+          <p class="text-ink-muted text-sm">Quick tips, fun clips & viral Pattaya moments</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contribute -->
+    <section class="reveal">
+      <div class="bg-surface rounded-2xl p-10 md:p-14">
+        <h2 class="text-2xl font-extrabold font-headline text-ink mb-4">Share Your Experience</h2>
+        <p class="text-ink-muted text-lg mb-6 max-w-2xl">
+          Have a tip, hotel review, or venue recommendation? We love hearing from travelers and locals. Reach out and your insights might be featured on the site.
+        </p>
+        <a href="mailto:info@pattaya.love" class="inline-flex items-center gap-2 cta-gradient text-white px-6 py-3 rounded-xl font-bold text-sm hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20">
+          <span class="material-symbols-outlined text-lg">mail</span>
+          Get in Touch
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

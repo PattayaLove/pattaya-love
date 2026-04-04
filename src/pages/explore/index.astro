@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const allAreas = await getCollection('areas', ({ data }) => !data.draft);
+const allGuides = await getCollection('guides', ({ data }) => !data.draft);
+const allHotels = await getCollection('hotels', ({ data }) => !data.draft);
+const allVenues = await getCollection('venues', ({ data }) => !data.draft);
+
+const exploreGuides = allGuides
+  .filter((g) => ['general', 'transport', 'food', 'tips'].includes(g.data.category))
+  .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+
+const areaImages: Record<string, string> = {
+  'Walking Street': 'https://lh3.googleusercontent.com/aida-public/AB6AXuA3DBs44U4_s2kcV9pFwyeejIbkyNK3D6CL6sSkGEcMhSiqx-pM3Jimzjc7Bei-ll5Xf3ta3ZOSU3abl5YliP_uI__-OHF103rHDZAp9xLNIF0s-VwyESOBDulW-1MRz1Z3WR7eaOwoam_CKn1t42m-A2m_3GkIA3veb4seJsmoWTsM5DcveWhmx9evILhn-KgY7zJmULM8kW1nRJ8tscqBVlHjdngy7XPF_dy-tuq1hD4SOPpry1gCPq0mhp1seIV7TaKaXXwR5mg',
+  'Soi 6': 'https://lh3.googleusercontent.com/aida-public/AB6AXuCyy5-iMCILIezmqzHnFMTYMJYuRhHmW9ODAes7Q_ArSmfrr_k41xUHSLPhuFbLH7DFdcONhWxsLRqjVGOcH66KO6No6TSPMc8ng2NpbxzT6iQJToz2nJ8tDmySzekOVs9NXpIwC3Nn3IeU8cS8aMrknvn-baG8H6yXzWkV1QM5tcChCagEpKqtnfbcVnaFtwWqU4AdmMcpkUfBcHk1fustb2PVKbi-rBlfPBKgzsbPaf3F6k6GbvRcLnL-pMdxv9HtZDIASrgV9-8',
+  'Jomtien Beach': 'https://lh3.googleusercontent.com/aida-public/AB6AXuA2M4cUp2_g1fTiJ7V412y3P_ZoC-VDeL9VQfF7xH_kwGauFHFp2XVqbKtrai7G6LMfZ_QofxsxdQ1p_lDTEuTjrLb192OO7y_sfpXkkOqCbOSgZXbQasXKUNVkT_yjeWUfW4d5SIvgU1UxZ-UwucwXkT-x96FJJrkGhKqGbBu2slbn2Dya4pDvvql5NlTQb_lfxqb6YOXPDU1FfYlDX4dWvt-Adi8GYQS2TEEVsMWI7GSGuYmWl5Q_Uvg-NorEebC4M4Dj-J3UCfE',
+};
+const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuBvHoa1cK_a65AzY6x8vDPrKkyrJYuKQz-bvkZOOF5LQ-ZFAwXoFzJmpOOpRHstlrxFG6rFxKJPuNarpYPIm55ZhkarYsVocbw_Q7bmlYy1bpb-Pr2IYSJGJ0dv5vBQlwZnv9ZoJH-VlOKzC4hqGvvWAccYQrivilaUvKKSvTU2FRdnSV2mmWLuwezQPs7r9Clqbg76htuaEHI7sGwL5phpgeCBCtMw37Wty9nMI82HyFIdiVTAQeiWp8Gf2UslURqVKL6DpQG_LuY';
+
+const categoryLabels: Record<string, string> = {
+  general: 'General', transport: 'Transport', food: 'Food & Drink', tips: 'Tips',
+};
+---
+
+<BaseLayout
+  title="Explore Pattaya — Things to Do, Beaches & Hidden Gems"
+  description="Discover the best things to do in Pattaya beyond the nightlife. Beaches, temples, island trips, food tours, and hidden gems curated by locals."
+>
+  <Navigation />
+
+  <!-- Hero -->
+  <header class="relative h-[420px] lg:h-[500px] w-full flex items-end overflow-hidden">
+    <img
+      src={fallbackImage}
+      alt="Explore Pattaya — beaches, temples and hidden gems"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/40 to-navy/20"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pb-12 w-full">
+      <nav class="text-sm text-white/50 mb-4">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-white/80">Explore</span>
+      </nav>
+      <h1 class="text-4xl md:text-6xl font-extrabold font-headline text-white tracking-tight mb-3">
+        Explore Pattaya
+      </h1>
+      <p class="text-white/60 text-lg max-w-xl">
+        Beaches, temples, island trips & hidden gems — the side of Pattaya most tourists never see.
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 lg:px-8">
+
+    <!-- Areas -->
+    <section class="py-20">
+      <div class="flex items-end justify-between mb-10 reveal">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">Explore by Area</h2>
+          <div class="h-1 w-14 bg-primary mt-3 rounded-full"></div>
+        </div>
+        <a href="/areas/" class="text-primary font-bold text-sm uppercase tracking-widest flex items-center gap-1 hover:gap-2 transition-all">
+          All Areas <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {allAreas.map((area, i) => (
+          <a href={`/areas/${area.data.slug}/`} class={`reveal reveal-delay-${i + 1} group relative rounded-2xl overflow-hidden aspect-[4/3]`}>
+            <img
+              src={area.data.image || areaImages[area.data.name] || fallbackImage}
+              alt={area.data.name}
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="text-white font-headline text-2xl font-extrabold mb-1">{area.data.name}</h3>
+              <p class="text-white/60 text-sm line-clamp-2">{area.data.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- Guides -->
+    <section class="py-20 border-t border-surface-high/50">
+      <div class="flex items-end justify-between mb-10 reveal">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">Travel Guides</h2>
+          <div class="h-1 w-14 bg-primary mt-3 rounded-full"></div>
+        </div>
+        <a href="/guides/" class="text-primary font-bold text-sm uppercase tracking-widest flex items-center gap-1 hover:gap-2 transition-all">
+          All Guides <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {exploreGuides.map((guide, i) => (
+          <a href={`/guides/${guide.data.slug}/`} class={`reveal reveal-delay-${i + 1} group bg-surface-card rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] overflow-hidden hover:shadow-[0_20px_50px_-12px_rgba(185,5,56,0.1)] transition-all duration-500 hover:-translate-y-1`}>
+            <div class="aspect-video bg-surface-low flex items-center justify-center">
+              <span class="material-symbols-outlined text-5xl text-ink-faint/30">article</span>
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary mb-2 block">
+                {categoryLabels[guide.data.category] || guide.data.category}
+              </span>
+              <h3 class="text-lg font-bold font-headline text-ink mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                {guide.data.title}
+              </h3>
+              <p class="text-ink-muted text-sm line-clamp-2">{guide.data.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <!-- Newsletter -->
+  <section class="relative bg-coral py-24 overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full"></div>
+    <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-white/5 rounded-full"></div>
+    <div class="max-w-2xl mx-auto px-6 text-center relative z-10">
+      <h2 class="text-white text-3xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">Get Pattaya Insider Tips</h2>
+      <p class="text-white/70 text-lg mb-10">Weekly deals, events & hidden gems — straight to your inbox.</p>
+      <form class="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto mb-6">
+        <input type="email" placeholder="Your email address" class="w-full h-14 px-6 rounded-full border-none text-ink bg-white placeholder-ink-muted shadow-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-sm" />
+        <button type="submit" class="w-full sm:w-auto px-8 h-14 rounded-full border-2 border-white text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">Subscribe</button>
+      </form>
+      <p class="text-white/50 text-sm flex items-center justify-center gap-1.5">
+        <span class="material-symbols-outlined text-sm">verified</span>
+        Join 5,000+ readers · No spam, ever
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
