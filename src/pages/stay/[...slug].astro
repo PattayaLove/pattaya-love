@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
+import OptImage from '../../components/OptImage.astro';
 import { getCollection, render } from 'astro:content';
 
 /* ─── Static Paths ─── */
@@ -128,11 +129,13 @@ const reviewSchema = {
   <!-- ═══════════════════════════════════════════════ -->
   <header id="hotel-hero" class="relative w-full h-[520px] sm:h-[560px] lg:h-[620px] flex items-end overflow-hidden">
     <div class="absolute inset-0">
-      <img
+      <OptImage
         src={heroImage}
         alt={`${data.name} — ${data.area}, Pattaya`}
         class="w-full h-full object-cover"
         loading="eager"
+        width={1920}
+        height={1080}
       />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/50 to-navy/20"></div>
     </div>

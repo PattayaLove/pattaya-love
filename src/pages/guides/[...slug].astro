@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
+import OptImage from '../../components/OptImage.astro';
 import { getCollection, render } from 'astro:content';
 
 /* ── Static paths ── */
@@ -159,11 +160,13 @@ const articleSchema = {
     {guide.data.image && (
       <div class="max-w-6xl mx-auto px-6 lg:px-8 mt-10">
         <div class="aspect-[21/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-[0_25px_60px_-12px_rgba(0,0,0,0.15)]">
-          <img
+          <OptImage
             src={guide.data.image}
             alt={guide.data.title}
             class="w-full h-full object-cover"
             loading="eager"
+            width={1920}
+            height={600}
           />
         </div>
       </div>

@@ -13,5 +13,11 @@ export default defineConfig({
   },
 
   integrations: [sitemap()],
-  adapter: vercel(),
+  adapter: vercel({
+    imageService: true,
+  }),
+  image: {
+    domains: [],
+    remotePatterns: [],
+  },
 });

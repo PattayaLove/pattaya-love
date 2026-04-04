@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
+import OptImage from '../../components/OptImage.astro';
 import { getCollection, render } from 'astro:content';
 
 /* ── Fetch all venues, filter drafts ── */
@@ -96,11 +97,13 @@ const venueSchema = {
   <!-- ═══════════════════════════════════════════════ -->
   <header class="relative h-[520px] lg:h-[600px] w-full flex items-end overflow-hidden">
     {venue.data.image ? (
-      <img
+      <OptImage
         src={venue.data.image}
         alt={venue.data.name}
         class="absolute inset-0 w-full h-full object-cover"
         loading="eager"
+        width={1920}
+        height={1080}
       />
     ) : (
       <div class="absolute inset-0 bg-navy-light"></div>
