@@ -86,6 +86,42 @@ const categoryLabels: Record<string, string> = {
       </div>
     </section>
 
+    <!-- Attractions -->
+    <section class="py-20 border-t border-surface-high/50">
+      <div class="mb-10 reveal">
+        <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">Top Attractions</h2>
+        <div class="h-1 w-14 bg-primary mt-3 rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          { name: 'Sanctuary of Truth', area: 'Naklua', icon: 'temple_buddhist', desc: 'A 105-meter wooden temple covered in intricate carvings — Pattaya\'s most impressive architectural wonder. Under construction since 1981.', tag: 'Must See' },
+          { name: 'Koh Larn (Coral Island)', area: 'Offshore', icon: 'sailing', desc: 'Crystal-clear water and white sand beaches just 45 minutes by ferry from Bali Hai Pier. The best day trip from Pattaya.', tag: 'Day Trip' },
+          { name: 'Nong Nooch Tropical Garden', area: 'East Pattaya', icon: 'park', desc: 'Massive botanical garden with themed sections, Thai cultural shows, and elephant experiences. Allow half a day.', tag: 'Nature' },
+          { name: 'Big Buddha (Wat Phra Yai)', area: 'Pratumnak Hill', icon: 'temple_buddhist', desc: '18-meter golden Buddha with panoramic views across Pattaya Bay. Free entry, modest dress required. Best at sunset.', tag: 'Culture' },
+          { name: 'Pattaya Floating Market', area: 'East Pattaya', icon: 'store', desc: 'Four-region Thai food market on the water. Touristy but fun — great for photos and sampling dishes from across Thailand.', tag: 'Food' },
+          { name: 'Ramayana Water Park', area: 'East Pattaya', icon: 'pool', desc: 'Thailand\'s largest water park with over 50 slides and attractions. Perfect for families and hot days.', tag: 'Family' },
+          { name: 'Silverlake Vineyard', area: 'East Pattaya', icon: 'wine_bar', desc: 'Hilltop winery with panoramic views, a giant hillside Buddha, and surprisingly decent Thai wine.', tag: 'Views' },
+          { name: 'Art in Paradise', area: 'Central Pattaya', icon: 'palette', desc: '3D art museum with interactive optical illusions. Great for Instagram photos and rainy day entertainment.', tag: 'Fun' },
+          { name: 'Pattaya Viewpoint', area: 'Pratumnak Hill', icon: 'photo_camera', desc: 'The classic Pattaya panorama — curved bay, city skyline, and Koh Larn in the distance. Iconic photo spot.', tag: 'Views' },
+        ].map((attraction, i) => (
+          <div class={`reveal reveal-delay-${(i % 4) + 1} bg-surface-card rounded-2xl p-6 border border-surface-high/30 hover:shadow-lg transition-all duration-300`}>
+            <div class="flex items-start justify-between mb-3">
+              <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-primary text-2xl">{attraction.icon}</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-ink-faint bg-surface-low px-3 py-1 rounded-full">{attraction.tag}</span>
+            </div>
+            <h3 class="font-headline font-bold text-lg text-ink mb-1">{attraction.name}</h3>
+            <p class="text-ink-muted text-xs mb-3 flex items-center gap-1">
+              <span class="material-symbols-outlined text-xs">location_on</span>
+              {attraction.area}
+            </p>
+            <p class="text-ink-muted text-sm leading-relaxed">{attraction.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
     <!-- Guides -->
     <section class="py-20 border-t border-surface-high/50">
       <div class="flex items-end justify-between mb-10 reveal">
