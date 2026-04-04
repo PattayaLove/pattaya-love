@@ -1,0 +1,110 @@
+---
+const navLinks = [
+  { label: 'Stay', href: '/stay/', active: false },
+  { label: 'Explore', href: '/explore/', active: false },
+  { label: 'Nightlife', href: '/nightlife/', active: false },
+  { label: 'Lifestyle', href: '/lifestyle/', active: false },
+  { label: 'Community', href: '/community/', active: false },
+];
+---
+
+<nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-500">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8 py-4">
+    <!-- Logo -->
+    <a href="/" class="text-2xl font-extrabold tracking-tighter font-headline text-white transition-colors duration-300" id="nav-logo">
+      pattaya<span class="text-primary">.love</span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="hidden lg:flex items-center gap-1">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class="nav-link relative px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-all duration-300 rounded-lg hover:bg-white/10"
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+
+    <!-- CTA + Mobile Toggle -->
+    <div class="flex items-center gap-3">
+      <a href="#newsletter" class="hidden sm:inline-flex cta-gradient text-white px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform duration-200 shadow-lg shadow-primary/20">
+        Newsletter
+      </a>
+      <button id="mobile-toggle" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+        <span class="block w-6 h-0.5 bg-white rounded-full transition-all duration-300" id="bar1"></span>
+        <span class="block w-6 h-0.5 bg-white rounded-full transition-all duration-300" id="bar2"></span>
+        <span class="block w-4 h-0.5 bg-white rounded-full transition-all duration-300 ml-auto" id="bar3"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="lg:hidden fixed inset-0 top-0 bg-navy/98 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-6 opacity-0 pointer-events-none transition-all duration-500">
+    <button id="mobile-close" class="absolute top-6 right-6 text-white p-2" aria-label="Close">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    {navLinks.map((link) => (
+      <a href={link.href} class="text-3xl font-headline font-bold text-white/90 hover:text-primary transition-colors">
+        {link.label}
+      </a>
+    ))}
+    <a href="#newsletter" class="mt-4 cta-gradient text-white px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest">
+      Newsletter
+    </a>
+  </div>
+</nav>
+
+<script>
+  const nav = document.getElementById('main-nav')!;
+  const logo = document.getElementById('nav-logo')!;
+  const navLinks = document.querySelectorAll('.nav-link');
+  const toggle = document.getElementById('mobile-toggle')!;
+  const menu = document.getElementById('mobile-menu')!;
+  const close = document.getElementById('mobile-close')!;
+
+  // Scroll effect: transparent → frosted glass
+  let scrolled = false;
+  const onScroll = () => {
+    const shouldBeScrolled = window.scrollY > 80;
+    if (shouldBeScrolled !== scrolled) {
+      scrolled = shouldBeScrolled;
+      if (scrolled) {
+        nav.classList.add('bg-white/85', 'backdrop-blur-xl', 'shadow-sm');
+        nav.classList.remove('bg-transparent');
+        logo.classList.remove('text-white');
+        logo.classList.add('text-ink');
+        navLinks.forEach(l => {
+          l.classList.remove('text-white/80', 'hover:text-white', 'hover:bg-white/10');
+          l.classList.add('text-ink-secondary', 'hover:text-ink', 'hover:bg-ink/5');
+        });
+      } else {
+        nav.classList.remove('bg-white/85', 'backdrop-blur-xl', 'shadow-sm');
+        nav.classList.add('bg-transparent');
+        logo.classList.add('text-white');
+        logo.classList.remove('text-ink');
+        navLinks.forEach(l => {
+          l.classList.add('text-white/80', 'hover:text-white', 'hover:bg-white/10');
+          l.classList.remove('text-ink-secondary', 'hover:text-ink', 'hover:bg-ink/5');
+        });
+      }
+    }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobile menu
+  toggle.addEventListener('click', () => {
+    menu.classList.remove('opacity-0', 'pointer-events-none');
+    menu.classList.add('opacity-100', 'pointer-events-auto');
+    document.body.style.overflow = 'hidden';
+  });
+  const closeMenu = () => {
+    menu.classList.add('opacity-0', 'pointer-events-none');
+    menu.classList.remove('opacity-100', 'pointer-events-auto');
+    document.body.style.overflow = '';
+  };
+  close.addEventListener('click', closeMenu);
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+</script>

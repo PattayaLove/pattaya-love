@@ -1,0 +1,104 @@
+---
+const currentYear = new Date().getFullYear();
+
+const exploreLinks = [
+  { label: 'Stay', href: '/stay/' },
+  { label: 'Nightlife', href: '/nightlife/' },
+  { label: 'Areas', href: '/areas/' },
+  { label: 'Guides', href: '/guides/' },
+  { label: 'Transport', href: '/guides/bangkok-to-pattaya/' },
+];
+
+const legalLinks = [
+  { label: 'Privacy Policy', href: '/privacy/' },
+  { label: 'Imprint', href: '/imprint/' },
+  { label: 'Affiliate Disclosure', href: '/affiliate-disclosure/' },
+];
+
+const socialLinks = [
+  { label: 'Instagram', icon: 'photo_camera', href: '#' },
+  { label: 'YouTube', icon: 'smart_display', href: '#' },
+  { label: 'TikTok', icon: 'music_note', href: '#' },
+];
+---
+
+<footer class="bg-navy relative grain">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-8">
+    <!-- Main Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
+      <!-- Brand Column -->
+      <div class="lg:col-span-1">
+        <a href="/" class="text-2xl font-extrabold tracking-tighter font-headline text-white inline-block mb-4">
+          pattaya<span class="text-primary">.love</span>
+        </a>
+        <p class="text-ink-faint text-sm leading-relaxed mb-6 max-w-xs">
+          Your ultimate Pattaya guide. Curated for the discerning traveler seeking authentic experiences.
+        </p>
+        <div class="flex gap-3">
+          {socialLinks.map((link) => (
+            <a href={link.href} class="w-10 h-10 rounded-xl bg-white/5 hover:bg-primary/20 flex items-center justify-center text-ink-faint hover:text-primary transition-all duration-300" aria-label={link.label}>
+              <span class="material-symbols-outlined text-xl">{link.icon}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-white mb-6">Explore</h4>
+        <ul class="space-y-3">
+          {exploreLinks.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-ink-faint hover:text-white transition-colors duration-200">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-white mb-6">Legal</h4>
+        <ul class="space-y-3">
+          {legalLinks.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-ink-faint hover:text-white transition-colors duration-200">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Newsletter Mini -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-white mb-6">Stay Updated</h4>
+        <p class="text-sm text-ink-faint mb-4">Weekly insider tips, deals & hidden gems.</p>
+        <form class="flex gap-2">
+          <input
+            type="email"
+            placeholder="your@email.com"
+            class="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-ink-faint focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent transition-all"
+          />
+          <button type="submit" class="cta-gradient px-4 py-2.5 rounded-xl text-white text-sm font-bold hover:scale-105 active:scale-95 transition-transform">
+            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="h-px bg-white/5 mb-8"></div>
+
+    <!-- Bottom Bar -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-ink-faint/60">
+        &copy; {currentYear} pattaya.love &middot; Made with love in Pattaya
+      </p>
+      <p class="text-xs text-ink-faint/40">
+        This site contains affiliate links. We may earn a commission at no extra cost to you.
+      </p>
+    </div>
+  </div>
+</footer>

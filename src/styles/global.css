@@ -1,1 +1,103 @@
 @import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-primary: #b90538;
+  --color-primary-hover: #dc2c4f;
+  --color-primary-light: #ffdadb;
+  --color-primary-glow: rgba(185, 5, 56, 0.15);
+
+  /* Surfaces */
+  --color-surface: #f7f9fb;
+  --color-surface-low: #f2f4f6;
+  --color-surface-high: #e6e8ea;
+  --color-surface-card: #ffffff;
+
+  /* Text */
+  --color-ink: #0f172a;
+  --color-ink-secondary: #334155;
+  --color-ink-muted: #64748b;
+  --color-ink-faint: #94a3b8;
+
+  /* Dark */
+  --color-navy: #0f172a;
+  --color-navy-light: #1e293b;
+
+  /* Accent */
+  --color-amber: #f59e0b;
+  --color-coral: #f43f5e;
+
+  /* Typography */
+  --font-headline: "Plus Jakarta Sans", "Montserrat", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Animations */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-surface-card);
+}
+
+/* Scroll-triggered reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* Grain overlay for depth */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Primary gradient for CTAs */
+.cta-gradient {
+  background: linear-gradient(135deg, #b90538 0%, #dc2c4f 100%);
+}
+
+/* Heartbeat pulse on brand accent */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.05); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.03); }
+}
+
+/* Smooth image parallax */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
