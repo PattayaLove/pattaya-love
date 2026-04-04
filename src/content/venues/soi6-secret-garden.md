@@ -12,7 +12,7 @@ draft: false
 
 ## Overview
 
-Secret Garden Bar is one of the newest additions to Soi 6 and has quickly earned a strong reputation. It is run by an experienced manager with a background at Nightwish and the Better Group, which shows in the quality of operations.
+Secret Garden Bar is one of the newest additions to Soi 6 and has quickly earned a strong reputation. It is run by an experienced manager with years of background in the Soi 6 bar scene, which shows in the quality of operations.
 
 ## What to Expect
 

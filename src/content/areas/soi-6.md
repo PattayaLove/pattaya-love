@@ -47,9 +47,7 @@ Second Road, one minute to the east, opens up even more dining choices. The area
 
 Not all Soi 6 bars are independent. Several bar groups operate multiple venues with consistent management and standards:
 
-**Nightwish Group** — the largest operator on Soi 6. Their bars are well-managed with professional staff and consistent pricing. A good starting point if you're visiting for the first time and want a reliable experience.
-
-**Better Group** — runs Booty Call, Benders, Wet Six, Cooters, La La Land, and Saigon Girl. Known for fair pricing, quality staff, and no-pressure atmosphere. Front-open bars with a lively vibe.
+**Better Group** — runs Booty Call, Benders, Wet Six, Cooters, La La Land, and Saigon Girl. Currently the most well-regarded chain on Soi 6. Known for fair pricing, quality staff, and no-pressure atmosphere. Front-open bars with a lively vibe.
 
 **Baba Group** — operates Good Fellas, Baba Bar, Tomcat's, Soi 6 Bar, and Oppa Bar (Korean-style). Slightly more premium positioning with higher lady drink prices (from 200 THB). Quality-focused.
 
