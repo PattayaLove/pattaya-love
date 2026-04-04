@@ -3,6 +3,7 @@ name: "Soi 6"
 slug: "soi-6"
 description: "Soi 6 Pattaya 2026 area guide — the city's most famous daytime bar street. What to expect, drink prices, nearby hotels, and tips for first-time visitors."
 publishDate: 2026-04-04
+image: "/images/areas/soi-6.jpg"
 draft: false
 ---
 
