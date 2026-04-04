@@ -7,7 +7,7 @@ area: "Walking Street"
 priceLevel: 2
 openingHours: "20:00 – 03:00"
 publishDate: 2026-04-04
-image: "/images/venues/sapphire-agogo.jpg"
+image: "/images/venues/sapphire-agogo.webp"
 draft: false
 ---
 

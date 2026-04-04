@@ -3,7 +3,7 @@ title: "Shopping in Pattaya — Best Malls, Markets & Bargains 2026"
 slug: "pattaya-shopping"
 description: "Complete Pattaya shopping guide for 2026. Terminal 21, Central Festival, Central Marina, night markets, tailors, and where to find the best deals."
 category: "general"
-image: "/images/guides/central-festival-pattaya.jpg"
+image: "/images/guides/central-festival-pattaya.webp"
 publishDate: 2026-04-04
 draft: false
 ---

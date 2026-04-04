@@ -7,7 +7,7 @@ area: "Walking Street"
 priceLevel: 2
 openingHours: "20:00 – 03:00"
 publishDate: 2026-04-04
-image: "/images/venues/pin-up-agogo.jpg"
+image: "/images/venues/pin-up-agogo.webp"
 draft: false
 ---
 

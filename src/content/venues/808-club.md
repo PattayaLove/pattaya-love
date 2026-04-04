@@ -7,7 +7,7 @@ area: "Walking Street"
 priceLevel: 2
 openingHours: "22:00 – 04:00"
 publishDate: 2026-04-04
-image: "/images/venues/808-club.jpg"
+image: "/images/venues/808-club.webp"
 draft: false
 ---
 
