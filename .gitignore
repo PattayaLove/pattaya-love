@@ -32,5 +32,8 @@ stitch.zip
 stitch_pattaya_love_lifestyle_guide/
 stitch_pattaya_love_lifestyle_guide.zip
 
+# apify data exports
+dataset_crawler-google-places_*.json
+
 # vercel
 .vercel
