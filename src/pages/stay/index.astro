@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
+import OptImage from '../../components/OptImage.astro';
 
 /* ─── Data ─── */
 const allHotels = await getCollection('hotels', ({ data }) => !data.draft);
@@ -68,9 +69,10 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
   <!-- 1. HERO HEADER                                  -->
   <!-- ═══════════════════════════════════════════════ -->
   <header class="relative w-full pt-32 pb-20 md:pt-40 md:pb-28 bg-navy overflow-hidden grain">
-    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy"></div>
-    <div class="absolute -top-32 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0">
+      <OptImage src="/images/areas/central-pattaya-aerial.jpg" alt="Aerial view of Central Pattaya hotels and skyline" width={1920} height={1080} class="w-full h-full object-cover" loading="eager" />
+      <div class="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/70 to-navy/90"></div>
+    </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
       <!-- Breadcrumb -->
