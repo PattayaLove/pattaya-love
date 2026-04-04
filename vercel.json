@@ -1,0 +1,54 @@
+{
+  "redirects": [
+    {
+      "source": "/walking-street/iron-club/",
+      "destination": "/nightlife/iron-club/",
+      "permanent": true
+    },
+    {
+      "source": "/walking-street/pin-up-a-go-go/",
+      "destination": "/nightlife/pin-up-a-go-go/",
+      "permanent": true
+    },
+    {
+      "source": "/walking-street/xs-a-go-go/",
+      "destination": "/nightlife/xs-a-go-go/",
+      "permanent": true
+    },
+    {
+      "source": "/soi-6/hotels-near-soi-6-pattaya-top-guest-friendly-budget-options-2025/",
+      "destination": "/guides/hotels-near-soi-6/",
+      "permanent": true
+    },
+    {
+      "source": "/walking-street/",
+      "destination": "/areas/walking-street/",
+      "permanent": true
+    },
+    {
+      "source": "/hotels/",
+      "destination": "/stay/",
+      "permanent": true
+    },
+    {
+      "source": "/soi-6/",
+      "destination": "/areas/soi-6/",
+      "permanent": true
+    },
+    {
+      "source": "/bangkok-to-pattaya/",
+      "destination": "/guides/bangkok-to-pattaya/",
+      "permanent": true
+    },
+    {
+      "source": "/news/",
+      "destination": "/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/onlyfans/:path*",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

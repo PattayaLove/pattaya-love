@@ -1,0 +1,340 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+/* ─── Data ─── */
+const allHotels = await getCollection('hotels', ({ data }) => !data.draft);
+const hotels = allHotels.sort((a, b) => b.data.rating - a.data.rating);
+
+/* ─── Helpers ─── */
+const priceLabels: Record<string, string> = {
+  budget: 'Budget',
+  'mid-range': 'Mid-Range',
+  luxury: 'Luxury',
+};
+
+const priceColors: Record<string, { bg: string; text: string }> = {
+  budget: { bg: 'bg-emerald-100', text: 'text-emerald-700' },
+  'mid-range': { bg: 'bg-amber/15', text: 'text-amber' },
+  luxury: { bg: 'bg-primary-light', text: 'text-primary' },
+};
+
+const amenityIcons: Record<string, string> = {
+  Pool: 'pool',
+  Spa: 'spa',
+  Fitness: 'fitness_center',
+  Restaurant: 'restaurant',
+  Bar: 'local_bar',
+  'Beach Access': 'beach_access',
+  WiFi: 'wifi',
+  Gym: 'fitness_center',
+  Jacuzzi: 'hot_tub',
+  AC: 'ac_unit',
+  Parking: 'local_parking',
+  'Room Service': 'room_service',
+  Laundry: 'local_laundry_service',
+  'Airport Shuttle': 'airport_shuttle',
+  'Rooftop Bar': 'rooftop_deck',
+  'Live Music': 'music_note',
+};
+
+const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW3kCmlM6PmuZYLGPW-S8fTTsXdj-I6SvEY81Pz4kw6bsL8gZtvAlzeQvMDEdmz0x2c6COj9OyVYbfYDxDdjBxdA21JKsyEgP5lpV1Yu_nj0iq5aIrgj1LXnkUiTZmeL_U9B7Qls6HiF0z83vvVp1gH81uBCEyWLMt9SCmWkSBzGCBbW29GmZcezpnYpVhePAkyjy6aK1PSGpocxwdhGVnxdygc-LPBleOgUSZJLtqUlA7q97vtyYZs_DBvxMfmo-1np0IkGzs';
+---
+
+<BaseLayout
+  title="Best Hotels in Pattaya 2026"
+  description="Handpicked hotels from budget to luxury — all guest-friendly. Find your perfect Pattaya stay with honest reviews and best price links."
+>
+  <Navigation />
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 1. HERO HEADER                                  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <header class="relative w-full pt-32 pb-20 md:pt-40 md:pb-28 bg-navy overflow-hidden grain">
+    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy"></div>
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-xs text-white/50 font-medium">
+          <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+          <li><span class="material-symbols-outlined text-[10px]">chevron_right</span></li>
+          <li class="text-white/80">Stay</li>
+        </ol>
+      </nav>
+
+      <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-primary-light mb-4 block">
+        Handpicked by Experts
+      </span>
+      <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.05] mb-6 max-w-3xl">
+        Best Hotels in Pattaya 2026
+      </h1>
+      <p class="text-white/65 text-lg md:text-xl max-w-2xl leading-relaxed">
+        Handpicked hotels from budget to luxury — all guest-friendly. Honest reviews, real photos, and the best booking links.
+      </p>
+
+      <!-- Stats -->
+      <div class="mt-10 flex flex-wrap gap-8">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary-light text-xl">hotel</span>
+          </div>
+          <div>
+            <span class="text-white font-bold text-lg">{hotels.length}</span>
+            <span class="text-white/50 text-sm block">Hotels Reviewed</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-amber text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <div>
+            <span class="text-white font-bold text-lg">4.0+</span>
+            <span class="text-white/50 text-sm block">Average Rating</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary-light text-xl">verified</span>
+          </div>
+          <div>
+            <span class="text-white font-bold text-lg">100%</span>
+            <span class="text-white/50 text-sm block">Guest-Friendly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 2. HOTEL GRID                                   -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-16 md:py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {hotels.map((hotel, i) => {
+          const d = hotel.data;
+          const heroImg = d.image || fallbackImage;
+          const fullStars = Math.floor(d.rating);
+          const hasHalf = d.rating % 1 >= 0.25 && d.rating % 1 < 0.75;
+          const emptyStars = 5 - fullStars - (hasHalf ? 1 : 0);
+          const colors = priceColors[d.priceRange] || priceColors['mid-range'];
+
+          return (
+            <article
+              class:list={[
+                'reveal bg-surface-card rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 group hover:-translate-y-1',
+                `reveal-delay-${(i % 4) + 1}`,
+              ]}
+            >
+              {/* Image */}
+              <div class="relative h-56 md:h-64 overflow-hidden">
+                <img
+                  src={heroImg}
+                  alt={`${d.name} — ${d.area}, Pattaya`}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+
+                {/* Price Badge */}
+                <div class="absolute top-4 left-4">
+                  <span class:list={['text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase backdrop-blur-md', colors.bg, colors.text]}>
+                    {priceLabels[d.priceRange]}
+                  </span>
+                </div>
+
+                {/* Area Badge */}
+                <div class="absolute top-4 right-4">
+                  <span class="bg-white/90 backdrop-blur-md text-[10px] font-bold px-3 py-1.5 rounded-full text-ink tracking-wide flex items-center gap-1">
+                    <span class="material-symbols-outlined text-xs">location_on</span>
+                    {d.area}
+                  </span>
+                </div>
+              </div>
+
+              {/* Card Body */}
+              <div class="p-6 md:p-7">
+                {/* Name + Rating */}
+                <div class="flex justify-between items-start mb-3">
+                  <h2 class="font-headline font-bold text-xl text-ink group-hover:text-primary transition-colors leading-tight">
+                    {d.name}
+                  </h2>
+                  <div class="flex items-center gap-1.5 shrink-0 ml-4">
+                    <span class="material-symbols-outlined text-amber text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="text-base font-bold text-ink">{d.rating.toFixed(1)}</span>
+                  </div>
+                </div>
+
+                {/* Star Rating Visual */}
+                <div class="flex items-center gap-0.5 mb-4">
+                  {Array.from({ length: fullStars }).map(() => (
+                    <span class="material-symbols-outlined text-amber text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                  ))}
+                  {hasHalf && (
+                    <span class="material-symbols-outlined text-amber text-lg" style="font-variation-settings: 'FILL' 1;">star_half</span>
+                  )}
+                  {Array.from({ length: emptyStars }).map(() => (
+                    <span class="material-symbols-outlined text-surface-high text-lg">star</span>
+                  ))}
+                </div>
+
+                {/* Description */}
+                <p class="text-ink-muted text-sm leading-relaxed mb-5 line-clamp-2">
+                  {d.description}
+                </p>
+
+                {/* Amenity Icons */}
+                {d.amenities.length > 0 && (
+                  <div class="flex flex-wrap gap-2 mb-6 py-3 bg-surface-low rounded-xl px-3">
+                    {d.amenities.slice(0, 5).map((amenity) => (
+                      <span class="flex items-center gap-1 text-ink-muted text-xs" title={amenity}>
+                        <span class="material-symbols-outlined text-base">{amenityIcons[amenity] || 'check_circle'}</span>
+                        <span class="hidden sm:inline">{amenity}</span>
+                      </span>
+                    ))}
+                    {d.amenities.length > 5 && (
+                      <span class="text-ink-muted text-xs font-medium">+{d.amenities.length - 5} more</span>
+                    )}
+                  </div>
+                )}
+
+                {/* Buttons */}
+                <div class="flex items-center gap-3">
+                  <a
+                    href={`/stay/${d.slug}/`}
+                    class="flex-1 text-center border-2 border-primary text-primary px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-primary/5 transition-colors duration-200"
+                  >
+                    Read Review
+                  </a>
+                  {(d.bookingUrl || d.agodaUrl) ? (
+                    <a
+                      href={d.bookingUrl || d.agodaUrl}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      class="flex-1 cta-gradient text-center text-white px-5 py-2.5 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20"
+                    >
+                      Check Price
+                      <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                  ) : (
+                    <a
+                      href={`/stay/${d.slug}/`}
+                      class="flex-1 cta-gradient text-center text-white px-5 py-2.5 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20"
+                    >
+                      Check Price
+                      <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                  )}
+                </div>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 3. TRUST / EEAT SECTION                         -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-14 reveal">
+        <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">Why Trust Our Reviews</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">
+          Every Hotel Personally Visited
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+        <div class="text-center bg-surface rounded-2xl p-8">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-2xl">bed</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink">Real Stays</h3>
+          <p class="text-ink-muted text-sm leading-relaxed">We book and stay at every hotel we review. No desk research or press releases.</p>
+        </div>
+        <div class="text-center bg-surface rounded-2xl p-8">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-2xl">groups</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink">Guest-Friendly Verified</h3>
+          <p class="text-ink-muted text-sm leading-relaxed">Every listed hotel has been confirmed guest-friendly by our team. No surprises at check-in.</p>
+        </div>
+        <div class="text-center bg-surface rounded-2xl p-8">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-2xl">update</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink">Updated Regularly</h3>
+          <p class="text-ink-muted text-sm leading-relaxed">Prices, policies, and conditions change. We revisit and refresh reviews every quarter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 4. NEWSLETTER                                   -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="newsletter" class="relative bg-coral py-20 md:py-24 overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full"></div>
+    <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-white/5 rounded-full"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/[0.03] rounded-full"></div>
+
+    <div class="max-w-2xl mx-auto px-6 text-center relative z-10 reveal">
+      <span class="font-headline text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-4 block">Join the Community</span>
+      <h2 class="text-white text-3xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">
+        Get Pattaya Insider Tips
+      </h2>
+      <p class="text-white/70 text-lg mb-10">
+        Weekly hotel deals, new reviews & hidden gems — straight to your inbox.
+      </p>
+      <form class="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto mb-6">
+        <input
+          type="email"
+          placeholder="Your email address"
+          class="w-full h-14 px-6 rounded-full border-none text-ink bg-white placeholder-ink-muted shadow-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-sm"
+        />
+        <button type="submit" class="w-full sm:w-auto px-8 h-14 rounded-full border-2 border-white text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
+          Subscribe
+        </button>
+      </form>
+      <p class="text-white/50 text-sm flex items-center justify-center gap-1.5">
+        <span class="material-symbols-outlined text-sm">verified</span>
+        Join 5,000+ readers &middot; No spam, ever
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+
+  <!-- Mobile Bottom Nav -->
+  <div class="md:hidden">
+    <div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-[env(safe-area-inset-bottom,8px)] h-16 bg-white/95 backdrop-blur-xl z-50 shadow-[0_-8px_25px_rgba(0,0,0,0.05)]">
+      <a href="/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Home</span>
+      </a>
+      <a href="/stay/" class="flex flex-col items-center justify-center text-primary">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bed</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Stay</span>
+      </a>
+      <a href="/explore/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">explore</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Explore</span>
+      </a>
+      <a href="/nightlife/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">nightlife</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Night</span>
+      </a>
+      <a href="/guides/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">auto_stories</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Journal</span>
+      </a>
+    </div>
+  </div>
+  <div class="h-16 md:hidden"></div>
+</BaseLayout>

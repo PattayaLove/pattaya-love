@@ -1,0 +1,282 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+/* ─── Data ─── */
+const allGuides = await getCollection('guides', ({ data }) => !data.draft);
+const guides = allGuides.sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+
+/* ─── Helpers ─── */
+const categoryLabels: Record<string, string> = {
+  nightlife: 'Nightlife',
+  hotels: 'Hotels',
+  transport: 'Transport',
+  food: 'Food',
+  tips: 'Tips',
+  general: 'General',
+};
+
+const categoryColors: Record<string, { bg: string; text: string }> = {
+  nightlife: { bg: 'bg-primary-light', text: 'text-primary' },
+  hotels: { bg: 'bg-amber/15', text: 'text-amber' },
+  transport: { bg: 'bg-sky-100', text: 'text-sky-700' },
+  food: { bg: 'bg-emerald-100', text: 'text-emerald-700' },
+  tips: { bg: 'bg-violet-100', text: 'text-violet-700' },
+  general: { bg: 'bg-surface-high', text: 'text-ink-secondary' },
+};
+
+const categoryIcons: Record<string, string> = {
+  nightlife: 'nightlife',
+  hotels: 'hotel',
+  transport: 'directions_bus',
+  food: 'restaurant',
+  tips: 'lightbulb',
+  general: 'auto_stories',
+};
+
+const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWWCJBVza_vFSrdCCEPF5puHpjnoff7Yo_ugzNZVFPoHyB4B_6BbAIaRjxcw5a4zeXQN0j_ISxX_HESS-tQ3M-gurlXtkHZGRpW0WTcqdaEPZ2xJoUFU1MCxGuFQi2CeMuKPBQbVEiIfXqQRTdZool5AVZca8AiduzjaSIEW_kZBH4ihhoDZ7Zd3OZ_8Mg8bATHNMbJTEz3nCWkf5V3NtAROCgW-hAwQP-CHggspzOobmwwrBhvvK6EmRyuX2Rzd65Eyck1ZCMy1aM';
+
+/* ─── Reading time estimator ─── */
+function estimateReadingTime(description: string): string {
+  /* Content length isn't available in listing, so estimate from description */
+  const wordCount = description.split(/\s+/).length;
+  const minutes = Math.max(5, Math.ceil(wordCount / 20));
+  return `${minutes} min read`;
+}
+---
+
+<BaseLayout
+  title="Pattaya Guides & Articles"
+  description="Expert travel advice, insider tips, and practical guides for Pattaya. From nightlife to transport — everything you need to know."
+>
+  <Navigation />
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 1. HERO HEADER                                  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <header class="relative w-full pt-32 pb-20 md:pt-40 md:pb-28 bg-navy overflow-hidden grain">
+    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy"></div>
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-xs text-white/50 font-medium">
+          <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+          <li><span class="material-symbols-outlined text-[10px]">chevron_right</span></li>
+          <li class="text-white/80">Guides</li>
+        </ol>
+      </nav>
+
+      <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-primary-light mb-4 block">
+        The Pattaya Journal
+      </span>
+      <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.05] mb-6 max-w-3xl">
+        Pattaya Guides & Articles
+      </h1>
+      <p class="text-white/60 text-lg md:text-xl max-w-2xl leading-relaxed">
+        Expert travel advice, insider tips, and practical guides — written by locals who live it every day.
+      </p>
+
+      <!-- Stats -->
+      <div class="mt-10 flex flex-wrap gap-8">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary-light text-xl">auto_stories</span>
+          </div>
+          <div>
+            <span class="text-white font-bold text-lg">{guides.length}</span>
+            <span class="text-white/50 text-sm block">Articles</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-amber text-xl">trending_up</span>
+          </div>
+          <div>
+            <span class="text-white font-bold text-lg">Updated</span>
+            <span class="text-white/50 text-sm block">For 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 2. GUIDE GRID                                   -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-16 md:py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {guides.map((guide, i) => {
+          const d = guide.data;
+          const heroImg = d.image || fallbackImage;
+          const colors = categoryColors[d.category] || categoryColors['general'];
+          const icon = categoryIcons[d.category] || 'auto_stories';
+          const readTime = estimateReadingTime(d.description);
+          const dateFormatted = d.publishDate.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short',
+          });
+
+          return (
+            <a
+              href={`/guides/${d.slug}/`}
+              class:list={[
+                'reveal group block bg-surface-card rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-1',
+                `reveal-delay-${(i % 3) + 1}`,
+              ]}
+            >
+              {/* Image */}
+              <div class="relative h-48 md:h-52 overflow-hidden bg-surface-low">
+                <img
+                  src={heroImg}
+                  alt={d.title}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+
+                {/* Category Badge */}
+                <div class="absolute top-4 left-4">
+                  <span class:list={['inline-flex items-center gap-1.5 text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase backdrop-blur-md', colors.bg, colors.text]}>
+                    <span class="material-symbols-outlined text-sm">{icon}</span>
+                    {categoryLabels[d.category]}
+                  </span>
+                </div>
+              </div>
+
+              {/* Card Body */}
+              <div class="p-6">
+                {/* Title */}
+                <h2 class="font-headline font-bold text-lg text-ink group-hover:text-primary transition-colors leading-tight mb-3 line-clamp-2">
+                  {d.title}
+                </h2>
+
+                {/* Description */}
+                <p class="text-ink-muted text-sm leading-relaxed mb-5 line-clamp-3">
+                  {d.description}
+                </p>
+
+                {/* Meta Row */}
+                <div class="flex items-center gap-4 pt-4 border-t border-surface-high">
+                  <div class="flex items-center gap-1.5 text-ink-muted">
+                    <span class="material-symbols-outlined text-sm">calendar_today</span>
+                    <span class="text-xs font-medium">{dateFormatted}</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 text-ink-muted">
+                    <span class="material-symbols-outlined text-sm">schedule</span>
+                    <span class="text-xs font-medium">{readTime}</span>
+                  </div>
+                  <span class="material-symbols-outlined text-primary text-lg ml-auto group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                </div>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 3. TRUST / EEAT                                 -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-14 reveal">
+        <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">Editorial Standards</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">
+          Written by People Who Live Here
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+        <div class="text-center bg-surface rounded-2xl p-8">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-2xl">edit_note</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink">Original Research</h3>
+          <p class="text-ink-muted text-sm leading-relaxed">Every guide is based on first-hand experience and on-the-ground reporting by our Pattaya-based team.</p>
+        </div>
+        <div class="text-center bg-surface rounded-2xl p-8">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-2xl">update</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink">Regularly Updated</h3>
+          <p class="text-ink-muted text-sm leading-relaxed">Prices, routes, and recommendations change. We refresh every article to keep it accurate.</p>
+        </div>
+        <div class="text-center bg-surface rounded-2xl p-8">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-2xl">handshake</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink">No Sponsored Fluff</h3>
+          <p class="text-ink-muted text-sm leading-relaxed">Affiliate links exist but never influence our editorial decisions. We recommend what is genuinely good.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 4. NEWSLETTER                                   -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="newsletter" class="relative bg-coral py-20 md:py-24 overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full"></div>
+    <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-white/5 rounded-full"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/[0.03] rounded-full"></div>
+
+    <div class="max-w-2xl mx-auto px-6 text-center relative z-10 reveal">
+      <span class="font-headline text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-4 block">Join the Community</span>
+      <h2 class="text-white text-3xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">
+        Get Pattaya Insider Tips
+      </h2>
+      <p class="text-white/70 text-lg mb-10">
+        New guides, updated articles & hidden gems — straight to your inbox.
+      </p>
+      <form class="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto mb-6">
+        <input
+          type="email"
+          placeholder="Your email address"
+          class="w-full h-14 px-6 rounded-full border-none text-ink bg-white placeholder-ink-muted shadow-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-sm"
+        />
+        <button type="submit" class="w-full sm:w-auto px-8 h-14 rounded-full border-2 border-white text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
+          Subscribe
+        </button>
+      </form>
+      <p class="text-white/50 text-sm flex items-center justify-center gap-1.5">
+        <span class="material-symbols-outlined text-sm">verified</span>
+        Join 5,000+ readers &middot; No spam, ever
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+
+  <!-- Mobile Bottom Nav -->
+  <div class="md:hidden">
+    <div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-[env(safe-area-inset-bottom,8px)] h-16 bg-white/95 backdrop-blur-xl z-50 shadow-[0_-8px_25px_rgba(0,0,0,0.05)]">
+      <a href="/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Home</span>
+      </a>
+      <a href="/stay/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">bed</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Stay</span>
+      </a>
+      <a href="/explore/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">explore</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Explore</span>
+      </a>
+      <a href="/nightlife/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">nightlife</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Night</span>
+      </a>
+      <a href="/guides/" class="flex flex-col items-center justify-center text-primary">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Journal</span>
+      </a>
+    </div>
+  </div>
+  <div class="h-16 md:hidden"></div>
+</BaseLayout>

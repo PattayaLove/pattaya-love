@@ -1,0 +1,364 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection, render } from 'astro:content';
+
+/* ── Fetch all venues, filter drafts ── */
+const allVenues = await getCollection('venues', ({ data }) => !data.draft);
+
+export async function getStaticPaths() {
+  const venues = await getCollection('venues', ({ data }) => !data.draft);
+  return venues.map((venue) => ({
+    params: { slug: venue.data.slug },
+    props: { venue },
+  }));
+}
+
+const { venue } = Astro.props;
+const { Content } = await render(venue);
+
+/* ── Nearby venues: same area, exclude current ── */
+const nearbyVenues = allVenues
+  .filter((v) => v.data.area === venue.data.area && v.data.slug !== venue.data.slug)
+  .slice(0, 3);
+
+/* ── Type labels ── */
+const typeLabels: Record<string, string> = {
+  gogo: 'GoGo Bar',
+  'beer-bar': 'Beer Bar',
+  club: 'Club',
+  restaurant: 'Restaurant',
+  rooftop: 'Rooftop',
+  other: 'Venue',
+};
+
+/* ── Type icons ── */
+const typeIcons: Record<string, string> = {
+  gogo: 'local_bar',
+  'beer-bar': 'sports_bar',
+  club: 'album',
+  restaurant: 'restaurant',
+  rooftop: 'roofing',
+  other: 'nightlife',
+};
+
+/* ── Price level display ── */
+const priceLevelSymbols = (level: number) =>
+  Array.from({ length: 3 }, (_, i) => i < level).map((active) =>
+    active ? 'text-amber' : 'text-white/20'
+  );
+
+/* ── Format publish date ── */
+const publishDate = new Date(venue.data.publishDate).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout
+  title={`${venue.data.name} — Pattaya Nightlife`}
+  description={venue.data.description}
+  image={venue.data.image}
+>
+  <Navigation />
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- HERO — Full-width venue image, dark overlay     -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <header class="relative h-[520px] lg:h-[600px] w-full flex items-end overflow-hidden">
+    {venue.data.image ? (
+      <img
+        src={venue.data.image}
+        alt={venue.data.name}
+        class="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+      />
+    ) : (
+      <div class="absolute inset-0 bg-navy-light"></div>
+    )}
+    <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/70 to-navy/20"></div>
+
+    <div class="relative z-10 w-full max-w-5xl mx-auto px-6 lg:px-8 pb-12 lg:pb-16">
+      <!-- Badges -->
+      <div class="flex flex-wrap items-center gap-3 mb-5">
+        <span class="inline-flex items-center gap-1.5 bg-coral/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+          <span class="material-symbols-outlined text-sm">{typeIcons[venue.data.type] || 'nightlife'}</span>
+          {typeLabels[venue.data.type] || 'Venue'}
+        </span>
+        <span class="inline-flex items-center gap-1.5 glass text-white/90 text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+          <span class="material-symbols-outlined text-sm">location_on</span>
+          {venue.data.area}
+        </span>
+      </div>
+
+      <!-- Venue name -->
+      <h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.05] mb-4">
+        {venue.data.name}
+      </h1>
+      <p class="text-white/60 text-lg max-w-2xl leading-relaxed">
+        {venue.data.description}
+      </p>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- MAIN CONTENT — Dark theme                       -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="bg-navy relative grain">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
+
+      <!-- Quick-Check Box -->
+      <div class="reveal -mt-20 relative z-20 bg-navy-light border border-white/10 rounded-2xl p-6 md:p-8 mb-12 shadow-[0_25px_60px_-12px_rgba(0,0,0,0.5)]">
+        <h2 class="sr-only">Quick Info</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Price Level -->
+          <div class="text-center">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2 block">Price Level</span>
+            <div class="flex items-center justify-center gap-1">
+              {priceLevelSymbols(venue.data.priceLevel).map((colorClass) => (
+                <span class:list={['font-bold text-lg', colorClass]}>&#3647;</span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Opening Hours -->
+          <div class="text-center">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2 block">Opening Hours</span>
+            <div class="flex items-center justify-center gap-2 text-white">
+              <span class="material-symbols-outlined text-coral text-lg">schedule</span>
+              <span class="text-sm font-semibold">{venue.data.openingHours || 'Varies'}</span>
+            </div>
+          </div>
+
+          <!-- Area -->
+          <div class="text-center">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2 block">Area</span>
+            <div class="flex items-center justify-center gap-2 text-white">
+              <span class="material-symbols-outlined text-coral text-lg">map</span>
+              <span class="text-sm font-semibold">{venue.data.area}</span>
+            </div>
+          </div>
+
+          <!-- Vibe -->
+          <div class="text-center">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2 block">Vibe</span>
+            <div class="flex items-center justify-center gap-2 text-white">
+              <span class="material-symbols-outlined text-coral text-lg">music_note</span>
+              <span class="text-sm font-semibold">{typeLabels[venue.data.type] || 'Mixed'}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article body -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
+        <!-- Main content column -->
+        <article class="lg:col-span-2 reveal">
+          <div class="prose prose-invert prose-lg max-w-none
+            prose-headings:font-headline prose-headings:font-bold prose-headings:text-white prose-headings:tracking-tight
+            prose-p:text-white/75 prose-p:leading-relaxed
+            prose-a:text-coral prose-a:no-underline hover:prose-a:underline
+            prose-strong:text-white
+            prose-li:text-white/75
+            prose-blockquote:border-coral prose-blockquote:text-white/60
+            prose-hr:border-white/10">
+            <Content />
+          </div>
+
+          <!-- Published date -->
+          <div class="mt-10 pt-8 border-t border-white/10 flex items-center gap-3 text-white/40 text-sm">
+            <span class="material-symbols-outlined text-lg">calendar_today</span>
+            Published {publishDate}
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="space-y-8">
+          <!-- Google Maps Link -->
+          {venue.data.googleMapsUrl && (
+            <div class="reveal bg-navy-light border border-white/10 rounded-2xl p-6">
+              <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-coral">location_on</span>
+                Location
+              </h3>
+              <div class="aspect-video rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-4 overflow-hidden">
+                <div class="text-center">
+                  <span class="material-symbols-outlined text-4xl text-white/20 mb-2 block">map</span>
+                  <span class="text-white/30 text-xs">Map Preview</span>
+                </div>
+              </div>
+              <a
+                href={venue.data.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white font-bold text-sm py-3 px-5 rounded-xl transition-all duration-300"
+              >
+                <span class="material-symbols-outlined text-lg">open_in_new</span>
+                Open in Google Maps
+              </a>
+            </div>
+          )}
+
+          <!-- Venue Details Card -->
+          <div class="reveal bg-navy-light border border-white/10 rounded-2xl p-6">
+            <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
+              <span class="material-symbols-outlined text-coral">info</span>
+              Venue Details
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-center justify-between text-sm">
+                <span class="text-white/50">Type</span>
+                <span class="text-white font-semibold">{typeLabels[venue.data.type]}</span>
+              </li>
+              <li class="flex items-center justify-between text-sm">
+                <span class="text-white/50">Area</span>
+                <span class="text-white font-semibold">{venue.data.area}</span>
+              </li>
+              <li class="flex items-center justify-between text-sm">
+                <span class="text-white/50">Price Level</span>
+                <span class="text-white font-semibold">
+                  {'$'.repeat(venue.data.priceLevel)} / {'$'.repeat(3)}
+                </span>
+              </li>
+              {venue.data.openingHours && (
+                <li class="flex items-center justify-between text-sm">
+                  <span class="text-white/50">Hours</span>
+                  <span class="text-white font-semibold">{venue.data.openingHours}</span>
+                </li>
+              )}
+            </ul>
+          </div>
+
+          <!-- Author Box -->
+          <div class="reveal bg-navy-light border border-white/10 rounded-2xl p-6">
+            <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
+              <span class="material-symbols-outlined text-coral">person</span>
+              About the Author
+            </h3>
+            <div class="flex items-center gap-4 mb-3">
+              <div class="w-12 h-12 rounded-full bg-coral/20 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-coral text-xl">face</span>
+              </div>
+              <div>
+                <p class="text-white font-bold text-sm">pattaya.love Team</p>
+                <p class="text-white/40 text-xs">Local Nightlife Experts</p>
+              </div>
+            </div>
+            <p class="text-white/50 text-sm leading-relaxed">
+              Written by expats who live in Pattaya and visit venues regularly. Real insights from the ground.
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════ -->
+      <!-- NEARBY VENUES                                   -->
+      <!-- ═══════════════════════════════════════════════ -->
+      {nearbyVenues.length > 0 && (
+        <section class="mt-16 pt-16 border-t border-white/10 reveal">
+          <div class="flex items-center justify-between mb-10">
+            <div>
+              <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-coral mb-2 block">
+                Explore More
+              </span>
+              <h2 class="font-headline text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+                Nearby in {venue.data.area}
+              </h2>
+            </div>
+            <a
+              href="/nightlife/"
+              class="group hidden sm:flex items-center gap-2 text-coral font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300"
+            >
+              All Venues
+              <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {nearbyVenues.map((v, i) => (
+              <a
+                href={`/nightlife/${v.data.slug}/`}
+                class:list={[
+                  'group bg-navy-light border border-white/10 rounded-2xl overflow-hidden hover:border-coral/30 transition-all duration-500 hover:-translate-y-1',
+                  `reveal-delay-${i + 1}`,
+                ]}
+              >
+                <div class="relative h-44 overflow-hidden">
+                  {v.data.image ? (
+                    <img
+                      src={v.data.image}
+                      alt={v.data.name}
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div class="w-full h-full bg-white/5 flex items-center justify-center">
+                      <span class="material-symbols-outlined text-4xl text-white/10">nightlife</span>
+                    </div>
+                  )}
+                  <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+                  <span class="absolute top-3 left-3 bg-coral/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                    {typeLabels[v.data.type]}
+                  </span>
+                </div>
+                <div class="p-5">
+                  <h3 class="font-headline font-bold text-white text-base mb-1 group-hover:text-coral transition-colors duration-300">
+                    {v.data.name}
+                  </h3>
+                  <p class="text-white/40 text-sm line-clamp-2">{v.data.description}</p>
+                  <div class="flex items-center gap-3 mt-3 text-white/30 text-xs">
+                    <span class="flex items-center gap-1">
+                      <span class="material-symbols-outlined text-sm">schedule</span>
+                      {v.data.openingHours || 'Varies'}
+                    </span>
+                    <span class="flex items-center gap-1">
+                      <span class="material-symbols-outlined text-sm">payments</span>
+                      {'$'.repeat(v.data.priceLevel)}
+                    </span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- NEWSLETTER — Coral accent                       -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="newsletter" class="relative bg-coral py-24 md:py-28 overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full"></div>
+    <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-white/5 rounded-full"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/[0.03] rounded-full"></div>
+
+    <div class="max-w-2xl mx-auto px-6 text-center relative z-10 reveal">
+      <span class="font-headline text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-4 block">Join the Community</span>
+      <h2 class="text-white text-3xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">
+        Get Pattaya Nightlife Updates
+      </h2>
+      <p class="text-white/70 text-lg mb-10">
+        New venue reviews, weekly deals & insider tips — straight to your inbox.
+      </p>
+      <form class="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto mb-6">
+        <input
+          type="email"
+          placeholder="Your email address"
+          class="w-full h-14 px-6 rounded-full border-none text-ink bg-white placeholder-ink-muted shadow-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-sm"
+        />
+        <button type="submit" class="w-full sm:w-auto px-8 h-14 rounded-full border-2 border-white text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
+          Subscribe
+        </button>
+      </form>
+      <p class="text-white/50 text-sm flex items-center justify-center gap-1.5">
+        <span class="material-symbols-outlined text-sm">verified</span>
+        Join 5,000+ readers &middot; No spam, ever
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,289 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+/* ─── Data ─── */
+const allAreas = await getCollection('areas', ({ data }) => !data.draft);
+const areas = allAreas.sort((a, b) => a.data.publishDate.getTime() - b.data.publishDate.getTime());
+
+const allHotels = await getCollection('hotels', ({ data }) => !data.draft);
+const allVenues = await getCollection('venues', ({ data }) => !data.draft);
+
+/* ─── Count venues/hotels per area ─── */
+function countByArea(collection: typeof allHotels | typeof allVenues, areaName: string): number {
+  return collection.filter((item) => item.data.area === areaName).length;
+}
+
+/* ─── Fallback images per area ─── */
+const areaImages: Record<string, string> = {
+  'Walking Street': 'https://lh3.googleusercontent.com/aida-public/AB6AXuA3DBs44U4_s2kcV9pFwyeejIbkyNK3D6CL6sSkGEcMhSiqx-pM3Jimzjc7Bei-ll5Xf3ta3ZOSU3abl5YliP_uI__-OHF103rHDZAp9xLNIF0s-VwyESOBDulW-1MRz1Z3WR7eaOwoam_CKn1t42m-A2m_3GkIA3veb4seJsmoWTsM5DcveWhmx9evILhn-KgY7zJmULM8kW1nRJ8tscqBVlHjdngy7XPF_dy-tuq1hD4SOPpry1gCPq0mhp1seIV7TaKaXXwR5mg',
+  'Soi 6': 'https://lh3.googleusercontent.com/aida-public/AB6AXuCyy5-iMCILIezmqzHnFMTYMJYuRhHmW9ODAes7Q_ArSmfrr_k41xUHSLPhuFbLH7DFdcONhWxsLRqjVGOcH66KO6No6TSPMc8ng2NpbxzT6iQJToz2nJ8tDmySzekOVs9NXpIwC3Nn3IeU8cS8aMrknvn-baG8H6yXzWkV1QM5tcChCagEpKqtnfbcVnaFtwWqU4AdmMcpkUfBcHk1fustb2PVKbi-rBlfPBKgzsbPaf3F6k6GbvRcLnL-pMdxv9HtZDIASrgV9-8',
+  'Jomtien Beach': 'https://lh3.googleusercontent.com/aida-public/AB6AXuA2M4cUp2_g1fTiJ7V412y3P_ZoC-VDeL9VQfF7xH_kwGauFHFp2XVqbKtrai7G6LMfZ_QofxsxdQ1p_lDTEuTjrLb192OO7y_sfpXkkOqCbOSgZXbQasXKUNVkT_yjeWUfW4d5SIvgU1UxZ-UwucwXkT-x96FJJrkGhKqGbBu2slbn2Dya4pDvvql5NlTQb_lfxqb6YOXPDU1FfYlDX4dWvt-Adi8GYQS2TEEVsMWI7GSGuYmWl5Q_Uvg-NorEebC4M4Dj-J3UCfE',
+};
+
+const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuBvHoa1cK_a65AzY6x8vDPrKkyrJYuKQz-bvkZOOF5LQ-ZFAwXoFzJmpOOpRHstlrxFG6rFxKJPuNarpYPIm55ZhkarYsVocbw_Q7bmlYy1bpb-Pr2IYSJGJ0dv5vBQlwZnv9ZoJH-VlOKzC4hqGvvWAccYQrivilaUvKKSvTU2FRdnSV2mmWLuwezQPs7r9Clqbg76htuaEHI7sGwL5phpgeCBCtMw37Wty9nMI82HyFIdiVTAQeiWp8Gf2UslURqVKL6DpQG_LuY';
+---
+
+<BaseLayout
+  title="Explore Pattaya by Area"
+  description="Each Pattaya neighborhood has its own character. Explore Walking Street, Soi 6, Jomtien, and more — with venues, hotels, and local tips for each area."
+>
+  <Navigation />
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 1. HERO HEADER                                  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <header class="relative w-full pt-32 pb-20 md:pt-40 md:pb-28 bg-navy overflow-hidden grain">
+    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy"></div>
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-xs text-white/50 font-medium">
+          <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+          <li><span class="material-symbols-outlined text-[10px]">chevron_right</span></li>
+          <li class="text-white/80">Areas</li>
+        </ol>
+      </nav>
+
+      <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-primary-light mb-4 block">
+        Neighborhood Guide
+      </span>
+      <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.05] mb-6 max-w-3xl">
+        Explore Pattaya by Area
+      </h1>
+      <p class="text-white/60 text-lg md:text-xl max-w-2xl leading-relaxed">
+        Each neighborhood has its own character — from the neon energy of Walking Street to the relaxed shores of Jomtien.
+      </p>
+
+      <!-- Stats -->
+      <div class="mt-10 flex flex-wrap gap-8">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary-light text-xl">map</span>
+          </div>
+          <div>
+            <span class="text-white font-bold text-lg">{areas.length}</span>
+            <span class="text-white/50 text-sm block">Areas Covered</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-amber text-xl">nightlife</span>
+          </div>
+          <div>
+            <span class="text-white font-bold text-lg">{allVenues.length}</span>
+            <span class="text-white/50 text-sm block">Venues</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary-light text-xl">hotel</span>
+          </div>
+          <div>
+            <span class="text-white font-bold text-lg">{allHotels.length}</span>
+            <span class="text-white/50 text-sm block">Hotels</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 2. AREA CARDS — Horizontal layout               -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-16 md:py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="space-y-8">
+        {areas.map((area, i) => {
+          const d = area.data;
+          const heroImg = d.image || areaImages[d.name] || fallbackImage;
+          const venueCount = countByArea(allVenues, d.name);
+          const hotelCount = countByArea(allHotels, d.name);
+
+          return (
+            <article
+              class:list={[
+                'reveal bg-surface-card rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 group',
+                `reveal-delay-${(i % 3) + 1}`,
+              ]}
+            >
+              <div class="grid grid-cols-1 lg:grid-cols-2">
+                {/* Image */}
+                <div class="relative h-64 md:h-72 lg:h-full lg:min-h-[320px] overflow-hidden">
+                  <img
+                    src={heroImg}
+                    alt={`${d.name} — Pattaya`}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-black/10"></div>
+
+                  {/* Area name overlay on mobile */}
+                  <div class="absolute bottom-4 left-4 lg:hidden">
+                    <span class="bg-white/90 backdrop-blur-md text-ink font-headline font-bold text-sm px-4 py-2 rounded-full">
+                      {d.name}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div class="p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                  {/* Area label */}
+                  <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">
+                    Area Guide
+                  </span>
+
+                  <h2 class="font-headline text-2xl md:text-3xl font-extrabold text-ink tracking-tight mb-4 group-hover:text-primary transition-colors">
+                    {d.name}
+                  </h2>
+
+                  <p class="text-ink-secondary text-base leading-relaxed mb-8 line-clamp-3">
+                    {d.description}
+                  </p>
+
+                  {/* Stats */}
+                  <div class="flex flex-wrap gap-6 mb-8">
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary text-lg">nightlife</span>
+                      </div>
+                      <div>
+                        <span class="font-bold text-ink text-lg">{venueCount}</span>
+                        <span class="text-ink-muted text-sm block">{venueCount === 1 ? 'Venue' : 'Venues'}</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-xl bg-amber/10 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-amber text-lg">hotel</span>
+                      </div>
+                      <div>
+                        <span class="font-bold text-ink text-lg">{hotelCount}</span>
+                        <span class="text-ink-muted text-sm block">{hotelCount === 1 ? 'Hotel' : 'Hotels'}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* CTA */}
+                  <a
+                    href={`/areas/${d.slug}/`}
+                    class="inline-flex items-center gap-2 cta-gradient text-white px-7 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform duration-200 shadow-md shadow-primary/20 self-start"
+                  >
+                    Explore {d.name}
+                    <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 3. CTA SECTION                                  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-20 md:py-24">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-14 reveal">
+        <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">Not Sure Where to Start?</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink mb-4">
+          Let Us Help You Choose
+        </h2>
+        <p class="text-ink-secondary text-lg max-w-2xl mx-auto leading-relaxed">
+          Each area serves a different purpose. Whether you want nightlife, beaches, or a quiet base, our guides break it down.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+        <a href="/stay/" class="text-center bg-surface rounded-2xl p-8 hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500 group">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+            <span class="material-symbols-outlined text-primary text-2xl">bed</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink group-hover:text-primary transition-colors">Find a Hotel</h3>
+          <p class="text-ink-muted text-sm leading-relaxed">Browse our handpicked selection of guest-friendly hotels across all areas.</p>
+        </a>
+        <a href="/nightlife/" class="text-center bg-surface rounded-2xl p-8 hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500 group">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+            <span class="material-symbols-outlined text-primary text-2xl">nightlife</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink group-hover:text-primary transition-colors">Explore Nightlife</h3>
+          <p class="text-ink-muted text-sm leading-relaxed">GoGo bars, clubs, rooftop bars — see all venues with real prices and reviews.</p>
+        </a>
+        <a href="/guides/" class="text-center bg-surface rounded-2xl p-8 hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500 group">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+            <span class="material-symbols-outlined text-primary text-2xl">auto_stories</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-ink group-hover:text-primary transition-colors">Read Guides</h3>
+          <p class="text-ink-muted text-sm leading-relaxed">In-depth articles on transport, money, safety, and everything else you need.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 4. NEWSLETTER                                   -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="newsletter" class="relative bg-coral py-20 md:py-24 overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full"></div>
+    <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-white/5 rounded-full"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/[0.03] rounded-full"></div>
+
+    <div class="max-w-2xl mx-auto px-6 text-center relative z-10 reveal">
+      <span class="font-headline text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-4 block">Join the Community</span>
+      <h2 class="text-white text-3xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">
+        Get Pattaya Insider Tips
+      </h2>
+      <p class="text-white/70 text-lg mb-10">
+        Area guides, new venues & local secrets — straight to your inbox.
+      </p>
+      <form class="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto mb-6">
+        <input
+          type="email"
+          placeholder="Your email address"
+          class="w-full h-14 px-6 rounded-full border-none text-ink bg-white placeholder-ink-muted shadow-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-sm"
+        />
+        <button type="submit" class="w-full sm:w-auto px-8 h-14 rounded-full border-2 border-white text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
+          Subscribe
+        </button>
+      </form>
+      <p class="text-white/50 text-sm flex items-center justify-center gap-1.5">
+        <span class="material-symbols-outlined text-sm">verified</span>
+        Join 5,000+ readers &middot; No spam, ever
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+
+  <!-- Mobile Bottom Nav -->
+  <div class="md:hidden">
+    <div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-[env(safe-area-inset-bottom,8px)] h-16 bg-white/95 backdrop-blur-xl z-50 shadow-[0_-8px_25px_rgba(0,0,0,0.05)]">
+      <a href="/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Home</span>
+      </a>
+      <a href="/stay/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">bed</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Stay</span>
+      </a>
+      <a href="/explore/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">explore</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Explore</span>
+      </a>
+      <a href="/nightlife/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">nightlife</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Night</span>
+      </a>
+      <a href="/guides/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">auto_stories</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Journal</span>
+      </a>
+    </div>
+  </div>
+  <div class="h-16 md:hidden"></div>
+</BaseLayout>

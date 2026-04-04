@@ -1,0 +1,491 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection, render } from 'astro:content';
+
+/* ── Fetch all collections, filter drafts ── */
+const allAreas = await getCollection('areas', ({ data }) => !data.draft);
+const allVenues = await getCollection('venues', ({ data }) => !data.draft);
+const allHotels = await getCollection('hotels', ({ data }) => !data.draft);
+const allGuides = await getCollection('guides', ({ data }) => !data.draft);
+
+export async function getStaticPaths() {
+  const areas = await getCollection('areas', ({ data }) => !data.draft);
+  return areas.map((area) => ({
+    params: { slug: area.data.slug },
+    props: { area },
+  }));
+}
+
+const { area } = Astro.props;
+const { Content } = await render(area);
+
+/* ── Venues in this area ── */
+const areaVenues = allVenues.filter((v) => v.data.area === area.data.name);
+
+/* ── Hotels in this area ── */
+const areaHotels = allHotels.filter((h) => h.data.area === area.data.name);
+
+/* ── Related guides: title or description mentions area name ── */
+const areaNameLower = area.data.name.toLowerCase();
+const relatedGuides = allGuides.filter(
+  (g) =>
+    g.data.title.toLowerCase().includes(areaNameLower) ||
+    g.data.description.toLowerCase().includes(areaNameLower)
+);
+
+/* ── Type labels for venue cards ── */
+const typeLabels: Record<string, string> = {
+  gogo: 'GoGo Bar',
+  'beer-bar': 'Beer Bar',
+  club: 'Club',
+  restaurant: 'Restaurant',
+  rooftop: 'Rooftop',
+  other: 'Venue',
+};
+
+/* ── Price range labels for hotel cards ── */
+const priceLabels: Record<string, string> = {
+  budget: 'Budget',
+  'mid-range': 'Mid-Range',
+  luxury: 'Luxury',
+};
+
+/* ── Category icons for guide cards ── */
+const categoryIcons: Record<string, string> = {
+  nightlife: 'nightlife',
+  hotels: 'hotel',
+  transport: 'directions_car',
+  food: 'restaurant',
+  tips: 'lightbulb',
+  general: 'auto_stories',
+};
+
+/* ── Format publish date ── */
+const publishDate = new Date(area.data.publishDate).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout
+  title={`${area.data.name} — Pattaya Area Guide`}
+  description={area.data.description}
+  image={area.data.image}
+>
+  <Navigation />
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- HERO — Full-width area photo                    -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <header class="relative h-[520px] lg:h-[600px] w-full flex items-end overflow-hidden">
+    {area.data.image ? (
+      <img
+        src={area.data.image}
+        alt={area.data.name}
+        class="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+      />
+    ) : (
+      <div class="absolute inset-0 bg-gradient-to-br from-navy to-navy-light"></div>
+    )}
+    <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-navy/10"></div>
+
+    <div class="relative z-10 w-full max-w-5xl mx-auto px-6 lg:px-8 pb-12 lg:pb-16">
+      <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-primary-light mb-4 block">
+        Area Guide
+      </span>
+      <h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.05] mb-4">
+        {area.data.name}
+      </h1>
+      <p class="text-white/65 text-lg max-w-2xl leading-relaxed mb-8">
+        {area.data.description}
+      </p>
+
+      <!-- Stats bar -->
+      <div class="flex flex-wrap items-center gap-6 text-white/80">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-coral text-lg">nightlife</span>
+          <span class="text-sm font-semibold">{areaVenues.length} Venue{areaVenues.length !== 1 && 's'}</span>
+        </div>
+        <div class="h-4 w-px bg-white/20"></div>
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-coral text-lg">hotel</span>
+          <span class="text-sm font-semibold">{areaHotels.length} Hotel{areaHotels.length !== 1 && 's'}</span>
+        </div>
+        <div class="h-4 w-px bg-white/20"></div>
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-coral text-lg">auto_stories</span>
+          <span class="text-sm font-semibold">{relatedGuides.length} Guide{relatedGuides.length !== 1 && 's'}</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ARTICLE BODY                                    -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="bg-surface-card">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
+      <article class="reveal prose prose-lg max-w-none
+        prose-headings:font-headline prose-headings:font-bold prose-headings:text-ink prose-headings:tracking-tight
+        prose-p:text-ink-secondary prose-p:leading-relaxed
+        prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+        prose-strong:text-ink
+        prose-li:text-ink-secondary
+        prose-blockquote:border-primary prose-blockquote:text-ink-muted
+        prose-hr:border-surface-high">
+        <Content />
+      </article>
+
+      <!-- Published date -->
+      <div class="mt-10 pt-8 border-t border-surface-high flex items-center gap-3 text-ink-muted text-sm">
+        <span class="material-symbols-outlined text-lg">calendar_today</span>
+        Published {publishDate}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- VENUE LISTINGS                                  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  {areaVenues.length > 0 && (
+    <section class="bg-surface py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4 reveal">
+          <div>
+            <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">
+              Nightlife & Dining
+            </span>
+            <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">
+              Venues in {area.data.name}
+            </h2>
+          </div>
+          <a
+            href="/nightlife/"
+            class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300"
+          >
+            All Venues
+            <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {areaVenues.map((v, i) => (
+            <a
+              href={`/nightlife/${v.data.slug}/`}
+              class:list={[
+                'reveal group bg-surface-card rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-1 flex flex-col sm:flex-row',
+                `reveal-delay-${(i % 4) + 1}`,
+              ]}
+            >
+              <div class="relative w-full sm:w-48 h-48 sm:h-auto shrink-0 overflow-hidden">
+                {v.data.image ? (
+                  <img
+                    src={v.data.image}
+                    alt={v.data.name}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div class="w-full h-full bg-surface-low flex items-center justify-center">
+                    <span class="material-symbols-outlined text-4xl text-ink-faint">nightlife</span>
+                  </div>
+                )}
+                <span class="absolute top-3 left-3 bg-primary/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                  {typeLabels[v.data.type]}
+                </span>
+              </div>
+              <div class="p-6 flex flex-col justify-center">
+                <h3 class="font-headline font-bold text-ink text-lg mb-2 group-hover:text-primary transition-colors duration-300">
+                  {v.data.name}
+                </h3>
+                <p class="text-ink-muted text-sm line-clamp-2 mb-4">{v.data.description}</p>
+                <div class="flex items-center gap-4 text-ink-faint text-xs">
+                  {v.data.openingHours && (
+                    <span class="flex items-center gap-1">
+                      <span class="material-symbols-outlined text-sm">schedule</span>
+                      {v.data.openingHours}
+                    </span>
+                  )}
+                  <span class="flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">payments</span>
+                    {'$'.repeat(v.data.priceLevel)} / {'$'.repeat(3)}
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- HOTEL LISTINGS — Horizontal scroll              -->
+  <!-- ═══════════════════════════════════════════════ -->
+  {areaHotels.length > 0 && (
+    <section class="bg-surface-card py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4 reveal">
+          <div>
+            <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">
+              Where to Stay
+            </span>
+            <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">
+              Hotels in {area.data.name}
+            </h2>
+          </div>
+          <a
+            href="/stay/"
+            class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300"
+          >
+            All Hotels
+            <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+          </a>
+        </div>
+
+        <div class="flex gap-6 overflow-x-auto pb-4 -mx-6 px-6 snap-x snap-mandatory scrollbar-hide reveal">
+          {areaHotels.map((h, i) => (
+            <div
+              class:list={[
+                'snap-start shrink-0 w-[300px] md:w-[340px] bg-surface rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 group hover:-translate-y-1',
+                `reveal-delay-${(i % 4) + 1}`,
+              ]}
+            >
+              <div class="relative h-48 overflow-hidden">
+                {h.data.image ? (
+                  <img
+                    src={h.data.image}
+                    alt={h.data.name}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div class="w-full h-full bg-surface-low flex items-center justify-center">
+                    <span class="material-symbols-outlined text-4xl text-ink-faint">hotel</span>
+                  </div>
+                )}
+                <div class="absolute top-3 left-3">
+                  <span class="bg-white/90 backdrop-blur-md text-[10px] font-bold px-3 py-1.5 rounded-full text-primary tracking-widest uppercase">
+                    {priceLabels[h.data.priceRange]}
+                  </span>
+                </div>
+                <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1">
+                  <span class="material-symbols-outlined text-amber text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="text-xs font-bold text-ink">{h.data.rating}</span>
+                </div>
+              </div>
+              <div class="p-5">
+                <h3 class="font-headline font-bold text-ink text-base mb-1 group-hover:text-primary transition-colors duration-300">
+                  {h.data.name}
+                </h3>
+                <p class="text-ink-muted text-sm line-clamp-2 mb-4">{h.data.description}</p>
+                {h.data.amenities.length > 0 && (
+                  <div class="flex flex-wrap gap-1.5 mb-4">
+                    {h.data.amenities.slice(0, 4).map((amenity) => (
+                      <span class="bg-surface-low text-ink-muted text-[10px] font-semibold px-2.5 py-1 rounded-lg">
+                        {amenity}
+                      </span>
+                    ))}
+                    {h.data.amenities.length > 4 && (
+                      <span class="bg-surface-low text-ink-faint text-[10px] font-semibold px-2.5 py-1 rounded-lg">
+                        +{h.data.amenities.length - 4}
+                      </span>
+                    )}
+                  </div>
+                )}
+                {(h.data.bookingUrl || h.data.agodaUrl) && (
+                  <div class="flex gap-2">
+                    {h.data.bookingUrl && (
+                      <a
+                        href={h.data.bookingUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex-1 cta-gradient text-center text-white text-xs font-bold py-2.5 rounded-xl hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20"
+                      >
+                        Book Now
+                      </a>
+                    )}
+                    {h.data.agodaUrl && (
+                      <a
+                        href={h.data.agodaUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex-1 bg-surface-low text-center text-ink-secondary text-xs font-bold py-2.5 rounded-xl hover:bg-surface-high transition-colors"
+                      >
+                        Agoda
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- RELATED GUIDES                                  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  {relatedGuides.length > 0 && (
+    <section class="bg-surface py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4 reveal">
+          <div>
+            <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">
+              Further Reading
+            </span>
+            <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">
+              Guides for {area.data.name}
+            </h2>
+          </div>
+          <a
+            href="/guides/"
+            class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300"
+          >
+            All Guides
+            <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {relatedGuides.map((g, i) => (
+            <a
+              href={`/guides/${g.data.slug}/`}
+              class:list={[
+                'reveal group bg-surface-card rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-1',
+                `reveal-delay-${(i % 3) + 1}`,
+              ]}
+            >
+              <div class="relative h-48 overflow-hidden">
+                {g.data.image ? (
+                  <img
+                    src={g.data.image}
+                    alt={g.data.title}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div class="w-full h-full bg-surface-low flex items-center justify-center">
+                    <span class="material-symbols-outlined text-4xl text-ink-faint">auto_stories</span>
+                  </div>
+                )}
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-primary bg-primary-light px-3 py-1.5 rounded-full">
+                    <span class="material-symbols-outlined text-xs">{categoryIcons[g.data.category] || 'auto_stories'}</span>
+                    {g.data.category}
+                  </span>
+                </div>
+                <h3 class="font-headline font-bold text-ink text-lg mb-2 leading-snug group-hover:text-primary transition-colors duration-300">
+                  {g.data.title}
+                </h3>
+                <p class="text-ink-muted text-sm line-clamp-2">{g.data.description}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- INSIDER TIPS — Coral accent card                -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="bg-surface-card py-16 lg:py-20">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 reveal">
+      <div class="relative bg-coral rounded-3xl p-8 md:p-12 overflow-hidden">
+        <div class="absolute -top-12 -right-12 w-48 h-48 bg-white/5 rounded-full"></div>
+        <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-white/5 rounded-full"></div>
+
+        <div class="relative z-10">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-white text-2xl">tips_and_updates</span>
+            <h2 class="font-headline text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+              Insider Tips for {area.data.name}
+            </h2>
+          </div>
+
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-white/80 text-lg mt-0.5 shrink-0">check_circle</span>
+              <p class="text-white/85 text-sm md:text-base leading-relaxed">
+                Visit on weekday evenings for smaller crowds and better conversations with staff and locals.
+              </p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-white/80 text-lg mt-0.5 shrink-0">check_circle</span>
+              <p class="text-white/85 text-sm md:text-base leading-relaxed">
+                Download Grab or Bolt before you go -- getting a fair taxi fare in Pattaya can be challenging without ride-hailing apps.
+              </p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-white/80 text-lg mt-0.5 shrink-0">check_circle</span>
+              <p class="text-white/85 text-sm md:text-base leading-relaxed">
+                Ask your hotel front desk for the latest recommendations -- venues open and close frequently.
+              </p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-white/80 text-lg mt-0.5 shrink-0">check_circle</span>
+              <p class="text-white/85 text-sm md:text-base leading-relaxed">
+                Carry cash for smaller venues and street vendors. Most larger establishments accept cards and QR payments.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- NEWSLETTER — Coral accent                       -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="newsletter" class="relative bg-coral py-24 md:py-28 overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full"></div>
+    <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-white/5 rounded-full"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/[0.03] rounded-full"></div>
+
+    <div class="max-w-2xl mx-auto px-6 text-center relative z-10 reveal">
+      <span class="font-headline text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-4 block">Join the Community</span>
+      <h2 class="text-white text-3xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">
+        Get {area.data.name} Updates
+      </h2>
+      <p class="text-white/70 text-lg mb-10">
+        New venue reviews, hotel deals & insider tips for {area.data.name} — straight to your inbox.
+      </p>
+      <form class="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto mb-6">
+        <input
+          type="email"
+          placeholder="Your email address"
+          class="w-full h-14 px-6 rounded-full border-none text-ink bg-white placeholder-ink-muted shadow-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-sm"
+        />
+        <button type="submit" class="w-full sm:w-auto px-8 h-14 rounded-full border-2 border-white text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
+          Subscribe
+        </button>
+      </form>
+      <p class="text-white/50 text-sm flex items-center justify-center gap-1.5">
+        <span class="material-symbols-outlined text-sm">verified</span>
+        Join 5,000+ readers &middot; No spam, ever
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Hide scrollbar for horizontal scroll */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+</style>

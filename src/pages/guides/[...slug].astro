@@ -1,0 +1,696 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection, render } from 'astro:content';
+
+/* ── Static paths ── */
+export async function getStaticPaths() {
+  const allGuides = await getCollection('guides', ({ data }) => !data.draft);
+  return allGuides.map((guide) => ({
+    params: { slug: guide.data.slug },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+
+/* ── Helpers ── */
+const wordCount = guide.body ? guide.body.split(/\s+/).length : 0;
+const readingTime = Math.max(1, Math.round(wordCount / 200));
+
+const categoryLabels: Record<string, string> = {
+  nightlife: 'Nightlife',
+  hotels: 'Hotels',
+  transport: 'Transport',
+  food: 'Food & Dining',
+  tips: 'Tips & Advice',
+  general: 'General',
+};
+
+const categoryColors: Record<string, string> = {
+  nightlife: 'bg-primary text-white',
+  hotels: 'bg-amber text-ink',
+  transport: 'bg-ink text-white',
+  food: 'bg-coral text-white',
+  tips: 'bg-primary text-white',
+  general: 'bg-primary text-white',
+};
+
+const formatDate = (date: Date) =>
+  date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+/* ── Extract h2 headings from raw markdown for ToC ── */
+const headings: { text: string; id: string }[] = [];
+if (guide.body) {
+  const h2Regex = /^##\s+(.+)$/gm;
+  let match: RegExpExecArray | null;
+  while ((match = h2Regex.exec(guide.body)) !== null) {
+    const text = match[1].trim();
+    const id = text
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-');
+    headings.push({ text, id });
+  }
+}
+
+/* ── Related articles (same category, exclude current) ── */
+const allGuides = await getCollection('guides', ({ data }) => !data.draft);
+const relatedArticles = allGuides
+  .filter((g) => g.data.category === guide.data.category && g.data.slug !== guide.data.slug)
+  .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime())
+  .slice(0, 3);
+
+// If not enough from same category, backfill with recent from other categories
+const backfill = relatedArticles.length < 3
+  ? allGuides
+      .filter((g) => g.data.slug !== guide.data.slug && !relatedArticles.some((r) => r.data.slug === g.data.slug))
+      .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime())
+      .slice(0, 3 - relatedArticles.length)
+  : [];
+const displayRelated = [...relatedArticles, ...backfill];
+---
+
+<BaseLayout
+  title={guide.data.title}
+  description={guide.data.description}
+  image={guide.data.image}
+>
+  <Navigation />
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ARTICLE HEADER                                  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <header class="relative pt-32 pb-12 md:pt-40 md:pb-16 bg-surface">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-xs text-ink-muted mb-8 flex-wrap" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-primary transition-colors duration-200">Home</a>
+        <span class="material-symbols-outlined text-[14px] text-ink-faint">chevron_right</span>
+        <a href="/guides/" class="hover:text-primary transition-colors duration-200">Guides</a>
+        <span class="material-symbols-outlined text-[14px] text-ink-faint">chevron_right</span>
+        <span class="text-ink-secondary font-medium">{categoryLabels[guide.data.category]}</span>
+      </nav>
+
+      <!-- Category badge -->
+      <span class:list={[
+        'inline-block text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1.5 rounded-full mb-6',
+        categoryColors[guide.data.category] || 'bg-primary text-white',
+      ]}>
+        {categoryLabels[guide.data.category]}
+      </span>
+
+      <!-- Title -->
+      <h1 class="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-ink leading-[1.1] mb-6">
+        {guide.data.title}
+      </h1>
+
+      <!-- Description -->
+      <p class="text-ink-secondary text-lg md:text-xl leading-relaxed max-w-3xl mb-8">
+        {guide.data.description}
+      </p>
+
+      <!-- Meta row -->
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-ink-muted">
+        <span class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-base">calendar_today</span>
+          {formatDate(guide.data.publishDate)}
+        </span>
+        {guide.data.updatedDate && (
+          <span class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-base">update</span>
+            Updated {formatDate(guide.data.updatedDate)}
+          </span>
+        )}
+        <span class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-base">schedule</span>
+          {readingTime} min read
+        </span>
+      </div>
+    </div>
+
+    <!-- Hero image -->
+    {guide.data.image && (
+      <div class="max-w-6xl mx-auto px-6 lg:px-8 mt-10">
+        <div class="aspect-[21/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-[0_25px_60px_-12px_rgba(0,0,0,0.15)]">
+          <img
+            src={guide.data.image}
+            alt={guide.data.title}
+            class="w-full h-full object-cover"
+            loading="eager"
+          />
+        </div>
+      </div>
+    )}
+  </header>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- SCROLL PROGRESS BAR                             -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div id="progress-bar" class="fixed top-0 left-0 h-[3px] bg-primary z-[100] transition-[width] duration-100 ease-linear" style="width: 0%"></div>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ARTICLE BODY with optional ToC sidebar          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12 md:py-16">
+    <div class="flex gap-12 lg:gap-16 relative">
+
+      <!-- Sticky ToC — Desktop sidebar -->
+      {headings.length > 0 && (
+        <aside class="hidden lg:block w-64 shrink-0">
+          <div class="sticky top-28">
+            <h4 class="font-headline text-xs font-bold uppercase tracking-[0.2em] text-ink-muted mb-4">
+              Table of Contents
+            </h4>
+            <nav id="toc-nav" class="space-y-1">
+              {headings.map((h) => (
+                <a
+                  href={`#${h.id}`}
+                  class="toc-link block text-sm text-ink-muted py-1.5 pl-4 border-l-2 border-surface-high hover:text-primary hover:border-primary transition-all duration-200"
+                  data-section={h.id}
+                >
+                  {h.text}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </aside>
+      )}
+
+      <!-- Mobile ToC — Collapsible top -->
+      {headings.length > 0 && (
+        <div class="lg:hidden fixed bottom-20 right-4 z-40 md:bottom-6">
+          <button
+            id="toc-mobile-toggle"
+            class="w-12 h-12 rounded-full bg-primary text-white shadow-lg shadow-primary/30 flex items-center justify-center hover:scale-110 active:scale-95 transition-transform duration-200"
+            aria-label="Table of Contents"
+          >
+            <span class="material-symbols-outlined">toc</span>
+          </button>
+          <div
+            id="toc-mobile-panel"
+            class="absolute bottom-16 right-0 w-72 bg-surface-card rounded-2xl shadow-[0_25px_60px_-12px_rgba(0,0,0,0.2)] p-5 opacity-0 pointer-events-none translate-y-2 transition-all duration-300"
+          >
+            <h4 class="font-headline text-xs font-bold uppercase tracking-[0.2em] text-ink-muted mb-3">
+              Contents
+            </h4>
+            <nav class="space-y-1 max-h-64 overflow-y-auto">
+              {headings.map((h) => (
+                <a
+                  href={`#${h.id}`}
+                  class="toc-link block text-sm text-ink-muted py-1.5 pl-3 border-l-2 border-surface-high hover:text-primary hover:border-primary transition-all duration-200"
+                  data-section={h.id}
+                >
+                  {h.text}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </div>
+      )}
+
+      <!-- Article content column -->
+      <article class="flex-1 min-w-0 max-w-3xl mx-auto">
+        <div class="article-content">
+          <Content />
+        </div>
+
+        <!-- ═══════════════════════════════════════════════ -->
+        <!-- AUTHOR BOX (EEAT)                              -->
+        <!-- ═══════════════════════════════════════════════ -->
+        <div class="mt-16 pt-10 border-t border-surface-high">
+          <div class="flex flex-col sm:flex-row items-start gap-6 bg-surface-low rounded-2xl p-6 md:p-8">
+            <!-- Avatar placeholder -->
+            <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+            </div>
+            <div>
+              <h4 class="font-headline font-bold text-lg text-ink mb-1">
+                Pattaya.love Editorial Team
+              </h4>
+              <p class="text-sm font-medium text-primary mb-3">
+                Local Experts since 2019
+              </p>
+              <p class="text-sm text-ink-muted leading-relaxed">
+                Our team of Pattaya-based writers, photographers, and long-term residents
+                researches every guide on the ground. We visit venues, test routes, and verify
+                every recommendation so you get actionable, up-to-date information you can trust.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- RELATED ARTICLES                                -->
+  <!-- ═══════════════════════════════════════════════ -->
+  {displayRelated.length > 0 && (
+    <section class="py-20 md:py-24 bg-surface">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex items-end justify-between mb-12 reveal">
+          <div>
+            <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">
+              Keep Exploring
+            </span>
+            <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">
+              Continue Reading
+            </h2>
+          </div>
+          <a href="/guides/" class="group hidden sm:flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300">
+            All Guides
+            <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {displayRelated.map((article, i) => (
+            <a
+              href={`/guides/${article.data.slug}/`}
+              class:list={[
+                'reveal group bg-surface-card rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-1 block',
+                `reveal-delay-${i + 1}`,
+              ]}
+            >
+              <div class="relative h-48 overflow-hidden">
+                {article.data.image ? (
+                  <img
+                    src={article.data.image}
+                    alt={article.data.title}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div class="w-full h-full bg-surface-high flex items-center justify-center">
+                    <span class="material-symbols-outlined text-ink-faint text-4xl">auto_stories</span>
+                  </div>
+                )}
+                <div class="absolute top-4 left-4">
+                  <span class:list={[
+                    'text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase',
+                    categoryColors[article.data.category] || 'bg-primary text-white',
+                  ]}>
+                    {categoryLabels[article.data.category]}
+                  </span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-3 mb-3 text-xs text-ink-muted">
+                  <span>{formatDate(article.data.publishDate)}</span>
+                </div>
+                <h3 class="font-headline font-bold text-lg text-ink mb-2 leading-snug group-hover:text-primary transition-colors duration-300">
+                  {article.data.title}
+                </h3>
+                <p class="text-ink-muted text-sm leading-relaxed line-clamp-2">
+                  {article.data.description}
+                </p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- NEWSLETTER CTA                                  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="newsletter" class="relative bg-coral py-24 md:py-28 overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full"></div>
+    <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-white/5 rounded-full"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/[0.03] rounded-full"></div>
+
+    <div class="max-w-2xl mx-auto px-6 text-center relative z-10 reveal">
+      <span class="font-headline text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-4 block">Join the Community</span>
+      <h2 class="text-white text-3xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">
+        Get Pattaya Insider Tips
+      </h2>
+      <p class="text-white/70 text-lg mb-10">
+        Weekly deals, events & hidden gems — straight to your inbox.
+      </p>
+      <form class="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto mb-6">
+        <input
+          type="email"
+          placeholder="Your email address"
+          class="w-full h-14 px-6 rounded-full border-none text-ink bg-white placeholder-ink-muted shadow-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-sm"
+        />
+        <button type="submit" class="w-full sm:w-auto px-8 h-14 rounded-full border-2 border-white text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
+          Subscribe
+        </button>
+      </form>
+      <p class="text-white/50 text-sm flex items-center justify-center gap-1.5">
+        <span class="material-symbols-outlined text-sm">verified</span>
+        Join 5,000+ readers &middot; No spam, ever
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <Footer />
+
+  <!-- Mobile Bottom Nav -->
+  <div class="md:hidden">
+    <div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-[env(safe-area-inset-bottom,8px)] h-16 bg-white/95 backdrop-blur-xl z-50 shadow-[0_-8px_25px_rgba(0,0,0,0.05)]">
+      <a href="/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Home</span>
+      </a>
+      <a href="/stay/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">bed</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Stay</span>
+      </a>
+      <a href="/explore/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">explore</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Explore</span>
+      </a>
+      <a href="/nightlife/" class="flex flex-col items-center justify-center text-ink-muted">
+        <span class="material-symbols-outlined">nightlife</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Night</span>
+      </a>
+      <a href="/guides/" class="flex flex-col items-center justify-center text-primary">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Journal</span>
+      </a>
+    </div>
+  </div>
+  <div class="h-16 md:hidden"></div>
+</BaseLayout>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- ARTICLE TYPOGRAPHY & CUSTOM ELEMENTS            -->
+<!-- ═══════════════════════════════════════════════ -->
+<style>
+  /* ── Article prose styling ── */
+  .article-content :global(h2) {
+    font-family: var(--font-headline);
+    font-weight: 800;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    color: var(--color-ink);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    scroll-margin-top: 6rem;
+  }
+
+  .article-content :global(h3) {
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 1.35rem;
+    line-height: 1.3;
+    color: var(--color-ink);
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
+  }
+
+  .article-content :global(h4) {
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    color: var(--color-ink);
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .article-content :global(p) {
+    color: var(--color-ink-secondary);
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+
+  .article-content :global(a) {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(185, 5, 56, 0.3);
+    transition: text-decoration-color 0.2s;
+  }
+  .article-content :global(a:hover) {
+    text-decoration-color: var(--color-primary);
+  }
+
+  .article-content :global(strong) {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+
+  .article-content :global(ul),
+  .article-content :global(ol) {
+    color: var(--color-ink-secondary);
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .article-content :global(ul) {
+    list-style-type: disc;
+  }
+
+  .article-content :global(ol) {
+    list-style-type: decimal;
+  }
+
+  .article-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .article-content :global(li::marker) {
+    color: var(--color-primary);
+  }
+
+  /* Blockquote → "Pro Tip" callout */
+  .article-content :global(blockquote) {
+    border-left: 4px solid var(--color-primary);
+    background: rgba(185, 5, 56, 0.04);
+    border-radius: 0 0.75rem 0.75rem 0;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    position: relative;
+  }
+  .article-content :global(blockquote::before) {
+    content: "Pro Tip";
+    display: block;
+    font-family: var(--font-headline);
+    font-weight: 800;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+  .article-content :global(blockquote p) {
+    color: var(--color-ink-secondary);
+    font-size: 0.9375rem;
+    margin-bottom: 0;
+  }
+
+  /* Code blocks → "Quick Info" box */
+  .article-content :global(pre) {
+    background: var(--color-surface-low);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: var(--color-ink-secondary);
+  }
+
+  .article-content :global(code) {
+    background: var(--color-surface-low);
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.375rem;
+    font-size: 0.875em;
+    color: var(--color-primary);
+  }
+
+  .article-content :global(pre code) {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    color: inherit;
+  }
+
+  /* Images with captions */
+  .article-content :global(img) {
+    width: 100%;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 30px rgb(0 0 0 / 0.06);
+  }
+
+  .article-content :global(figure) {
+    margin: 2rem 0;
+  }
+
+  .article-content :global(figure img) {
+    margin-bottom: 0.75rem;
+  }
+
+  .article-content :global(figcaption) {
+    text-align: center;
+    font-size: 0.8125rem;
+    color: var(--color-ink-muted);
+    font-style: italic;
+  }
+
+  /* Horizontal rule */
+  .article-content :global(hr) {
+    border: none;
+    height: 1px;
+    background: var(--color-surface-high);
+    margin: 2.5rem 0;
+  }
+
+  /* Table styling */
+  .article-content :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.9375rem;
+  }
+
+  .article-content :global(th) {
+    text-align: left;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-ink-muted);
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid var(--color-surface-high);
+  }
+
+  .article-content :global(td) {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-surface-high);
+    color: var(--color-ink-secondary);
+  }
+
+  .article-content :global(tr:last-child td) {
+    border-bottom: none;
+  }
+
+  /* Active ToC link */
+  .toc-link.active {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    font-weight: 600;
+  }
+</style>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- CLIENT-SIDE SCRIPTS                              -->
+<!-- ═══════════════════════════════════════════════ -->
+<script>
+  /* ── Scroll progress bar ── */
+  const progressBar = document.getElementById('progress-bar');
+  const updateProgress = () => {
+    if (!progressBar) return;
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = `${Math.min(100, progress)}%`;
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  /* ── ToC active section highlighting via IntersectionObserver ── */
+  const tocLinks = document.querySelectorAll<HTMLAnchorElement>('.toc-link');
+  const sectionIds = Array.from(tocLinks).map((link) => link.dataset.section).filter(Boolean) as string[];
+
+  if (sectionIds.length > 0) {
+    const headingElements = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => el !== null);
+
+    let currentActive = '';
+
+    const tocObserver = new IntersectionObserver(
+      (entries) => {
+        // Find the topmost visible heading
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+        if (visible.length > 0) {
+          currentActive = visible[0].target.id;
+        }
+
+        tocLinks.forEach((link) => {
+          if (link.dataset.section === currentActive) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      },
+      {
+        rootMargin: '-80px 0px -70% 0px',
+        threshold: 0,
+      }
+    );
+
+    headingElements.forEach((el) => tocObserver.observe(el));
+  }
+
+  /* ── Mobile ToC toggle ── */
+  const tocToggle = document.getElementById('toc-mobile-toggle');
+  const tocPanel = document.getElementById('toc-mobile-panel');
+
+  if (tocToggle && tocPanel) {
+    let tocOpen = false;
+
+    tocToggle.addEventListener('click', () => {
+      tocOpen = !tocOpen;
+      if (tocOpen) {
+        tocPanel.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+        tocPanel.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+      } else {
+        tocPanel.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+        tocPanel.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+      }
+    });
+
+    // Close panel when a link is clicked
+    tocPanel.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        tocOpen = false;
+        tocPanel.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+        tocPanel.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+      });
+    });
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (tocOpen && !tocToggle.contains(e.target as Node) && !tocPanel.contains(e.target as Node)) {
+        tocOpen = false;
+        tocPanel.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+        tocPanel.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+      }
+    });
+  }
+
+  /* ── Reveal animations (supplement BaseLayout observer for dynamically loaded elements) ── */
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+  );
+  document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+</script>

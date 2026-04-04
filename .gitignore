@@ -25,3 +25,12 @@ pnpm-debug.log*
 
 # old wordpress data / media archive
 _archive/
+
+# stitch design exports
+stitch/
+stitch.zip
+stitch_pattaya_love_lifestyle_guide/
+stitch_pattaya_love_lifestyle_guide.zip
+
+# vercel
+.vercel

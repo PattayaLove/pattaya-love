@@ -1,0 +1,607 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection, render } from 'astro:content';
+
+/* ─── Static Paths ─── */
+export async function getStaticPaths() {
+  const allHotels = await getCollection('hotels', ({ data }) => !data.draft);
+  return allHotels.map((hotel) => ({
+    params: { slug: hotel.data.slug },
+    props: { hotel },
+  }));
+}
+
+/* ─── Props & Data ─── */
+const { hotel } = Astro.props;
+const { data } = hotel;
+const { Content } = await render(hotel);
+
+/* ─── Related Hotels (same area, excluding current) ─── */
+const allHotels = await getCollection('hotels', ({ data: d }) => !d.draft);
+const relatedHotels = allHotels
+  .filter((h) => h.data.area === data.area && h.data.slug !== data.slug)
+  .slice(0, 3);
+
+/* ─── Helpers ─── */
+const priceLabels: Record<string, string> = {
+  budget: 'Budget-Friendly',
+  'mid-range': 'Mid-Range',
+  luxury: 'Luxury',
+};
+
+const priceIcons: Record<string, string> = {
+  budget: '$',
+  'mid-range': '$$',
+  luxury: '$$$',
+};
+
+const amenityIcons: Record<string, string> = {
+  Pool: 'pool',
+  Spa: 'spa',
+  Fitness: 'fitness_center',
+  Restaurant: 'restaurant',
+  Bar: 'local_bar',
+  'Beach Access': 'beach_access',
+  WiFi: 'wifi',
+  Gym: 'fitness_center',
+  Jacuzzi: 'hot_tub',
+  AC: 'ac_unit',
+  Parking: 'local_parking',
+  'Room Service': 'room_service',
+  Laundry: 'local_laundry_service',
+  'Airport Shuttle': 'airport_shuttle',
+};
+
+const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW3kCmlM6PmuZYLGPW-S8fTTsXdj-I6SvEY81Pz4kw6bsL8gZtvAlzeQvMDEdmz0x2c6COj9OyVYbfYDxDdjBxdA21JKsyEgP5lpV1Yu_nj0iq5aIrgj1LXnkUiTZmeL_U9B7Qls6HiF0z83vvVp1gH81uBCEyWLMt9SCmWkSBzGCBbW29GmZcezpnYpVhePAkyjy6aK1PSGpocxwdhGVnxdygc-LPBleOgUSZJLtqUlA7q97vtyYZs_DBvxMfmo-1np0IkGzs';
+const heroImage = data.image || fallbackImage;
+
+const fullStars = Math.floor(data.rating);
+const hasHalfStar = data.rating % 1 >= 0.25 && data.rating % 1 < 0.75;
+const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+
+const publishFormatted = data.publishDate.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout
+  title={`${data.name} Review — Best Hotels in ${data.area}`}
+  description={data.description}
+  image={heroImage}
+>
+  <Navigation />
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 1. HERO                                         -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <header id="hotel-hero" class="relative w-full h-[520px] sm:h-[560px] lg:h-[620px] flex items-end overflow-hidden">
+    <div class="absolute inset-0">
+      <img
+        src={heroImage}
+        alt={`${data.name} — ${data.area}, Pattaya`}
+        class="w-full h-full object-cover"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/50 to-navy/20"></div>
+    </div>
+
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 pb-12 lg:pb-16">
+      <!-- Breadcrumb -->
+      <nav class="mb-6" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-xs text-white/50 font-medium">
+          <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+          <li><span class="material-symbols-outlined text-[10px]">chevron_right</span></li>
+          <li><a href="/stay/" class="hover:text-white transition-colors">Stay</a></li>
+          <li><span class="material-symbols-outlined text-[10px]">chevron_right</span></li>
+          <li class="text-white/80">{data.name}</li>
+        </ol>
+      </nav>
+
+      <!-- Area Badge -->
+      <div class="flex items-center gap-3 mb-4">
+        <span class="inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+          <span class="material-symbols-outlined text-sm">location_on</span>
+          {data.area}
+        </span>
+        <span class="inline-flex items-center gap-1 bg-primary/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+          {priceLabels[data.priceRange]}
+        </span>
+      </div>
+
+      <!-- Hotel Name -->
+      <h1 class="font-headline text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.1] mb-4 max-w-3xl">
+        {data.name}
+      </h1>
+
+      <!-- Star Rating -->
+      <div class="flex items-center gap-3 mb-6">
+        <div class="flex items-center gap-0.5">
+          {Array.from({ length: fullStars }).map(() => (
+            <span class="material-symbols-outlined text-amber text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+          ))}
+          {hasHalfStar && (
+            <span class="material-symbols-outlined text-amber text-xl" style="font-variation-settings: 'FILL' 1;">star_half</span>
+          )}
+          {Array.from({ length: emptyStars }).map(() => (
+            <span class="material-symbols-outlined text-white/30 text-xl">star</span>
+          ))}
+        </div>
+        <span class="text-white font-bold text-lg">{data.rating.toFixed(1)}</span>
+        <span class="text-white/50 text-sm">/ 5.0</span>
+      </div>
+
+      <!-- Price Range + CTA -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <span class="text-white/60 text-sm font-medium">
+          Price Range: <span class="text-white font-bold text-lg">{priceIcons[data.priceRange]}</span>
+        </span>
+        {(data.bookingUrl || data.agodaUrl) && (
+          <a
+            href={data.bookingUrl || data.agodaUrl}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="cta-gradient text-white px-7 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform duration-200 shadow-lg shadow-primary/30 flex items-center gap-2"
+          >
+            Check Latest Price
+            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+          </a>
+        )}
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 2. QUICK-CHECK INFO BOX                         -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-6 lg:px-8 -mt-10 relative z-20 reveal">
+    <div class="bg-surface-card rounded-2xl shadow-[0_25px_60px_-12px_rgba(0,0,0,0.12)] p-6 md:p-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Price Range -->
+        <div class="flex items-start gap-3">
+          <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-primary text-xl">payments</span>
+          </div>
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-ink-muted block">Price Range</span>
+            <span class="text-sm font-bold text-ink">{priceLabels[data.priceRange]}</span>
+          </div>
+        </div>
+
+        <!-- Area -->
+        <div class="flex items-start gap-3">
+          <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-primary text-xl">map</span>
+          </div>
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-ink-muted block">Area</span>
+            <span class="text-sm font-bold text-ink">{data.area}</span>
+          </div>
+        </div>
+
+        <!-- Rating -->
+        <div class="flex items-start gap-3">
+          <div class="w-11 h-11 rounded-xl bg-amber/10 flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-amber text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-ink-muted block">Rating</span>
+            <span class="text-sm font-bold text-ink">{data.rating.toFixed(1)} / 5.0</span>
+          </div>
+        </div>
+
+        <!-- Amenities -->
+        <div class="flex items-start gap-3">
+          <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-primary text-xl">checklist</span>
+          </div>
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-ink-muted block">Amenities</span>
+            <span class="text-sm font-bold text-ink">{data.amenities.length} included</span>
+          </div>
+        </div>
+      </div>
+
+      {data.amenities.length > 0 && (
+        <div class="mt-6 pt-6 border-t border-surface-high">
+          <div class="flex flex-wrap gap-2">
+            {data.amenities.map((amenity) => (
+              <span class="inline-flex items-center gap-1.5 bg-surface-low text-ink-secondary text-xs font-medium px-3 py-1.5 rounded-lg">
+                <span class="material-symbols-outlined text-sm text-ink-muted">{amenityIcons[amenity] || 'check_circle'}</span>
+                {amenity}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 3. ARTICLE BODY (Markdown)                      -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <article class="max-w-3xl mx-auto px-6 lg:px-8 py-16 md:py-20 reveal">
+    <div class="prose-editorial">
+      <Content />
+    </div>
+  </article>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 4. RATING BOX                                   -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="max-w-3xl mx-auto px-6 lg:px-8 pb-16 reveal">
+    <div class="bg-surface rounded-2xl p-8 md:p-10">
+      <div class="flex flex-col sm:flex-row items-center gap-8">
+        <!-- Large Rating Number -->
+        <div class="text-center shrink-0">
+          <div class="w-24 h-24 rounded-2xl cta-gradient flex items-center justify-center shadow-lg shadow-primary/20">
+            <span class="text-white text-3xl font-extrabold font-headline">{data.rating.toFixed(1)}</span>
+          </div>
+          <span class="text-xs font-bold uppercase tracking-widest text-ink-muted mt-3 block">Overall</span>
+        </div>
+
+        <!-- Rating Details -->
+        <div class="flex-1 w-full">
+          <h3 class="font-headline text-xl font-bold text-ink mb-4">Our Rating</h3>
+          <div class="flex items-center gap-2 mb-3">
+            {Array.from({ length: fullStars }).map(() => (
+              <span class="material-symbols-outlined text-amber text-2xl" style="font-variation-settings: 'FILL' 1;">star</span>
+            ))}
+            {hasHalfStar && (
+              <span class="material-symbols-outlined text-amber text-2xl" style="font-variation-settings: 'FILL' 1;">star_half</span>
+            )}
+            {Array.from({ length: emptyStars }).map(() => (
+              <span class="material-symbols-outlined text-surface-high text-2xl">star</span>
+            ))}
+          </div>
+          <!-- Visual Rating Bar -->
+          <div class="w-full bg-surface-high rounded-full h-3 mb-2">
+            <div
+              class="cta-gradient h-3 rounded-full transition-all duration-700"
+              style={`width: ${(data.rating / 5) * 100}%`}
+            ></div>
+          </div>
+          <div class="flex justify-between text-xs text-ink-muted">
+            <span>0</span>
+            <span>5.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 5. BOOKING CTA SECTION                          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  {(data.bookingUrl || data.agodaUrl) && (
+    <section class="max-w-3xl mx-auto px-6 lg:px-8 pb-16 reveal">
+      <div class="bg-navy rounded-2xl p-8 md:p-10 text-center relative overflow-hidden grain">
+        <div class="absolute -top-12 -right-12 w-40 h-40 bg-white/5 rounded-full"></div>
+        <div class="absolute -bottom-8 -left-8 w-28 h-28 bg-white/5 rounded-full"></div>
+
+        <div class="relative z-10">
+          <h3 class="font-headline text-2xl font-bold text-white mb-3">
+            Ready to Book {data.name}?
+          </h3>
+          <p class="text-white/60 text-sm mb-8 max-w-md mx-auto">
+            Compare prices across top booking platforms. Our affiliate links support pattaya.love at no extra cost to you.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            {data.bookingUrl && (
+              <a
+                href={data.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="cta-gradient text-white px-8 py-3.5 rounded-full text-sm font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform duration-200 shadow-lg shadow-primary/30 flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-lg">hotel</span>
+                Check on Booking.com
+              </a>
+            )}
+            {data.agodaUrl && (
+              <a
+                href={data.agodaUrl}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="glass text-white px-8 py-3.5 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-white/15 transition-all duration-300 flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-lg">travel_explore</span>
+                Check on Agoda
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 6. COMPARISON PLACEHOLDER                       -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="max-w-3xl mx-auto px-6 lg:px-8 pb-16 reveal">
+    <div class="border border-surface-high rounded-2xl p-8 md:p-10 text-center">
+      <span class="material-symbols-outlined text-4xl text-ink-muted mb-4">compare_arrows</span>
+      <h3 class="font-headline text-xl font-bold text-ink mb-2">Compare with Similar Hotels</h3>
+      <p class="text-ink-muted text-sm max-w-md mx-auto">
+        Detailed side-by-side comparison of {data.area} hotels coming soon. Stay tuned for price, rating, and amenity breakdowns.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 7. AUTHOR / EEAT BOX                           -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="max-w-3xl mx-auto px-6 lg:px-8 pb-16 reveal">
+    <div class="bg-surface-low rounded-2xl p-8 md:p-10 flex flex-col sm:flex-row items-center gap-6">
+      <div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+        <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+      </div>
+      <div class="text-center sm:text-left">
+        <h4 class="font-headline font-bold text-lg text-ink mb-1">Pattaya.love Editorial Team</h4>
+        <p class="text-sm text-primary font-semibold mb-2">Local Experts since 2019</p>
+        <p class="text-ink-muted text-sm leading-relaxed">
+          Our team of Pattaya-based writers and reviewers personally visits every hotel we recommend. We prioritize honest assessments over partnerships. This review was last updated on {publishFormatted}.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 8. RELATED HOTELS                               -->
+  <!-- ═══════════════════════════════════════════════ -->
+  {relatedHotels.length > 0 && (
+    <section class="py-16 md:py-20 bg-surface">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex items-end justify-between mb-10 reveal">
+          <div>
+            <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">More in {data.area}</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">
+              Related Hotels
+            </h2>
+          </div>
+          <a href="/stay/" class="group hidden sm:flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300">
+            All Hotels
+            <span class="material-symbols-outlined text-lg">east</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {relatedHotels.map((related, i) => {
+            const rd = related.data;
+            const rFullStars = Math.floor(rd.rating);
+            const rHasHalf = rd.rating % 1 >= 0.25 && rd.rating % 1 < 0.75;
+            const rEmptyStars = 5 - rFullStars - (rHasHalf ? 1 : 0);
+            return (
+              <a
+                href={`/stay/${rd.slug}/`}
+                class:list={[
+                  'reveal bg-surface-card rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 group hover:-translate-y-1 block',
+                  `reveal-delay-${i + 1}`,
+                ]}
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img
+                    src={rd.image || fallbackImage}
+                    alt={rd.name}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                  <div class="absolute top-4 left-4">
+                    <span class="bg-white/90 backdrop-blur-md text-[10px] font-bold px-3 py-1.5 rounded-full text-primary tracking-widest uppercase">
+                      {priceLabels[rd.priceRange]}
+                    </span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-start mb-2">
+                    <h3 class="font-headline font-bold text-lg text-ink group-hover:text-primary transition-colors">{rd.name}</h3>
+                    <div class="flex items-center gap-1 shrink-0">
+                      <span class="material-symbols-outlined text-amber text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="text-sm font-bold text-ink">{rd.rating.toFixed(1)}</span>
+                    </div>
+                  </div>
+                  <p class="text-ink-muted text-sm flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">location_on</span>
+                    {rd.area}
+                  </p>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 9. NEWSLETTER                                   -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="newsletter" class="relative bg-coral py-20 md:py-24 overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full"></div>
+    <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-white/5 rounded-full"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/[0.03] rounded-full"></div>
+
+    <div class="max-w-2xl mx-auto px-6 text-center relative z-10 reveal">
+      <span class="font-headline text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-4 block">Join the Community</span>
+      <h2 class="text-white text-3xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">
+        Get Pattaya Insider Tips
+      </h2>
+      <p class="text-white/70 text-lg mb-10">
+        Weekly deals, events & hidden gems — straight to your inbox.
+      </p>
+      <form class="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto mb-6">
+        <input
+          type="email"
+          placeholder="Your email address"
+          class="w-full h-14 px-6 rounded-full border-none text-ink bg-white placeholder-ink-muted shadow-lg focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-sm"
+        />
+        <button type="submit" class="w-full sm:w-auto px-8 h-14 rounded-full border-2 border-white text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
+          Subscribe
+        </button>
+      </form>
+      <p class="text-white/50 text-sm flex items-center justify-center gap-1.5">
+        <span class="material-symbols-outlined text-sm">verified</span>
+        Join 5,000+ readers &middot; No spam, ever
+      </p>
+    </div>
+  </section>
+
+  <!-- 10. FOOTER -->
+  <Footer />
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STICKY BOTTOM BAR (mobile only)                 -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div id="sticky-bottom-bar" class="md:hidden fixed bottom-0 left-0 w-full z-50 translate-y-full transition-transform duration-300">
+    <div class="bg-white/95 backdrop-blur-xl shadow-[0_-8px_25px_rgba(0,0,0,0.08)] px-4 pb-[env(safe-area-inset-bottom,8px)] pt-3 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-3 min-w-0">
+        <div class="flex items-center gap-1 shrink-0">
+          <span class="material-symbols-outlined text-amber text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="text-sm font-bold text-ink">{data.rating.toFixed(1)}</span>
+        </div>
+        <span class="font-headline font-bold text-sm text-ink truncate">{data.name}</span>
+      </div>
+      {(data.bookingUrl || data.agodaUrl) && (
+        <a
+          href={data.bookingUrl || data.agodaUrl}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          class="cta-gradient text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20 whitespace-nowrap shrink-0 flex items-center gap-1.5"
+        >
+          Check Price
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      )}
+    </div>
+  </div>
+
+  <!-- Bottom spacer for mobile sticky bar -->
+  <div class="h-16 md:hidden"></div>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- SCRIPTS                                         -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <script>
+    // Sticky bottom bar: show after scrolling past hero
+    const hero = document.getElementById('hotel-hero');
+    const stickyBar = document.getElementById('sticky-bottom-bar');
+
+    if (hero && stickyBar) {
+      const stickyObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              stickyBar.classList.add('translate-y-full');
+              stickyBar.classList.remove('translate-y-0');
+            } else {
+              stickyBar.classList.remove('translate-y-full');
+              stickyBar.classList.add('translate-y-0');
+            }
+          });
+        },
+        { threshold: 0 }
+      );
+      stickyObserver.observe(hero);
+    }
+
+    // Reveal animation for elements on this page
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  </script>
+</BaseLayout>
+
+<style>
+  /* Editorial prose styling for markdown content */
+  .prose-editorial {
+    font-family: var(--font-body);
+    color: var(--color-ink-secondary);
+    font-size: 1.0625rem;
+    line-height: 1.8;
+  }
+  .prose-editorial :global(h2) {
+    font-family: var(--font-headline);
+    color: var(--color-ink);
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  .prose-editorial :global(h3) {
+    font-family: var(--font-headline);
+    color: var(--color-ink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+  .prose-editorial :global(p) {
+    margin-bottom: 1.25rem;
+  }
+  .prose-editorial :global(a) {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s;
+  }
+  .prose-editorial :global(a:hover) {
+    color: var(--color-primary-hover);
+  }
+  .prose-editorial :global(ul),
+  .prose-editorial :global(ol) {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+  }
+  .prose-editorial :global(li) {
+    margin-bottom: 0.5rem;
+  }
+  .prose-editorial :global(ul li) {
+    list-style: disc;
+  }
+  .prose-editorial :global(ol li) {
+    list-style: decimal;
+  }
+  .prose-editorial :global(blockquote) {
+    border-left: 3px solid var(--color-primary);
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--color-ink-muted);
+  }
+  .prose-editorial :global(img) {
+    border-radius: 1rem;
+    margin: 2rem 0;
+    width: 100%;
+  }
+  .prose-editorial :global(hr) {
+    border: none;
+    height: 1px;
+    background: var(--color-surface-high);
+    margin: 2.5rem 0;
+  }
+  .prose-editorial :global(strong) {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+  .prose-editorial :global(code) {
+    background: var(--color-surface-low);
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.375rem;
+    font-size: 0.9em;
+  }
+</style>

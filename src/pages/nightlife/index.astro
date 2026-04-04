@@ -1,0 +1,293 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+/* ─── Data ─── */
+const allVenues = await getCollection('venues', ({ data }) => !data.draft);
+const venues = allVenues.sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+
+/* ─── Helpers ─── */
+const typeLabels: Record<string, string> = {
+  gogo: 'GoGo Bar',
+  'beer-bar': 'Beer Bar',
+  club: 'Club',
+  restaurant: 'Restaurant',
+  rooftop: 'Rooftop',
+  other: 'Other',
+};
+
+const typeColors: Record<string, { bg: string; text: string }> = {
+  gogo: { bg: 'bg-primary/20', text: 'text-primary-light' },
+  'beer-bar': { bg: 'bg-amber/20', text: 'text-amber' },
+  club: { bg: 'bg-violet-500/20', text: 'text-violet-300' },
+  restaurant: { bg: 'bg-emerald-500/20', text: 'text-emerald-300' },
+  rooftop: { bg: 'bg-sky-500/20', text: 'text-sky-300' },
+  other: { bg: 'bg-white/10', text: 'text-white/70' },
+};
+
+const typeIcons: Record<string, string> = {
+  gogo: 'theater_comedy',
+  'beer-bar': 'sports_bar',
+  club: 'nightlife',
+  restaurant: 'restaurant',
+  rooftop: 'rooftop_deck',
+  other: 'location_on',
+};
+
+const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDbi6F4IE-QF0DtwtpM73rXNPlM9H4Xgb8_-d_TIVrusYVBFxFHf_J6nsckaNlm-X3lLol6soY_1OCOZyQF2uLPXN9KIkFjLAHWyodbLc_x6hNTLT_ecn2nQikWTwgQW_WPKHFFy_Krvgf60kiFrYDQc0Du-hAe7JPNNrVZBanKgHAov4-IhLYQ-Eja8bZtIolYBr9SazPaGN2-ddWGzWZRBwXi9P4e59bsAwd5tQ6uuePO4ar5Lum-QphIlC7YR0R91C882CTpyKc';
+---
+
+<BaseLayout
+  title="Pattaya Nightlife Guide 2026"
+  description="The best bars, clubs, and GoGo bars in Pattaya — curated by locals. Honest reviews, drink prices, and insider tips."
+>
+  <Navigation />
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 1. HERO HEADER — Dark theme                     -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <header class="relative w-full pt-32 pb-20 md:pt-40 md:pb-28 bg-navy overflow-hidden grain">
+    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy"></div>
+    <div class="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/8 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-32 w-80 h-80 bg-violet-600/8 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-64 h-64 bg-amber/5 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-xs text-white/50 font-medium">
+          <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+          <li><span class="material-symbols-outlined text-[10px]">chevron_right</span></li>
+          <li class="text-white/80">Nightlife</li>
+        </ol>
+      </nav>
+
+      <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-primary-light mb-4 block">
+        Curated by Locals
+      </span>
+      <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.05] mb-6 max-w-3xl">
+        Pattaya Nightlife Guide 2026
+      </h1>
+      <p class="text-white/60 text-lg md:text-xl max-w-2xl leading-relaxed">
+        The best bars, clubs, and GoGo bars — curated by locals who know every venue inside and out.
+      </p>
+
+      <!-- Stats -->
+      <div class="mt-10 flex flex-wrap gap-8">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary-light text-xl">nightlife</span>
+          </div>
+          <div>
+            <span class="text-white font-bold text-lg">{venues.length}</span>
+            <span class="text-white/50 text-sm block">Venues Listed</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-amber text-xl">schedule</span>
+          </div>
+          <div>
+            <span class="text-white font-bold text-lg">Nightly</span>
+            <span class="text-white/50 text-sm block">Updated</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 2. VENUE GRID — Dark theme                      -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-16 md:py-24 bg-navy relative grain">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {venues.map((venue, i) => {
+          const d = venue.data;
+          const heroImg = d.image || fallbackImage;
+          const colors = typeColors[d.type] || typeColors['other'];
+          const icon = typeIcons[d.type] || 'location_on';
+          const priceBaht = Array.from({ length: d.priceLevel }).map(() => '\u0E3F').join('');
+          const priceEmpty = Array.from({ length: 3 - d.priceLevel }).map(() => '\u0E3F').join('');
+
+          return (
+            <a
+              href={`/nightlife/${d.slug}/`}
+              class:list={[
+                'reveal group block bg-navy-light rounded-2xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(185,5,56,0.12)]',
+                `reveal-delay-${(i % 4) + 1}`,
+              ]}
+            >
+              {/* Image */}
+              <div class="relative h-52 md:h-60 overflow-hidden">
+                <img
+                  src={heroImg}
+                  alt={`${d.name} — ${d.area}, Pattaya`}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-light/90 via-transparent to-transparent"></div>
+
+                {/* Type Badge */}
+                <div class="absolute top-4 left-4">
+                  <span class:list={['inline-flex items-center gap-1.5 text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase backdrop-blur-md', colors.bg, colors.text]}>
+                    <span class="material-symbols-outlined text-sm">{icon}</span>
+                    {typeLabels[d.type]}
+                  </span>
+                </div>
+
+                {/* Area Badge */}
+                <div class="absolute top-4 right-4">
+                  <span class="bg-white/10 backdrop-blur-md text-white/80 text-[10px] font-bold px-3 py-1.5 rounded-full tracking-wide flex items-center gap-1">
+                    <span class="material-symbols-outlined text-xs">location_on</span>
+                    {d.area}
+                  </span>
+                </div>
+              </div>
+
+              {/* Card Body */}
+              <div class="p-6 md:p-7">
+                {/* Name */}
+                <h2 class="font-headline font-bold text-xl text-white group-hover:text-primary transition-colors leading-tight mb-3">
+                  {d.name}
+                </h2>
+
+                {/* Description */}
+                <p class="text-white/50 text-sm leading-relaxed mb-5 line-clamp-2">
+                  {d.description}
+                </p>
+
+                {/* Meta Row */}
+                <div class="flex items-center justify-between pt-5 border-t border-white/5">
+                  {/* Price Level */}
+                  <div class="flex items-center gap-2">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-white/40">Price</span>
+                    <span class="text-sm font-bold">
+                      <span class="text-primary">{priceBaht}</span>
+                      <span class="text-white/20">{priceEmpty}</span>
+                    </span>
+                  </div>
+
+                  {/* Opening Hours */}
+                  {d.openingHours && (
+                    <div class="flex items-center gap-1.5 text-white/40">
+                      <span class="material-symbols-outlined text-sm">schedule</span>
+                      <span class="text-xs font-medium">{d.openingHours}</span>
+                    </div>
+                  )}
+
+                  {/* Arrow */}
+                  <div class="flex items-center gap-1 text-primary text-sm font-bold">
+                    <span class="hidden sm:inline">Details</span>
+                    <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 3. TRUST / EEAT — Dark variant                  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-20 md:py-24 bg-navy-light relative grain">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-14 reveal">
+        <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">Why Trust Us</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-white">
+          We Go Out So You Know Where to Go
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+        <div class="text-center bg-white/5 rounded-2xl p-8 border border-white/5">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/15 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-2xl">nightlife</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-white">Visited in Person</h3>
+          <p class="text-white/50 text-sm leading-relaxed">Every venue reviewed by our local team. Real experiences, not sponsored content.</p>
+        </div>
+        <div class="text-center bg-white/5 rounded-2xl p-8 border border-white/5">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/15 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-2xl">payments</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-white">Real Drink Prices</h3>
+          <p class="text-white/50 text-sm leading-relaxed">We list actual prices — no outdated numbers. Updated monthly from on-the-ground visits.</p>
+        </div>
+        <div class="text-center bg-white/5 rounded-2xl p-8 border border-white/5">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/15 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-2xl">shield</span>
+          </div>
+          <h3 class="font-headline font-bold text-lg mb-2 text-white">Safety First</h3>
+          <p class="text-white/50 text-sm leading-relaxed">We flag scam venues and overcharging. Only venues that treat customers fairly make our list.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 4. NEWSLETTER                                   -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="newsletter" class="relative bg-coral py-20 md:py-24 overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full"></div>
+    <div class="absolute -bottom-16 -left-16 w-48 h-48 bg-white/5 rounded-full"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/[0.03] rounded-full"></div>
+
+    <div class="max-w-2xl mx-auto px-6 text-center relative z-10 reveal">
+      <span class="font-headline text-[10px] uppercase tracking-[0.3em] text-white/60 font-bold mb-4 block">Join the Community</span>
+      <h2 class="text-white text-3xl md:text-4xl font-extrabold font-headline tracking-tight mb-4">
+        Get Pattaya Insider Tips
+      </h2>
+      <p class="text-white/70 text-lg mb-10">
+        Weekly nightlife updates, new venues & insider tips — straight to your inbox.
+      </p>
+      <form class="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto mb-6">
+        <input
+          type="email"
+          placeholder="Your email address"
+          class="w-full h-14 px-6 rounded-full border-none text-ink bg-white placeholder-ink-muted shadow-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-sm"
+        />
+        <button type="submit" class="w-full sm:w-auto px-8 h-14 rounded-full border-2 border-white text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
+          Subscribe
+        </button>
+      </form>
+      <p class="text-white/50 text-sm flex items-center justify-center gap-1.5">
+        <span class="material-symbols-outlined text-sm">verified</span>
+        Join 5,000+ readers &middot; No spam, ever
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+
+  <!-- Mobile Bottom Nav -->
+  <div class="md:hidden">
+    <div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-[env(safe-area-inset-bottom,8px)] h-16 bg-navy/95 backdrop-blur-xl z-50 shadow-[0_-8px_25px_rgba(0,0,0,0.2)] border-t border-white/5">
+      <a href="/" class="flex flex-col items-center justify-center text-white/40">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Home</span>
+      </a>
+      <a href="/stay/" class="flex flex-col items-center justify-center text-white/40">
+        <span class="material-symbols-outlined">bed</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Stay</span>
+      </a>
+      <a href="/explore/" class="flex flex-col items-center justify-center text-white/40">
+        <span class="material-symbols-outlined">explore</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Explore</span>
+      </a>
+      <a href="/nightlife/" class="flex flex-col items-center justify-center text-primary">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">nightlife</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Night</span>
+      </a>
+      <a href="/guides/" class="flex flex-col items-center justify-center text-white/40">
+        <span class="material-symbols-outlined">auto_stories</span>
+        <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Journal</span>
+      </a>
+    </div>
+  </div>
+  <div class="h-16 md:hidden"></div>
+</BaseLayout>
