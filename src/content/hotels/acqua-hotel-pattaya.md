@@ -24,9 +24,9 @@ Acqua Hotel Pattaya is located in the Central Pattaya area of Pattaya, one of Th
 
 The hotel is situated at 666 หมู่ที่ 10 ถนน พัทยาสาย 2, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
-## Guest-Friendly
+## Guest-Friendly Policy
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with Acqua Hotel Pattaya before booking.
+Confirmed guest-friendly — no joiner fee. Visitors are welcome free of charge.
 
 ## How to Book
 

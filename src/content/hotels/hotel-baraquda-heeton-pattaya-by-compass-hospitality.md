@@ -24,9 +24,9 @@ Hotel Baraquda Heeton Pattaya by Compass Hospitality is located in the Central P
 
 The hotel is situated at 485, 1 Moo 10, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
-## Guest-Friendly
+## Guest-Friendly Policy
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with Hotel Baraquda Heeton Pattaya by Compass Hospitality before booking.
+Confirmed guest-friendly — no joiner fee. Visitors are welcome free of charge.
 
 ## How to Book
 

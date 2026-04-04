@@ -74,6 +74,10 @@ It is also an excellent choice for couples, business travelers, and anyone who v
 - Not explicitly guest-friendly (though rarely an issue in practice)
 - Beach Road is a short walk but the beach itself is Pattaya's busiest stretch
 
+## Guest-Friendly Policy
+
+Confirmed guest-friendly — no joiner fee. Visitors must leave ID or passport at the front desk.
+
 ## Final Thoughts
 
 The Hilton Pattaya has earned its position as the city's most recognized luxury hotel. It combines genuine five-star quality with a location that keeps you connected to everything Pattaya offers. The rooftop pool alone is worth the premium, and waking up to that bay view never gets old.

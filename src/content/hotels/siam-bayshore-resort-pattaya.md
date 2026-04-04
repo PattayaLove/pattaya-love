@@ -24,9 +24,9 @@ Siam Bayshore Resort Pattaya is located in the Beach Road area of Pattaya, one o
 
 The hotel is situated at 559 Beach Rd, Beach Road. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
-## Guest-Friendly
+## Guest-Friendly Policy
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with Siam Bayshore Resort Pattaya before booking.
+Confirmed guest-friendly — no joiner fee. Note: if booked for single occupancy, an extra person fee of 1,000 THB may apply.
 
 ## How to Book
 

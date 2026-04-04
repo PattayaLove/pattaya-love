@@ -24,9 +24,9 @@ Areca Lodge Pattaya is located in the Central Pattaya area of Pattaya, one of Th
 
 The hotel is situated at หมู่ที่ 9 198/21-23, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
-## Guest-Friendly
+## Guest-Friendly Policy
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with Areca Lodge Pattaya before booking.
+Confirmed guest-friendly — no joiner fee. Located right on Soi LK Metro.
 
 ## How to Book
 

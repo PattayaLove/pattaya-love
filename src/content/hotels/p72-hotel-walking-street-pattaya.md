@@ -24,9 +24,9 @@ P72 Hotel Walking Street Pattaya is located in the Walking Street area of Pattay
 
 The hotel is situated at 412, Walking Street. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
-## Guest-Friendly
+## Guest-Friendly Policy
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with P72 Hotel Walking Street Pattaya before booking.
+Confirmed guest-friendly — no joiner fee. Visitors are welcome free of charge.
 
 ## How to Book
 

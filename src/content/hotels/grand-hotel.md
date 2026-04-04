@@ -23,9 +23,9 @@ Grand Hotel is located in the Walking Street area of Pattaya, one of Thailand's 
 
 The hotel is situated at 103, Walking St, Walking Street. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
-## Guest-Friendly
+## Guest-Friendly Policy
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with Grand Hotel before booking.
+Confirmed guest-friendly — no joiner fee. Visitors are welcome free of charge.
 
 ## How to Book
 

@@ -24,9 +24,9 @@ LK Metropole is located in the Soi Buakhao area of Pattaya, one of Thailand's mo
 
 The hotel is situated at 33, 35 หมู่ที่ 10 Pattaya Sai Song Rd, Soi Buakhao. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
-## Guest-Friendly
+## Guest-Friendly Policy
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with LK Metropole before booking.
+Guest-friendly — free for one visitor. A fee of 500 THB applies for a second visitor.
 
 ## How to Book
 

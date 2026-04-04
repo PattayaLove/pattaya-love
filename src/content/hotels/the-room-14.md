@@ -24,9 +24,9 @@ The Room 14 is located in the Central Pattaya area of Pattaya, one of Thailand's
 
 The hotel is situated at Pattaya Soi 14, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
-## Guest-Friendly
+## Guest-Friendly Policy
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with The Room 14 before booking.
+Not fully guest-friendly — a 300 THB visitor fee applies.
 
 ## How to Book
 

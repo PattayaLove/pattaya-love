@@ -24,9 +24,9 @@ Somerset Pattaya is located in the Central Pattaya area of Pattaya, one of Thail
 
 The hotel is situated at 528, Thanon Second, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
-## Guest-Friendly
+## Guest-Friendly Policy
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with Somerset Pattaya before booking.
+Confirmed guest-friendly — no joiner fee. Visitors are welcome free of charge.
 
 ## How to Book
 

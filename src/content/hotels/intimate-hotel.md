@@ -24,9 +24,9 @@ INTIMATE HOTEL is located in the Central Pattaya area of Pattaya, one of Thailan
 
 The hotel is situated at 397 42 หมู่10 Pattaya Sai Song Rd, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
-## Guest-Friendly
+## Guest-Friendly Policy
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with INTIMATE HOTEL before booking.
+Guest-friendly — free for one visitor. A fee of 1,000 THB applies for a second visitor.
 
 ## How to Book
 
