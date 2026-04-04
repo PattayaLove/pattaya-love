@@ -3,6 +3,7 @@ title: "Koh Larn (Coral Island) — Complete Day Trip Guide 2026"
 slug: "koh-larn-island-guide"
 description: "The ultimate guide to Koh Larn island near Pattaya. Best beaches, ferry schedule, how to get there, where to eat, and insider tips for the perfect day trip."
 category: "general"
+image: "/images/areas/bali-hai-sunset.jpg"
 publishDate: 2026-04-04
 draft: false
 ---

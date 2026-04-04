@@ -8,6 +8,7 @@ priceRange: "mid-range"
 category: "Condo"
 area: "Central Pattaya"
 amenities: ["Pool", "Fitness", "WiFi", "Parking", "Security"]
+image: "/images/venues/the-base-pool.jpg"
 publishDate: 2026-04-04
 draft: false
 ---

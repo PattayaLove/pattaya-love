@@ -2,6 +2,7 @@
 name: "Pratumnak Hill"
 slug: "pratumnak"
 description: "The quiet, upscale hillside between Pattaya and Jomtien — boutique resorts, ocean views, and a peaceful expat community. Pattaya's hidden luxury enclave."
+image: "/images/areas/pratumnak-viewpoint.jpg"
 publishDate: 2026-04-04
 draft: false
 ---
