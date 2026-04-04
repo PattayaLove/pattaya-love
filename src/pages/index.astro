@@ -266,6 +266,8 @@ const journalArticles = [
     aspect: 'aspect-[2/3]',
   },
 ];
+
+import OptImage from '../components/OptImage.astro';
 ---
 
 <BaseLayout
@@ -279,12 +281,14 @@ const journalArticles = [
   <!-- ═══════════════════════════════════════════════ -->
   <header class="relative h-[700px] lg:h-[750px] w-full flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0">
-      <img
-        src="/images/areas/pattaya-panorama.jpg"
-        alt="Pattaya skyline at golden hour overlooking the Gulf of Thailand"
-        fetchpriority="high"
+      <OptImage
+        src="/images/areas/pattaya-drone-sunset.jpg"
+        alt="Aerial drone panorama of Pattaya Bay at sunset — city skyline, ocean, and boats"
+        width={2560}
+        height={1440}
         class="w-full h-full object-cover"
         loading="eager"
+        fetchpriority="high"
       />
       <div class="absolute inset-0 bg-gradient-to-b from-navy/30 via-navy/40 to-navy/70"></div>
     </div>

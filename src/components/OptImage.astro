@@ -1,0 +1,78 @@
+---
+/**
+ * OptImage — Wrapper around Astro's <Image /> with fallback.
+ * Automatically converts to WebP/AVIF, resizes, and optimizes.
+ * Falls back to regular <img> if the source is external or SVG.
+ */
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  class?: string;
+  loading?: 'eager' | 'lazy';
+  fetchpriority?: 'high' | 'low' | 'auto';
+}
+
+const { src, alt, width, height, class: className, loading = 'lazy', fetchpriority } = Astro.props;
+
+// Map public paths to src/assets imports
+const imageMap: Record<string, () => Promise<{ default: ImageMetadata }>> = {
+  '/images/areas/walking-street.jpg': () => import('../assets/images/areas/walking-street.jpg'),
+  '/images/areas/soi-6.jpg': () => import('../assets/images/areas/soi-6.jpg'),
+  '/images/areas/pattaya-beach.jpg': () => import('../assets/images/areas/pattaya-beach.jpg'),
+  '/images/areas/pattaya-panorama.jpg': () => import('../assets/images/areas/pattaya-panorama.jpg'),
+  '/images/areas/pattaya-drone-sunset.jpg': () => import('../assets/images/areas/pattaya-drone-sunset.jpg'),
+  '/images/areas/pattaya-skyline-sunset.jpg': () => import('../assets/images/areas/pattaya-skyline-sunset.jpg'),
+  '/images/areas/lk-metro.jpg': () => import('../assets/images/areas/lk-metro.jpg'),
+  '/images/areas/agogo-walking-street.jpg': () => import('../assets/images/areas/agogo-walking-street.jpg'),
+  '/images/venues/iron-club.jpg': () => import('../assets/images/venues/iron-club.jpg'),
+  '/images/venues/pin-up-agogo.jpg': () => import('../assets/images/venues/pin-up-agogo.jpg'),
+  '/images/venues/xs-agogo.jpg': () => import('../assets/images/venues/xs-agogo.jpg'),
+  '/images/venues/hilton-pattaya.jpg': () => import('../assets/images/venues/hilton-pattaya.jpg'),
+  '/images/venues/melia-hotel-pattaya.jpg': () => import('../assets/images/venues/melia-hotel-pattaya.jpg'),
+  '/images/guides/hotels-soi-6.jpg': () => import('../assets/images/guides/hotels-soi-6.jpg'),
+  '/images/guides/bangkok-to-pattaya.jpg': () => import('../assets/images/guides/bangkok-to-pattaya.jpg'),
+  '/images/guides/central-festival-pattaya.jpg': () => import('../assets/images/guides/central-festival-pattaya.jpg'),
+  '/images/guides/baht-bus.png': () => import('../assets/images/guides/baht-bus.png'),
+  '/images/brand/logo.png': () => import('../assets/images/brand/logo.png'),
+};
+
+const loader = imageMap[src];
+let resolvedImage: ImageMetadata | null = null;
+
+if (loader) {
+  try {
+    const mod = await loader();
+    resolvedImage = mod.default;
+  } catch {
+    resolvedImage = null;
+  }
+}
+---
+
+{resolvedImage ? (
+  <Image
+    src={resolvedImage}
+    alt={alt}
+    width={width || resolvedImage.width}
+    height={height || resolvedImage.height}
+    format="webp"
+    quality={80}
+    class={className}
+    loading={loading}
+    decoding="async"
+  />
+) : (
+  <img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    class={className}
+    loading={loading}
+    decoding="async"
+  />
+)}
