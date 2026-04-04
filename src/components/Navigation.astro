@@ -1,17 +1,28 @@
 ---
+interface Props {
+  transparent?: boolean;
+}
+
+const { transparent = false } = Astro.props;
+
 const navLinks = [
-  { label: 'Stay', href: '/stay/', active: false },
-  { label: 'Explore', href: '/explore/', active: false },
-  { label: 'Nightlife', href: '/nightlife/', active: false },
-  { label: 'Lifestyle', href: '/lifestyle/', active: false },
-  { label: 'Community', href: '/community/', active: false },
+  { label: 'Stay', href: '/stay/' },
+  { label: 'Explore', href: '/explore/' },
+  { label: 'Nightlife', href: '/nightlife/' },
+  { label: 'Lifestyle', href: '/lifestyle/' },
+  { label: 'Community', href: '/community/' },
 ];
+
+const initialNavClass = transparent ? 'bg-transparent' : 'bg-white/85 backdrop-blur-xl shadow-sm';
+const initialLogoClass = transparent ? 'text-white' : 'text-ink';
+const initialLinkClass = transparent ? 'text-white/80 hover:text-white hover:bg-white/10' : 'text-ink-secondary hover:text-ink hover:bg-ink/5';
+const initialBarClass = transparent ? 'bg-white' : 'bg-ink';
 ---
 
-<nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-500">
+<nav id="main-nav" class:list={['fixed top-0 w-full z-50 transition-all duration-500', initialNavClass]} data-transparent={transparent ? 'true' : 'false'}>
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8 py-4">
     <!-- Logo -->
-    <a href="/" class="text-2xl font-extrabold tracking-tighter font-headline text-white transition-colors duration-300" id="nav-logo">
+    <a href="/" class:list={['text-2xl font-extrabold tracking-tighter font-headline transition-colors duration-300', initialLogoClass]} id="nav-logo">
       pattaya<span class="text-primary">.love</span>
     </a>
 
@@ -20,7 +31,7 @@ const navLinks = [
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class="nav-link relative px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-all duration-300 rounded-lg hover:bg-white/10"
+          class:list={['nav-link relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg', initialLinkClass]}
         >
           {link.label}
         </a>
@@ -29,13 +40,13 @@ const navLinks = [
 
     <!-- CTA + Mobile Toggle -->
     <div class="flex items-center gap-3">
-      <a href="#newsletter" class="hidden sm:inline-flex cta-gradient text-white px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform duration-200 shadow-lg shadow-primary/20">
-        Newsletter
+      <a href="https://www.facebook.com/pattaya.xxx/" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex cta-gradient text-white px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform duration-200 shadow-lg shadow-primary/20">
+        Community
       </a>
       <button id="mobile-toggle" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
-        <span class="block w-6 h-0.5 bg-white rounded-full transition-all duration-300" id="bar1"></span>
-        <span class="block w-6 h-0.5 bg-white rounded-full transition-all duration-300" id="bar2"></span>
-        <span class="block w-4 h-0.5 bg-white rounded-full transition-all duration-300 ml-auto" id="bar3"></span>
+        <span class:list={['block w-6 h-0.5 rounded-full transition-all duration-300', initialBarClass]} id="bar1"></span>
+        <span class:list={['block w-6 h-0.5 rounded-full transition-all duration-300', initialBarClass]} id="bar2"></span>
+        <span class:list={['block w-4 h-0.5 rounded-full transition-all duration-300 ml-auto', initialBarClass]} id="bar3"></span>
       </button>
     </div>
   </div>
@@ -50,8 +61,8 @@ const navLinks = [
         {link.label}
       </a>
     ))}
-    <a href="#newsletter" class="mt-4 cta-gradient text-white px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest">
-      Newsletter
+    <a href="https://www.facebook.com/pattaya.xxx/" target="_blank" rel="noopener noreferrer" class="mt-4 cta-gradient text-white px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest">
+      Community
     </a>
   </div>
 </nav>
@@ -61,38 +72,46 @@ const navLinks = [
   const logo = document.getElementById('nav-logo')!;
   const navLinks = document.querySelectorAll('.nav-link');
   const toggle = document.getElementById('mobile-toggle')!;
+  const bars = [document.getElementById('bar1')!, document.getElementById('bar2')!, document.getElementById('bar3')!];
   const menu = document.getElementById('mobile-menu')!;
   const close = document.getElementById('mobile-close')!;
+  const isTransparent = nav.dataset.transparent === 'true';
 
-  // Scroll effect: transparent → frosted glass
-  let scrolled = false;
-  const onScroll = () => {
-    const shouldBeScrolled = window.scrollY > 80;
-    if (shouldBeScrolled !== scrolled) {
-      scrolled = shouldBeScrolled;
-      if (scrolled) {
-        nav.classList.add('bg-white/85', 'backdrop-blur-xl', 'shadow-sm');
-        nav.classList.remove('bg-transparent');
-        logo.classList.remove('text-white');
-        logo.classList.add('text-ink');
-        navLinks.forEach(l => {
-          l.classList.remove('text-white/80', 'hover:text-white', 'hover:bg-white/10');
-          l.classList.add('text-ink-secondary', 'hover:text-ink', 'hover:bg-ink/5');
-        });
-      } else {
-        nav.classList.remove('bg-white/85', 'backdrop-blur-xl', 'shadow-sm');
-        nav.classList.add('bg-transparent');
-        logo.classList.add('text-white');
-        logo.classList.remove('text-ink');
-        navLinks.forEach(l => {
-          l.classList.add('text-white/80', 'hover:text-white', 'hover:bg-white/10');
-          l.classList.remove('text-ink-secondary', 'hover:text-ink', 'hover:bg-ink/5');
-        });
-      }
-    }
+  let scrolled = !isTransparent;
+  const applyScrolled = () => {
+    nav.classList.add('bg-white/85', 'backdrop-blur-xl', 'shadow-sm');
+    nav.classList.remove('bg-transparent');
+    logo.classList.remove('text-white');
+    logo.classList.add('text-ink');
+    bars.forEach(b => { b.classList.remove('bg-white'); b.classList.add('bg-ink'); });
+    navLinks.forEach(l => {
+      l.classList.remove('text-white/80', 'hover:text-white', 'hover:bg-white/10');
+      l.classList.add('text-ink-secondary', 'hover:text-ink', 'hover:bg-ink/5');
+    });
   };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  const applyTransparent = () => {
+    nav.classList.remove('bg-white/85', 'backdrop-blur-xl', 'shadow-sm');
+    nav.classList.add('bg-transparent');
+    logo.classList.add('text-white');
+    logo.classList.remove('text-ink');
+    bars.forEach(b => { b.classList.add('bg-white'); b.classList.remove('bg-ink'); });
+    navLinks.forEach(l => {
+      l.classList.add('text-white/80', 'hover:text-white', 'hover:bg-white/10');
+      l.classList.remove('text-ink-secondary', 'hover:text-ink', 'hover:bg-ink/5');
+    });
+  };
+
+  if (isTransparent) {
+    const onScroll = () => {
+      const shouldBeScrolled = window.scrollY > 80;
+      if (shouldBeScrolled !== scrolled) {
+        scrolled = shouldBeScrolled;
+        scrolled ? applyScrolled() : applyTransparent();
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 
   // Mobile menu
   toggle.addEventListener('click', () => {

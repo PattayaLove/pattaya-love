@@ -8,7 +8,7 @@ import Footer from '../../components/Footer.astro';
   title="Pattaya.love Community — Connect with Fellow Travelers"
   description="Join the pattaya.love community. Get insider tips, connect with expats, and stay updated on events and deals in Pattaya."
 >
-  <Navigation />
+  <Navigation transparent />
 
   <!-- Hero -->
   <header class="relative pt-32 pb-20 bg-navy grain">
@@ -29,49 +29,48 @@ import Footer from '../../components/Footer.astro';
 
   <main class="max-w-5xl mx-auto px-6 lg:px-8 py-24">
 
-    <!-- Newsletter Section -->
+    <!-- Facebook Community -->
     <section class="mb-20 reveal">
       <div class="bg-surface-card rounded-2xl p-10 md:p-14 shadow-lg border border-surface-high/30">
         <div class="flex items-start gap-4 mb-6">
-          <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-            <span class="material-symbols-outlined text-primary text-2xl">mail</span>
+          <div class="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-blue-600 text-2xl">group</span>
           </div>
           <div>
-            <h2 class="text-2xl font-extrabold font-headline text-ink mb-2">The Pattaya Insider Newsletter</h2>
-            <p class="text-ink-muted">Weekly curated content: new venue openings, hotel deals, event announcements, and tips from locals who know.</p>
+            <h2 class="text-2xl font-extrabold font-headline text-ink mb-2">Join Our Facebook Community</h2>
+            <p class="text-ink-muted">Connect with fellow travelers, share experiences, get real-time tips, and ask questions to people who actually live in Pattaya.</p>
           </div>
         </div>
-        <form class="flex flex-col sm:flex-row gap-3 max-w-lg">
-          <input type="email" placeholder="Your email address" class="flex-1 h-14 px-6 rounded-xl border border-surface-high bg-surface text-ink placeholder-ink-muted focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" />
-          <button type="submit" class="cta-gradient px-8 h-14 rounded-xl text-white font-bold text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform whitespace-nowrap shadow-md shadow-primary/20">
-            Subscribe
-          </button>
-        </form>
-        <p class="text-ink-faint text-xs mt-4 flex items-center gap-1.5">
-          <span class="material-symbols-outlined text-xs">verified</span>
-          Join 5,000+ readers · No spam · Unsubscribe anytime
-        </p>
+        <a href="https://www.facebook.com/pattaya.xxx/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 h-14 rounded-xl font-bold text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-md">
+          <span class="material-symbols-outlined text-lg">group</span>
+          Join on Facebook
+        </a>
       </div>
     </section>
 
     <!-- Social Links -->
     <section class="mb-20 reveal">
       <h2 class="text-3xl font-extrabold font-headline tracking-tight text-ink mb-10">Follow Us</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <a href="#" class="group bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href="https://www.facebook.com/pattaya.xxx/" target="_blank" rel="noopener noreferrer" class="group bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
+          <span class="material-symbols-outlined text-4xl text-blue-600 mb-4 block">group</span>
+          <h3 class="font-headline font-bold text-lg text-ink mb-1">Facebook</h3>
+          <p class="text-ink-muted text-sm">Join the community & get real-time tips</p>
+        </a>
+        <a href="https://www.instagram.com/pattaya.loves" target="_blank" rel="noopener noreferrer" class="group bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
           <span class="material-symbols-outlined text-4xl text-pink-500 mb-4 block">photo_camera</span>
           <h3 class="font-headline font-bold text-lg text-ink mb-1">Instagram</h3>
-          <p class="text-ink-muted text-sm">Daily stories, reels & behind-the-scenes from Pattaya</p>
+          <p class="text-ink-muted text-sm">Daily stories, reels & behind-the-scenes</p>
         </a>
-        <a href="#" class="group bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
+        <a href="https://youtube.com/@pattaya_love" target="_blank" rel="noopener noreferrer" class="group bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
           <span class="material-symbols-outlined text-4xl text-red-500 mb-4 block">smart_display</span>
           <h3 class="font-headline font-bold text-lg text-ink mb-1">YouTube</h3>
-          <p class="text-ink-muted text-sm">Hotel tours, venue walkthroughs & area guides in video</p>
+          <p class="text-ink-muted text-sm">Hotel tours, venue walkthroughs & guides</p>
         </a>
-        <a href="#" class="group bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
+        <a href="https://www.tiktok.com/@pattaya.love" target="_blank" rel="noopener noreferrer" class="group bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
           <span class="material-symbols-outlined text-4xl text-ink mb-4 block">music_note</span>
           <h3 class="font-headline font-bold text-lg text-ink mb-1">TikTok</h3>
-          <p class="text-ink-muted text-sm">Quick tips, fun clips & viral Pattaya moments</p>
+          <p class="text-ink-muted text-sm">Quick tips & viral Pattaya moments</p>
         </a>
       </div>
     </section>
