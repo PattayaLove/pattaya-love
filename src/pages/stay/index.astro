@@ -8,6 +8,9 @@ import { getCollection } from 'astro:content';
 const allHotels = await getCollection('hotels', ({ data }) => !data.draft);
 const hotels = allHotels.sort((a, b) => b.data.rating - a.data.rating);
 
+/* ─── Unique areas for filter ─── */
+const uniqueAreas = [...new Set(hotels.map(h => h.data.area))].sort();
+
 /* ─── Helpers ─── */
 const priceLabels: Record<string, string> = {
   budget: 'Budget',
@@ -111,11 +114,100 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
   </header>
 
   <!-- ═══════════════════════════════════════════════ -->
-  <!-- 2. HOTEL GRID                                   -->
+  <!-- 2. FILTER BAR (sticky)                          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div id="filter-bar" class="sticky top-0 z-40 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.06)] border-b border-black/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4">
+      <!-- Mobile: Toggle button -->
+      <div class="flex items-center justify-between md:hidden mb-0" id="filter-mobile-header">
+        <span id="results-count-mobile" class="text-sm font-semibold text-ink">
+          Showing {hotels.length} of {hotels.length} hotels
+        </span>
+        <button
+          id="filter-toggle"
+          type="button"
+          class="inline-flex items-center gap-1.5 bg-surface-low text-ink-muted px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-colors"
+        >
+          <span class="material-symbols-outlined text-base">tune</span>
+          Filters
+        </button>
+      </div>
+
+      <!-- Filter controls (collapsible on mobile) -->
+      <div id="filter-controls" class="hidden md:flex flex-col md:flex-row md:items-center gap-4 mt-4 md:mt-0">
+        <!-- Search -->
+        <div class="relative flex-shrink-0 w-full md:w-56">
+          <span class="material-symbols-outlined text-ink-muted text-lg absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">search</span>
+          <input
+            id="filter-search"
+            type="text"
+            placeholder="Search hotels..."
+            class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-black/10 bg-surface text-sm text-ink placeholder:text-ink-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
+          />
+        </div>
+
+        <!-- Area Select -->
+        <div class="flex-shrink-0 w-full md:w-auto">
+          <select
+            id="filter-area"
+            class="w-full md:w-auto appearance-none bg-surface-low text-ink text-sm font-medium px-4 py-2.5 pr-9 rounded-xl border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary cursor-pointer"
+          >
+            <option value="">All Areas</option>
+            {uniqueAreas.map(area => (
+              <option value={area}>{area}</option>
+            ))}
+          </select>
+        </div>
+
+        <!-- Price Pills -->
+        <div class="flex items-center gap-2 flex-shrink-0 overflow-x-auto" id="filter-price-pills">
+          <button type="button" data-price="" class="filter-pill active text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-primary text-white">All</button>
+          <button type="button" data-price="budget" class="filter-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Budget</button>
+          <button type="button" data-price="mid-range" class="filter-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Mid-Range</button>
+          <button type="button" data-price="luxury" class="filter-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Luxury</button>
+        </div>
+
+        <!-- Rating Select -->
+        <div class="flex-shrink-0 w-full md:w-auto">
+          <select
+            id="filter-rating"
+            class="w-full md:w-auto appearance-none bg-surface-low text-ink text-sm font-medium px-4 py-2.5 pr-9 rounded-xl border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary cursor-pointer"
+          >
+            <option value="0">All Ratings</option>
+            <option value="4.5">4.5+ Stars</option>
+            <option value="4.0">4.0+ Stars</option>
+            <option value="3.5">3.5+ Stars</option>
+          </select>
+        </div>
+
+        <!-- Sort Select -->
+        <div class="flex-shrink-0 w-full md:w-auto md:ml-auto">
+          <select
+            id="filter-sort"
+            class="w-full md:w-auto appearance-none bg-surface-low text-ink text-sm font-medium px-4 py-2.5 pr-9 rounded-xl border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary cursor-pointer"
+          >
+            <option value="rating-desc">Rating (High to Low)</option>
+            <option value="rating-asc">Rating (Low to High)</option>
+            <option value="name-asc">Name (A-Z)</option>
+          </select>
+        </div>
+
+        <!-- Results count (desktop) -->
+        <div class="hidden md:block flex-shrink-0">
+          <span id="results-count-desktop" class="text-sm font-semibold text-ink-muted whitespace-nowrap">
+            Showing {hotels.length} of {hotels.length} hotels
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 3. HOTEL GRID                                   -->
   <!-- ═══════════════════════════════════════════════ -->
   <section class="py-16 md:py-24 bg-surface">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div id="hotel-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {hotels.map((hotel, i) => {
           const d = hotel.data;
           const heroImg = d.image || fallbackImage;
@@ -127,9 +219,13 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
           return (
             <article
               class:list={[
-                'reveal bg-surface-card rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 group hover:-translate-y-1',
+                'hotel-card reveal bg-surface-card rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgb(0,0,0,0.08)] transition-all duration-500 group hover:-translate-y-1',
                 `reveal-delay-${(i % 4) + 1}`,
               ]}
+              data-area={d.area}
+              data-price={d.priceRange}
+              data-rating={d.rating.toString()}
+              data-name={d.name.toLowerCase()}
             >
               {/* Image */}
               <div class="relative h-56 md:h-64 overflow-hidden">
@@ -236,6 +332,25 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
           );
         })}
       </div>
+
+      <!-- Load More Button -->
+      <div id="load-more-wrapper" class="mt-12 text-center">
+        <button
+          id="load-more-btn"
+          type="button"
+          class="inline-flex items-center gap-2 bg-primary text-white px-10 py-3.5 rounded-full text-sm font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20"
+        >
+          Load More Hotels
+          <span class="material-symbols-outlined text-lg">expand_more</span>
+        </button>
+      </div>
+
+      <!-- No Results Message -->
+      <div id="no-results" class="hidden py-16 text-center">
+        <span class="material-symbols-outlined text-5xl text-ink-muted/40 mb-4 block">search_off</span>
+        <h3 class="font-headline font-bold text-xl text-ink mb-2">No hotels found</h3>
+        <p class="text-ink-muted text-sm">Try adjusting your filters or search term.</p>
+      </div>
     </div>
   </section>
 
@@ -330,4 +445,157 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgSqW
     </div>
   </div>
   <div class="h-16 md:hidden"></div>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- CLIENT-SIDE: Filtering, Sorting & Load More     -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      /* ─── DOM refs ─── */
+      const grid = document.getElementById('hotel-grid') as HTMLElement;
+      const allCards = Array.from(grid.querySelectorAll('.hotel-card')) as HTMLElement[];
+      const searchInput = document.getElementById('filter-search') as HTMLInputElement;
+      const areaSelect = document.getElementById('filter-area') as HTMLSelectElement;
+      const ratingSelect = document.getElementById('filter-rating') as HTMLSelectElement;
+      const sortSelect = document.getElementById('filter-sort') as HTMLSelectElement;
+      const pricePills = document.querySelectorAll('#filter-price-pills .filter-pill') as NodeListOf<HTMLButtonElement>;
+      const loadMoreBtn = document.getElementById('load-more-btn') as HTMLButtonElement;
+      const loadMoreWrapper = document.getElementById('load-more-wrapper') as HTMLElement;
+      const noResults = document.getElementById('no-results') as HTMLElement;
+      const countDesktop = document.getElementById('results-count-desktop') as HTMLElement;
+      const countMobile = document.getElementById('results-count-mobile') as HTMLElement;
+      const filterToggle = document.getElementById('filter-toggle') as HTMLButtonElement;
+      const filterControls = document.getElementById('filter-controls') as HTMLElement;
+
+      const PAGE_SIZE = 24;
+      let visibleLimit = PAGE_SIZE;
+      let activePrice = '';
+
+      /* ─── Mobile filter toggle ─── */
+      filterToggle.addEventListener('click', () => {
+        const isOpen = !filterControls.classList.contains('hidden');
+        if (isOpen) {
+          filterControls.classList.add('hidden');
+          filterControls.classList.remove('flex');
+        } else {
+          filterControls.classList.remove('hidden');
+          filterControls.classList.add('flex');
+        }
+      });
+
+      /* ─── Price pill click ─── */
+      pricePills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pricePills.forEach(p => {
+            p.classList.remove('active', 'bg-primary', 'text-white');
+            p.classList.add('bg-surface-low', 'text-ink-muted');
+          });
+          pill.classList.add('active', 'bg-primary', 'text-white');
+          pill.classList.remove('bg-surface-low', 'text-ink-muted');
+          activePrice = pill.dataset.price || '';
+          visibleLimit = PAGE_SIZE;
+          applyFilters();
+        });
+      });
+
+      /* ─── Other filter listeners ─── */
+      searchInput.addEventListener('input', () => { visibleLimit = PAGE_SIZE; applyFilters(); });
+      areaSelect.addEventListener('change', () => { visibleLimit = PAGE_SIZE; applyFilters(); });
+      ratingSelect.addEventListener('change', () => { visibleLimit = PAGE_SIZE; applyFilters(); });
+      sortSelect.addEventListener('change', () => { applySorting(); applyFilters(); });
+
+      /* ─── Load More ─── */
+      loadMoreBtn.addEventListener('click', () => {
+        visibleLimit += PAGE_SIZE;
+        applyFilters();
+      });
+
+      /* ─── Sorting (rearranges DOM) ─── */
+      function applySorting() {
+        const val = sortSelect.value;
+        const sorted = [...allCards].sort((a, b) => {
+          if (val === 'rating-desc') {
+            return parseFloat(b.dataset.rating || '0') - parseFloat(a.dataset.rating || '0');
+          }
+          if (val === 'rating-asc') {
+            return parseFloat(a.dataset.rating || '0') - parseFloat(b.dataset.rating || '0');
+          }
+          // name-asc
+          return (a.dataset.name || '').localeCompare(b.dataset.name || '');
+        });
+        sorted.forEach(card => grid.appendChild(card));
+        // Update allCards order reference
+        allCards.length = 0;
+        allCards.push(...sorted);
+      }
+
+      /* ─── Core filter logic ─── */
+      function applyFilters() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        const areaVal = areaSelect.value;
+        const ratingMin = parseFloat(ratingSelect.value) || 0;
+        const priceVal = activePrice;
+
+        // Determine which cards match ALL filters
+        const matched: HTMLElement[] = [];
+        const notMatched: HTMLElement[] = [];
+
+        allCards.forEach(card => {
+          const cardArea = card.dataset.area || '';
+          const cardPrice = card.dataset.price || '';
+          const cardRating = parseFloat(card.dataset.rating || '0');
+          const cardName = card.dataset.name || '';
+
+          const passArea = !areaVal || cardArea === areaVal;
+          const passPrice = !priceVal || cardPrice === priceVal;
+          const passRating = cardRating >= ratingMin;
+          const passSearch = !searchTerm || cardName.includes(searchTerm);
+
+          if (passArea && passPrice && passRating && passSearch) {
+            matched.push(card);
+          } else {
+            notMatched.push(card);
+          }
+        });
+
+        // Hide non-matching
+        notMatched.forEach(card => {
+          card.classList.add('hidden');
+        });
+
+        // Show matching up to visibleLimit, hide the rest
+        const totalMatched = matched.length;
+        matched.forEach((card, idx) => {
+          if (idx < visibleLimit) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        // Update count
+        const showing = Math.min(visibleLimit, totalMatched);
+        const countText = `Showing ${showing} of ${totalMatched} hotels`;
+        countDesktop.textContent = countText;
+        countMobile.textContent = countText;
+
+        // Load More visibility
+        if (visibleLimit >= totalMatched) {
+          loadMoreWrapper.classList.add('hidden');
+        } else {
+          loadMoreWrapper.classList.remove('hidden');
+        }
+
+        // No results
+        if (totalMatched === 0) {
+          noResults.classList.remove('hidden');
+        } else {
+          noResults.classList.add('hidden');
+        }
+      }
+
+      /* ─── Initial run ─── */
+      applyFilters();
+    });
+  </script>
 </BaseLayout>
