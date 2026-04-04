@@ -1,12 +1,12 @@
 ---
 name: "LK Metropole"
 slug: "lk-metropole"
-description: "LK Metropole is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.1/5 from 770+ Google reviews."
+description: "LK Metropole is a mid-range hotel in Soi Buakhao, Pattaya. Rated 4.1/5 from 770+ Google reviews."
 rating: 4.1
 reviewsCount: 770
 priceRange: "mid-range"
 category: "Hotel"
-area: "Central Pattaya"
+area: "Soi Buakhao"
 address: "33, 35 หมู่ที่ 10 Pattaya Sai Song Rd"
 phone: "+66 81 358 8516"
 website: "https://www.lkpattaya.com/metropole"
@@ -18,11 +18,11 @@ draft: false
 
 ## Overview
 
-LK Metropole is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.1/5 rating from 770 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+LK Metropole is located in the Soi Buakhao area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.1/5 rating from 770 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 
-The hotel is situated at 33, 35 หมู่ที่ 10 Pattaya Sai Song Rd, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
+The hotel is situated at 33, 35 หมู่ที่ 10 Pattaya Sai Song Rd, Soi Buakhao. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
 ## Guest-Friendly
 

@@ -1,12 +1,12 @@
 ---
 name: "COSI Pattaya Wong Amat Beach"
 slug: "cosi-pattaya-wong-amat-beach"
-description: "COSI Pattaya Wong Amat Beach is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.5/5 from 989+ Google reviews."
+description: "COSI Pattaya Wong Amat Beach is a mid-range hotel in Wongamat Beach, Pattaya. Rated 4.5/5 from 989+ Google reviews."
 rating: 4.5
 reviewsCount: 989
 priceRange: "mid-range"
 category: "Hotel"
-area: "Central Pattaya"
+area: "Wongamat Beach"
 address: "157/535"
 phone: "+66 38 182 345"
 website: "https://www.centarahotelsresorts.com/cosihotels/czpn"
@@ -18,11 +18,11 @@ draft: false
 
 ## Overview
 
-COSI Pattaya Wong Amat Beach is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 989 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+COSI Pattaya Wong Amat Beach is located in the Wongamat Beach area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 989 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 
-The hotel is situated at 157/535, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
+The hotel is situated at 157/535, Wongamat Beach. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
 ## Guest-Friendly
 

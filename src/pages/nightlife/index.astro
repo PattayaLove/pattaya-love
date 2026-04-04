@@ -99,6 +99,121 @@ const fallbackImage = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDbi6F
   </header>
 
   <!-- ═══════════════════════════════════════════════ -->
+  <!-- 1b. NIGHTLIFE ZONES — Dark theme                -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-16 md:py-24 bg-navy relative grain">
+    <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-14 reveal">
+        <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-primary-light mb-3 block">
+          Explore by Area
+        </span>
+        <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-white">
+          Pattaya's Nightlife Zones
+        </h2>
+        <p class="text-white/50 text-lg mt-4 max-w-2xl mx-auto">
+          Three distinct areas, three completely different vibes. Pick your scene.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        {/* Zone 1: Walking Street */}
+        <a
+          href="/areas/walking-street/"
+          class="reveal reveal-delay-1 group block rounded-2xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(185,5,56,0.12)] bg-navy-light"
+        >
+          <div class="flex flex-col md:flex-row">
+            <div class="relative md:w-2/5 h-52 md:h-auto min-h-[200px] overflow-hidden bg-gradient-to-br from-primary/20 via-navy-light to-navy-light flex items-center justify-center">
+              <div class="absolute inset-0 bg-gradient-to-br from-primary/15 via-violet-600/10 to-transparent"></div>
+              <span class="material-symbols-outlined text-primary-light text-7xl md:text-8xl relative z-10 group-hover:scale-110 transition-transform duration-500" style="font-variation-settings: 'FILL' 1;">nightlife</span>
+              <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-navy-light to-transparent md:hidden"></div>
+            </div>
+            <div class="p-7 md:p-10 md:w-3/5 flex flex-col justify-center">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="inline-flex items-center gap-1.5 text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase bg-primary/20 text-primary-light">
+                  Most Popular
+                </span>
+              </div>
+              <h3 class="font-headline font-bold text-2xl md:text-3xl text-white group-hover:text-primary transition-colors leading-tight mb-3">
+                Walking Street
+              </h3>
+              <p class="text-white/50 text-base leading-relaxed mb-6">
+                Pattaya's legendary party strip — GoGo bars, mega clubs, and non-stop entertainment from dusk till dawn.
+              </p>
+              <div class="flex items-center gap-2 text-primary font-bold text-sm">
+                <span>Explore Walking Street</span>
+                <span class="material-symbols-outlined text-lg group-hover:translate-x-1.5 transition-transform duration-300">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        {/* Zone 2: Soi 6 */}
+        <a
+          href="/areas/soi-6/"
+          class="reveal reveal-delay-2 group block rounded-2xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(185,5,56,0.12)] bg-navy-light"
+        >
+          <div class="flex flex-col md:flex-row">
+            <div class="relative md:w-2/5 h-52 md:h-auto min-h-[200px] overflow-hidden bg-gradient-to-br from-amber/15 via-navy-light to-navy-light flex items-center justify-center">
+              <div class="absolute inset-0 bg-gradient-to-br from-amber/10 via-orange-600/5 to-transparent"></div>
+              <span class="material-symbols-outlined text-amber text-7xl md:text-8xl relative z-10 group-hover:scale-110 transition-transform duration-500" style="font-variation-settings: 'FILL' 1;">local_bar</span>
+              <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-navy-light to-transparent md:hidden"></div>
+            </div>
+            <div class="p-7 md:p-10 md:w-3/5 flex flex-col justify-center">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="inline-flex items-center gap-1.5 text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase bg-amber/20 text-amber">
+                  Daytime Hotspot
+                </span>
+              </div>
+              <h3 class="font-headline font-bold text-2xl md:text-3xl text-white group-hover:text-primary transition-colors leading-tight mb-3">
+                Soi 6
+              </h3>
+              <p class="text-white/50 text-base leading-relaxed mb-6">
+                The daytime hotspot — open-air beer bars, friendly atmosphere, and Pattaya's most accessible bar scene.
+              </p>
+              <div class="flex items-center gap-2 text-primary font-bold text-sm">
+                <span>Explore Soi 6</span>
+                <span class="material-symbols-outlined text-lg group-hover:translate-x-1.5 transition-transform duration-300">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        {/* Zone 3: Soi Buakhao & LK Metro */}
+        <a
+          href="/areas/soi-buakhao/"
+          class="reveal reveal-delay-3 group block rounded-2xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(185,5,56,0.12)] bg-navy-light"
+        >
+          <div class="flex flex-col md:flex-row">
+            <div class="relative md:w-2/5 h-52 md:h-auto min-h-[200px] overflow-hidden bg-gradient-to-br from-violet-500/15 via-navy-light to-navy-light flex items-center justify-center">
+              <div class="absolute inset-0 bg-gradient-to-br from-violet-500/10 via-sky-600/5 to-transparent"></div>
+              <span class="material-symbols-outlined text-violet-300 text-7xl md:text-8xl relative z-10 group-hover:scale-110 transition-transform duration-500" style="font-variation-settings: 'FILL' 1;">music_note</span>
+              <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-navy-light to-transparent md:hidden"></div>
+            </div>
+            <div class="p-7 md:p-10 md:w-3/5 flex flex-col justify-center">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="inline-flex items-center gap-1.5 text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase bg-violet-500/20 text-violet-300">
+                  Local's Choice
+                </span>
+              </div>
+              <h3 class="font-headline font-bold text-2xl md:text-3xl text-white group-hover:text-primary transition-colors leading-tight mb-3">
+                Soi Buakhao & LK Metro
+              </h3>
+              <p class="text-white/50 text-base leading-relaxed mb-6">
+                The local's choice — live music, beer bars, Three Town Market, and a more authentic Thai nightlife experience.
+              </p>
+              <div class="flex items-center gap-2 text-primary font-bold text-sm">
+                <span>Explore Soi Buakhao</span>
+                <span class="material-symbols-outlined text-lg group-hover:translate-x-1.5 transition-transform duration-300">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
   <!-- 2. VENUE GRID — Dark theme                      -->
   <!-- ═══════════════════════════════════════════════ -->
   <section class="py-16 md:py-24 bg-navy relative grain">

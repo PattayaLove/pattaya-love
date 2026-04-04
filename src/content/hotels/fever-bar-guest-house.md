@@ -1,12 +1,12 @@
 ---
 name: "Fever Bar & Guest House"
 slug: "fever-bar-guest-house"
-description: "Fever Bar & Guest House is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.9/5 from 117+ Google reviews."
+description: "Fever Bar & Guest House is a budget-friendly hotel in Soi Buakhao, Pattaya. Rated 3.9/5 from 117+ Google reviews."
 rating: 3.9
 reviewsCount: 117
 priceRange: "budget"
 category: "Hotel"
-area: "Central Pattaya"
+area: "Soi Buakhao"
 address: "Red Light District, LK Metro Aly"
 phone: "+66 65 625 4144"
 website: "https://www.feverpattaya.com/"
@@ -18,11 +18,11 @@ draft: false
 
 ## Overview
 
-Fever Bar & Guest House is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.9/5 rating from 117 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
+Fever Bar & Guest House is located in the Soi Buakhao area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.9/5 rating from 117 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
 
 ## Location
 
-The hotel is situated at Red Light District, LK Metro Aly, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
+The hotel is situated at Red Light District, LK Metro Aly, Soi Buakhao. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
 ## Guest-Friendly
 
