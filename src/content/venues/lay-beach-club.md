@@ -2,14 +2,18 @@
 name: "Lay Beach Club"
 slug: "lay-beach-club"
 type: "other"
-area: "Na Jomtien"
+area: "Central Pattaya"
 priceLevel: 3
-description: "Boutique beach club vibes at Na Jomtien — infinity pool overlooking the sea, sunset sessions, premium cocktails, and a sophisticated crowd."
+openingHours: "11:00 – 22:00"
+googleMapsUrl: "https://www.google.com/maps/place/Lay+Beach+Club"
+description: "Boutique beach club near Soi 6 — infinity pool overlooking the sea, sunset sessions, premium cocktails, and a sophisticated crowd. One of Pattaya's best day-to-evening venues."
 publishDate: 2026-04-04
 draft: false
 ---
 
-Lay Beach Club occupies a stretch of Na Jomtien coastline that feels worlds away from the neon-lit chaos of central Pattaya. Set slightly south of the main Jomtien tourist area, Lay offers a boutique beach club experience that prioritizes design, atmosphere, and a sense of escape. If Alexa Beach Club is Pattaya's mainstream beach club answer, Lay is its more refined, intentionally curated counterpart.
+Lay Beach Club sits on the beachfront near Soi 6 in Central Pattaya, offering a refined beach club experience just steps from the city's most popular entertainment area. While Pattaya has plenty of places to drink by the sea, Lay stands out with its design-forward setting, quality cocktail program, and an atmosphere that prioritizes relaxation over chaos.
+
+**Website:** [laybeachclub.com](https://www.laybeachclub.com/)
 
 ## The Setting
 
@@ -43,4 +47,4 @@ Lay attracts couples, small groups of friends, and solo visitors who appreciate 
 
 ## Getting There
 
-Na Jomtien is roughly 20 to 25 minutes south of central Pattaya by car. A Grab ride from the city center costs 150 to 250 THB depending on traffic. The venue is well-signed along the Na Jomtien coastal road. Parking is available on-site for those with their own transport. If you are staying in Jomtien, it is a short 10-minute drive further south.
+Lay Beach Club is centrally located near Soi 6 on Beach Road, making it one of the most accessible beach clubs in Pattaya. Walking distance from many Central Pattaya hotels. If you're coming from Jomtien or North Pattaya, a Grab ride costs 50-100 THB. Parking is available on-site.
