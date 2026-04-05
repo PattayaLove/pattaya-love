@@ -213,76 +213,63 @@ function getFallback(priceRange: string): string {
       </div>
 
       <!-- Filter controls (collapsible on mobile) -->
-      <div id="filter-controls" class="hidden md:flex flex-col md:flex-row md:items-center gap-4 mt-4 md:mt-0">
-        <!-- Search -->
-        <div class="relative flex-shrink-0 w-full md:w-56">
-          <span class="material-symbols-outlined text-ink-muted text-lg absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">search</span>
-          <input
-            id="filter-search"
-            type="text"
-            placeholder="Search properties..."
-            class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-black/10 bg-surface text-sm text-ink placeholder:text-ink-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
-          />
+      <div id="filter-controls" class="hidden md:block mt-4 md:mt-0 space-y-3">
+        <!-- Row 1: Search + Area + Category -->
+        <div class="flex flex-col md:flex-row md:items-center gap-3">
+          <div class="relative flex-shrink-0 w-full md:w-48">
+            <span class="material-symbols-outlined text-ink-muted text-lg absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">search</span>
+            <input
+              id="filter-search"
+              type="text"
+              placeholder="Search..."
+              class="w-full pl-10 pr-4 py-2 rounded-xl border border-black/10 bg-surface text-sm text-ink placeholder:text-ink-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
+            />
+          </div>
+          <div class="flex-shrink-0 w-full md:w-auto">
+            <select
+              id="filter-area"
+              class="w-full md:w-auto appearance-none bg-surface-low text-ink text-sm font-medium px-3 py-2 pr-8 rounded-xl border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary/30 cursor-pointer"
+            >
+              <option value="">All Areas</option>
+              {uniqueAreas.map(area => (
+                <option value={area}>{area}</option>
+              ))}
+            </select>
+          </div>
+          <div class="flex items-center gap-1.5 flex-shrink-0 overflow-x-auto" id="filter-category-pills">
+            <button type="button" data-category="" class="category-pill active text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-navy text-white">All</button>
+            <button type="button" data-category="hotel" class="category-pill text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Hotels</button>
+            <button type="button" data-category="condo" class="category-pill text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Condos</button>
+            <button type="button" data-category="villa" class="category-pill text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Villas</button>
+            <button type="button" data-category="apartment" class="category-pill text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Apts</button>
+          </div>
         </div>
-
-        <!-- Area Select -->
-        <div class="flex-shrink-0 w-full md:w-auto">
-          <select
-            id="filter-area"
-            class="w-full md:w-auto appearance-none bg-surface-low text-ink text-sm font-medium px-4 py-2.5 pr-9 rounded-xl border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary cursor-pointer"
-          >
-            <option value="">All Areas</option>
-            {uniqueAreas.map(area => (
-              <option value={area}>{area}</option>
-            ))}
-          </select>
-        </div>
-
-        <!-- Category Pills -->
-        <div class="flex items-center gap-2 flex-shrink-0 overflow-x-auto" id="filter-category-pills">
-          <button type="button" data-category="" class="category-pill active text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-navy text-white">All</button>
-          <button type="button" data-category="hotel" class="category-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Hotels</button>
-          <button type="button" data-category="condo" class="category-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Condos</button>
-          <button type="button" data-category="villa" class="category-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Pool Villas</button>
-          <button type="button" data-category="apartment" class="category-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Apartments</button>
-        </div>
-
-        <!-- Price Pills -->
-        <div class="flex items-center gap-2 flex-shrink-0 overflow-x-auto" id="filter-price-pills">
-          <button type="button" data-price="" class="filter-pill active text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-primary text-white">All</button>
-          <button type="button" data-price="budget" class="filter-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Budget</button>
-          <button type="button" data-price="mid-range" class="filter-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Mid-Range</button>
-          <button type="button" data-price="luxury" class="filter-pill text-[11px] font-bold px-4 py-2 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Luxury</button>
-        </div>
-
-        <!-- Rating Select -->
-        <div class="flex-shrink-0 w-full md:w-auto">
+        <!-- Row 2: Price + Rating + Sort + Count -->
+        <div class="flex flex-col md:flex-row md:items-center gap-3">
+          <div class="flex items-center gap-1.5 flex-shrink-0 overflow-x-auto" id="filter-price-pills">
+            <button type="button" data-price="" class="filter-pill active text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-primary text-white">All</button>
+            <button type="button" data-price="budget" class="filter-pill text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Budget</button>
+            <button type="button" data-price="mid-range" class="filter-pill text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Mid-Range</button>
+            <button type="button" data-price="luxury" class="filter-pill text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase transition-all whitespace-nowrap bg-surface-low text-ink-muted">Luxury</button>
+          </div>
           <select
             id="filter-rating"
-            class="w-full md:w-auto appearance-none bg-surface-low text-ink text-sm font-medium px-4 py-2.5 pr-9 rounded-xl border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary cursor-pointer"
+            class="flex-shrink-0 w-full md:w-auto appearance-none bg-surface-low text-ink text-sm font-medium px-3 py-2 pr-8 rounded-xl border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary/30 cursor-pointer"
           >
             <option value="0">All Ratings</option>
             <option value="4.5">4.5+ Stars</option>
             <option value="4.0">4.0+ Stars</option>
             <option value="3.5">3.5+ Stars</option>
           </select>
-        </div>
-
-        <!-- Sort Select -->
-        <div class="flex-shrink-0 w-full md:w-auto md:ml-auto">
           <select
             id="filter-sort"
-            class="w-full md:w-auto appearance-none bg-surface-low text-ink text-sm font-medium px-4 py-2.5 pr-9 rounded-xl border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary cursor-pointer"
+            class="flex-shrink-0 w-full md:w-auto appearance-none bg-surface-low text-ink text-sm font-medium px-3 py-2 pr-8 rounded-xl border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary/30 cursor-pointer"
           >
             <option value="rating-desc">Rating (High to Low)</option>
             <option value="rating-asc">Rating (Low to High)</option>
             <option value="name-asc">Name (A-Z)</option>
           </select>
-        </div>
-
-        <!-- Results count (desktop) -->
-        <div class="hidden md:block flex-shrink-0">
-          <span id="results-count-desktop" class="text-sm font-semibold text-ink-muted whitespace-nowrap">
+          <span id="results-count-desktop" class="hidden md:inline text-sm font-semibold text-ink-muted whitespace-nowrap ml-auto">
             Showing {hotels.length} of {hotels.length} properties
           </span>
         </div>
