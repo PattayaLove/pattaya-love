@@ -37,7 +37,11 @@ const typeIcons: Record<string, string> = {
   other: 'location_on',
 };
 
-const fallbackImage = '/images/placeholder.svg';
+function getVenueFallback(area: string): string {
+  if (area === 'Walking Street') return '/images/areas/walking-street-night.jpg';
+  if (area === 'Soi 6') return '/images/areas/soi-6.jpg';
+  return '/images/areas/walking-street.jpg';
+}
 ---
 
 <BaseLayout
@@ -222,7 +226,7 @@ const fallbackImage = '/images/placeholder.svg';
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {venues.map((venue, i) => {
           const d = venue.data;
-          const heroImg = d.image || fallbackImage;
+          const heroImg = d.image || getVenueFallback(d.area);
           const colors = typeColors[d.type] || typeColors['other'];
           const icon = typeIcons[d.type] || 'location_on';
           const priceBaht = Array.from({ length: d.priceLevel }).map(() => '\u0E3F').join('');

@@ -193,18 +193,12 @@ const placeSchema = {
               ]}
             >
               <div class="relative w-full sm:w-48 h-48 sm:h-auto shrink-0 overflow-hidden">
-                {v.data.image ? (
-                  <img
-                    src={v.data.image}
-                    alt={v.data.name}
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    loading="lazy"
-                  />
-                ) : (
-                  <div class="w-full h-full bg-surface-low flex items-center justify-center">
-                    <span class="material-symbols-outlined text-4xl text-ink-faint">nightlife</span>
-                  </div>
-                )}
+                <img
+                  src={v.data.image || (v.data.area === 'Walking Street' ? '/images/areas/walking-street-night.jpg' : v.data.area === 'Soi 6' ? '/images/areas/soi-6.jpg' : '/images/areas/walking-street.jpg')}
+                  alt={v.data.name}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
                 <span class="absolute top-3 left-3 bg-primary/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
                   {typeLabels[v.data.type]}
                 </span>

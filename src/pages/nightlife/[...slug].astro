@@ -96,18 +96,12 @@ const venueSchema = {
   <!-- HERO — Full-width venue image, dark overlay     -->
   <!-- ═══════════════════════════════════════════════ -->
   <header class="relative h-[520px] lg:h-[600px] w-full flex items-end overflow-hidden">
-    {venue.data.image ? (
-      <OptImage
-        src={venue.data.image}
-        alt={venue.data.name}
-        class="absolute inset-0 w-full h-full object-cover"
-        loading="eager"
-        width={1920}
-        height={1080}
-      />
-    ) : (
-      <div class="absolute inset-0 bg-navy-light"></div>
-    )}
+    <img
+      src={venue.data.image || (venue.data.area === 'Walking Street' ? '/images/areas/walking-street-night.jpg' : venue.data.area === 'Soi 6' ? '/images/areas/soi-6.jpg' : '/images/areas/walking-street.jpg')}
+      alt={venue.data.name}
+      class="absolute inset-0 w-full h-full object-cover"
+      loading="eager"
+    />
     <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/70 to-navy/20"></div>
 
     <div class="relative z-10 w-full max-w-5xl mx-auto px-6 lg:px-8 pb-12 lg:pb-16">
