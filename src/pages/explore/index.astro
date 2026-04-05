@@ -141,8 +141,8 @@ const categoryLabels: Record<string, string> = {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         {exploreGuides.map((guide, i) => (
           <a href={`/guides/${guide.data.slug}/`} class={`reveal reveal-delay-${i + 1} group bg-surface-card rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] overflow-hidden hover:shadow-[0_20px_50px_-12px_rgba(185,5,56,0.1)] transition-all duration-500 hover:-translate-y-1`}>
-            <div class="aspect-video bg-surface-low flex items-center justify-center">
-              <span class="material-symbols-outlined text-5xl text-ink-faint/30">article</span>
+            <div class="aspect-video bg-surface-low overflow-hidden">
+              <img src={guide.data.image || '/images/areas/pattaya-drone-sunset.jpg'} alt={guide.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
             </div>
             <div class="p-6">
               <span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary mb-2 block">

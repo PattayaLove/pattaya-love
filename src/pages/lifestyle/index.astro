@@ -79,8 +79,8 @@ const topics = [
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {lifestyleGuides.slice(0, 3).map((guide, i) => (
             <a href={`/guides/${guide.data.slug}/`} class={`reveal reveal-delay-${i + 1} group bg-surface-card rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] overflow-hidden hover:shadow-lg transition-all duration-500 hover:-translate-y-1`}>
-              <div class="aspect-video bg-surface-low flex items-center justify-center">
-                <span class="material-symbols-outlined text-5xl text-ink-faint/30">article</span>
+              <div class="aspect-video bg-surface-low overflow-hidden">
+                <img src={guide.data.image || '/images/areas/pattaya-drone-sunset.jpg'} alt={guide.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
               </div>
               <div class="p-6">
                 <h3 class="text-lg font-bold font-headline text-ink mb-2 group-hover:text-primary transition-colors line-clamp-2">{guide.data.title}</h3>
