@@ -3,7 +3,7 @@ name: "Alexa Beach Club"
 slug: "alexa-beach-club"
 type: "other"
 area: "Jomtien"
-image: "/images/areas/jomtien-beach-palms.jpg"
+image: "/images/venues/alexa-beach-club.jpg"
 priceLevel: 3
 description: "Pattaya's premier beach club experience — poolside lounging, international DJs, craft cocktails, and stunning Gulf of Thailand sunsets at Jomtien Beach."
 publishDate: 2026-04-04
