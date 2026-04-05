@@ -3,6 +3,7 @@ title: "Scooter & Motorbike Rental in Pattaya — 2026 Guide"
 slug: "pattaya-scooter-rental"
 description: "Everything about renting a scooter in Pattaya. Honda PCX vs Click, prices, license requirements, insurance, and safety tips from experienced riders."
 category: "transport"
+image: "/images/guides/motorbike-rental.jpg"
 publishDate: 2026-04-04
 draft: false
 ---
