@@ -6,6 +6,7 @@ type: "beer-bar"
 area: "Soi 6"
 priceLevel: 1
 openingHours: "14:00 – 02:00"
+image: "/images/venues/soi6-panda-blue-booties.jpg"
 publishDate: 2026-04-05
 draft: false
 ---
