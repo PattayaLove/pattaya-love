@@ -84,6 +84,19 @@ const websiteSchema = {
       injectSpeedInsights();
     </script>
 
+    <!-- Auto srcset for responsive images -->
+    <script>
+      document.querySelectorAll('img[src*="/images/"]').forEach((img) => {
+        const src = img.getAttribute('src');
+        if (!src || !src.endsWith('.webp') || img.getAttribute('srcset')) return;
+        const base = src.replace('.webp', '');
+        img.setAttribute('srcset', `${base}-400w.webp 400w, ${base}-800w.webp 800w, ${base}-1200w.webp 1200w, ${src} 1920w`);
+        if (!img.getAttribute('sizes')) {
+          img.setAttribute('sizes', '(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px');
+        }
+      });
+    </script>
+
     <!-- Scroll reveal observer -->
     <script>
       const observer = new IntersectionObserver(
