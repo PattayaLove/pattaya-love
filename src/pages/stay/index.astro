@@ -73,7 +73,14 @@ const amenityIcons: Record<string, string> = {
   Staff: 'person',
 };
 
-const fallbackImage = '/images/placeholder.svg';
+const fallbackImages: Record<string, string> = {
+  luxury: '/images/hotels/hotel-luxury-1.png',
+  'mid-range': '/images/hotels/hotel-luxury-2.png',
+  budget: '/images/hotels/hotel-boutique.png',
+};
+function getFallback(priceRange: string): string {
+  return fallbackImages[priceRange] || '/images/hotels/hotel-luxury-2.png';
+}
 ---
 
 <BaseLayout
@@ -158,7 +165,7 @@ const fallbackImage = '/images/placeholder.svg';
       <div class="flex gap-5 overflow-x-auto pb-4 -mx-6 px-6 snap-x snap-mandatory scrollbar-hide" style="scrollbar-width: none; -ms-overflow-style: none;">
         {featured.map((hotel) => {
           const d = hotel!.data;
-          const heroImg = d.image || '/images/placeholder.svg';
+          const heroImg = d.image || getFallback(d.priceRange);
           return (
             <a href={`/stay/${d.slug}/`} class="group shrink-0 w-[280px] snap-start bg-surface-card rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1">
               <div class="relative h-40 overflow-hidden">
@@ -291,7 +298,7 @@ const fallbackImage = '/images/placeholder.svg';
       <div id="hotel-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {hotels.map((hotel, i) => {
           const d = hotel.data;
-          const heroImg = d.image || fallbackImage;
+          const heroImg = d.image || getFallback(d.priceRange);
           const fullStars = Math.floor(d.rating);
           const hasHalf = d.rating % 1 >= 0.25 && d.rating % 1 < 0.75;
           const emptyStars = 5 - fullStars - (hasHalf ? 1 : 0);
