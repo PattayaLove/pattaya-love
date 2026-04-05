@@ -3,6 +3,7 @@ title: "Tomorrowland Thailand 2026 — Complete Pattaya Festival Guide"
 slug: "tomorrowland-pattaya-2026"
 description: "Everything you need to know about Tomorrowland coming to Pattaya in November 2026. Hotels, transport, tickets, and insider tips for the biggest music festival in Thai history."
 category: "general"
+image: "/images/areas/bali-hai-sunset.jpg"
 publishDate: 2026-04-04
 draft: false
 ---

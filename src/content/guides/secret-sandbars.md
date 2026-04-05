@@ -3,6 +3,7 @@ title: "Hidden Beaches & Secret Islands Near Pattaya 2026"
 slug: "secret-sandbars"
 description: "Beyond Koh Larn — discover Pattaya's secret islands, hidden coves, and untouched sandbars. Koh Sak, Koh Krok, Koh Phai, and the best-kept secrets of the Gulf."
 category: "general"
+image: "/images/trending/island.png"
 publishDate: 2026-04-04
 draft: false
 ---

@@ -7,7 +7,7 @@ area: "Walking Street"
 priceLevel: 1
 openingHours: "18:00 – 02:00"
 publishDate: 2026-04-04
-image: "/images/venues/beer-garden-walking-street.jpg"
+image: "/images/areas/walking-street-night.jpg"
 draft: false
 ---
 

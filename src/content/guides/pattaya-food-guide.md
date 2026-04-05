@@ -3,6 +3,7 @@ title: "Best Food in Pattaya — Restaurant & Street Food Guide 2026"
 slug: "pattaya-food-guide"
 description: "From Michelin-worthy seafood to 40 THB pad thai — the complete Pattaya food guide. Best restaurants, street food spots, night markets, and local favorites."
 category: "food"
+image: "/images/guides/central-pattaya-mall.jpg"
 publishDate: 2026-04-04
 draft: false
 ---
