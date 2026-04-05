@@ -162,3 +162,9 @@ For most first-time visitors arriving at Suvarnabhumi, **Bell Travel Service** o
 When comfort and time matter more than cost, a **Grab or pre-booked transfer** gets you door-to-door without the hassle of finding onward transport from the Pattaya bus terminal.
 
 Whichever option you choose, the journey is short and simple. You will be on Beach Road with a cold beer in hand before you know it.
+
+## Related Guides
+
+- [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)
+- [Scooter & Motorbike Rental in Pattaya](/guides/pattaya-scooter-rental/)
+- [Best Hotels in Pattaya](/stay/)

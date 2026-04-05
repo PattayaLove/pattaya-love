@@ -7,7 +7,7 @@ publishDate: 2026-04-04
 draft: false
 ---
 
-Walking Street is the epicenter of Pattaya's nightlife and one of the most famous entertainment strips in the world. Stretching roughly 500 meters along the seafront in South Pattaya, this pedestrian-only road comes alive every evening with neon lights, thumping music, and a relentless energy that draws visitors from around the globe.
+[Walking Street](/areas/walking-street/) is the epicenter of Pattaya's nightlife and one of the most famous entertainment strips in the world. Stretching roughly 500 meters along the seafront in South Pattaya, this pedestrian-only road comes alive every evening with neon lights, thumping music, and a relentless energy that draws visitors from around the globe.
 
 Whether this is your first night out or your fiftieth, this guide covers everything you need to know about Walking Street in 2026.
 
@@ -129,7 +129,7 @@ If you want to stay close to Walking Street, several hotels are within a five-mi
 - **Adelphi Pattaya:** Modern rooms, rooftop pool, just off the south end of Beach Road.
 - **Mike Beach Resort:** Budget-friendly, steps from the Walking Street entrance.
 
-For more options, see our guide to [hotels near Soi 6](/guides/hotels-near-soi-6), which covers Central Pattaya hotels convenient for all nightlife areas.
+For more options, see our guide to [hotels near Soi 6](/guides/hotels-near-soi-6/), which covers Central Pattaya hotels convenient for all nightlife areas.
 
 ## Final Thoughts
 
@@ -138,3 +138,9 @@ Walking Street delivers exactly what it promises: a concentrated, high-energy ni
 The key to enjoying it is going at your own pace. You do not need to visit every bar or stay until 03:00. Some of the best nights on Walking Street involve finding one or two venues you connect with and settling in for the evening.
 
 Come with an open mind, a reasonable budget, and a sense of humor, and Walking Street will not disappoint.
+
+## Related Guides
+
+- [Pattaya Nightlife Prices — What Everything Costs](/guides/pattaya-nightlife-prices/)
+- [Hotels Near Soi 6](/guides/hotels-near-soi-6/)
+- [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)

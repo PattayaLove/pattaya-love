@@ -35,19 +35,19 @@ Hotel demand for Tomorrowland weekend will be unlike anything Pattaya has experi
 
 ### Near the Festival — Jomtien and Na Jomtien
 
-If the festival takes place in the Na Jomtien area as expected, staying in [Jomtien](/areas/jomtien) puts you closest to the action. Jomtien Beach has a wide range of hotels from budget guesthouses to mid-range beachfront properties, and you will avoid the worst of the traffic that will build up around the event.
+If the festival takes place in the Na Jomtien area as expected, staying in [Jomtien](/areas/jomtien/) puts you closest to the action. Jomtien Beach has a wide range of hotels from budget guesthouses to mid-range beachfront properties, and you will avoid the worst of the traffic that will build up around the event.
 
 ### Upscale and Scenic — Pratumnak Hill
 
-[Pratumnak](/areas/pratumnak) sits on the hill between South Pattaya and Jomtien, offering excellent views and a more refined atmosphere. Hotels here tend to be mid-range to upscale, and the area provides quick access to both Jomtien and central Pattaya. It is a strong choice for festival-goers who want comfort without being in the thick of the party zone.
+[Pratumnak](/areas/pratumnak/) sits on the hill between South Pattaya and Jomtien, offering excellent views and a more refined atmosphere. Hotels here tend to be mid-range to upscale, and the area provides quick access to both Jomtien and central Pattaya. It is a strong choice for festival-goers who want comfort without being in the thick of the party zone.
 
 ### Party Base — Walking Street and Central Pattaya
 
-If you plan to combine Tomorrowland with Pattaya's legendary nightlife, staying near [Walking Street](/areas/walking-street) or along Beach Road and Second Road in central Pattaya keeps you in the heart of the action after the festival stages close for the night. Expect plenty of after-parties and a city-wide buzz during festival weekend.
+If you plan to combine Tomorrowland with Pattaya's legendary nightlife, staying near [Walking Street](/areas/walking-street/) or along Beach Road and Second Road in central Pattaya keeps you in the heart of the action after the festival stages close for the night. Expect plenty of after-parties and a city-wide buzz during festival weekend.
 
 ### Budget — East Pattaya and Soi Buakhao
 
-[East Pattaya](/areas/east-pattaya) and the Soi Buakhao area offer the most affordable rooms in the city. You will need to factor in transport time to reach the festival, but Grab and baht buses make this manageable. Studios and guesthouses in this zone start from 500 THB per night on regular days, though expect prices to double or triple during the festival.
+[East Pattaya](/areas/east-pattaya/) and the Soi Buakhao area offer the most affordable rooms in the city. You will need to factor in transport time to reach the festival, but Grab and baht buses make this manageable. Studios and guesthouses in this zone start from 500 THB per night on regular days, though expect prices to double or triple during the festival.
 
 ### Booking Strategy
 
@@ -65,7 +65,7 @@ Most international visitors will fly into one of Bangkok's two airports.
 
 Expect the Tomorrowland organizers to arrange dedicated shuttle services from Bangkok airports. Previous international editions have offered festival transport packages, and given the scale of this event, something similar is very likely.
 
-For a complete breakdown of every route, check our [Bangkok to Pattaya transport guide](/guides/bangkok-to-pattaya).
+For a complete breakdown of every route, check our [Bangkok to Pattaya transport guide](/guides/bangkok-to-pattaya/).
 
 ## Getting Around During the Festival
 
@@ -111,13 +111,13 @@ Packing for Tomorrowland Thailand is different from packing for the Belgian edit
 
 Flying halfway around the world for a weekend festival alone would be a missed opportunity. Pattaya and the surrounding region offer enough to fill a week or more before or after the event.
 
-**Extend your stay** by arriving a few days early to adjust to the time zone, explore the beaches, and settle in. Jomtien and Wongamat offer the best beach experiences, while [Wongamat](/areas/wongamat) in particular has some of the clearest water in the Pattaya area.
+**Extend your stay** by arriving a few days early to adjust to the time zone, explore the beaches, and settle in. Jomtien and Wongamat offer the best beach experiences, while [Wongamat](/areas/wongamat/) in particular has some of the clearest water in the Pattaya area.
 
-**Nightlife** is an obvious draw. Walking Street alone could fill multiple evenings, and areas like Soi 6, LK Metro, and Soi Buakhao each have their own character. Read our full [Walking Street guide](/guides/walking-street-guide) if this is your first time.
+**Nightlife** is an obvious draw. Walking Street alone could fill multiple evenings, and areas like [Soi 6](/areas/soi-6/), LK Metro, and [Soi Buakhao](/areas/soi-buakhao/) each have their own character. Read our full [Walking Street guide](/guides/walking-street-guide/) if this is your first time.
 
-**Day trips** to nearby islands like Koh Larn (a 30-minute ferry ride) offer white sand beaches and snorkeling. The Sanctuary of Truth, Nong Nooch Tropical Garden, and the Pattaya Floating Market are all worthwhile excursions.
+**Day trips** to nearby islands like [Koh Larn](/guides/koh-larn-island-guide/) (a 30-minute ferry ride) offer white sand beaches and snorkeling. The Sanctuary of Truth, Nong Nooch Tropical Garden, and the Pattaya Floating Market are all worthwhile excursions.
 
-**Food** is another reason to extend. From 50 THB street food to high-end seafood restaurants on the Jomtien beachfront, Pattaya's dining scene punches well above its weight.
+**[Food](/guides/pattaya-food-guide/)** is another reason to extend. From 50 THB street food to high-end seafood restaurants on the Jomtien beachfront, Pattaya's dining scene punches well above its weight.
 
 ## Essential Tips
 
@@ -145,7 +145,7 @@ Ticket prices have not been announced. Based on previous international editions,
 
 ### Is Pattaya safe?
 
-Yes. Pattaya is a major tourist city with a well-established infrastructure for visitors. Basic precautions apply: watch your belongings, avoid confrontations, use Grab for late-night transport, and do not get involved with illegal substances. Tourist police are present throughout the city. For a broader overview, see our [first-time visitor guide](/guides/first-time-pattaya).
+Yes. Pattaya is a major tourist city with a well-established infrastructure for visitors. Basic precautions apply: watch your belongings, avoid confrontations, use Grab for late-night transport, and do not get involved with illegal substances. Tourist police are present throughout the city. For a broader overview, see our [first-time visitor guide](/guides/first-time-pattaya/).
 
 ### Will there be after-parties?
 
@@ -158,3 +158,9 @@ Tomorrowland coming to Pattaya is a landmark moment for both the festival brand 
 The key to making the most of it is planning early. Book your hotel, sort your transport, and get registered for tickets as soon as sales open. Pattaya has the infrastructure to handle a major event, but demand will push everything to capacity.
 
 We will continue updating this guide as official details are released. Bookmark this page and check back regularly.
+
+## Related Guides
+
+- [Best Hotels in Pattaya](/stay/)
+- [Best Beaches in Pattaya](/guides/pattaya-beaches/)
+- [Pattaya Nightlife Prices — What Everything Costs](/guides/pattaya-nightlife-prices/)

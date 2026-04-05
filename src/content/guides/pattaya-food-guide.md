@@ -21,7 +21,7 @@ If you are new to Thai food, start mild and work your way up. When a vendor asks
 
 ### Thai Restaurants
 
-**Mum Aroi** in [Naklua](/areas/naklua) is a legendary seafood-focused Thai restaurant right on the water. Expect to pay 300 to 800 THB per person for outstanding crab, prawns, and fish dishes. Arrive before 18:00 to get a good table without a long wait.
+**Mum Aroi** in [Naklua](/areas/naklua/) is a legendary seafood-focused Thai restaurant right on the water. Expect to pay 300 to 800 THB per person for outstanding crab, prawns, and fish dishes. Arrive before 18:00 to get a good table without a long wait.
 
 **Nong Joke** on Soi Buakhao is a local favorite for authentic Isaan food. The grilled pork neck (kor moo yang) and som tam are excellent, with most dishes under 100 THB. It is popular with both Thai locals and expats who know where to eat well for cheap.
 
@@ -39,7 +39,7 @@ The seafood restaurants lining **Naklua Soi 18** (the Naklua Fish Market area) l
 
 ### Italian
 
-**Bruno's** in Pratumnak is one of the finer dining experiences in Pattaya, with proper Italian cuisine, an extensive wine list, and a well-dressed atmosphere. Main courses run 400 to 1,200 THB. For casual Italian, **Pattaya Beer Garden** on Second Road serves solid pizza and pasta at more moderate prices.
+**Bruno's** in [Pratumnak](/areas/pratumnak/) is one of the finer dining experiences in Pattaya, with proper Italian cuisine, an extensive wine list, and a well-dressed atmosphere. Main courses run 400 to 1,200 THB. For casual Italian, **Pattaya Beer Garden** on Second Road serves solid pizza and pasta at more moderate prices.
 
 ### Japanese
 
@@ -47,7 +47,7 @@ The seafood restaurants lining **Naklua Soi 18** (the Naklua Fish Market area) l
 
 ## Street Food Hotspots
 
-Street food in Pattaya is cheap, delicious, and available almost everywhere. The best concentration of vendors is along [Soi Buakhao](/areas/soi-buakhao) in the evening, where you will find grilled meats, pad thai, som tam, fresh fruit, and roti stands all within a short walk.
+Street food in Pattaya is cheap, delicious, and available almost everywhere. The best concentration of vendors is along [Soi Buakhao](/areas/soi-buakhao/) in the evening, where you will find grilled meats, pad thai, som tam, fresh fruit, and roti stands all within a short walk.
 
 **Beach Road** between Soi 6 and Soi 13 has vendors selling grilled corn, mango sticky rice, and coconut pancakes for 20 to 60 THB. These are especially active in the evening hours.
 
@@ -57,23 +57,23 @@ The area around **Soi Lengkee** and the Third Road side streets also has strong 
 
 ### Thepprasit Night Market
 
-This is Pattaya's biggest and most popular night market, open Friday through Sunday evenings from around 17:00 to 23:00. It is located on Thepprasit Road near [Jomtien](/areas/jomtien). The market splits into a food section and a shopping section. On the food side, expect grilled seafood skewers (20 to 40 THB each), pad thai (40 to 60 THB), fresh fruit shakes (30 to 50 THB), and all manner of Thai desserts. It gets crowded on weekends, so arrive early for the best experience.
+This is Pattaya's biggest and most popular night market, open Friday through Sunday evenings from around 17:00 to 23:00. It is located on Thepprasit Road near [Jomtien](/areas/jomtien/). The market splits into a food section and a shopping section. On the food side, expect grilled seafood skewers (20 to 40 THB each), pad thai (40 to 60 THB), fresh fruit shakes (30 to 50 THB), and all manner of Thai desserts. It gets crowded on weekends, so arrive early for the best experience.
 
 ### Naklua Market
 
-Less touristy and more authentically Thai, the markets around [Naklua](/areas/naklua) Road offer fresh seafood, dried fish, local sweets, and cooked-to-order Thai dishes at local prices. This is where Thai residents shop and eat, and prices reflect that.
+Less touristy and more authentically Thai, the markets around [Naklua](/areas/naklua/) Road offer fresh seafood, dried fish, local sweets, and cooked-to-order Thai dishes at local prices. This is where Thai residents shop and eat, and prices reflect that.
 
 ### Soi Buakhao Market
 
-The nightly market along [Soi Buakhao](/areas/soi-buakhao) is convenient for anyone staying in central Pattaya. It is smaller than Thepprasit but runs daily. You will find grilled chicken, sausages, som tam, and various noodle dishes for 40 to 80 THB per portion.
+The nightly market along [Soi Buakhao](/areas/soi-buakhao/) is convenient for anyone staying in central Pattaya. It is smaller than Thepprasit but runs daily. You will find grilled chicken, sausages, som tam, and various noodle dishes for 40 to 80 THB per portion.
 
 ## Rooftop Dining
 
 Pattaya has several rooftop venues that combine decent food with panoramic views of the bay.
 
-**Horizon** at the Hilton Pattaya sits above Central Festival and offers cocktails, tapas, and sunset views. It is a premium experience with drinks starting at 300 THB and small plates from 400 THB.
+**Horizon** at the [Hilton Pattaya](/stay/hilton-pattaya/) sits above Central Festival and offers cocktails, tapas, and sunset views. It is a premium experience with drinks starting at 300 THB and small plates from 400 THB.
 
-**The Roof Sky Bar & Restaurant** on top of Siam@Siam Design Hotel in North Pattaya serves Thai and international fusion dishes alongside craft cocktails. Main courses range from 350 to 800 THB.
+**The Roof Sky Bar & Restaurant** on top of [Siam@Siam Design Hotel](/stay/siam-at-siam/) in North Pattaya serves Thai and international fusion dishes alongside craft cocktails. Main courses range from 350 to 800 THB.
 
 For something more casual, **Edge** at the Hilton offers a full dinner menu with ocean views in a slightly less formal setting than Horizon.
 
@@ -114,4 +114,10 @@ Here is a rough breakdown of what to expect across different dining levels in Pa
 
 Pattaya remains one of the most affordable cities in Thailand for eating out. Even on a tight budget, you can eat three full meals a day for under 300 THB if you stick to street food and food courts. At the mid-range level, 500 to 800 THB per day will keep you eating extremely well.
 
-For more on getting around to these food spots, check our [first-time visitor guide](/guides/first-time-pattaya) which covers transport basics.
+For more on getting around to these food spots, check our [first-time visitor guide](/guides/first-time-pattaya/) which covers transport basics.
+
+## Related Guides
+
+- [Rooftop Bars & Restaurants in Pattaya](/guides/rooftop-dining/)
+- [Shopping in Pattaya — Malls, Markets & Bargains](/guides/pattaya-shopping/)
+- [Pattaya Nightlife Prices](/guides/pattaya-nightlife-prices/)

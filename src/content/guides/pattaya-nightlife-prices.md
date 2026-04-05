@@ -16,19 +16,19 @@ Beer prices are the easiest way to gauge how expensive an area is. The same bott
 
 ### Walking Street
 
-[Walking Street](/areas/walking-street) is the most expensive nightlife zone in Pattaya, and beer prices reflect that. In the beer bars and open-air venues along the strip, expect to pay 120 to 150 THB for a standard domestic beer (Chang, Leo, Singha). GoGo bars charge 150 to 180 THB for the same beer. Imported beers like Heineken or Tiger run 160 to 220 THB. Nightclubs on Walking Street sometimes include entry fees with a drink, typically 200 to 300 THB.
+[Walking Street](/areas/walking-street/) is the most expensive nightlife zone in Pattaya, and beer prices reflect that. In the beer bars and open-air venues along the strip, expect to pay 120 to 150 THB for a standard domestic beer (Chang, Leo, Singha). GoGo bars charge 150 to 180 THB for the same beer. Imported beers like Heineken or Tiger run 160 to 220 THB. Nightclubs on Walking Street sometimes include entry fees with a drink, typically 200 to 300 THB.
 
 ### Soi 6
 
-[Soi 6](/areas/soi-6) is significantly cheaper. A domestic beer at most bars costs 80 to 120 THB. Happy hour promotions, common in the afternoon when Soi 6 is at its busiest, can bring prices down to 60 to 80 THB. The atmosphere is casual and the small bars are competitive with each other, which keeps prices lower.
+[Soi 6](/areas/soi-6/) is significantly cheaper. A domestic beer at most bars costs 80 to 120 THB. Happy hour promotions, common in the afternoon when Soi 6 is at its busiest, can bring prices down to 60 to 80 THB. The atmosphere is casual and the small bars are competitive with each other, which keeps prices lower.
 
 ### Soi Buakhao and LK Metro
 
-The [Soi Buakhao](/areas/soi-buakhao) area including LK Metro and the surrounding beer bar complexes offers the best value for regular drinkers. Domestic beers run 70 to 100 THB, with happy hour deals as low as 55 to 70 THB at some venues. This area attracts a lot of expats and long-stay visitors who know where to find reasonable prices.
+The [Soi Buakhao](/areas/soi-buakhao/) area including LK Metro and the surrounding beer bar complexes offers the best value for regular drinkers. Domestic beers run 70 to 100 THB, with happy hour deals as low as 55 to 70 THB at some venues. This area attracts a lot of expats and long-stay visitors who know where to find reasonable prices.
 
 ### Jomtien
 
-The beer bars in [Jomtien](/areas/jomtien) are similarly priced to Soi Buakhao, with domestic beers at 70 to 100 THB. There are fewer venues overall, but the ones that exist tend to be laid-back and friendly with loyal regular crowds.
+The beer bars in [Jomtien](/areas/jomtien/) are similarly priced to Soi Buakhao, with domestic beers at 70 to 100 THB. There are fewer venues overall, but the ones that exist tend to be laid-back and friendly with loyal regular crowds.
 
 ## Cocktails
 
@@ -77,7 +77,7 @@ Pattaya's rooftop bars cater to a more upscale crowd and prices reflect the prem
 - **Beer:** 180 to 280 THB.
 - **Small plates and bar snacks:** 200 to 500 THB.
 
-Horizon at the Hilton, The Roof at Siam@Siam, and Edge are the main rooftop options. These are best enjoyed for a sunset drink or two before heading to cheaper venues for the rest of the night.
+Horizon at the [Hilton](/stay/hilton-pattaya/), The Roof at [Siam@Siam](/stay/siam-at-siam/), and Edge are the main [rooftop](/guides/rooftop-dining/) options. These are best enjoyed for a sunset drink or two before heading to cheaper venues for the rest of the night.
 
 ## Tipping Etiquette
 
@@ -137,4 +137,10 @@ Cash is king in Pattaya nightlife. Very few bars accept credit cards, and none o
 - **Exchange rate markup:** Thai ATMs also apply a conversion markup of 3 to 5% on top of whatever your home bank charges.
 - **Best strategy:** Use a travel debit card from Wise or Revolut that reimburses ATM fees and offers mid-market exchange rates. Alternatively, bring USD or EUR and exchange at a dedicated money exchange booth like SuperRich on Second Road for rates significantly better than ATMs.
 
-For a full overview of Pattaya nightlife areas, including which venues to visit, see our [Walking Street guide](/guides/walking-street-guide) and the [first-time visitor guide](/guides/first-time-pattaya).
+For a full overview of Pattaya nightlife areas, including which venues to visit, see our [Walking Street guide](/guides/walking-street-guide/) and the [first-time visitor guide](/guides/first-time-pattaya/).
+
+## Related Guides
+
+- [Hotels Near Soi 6](/guides/hotels-near-soi-6/)
+- [Thai Banking & QR Payments](/guides/thai-banking-qr-payments/)
+- [All Nightlife Venues](/nightlife/)

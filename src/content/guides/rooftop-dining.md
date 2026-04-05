@@ -12,7 +12,7 @@ Pattaya's skyline has transformed over the past decade, and with it came a wave 
 
 ## Top Rooftop Bars
 
-### Horizon Rooftop — Hilton Pattaya
+### Horizon Rooftop — [Hilton Pattaya](/stay/hilton-pattaya/)
 
 The undisputed king of Pattaya rooftops. Perched on the 34th floor of the Hilton, directly above Central Festival mall, Horizon offers 360-degree views of the bay, the city, and Koh Larn in the distance.
 
@@ -21,7 +21,7 @@ The undisputed king of Pattaya rooftops. Perched on the 34th floor of the Hilton
 - **Best time:** Arrive by 17:30 for sunset. The golden hour views here are unmatched
 - **Tip:** No strict dress code, but smart casual is expected. Avoid flip-flops
 
-### The Roof Sky Bar — Siam@Siam
+### The Roof Sky Bar — [Siam@Siam](/stay/siam-at-siam/)
 
 Located in North Pattaya, this rooftop bar sits on top of the design-forward Siam@Siam hotel. The infinity-edge pool visible from the bar creates a dramatic visual, especially when lit up at night.
 
@@ -60,8 +60,14 @@ A multi-level venue in Central Pattaya that combines a ground-floor restaurant w
 
 ## Beyond the Rooftops
 
-If heights aren't your thing but views are, several beachfront restaurants along Jomtien and Pratumnak offer equally stunning sunset views at ground level. The restaurants along the Pratumnak hillside are particularly underrated — ocean panoramas without the premium pricing of hotel rooftops.
+If heights aren't your thing but views are, several beachfront restaurants along [Jomtien](/areas/jomtien/) and [Pratumnak](/areas/pratumnak/) offer equally stunning sunset views at ground level. The restaurants along the Pratumnak hillside are particularly underrated — ocean panoramas without the premium pricing of hotel rooftops.
 
 ## Final Thoughts
 
 Pattaya's rooftop scene is one of its most pleasant surprises for first-time visitors. The combination of ocean views, tropical sunsets, and prices that are genuinely affordable by international standards makes it an essential part of any Pattaya trip. Start with Horizon at the Hilton for the definitive experience, then explore from there.
+
+## Related Guides
+
+- [Best Food in Pattaya — Restaurant & Street Food Guide](/guides/pattaya-food-guide/)
+- [Pattaya Nightlife Prices](/guides/pattaya-nightlife-prices/)
+- [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)

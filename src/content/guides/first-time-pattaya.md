@@ -19,7 +19,7 @@ Most international visitors land at Suvarnabhumi Airport (BKK) in Bangkok, rough
 
 If you are already in Bangkok, the cheapest route is the **bus from Ekkamai Eastern Bus Terminal** at around 120 THB. Buses run every 30 minutes throughout the day and take about 2.5 hours. Minivans from various points in Bangkok cost around 150 THB and are slightly faster but less comfortable.
 
-For a detailed breakdown of every option, including the new rail links, check our full [Bangkok to Pattaya transport guide](/guides/bangkok-to-pattaya).
+For a detailed breakdown of every option, including the new rail links, check our full [Bangkok to Pattaya transport guide](/guides/bangkok-to-pattaya/).
 
 ## Where to Stay — By Budget
 
@@ -27,9 +27,9 @@ Pattaya's accommodation scene is enormous. With thousands of hotels, guesthouses
 
 ### Budget (Under 1,000 THB/Night)
 
-Central Pattaya between Soi 6 and Soi 13 offers the highest density of affordable rooms. Guesthouses like **Eastiny Bella Vista** and **Sawasdee Sunshine** provide clean rooms with air conditioning and Wi-Fi for 500 to 900 THB per night. These places are no-frills, but they put you within walking distance of everything.
+Central Pattaya between [Soi 6](/areas/soi-6/) and Soi 13 offers the highest density of affordable rooms. Guesthouses like **Eastiny Bella Vista** and **Sawasdee Sunshine** provide clean rooms with air conditioning and Wi-Fi for 500 to 900 THB per night. These places are no-frills, but they put you within walking distance of everything.
 
-Soi Buakhao is another excellent budget zone. It sits between Second Road and Third Road, offering a quieter base with easy access to both nightlife and local markets.
+[Soi Buakhao](/areas/soi-buakhao/) is another excellent budget zone. It sits between Second Road and Third Road, offering a quieter base with easy access to both nightlife and local markets.
 
 ### Mid-Range (1,000 to 3,000 THB/Night)
 
@@ -37,14 +37,14 @@ Hotels like **Pattaya Discovery Beach**, **Centara Pattaya Hotel**, and **Season
 
 ### Luxury (3,000 THB+ per Night)
 
-The **Hilton Pattaya** sits above Central Festival with stunning bay views and a rooftop infinity pool. **Siam@Siam Design Hotel** in North Pattaya offers a design-forward experience with one of the city's best rooftop bars. **Hard Rock Hotel** on Beach Road delivers a rock-and-roll pool scene with direct beach access.
+The **[Hilton Pattaya](/stay/hilton-pattaya/)** sits above Central Festival with stunning bay views and a rooftop infinity pool. **[Siam@Siam Design Hotel](/stay/siam-at-siam/)** in North Pattaya offers a design-forward experience with one of the city's best rooftop bars. **[Hard Rock Hotel](/stay/hard-rock-hotel/)** on Beach Road delivers a rock-and-roll pool scene with direct beach access.
 
 ### Choosing Your Area
 
 - **Central Pattaya (Beach Road / Second Road):** Best for nightlife access and convenience.
 - **North Pattaya:** Slightly quieter, good restaurants, close to the Terminal 21 mall.
 - **South Pattaya / Walking Street area:** Ideal if nightlife is your main priority.
-- **Jomtien:** More relaxed, better beach, popular with long-stay visitors and families.
+- **[Jomtien](/areas/jomtien/):** More relaxed, better beach, popular with long-stay visitors and families.
 
 ## Getting Around Pattaya
 
@@ -60,7 +60,7 @@ Grab is the Southeast Asian equivalent of Uber and works well in Pattaya. You ca
 
 ### Motorbike Rental
 
-Renting a scooter costs 200 to 300 THB per day. It gives you total freedom, but Pattaya traffic is aggressive and accidents involving tourists are common. If you do rent, always wear a helmet and carry your passport or a copy of your license.
+Renting a [scooter](/guides/pattaya-scooter-rental/) costs 200 to 300 THB per day. It gives you total freedom, but Pattaya traffic is aggressive and accidents involving tourists are common. If you do rent, always wear a helmet and carry your passport or a copy of your license.
 
 ### Motorbike Taxi
 
@@ -70,13 +70,13 @@ The guys in orange or colored vests parked at every soi entrance offer quick poi
 
 Pattaya's nightlife is its defining feature. The city truly wakes up after dark, and there are several distinct areas to explore.
 
-### Walking Street
+### [Walking Street](/areas/walking-street/)
 
-The most famous nightlife strip in Southeast Asia. This pedestrian-only road stretches from the southern end of Beach Road along the seafront. It is home to dozens of GoGo bars, beer bars, nightclubs, and restaurants. The action starts around 21:00 and runs until 03:00 or later. Expect beer prices of 100 to 180 THB and cocktails from 200 to 350 THB. See our full [Walking Street guide](/guides/walking-street-guide) for details.
+The most famous nightlife strip in Southeast Asia. This pedestrian-only road stretches from the southern end of Beach Road along the seafront. It is home to dozens of GoGo bars, beer bars, nightclubs, and restaurants. The action starts around 21:00 and runs until 03:00 or later. Expect beer prices of 100 to 180 THB and cocktails from 200 to 350 THB. See our full [Walking Street guide](/guides/walking-street-guide/) for details.
 
 ### Soi 6
 
-A short street connecting Beach Road and Second Road in central Pattaya. Soi 6 is the city's main daytime bar area, with most venues open from early afternoon. The atmosphere is laid-back and social, with dozens of small bars lining both sides of the street. It is also active at night but peaks during afternoon hours. Read more in our [Soi 6 area guide](/areas/soi-6).
+A short street connecting Beach Road and Second Road in central Pattaya. Soi 6 is the city's main daytime bar area, with most venues open from early afternoon. The atmosphere is laid-back and social, with dozens of small bars lining both sides of the street. It is also active at night but peaks during afternoon hours. Read more in our [Soi 6 area guide](/areas/soi-6/).
 
 ### LK Metro
 
@@ -96,7 +96,7 @@ Pattaya's dining options range from five-star restaurants to 40 THB pad thai fro
 
 **International food** is abundant. You will find Indian, German, Italian, Russian, Japanese, and Middle Eastern restaurants everywhere. Central Pattaya and North Pattaya have the widest selection.
 
-**Seafood** is a Pattaya specialty. Restaurants along Jomtien Beach and on Naklua Road serve fresh fish, prawns, and crab at prices well below what you would pay in Bangkok or the islands.
+**Seafood** is a Pattaya specialty. Restaurants along Jomtien Beach and on [Naklua](/areas/naklua/) Road serve fresh fish, prawns, and crab at prices well below what you would pay in Bangkok or the islands.
 
 ## Money and ATMs
 
@@ -106,7 +106,7 @@ The Thai Baht (THB) is the local currency. ATMs are on every corner, but they ch
 
 **Credit cards** are accepted at hotels, malls, and upscale restaurants, but smaller bars, street vendors, and motorbike taxis are cash only. Always carry some cash.
 
-**Tip:** Many visitors now use Wise (formerly TransferWise) debit cards for the best exchange rates and zero ATM markup.
+**Tip:** Many visitors now use Wise (formerly TransferWise) debit cards for the best exchange rates and zero ATM markup. See our [Thai banking & QR payments guide](/guides/thai-banking-qr-payments/) for more options.
 
 ## SIM Cards and Internet
 
@@ -140,3 +140,10 @@ There is no truly bad time to visit Pattaya. Even in the rainy season, you will 
 Pattaya rewards those who come prepared. Knowing the basics of transport, accommodation, and nightlife zones means you can skip the confusion that catches many first-timers off guard. The city has far more to offer than its reputation suggests, from excellent food to genuine Thai culture in the surrounding areas.
 
 Take your time, explore beyond Walking Street, and you will quickly understand why so many visitors come back year after year.
+
+## Related Guides
+
+- [Bangkok to Pattaya — Every Transport Option](/guides/bangkok-to-pattaya/)
+- [Pattaya Nightlife Prices — What Everything Costs](/guides/pattaya-nightlife-prices/)
+- [Best Beaches in Pattaya](/guides/pattaya-beaches/)
+- [Hotels Near Soi 6](/guides/hotels-near-soi-6/)

@@ -14,7 +14,7 @@ Pattaya sits on the Gulf of Thailand with direct access to islands, hidden coves
 
 ### Bali Hai Pier — Ferries & Day Trips
 
-Bali Hai Pier is Pattaya's main public pier, located at the southern end of Walking Street. This is where you catch ferries to Koh Larn (Coral Island) and book most tourist-oriented boat trips.
+Bali Hai Pier is Pattaya's main public pier, located at the southern end of [Walking Street](/areas/walking-street/). This is where you catch ferries to Koh Larn (Coral Island) and book most tourist-oriented boat trips.
 
 **What departs from Bali Hai:**
 - Public ferries to Koh Larn (30 THB one-way, 45 minutes)
@@ -62,7 +62,7 @@ Yachts range from 40-foot day cruisers to 80-foot+ superyachts. Multi-day charte
 
 **Booking tips:**
 - Book at least 2-4 weeks in advance, especially in high season (November-February)
-- During Tomorrowland Thailand 2026 in November, expect premium pricing and limited availability
+- During [Tomorrowland Thailand 2026](/guides/tomorrowland-pattaya-2026/) in November, expect premium pricing and limited availability
 - Most reputable operators are based at Ocean Marina — avoid random touts on the street
 - Ask about insurance coverage, cancellation policies, and what's included in the price
 
@@ -112,3 +112,9 @@ Several operators offer evening cruises along the Pattaya coastline with buffet 
 Pattaya's location on the Gulf of Thailand gives it genuine maritime appeal that most visitors never fully explore. Even if a luxury yacht isn't in your budget, the 30 THB ferry to Koh Larn is one of the best-value day trips in all of Thailand.
 
 For yacht charters, Ocean Marina Yacht Club is the professional, legitimate option. Book directly with established charter companies based there rather than through street-level touts in Pattaya — you'll get better boats, proper insurance, and professional crews.
+
+## Related Guides
+
+- [Koh Larn Island — Complete Day Trip Guide](/guides/koh-larn-island-guide/)
+- [Hidden Beaches & Secret Islands](/guides/secret-sandbars/)
+- [Best Beaches in Pattaya](/guides/pattaya-beaches/)

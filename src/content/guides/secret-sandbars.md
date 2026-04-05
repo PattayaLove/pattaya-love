@@ -7,7 +7,7 @@ publishDate: 2026-04-04
 draft: false
 ---
 
-Everyone knows Koh Larn. The ferries run every hour, the beaches are on every tourist map, and on weekends it can feel as crowded as Pattaya Beach itself. But the Gulf of Thailand around Pattaya hides a constellation of smaller islands, secret sandbars, and untouched coves that most visitors never discover.
+Everyone knows [Koh Larn](/guides/koh-larn-island-guide/). The ferries run every hour, the beaches are on every tourist map, and on weekends it can feel as crowded as Pattaya Beach itself. But the Gulf of Thailand around Pattaya hides a constellation of smaller islands, secret sandbars, and untouched coves that most visitors never discover.
 
 Here's how to find them.
 
@@ -91,3 +91,9 @@ For the ultimate island-hopping experience, a private yacht from Ocean Marina gi
 ## Final Thoughts
 
 The islands around Pattaya are genuinely underrated. While they can't compete with the Andaman Sea's crystal clarity, the convenience of being 30 minutes from a major city makes them ideal for day trips. The secret is going beyond Koh Larn — hire a private boat, head to Koh Sak or Koh Krok, and you'll have a Thai island experience that feels a world away from the neon lights onshore.
+
+## Related Guides
+
+- [Koh Larn Island — Complete Day Trip Guide](/guides/koh-larn-island-guide/)
+- [Yacht Charters & Boat Trips](/guides/yacht-charters/)
+- [Best Beaches in Pattaya](/guides/pattaya-beaches/)

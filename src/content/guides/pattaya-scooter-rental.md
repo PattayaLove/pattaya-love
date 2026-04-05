@@ -12,9 +12,9 @@ Renting a scooter is one of the best ways to explore Pattaya on your own terms. 
 
 ## Why Rent a Scooter
 
-Pattaya is spread out. [Walking Street](/areas/walking-street) to [Jomtien Beach](/areas/jomtien) is about 5 kilometers. Central Pattaya to [Naklua](/areas/naklua) is another 4 kilometers north. Public transport is limited to baht buses running fixed routes along Beach Road and Second Road, and Grab rides add up fast if you are moving around several times a day.
+Pattaya is spread out. [Walking Street](/areas/walking-street/) to [Jomtien Beach](/areas/jomtien/) is about 5 kilometers. Central Pattaya to [Naklua](/areas/naklua/) is another 4 kilometers north. Public transport is limited to baht buses running fixed routes along Beach Road and Second Road, and Grab rides add up fast if you are moving around several times a day.
 
-A scooter costs as little as 200 THB per day and lets you get anywhere in the city within 10 to 15 minutes. It is especially useful for reaching spots outside the main tourist strip, like [Pratumnak Hill](/areas/pratumnak), [East Pattaya](/areas/east-pattaya) restaurants, or day trips to nearby attractions.
+A scooter costs as little as 200 THB per day and lets you get anywhere in the city within 10 to 15 minutes. It is especially useful for reaching spots outside the main tourist strip, like [Pratumnak Hill](/areas/pratumnak/), [East Pattaya](/areas/east-pattaya/) restaurants, or day trips to nearby attractions.
 
 ## Popular Models and Prices
 
@@ -44,7 +44,7 @@ Some shops rent older Honda Wave 110 semi-automatics or beat-up Scoopy models fo
 
 ## Where to Rent
 
-Rental shops are everywhere in Pattaya. You will find them on Second Road, Beach Road, Soi Buakhao, and scattered throughout Jomtien. There is no shortage of options.
+Rental shops are everywhere in Pattaya. You will find them on Second Road, Beach Road, [Soi Buakhao](/areas/soi-buakhao/), and scattered throughout Jomtien. There is no shortage of options.
 
 Established shops with a physical storefront and a fleet of well-maintained bikes are always preferable to someone renting a single bike from their apartment. Look for shops that have been around for a while, display clear pricing, and do not pressure you into taking a specific bike.
 
@@ -109,4 +109,10 @@ Pattaya traffic is chaotic by Western standards. Here are the essential rules fo
 
 **Fuel scam.** Some shops hand you a bike with a nearly empty tank and expect it back full, effectively charging you for a full tank. Check the fuel level when you pick up and note it in any paperwork.
 
-For a broader overview of getting around the city including baht buses, Grab, and motorbike taxis, see our [first-time Pattaya guide](/guides/first-time-pattaya).
+For a broader overview of getting around the city including baht buses, Grab, and motorbike taxis, see our [first-time Pattaya guide](/guides/first-time-pattaya/).
+
+## Related Guides
+
+- [Bangkok to Pattaya — Transport Guide](/guides/bangkok-to-pattaya/)
+- [Best Beaches in Pattaya](/guides/pattaya-beaches/)
+- [Pattaya Visa Guide](/guides/pattaya-visa-guide/)

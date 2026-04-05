@@ -20,7 +20,7 @@ There are no cars on the island besides a handful of trucks. Transport is by mot
 
 ### Public Ferry from Bali Hai Pier
 
-The cheapest and most popular option. Ferries depart from Bali Hai Pier at the southern end of [Walking Street](/areas/walking-street) in South Pattaya.
+The cheapest and most popular option. Ferries depart from Bali Hai Pier at the southern end of [Walking Street](/areas/walking-street/) in South Pattaya.
 
 **Price:** 30 THB per person each way.
 
@@ -145,4 +145,10 @@ Staying overnight lets you experience the island after the day-trippers leave. E
 - **Watch the last ferry time.** Set an alarm if you need to. Missing the 18:00 ferry means either paying for a speedboat back (expensive) or finding overnight accommodation (limited availability on busy days).
 - **Bring a dry bag.** If you plan to do water activities, a small waterproof bag keeps your phone, cash, and keys safe.
 
-Koh Larn is one of the best day trips available from Pattaya and a genuine highlight for visitors willing to make the short ferry crossing. For more on planning your overall Pattaya trip, see our [first-time visitor guide](/guides/first-time-pattaya).
+Koh Larn is one of the best day trips available from Pattaya and a genuine highlight for visitors willing to make the short ferry crossing. For more on planning your overall Pattaya trip, see our [first-time visitor guide](/guides/first-time-pattaya/).
+
+## Related Guides
+
+- [Yacht Charters & Boat Trips](/guides/yacht-charters/)
+- [Hidden Beaches & Secret Islands](/guides/secret-sandbars/)
+- [Best Beaches in Pattaya](/guides/pattaya-beaches/)

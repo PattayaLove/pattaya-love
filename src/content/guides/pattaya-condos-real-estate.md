@@ -34,25 +34,25 @@ Pattaya's geography stretches along approximately 15 kilometers of coastline, an
 
 ### Wongamat
 
-[Wongamat](/areas/wongamat) is widely considered the best beach area in Pattaya proper. The beach is cleaner and less crowded, and the neighborhood has a more upscale, residential feel. High-rise condominiums line the seafront with direct beach access and sea views. This area attracts buyers who prioritize quality of life over nightlife proximity.
+[Wongamat](/areas/wongamat/) is widely considered the best beach area in Pattaya proper. The beach is cleaner and less crowded, and the neighborhood has a more upscale, residential feel. High-rise condominiums line the seafront with direct beach access and sea views. This area attracts buyers who prioritize quality of life over nightlife proximity.
 
 **Notable development:** Once Wongamat is a high-profile new project drawing significant attention in 2026, promising luxury finishes, resort-style facilities, and a prime beachfront location.
 
 ### Pratumnak Hill
 
-[Pratumnak](/areas/pratumnak) occupies the elevated ground between South Pattaya and Jomtien, offering hillside views over the bay. Modern condo towers now stand alongside older low-rise buildings and villas. You are close enough to Walking Street and central Pattaya to reach them in minutes, but far enough removed to enjoy relative peace.
+[Pratumnak](/areas/pratumnak/) occupies the elevated ground between South Pattaya and Jomtien, offering hillside views over the bay. Modern condo towers now stand alongside older low-rise buildings and villas. You are close enough to Walking Street and central Pattaya to reach them in minutes, but far enough removed to enjoy relative peace.
 
 ### Jomtien
 
-[Jomtien](/areas/jomtien) stretches south from Pratumnak along a wide beach popular with families and long-stay visitors. The beachfront road is lined with condominiums at every price point, and Jomtien offers good value — beachfront living at prices well below Wongamat. The Na Jomtien extension further south is seeing several new luxury projects along the coast road, making it an area to watch for appreciation.
+[Jomtien](/areas/jomtien/) stretches south from Pratumnak along a wide beach popular with families and long-stay visitors. The beachfront road is lined with condominiums at every price point, and Jomtien offers good value — beachfront living at prices well below Wongamat. The Na Jomtien extension further south is seeing several new luxury projects along the coast road, making it an area to watch for appreciation.
 
 ### Central Pattaya
 
-Central Pattaya along Beach Road and Second Road is the most convenient location — walking distance to malls, nightlife, and transport. The trade-off is noise and density, though modern condos are often set back from main roads with decent soundproofing. Rental demand here is consistently high.
+Central Pattaya along Beach Road and Second Road is the most convenient location — walking distance to malls, [nightlife](/nightlife/), and transport. The trade-off is noise and density, though modern condos are often set back from main roads with decent soundproofing. Rental demand here is consistently high.
 
 ### East Pattaya
 
-[East Pattaya](/areas/east-pattaya) lies inland and offers the most affordable property in the area — spacious units, large developments with pools and gyms, and prices that are a fraction of beachfront areas. The downside is distance: you will need transport to reach the beach. However, the area has a strong expat community and amenities catering to Western residents.
+[East Pattaya](/areas/east-pattaya/) lies inland and offers the most affordable property in the area — spacious units, large developments with pools and gyms, and prices that are a fraction of beachfront areas. The downside is distance: you will need transport to reach the beach. However, the area has a strong expat community and amenities catering to Western residents.
 
 ## Price Ranges
 
@@ -109,3 +109,9 @@ Buying property in Thailand as a foreigner is straightforward if you follow the 
 Pattaya's property market offers genuine value for foreigners willing to do their homework. The combination of freehold ownership rights, affordable prices, and a lifestyle that attracts visitors year-round makes it one of the more accessible real estate markets in Southeast Asia.
 
 The key is approaching it with clear expectations. Work with reputable professionals, understand the legal framework, choose your area carefully, and think long-term. Whether you are renting a studio for a winter escape or buying a sea-view condo as a permanent base, Pattaya has options across every budget and lifestyle.
+
+## Related Guides
+
+- [Thailand Visa Guide for Pattaya](/guides/pattaya-visa-guide/)
+- [Thai Bank Account & QR Payments](/guides/thai-banking-qr-payments/)
+- [All Pattaya Areas](/areas/)

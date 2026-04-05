@@ -92,7 +92,7 @@ South of Jomtien, [Na Jomtien](/areas/jomtien/) is Pattaya's fastest-developing 
 
 **Facilities:** Sparse compared to Jomtien. Some beach restaurants, but you won't find the dense vendor scene. Bring your own supplies.
 
-**Tomorrowland 2026:** Na Jomtien is expected to be near the **Tomorrowland Thailand 2026** festival grounds in November. The area will see a massive influx of visitors during the festival, but outside of that event window, it remains peaceful.
+**Tomorrowland 2026:** Na Jomtien is expected to be near the **[Tomorrowland Thailand 2026](/guides/tomorrowland-pattaya-2026/)** festival grounds in November. The area will see a massive influx of visitors during the festival, but outside of that event window, it remains peaceful.
 
 **Best for:** Solitude seekers, property investors checking out the area, Tomorrowland attendees.
 
@@ -142,3 +142,9 @@ For more remote islands and hidden sandbars, see our [Secret Islands Guide](/gui
 ## Final Thoughts
 
 Pattaya's beaches have come a long way. While the main beach will never win beauty contests, the city's geographic position — stretched along a coast with multiple bays, coves, and headlands — means there's genuinely variety. Skip the main strip, head to Cosy Beach or Wongamat, and you'll wonder why anyone complains about Pattaya's beaches.
+
+## Related Guides
+
+- [Koh Larn Island — Complete Day Trip Guide](/guides/koh-larn-island-guide/)
+- [Yacht Charters & Boat Trips](/guides/yacht-charters/)
+- [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)

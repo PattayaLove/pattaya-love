@@ -120,7 +120,7 @@ This visa is aimed at high earners and does not cover the average backpacker wor
 
 ## Pattaya Immigration Office
 
-The immigration office serving Pattaya is located on **Soi 5, Jomtien** (officially Jomtien Soi 5, off Jomtien Second Road). It handles visa extensions, 90-day reporting, re-entry permits, and other immigration services.
+The immigration office serving Pattaya is located on **Soi 5, [Jomtien](/areas/jomtien/)** (officially Jomtien Soi 5, off Jomtien Second Road). It handles visa extensions, 90-day reporting, re-entry permits, and other immigration services.
 
 ### Practical Tips for Immigration
 
@@ -150,4 +150,10 @@ Thailand takes overstays seriously. The penalties are as follows.
 
 The bottom line: do not overstay. If your visa is about to expire, either extend it at immigration or leave the country before it runs out.
 
-For more general advice on planning your trip, see our [first-time Pattaya guide](/guides/first-time-pattaya) which covers accommodation, transport, and everything else you need for arrival.
+For more general advice on planning your trip, see our [first-time Pattaya guide](/guides/first-time-pattaya/) which covers accommodation, transport, and everything else you need for arrival.
+
+## Related Guides
+
+- [Thai Bank Account & QR Payments for Foreigners](/guides/thai-banking-qr-payments/)
+- [Bangkok to Pattaya — Transport Guide](/guides/bangkok-to-pattaya/)
+- [Condos & Real Estate in Pattaya](/guides/pattaya-condos-real-estate/)

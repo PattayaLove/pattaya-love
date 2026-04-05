@@ -16,7 +16,7 @@ Pattaya is quietly one of the best fitness destinations in Southeast Asia. World
 
 #### Tony's Fitness
 
-The most popular expat gym in Pattaya. Three locations across the city — Soi Buakhao, North Pattaya, and Jomtien. Well-maintained equipment, air-conditioned, and a serious lifting atmosphere without being intimidating.
+The most popular expat gym in Pattaya. Three locations across the city — [Soi Buakhao](/areas/soi-buakhao/), North Pattaya, and [Jomtien](/areas/jomtien/). Well-maintained equipment, air-conditioned, and a serious lifting atmosphere without being intimidating.
 
 - **Day pass:** 150-200 THB
 - **Monthly:** 1,500-2,000 THB
@@ -41,7 +41,7 @@ International chain gyms with modern equipment, 24/7 access, and air-conditioned
 
 #### Hotel Gyms
 
-Most mid-range and luxury hotels have fitness centers. The Hilton, Centara Grand, and Holiday Inn have particularly well-equipped gyms. Usually free for hotel guests, 300-500 THB day pass for non-guests.
+Most mid-range and luxury hotels have fitness centers. The [Hilton](/stay/hilton-pattaya/), [Centara Grand](/stay/centara-grand-mirage-beach-resort-pattaya/), and [Holiday Inn](/stay/holiday-inn-pattaya-by-ihg/) have particularly well-equipped gyms. Usually free for hotel guests, 300-500 THB day pass for non-guests.
 
 ### Muay Thai & Boxing
 
@@ -49,7 +49,7 @@ Pattaya has several excellent Muay Thai gyms offering everything from tourist-fr
 
 #### Fairtex Training Center
 
-One of the most famous Muay Thai gyms in the world, located in North Pattaya/Soi Naklua area. Fairtex has produced multiple world champions and offers training for all levels.
+One of the most famous Muay Thai gyms in the world, located in North Pattaya/Soi [Naklua](/areas/naklua/) area. Fairtex has produced multiple world champions and offers training for all levels.
 
 - **Single session:** 500-800 THB
 - **Weekly package:** 3,000-4,000 THB
@@ -190,3 +190,9 @@ Beyond hotel pools, Pattaya has a few options for serious lap swimming:
 ## Final Thoughts
 
 Pattaya's fitness infrastructure rivals cities three times its size. The combination of world-class Muay Thai training, championship golf at Thai prices, the padel boom, and a gym on every corner means there's genuinely no excuse to skip your workout. Most visitors are surprised by how easy it is to maintain — or even improve — their fitness routine while enjoying everything else the city offers.
+
+## Related Guides
+
+- [Best Beaches in Pattaya](/guides/pattaya-beaches/)
+- [Scooter Rental in Pattaya](/guides/pattaya-scooter-rental/)
+- [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)

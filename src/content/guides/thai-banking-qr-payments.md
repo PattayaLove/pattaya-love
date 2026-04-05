@@ -138,7 +138,7 @@ Despite the QR revolution, cash is still king in many situations:
 
 - Street food vendors (some have QR, many don't)
 - Baht buses (10 THB, cash only)
-- Small bars on Soi 6 (most are cash-only)
+- Small bars on [Soi 6](/areas/soi-6/) (most are cash-only)
 - Market vendors
 - Tipping
 
@@ -163,3 +163,9 @@ Slow (2-5 days), expensive (fees from both banks), poor exchange rates. Avoid un
 The Thai payment landscape is evolving fast. The Wise integration launching in May 2026 is the biggest development for Western visitors in years — it essentially gives you a Thai QR payment capability without needing a Thai bank account.
 
 For now, the practical advice is: **carry cash for small transactions, use Wise or TrueMoney for QR payments, and don't count on opening a Thai bank account unless you have a long-term visa.** The days of walking into a bank with a tourist visa and walking out with an account are over.
+
+## Related Guides
+
+- [Pattaya Visa Guide — Tourist, Retirement & Elite Visas](/guides/pattaya-visa-guide/)
+- [Pattaya Nightlife Prices — What Everything Costs](/guides/pattaya-nightlife-prices/)
+- [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)

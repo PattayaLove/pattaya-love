@@ -14,7 +14,7 @@ Pattaya has quietly become one of Thailand's best shopping destinations. Between
 
 ### Central Festival Pattaya Beach
 
-The undisputed king of Pattaya shopping. Central Festival sits directly on Beach Road in the heart of the city, with the Hilton Hotel perched on top. This is a full-scale department store and shopping mall with over 300 shops across 6 floors.
+The undisputed king of Pattaya shopping. Central Festival sits directly on Beach Road in the heart of the city, with the [Hilton Hotel](/stay/hilton-pattaya/) perched on top. This is a full-scale department store and shopping mall with over 300 shops across 6 floors.
 
 **What you'll find:**
 - International brands: Zara, H&M, Uniqlo, Nike, Adidas
@@ -70,7 +70,7 @@ Two older, more compact malls on Beach Road that cater to the tourist crowd. Les
 
 **Royal Garden:** Centrally located, good for souvenirs, tailors, and a Ripley's Believe It or Not museum on the upper floors.
 
-**Mike Shopping Mall:** Near Walking Street. Budget clothing, electronics, phone repairs, and the kind of chaotic energy that some travelers love.
+**Mike Shopping Mall:** Near [Walking Street](/areas/walking-street/). Budget clothing, electronics, phone repairs, and the kind of chaotic energy that some travelers love.
 
 ## Night Markets
 
@@ -87,7 +87,7 @@ Pattaya's biggest and best night market, operating every Friday, Saturday, and S
 
 **Prices:** Budget 200-500 THB for food and drinks for a full evening
 
-**Location:** Thepprasit Road, south of Jomtien. Grab costs about 80-120 THB from Central Pattaya.
+**Location:** Thepprasit Road, south of [Jomtien](/areas/jomtien/). Grab costs about 80-120 THB from Central Pattaya.
 
 **Tip:** Go hungry. The food selection is overwhelming in the best way. Arrive by 18:00 for the best choice and fewer crowds.
 
@@ -133,7 +133,7 @@ Pattaya has dozens of tailors offering custom suits, shirts, and dresses at a fr
 - **Foodland** — 24-hour supermarket with good imported range
 
 ### For Budget Shopping
-- **Makro** (East Pattaya) — Wholesale prices, bulk buying
+- **Makro** ([East Pattaya](/areas/east-pattaya/)) — Wholesale prices, bulk buying
 - **Lotus's** (multiple locations) — Thai Tesco equivalent, excellent value
 - **Big C** — Large selection, good prices
 
@@ -153,3 +153,9 @@ Pattaya has dozens of tailors offering custom suits, shirts, and dresses at a fr
 ## Final Thoughts
 
 Pattaya's shopping scene punches well above its weight. The combination of modern malls with world-class food courts, atmospheric night markets, and Thai prices makes it easy to combine retail therapy with culinary adventure. Start with the Terminal 21 food court for lunch, browse Central Festival in the afternoon, and end at Thepprasit Night Market for an evening of street food and bargain hunting.
+
+## Related Guides
+
+- [Best Food in Pattaya — Restaurant & Street Food Guide](/guides/pattaya-food-guide/)
+- [Scooter Rental in Pattaya](/guides/pattaya-scooter-rental/)
+- [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)
