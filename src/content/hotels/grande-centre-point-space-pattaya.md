@@ -7,7 +7,7 @@ reviewsCount: 7607
 priceRange: "luxury"
 category: "Hotel"
 area: "Central Pattaya"
-image: "/images/venues/grande-centre-point-space-photo.jpg"
+image: "/images/venues/grande-centre-point-space-photo.webp"
 address: "888 หมู่ที่ 5"
 phone: "+66 33 268 888"
 website: "https://spacepattaya.com/"

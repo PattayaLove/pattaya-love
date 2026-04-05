@@ -74,12 +74,12 @@ const amenityIcons: Record<string, string> = {
 };
 
 const fallbackImages: Record<string, string> = {
-  luxury: '/images/hotels/hotel-luxury-1.png',
-  'mid-range': '/images/hotels/hotel-luxury-2.png',
-  budget: '/images/hotels/hotel-boutique.png',
+  luxury: '/images/hotels/hotel-luxury-1.webp',
+  'mid-range': '/images/hotels/hotel-luxury-2.webp',
+  budget: '/images/hotels/hotel-boutique.webp',
 };
 function getFallback(priceRange: string): string {
-  return fallbackImages[priceRange] || '/images/hotels/hotel-luxury-2.png';
+  return fallbackImages[priceRange] || '/images/hotels/hotel-luxury-2.webp';
 }
 ---
 
@@ -94,7 +94,7 @@ function getFallback(priceRange: string): string {
   <!-- ═══════════════════════════════════════════════ -->
   <header class="relative w-full pt-32 pb-20 md:pt-40 md:pb-28 bg-navy overflow-hidden grain">
     <div class="absolute inset-0">
-      <OptImage src="/images/areas/central-pattaya-aerial.jpg" alt="Aerial view of Central Pattaya hotels and skyline" width={1920} height={1080} class="w-full h-full object-cover" loading="eager" />
+      <OptImage src="/images/areas/central-pattaya-aerial.webp" alt="Aerial view of Central Pattaya hotels and skyline" width={1920} height={1080} class="w-full h-full object-cover" loading="eager" />
       <div class="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/70 to-navy/90"></div>
     </div>
 

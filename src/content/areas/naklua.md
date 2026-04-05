@@ -2,7 +2,7 @@
 name: "Naklua"
 slug: "naklua"
 description: "Pattaya's authentic Thai fishing village turned upscale neighborhood — fresh seafood markets, luxury condos, and the famous Sanctuary of Truth."
-image: "/images/areas/sanctuary-of-truth.jpg"
+image: "/images/areas/sanctuary-of-truth.webp"
 publishDate: 2026-04-04
 draft: false
 ---

@@ -3,7 +3,7 @@ title: "Pattaya Nightlife Prices — What Everything Costs in 2026"
 slug: "pattaya-nightlife-prices"
 description: "Updated 2026 prices for Pattaya nightlife. Beer, cocktails, bar fines, lady drinks — Walking Street, Soi 6, and Soi Buakhao price comparison."
 category: "nightlife"
-image: "/images/areas/lk-metro-night.jpg"
+image: "/images/areas/lk-metro-night.webp"
 publishDate: 2026-04-04
 draft: false
 ---

@@ -7,7 +7,7 @@ reviewsCount: 863
 priceRange: "mid-range"
 category: "Hotel"
 area: "Central Pattaya"
-image: "/images/venues/somerset-pattaya.jpg"
+image: "/images/venues/somerset-pattaya.webp"
 address: "528, Thanon Second"
 phone: "+66 38 371 999"
 website: "https://www.discoverasr.com/en/somerset-serviced-residence/thailand/somerset-pattaya?utm_source=exnetyext&utm_medium=maps&utm_campaign=hq-exnetyext-maps-alwayson--all-en-th-th-somersetpattaya--exnetyext&--&cid=map::exnetyext::hq:ind:::all:en:th:th:somersetpattaya:0:exnetyext:0:::"

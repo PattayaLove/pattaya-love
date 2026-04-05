@@ -7,7 +7,7 @@ reviewsCount: 480
 priceRange: "luxury"
 category: "Condo"
 area: "Central Pattaya"
-image: "/images/venues/centric-sea-sunset.jpg"
+image: "/images/venues/centric-sea-sunset.webp"
 amenities: ["Pool", "Fitness", "Beach Access", "WiFi", "Parking", "Restaurant"]
 publishDate: 2026-04-04
 draft: false

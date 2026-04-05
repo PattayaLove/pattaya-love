@@ -7,7 +7,7 @@ area: "Walking Street"
 priceLevel: 3
 openingHours: "22:00 – 04:00"
 publishDate: 2026-04-04
-image: "/images/areas/walking-street-night.jpg"
+image: "/images/areas/walking-street-night.webp"
 draft: false
 ---
 

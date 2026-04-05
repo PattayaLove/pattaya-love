@@ -6,7 +6,7 @@ type: "beer-bar"
 area: "Soi 6"
 priceLevel: 1
 openingHours: "14:00 – 02:00"
-image: "/images/venues/soi6-panda-ruby.jpg"
+image: "/images/venues/soi6-panda-ruby.webp"
 publishDate: 2026-04-05
 draft: false
 ---

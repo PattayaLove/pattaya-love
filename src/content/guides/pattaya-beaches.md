@@ -3,7 +3,7 @@ title: "Best Beaches in Pattaya — Complete Guide 2026"
 slug: "pattaya-beaches"
 description: "Every beach in Pattaya ranked and reviewed. From Wongamat to Na Jomtien, hidden coves to family beaches — find your perfect stretch of sand in 2026."
 category: "general"
-image: "/images/areas/beach-panorama.jpg"
+image: "/images/areas/beach-panorama.webp"
 publishDate: 2026-04-04
 draft: false
 ---

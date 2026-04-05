@@ -7,7 +7,7 @@ reviewsCount: 11
 priceRange: "mid-range"
 category: "Hotel"
 area: "Central Pattaya"
-image: "/images/venues/78s-hometel.jpg"
+image: "/images/venues/78s-hometel.webp"
 address: "78 pattaya sai 2"
 phone: "+66 85 215 1141"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=78's%20Hometel%20pattaya&query_place_id=ChIJ286VX2GXAjERSsmS65-OxFk"

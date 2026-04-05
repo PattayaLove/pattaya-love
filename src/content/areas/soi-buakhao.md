@@ -3,7 +3,7 @@ name: "Soi Buakhao"
 slug: "soi-buakhao"
 description: "Pattaya's authentic nightlife hub — LK Metro, Three Town Market, live music bars, and the local expat scene away from the tourist strips."
 publishDate: 2026-04-04
-image: "/images/areas/tree-town.jpg"
+image: "/images/areas/tree-town.webp"
 draft: false
 ---
 

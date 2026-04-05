@@ -3,7 +3,7 @@ title: "Gyms, Golf & Padel in Pattaya — Sports & Fitness Guide 2026"
 slug: "pattaya-fitness-golf-padel"
 description: "Best gyms, golf courses, and padel courts in Pattaya for 2026. Day passes, memberships, Muay Thai, CrossFit, and where to play padel and golf near the beach."
 category: "general"
-image: "/images/guides/coco-fitness.jpg"
+image: "/images/guides/coco-fitness.webp"
 publishDate: 2026-04-04
 draft: false
 ---

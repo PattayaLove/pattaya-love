@@ -3,7 +3,7 @@ title: "Yacht Charters & Boat Trips in Pattaya — 2026 Guide"
 slug: "yacht-charters"
 description: "Rent a yacht in Pattaya, take a ferry to Koh Larn, or book a private boat trip. Complete guide to Bali Hai Pier, Ocean Marina Yacht Club, and all options."
 category: "general"
-image: "/images/guides/yacht-drone-own.jpg"
+image: "/images/guides/yacht-drone-own.webp"
 publishDate: 2026-04-04
 draft: false
 ---

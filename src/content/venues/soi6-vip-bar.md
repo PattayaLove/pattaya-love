@@ -6,7 +6,7 @@ type: "beer-bar"
 area: "Soi 6"
 priceLevel: 1
 openingHours: "15:00 – 01:00"
-image: "/images/venues/soi6-kimochi-vip.jpg"
+image: "/images/venues/soi6-kimochi-vip.webp"
 publishDate: 2026-04-05
 draft: false
 ---

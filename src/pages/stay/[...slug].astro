@@ -56,11 +56,11 @@ const amenityIcons: Record<string, string> = {
 };
 
 const fallbackImages: Record<string, string> = {
-  luxury: '/images/hotels/hotel-luxury-1.png',
-  'mid-range': '/images/hotels/hotel-luxury-2.png',
-  budget: '/images/hotels/hotel-boutique.png',
+  luxury: '/images/hotels/hotel-luxury-1.webp',
+  'mid-range': '/images/hotels/hotel-luxury-2.webp',
+  budget: '/images/hotels/hotel-boutique.webp',
 };
-const fallbackImage = fallbackImages[data.priceRange] || '/images/hotels/hotel-luxury-2.png';
+const fallbackImage = fallbackImages[data.priceRange] || '/images/hotels/hotel-luxury-2.webp';
 const heroImage = data.image || fallbackImage;
 
 const fullStars = Math.floor(data.rating);

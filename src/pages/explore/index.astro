@@ -14,16 +14,16 @@ const exploreGuides = allGuides
   .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
 
 const areaImages: Record<string, string> = {
-  'Walking Street': '/images/areas/walking-street.jpg',
-  'Soi 6': '/images/areas/soi-6.jpg',
-  'Jomtien Beach': '/images/areas/jomtien-beach-palms.jpg',
-  'Wongamat Beach': '/images/areas/wongamat-beach.jpg',
-  'Pratumnak Hill': '/images/areas/pratumnak-viewpoint.jpg',
-  'Naklua': '/images/areas/sanctuary-of-truth.jpg',
-  'East Pattaya (Dark Side)': '/images/areas/pattaya-city-sign.jpg',
-  'Soi Buakhao': '/images/areas/tree-town.jpg',
+  'Walking Street': '/images/areas/walking-street.webp',
+  'Soi 6': '/images/areas/soi-6.webp',
+  'Jomtien Beach': '/images/areas/jomtien-beach-palms.webp',
+  'Wongamat Beach': '/images/areas/wongamat-beach.webp',
+  'Pratumnak Hill': '/images/areas/pratumnak-viewpoint.webp',
+  'Naklua': '/images/areas/sanctuary-of-truth.webp',
+  'East Pattaya (Dark Side)': '/images/areas/pattaya-city-sign.webp',
+  'Soi Buakhao': '/images/areas/tree-town.webp',
 };
-const fallbackImage = '/images/areas/pattaya-beach-day.jpg';
+const fallbackImage = '/images/areas/pattaya-beach-day.webp';
 
 const categoryLabels: Record<string, string> = {
   general: 'General', transport: 'Transport', food: 'Food & Drink', tips: 'Tips',
@@ -142,7 +142,7 @@ const categoryLabels: Record<string, string> = {
         {exploreGuides.map((guide, i) => (
           <a href={`/guides/${guide.data.slug}/`} class={`reveal reveal-delay-${i + 1} group bg-surface-card rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] overflow-hidden hover:shadow-[0_20px_50px_-12px_rgba(185,5,56,0.1)] transition-all duration-500 hover:-translate-y-1`}>
             <div class="aspect-video bg-surface-low overflow-hidden">
-              <img src={guide.data.image || '/images/areas/pattaya-drone-sunset.jpg'} alt={guide.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+              <img src={guide.data.image || '/images/areas/pattaya-drone-sunset.webp'} alt={guide.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
             </div>
             <div class="p-6">
               <span class="text-[10px] font-bold uppercase tracking-[0.15em] text-primary mb-2 block">

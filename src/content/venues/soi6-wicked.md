@@ -6,7 +6,7 @@ type: "beer-bar"
 area: "Soi 6"
 priceLevel: 1
 openingHours: "16:00 – 02:00"
-image: "/images/venues/soi6-wicked-bar.jpg"
+image: "/images/venues/soi6-wicked-bar.webp"
 publishDate: 2026-04-04
 draft: false
 ---

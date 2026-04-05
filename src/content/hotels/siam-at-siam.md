@@ -6,7 +6,7 @@ rating: 4.4
 priceRange: "luxury"
 area: "North Pattaya"
 amenities: ["Pool", "Rooftop Bar", "Fitness", "Restaurant", "WiFi"]
-image: "/images/venues/siam-at-siam-drone.jpg"
+image: "/images/venues/siam-at-siam-drone.webp"
 publishDate: 2026-04-04
 draft: false
 ---

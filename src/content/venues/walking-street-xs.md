@@ -7,7 +7,7 @@ area: "Walking Street"
 priceLevel: 2
 openingHours: "21:00 – 03:00"
 publishDate: 2026-04-04
-image: "/images/venues/xs-agogo-new.jpg"
+image: "/images/venues/xs-agogo-new.webp"
 draft: false
 ---
 

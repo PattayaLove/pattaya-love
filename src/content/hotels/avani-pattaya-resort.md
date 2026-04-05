@@ -7,7 +7,7 @@ reviewsCount: 5827
 priceRange: "luxury"
 category: "Resort hotel"
 area: "Central Pattaya"
-image: "/images/venues/avani-hotel.jpg"
+image: "/images/venues/avani-hotel.webp"
 address: "218/2-3"
 phone: "+66 38 412 120"
 website: "https://www.avanihotels.com/pattaya?utm_source=GoogleMyBusiness&utm_medium=GMB&utm_term=Pattaya&utm_content=Home&utm_campaign=Google_GMB"

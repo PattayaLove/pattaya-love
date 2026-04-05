@@ -5,7 +5,7 @@ description: "Hard Rock Hotel Pattaya 2026 review — beachfront luxury on Beach
 rating: 4.3
 priceRange: "luxury"
 area: "Beach Road"
-image: "/images/venues/hard-rock-hotel-pattaya.jpg"
+image: "/images/venues/hard-rock-hotel-pattaya.webp"
 amenities: ["Pool", "Fitness", "Restaurant", "Bar", "Beach Access", "Live Music"]
 publishDate: 2026-04-04
 draft: false

@@ -3,7 +3,7 @@ title: "Walking Street Pattaya — Nightlife Guide 2026"
 slug: "walking-street-guide"
 description: "Your complete guide to Walking Street Pattaya for 2026. Best GoGo bars, clubs, drink prices, scam warnings, and insider tips from locals who go out every week."
 category: "nightlife"
-image: "/images/areas/walking-street-night.jpg"
+image: "/images/areas/walking-street-night.webp"
 publishDate: 2026-04-04
 draft: false
 ---

@@ -3,7 +3,7 @@ name: "Byblos Beach Bar & Restaurant"
 slug: "byblos-beach-bar"
 type: "other"
 area: "Walking Street"
-image: "/images/venues/byblos-beach-bar.jpg"
+image: "/images/venues/byblos-beach-bar.webp"
 priceLevel: 3
 openingHours: "16:00 – 02:00"
 googleMapsUrl: "https://maps.app.goo.gl/KF7antiNi1YHRDq89"

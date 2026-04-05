@@ -4,7 +4,7 @@ slug: "soi6-oppa-bar"
 description: "Oppa Bar on Soi 6 Pattaya — Korean-style Baba Group beer bar. Open 15:00-01:00. Beer from 80 THB."
 type: "beer-bar"
 area: "Soi 6"
-image: "/images/venues/soi6-oppa-bar-photo.jpg"
+image: "/images/venues/soi6-oppa-bar-photo.webp"
 priceLevel: 1
 openingHours: "15:00 – 01:00"
 publishDate: 2026-04-04

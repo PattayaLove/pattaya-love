@@ -3,7 +3,7 @@ title: "Thai Bank Account & QR Payments for Foreigners — 2026 Guide"
 slug: "thai-banking-qr-payments"
 description: "How to open a Thai bank account in 2026 (new rules!), plus QR payment apps for tourists without a bank account. Wise, TrueMoney, TAGTHAi, and Moreta Pay."
 category: "tips"
-image: "/images/guides/bangkok-bank-atm.jpg"
+image: "/images/guides/bangkok-bank-atm.webp"
 publishDate: 2026-04-05
 draft: false
 ---

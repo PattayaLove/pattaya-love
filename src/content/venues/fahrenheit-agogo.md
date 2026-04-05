@@ -6,7 +6,7 @@ type: "gogo"
 area: "Walking Street"
 priceLevel: 2
 openingHours: "20:00 – 03:00"
-image: "/images/venues/fahrenheit-walking-street.jpg"
+image: "/images/venues/fahrenheit-walking-street.webp"
 publishDate: 2026-04-05
 draft: false
 ---
