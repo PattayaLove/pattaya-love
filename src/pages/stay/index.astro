@@ -81,6 +81,7 @@ const fallbackImages: Record<string, string> = {
 function getFallback(priceRange: string): string {
   return fallbackImages[priceRange] || '/images/hotels/hotel-luxury-2.webp';
 }
+import Icon from '../../components/Icon.astro';
 ---
 
 <BaseLayout
@@ -103,7 +104,7 @@ function getFallback(priceRange: string): string {
       <nav class="mb-8" aria-label="Breadcrumb">
         <ol class="flex items-center gap-2 text-xs text-white/50 font-medium">
           <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
-          <li><span class="material-symbols-outlined text-[10px]">chevron_right</span></li>
+          <li><Icon name="chevron_right" class="text-[10px]" /></li>
           <li class="text-white/80">Stay</li>
         </ol>
       </nav>
@@ -122,7 +123,7 @@ function getFallback(priceRange: string): string {
       <div class="mt-10 flex flex-wrap gap-8">
         <div class="flex items-center gap-3">
           <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary-light text-xl">hotel</span>
+            <Icon name="hotel" class="text-primary-light text-xl" />
           </div>
           <div>
             <span class="text-white font-bold text-lg">{hotels.length}</span>
@@ -131,7 +132,7 @@ function getFallback(priceRange: string): string {
         </div>
         <div class="flex items-center gap-3">
           <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-amber text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+            <Icon name="star" class="text-amber text-xl" />
           </div>
           <div>
             <span class="text-white font-bold text-lg">4.0+</span>
@@ -140,7 +141,7 @@ function getFallback(priceRange: string): string {
         </div>
         <div class="flex items-center gap-3">
           <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary-light text-xl">verified</span>
+            <Icon name="verified" class="text-primary-light text-xl" />
           </div>
           <div>
             <span class="text-white font-bold text-lg">100%</span>
@@ -174,14 +175,14 @@ function getFallback(priceRange: string): string {
                   <span class="bg-primary text-white text-[9px] font-bold px-2.5 py-1 rounded-full tracking-widest uppercase shadow-md">Featured</span>
                 </div>
                 <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full flex items-center gap-1">
-                  <span class="material-symbols-outlined text-amber text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <Icon name="star" class="text-amber text-xs" />
                   <span class="text-xs font-bold text-ink">{d.rating.toFixed(1)}</span>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-headline font-bold text-sm text-ink group-hover:text-primary transition-colors line-clamp-1 mb-1">{d.name}</h3>
                 <p class="text-ink-muted text-xs flex items-center gap-1">
-                  <span class="material-symbols-outlined text-xs">location_on</span>
+                  <Icon name="location_on" class="text-xs" />
                   {d.area}
                 </p>
               </div>
@@ -207,7 +208,7 @@ function getFallback(priceRange: string): string {
           type="button"
           class="inline-flex items-center gap-1.5 bg-surface-low text-ink-muted px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-colors"
         >
-          <span class="material-symbols-outlined text-base">tune</span>
+          <Icon name="tune" class="text-base" />
           Filters
         </button>
       </div>
@@ -217,7 +218,7 @@ function getFallback(priceRange: string): string {
         <!-- Row 1: Search + Area + Category -->
         <div class="flex flex-col md:flex-row md:items-center gap-3">
           <div class="relative flex-shrink-0 w-full md:w-48">
-            <span class="material-symbols-outlined text-ink-muted text-lg absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">search</span>
+            <Icon name="search" class="text-ink-muted text-lg absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
             <input
               id="filter-search"
               type="text"
@@ -323,7 +324,7 @@ function getFallback(priceRange: string): string {
                 {/* Area Badge */}
                 <div class="absolute top-4 right-4">
                   <span class="bg-white/90 backdrop-blur-md text-[10px] font-bold px-3 py-1.5 rounded-full text-ink tracking-wide flex items-center gap-1">
-                    <span class="material-symbols-outlined text-xs">location_on</span>
+                    <Icon name="location_on" class="text-xs" />
                     {d.area}
                   </span>
                 </div>
@@ -337,7 +338,7 @@ function getFallback(priceRange: string): string {
                     {d.name}
                   </h2>
                   <div class="flex items-center gap-1.5 shrink-0 ml-4">
-                    <span class="material-symbols-outlined text-amber text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <Icon name="star" class="text-amber text-base" />
                     <span class="text-base font-bold text-ink">{d.rating.toFixed(1)}</span>
                   </div>
                 </div>
@@ -345,13 +346,13 @@ function getFallback(priceRange: string): string {
                 {/* Star Rating Visual */}
                 <div class="flex items-center gap-0.5 mb-4">
                   {Array.from({ length: fullStars }).map(() => (
-                    <span class="material-symbols-outlined text-amber text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <Icon name="star" class="text-amber text-lg" />
                   ))}
                   {hasHalf && (
-                    <span class="material-symbols-outlined text-amber text-lg" style="font-variation-settings: 'FILL' 1;">star_half</span>
+                    <Icon name="star_half" class="text-amber text-lg" />
                   )}
                   {Array.from({ length: emptyStars }).map(() => (
-                    <span class="material-symbols-outlined text-surface-high text-lg">star</span>
+                    <Icon name="star" class="text-surface-high text-lg" />
                   ))}
                 </div>
 
@@ -365,7 +366,7 @@ function getFallback(priceRange: string): string {
                   <div class="flex flex-wrap gap-2 mb-6 py-3 bg-surface-low rounded-xl px-3">
                     {d.amenities.slice(0, 5).map((amenity) => (
                       <span class="flex items-center gap-1 text-ink-muted text-xs" title={amenity}>
-                        <span class="material-symbols-outlined text-base">{amenityIcons[amenity] || 'check_circle'}</span>
+                        <Icon name={amenityIcons[amenity] || 'check_circle'} class="text-base" />
                         <span class="hidden sm:inline">{amenity}</span>
                       </span>
                     ))}
@@ -391,7 +392,7 @@ function getFallback(priceRange: string): string {
                       class="flex-1 cta-gradient text-center text-white px-5 py-2.5 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20"
                     >
                       Check Price
-                      <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                      <Icon name="arrow_forward" class="text-sm" />
                     </a>
                   ) : (
                     <a
@@ -399,7 +400,7 @@ function getFallback(priceRange: string): string {
                       class="flex-1 cta-gradient text-center text-white px-5 py-2.5 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20"
                     >
                       Check Price
-                      <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                      <Icon name="arrow_forward" class="text-sm" />
                     </a>
                   )}
                 </div>
@@ -417,13 +418,13 @@ function getFallback(priceRange: string): string {
           class="inline-flex items-center gap-2 bg-primary text-white px-10 py-3.5 rounded-full text-sm font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20"
         >
           Load More
-          <span class="material-symbols-outlined text-lg">expand_more</span>
+          <Icon name="expand_more" class="text-lg" />
         </button>
       </div>
 
       <!-- No Results Message -->
       <div id="no-results" class="hidden py-16 text-center">
-        <span class="material-symbols-outlined text-5xl text-ink-muted/40 mb-4 block">search_off</span>
+        <Icon name="search_off" class="text-5xl text-ink-muted/40 mb-4 block" />
         <h3 class="font-headline font-bold text-xl text-ink mb-2">No properties found</h3>
         <p class="text-ink-muted text-sm">Try adjusting your filters or search term.</p>
       </div>
@@ -444,21 +445,21 @@ function getFallback(priceRange: string): string {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
         <div class="text-center bg-surface rounded-2xl p-8">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary text-2xl">bed</span>
+            <Icon name="bed" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-ink">Real Stays</h3>
           <p class="text-ink-muted text-sm leading-relaxed">We book and stay at every hotel we review. No desk research or press releases.</p>
         </div>
         <div class="text-center bg-surface rounded-2xl p-8">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary text-2xl">groups</span>
+            <Icon name="groups" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-ink">Guest-Friendly Verified</h3>
           <p class="text-ink-muted text-sm leading-relaxed">Every listed hotel has been confirmed guest-friendly by our team. No surprises at check-in.</p>
         </div>
         <div class="text-center bg-surface rounded-2xl p-8">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary text-2xl">update</span>
+            <Icon name="update" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-ink">Updated Regularly</h3>
           <p class="text-ink-muted text-sm leading-relaxed">Prices, policies, and conditions change. We revisit and refresh reviews every quarter.</p>
@@ -482,11 +483,11 @@ function getFallback(priceRange: string): string {
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="https://www.facebook.com/pattaya.xxx/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-coral px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform shadow-lg whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">group</span>
+          <Icon name="group" class="text-lg" />
           Join on Facebook
         </a>
         <a href="https://www.instagram.com/pattaya.loves" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-white text-white px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">photo_camera</span>
+          <Icon name="photo_camera" class="text-lg" />
           Follow on Instagram
         </a>
       </div>
@@ -499,23 +500,23 @@ function getFallback(priceRange: string): string {
   <div class="md:hidden">
     <div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-[env(safe-area-inset-bottom,8px)] h-16 bg-white/95 backdrop-blur-xl z-50 shadow-[0_-8px_25px_rgba(0,0,0,0.05)]">
       <a href="/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">home</span>
+        <Icon name="home" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Home</span>
       </a>
       <a href="/stay/" class="flex flex-col items-center justify-center text-primary">
-        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bed</span>
+        <Icon name="bed" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Stay</span>
       </a>
       <a href="/explore/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">explore</span>
+        <Icon name="explore" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Explore</span>
       </a>
       <a href="/nightlife/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">nightlife</span>
+        <Icon name="nightlife" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Night</span>
       </a>
       <a href="/guides/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">auto_stories</span>
+        <Icon name="auto_stories" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Journal</span>
       </a>
     </div>

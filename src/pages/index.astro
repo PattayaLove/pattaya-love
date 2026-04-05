@@ -268,6 +268,7 @@ const journalArticles = [
 ];
 
 import OptImage from '../components/OptImage.astro';
+import Icon from '../components/Icon.astro';
 ---
 
 <BaseLayout
@@ -308,7 +309,7 @@ import OptImage from '../components/OptImage.astro';
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="/guides/" class="glass text-white px-8 py-3.5 rounded-full font-headline text-sm font-bold flex items-center gap-2.5 hover:bg-white/15 transition-all duration-300">
-          <span class="material-symbols-outlined text-lg">search</span>
+          <Icon name="search" class="text-lg" />
           Explore Guides
         </a>
         <a href="/explore/" class="text-white font-headline text-sm font-bold border-b border-white/30 pb-1 hover:border-white transition-all duration-300">
@@ -332,7 +333,7 @@ import OptImage from '../components/OptImage.astro';
         <h2 class="font-headline text-2xl font-bold tracking-tight text-ink">Trending Now</h2>
         <a href="/guides/" class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300">
           View All
-          <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+          <Icon name="arrow_right_alt" class="text-lg" />
         </a>
       </div>
 
@@ -392,7 +393,7 @@ import OptImage from '../components/OptImage.astro';
               </p>
               <a href={silo.featureHref} class="inline-flex items-center text-primary font-bold text-sm uppercase tracking-widest group">
                 {silo.featureCta}
-                <span class="material-symbols-outlined ml-2 transition-transform duration-300 group-hover:translate-x-1">arrow_right_alt</span>
+                <Icon name="arrow_right_alt" class="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
             </div>
           </div>
@@ -428,7 +429,7 @@ import OptImage from '../components/OptImage.astro';
         </div>
         <a href="/stay/" class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300">
           View All Hotels
-          <span class="material-symbols-outlined text-lg">east</span>
+          <Icon name="east" class="text-lg" />
         </a>
       </div>
 
@@ -458,14 +459,14 @@ import OptImage from '../components/OptImage.astro';
               <div class="flex justify-between items-start mb-3">
                 <h3 class="font-headline font-bold text-lg text-ink">{hotel.name}</h3>
                 <div class="flex items-center gap-1">
-                  <span class="material-symbols-outlined text-amber text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <Icon name="star" class="text-amber text-sm" />
                   <span class="text-sm font-bold text-ink">{hotel.rating}</span>
                 </div>
               </div>
               <div class="flex gap-3 mb-5 py-3 bg-surface-low rounded-xl px-3">
                 {hotel.amenities.map((amenity) => (
                   <span class="flex items-center gap-1 text-ink-muted text-sm" title={amenityLabels[amenity]}>
-                    <span class="material-symbols-outlined text-lg">{amenity}</span>
+                    <Icon name={amenity} class="text-lg" />
                   </span>
                 ))}
               </div>
@@ -476,7 +477,7 @@ import OptImage from '../components/OptImage.astro';
                 </div>
                 <button class="cta-gradient px-5 py-2.5 rounded-xl text-white text-sm font-bold flex items-center gap-1.5 hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20">
                   Check Price
-                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                  <Icon name="arrow_forward" class="text-sm" />
                 </button>
               </div>
             </div>
@@ -505,7 +506,7 @@ import OptImage from '../components/OptImage.astro';
         </div>
         <a href="/guides/" class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300 shrink-0">
           View All Stories
-          <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+          <Icon name="arrow_right_alt" class="text-lg" />
         </a>
       </div>
 
@@ -552,21 +553,21 @@ import OptImage from '../components/OptImage.astro';
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
         <div class="text-center bg-surface-card rounded-2xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary text-2xl">verified</span>
+            <Icon name="verified" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-ink">Local Expertise</h3>
           <p class="text-ink-muted text-sm leading-relaxed">Written by expats who live and breathe Pattaya. Real insights, not tourist cliches.</p>
         </div>
         <div class="text-center bg-surface-card rounded-2xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary text-2xl">update</span>
+            <Icon name="update" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-ink">Always Up-to-Date</h3>
           <p class="text-ink-muted text-sm leading-relaxed">We revisit and update every guide regularly. No stale info from 3 years ago.</p>
         </div>
         <div class="text-center bg-surface-card rounded-2xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary text-2xl">handshake</span>
+            <Icon name="handshake" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-ink">Honest Reviews</h3>
           <p class="text-ink-muted text-sm leading-relaxed">No paid placements. Our affiliate partnerships never influence our ratings.</p>
@@ -590,11 +591,11 @@ import OptImage from '../components/OptImage.astro';
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="https://www.facebook.com/pattaya.xxx/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-coral px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform shadow-lg whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">group</span>
+          <Icon name="group" class="text-lg" />
           Join on Facebook
         </a>
         <a href="https://www.instagram.com/pattaya.loves" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-white text-white px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">photo_camera</span>
+          <Icon name="photo_camera" class="text-lg" />
           Follow on Instagram
         </a>
       </div>
@@ -610,23 +611,23 @@ import OptImage from '../components/OptImage.astro';
   <div class="md:hidden">
     <div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-[env(safe-area-inset-bottom,8px)] h-16 bg-white/95 backdrop-blur-xl z-50 shadow-[0_-8px_25px_rgba(0,0,0,0.05)]">
       <a href="/" class="flex flex-col items-center justify-center text-primary">
-        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+        <Icon name="home" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Home</span>
       </a>
       <a href="/stay/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">bed</span>
+        <Icon name="bed" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Stay</span>
       </a>
       <a href="/explore/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">explore</span>
+        <Icon name="explore" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Explore</span>
       </a>
       <a href="/nightlife/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">nightlife</span>
+        <Icon name="nightlife" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Night</span>
       </a>
       <a href="/guides/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">auto_stories</span>
+        <Icon name="auto_stories" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Journal</span>
       </a>
     </div>

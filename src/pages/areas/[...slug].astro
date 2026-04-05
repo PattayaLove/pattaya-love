@@ -81,6 +81,7 @@ const placeSchema = {
     "addressCountry": "TH"
   }
 };
+import Icon from '../../components/Icon.astro';
 ---
 
 <BaseLayout
@@ -125,17 +126,17 @@ const placeSchema = {
       <!-- Stats bar -->
       <div class="flex flex-wrap items-center gap-6 text-white/80">
         <div class="flex items-center gap-2">
-          <span class="material-symbols-outlined text-coral text-lg">nightlife</span>
+          <Icon name="nightlife" class="text-coral text-lg" />
           <span class="text-sm font-semibold">{areaVenues.length} Venue{areaVenues.length !== 1 && 's'}</span>
         </div>
         <div class="h-4 w-px bg-white/20"></div>
         <div class="flex items-center gap-2">
-          <span class="material-symbols-outlined text-coral text-lg">hotel</span>
+          <Icon name="hotel" class="text-coral text-lg" />
           <span class="text-sm font-semibold">{areaHotels.length} Hotel{areaHotels.length !== 1 && 's'}</span>
         </div>
         <div class="h-4 w-px bg-white/20"></div>
         <div class="flex items-center gap-2">
-          <span class="material-symbols-outlined text-coral text-lg">auto_stories</span>
+          <Icon name="auto_stories" class="text-coral text-lg" />
           <span class="text-sm font-semibold">{relatedGuides.length} Guide{relatedGuides.length !== 1 && 's'}</span>
         </div>
       </div>
@@ -153,7 +154,7 @@ const placeSchema = {
 
       <!-- Published date -->
       <div class="mt-10 pt-8 border-t border-surface-high flex items-center gap-3 text-ink-muted text-sm">
-        <span class="material-symbols-outlined text-lg">calendar_today</span>
+        <Icon name="calendar_today" class="text-lg" />
         Published {publishDate}
       </div>
     </div>
@@ -179,7 +180,7 @@ const placeSchema = {
             class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300"
           >
             All Venues
-            <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+            <Icon name="arrow_right_alt" class="text-lg" />
           </a>
         </div>
 
@@ -211,12 +212,12 @@ const placeSchema = {
                 <div class="flex items-center gap-4 text-ink-faint text-xs">
                   {v.data.openingHours && (
                     <span class="flex items-center gap-1">
-                      <span class="material-symbols-outlined text-sm">schedule</span>
+                      <Icon name="schedule" class="text-sm" />
                       {v.data.openingHours}
                     </span>
                   )}
                   <span class="flex items-center gap-1">
-                    <span class="material-symbols-outlined text-sm">payments</span>
+                    <Icon name="payments" class="text-sm" />
                     {'$'.repeat(v.data.priceLevel)} / {'$'.repeat(3)}
                   </span>
                 </div>
@@ -248,7 +249,7 @@ const placeSchema = {
             class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300"
           >
             All Hotels
-            <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+            <Icon name="arrow_right_alt" class="text-lg" />
           </a>
         </div>
 
@@ -270,7 +271,7 @@ const placeSchema = {
                   />
                 ) : (
                   <div class="w-full h-full bg-surface-low flex items-center justify-center">
-                    <span class="material-symbols-outlined text-4xl text-ink-faint">hotel</span>
+                    <Icon name="hotel" class="text-4xl text-ink-faint" />
                   </div>
                 )}
                 <div class="absolute top-3 left-3">
@@ -279,7 +280,7 @@ const placeSchema = {
                   </span>
                 </div>
                 <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1">
-                  <span class="material-symbols-outlined text-amber text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <Icon name="star" class="text-amber text-sm" />
                   <span class="text-xs font-bold text-ink">{h.data.rating}</span>
                 </div>
               </div>
@@ -354,7 +355,7 @@ const placeSchema = {
             class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300"
           >
             All Guides
-            <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+            <Icon name="arrow_right_alt" class="text-lg" />
           </a>
         </div>
 
@@ -377,14 +378,14 @@ const placeSchema = {
                   />
                 ) : (
                   <div class="w-full h-full bg-surface-low flex items-center justify-center">
-                    <span class="material-symbols-outlined text-4xl text-ink-faint">auto_stories</span>
+                    <Icon name="auto_stories" class="text-4xl text-ink-faint" />
                   </div>
                 )}
               </div>
               <div class="p-6">
                 <div class="flex items-center gap-3 mb-3">
                   <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-primary bg-primary-light px-3 py-1.5 rounded-full">
-                    <span class="material-symbols-outlined text-xs">{categoryIcons[g.data.category] || 'auto_stories'}</span>
+                    <Icon name={categoryIcons[g.data.category] || 'auto_stories'} class="text-xs" />
                     {g.data.category}
                   </span>
                 </div>
@@ -411,7 +412,7 @@ const placeSchema = {
 
         <div class="relative z-10">
           <div class="flex items-center gap-3 mb-6">
-            <span class="material-symbols-outlined text-white text-2xl">tips_and_updates</span>
+            <Icon name="tips_and_updates" class="text-white text-2xl" />
             <h2 class="font-headline text-2xl md:text-3xl font-extrabold text-white tracking-tight">
               Insider Tips for {area.data.name}
             </h2>
@@ -419,25 +420,25 @@ const placeSchema = {
 
           <ul class="space-y-4">
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-white/80 text-lg mt-0.5 shrink-0">check_circle</span>
+              <Icon name="check_circle" class="text-white/80 text-lg mt-0.5 shrink-0" />
               <p class="text-white/85 text-sm md:text-base leading-relaxed">
                 Visit on weekday evenings for smaller crowds and better conversations with staff and locals.
               </p>
             </li>
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-white/80 text-lg mt-0.5 shrink-0">check_circle</span>
+              <Icon name="check_circle" class="text-white/80 text-lg mt-0.5 shrink-0" />
               <p class="text-white/85 text-sm md:text-base leading-relaxed">
                 Download Grab or Bolt before you go -- getting a fair taxi fare in Pattaya can be challenging without ride-hailing apps.
               </p>
             </li>
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-white/80 text-lg mt-0.5 shrink-0">check_circle</span>
+              <Icon name="check_circle" class="text-white/80 text-lg mt-0.5 shrink-0" />
               <p class="text-white/85 text-sm md:text-base leading-relaxed">
                 Ask your hotel front desk for the latest recommendations -- venues open and close frequently.
               </p>
             </li>
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-white/80 text-lg mt-0.5 shrink-0">check_circle</span>
+              <Icon name="check_circle" class="text-white/80 text-lg mt-0.5 shrink-0" />
               <p class="text-white/85 text-sm md:text-base leading-relaxed">
                 Carry cash for smaller venues and street vendors. Most larger establishments accept cards and QR payments.
               </p>
@@ -463,11 +464,11 @@ const placeSchema = {
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="https://www.facebook.com/pattaya.xxx/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-coral px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform shadow-lg whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">group</span>
+          <Icon name="group" class="text-lg" />
           Join on Facebook
         </a>
         <a href="https://www.instagram.com/pattaya.loves" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-white text-white px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">photo_camera</span>
+          <Icon name="photo_camera" class="text-lg" />
           Follow on Instagram
         </a>
       </div>

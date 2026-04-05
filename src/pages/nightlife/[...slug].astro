@@ -80,6 +80,7 @@ const venueSchema = {
   },
   ...(venue.data.openingHours ? { "openingHours": venue.data.openingHours } : {})
 };
+import Icon from '../../components/Icon.astro';
 ---
 
 <BaseLayout
@@ -108,11 +109,11 @@ const venueSchema = {
       <!-- Badges -->
       <div class="flex flex-wrap items-center gap-3 mb-5">
         <span class="inline-flex items-center gap-1.5 bg-coral/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
-          <span class="material-symbols-outlined text-sm">{typeIcons[venue.data.type] || 'nightlife'}</span>
+          <Icon name={typeIcons[venue.data.type] || 'nightlife'} class="text-sm" />
           {typeLabels[venue.data.type] || 'Venue'}
         </span>
         <span class="inline-flex items-center gap-1.5 glass text-white/90 text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
-          <span class="material-symbols-outlined text-sm">location_on</span>
+          <Icon name="location_on" class="text-sm" />
           {venue.data.area}
         </span>
       </div>
@@ -151,7 +152,7 @@ const venueSchema = {
           <div class="text-center">
             <span class="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2 block">Opening Hours</span>
             <div class="flex items-center justify-center gap-2 text-white">
-              <span class="material-symbols-outlined text-coral text-lg">schedule</span>
+              <Icon name="schedule" class="text-coral text-lg" />
               <span class="text-sm font-semibold">{venue.data.openingHours || 'Varies'}</span>
             </div>
           </div>
@@ -160,7 +161,7 @@ const venueSchema = {
           <div class="text-center">
             <span class="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2 block">Area</span>
             <div class="flex items-center justify-center gap-2 text-white">
-              <span class="material-symbols-outlined text-coral text-lg">map</span>
+              <Icon name="map" class="text-coral text-lg" />
               <span class="text-sm font-semibold">{venue.data.area}</span>
             </div>
           </div>
@@ -169,7 +170,7 @@ const venueSchema = {
           <div class="text-center">
             <span class="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2 block">Vibe</span>
             <div class="flex items-center justify-center gap-2 text-white">
-              <span class="material-symbols-outlined text-coral text-lg">music_note</span>
+              <Icon name="music_note" class="text-coral text-lg" />
               <span class="text-sm font-semibold">{typeLabels[venue.data.type] || 'Mixed'}</span>
             </div>
           </div>
@@ -186,7 +187,7 @@ const venueSchema = {
 
           <!-- Published date -->
           <div class="mt-10 pt-8 border-t border-white/10 flex items-center gap-3 text-white/40 text-sm">
-            <span class="material-symbols-outlined text-lg">calendar_today</span>
+            <Icon name="calendar_today" class="text-lg" />
             Published {publishDate}
           </div>
         </article>
@@ -197,12 +198,12 @@ const venueSchema = {
           {venue.data.googleMapsUrl && (
             <div class="reveal bg-navy-light border border-white/10 rounded-2xl p-6">
               <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
-                <span class="material-symbols-outlined text-coral">location_on</span>
+                <Icon name="location_on" class="text-coral" />
                 Location
               </h3>
               <div class="aspect-video rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-4 overflow-hidden">
                 <div class="text-center">
-                  <span class="material-symbols-outlined text-4xl text-white/20 mb-2 block">map</span>
+                  <Icon name="map" class="text-4xl text-white/20 mb-2 block" />
                   <span class="text-white/30 text-xs">Map Preview</span>
                 </div>
               </div>
@@ -212,7 +213,7 @@ const venueSchema = {
                 rel="noopener noreferrer"
                 class="w-full inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white font-bold text-sm py-3 px-5 rounded-xl transition-all duration-300"
               >
-                <span class="material-symbols-outlined text-lg">open_in_new</span>
+                <Icon name="open_in_new" class="text-lg" />
                 Open in Google Maps
               </a>
             </div>
@@ -221,7 +222,7 @@ const venueSchema = {
           <!-- Venue Details Card -->
           <div class="reveal bg-navy-light border border-white/10 rounded-2xl p-6">
             <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
-              <span class="material-symbols-outlined text-coral">info</span>
+              <Icon name="info" class="text-coral" />
               Venue Details
             </h3>
             <ul class="space-y-4">
@@ -251,12 +252,12 @@ const venueSchema = {
           <!-- Author Box -->
           <div class="reveal bg-navy-light border border-white/10 rounded-2xl p-6">
             <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
-              <span class="material-symbols-outlined text-coral">person</span>
+              <Icon name="person" class="text-coral" />
               About the Author
             </h3>
             <div class="flex items-center gap-4 mb-3">
               <div class="w-12 h-12 rounded-full bg-coral/20 flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined text-coral text-xl">face</span>
+                <Icon name="face" class="text-coral text-xl" />
               </div>
               <div>
                 <p class="text-white font-bold text-sm">pattaya.love Team</p>
@@ -289,7 +290,7 @@ const venueSchema = {
               class="group hidden sm:flex items-center gap-2 text-coral font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300"
             >
               All Venues
-              <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+              <Icon name="arrow_right_alt" class="text-lg" />
             </a>
           </div>
 
@@ -312,7 +313,7 @@ const venueSchema = {
                     />
                   ) : (
                     <div class="w-full h-full bg-white/5 flex items-center justify-center">
-                      <span class="material-symbols-outlined text-4xl text-white/10">nightlife</span>
+                      <Icon name="nightlife" class="text-4xl text-white/10" />
                     </div>
                   )}
                   <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
@@ -327,11 +328,11 @@ const venueSchema = {
                   <p class="text-white/40 text-sm line-clamp-2">{v.data.description}</p>
                   <div class="flex items-center gap-3 mt-3 text-white/30 text-xs">
                     <span class="flex items-center gap-1">
-                      <span class="material-symbols-outlined text-sm">schedule</span>
+                      <Icon name="schedule" class="text-sm" />
                       {v.data.openingHours || 'Varies'}
                     </span>
                     <span class="flex items-center gap-1">
-                      <span class="material-symbols-outlined text-sm">payments</span>
+                      <Icon name="payments" class="text-sm" />
                       {'$'.repeat(v.data.priceLevel)}
                     </span>
                   </div>
@@ -359,11 +360,11 @@ const venueSchema = {
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="https://www.facebook.com/pattaya.xxx/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-coral px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform shadow-lg whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">group</span>
+          <Icon name="group" class="text-lg" />
           Join on Facebook
         </a>
         <a href="https://www.instagram.com/pattaya.loves" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-white text-white px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">photo_camera</span>
+          <Icon name="photo_camera" class="text-lg" />
           Follow on Instagram
         </a>
       </div>

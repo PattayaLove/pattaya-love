@@ -21,6 +21,7 @@ const socialLinks = [
   { label: 'YouTube', icon: 'smart_display', href: 'https://youtube.com/@pattaya_love' },
   { label: 'TikTok', icon: 'music_note', href: 'https://www.tiktok.com/@pattaya.love' },
 ];
+import Icon from './Icon.astro';
 ---
 
 <footer class="bg-navy relative grain">
@@ -38,7 +39,7 @@ const socialLinks = [
         <div class="flex gap-3">
           {socialLinks.map((link) => (
             <a href={link.href} class="w-10 h-10 rounded-xl bg-white/5 hover:bg-primary/20 flex items-center justify-center text-ink-faint hover:text-primary transition-all duration-300" aria-label={link.label}>
-              <span class="material-symbols-outlined text-xl">{link.icon}</span>
+              <Icon name={link.icon} class="text-xl" />
             </a>
           ))}
         </div>
@@ -77,7 +78,7 @@ const socialLinks = [
         <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-white mb-6">Join the Community</h4>
         <p class="text-sm text-ink-faint mb-4">Connect with fellow travelers & expats in our Facebook group.</p>
         <a href="https://www.facebook.com/pattaya.xxx/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 cta-gradient px-5 py-2.5 rounded-xl text-white text-sm font-bold hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20">
-          <span class="material-symbols-outlined text-lg">group</span>
+          <Icon name="group" class="text-lg" />
           Join on Facebook
         </a>
       </div>

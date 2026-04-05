@@ -42,6 +42,7 @@ function getVenueFallback(area: string): string {
   if (area === 'Soi 6') return '/images/areas/soi-6.webp';
   return '/images/areas/walking-street.webp';
 }
+import Icon from '../../components/Icon.astro';
 ---
 
 <BaseLayout
@@ -64,7 +65,7 @@ function getVenueFallback(area: string): string {
       <nav class="mb-8" aria-label="Breadcrumb">
         <ol class="flex items-center gap-2 text-xs text-white/50 font-medium">
           <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
-          <li><span class="material-symbols-outlined text-[10px]">chevron_right</span></li>
+          <li><Icon name="chevron_right" class="text-[10px]" /></li>
           <li class="text-white/80">Nightlife</li>
         </ol>
       </nav>
@@ -83,7 +84,7 @@ function getVenueFallback(area: string): string {
       <div class="mt-10 flex flex-wrap gap-8">
         <div class="flex items-center gap-3">
           <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary-light text-xl">nightlife</span>
+            <Icon name="nightlife" class="text-primary-light text-xl" />
           </div>
           <div>
             <span class="text-white font-bold text-lg">{venues.length}</span>
@@ -92,7 +93,7 @@ function getVenueFallback(area: string): string {
         </div>
         <div class="flex items-center gap-3">
           <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-amber text-xl">schedule</span>
+            <Icon name="schedule" class="text-amber text-xl" />
           </div>
           <div>
             <span class="text-white font-bold text-lg">Nightly</span>
@@ -147,7 +148,7 @@ function getVenueFallback(area: string): string {
               </p>
               <div class="flex items-center gap-2 text-primary font-bold text-sm">
                 <span>Explore Walking Street</span>
-                <span class="material-symbols-outlined text-lg group-hover:translate-x-1.5 transition-transform duration-300">arrow_forward</span>
+                <Icon name="arrow_forward" class="text-lg group-hover:translate-x-1.5 transition-transform duration-300" />
               </div>
             </div>
           </div>
@@ -178,7 +179,7 @@ function getVenueFallback(area: string): string {
               </p>
               <div class="flex items-center gap-2 text-primary font-bold text-sm">
                 <span>Explore Soi 6</span>
-                <span class="material-symbols-outlined text-lg group-hover:translate-x-1.5 transition-transform duration-300">arrow_forward</span>
+                <Icon name="arrow_forward" class="text-lg group-hover:translate-x-1.5 transition-transform duration-300" />
               </div>
             </div>
           </div>
@@ -209,7 +210,7 @@ function getVenueFallback(area: string): string {
               </p>
               <div class="flex items-center gap-2 text-primary font-bold text-sm">
                 <span>Explore Soi Buakhao</span>
-                <span class="material-symbols-outlined text-lg group-hover:translate-x-1.5 transition-transform duration-300">arrow_forward</span>
+                <Icon name="arrow_forward" class="text-lg group-hover:translate-x-1.5 transition-transform duration-300" />
               </div>
             </div>
           </div>
@@ -253,7 +254,7 @@ function getVenueFallback(area: string): string {
                 {/* Type Badge */}
                 <div class="absolute top-4 left-4">
                   <span class:list={['inline-flex items-center gap-1.5 text-[10px] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase backdrop-blur-md', colors.bg, colors.text]}>
-                    <span class="material-symbols-outlined text-sm">{icon}</span>
+                    <Icon name={icon} class="text-sm" />
                     {typeLabels[d.type]}
                   </span>
                 </div>
@@ -261,7 +262,7 @@ function getVenueFallback(area: string): string {
                 {/* Area Badge */}
                 <div class="absolute top-4 right-4">
                   <span class="bg-white/10 backdrop-blur-md text-white/80 text-[10px] font-bold px-3 py-1.5 rounded-full tracking-wide flex items-center gap-1">
-                    <span class="material-symbols-outlined text-xs">location_on</span>
+                    <Icon name="location_on" class="text-xs" />
                     {d.area}
                   </span>
                 </div>
@@ -293,7 +294,7 @@ function getVenueFallback(area: string): string {
                   {/* Opening Hours */}
                   {d.openingHours && (
                     <div class="flex items-center gap-1.5 text-white/40">
-                      <span class="material-symbols-outlined text-sm">schedule</span>
+                      <Icon name="schedule" class="text-sm" />
                       <span class="text-xs font-medium">{d.openingHours}</span>
                     </div>
                   )}
@@ -301,7 +302,7 @@ function getVenueFallback(area: string): string {
                   {/* Arrow */}
                   <div class="flex items-center gap-1 text-primary text-sm font-bold">
                     <span class="hidden sm:inline">Details</span>
-                    <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                    <Icon name="arrow_forward" class="text-lg group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
               </div>
@@ -326,21 +327,21 @@ function getVenueFallback(area: string): string {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
         <div class="text-center bg-white/5 rounded-2xl p-8 border border-white/5">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/15 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary text-2xl">nightlife</span>
+            <Icon name="nightlife" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-white">Visited in Person</h3>
           <p class="text-white/50 text-sm leading-relaxed">Every venue reviewed by our local team. Real experiences, not sponsored content.</p>
         </div>
         <div class="text-center bg-white/5 rounded-2xl p-8 border border-white/5">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/15 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary text-2xl">payments</span>
+            <Icon name="payments" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-white">Real Drink Prices</h3>
           <p class="text-white/50 text-sm leading-relaxed">We list actual prices — no outdated numbers. Updated monthly from on-the-ground visits.</p>
         </div>
         <div class="text-center bg-white/5 rounded-2xl p-8 border border-white/5">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/15 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary text-2xl">shield</span>
+            <Icon name="shield" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-white">Safety First</h3>
           <p class="text-white/50 text-sm leading-relaxed">We flag scam venues and overcharging. Only venues that treat customers fairly make our list.</p>
@@ -364,11 +365,11 @@ function getVenueFallback(area: string): string {
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="https://www.facebook.com/pattaya.xxx/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-coral px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform shadow-lg whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">group</span>
+          <Icon name="group" class="text-lg" />
           Join on Facebook
         </a>
         <a href="https://www.instagram.com/pattaya.loves" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-white text-white px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">photo_camera</span>
+          <Icon name="photo_camera" class="text-lg" />
           Follow on Instagram
         </a>
       </div>
@@ -381,23 +382,23 @@ function getVenueFallback(area: string): string {
   <div class="md:hidden">
     <div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-[env(safe-area-inset-bottom,8px)] h-16 bg-navy/95 backdrop-blur-xl z-50 shadow-[0_-8px_25px_rgba(0,0,0,0.2)] border-t border-white/5">
       <a href="/" class="flex flex-col items-center justify-center text-white/40">
-        <span class="material-symbols-outlined">home</span>
+        <Icon name="home" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Home</span>
       </a>
       <a href="/stay/" class="flex flex-col items-center justify-center text-white/40">
-        <span class="material-symbols-outlined">bed</span>
+        <Icon name="bed" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Stay</span>
       </a>
       <a href="/explore/" class="flex flex-col items-center justify-center text-white/40">
-        <span class="material-symbols-outlined">explore</span>
+        <Icon name="explore" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Explore</span>
       </a>
       <a href="/nightlife/" class="flex flex-col items-center justify-center text-primary">
-        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">nightlife</span>
+        <Icon name="nightlife" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Night</span>
       </a>
       <a href="/guides/" class="flex flex-col items-center justify-center text-white/40">
-        <span class="material-symbols-outlined">auto_stories</span>
+        <Icon name="auto_stories" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Journal</span>
       </a>
     </div>

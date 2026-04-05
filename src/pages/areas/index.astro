@@ -24,6 +24,7 @@ const areaImages: Record<string, string> = {
 };
 
 const fallbackImage = '/images/placeholder.svg';
+import Icon from '../../components/Icon.astro';
 ---
 
 <BaseLayout
@@ -45,7 +46,7 @@ const fallbackImage = '/images/placeholder.svg';
       <nav class="mb-8" aria-label="Breadcrumb">
         <ol class="flex items-center gap-2 text-xs text-white/50 font-medium">
           <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
-          <li><span class="material-symbols-outlined text-[10px]">chevron_right</span></li>
+          <li><Icon name="chevron_right" class="text-[10px]" /></li>
           <li class="text-white/80">Areas</li>
         </ol>
       </nav>
@@ -64,7 +65,7 @@ const fallbackImage = '/images/placeholder.svg';
       <div class="mt-10 flex flex-wrap gap-8">
         <div class="flex items-center gap-3">
           <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary-light text-xl">map</span>
+            <Icon name="map" class="text-primary-light text-xl" />
           </div>
           <div>
             <span class="text-white font-bold text-lg">{areas.length}</span>
@@ -73,7 +74,7 @@ const fallbackImage = '/images/placeholder.svg';
         </div>
         <div class="flex items-center gap-3">
           <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-amber text-xl">nightlife</span>
+            <Icon name="nightlife" class="text-amber text-xl" />
           </div>
           <div>
             <span class="text-white font-bold text-lg">{allVenues.length}</span>
@@ -82,7 +83,7 @@ const fallbackImage = '/images/placeholder.svg';
         </div>
         <div class="flex items-center gap-3">
           <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary-light text-xl">hotel</span>
+            <Icon name="hotel" class="text-primary-light text-xl" />
           </div>
           <div>
             <span class="text-white font-bold text-lg">{allHotels.length}</span>
@@ -150,7 +151,7 @@ const fallbackImage = '/images/placeholder.svg';
                   <div class="flex flex-wrap gap-6 mb-8">
                     <div class="flex items-center gap-3">
                       <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-primary text-lg">nightlife</span>
+                        <Icon name="nightlife" class="text-primary text-lg" />
                       </div>
                       <div>
                         <span class="font-bold text-ink text-lg">{venueCount}</span>
@@ -159,7 +160,7 @@ const fallbackImage = '/images/placeholder.svg';
                     </div>
                     <div class="flex items-center gap-3">
                       <div class="w-10 h-10 rounded-xl bg-amber/10 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-amber text-lg">hotel</span>
+                        <Icon name="hotel" class="text-amber text-lg" />
                       </div>
                       <div>
                         <span class="font-bold text-ink text-lg">{hotelCount}</span>
@@ -174,7 +175,7 @@ const fallbackImage = '/images/placeholder.svg';
                     class="inline-flex items-center gap-2 cta-gradient text-white px-7 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform duration-200 shadow-md shadow-primary/20 self-start"
                   >
                     Explore {d.name}
-                    <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                    <Icon name="arrow_forward" class="text-lg" />
                   </a>
                 </div>
               </div>
@@ -202,21 +203,21 @@ const fallbackImage = '/images/placeholder.svg';
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
         <a href="/stay/" class="text-center bg-surface rounded-2xl p-8 hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500 group">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-            <span class="material-symbols-outlined text-primary text-2xl">bed</span>
+            <Icon name="bed" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-ink group-hover:text-primary transition-colors">Find a Hotel</h3>
           <p class="text-ink-muted text-sm leading-relaxed">Browse our handpicked selection of guest-friendly hotels across all areas.</p>
         </a>
         <a href="/nightlife/" class="text-center bg-surface rounded-2xl p-8 hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500 group">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-            <span class="material-symbols-outlined text-primary text-2xl">nightlife</span>
+            <Icon name="nightlife" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-ink group-hover:text-primary transition-colors">Explore Nightlife</h3>
           <p class="text-ink-muted text-sm leading-relaxed">GoGo bars, clubs, rooftop bars — see all venues with real prices and reviews.</p>
         </a>
         <a href="/guides/" class="text-center bg-surface rounded-2xl p-8 hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.06)] transition-all duration-500 group">
           <div class="w-14 h-14 mx-auto mb-5 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-            <span class="material-symbols-outlined text-primary text-2xl">auto_stories</span>
+            <Icon name="auto_stories" class="text-primary text-2xl" />
           </div>
           <h3 class="font-headline font-bold text-lg mb-2 text-ink group-hover:text-primary transition-colors">Read Guides</h3>
           <p class="text-ink-muted text-sm leading-relaxed">In-depth articles on transport, money, safety, and everything else you need.</p>
@@ -240,11 +241,11 @@ const fallbackImage = '/images/placeholder.svg';
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="https://www.facebook.com/pattaya.xxx/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-coral px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-transform shadow-lg whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">group</span>
+          <Icon name="group" class="text-lg" />
           Join on Facebook
         </a>
         <a href="https://www.instagram.com/pattaya.loves" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border-2 border-white text-white px-8 h-14 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-coral transition-all duration-300 whitespace-nowrap">
-          <span class="material-symbols-outlined text-lg">photo_camera</span>
+          <Icon name="photo_camera" class="text-lg" />
           Follow on Instagram
         </a>
       </div>
@@ -257,23 +258,23 @@ const fallbackImage = '/images/placeholder.svg';
   <div class="md:hidden">
     <div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-[env(safe-area-inset-bottom,8px)] h-16 bg-white/95 backdrop-blur-xl z-50 shadow-[0_-8px_25px_rgba(0,0,0,0.05)]">
       <a href="/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">home</span>
+        <Icon name="home" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Home</span>
       </a>
       <a href="/stay/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">bed</span>
+        <Icon name="bed" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Stay</span>
       </a>
       <a href="/explore/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">explore</span>
+        <Icon name="explore" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Explore</span>
       </a>
       <a href="/nightlife/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">nightlife</span>
+        <Icon name="nightlife" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Night</span>
       </a>
       <a href="/guides/" class="flex flex-col items-center justify-center text-ink-muted">
-        <span class="material-symbols-outlined">auto_stories</span>
+        <Icon name="auto_stories" />
         <span class="text-[8px] font-bold uppercase tracking-widest mt-0.5 font-headline">Journal</span>
       </a>
     </div>
