@@ -2,7 +2,7 @@
 name: "Wongamat Beach"
 slug: "wongamat"
 description: "Pattaya's most upscale beach neighborhood — pristine sand, luxury condos, and five-star resorts away from the tourist crowds. The best beach in Pattaya proper."
-image: "/images/areas/wongamat-beach.webp"
+image: "/images/areas/wongamat-drone.webp"
 publishDate: 2026-04-04
 draft: false
 ---

@@ -116,3 +116,55 @@ For a broader overview of getting around the city including baht buses, Grab, an
 - [Bangkok to Pattaya — Transport Guide](/guides/bangkok-to-pattaya/)
 - [Best Beaches in Pattaya](/guides/pattaya-beaches/)
 - [Pattaya Visa Guide](/guides/pattaya-visa-guide/)
+
+## Car Rental in Pattaya
+
+There's no Sixt, Hertz, or Europcar in Pattaya. Car rental works differently here — it's mostly local operators and street-level rental shops.
+
+### Prices (Daily Rates)
+
+| Vehicle | Price/Day |
+|---|---|
+| Small car (Toyota Yaris, Honda City) | 1,000 THB |
+| Mid-size car (Toyota Corolla) | 1,200 THB |
+| SUV / Pickup | 1,500 THB |
+| Minivan | 1,500 THB |
+
+Weekly and monthly rates are significantly cheaper — expect 30-40% discount for weekly rental.
+
+### Scooter/Motorbike Rental Prices
+
+| Vehicle | Price/Day |
+|---|---|
+| Honda Click 125 (automatic) | 400 THB |
+| Honda PCX 150 (automatic) | 500 THB |
+| Honda Forza 350 | 600 THB |
+
+### Where to Rent
+
+Local rental shops are everywhere along Second Road and Beach Road. You'll see signs like the ones pictured above. For cars, several larger operators are on Second Road near Central Festival.
+
+### What You Need
+
+- **Passport** (some shops take a copy, others want the original — avoid leaving your passport)
+- **International Driving Permit (IDP)** — technically required, rarely checked for scooters but essential for cars
+- **Deposit:** 2,000-5,000 THB cash or a passport (try to avoid leaving your passport)
+- **Thai driving license** is not required for tourists with an IDP
+
+### Insurance
+
+Most local car rentals include basic insurance, but the excess can be high (30,000-50,000 THB). Ask specifically about:
+- CDW (Collision Damage Waiver)
+- Third-party liability
+- What happens in case of an accident
+
+For scooters, insurance is almost never included. Your travel insurance may cover motorbike injuries — check before you ride.
+
+### Tips
+
+- **Photograph everything** before you drive off — scratches, dents, mileage
+- **Check brakes and lights** before accepting any vehicle
+- **Fuel:** Most scooters are returned full. Cars vary — ask
+- **Drive on the LEFT** in Thailand
+- **Helmet is mandatory** — 500 THB fine without one
+- **Avoid leaving your passport** as deposit. Offer cash or a photocopy instead
