@@ -22,9 +22,10 @@ import Icon from './Icon.astro';
 
 <nav id="main-nav" class:list={['fixed top-0 w-full z-50 transition-all duration-500', initialNavClass]} data-transparent={transparent ? 'true' : 'false'}>
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8 py-4">
-    <!-- Logo -->
+    <!-- Logo (dark + white variants, switched on scroll) -->
     <a href="/" class="block" id="nav-logo">
-      <img src="/images/brand/logo.svg" alt="pattaya.love" class="h-16 md:h-20 w-auto" loading="eager" />
+      <img id="logo-dark" src="/images/brand/logo.svg" alt="pattaya.love" class:list={['h-10 w-auto transition-opacity duration-300', transparent ? 'hidden' : '']} loading="eager" />
+      <img id="logo-white" src="/images/brand/logo-white.svg" alt="pattaya.love" class:list={['h-10 w-auto transition-opacity duration-300', transparent ? '' : 'hidden']} loading="eager" />
     </a>
 
     <!-- Desktop Nav -->
@@ -70,7 +71,8 @@ import Icon from './Icon.astro';
 
 <script>
   const nav = document.getElementById('main-nav')!;
-  const logo = document.getElementById('nav-logo')!;
+  const logoDark = document.getElementById('logo-dark')!;
+  const logoWhite = document.getElementById('logo-white')!;
   const navLinks = document.querySelectorAll('.nav-link');
   const toggle = document.getElementById('mobile-toggle')!;
   const bars = [document.getElementById('bar1')!, document.getElementById('bar2')!, document.getElementById('bar3')!];
@@ -82,6 +84,8 @@ import Icon from './Icon.astro';
   const applyScrolled = () => {
     nav.classList.add('bg-white/85', 'backdrop-blur-xl', 'shadow-sm');
     nav.classList.remove('bg-transparent');
+    logoDark.classList.remove('hidden');
+    logoWhite.classList.add('hidden');
     bars.forEach(b => { b.classList.remove('bg-white'); b.classList.add('bg-ink'); });
     navLinks.forEach(l => {
       l.classList.remove('text-white/80', 'hover:text-white', 'hover:bg-white/10');
@@ -91,6 +95,8 @@ import Icon from './Icon.astro';
   const applyTransparent = () => {
     nav.classList.remove('bg-white/85', 'backdrop-blur-xl', 'shadow-sm');
     nav.classList.add('bg-transparent');
+    logoDark.classList.add('hidden');
+    logoWhite.classList.remove('hidden');
     bars.forEach(b => { b.classList.add('bg-white'); b.classList.remove('bg-ink'); });
     navLinks.forEach(l => {
       l.classList.add('text-white/80', 'hover:text-white', 'hover:bg-white/10');
