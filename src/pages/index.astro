@@ -345,9 +345,9 @@ import Icon from '../components/Icon.astro';
           >
             <div class="aspect-square rounded-2xl overflow-hidden mb-3 shadow-[0_4px_15px_-3px_rgba(0,0,0,0.08)]">
               <img
-                src={item.image.replace('.webp', '-400w.webp')}
-                srcset={`${item.image.replace('.webp', '-400w.webp')} 400w, ${item.image} 800w`}
-                sizes="200px"
+                src={item.image.replace('.webp', '-200w.webp')}
+                srcset={`${item.image.replace('.webp', '-200w.webp')} 200w, ${item.image.replace('.webp', '-400w.webp')} 400w`}
+                sizes="160px"
                 alt={item.title}
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
