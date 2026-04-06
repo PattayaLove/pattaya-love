@@ -123,22 +123,6 @@ These unmarked Thai restaurants with metal trays of pre-made curries are everywh
 - **Quality:** Authentic home-style Thai cooking
 - **Hours:** Typically 07:00-14:00 (lunch) and 17:00-21:00 (dinner)
 
-## Massage — Because You'll Need One
-
-After walking around Pattaya all day eating street food, treat yourself to a massage. The prices are just as reasonable:
-
-| Massage Type | Price (1 hour) |
-|---|---|
-| Thai Massage | 200 THB |
-| Foot Massage | 200 THB |
-| Oil Massage | 300 THB |
-| Head & Shoulder | 300 THB |
-| Aroma Massage | 450 THB |
-
-These are standard prices at most local massage shops — avoid the tourist-trap shops on Beach Road that charge 400+ THB for a basic Thai massage. The side streets (Soi 6 area, Soi Buakhao) have the best value.
-
-**Tip:** A 50-100 THB tip is appreciated and customary for good service.
-
 ## Daily Budget: Eating Like a King for Cheap
 
 Here's a realistic daily food budget:
