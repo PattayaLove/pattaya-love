@@ -102,7 +102,13 @@ const websiteSchema = {
         const src = img.getAttribute('src');
         const base = src.replace('.webp', '');
         img.setAttribute('srcset', `${base}-400w.webp 400w, ${base}-800w.webp 800w, ${base}-1200w.webp 1200w, ${src} 1920w`);
-        img.setAttribute('sizes', '(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px');
+        // Use actual rendered width for sizes
+        const w = img.offsetWidth || img.clientWidth;
+        if (w && w < 500) {
+          img.setAttribute('sizes', w + 'px');
+        } else {
+          img.setAttribute('sizes', '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw');
+        }
       });
     </script>
   </body>
