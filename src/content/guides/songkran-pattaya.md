@@ -49,6 +49,10 @@ This is the big one. Wan Lai (วันไหล) literally means "flowing day,"
 
 The epicenter of Pattaya's Songkran. The stretch between Central Pattaya Beach and Soi 6 turns into a non-stop water fight. Pickup trucks, water cannons, music stages, street vendors — it is sensory overload in the best way. Expect massive crowds, especially on April 19.
 
+### Soi 6 & Soi 7 — Daytime Madness
+
+[Soi 6](/areas/soi-6/) and neighboring Soi 7 are ground zero for daytime Songkran. The bars on both sides of the street set up massive water stations and the action runs non-stop from midday until sunset. The narrow streets create an intense, inescapable crossfire — you will be drenched within seconds. If you want the most concentrated Songkran experience in the shortest walk, this is it.
+
 ### Soi Buakhao — The Local Favorite
 
 [Soi Buakhao](/areas/soi-buakhao/) is where the expat and local Thai crowd celebrates. The bars along the street set up water stations and sound systems. The vibe is more relaxed than Beach Road but still plenty intense. The Buakhao Market area becomes a popular gathering point.
@@ -83,7 +87,7 @@ Getting through Songkran in Pattaya requires some preparation. Here is your surv
 
 **Sunscreen** — You are outside all day in tropical sun. The water makes you forget how much UV you are absorbing. Reapply frequently.
 
-**A water gun** — If you want to fight back, pick up a water gun from any street vendor. Prices range from 100 to 500 THB depending on size. The bigger the gun, the more fun — and the bigger the target on your back.
+**A water gun** — Street vendors sell water guns everywhere during Songkran week, from small pistols (100 THB) to pump-action soakers (300 to 500 THB). If you have a few days before the festival starts, order one on Lazada — same guns for a fraction of the street price. Pro tip: most bars along Beach Road, Soi 6, and Soi Buakhao let you refill your gun for free as long as you buy a drink.
 
 ## What Not to Bring
 
@@ -104,6 +108,8 @@ Songkran is mostly good-natured fun, but a few things to keep in mind:
 **Ice water is cold.** Some people mix ice into their water barrels. Getting hit with ice water from behind is a shock. It is part of the experience, but be aware if you have any heart or health conditions.
 
 **Do not splash motorbike drivers.** This is both dangerous and considered bad etiquette. A face full of water at 40 km/h can cause serious accidents. Most experienced locals avoid targeting people on moving vehicles.
+
+**High-pressure water guns are banned.** The large pump-action water cannons (the ones that look like bazookas) are officially prohibited by police. The water pressure can injure eyes and skin. Police regularly confiscate them during Songkran — but vendors keep selling them anyway. Stick to regular water guns and you will be fine.
 
 **Respect monks and elders.** You will see monks walking through the streets during morning alms rounds. Do not splash them. Same goes for elderly people who clearly are not participating. Read the room.
 
