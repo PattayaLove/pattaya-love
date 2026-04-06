@@ -63,6 +63,11 @@ const imageMap: Record<string, () => Promise<{ default: ImageMetadata }>> = {
   '/images/venues/the-base-building.webp': () => import('../assets/images/venues/the-base-building.jpg'),
   '/images/areas/pattaya-city-sign.webp': () => import('../assets/images/areas/pattaya-city-sign.jpg'),
   '/images/guides/pattaya-night-bazaar.webp': () => import('../assets/images/guides/pattaya-night-bazaar.jpg'),
+  '/images/guides/food-court-central.webp': () => import('../assets/images/guides/food-court-central.jpg'),
+  '/images/guides/massage-prices.webp': () => import('../assets/images/guides/massage-prices.jpg'),
+  '/images/guides/rental-prices.webp': () => import('../assets/images/guides/rental-prices.jpg'),
+  '/images/guides/bachelor-party.webp': () => import('../assets/images/guides/bachelor-party.jpg'),
+  '/images/areas/wongamat-drone.webp': () => import('../assets/images/areas/wongamat-drone.jpg'),
 };
 
 const loader = imageMap[src];
