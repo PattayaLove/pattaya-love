@@ -102,7 +102,7 @@ Songthaews wait at Na Ban pier when ferries arrive. They run to all major beache
 
 If you do not want to ride a motorbike yourself, hiring a local golf cart driver is a great alternative. Your driver takes you to all the best beaches and viewpoints, waits while you swim, and brings you to the next spot when you are ready. It is essentially a private island tour at your own pace.
 
-A reliable English-speaking driver who lives on the island and knows every corner: **087-614-3335**. Call or text when you arrive at Na Ban pier. Prices are negotiable depending on duration, but expect around 500 to 800 THB for a half-day tour covering three to four beaches.
+A reliable English-speaking driver who lives on the island and knows every corner: **087-614-3335**. Call or text when you arrive at Na Ban pier. Prices are negotiable depending on how long you want to go — agree on a rate before you start.
 
 ### Walking
 
