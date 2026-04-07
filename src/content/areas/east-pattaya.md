@@ -2,6 +2,7 @@
 name: "East Pattaya (Dark Side)"
 slug: "east-pattaya"
 description: "The real Pattaya that tourists never see — affordable living, authentic Thai neighborhoods, and the expat community's best-kept secret known as 'The Dark Side'."
+image: "/images/areas/dark-side.jpeg"
 publishDate: 2026-04-04
 draft: false
 ---
