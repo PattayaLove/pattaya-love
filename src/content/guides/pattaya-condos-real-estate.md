@@ -36,7 +36,7 @@ Pattaya's geography stretches along approximately 15 kilometers of coastline, an
 
 [Wongamat](/areas/wongamat/) is widely considered the best beach area in Pattaya proper. The beach is cleaner and less crowded, and the neighborhood has a more upscale, residential feel. High-rise condominiums line the seafront with direct beach access and sea views. This area attracts buyers who prioritize quality of life over nightlife proximity.
 
-**Notable development:** Once Wongamat is a high-profile new project drawing significant attention in 2026, promising luxury finishes, resort-style facilities, and a prime beachfront location.
+**Notable developments:** Once Wongamat (56 floors, completion 2028) and The Riviera Palm Beach (47 floors, ultra-luxury beachfront, completion 2029) are the two flagship projects transforming the Wongamat skyline. See our full [new developments guide](/guides/pattaya-new-developments/) for details on every project under construction.
 
 ### Pratumnak Hill
 
@@ -112,6 +112,7 @@ The key is approaching it with clear expectations. Work with reputable professio
 
 ## Related Guides
 
+- [New Condo Developments 2026–2029](/guides/pattaya-new-developments/)
 - [Thailand Visa Guide for Pattaya](/guides/pattaya-visa-guide/)
 - [Thai Bank Account & QR Payments](/guides/thai-banking-qr-payments/)
 - [All Pattaya Areas](/areas/)
