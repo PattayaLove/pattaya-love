@@ -98,6 +98,12 @@ Available near Na Ban pier and at several spots around the island. Prices are 20
 
 Songthaews wait at Na Ban pier when ferries arrive. They run to all major beaches for 30 to 50 THB per person. You can also charter a songthaew for your group at 200 to 400 THB to be taken directly to your chosen beach.
 
+### Private Golf Cart Driver
+
+If you do not want to ride a motorbike yourself, hiring a local golf cart driver is a great alternative. Your driver takes you to all the best beaches and viewpoints, waits while you swim, and brings you to the next spot when you are ready. It is essentially a private island tour at your own pace.
+
+A reliable English-speaking driver who lives on the island and knows every corner: **087-614-3335**. Call or text when you arrive at Na Ban pier. Prices are negotiable depending on duration, but expect around 500 to 800 THB for a half-day tour covering three to four beaches.
+
 ### Walking
 
 The distances between beaches are manageable if you are fit, but the hills are steep and there is limited shade on the roads. Walking from Na Ban pier to Tawaen Beach takes about 20 minutes. Walking between beaches on opposite sides of the island is not recommended in the midday heat.
