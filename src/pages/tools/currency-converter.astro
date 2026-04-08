@@ -1,0 +1,316 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import Icon from '../../components/Icon.astro';
+---
+
+<BaseLayout
+  title="Thai Baht Currency Converter — Live Exchange Rates 2026"
+  description="Convert Thai Baht (THB) to EUR, USD, GBP and 30+ currencies with live exchange rates. Essential tool for your Pattaya trip — updated daily."
+>
+  <Navigation />
+
+  <main class="pt-32 pb-24 bg-surface-card">
+    <div class="max-w-3xl mx-auto px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-ink-muted mb-8">
+        <a href="/" class="hover:text-primary transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/lifestyle/" class="hover:text-primary transition-colors">Lifestyle</a>
+        <span class="mx-2">/</span>
+        <span class="text-ink">Currency Converter</span>
+      </nav>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-ink mb-4">
+        Thai Baht Converter
+      </h1>
+      <p class="text-ink-muted text-lg mb-12 max-w-2xl">
+        Live exchange rates for Thai Baht (THB). Convert any amount to and from the currencies most used by Pattaya visitors.
+      </p>
+
+      <!-- Converter Card -->
+      <div class="bg-white rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.08)] border border-surface-high/30 p-8 mb-12">
+
+        <!-- Amount Input -->
+        <div class="mb-6">
+          <label for="amount" class="block text-sm font-bold text-ink-secondary uppercase tracking-widest mb-2">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            value="1000"
+            min="0"
+            step="any"
+            class="w-full h-14 px-5 text-2xl font-bold text-ink bg-surface-card border border-surface-high/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
+          />
+        </div>
+
+        <!-- Currency Selectors -->
+        <div class="grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] gap-4 items-end mb-8">
+          <!-- From -->
+          <div>
+            <label for="from-currency" class="block text-sm font-bold text-ink-secondary uppercase tracking-widest mb-2">From</label>
+            <select id="from-currency" class="w-full h-14 px-4 text-lg font-medium text-ink bg-surface-card border border-surface-high/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all appearance-none cursor-pointer">
+            </select>
+          </div>
+
+          <!-- Swap Button -->
+          <button id="swap-btn" class="hidden sm:flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer" aria-label="Swap currencies">
+            <Icon name="arrow_right_alt" class="text-2xl rotate-0" />
+          </button>
+          <button id="swap-btn-mobile" class="sm:hidden flex h-12 w-full items-center justify-center rounded-xl bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer" aria-label="Swap currencies">
+            <Icon name="arrow_right_alt" class="text-2xl rotate-90" />
+            <span class="ml-2 text-sm font-bold">Swap</span>
+          </button>
+
+          <!-- To -->
+          <div>
+            <label for="to-currency" class="block text-sm font-bold text-ink-secondary uppercase tracking-widest mb-2">To</label>
+            <select id="to-currency" class="w-full h-14 px-4 text-lg font-medium text-ink bg-surface-card border border-surface-high/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all appearance-none cursor-pointer">
+            </select>
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div id="result-box" class="bg-gradient-to-br from-primary/5 to-coral/5 rounded-xl p-6 text-center">
+          <div id="result-loading" class="text-ink-muted">Loading exchange rates...</div>
+          <div id="result-display" class="hidden">
+            <div class="text-sm text-ink-muted mb-1" id="result-from-label"></div>
+            <div class="text-3xl md:text-4xl font-extrabold font-headline text-ink mb-2" id="result-value"></div>
+            <div class="text-sm text-ink-muted" id="result-rate-label"></div>
+          </div>
+          <div id="result-error" class="hidden text-red-600 font-medium">
+            Could not load exchange rates. Please try again later.
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular Rates Table -->
+      <div class="bg-white rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.08)] border border-surface-high/30 p-8 mb-12">
+        <h2 class="text-2xl font-extrabold font-headline text-ink mb-2">Popular Exchange Rates</h2>
+        <p class="text-ink-muted text-sm mb-6" id="rates-updated">Loading...</p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left" id="rates-table">
+            <thead>
+              <tr class="border-b border-surface-high/50">
+                <th class="py-3 pr-4 text-xs font-bold uppercase tracking-widest text-ink-secondary">Currency</th>
+                <th class="py-3 px-4 text-xs font-bold uppercase tracking-widest text-ink-secondary text-right">1 THB =</th>
+                <th class="py-3 pl-4 text-xs font-bold uppercase tracking-widest text-ink-secondary text-right">1,000 THB =</th>
+              </tr>
+            </thead>
+            <tbody id="rates-tbody">
+              <tr><td colspan="3" class="py-6 text-center text-ink-muted">Loading rates...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Info Section -->
+      <div class="editorial-content">
+        <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">About Thai Baht</h2>
+        <p>The Thai Baht (THB) is the official currency of Thailand. In Pattaya, you will use Baht for everything — from street food and baht bus rides to hotel bills and shopping at Terminal 21. Most ATMs dispense 1,000 THB notes, and smaller vendors prefer cash in 20, 50, and 100 THB bills.</p>
+
+        <h3 class="text-xl font-bold font-headline text-ink mt-8 mb-3">Where to Exchange Money in Pattaya</h3>
+        <p><strong>SuperRich and Vasu Exchange</strong> offer the best rates in Pattaya. You will find exchange booths along Beach Road, Second Road, and inside shopping malls like Terminal 21 and Central Festival. Avoid exchanging at the airport — rates are significantly worse.</p>
+        <p><strong>ATMs</strong> are everywhere but charge a flat 220 THB fee per withdrawal on top of your bank's fees. Withdraw the maximum amount (usually 20,000 or 30,000 THB) to minimize the per-transaction cost.</p>
+        <p><strong>Wise or Revolut cards</strong> offer near-interbank exchange rates with low fees and are increasingly popular among expats and frequent visitors. Many Pattaya restaurants and shops accept card payments, though smaller vendors and street food stalls remain cash-only.</p>
+
+        <h3 class="text-xl font-bold font-headline text-ink mt-8 mb-3">Quick Reference</h3>
+        <ul>
+          <li>Street food meal: 40–80 THB</li>
+          <li>Baht bus ride: 10 THB</li>
+          <li>Beer in a bar: 80–150 THB</li>
+          <li>Grab across town: 60–150 THB</li>
+          <li>Mid-range hotel: 1,000–3,000 THB/night</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">Related Guides</h2>
+        <ul>
+          <li><a href="/guides/first-time-pattaya/">First Time in Pattaya</a></li>
+          <li><a href="/guides/pattaya-nightlife-prices/">Nightlife Prices 2026</a></li>
+          <li><a href="/guides/cheap-eats-pattaya/">Cheap Eats Guide</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  const currencies: Record<string, { name: string; flag: string; popular: boolean }> = {
+    THB: { name: 'Thai Baht', flag: '🇹🇭', popular: true },
+    EUR: { name: 'Euro', flag: '🇪🇺', popular: true },
+    USD: { name: 'US Dollar', flag: '🇺🇸', popular: true },
+    GBP: { name: 'British Pound', flag: '🇬🇧', popular: true },
+    AUD: { name: 'Australian Dollar', flag: '🇦🇺', popular: true },
+    CHF: { name: 'Swiss Franc', flag: '🇨🇭', popular: true },
+    SEK: { name: 'Swedish Krona', flag: '🇸🇪', popular: true },
+    NOK: { name: 'Norwegian Krone', flag: '🇳🇴', popular: true },
+    DKK: { name: 'Danish Krone', flag: '🇩🇰', popular: true },
+    RUB: { name: 'Russian Ruble', flag: '🇷🇺', popular: true },
+    CNY: { name: 'Chinese Yuan', flag: '🇨🇳', popular: true },
+    JPY: { name: 'Japanese Yen', flag: '🇯🇵', popular: true },
+    KRW: { name: 'South Korean Won', flag: '🇰🇷', popular: true },
+    INR: { name: 'Indian Rupee', flag: '🇮🇳', popular: true },
+    SGD: { name: 'Singapore Dollar', flag: '🇸🇬', popular: false },
+    MYR: { name: 'Malaysian Ringgit', flag: '🇲🇾', popular: false },
+    HKD: { name: 'Hong Kong Dollar', flag: '🇭🇰', popular: false },
+    NZD: { name: 'New Zealand Dollar', flag: '🇳🇿', popular: false },
+    CAD: { name: 'Canadian Dollar', flag: '🇨🇦', popular: false },
+    ZAR: { name: 'South African Rand', flag: '🇿🇦', popular: false },
+    AED: { name: 'UAE Dirham', flag: '🇦🇪', popular: false },
+    SAR: { name: 'Saudi Riyal', flag: '🇸🇦', popular: false },
+    ILS: { name: 'Israeli Shekel', flag: '🇮🇱', popular: false },
+    PLN: { name: 'Polish Zloty', flag: '🇵🇱', popular: false },
+    CZK: { name: 'Czech Koruna', flag: '🇨🇿', popular: false },
+    HUF: { name: 'Hungarian Forint', flag: '🇭🇺', popular: false },
+    TRY: { name: 'Turkish Lira', flag: '🇹🇷', popular: false },
+    BRL: { name: 'Brazilian Real', flag: '🇧🇷', popular: false },
+    PHP: { name: 'Philippine Peso', flag: '🇵🇭', popular: false },
+    IDR: { name: 'Indonesian Rupiah', flag: '🇮🇩', popular: false },
+    TWD: { name: 'Taiwan Dollar', flag: '🇹🇼', popular: false },
+    VND: { name: 'Vietnamese Dong', flag: '🇻🇳', popular: false },
+  };
+
+  const popularCodes = Object.entries(currencies).filter(([_, c]) => c.popular).map(([code]) => code);
+
+  let rates: Record<string, number> = {};
+  let lastUpdate = '';
+
+  const amountInput = document.getElementById('amount') as HTMLInputElement;
+  const fromSelect = document.getElementById('from-currency') as HTMLSelectElement;
+  const toSelect = document.getElementById('to-currency') as HTMLSelectElement;
+  const swapBtn = document.getElementById('swap-btn')!;
+  const swapBtnMobile = document.getElementById('swap-btn-mobile')!;
+  const resultLoading = document.getElementById('result-loading')!;
+  const resultDisplay = document.getElementById('result-display')!;
+  const resultError = document.getElementById('result-error')!;
+  const resultFromLabel = document.getElementById('result-from-label')!;
+  const resultValue = document.getElementById('result-value')!;
+  const resultRateLabel = document.getElementById('result-rate-label')!;
+  const ratesUpdated = document.getElementById('rates-updated')!;
+  const ratesTbody = document.getElementById('rates-tbody')!;
+
+  function populateSelects() {
+    const popularGroup = document.createElement('optgroup');
+    popularGroup.label = 'Popular';
+    const otherGroup = document.createElement('optgroup');
+    otherGroup.label = 'All Currencies';
+
+    for (const [code, info] of Object.entries(currencies)) {
+      const opt = document.createElement('option');
+      opt.value = code;
+      opt.textContent = `${info.flag} ${code} — ${info.name}`;
+      if (info.popular) {
+        popularGroup.appendChild(opt.cloneNode(true));
+      } else {
+        otherGroup.appendChild(opt.cloneNode(true));
+      }
+    }
+
+    for (const select of [fromSelect, toSelect]) {
+      select.innerHTML = '';
+      select.appendChild(popularGroup.cloneNode(true));
+      select.appendChild(otherGroup.cloneNode(true));
+    }
+
+    fromSelect.value = 'THB';
+    toSelect.value = 'EUR';
+  }
+
+  function formatNumber(n: number, decimals: number): string {
+    return n.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+  }
+
+  function convert() {
+    if (!rates || Object.keys(rates).length === 0) return;
+
+    const amount = parseFloat(amountInput.value) || 0;
+    const from = fromSelect.value;
+    const to = toSelect.value;
+
+    // rates are based on THB=1
+    const fromRate = from === 'THB' ? 1 : rates[from];
+    const toRate = to === 'THB' ? 1 : rates[to];
+
+    if (!fromRate || !toRate) return;
+
+    const result = amount * (toRate / fromRate);
+    const singleRate = toRate / fromRate;
+
+    const decimals = result > 100 ? 2 : result > 1 ? 4 : 6;
+    const rateDecimals = singleRate > 1 ? 4 : 6;
+
+    resultFromLabel.textContent = `${formatNumber(amount, 2)} ${currencies[from]?.flag || ''} ${from}`;
+    resultValue.textContent = `${formatNumber(result, decimals)} ${to}`;
+    resultRateLabel.textContent = `1 ${from} = ${formatNumber(singleRate, rateDecimals)} ${to}`;
+
+    resultLoading.classList.add('hidden');
+    resultError.classList.add('hidden');
+    resultDisplay.classList.remove('hidden');
+  }
+
+  function renderTable() {
+    if (!rates || Object.keys(rates).length === 0) return;
+
+    const rows = popularCodes
+      .filter(code => code !== 'THB')
+      .map(code => {
+        const rate = rates[code];
+        if (!rate) return '';
+        const decimals = rate > 1 ? 4 : 6;
+        return `<tr class="border-b border-surface-high/30 hover:bg-surface-card/50 transition-colors">
+          <td class="py-3 pr-4">
+            <span class="font-medium text-ink">${currencies[code].flag} ${code}</span>
+            <span class="text-ink-muted text-sm ml-2 hidden sm:inline">${currencies[code].name}</span>
+          </td>
+          <td class="py-3 px-4 text-right font-mono text-ink tabular-nums">${formatNumber(rate, decimals)}</td>
+          <td class="py-3 pl-4 text-right font-mono font-bold text-ink tabular-nums">${formatNumber(rate * 1000, 2)}</td>
+        </tr>`;
+      })
+      .join('');
+
+    ratesTbody.innerHTML = rows;
+  }
+
+  async function fetchRates() {
+    try {
+      const res = await fetch('https://open.er-api.com/v6/latest/THB');
+      const data = await res.json();
+
+      if (data.result !== 'success') throw new Error('API error');
+
+      rates = data.rates;
+      lastUpdate = data.time_last_update_utc;
+
+      const date = new Date(lastUpdate);
+      ratesUpdated.textContent = `Rates updated: ${date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} — Source: Open Exchange Rates`;
+
+      convert();
+      renderTable();
+    } catch {
+      resultLoading.classList.add('hidden');
+      resultDisplay.classList.add('hidden');
+      resultError.classList.remove('hidden');
+      ratesTbody.innerHTML = '<tr><td colspan="3" class="py-6 text-center text-red-600">Could not load rates.</td></tr>';
+    }
+  }
+
+  function swap() {
+    const temp = fromSelect.value;
+    fromSelect.value = toSelect.value;
+    toSelect.value = temp;
+    convert();
+  }
+
+  populateSelects();
+  fetchRates();
+
+  amountInput.addEventListener('input', convert);
+  fromSelect.addEventListener('change', convert);
+  toSelect.addEventListener('change', convert);
+  swapBtn.addEventListener('click', swap);
+  swapBtnMobile.addEventListener('click', swap);
+</script>
