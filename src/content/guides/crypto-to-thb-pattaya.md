@@ -3,6 +3,7 @@ title: "Crypto to Thai Baht in Pattaya — Bitcoin & USDT Cash Guide 2026"
 slug: "crypto-to-thb-pattaya"
 description: "How to convert Bitcoin, USDT, and Ethereum to Thai Baht cash in Pattaya. OTC exchanges, Telegram process, fees, and step-by-step walkthrough."
 category: "tips"
+image: "/images/guides/senate-exchange.JPG"
 publishDate: 2026-04-08
 draft: false
 ---
@@ -38,8 +39,11 @@ One of the established crypto-to-cash services operating in Pattaya since 2016, 
 - **Phone / WhatsApp:** +66 63 550 3442
 - **Crypto accepted:** USDT, Bitcoin (BTC), Ethereum (ETH)
 - **Payout:** Cash (THB, USD, EUR), bank transfer, or courier delivery
+- **Opening hours:** 9:00 to 22:00 daily
 - **Requirements:** Passport or driver's license
 - **License:** Bank of Thailand MC125660019
+
+We have used Senate Exchange multiple times and the process is smooth. Everything is arranged via Telegram beforehand — you agree on the rate, send your crypto, and then walk into the store with your passport. The entire pickup takes just a few minutes once your transfer is confirmed.
 
 Senate Exchange also has offices in Bangkok, Phuket, and Patong. In addition to crypto, they handle traditional currency exchange (USD, EUR, RUB, and more) and accept card payments via Visa, Mastercard, and UnionPay.
 
