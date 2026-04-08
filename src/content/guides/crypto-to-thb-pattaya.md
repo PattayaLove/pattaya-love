@@ -33,15 +33,15 @@ One of the established crypto-to-cash services operating in Pattaya since 2016, 
 
 **Details:**
 
-- **Location:** 162, 157 Thappraya Road, Pattaya
+- **Locations in Pattaya:** Multiple branches — main office on Thappraya Road (162, 157 Thappraya Rd), plus exchange points in Pratumnak and near the Ambassador area. Contact them via Telegram for the nearest location.
 - **Telegram:** @SenateExchange_bot
-- **Phone:** +66 63 550 3442
+- **Phone / WhatsApp:** +66 63 550 3442
 - **Crypto accepted:** USDT, Bitcoin (BTC), Ethereum (ETH)
 - **Payout:** Cash (THB, USD, EUR), bank transfer, or courier delivery
 - **Requirements:** Passport or driver's license
 - **License:** Bank of Thailand MC125660019
 
-Senate Exchange also operates offices in Bangkok, Phuket, and Patong. In addition to crypto, they handle traditional currency exchange (USD, EUR, RUB, and more) and accept card payments via Visa, Mastercard, and UnionPay.
+Senate Exchange also has offices in Bangkok, Phuket, and Patong. In addition to crypto, they handle traditional currency exchange (USD, EUR, RUB, and more) and accept card payments via Visa, Mastercard, and UnionPay.
 
 Their additional service options include cash delivery to your hotel or condo (courier brings the Baht to you) and direct bank transfers to Thai bank accounts.
 
