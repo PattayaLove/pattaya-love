@@ -109,6 +109,8 @@ The Thai Baht (THB) is the local currency. ATMs are on every corner, but they ch
 
 **Tip:** Many visitors now use Wise (formerly TransferWise) debit cards for the best exchange rates and zero ATM markup. See our [Thai banking & QR payments guide](/guides/thai-banking-qr-payments/) for more options.
 
+**Crypto holders:** If you hold Bitcoin, USDT, or Ethereum, you can convert directly to Thai Baht cash at OTC exchange offices in Pattaya. The process takes minutes. See our [Crypto to Thai Baht guide](/guides/crypto-to-thb-pattaya/) for details.
+
 ## SIM Cards and Internet
 
 Pick up a Thai SIM card at the airport or any 7-Eleven. **AIS**, **TrueMove**, and **DTAC** all offer tourist SIM packages starting at around 300 THB for 15 days of unlimited data at decent speed.
