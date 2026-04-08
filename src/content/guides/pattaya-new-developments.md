@@ -51,15 +51,18 @@ The tallest tower in North Pattaya at 56 floors, Once Wongamat has been generati
 
 **Project details:**
 
-- **Developer:** Once
+- **Developer:** Honour Thailand
 - **Location:** Na Kluea, Wongamat
 - **Storeys:** 56
 - **Total units:** 548
-- **Ownership:** Freehold
+- **Ownership:** Freehold (foreign quota available)
+- **Status:** Construction started
 - **Expected completion:** January 2028
-- **Price range:** From 8.14 million THB
+- **Price range:** 7.77 to 59.90 million THB
 
-Units range from one-bedroom to three-bedroom configurations. Facilities include an infinity pool with ocean views, sky lounge, fitness center, spa and sauna, onsen baths, a mini theater, indoor kids zone, and 24-hour concierge service. The panoramic views from the upper floors — looking out over the Gulf of Thailand, Koh Larn, and the Pattaya skyline — will be among the best in the city.
+Every unit comes with 100% sea views — a bold promise that the building's design and Wongamat's coastal orientation make possible. Units range from one-bedroom to three-bedroom configurations. Facilities include an infinity pool with ocean views, sky lounge, fitness center, spa and sauna, onsen baths, a mini theater, indoor kids zone, and 24-hour concierge service. The panoramic views from the upper floors — looking out over the Gulf of Thailand, Koh Larn, and the Pattaya skyline — will be among the best in the city.
+
+The sales gallery is open on-site next to the construction site on Pattaya-Na Kluea Road. The project also promotes eligibility for the Thailand Privilege Visa program (20+ year long-term visa), which is increasingly used by foreign property buyers to secure long-term residency.
 
 ## Central Pattaya
 
@@ -207,7 +210,7 @@ The current wave of construction is the largest Pattaya has seen in years. A few
 | Arom Jomtien | Jomtien | 45 | 74 | 2026 | 5.86M |
 | Embassy Pattaya | Jomtien | — | 474 | 2027 | — |
 | Aquarous Jomtien | Jomtien | — | — | 2027 | — |
-| Once Wongamat | Wongamat | 56 | 548 | Jan 2028 | 8.14M |
+| Once Wongamat | Wongamat | 56 | 548 | Jan 2028 | 7.77M |
 | Copacabana Coral Reef | Jomtien | 56 | — | 2028 | 3.43M |
 | Riviera Santa Monica | Jomtien | 34 | — | 2028 | — |
 | Grand Solaire Noble | Pratumnak | 50 | 106 | Dec 2028 | — |
