@@ -19,7 +19,7 @@ OTC (over-the-counter) exchange offices are the most popular method for converti
 
 1. **Contact the exchange via Telegram or WhatsApp.** Tell them how much you want to exchange and in which cryptocurrency (USDT, BTC, or ETH). They respond within a few minutes with the current rate.
 
-2. **Agree on the rate.** Rates are quoted live and locked in for a short window. The spread (their fee) is typically 2 to 3 percent compared to the market rate. Larger amounts often get better rates — ask.
+2. **Agree on the rate.** Rates are quoted live and locked in for a short window. The spread (their fee) is typically 3 to 4 percent compared to the market rate. Larger amounts often get better rates — ask.
 
 3. **Send your crypto.** The exchange provides a wallet address in the chat. Send your USDT, Bitcoin, or Ethereum to that address. Wait for confirmation.
 
@@ -81,8 +81,8 @@ Use a Bitcoin ATM only as a last resort for small, urgent conversions.
 
 | Method | Typical Fee | Speed | Minimum |
 |---|---|---|---|
-| OTC Exchange (in person) | 2–3% | 10–20 min | None |
-| OTC with delivery | 2–3% + delivery fee | 1–3 hours | Varies |
+| OTC Exchange (in person) | 3–4% | 10–20 min | None |
+| OTC with delivery | 3–4% + delivery fee | 1–3 hours | Varies |
 | Bitkub / Coins.co.th | ~0.25% trading + withdrawal | Hours | KYC required |
 | Bitcoin ATM | 5–10% | Instant | Low limits |
 
@@ -94,7 +94,7 @@ The online exchanges look cheaper on paper, but they require a Thai bank account
 
 **Start small.** If you are using an OTC service for the first time, exchange a smaller amount first to verify the process before sending larger sums. A test transaction of 10,000 to 20,000 THB equivalent lets you verify the service without significant risk.
 
-**Check the rate before you go.** Compare the quoted rate to the live market rate on CoinGecko or CoinMarketCap. A 2 to 3 percent spread is normal and fair for an OTC cash service. Anything above 5 percent means you should look elsewhere.
+**Check the rate before you go.** Compare the quoted rate to the live market rate on CoinGecko or CoinMarketCap. A 3 to 4 percent spread is normal and fair for an OTC cash service. Anything above 5 percent means you should look elsewhere.
 
 **Network fees matter.** When sending crypto, choose the cheapest network. For USDT, TRC-20 (Tron) is usually the cheapest at under 1 USD per transaction. ERC-20 (Ethereum) can cost 5 to 20 USD depending on network congestion. Confirm which networks the exchange accepts before sending.
 
