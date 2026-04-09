@@ -115,7 +115,7 @@ The Thai Baht (THB) is the local currency. ATMs are on every corner, but they ch
 
 Pick up a Thai SIM card at the airport or any 7-Eleven. **AIS**, **TrueMove**, and **DTAC** all offer tourist SIM packages starting at around 300 THB for 15 days of unlimited data at decent speed.
 
-Most hotels, restaurants, and cafes offer free Wi-Fi, but having mobile data is essential for Grab, Google Maps, and staying connected.
+Most hotels, restaurants, and cafes offer free Wi-Fi, but having mobile data is essential for Grab, Google Maps, and staying connected. If your phone supports eSIM, you can activate a Thai data plan before you even board your flight. See our full [SIM card & eSIM guide](/guides/thailand-sim-esim/) for provider comparisons, prices, and how to keep your Thai number between trips.
 
 ## Safety Tips
 
