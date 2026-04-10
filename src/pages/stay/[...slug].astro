@@ -20,7 +20,7 @@ const { data } = hotel;
 const { Content } = await render(hotel);
 
 /* ─── Related Hotels (same area, excluding current) ─── */
-const allHotels = await getCollection('hotels', ({ data: d }) => !d.draft);
+const allHotels = await getCollection('hotels', ({ data: d }) => !d.draft && d.featured);
 const relatedHotels = allHotels
   .filter((h) => h.data.area === data.area && h.data.slug !== data.slug)
   .slice(0, 3);
