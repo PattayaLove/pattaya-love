@@ -13,6 +13,7 @@ website: "http://www.sunbeamhotel.net/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sunbeam%20Hotel%20Pattaya&query_place_id=ChIJtQvbcwaWAjERsiLgyVYvH_Y"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

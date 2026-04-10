@@ -13,6 +13,7 @@ website: "http://www.atmindgroup.com/alterahotelandresidence"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Altera%20Hotel%20and%20Residence&query_place_id=ChIJ0ZBzXf69AjERuWMwgW9v31E"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

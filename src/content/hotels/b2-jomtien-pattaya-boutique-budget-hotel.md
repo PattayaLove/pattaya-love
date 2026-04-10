@@ -13,6 +13,7 @@ website: "https://www.b2hotel.com/pattaya/b2-jomtien-pattaya-boutique-budget-hot
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=B2%20Jomtien%20Pattaya%20Boutique%20%26%20Budget%20Hotel&query_place_id=ChIJszApUQWUAjERt1RdQ-Q8k34"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

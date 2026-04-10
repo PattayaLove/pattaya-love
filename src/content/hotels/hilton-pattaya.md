@@ -8,6 +8,7 @@ area: "Central Pattaya"
 amenities: ["Pool", "Spa", "Fitness", "Restaurant", "Bar", "Beach Access"]
 publishDate: 2026-04-04
 image: "/images/venues/hilton-drone.webp"
+featured: true
 draft: false
 ---
 

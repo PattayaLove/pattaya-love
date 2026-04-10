@@ -13,6 +13,7 @@ website: "https://novaplatinum.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Nova%20Platinum%20Hotel&query_place_id=ChIJ7WxcMWuWAjERzFIAhuu7y5g"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

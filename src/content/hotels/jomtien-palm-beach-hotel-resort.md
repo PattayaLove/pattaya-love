@@ -13,6 +13,7 @@ website: "http://www.jomtien-palmbeach.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Jomtien%20Palm%20Beach%20Hotel%20%26%20Resort&query_place_id=ChIJURCxyYqWAjERY_MEn_2FKaw"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

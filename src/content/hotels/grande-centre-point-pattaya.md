@@ -13,6 +13,7 @@ website: "http://www.grandecentrepointpattaya.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Grande%20Centre%20Point%20Pattaya&query_place_id=ChIJJdjrvIq9AjERwUYbGvGnua4"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

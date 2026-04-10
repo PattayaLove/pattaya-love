@@ -13,6 +13,7 @@ website: "http://www.pattayamodus.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Pattaya%20Modus%20Beachfront%20Resort&query_place_id=ChIJR2sy_969AjERSmywfT-YcW0"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

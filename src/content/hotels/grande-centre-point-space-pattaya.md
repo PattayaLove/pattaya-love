@@ -14,6 +14,7 @@ website: "https://spacepattaya.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Grande%20Centre%20Point%20Space%20Pattaya&query_place_id=ChIJO9zHOxK9AjERou5YTnjfJQo"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

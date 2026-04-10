@@ -13,6 +13,7 @@ website: "https://mgallery.accor.com/hotels/A0E9?merchantid=seo-maps-TH-A0E9&sou
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Veranda%20Resort%20Pattaya%20-%20MGallery%20Collection&query_place_id=ChIJbUDBqQCWAjERjiQbj1OKaaE"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

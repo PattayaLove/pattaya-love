@@ -13,6 +13,7 @@ website: "https://www.royalcliff.com/royal-cliff-beach-hotel/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Royal%20Cliff%20Beach%20Hotel%20Pattaya&query_place_id=ChIJPZMorleXAjERBGOIRM9QAgg"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

@@ -13,6 +13,7 @@ website: "http://www.pattayadiscoverybeach.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Pattaya%20Discovery%20Beach%20Hotel&query_place_id=ChIJjdauhBqXAjER1xMc6jyR2A4"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

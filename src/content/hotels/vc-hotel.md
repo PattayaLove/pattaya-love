@@ -13,6 +13,7 @@ website: "http://bit.ly/vc_hotel"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=VC.%20Hotel&query_place_id=ChIJeT-gYBOWAjERiBrAbibeFnM"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

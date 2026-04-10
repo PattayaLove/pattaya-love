@@ -13,6 +13,7 @@ website: "https://walkingstreetguesthouse.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Walking%20Street%20Guest%20House&query_place_id=ChIJBXOkexSWAjERZqitEAppBuw"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

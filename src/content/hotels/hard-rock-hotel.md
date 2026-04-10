@@ -8,6 +8,7 @@ area: "Beach Road"
 image: "/images/venues/hard-rock-hotel-pattaya.webp"
 amenities: ["Pool", "Fitness", "Restaurant", "Bar", "Beach Access", "Live Music"]
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

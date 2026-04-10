@@ -9,6 +9,7 @@ category: "Serviced Apartment"
 area: "Central Pattaya"
 amenities: ["Pool", "Fitness", "Beach Access", "WiFi", "Restaurant", "Parking"]
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

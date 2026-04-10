@@ -13,6 +13,7 @@ website: "http://www.atmindgroup.com/hotelamberpattaya"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hotel%20Amber%20Pattaya&query_place_id=ChIJrVCPSwiWAjERMRVvsxELiyw"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

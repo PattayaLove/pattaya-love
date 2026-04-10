@@ -7,24 +7,9 @@ import OptImage from '../../components/OptImage.astro';
 
 /* ─── Data ─── */
 const allHotels = await getCollection('hotels', ({ data }) => !data.draft);
-const hotels = allHotels.sort((a, b) => b.data.rating - a.data.rating);
-
-/* ─── Featured Hotels (Top 10, shown first) ─── */
-const featuredSlugs = [
-  'hilton-pattaya',
-  'avani-pattaya-resort',
-  'hard-rock-hotel',
-  'centara-grand-mirage-beach-resort-pattaya',
-  'siam-at-siam',
-  'intercontinental-pattaya-resort-by-ihg',
-  'pattaya-marriott-resort-and-spa',
-  'royal-cliff-grand-hotel-pattaya',
-  'cape-dara-resort-pattaya',
-  'mytt-hotel-pattaya',
-];
-const featured = featuredSlugs
-  .map(slug => allHotels.find(h => h.data.slug === slug))
-  .filter(Boolean);
+const featuredHotels = allHotels.filter(h => h.data.featured).sort((a, b) => b.data.rating - a.data.rating);
+const directoryHotels = allHotels.filter(h => !h.data.featured).sort((a, b) => b.data.reviewsCount - a.data.reviewsCount);
+const hotels = featuredHotels;
 
 /* ─── Unique areas for filter ─── */
 const uniqueAreas = [...new Set(hotels.map(h => h.data.area))].sort();
@@ -160,11 +145,11 @@ import Icon from '../../components/Icon.astro';
       <div class="flex items-end justify-between mb-8">
         <div>
           <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-2 block">Editor's Pick</span>
-          <h2 class="text-2xl md:text-3xl font-extrabold font-headline tracking-tight text-ink">Top 10 Hotels in Pattaya</h2>
+          <h2 class="text-2xl md:text-3xl font-extrabold font-headline tracking-tight text-ink">Top Hotels in Pattaya</h2>
         </div>
       </div>
       <div class="flex gap-5 overflow-x-auto pb-4 -mx-6 px-6 snap-x snap-mandatory scrollbar-hide" style="scrollbar-width: none; -ms-overflow-style: none;">
-        {featured.map((hotel) => {
+        {featuredHotels.slice(0, 12).map((hotel) => {
           const d = hotel!.data;
           const heroImg = d.image || getFallback(d.priceRange);
           return (
@@ -432,7 +417,92 @@ import Icon from '../../components/Icon.astro';
   </section>
 
   <!-- ═══════════════════════════════════════════════ -->
-  <!-- 3. TRUST / EEAT SECTION                         -->
+  <!-- 3b. DIRECTORY — Compact list of all other hotels -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-16 md:py-24 bg-surface-card border-t border-surface-high/50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="mb-10">
+        <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-2 block">Full Directory</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink mb-2">All {directoryHotels.length}+ Hotels in Pattaya</h2>
+        <p class="text-ink-muted text-base">Complete listing of accommodations in the Pattaya area, sorted by number of reviews.</p>
+      </div>
+
+      <div class="overflow-x-auto rounded-2xl border border-surface-high/50 bg-white">
+        <table class="w-full text-left" id="directory-table">
+          <thead class="bg-surface-low">
+            <tr>
+              <th class="py-3 px-4 text-xs font-bold uppercase tracking-widest text-ink-secondary">Hotel</th>
+              <th class="py-3 px-4 text-xs font-bold uppercase tracking-widest text-ink-secondary hidden sm:table-cell">Area</th>
+              <th class="py-3 px-4 text-xs font-bold uppercase tracking-widest text-ink-secondary text-center">Rating</th>
+              <th class="py-3 px-4 text-xs font-bold uppercase tracking-widest text-ink-secondary text-center hidden md:table-cell">Reviews</th>
+              <th class="py-3 px-4 text-xs font-bold uppercase tracking-widest text-ink-secondary text-center">Price</th>
+              <th class="py-3 px-4 text-xs font-bold uppercase tracking-widest text-ink-secondary text-right hidden sm:table-cell">Map</th>
+            </tr>
+          </thead>
+          <tbody>
+            {directoryHotels.map((hotel, i) => {
+              const d = hotel.data;
+              const priceColor = d.priceRange === 'luxury' ? 'text-primary' : d.priceRange === 'mid-range' ? 'text-amber' : 'text-emerald-600';
+              return (
+                <tr class:list={['border-b border-surface-high/30 hover:bg-surface-card/80 transition-colors', i >= 50 ? 'directory-row hidden' : 'directory-row']}>
+                  <td class="py-3 px-4">
+                    <span class="font-medium text-sm text-ink">{d.name}</span>
+                    <span class="sm:hidden block text-xs text-ink-muted mt-0.5">{d.area}</span>
+                  </td>
+                  <td class="py-3 px-4 text-sm text-ink-muted hidden sm:table-cell">{d.area}</td>
+                  <td class="py-3 px-4 text-center">
+                    <span class="inline-flex items-center gap-1 text-sm font-bold text-ink">
+                      <Icon name="star" class="text-amber text-xs" />
+                      {d.rating.toFixed(1)}
+                    </span>
+                  </td>
+                  <td class="py-3 px-4 text-center text-sm text-ink-muted hidden md:table-cell tabular-nums">{d.reviewsCount.toLocaleString()}</td>
+                  <td class:list={['py-3 px-4 text-center text-xs font-bold uppercase tracking-wider', priceColor]}>
+                    {priceLabels[d.priceRange]}
+                  </td>
+                  <td class="py-3 px-4 text-right hidden sm:table-cell">
+                    {d.googleMapsUrl ? (
+                      <a href={d.googleMapsUrl} target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary/70 transition-colors text-sm font-medium">
+                        <Icon name="location_on" class="text-base" />
+                      </a>
+                    ) : (
+                      <span class="text-ink-muted/30">—</span>
+                    )}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      {directoryHotels.length > 50 && (
+        <div id="directory-load-more" class="mt-8 text-center">
+          <button
+            id="directory-load-more-btn"
+            type="button"
+            class="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300"
+          >
+            Show All {directoryHotels.length} Hotels
+            <Icon name="expand_more" class="text-lg" />
+          </button>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <script>
+    const dirBtn = document.getElementById('directory-load-more-btn');
+    if (dirBtn) {
+      dirBtn.addEventListener('click', () => {
+        document.querySelectorAll('.directory-row.hidden').forEach(r => r.classList.remove('hidden'));
+        dirBtn.parentElement!.classList.add('hidden');
+      });
+    }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 4. TRUST / EEAT SECTION                         -->
   <!-- ═══════════════════════════════════════════════ -->
   <section class="py-20 md:py-24">
     <div class="max-w-5xl mx-auto px-6 lg:px-8">

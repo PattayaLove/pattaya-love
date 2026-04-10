@@ -13,6 +13,7 @@ website: "https://www.djbpattaya.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=D%20Varee%20Jomtien%20Beach%20Pattaya%20Hotel&query_place_id=ChIJ0ZBzXf69AjERduNL4sn_dv0"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

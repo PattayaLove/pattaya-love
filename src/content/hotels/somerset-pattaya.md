@@ -14,6 +14,7 @@ website: "https://www.discoverasr.com/en/somerset-serviced-residence/thailand/so
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Somerset%20Pattaya&query_place_id=ChIJOUq6w1yXAjER8J3QKjjL5vM"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

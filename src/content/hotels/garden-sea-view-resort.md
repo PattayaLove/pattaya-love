@@ -13,6 +13,7 @@ website: "https://gardenseaviewresort.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Garden%20Sea%20View%20Resort&query_place_id=ChIJ0ZBzXf69AjER421dpyv4k2s"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

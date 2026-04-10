@@ -13,6 +13,7 @@ website: "http://grandjomtienpalace.co.th/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Grand%20Jomtien%20Palace%20Hotel&query_place_id=ChIJF7WZgXiXAjERwtFTXh2Uufc"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

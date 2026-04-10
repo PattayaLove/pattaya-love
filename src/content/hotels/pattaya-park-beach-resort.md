@@ -13,6 +13,7 @@ website: "http://www.pattayapark.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Pattaya%20Park%20Beach%20Resort&query_place_id=ChIJZ4w4MJeXAjERxcHTLd3ptFg"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

@@ -10,6 +10,7 @@ website: "https://www.pullmanpattayahotelg.com/"
 image: "/images/hotels/pullman-pattaya.jpeg"
 amenities: ["Pool", "Spa", "Fitness", "Restaurant", "Bar", "Beach Access", "Free WiFi"]
 publishDate: 2026-04-08
+featured: true
 draft: false
 ---
 

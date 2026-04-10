@@ -13,6 +13,7 @@ website: "http://www.pattayaresort.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Cholchan%20Pattaya%20Beach%20Resort&query_place_id=ChIJ0ZBzXf69AjERZb2wktukuiM"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

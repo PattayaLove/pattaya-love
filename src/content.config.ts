@@ -20,6 +20,7 @@ const hotels = defineCollection({
     agodaUrl: z.string().url().optional(),
     googleMapsUrl: z.string().optional(),
     amenities: z.array(z.string()).default([]),
+    featured: z.boolean().default(false),
     publishDate: z.coerce.date(),
     draft: z.boolean().default(false),
   }),

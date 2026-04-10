@@ -13,6 +13,7 @@ website: "https://hotel.hardrock.com/pattaya?utm_campaign=shrss_hotel_hard-rock-
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hard%20Rock%20Hotel%20Pattaya&query_place_id=ChIJM9ybqwaWAjERoCUiQtBxBx0"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

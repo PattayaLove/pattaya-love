@@ -9,6 +9,7 @@ category: "Condo"
 area: "Wongamat Beach"
 amenities: ["Pool", "Fitness", "Beach Access", "Parking", "Security"]
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

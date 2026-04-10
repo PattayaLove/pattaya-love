@@ -9,6 +9,7 @@ category: "Condo"
 area: "South Pattaya"
 amenities: ["Pool", "Fitness", "WiFi", "Parking"]
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

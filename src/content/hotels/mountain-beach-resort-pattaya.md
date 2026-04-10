@@ -13,6 +13,7 @@ website: "https://mountainbeachpattaya.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Mountain%20Beach%20Resort%20Pattaya&query_place_id=ChIJ40jtgROWAjEROthcSctJEww"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

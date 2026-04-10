@@ -9,6 +9,7 @@ category: "Pool Villa"
 area: "Pratumnak Hill"
 amenities: ["Pool", "WiFi", "Parking", "AC", "Kitchen"]
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

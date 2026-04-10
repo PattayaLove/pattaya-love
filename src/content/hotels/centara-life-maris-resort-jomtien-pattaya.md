@@ -13,6 +13,7 @@ website: "https://www.centarahotelsresorts.com/centra/cmj/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Centara%20Life%20Maris%20Resort%20Jomtien%20Pattaya&query_place_id=ChIJWfrzLhuUAjERHtEUrrQhC2I"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

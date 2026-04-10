@@ -13,6 +13,7 @@ website: "https://www.a-onehotel.com/aonepattayabeachresort/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=A-ONE%20Pattaya%20Beach%20Resort&query_place_id=ChIJmRY5uwaWAjERlNJJ-UY0MZ8"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

@@ -13,6 +13,7 @@ website: "http://www.centarahotelsresorts.com/centara/cpy/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Centara%20Pattaya%20Hotel&query_place_id=ChIJXXqUfQGWAjER2nCUzFINqBo"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

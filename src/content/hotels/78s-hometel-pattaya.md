@@ -13,6 +13,7 @@ phone: "+66 85 215 1141"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=78's%20Hometel%20pattaya&query_place_id=ChIJ286VX2GXAjERSsmS65-OxFk"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

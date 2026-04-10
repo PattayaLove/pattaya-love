@@ -13,6 +13,7 @@ website: "https://www.citrusgrandepattaya.com/en/?utm_source=google&utm_medium=g
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Citrus%20Grande%20Hotel%20Pattaya%20by%20Compass%20Hospitality&query_place_id=ChIJVyqGfpyXAjEROFUuR9qsbOQ"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

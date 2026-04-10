@@ -7,7 +7,7 @@ import { getCollection, render } from 'astro:content';
 
 /* ─── Static Paths ─── */
 export async function getStaticPaths() {
-  const allHotels = await getCollection('hotels', ({ data }) => !data.draft);
+  const allHotels = await getCollection('hotels', ({ data }) => !data.draft && data.featured);
   return allHotels.map((hotel) => ({
     params: { slug: hotel.data.slug },
     props: { hotel },

@@ -13,6 +13,7 @@ website: "http://www.thaigarden.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Thai%20Garden%20Resort&query_place_id=ChIJ3W-3wxOWAjERMT0I-KxRfgQ"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

@@ -13,6 +13,7 @@ website: "https://azurehotelpattaya.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Azure%20Hotel%20Pattaya%20(Former%20Centara%20Azure)&query_place_id=ChIJC4RniPqXAjERw9uB73jBqSg"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

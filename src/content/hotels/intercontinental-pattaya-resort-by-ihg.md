@@ -13,6 +13,7 @@ website: "https://www.ihg.com/intercontinental/hotels/us/en/pattaya/pyxha/hoteld
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=InterContinental%20Pattaya%20Resort%20by%20IHG&query_place_id=ChIJl7Tp1fzr4jARPYxrE8Cxygk"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

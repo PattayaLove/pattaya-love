@@ -9,6 +9,7 @@ category: "Pool Villa"
 area: "Na Jomtien"
 amenities: ["Pool", "Beach Access", "WiFi", "Parking", "AC", "Kitchen", "Staff"]
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

@@ -10,6 +10,7 @@ area: "Central Pattaya"
 image: "/images/venues/centric-sea-sunset.webp"
 amenities: ["Pool", "Fitness", "Beach Access", "WiFi", "Parking", "Restaurant"]
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

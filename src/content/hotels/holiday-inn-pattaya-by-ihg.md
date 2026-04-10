@@ -13,6 +13,7 @@ website: "https://www.ihg.com/holidayinn/hotels/us/en/pattaya/pyxpa/hoteldetail?
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Pattaya%20by%20IHG&query_place_id=ChIJ0ZBzXf69AjERFCesMTFiFCA"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

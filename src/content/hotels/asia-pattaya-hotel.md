@@ -13,6 +13,7 @@ website: "http://www.asiahotel.co.th/asia_pattaya"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Asia%20Pattaya%20Hotel&query_place_id=ChIJ0ZBzXf69AjER4kmaY1k9yBE"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

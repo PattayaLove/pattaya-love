@@ -13,6 +13,7 @@ website: "http://www.mindresortpattaya.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Mind%20Resort%20Pattaya&query_place_id=ChIJ0ZBzXf69AjERpBoqjNcPIcE"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

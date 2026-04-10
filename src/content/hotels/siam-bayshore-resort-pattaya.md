@@ -13,6 +13,7 @@ website: "http://www.siambayshorepattaya.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Siam%20Bayshore%20Resort%20Pattaya&query_place_id=ChIJ_UsQ3BSWAjER3-rdT9viAmk"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

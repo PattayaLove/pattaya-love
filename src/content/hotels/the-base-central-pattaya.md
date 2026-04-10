@@ -10,6 +10,7 @@ area: "Central Pattaya"
 amenities: ["Pool", "Fitness", "WiFi", "Parking", "Security"]
 image: "/images/venues/the-base-pool.webp"
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

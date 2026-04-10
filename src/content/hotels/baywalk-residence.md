@@ -13,6 +13,7 @@ website: "http://www.baywalkresidencepattaya.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Baywalk%20Residence&query_place_id=ChIJ3W-3wxOWAjERDKsDZji-0h4"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

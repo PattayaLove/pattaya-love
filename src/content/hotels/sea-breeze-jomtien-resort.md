@@ -13,6 +13,7 @@ website: "http://www.seabreezeresortpattaya.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Sea%20Breeze%20Jomtien%20Resort&query_place_id=ChIJDRaSMo6WAjERTw1CWCXzll4"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

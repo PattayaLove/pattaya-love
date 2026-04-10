@@ -14,6 +14,7 @@ website: "https://www.avanihotels.com/pattaya?utm_source=GoogleMyBusiness&utm_me
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Avani%20Pattaya%20Resort&query_place_id=ChIJXUH34hGWAjER72EZ7hjKkww"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

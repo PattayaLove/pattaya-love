@@ -13,6 +13,7 @@ website: "https://all.accor.com/lien_externe.svlt?goto=fiche_hotel&code_hotel=65
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=ibis%20Pattaya&query_place_id=ChIJoc9Lqv-9AjERPo6INn7fdw8"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

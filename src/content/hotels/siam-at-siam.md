@@ -8,6 +8,7 @@ area: "North Pattaya"
 amenities: ["Pool", "Rooftop Bar", "Fitness", "Restaurant", "WiFi"]
 image: "/images/venues/siam-at-siam-drone.webp"
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

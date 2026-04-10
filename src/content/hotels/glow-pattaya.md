@@ -13,6 +13,7 @@ website: "https://pattaya.glowhotels.com/?partner=6459utm_source=google&utm_medi
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=GLOW%20Pattaya&query_place_id=ChIJWd8QJouXAjERKrEPLmI0Hgg"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

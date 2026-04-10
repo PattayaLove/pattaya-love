@@ -13,6 +13,7 @@ website: "http://www.arbourhotelandresidence.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Arbour%20Hotel%20and%20Residence%20Pattaya&query_place_id=ChIJUQSkisG_AjERjjgh_ktIK3Y"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

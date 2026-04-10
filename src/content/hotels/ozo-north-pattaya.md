@@ -13,6 +13,7 @@ website: "https://www.ozohotels.com/pattaya?utm_source=google&utm_medium=gmb&utm
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=OZO%20North%20Pattaya&query_place_id=ChIJvUM_0mi-AjERMBRYsy7CTag"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

@@ -13,6 +13,7 @@ website: "https://www.sanctuarythailand.com/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=The%20Sanctuary%20Resort%20Pattaya%2C%20BW%20Signature%20Collection&query_place_id=ChIJo76uo1CXAjERB_NPwRZvyrE"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

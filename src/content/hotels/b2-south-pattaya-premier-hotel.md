@@ -13,6 +13,7 @@ website: "https://www.b2hotel.com/pattaya/b2-south-pattaya-premier-hotel/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=B2%20South%20Pattaya%20Premier%20Hotel&query_place_id=ChIJNUoWT3OWAjERfqbHB2fYMPU"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

@@ -10,6 +10,7 @@ website: "https://www.akarahotels.com/pattaya/"
 image: "/images/hotels/akara-hotel-pattaya.jpeg"
 amenities: ["Pool", "Spa", "Fitness", "Restaurant", "Bar", "Free WiFi"]
 publishDate: 2026-04-08
+featured: true
 draft: false
 ---
 

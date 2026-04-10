@@ -13,6 +13,7 @@ website: "https://www.signaturepattaya.net/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Signature%20Pattaya%20Hotel&query_place_id=ChIJ38OdPWuWAjERa1lfgLvO2S8"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 

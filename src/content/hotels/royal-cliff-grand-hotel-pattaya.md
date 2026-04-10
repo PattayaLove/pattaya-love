@@ -13,6 +13,7 @@ website: "https://www.royalcliff.com/royal-cliff-grand-hotel/"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Royal%20Cliff%20Grand%20Hotel%20Pattaya&query_place_id=ChIJPRnbUaqXAjERdnCFV0qM8nU"
 amenities: []
 publishDate: 2026-04-04
+featured: true
 draft: false
 ---
 
