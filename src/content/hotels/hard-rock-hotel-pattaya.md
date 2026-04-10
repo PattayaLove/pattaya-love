@@ -11,6 +11,7 @@ address: "429 หมู่ที่ 9 Pattaya Sai Song Rd"
 phone: "+66 38 428 755"
 website: "https://hotel.hardrock.com/pattaya?utm_campaign=shrss_hotel_hard-rock-hotel-pattaya_websitelisting&utm_medium=referral&utm_source=gmb"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hard%20Rock%20Hotel%20Pattaya&query_place_id=ChIJM9ybqwaWAjERoCUiQtBxBx0"
+image: "/images/hotels/hard-rock-pattaya.JPG"
 amenities: []
 publishDate: 2026-04-04
 featured: true
