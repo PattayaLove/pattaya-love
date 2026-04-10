@@ -63,15 +63,6 @@ const guides = [
 
 const hotels = [
   {
-    name: 'Royal Cliff Grand Hotel',
-    area: 'Pratamnak Hill',
-    rating: 4.9,
-    price: '$180',
-    amenities: ['pool', 'spa', 'wifi'],
-    image: '/images/areas/pratumnak-viewpoint.webp',
-    badge: 'Luxury',
-  },
-  {
     name: 'Hilton Pattaya',
     area: 'Central Pattaya',
     rating: 4.8,
@@ -79,15 +70,27 @@ const hotels = [
     amenities: ['fitness_center', 'restaurant', 'beach_access'],
     image: '/images/venues/hilton-drone.webp',
     badge: 'Luxury',
+    href: '/stay/hilton-pattaya/',
   },
   {
-    name: 'Mason Pattaya',
-    area: 'Na Jomtien',
-    rating: 5.0,
-    price: '$350',
-    amenities: ['local_bar', 'hot_tub', 'ac_unit'],
-    image: '/images/areas/bali-hai-sunset.webp',
-    badge: 'Boutique',
+    name: 'Akara Hotel Pattaya',
+    area: 'North Pattaya',
+    rating: 4.5,
+    price: '$72',
+    amenities: ['pool', 'spa', 'restaurant'],
+    image: '/images/hotels/akara-hotel-pattaya.jpeg',
+    badge: '5-Star',
+    href: '/stay/akara-hotel-pattaya/',
+  },
+  {
+    name: 'Pullman Pattaya Hotel G',
+    area: 'Wongamat Beach',
+    rating: 4.3,
+    price: '$96',
+    amenities: ['pool', 'spa', 'beach_access'],
+    image: '/images/hotels/pullman-pattaya.jpeg',
+    badge: 'Beachfront',
+    href: '/stay/pullman-pattaya-hotel-g/',
   },
 ];
 
@@ -477,10 +480,10 @@ import Icon from '../components/Icon.astro';
                   <span class="text-2xl font-extrabold text-primary">{hotel.price}</span>
                   <span class="text-ink-muted text-sm">/night</span>
                 </div>
-                <button class="cta-gradient px-5 py-2.5 rounded-xl text-white text-sm font-bold flex items-center gap-1.5 hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20">
-                  Check Price
+                <a href={hotel.href} class="cta-gradient px-5 py-2.5 rounded-xl text-white text-sm font-bold flex items-center gap-1.5 hover:scale-105 active:scale-95 transition-transform shadow-md shadow-primary/20">
+                  View Hotel
                   <Icon name="arrow_forward" class="text-sm" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
