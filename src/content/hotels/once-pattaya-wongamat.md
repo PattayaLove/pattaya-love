@@ -9,8 +9,8 @@ category: "Condo"
 area: "Wongamat Beach"
 amenities: ["Pool", "Fitness", "Beach Access", "Parking", "Security"]
 publishDate: 2026-04-04
-featured: true
-draft: false
+featured: false
+draft: true
 ---
 
 Once Pattaya Wongamat is one of the most anticipated residential developments to arrive in Pattaya's luxury condo market. Situated directly on Wongamat Beach, widely regarded as the cleanest and most desirable stretch of sand in the greater Pattaya area, this new-build project targets buyers and renters who want premium finishes, modern facilities, and genuine beachfront living without the chaos of central Pattaya.
