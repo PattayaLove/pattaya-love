@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-  site: 'https://pattaya.love',
+  site: 'https://www.pattaya.love',
 
   vite: {
     plugins: [tailwindcss()],
