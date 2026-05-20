@@ -15,6 +15,8 @@ export default defineConfig({
   integrations: [sitemap()],
   adapter: vercel({
     imageService: true,
+    webAnalytics: { enabled: true },
+    speedInsights: { enabled: true },
   }),
   image: {
     domains: [],

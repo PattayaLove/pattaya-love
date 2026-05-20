@@ -79,14 +79,6 @@ const websiteSchema = {
   <body class="antialiased">
     <slot />
 
-    <!-- Vercel Analytics (privacy-first, no cookies, GDPR compliant) -->
-    <script>
-      import { inject } from '@vercel/analytics';
-      import { injectSpeedInsights } from '@vercel/speed-insights';
-      inject();
-      injectSpeedInsights();
-    </script>
-
     <!-- Scroll reveal observer + responsive srcset (runs after DOM ready) -->
     <script>
       const observer = new IntersectionObserver(
