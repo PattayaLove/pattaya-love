@@ -3,6 +3,7 @@ title: "Thailand Visa Rules 2026 — 60-Day Visa-Free Entry Is Over"
 slug: "thailand-visa-rules-2026"
 description: "Thailand's Cabinet has ended the 60-day visa-free entry for 93 countries. Here's what changes, who's affected, and how to stay longer than 30 days in Pattaya."
 category: "tips"
+image: "/images/guides/30days-visa.png"
 publishDate: 2026-05-20
 draft: false
 ---
