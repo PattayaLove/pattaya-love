@@ -30,7 +30,7 @@ Organizers expect visitors from dozens of countries across the three days. Furth
 Tomorrowland Thailand 2026 brings more than 100 artists across EDM, house, techno, trance, hardstyle, psytrance, and drum & bass — one of the biggest music programs ever announced in Thailand.
 
 <figure style="margin: 2rem auto; max-width: 520px;">
-  <img src="/images/guides/tomorrowland-thailand-lineup.png" alt="Official Tomorrowland Thailand 2026 lineup poster — Consciencia, Wisdom Valley, December 11–13" loading="lazy" width="939" height="1173" style="margin: 0;" />
+  <img src="/images/guides/tomorrowland-thailand-lineup.webp" alt="Official Tomorrowland Thailand 2026 lineup poster — Consciencia, Wisdom Valley, December 11–13" loading="lazy" width="939" height="1173" style="margin: 0;" />
   <figcaption style="text-align: center; font-size: 0.8125rem; color: var(--color-ink-muted); font-style: italic; margin-top: 0.75rem;">The official Tomorrowland Thailand 2026 lineup. Image: Tomorrowland</figcaption>
 </figure>
 
