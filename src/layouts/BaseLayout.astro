@@ -99,7 +99,19 @@ const websiteSchema = {
         if (img.getAttribute('srcset')) return;
         const src = img.getAttribute('src');
         const base = src.replace('.webp', '');
-        img.setAttribute('srcset', `${base}-400w.webp 400w, ${base}-800w.webp 800w, ${base}-1200w.webp 1200w, ${src} 1920w`);
+        // resize-images.mjs only creates variants smaller than the original,
+        // so skip candidates at or above the declared intrinsic width
+        const intrinsic = parseInt(img.getAttribute('width'), 10) || Infinity;
+        const candidates = [400, 800, 1200]
+          .filter((size) => size < intrinsic)
+          .map((size) => `${base}-${size}w.webp ${size}w`);
+        candidates.push(`${src} ${Math.min(intrinsic, 1920)}w`);
+        img.setAttribute('srcset', candidates.join(', '));
+        // If a variant is missing on the server, fall back to the original
+        img.addEventListener('error', () => {
+          img.removeAttribute('srcset');
+          img.removeAttribute('sizes');
+        }, { once: true });
         // Use actual rendered width for sizes
         const w = img.offsetWidth || img.clientWidth;
         if (w && w < 500) {
