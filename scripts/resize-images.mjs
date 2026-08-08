@@ -28,7 +28,7 @@ async function walkDir(dir) {
 
 async function resize() {
   const allFiles = await walkDir(PUBLIC_IMAGES);
-  const images = allFiles.filter(f => f.endsWith('.webp'));
+  const images = allFiles.filter(f => f.endsWith('.webp') && !/-\d+w\.webp$/.test(f));
 
   let created = 0;
 
