@@ -1,7 +1,7 @@
 ---
 name: "Centara Grand Mirage Beach Resort Pattaya"
 slug: "centara-grand-mirage-beach-resort-pattaya"
-description: "Centara Grand Mirage Beach Resort Pattaya is a luxury hotel in Central Pattaya, Pattaya. Rated 4.6/5 from 13.930+ Google reviews."
+description: "Centara Grand Mirage Beach Resort Pattaya — 4.6/5 from 13,930 Google reviews. Location in Central Pattaya, guest policy and booking notes for 2026."
 rating: 4.6
 reviewsCount: 13930
 priceRange: "luxury"
@@ -19,16 +19,20 @@ draft: false
 
 ## Overview
 
-Centara Grand Mirage Beach Resort Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.6/5 rating from 13.930 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
+Centara Grand Mirage Beach Resort Pattaya is a upper-tier hotel in the Central Pattaya area. It rates consistently well with guests, based on a large sample of 13,930 Google reviews (4.6/5).
 
 ## Location
 
-The hotel is situated at 277 หมู่ที่ 5, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
+The hotel is at 277 หมู่ที่ 5, in Central Pattaya. Central Pattaya is the most connected part of the city: shopping at Central Festival, the beach a few blocks west, and the Soi Buakhao bar area inland. Baht buses circulate constantly along the one-way Beach Road–Second Road loop.
 
-## Guest-Friendly
+## Getting There
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with Centara Grand Mirage Beach Resort Pattaya before booking.
+Suvarnabhumi Airport is roughly 120 km north — about 90 minutes by taxi, or two hours on the scheduled airport coaches, which cost a fraction of a private car. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## How to Book
+## Guest-Friendly Policy
 
-Check the latest rates and availability on popular booking platforms. Prices vary significantly by season — the high season (November to February) typically commands premium rates, while the low season (June to September) offers the best deals.
+Most Pattaya hotels are guest-friendly and admit visitors without a joiner fee, but we have not independently confirmed the policy for Centara Grand Mirage Beach Resort Pattaya. Check directly with the property before booking if this matters to you.
+
+## Booking & Rates
+
+Expect peak pricing between November and February. The low season from June to September brings the best rates alongside heavier afternoon rain. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

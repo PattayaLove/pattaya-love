@@ -1,7 +1,7 @@
 ---
 name: "InterContinental Pattaya Resort by IHG"
 slug: "intercontinental-pattaya-resort-by-ihg"
-description: "InterContinental Pattaya Resort by IHG is a luxury hotel in Central Pattaya, Pattaya. Rated 4.6/5 from 2.880+ Google reviews."
+description: "InterContinental Pattaya Resort by IHG, a upper-tier stay in Central Pattaya, Pattaya. Guest score 4.6/5 across 2,880 reviews, plus season and booking notes."
 rating: 4.6
 reviewsCount: 2880
 priceRange: "luxury"
@@ -19,16 +19,20 @@ draft: false
 
 ## Overview
 
-InterContinental Pattaya Resort by IHG is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.6/5 rating from 2.880 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
+InterContinental Pattaya Resort by IHG is a upper-tier hotel in the Central Pattaya area. It rates consistently well with guests, based on 2,880 Google reviews (4.6/5).
 
 ## Location
 
-The hotel is situated at Pattaya, 437 Phra Tamnak, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
+The hotel is at Pattaya, 437 Phra Tamnak, in Central Pattaya. Central Pattaya is the most connected part of the city: shopping at Central Festival, the beach a few blocks west, and the Soi Buakhao bar area inland. Baht buses circulate constantly along the one-way Beach Road–Second Road loop.
 
-## Guest-Friendly
+## Getting There
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with InterContinental Pattaya Resort by IHG before booking.
+From Bangkok, buses to Pattaya leave Ekkamai terminal throughout the day. From Suvarnabhumi Airport a taxi takes about 90 minutes, and U-Tapao is nearer still at around 45 minutes. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## How to Book
+## Guest-Friendly Policy
 
-Check the latest rates and availability on popular booking platforms. Prices vary significantly by season — the high season (November to February) typically commands premium rates, while the low season (June to September) offers the best deals.
+Policies vary by property and change over time. We have not verified whether InterContinental Pattaya Resort by IHG charges a joiner fee, so confirm it directly if you need certainty.
+
+## Booking & Rates
+
+High season runs November to February and carries the highest rates; June to September is the cheapest window, with rain most likely in the afternoons. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

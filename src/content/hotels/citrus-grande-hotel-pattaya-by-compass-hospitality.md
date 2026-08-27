@@ -1,7 +1,7 @@
 ---
 name: "Citrus Grande Hotel Pattaya by Compass Hospitality"
 slug: "citrus-grande-hotel-pattaya-by-compass-hospitality"
-description: "Citrus Grande Hotel Pattaya by Compass Hospitality is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.9/5 from 2.835+ Google reviews."
+description: "Citrus Grande Hotel Pattaya by Compass Hospitality, a budget stay in Central Pattaya, Pattaya. Guest score 3.9/5 across 2,835 reviews, plus season and booking notes."
 rating: 3.9
 reviewsCount: 2835
 priceRange: "budget"
@@ -19,16 +19,20 @@ draft: false
 
 ## Overview
 
-Citrus Grande Hotel Pattaya by Compass Hospitality is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.9/5 rating from 2.835 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
+Rated 3.9/5 from 2,835 Google reviews, Citrus Grande Hotel Pattaya by Compass Hospitality holds an average guest score among budget hotels in the Central Pattaya area.
 
 ## Location
 
-The hotel is situated at 579, Khao, Phra Tamnak, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
+The hotel is at 579, Khao, Phra Tamnak, in Central Pattaya. Central Pattaya is the most connected part of the city: shopping at Central Festival, the beach a few blocks west, and the Soi Buakhao bar area inland. Baht buses circulate constantly along the one-way Beach Road–Second Road loop.
 
-## Guest-Friendly
+## Getting There
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with Citrus Grande Hotel Pattaya by Compass Hospitality before booking.
+Most visitors arrive via Suvarnabhumi Airport, around 90 minutes away by taxi. Airport coaches run through the day and are the cheaper option. U-Tapao, south of the city, is closer at roughly 45 minutes. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## How to Book
+## Guest-Friendly Policy
 
-Check the latest rates and availability on popular booking platforms. Prices vary significantly by season — the high season (November to February) typically commands premium rates, while the low season (June to September) offers the best deals.
+We have no confirmed guest policy on file for Citrus Grande Hotel Pattaya by Compass Hospitality. Guest-friendly arrangements are common in Pattaya, though some properties do charge a joiner fee — worth clarifying with reception or at the time of booking.
+
+## Booking & Rates
+
+High season runs November to February and carries the highest rates; June to September is the cheapest window, with rain most likely in the afternoons. At this end of the market, rates move less between seasons, but rooms in the cheapest brackets sell out first around Songkran and New Year.

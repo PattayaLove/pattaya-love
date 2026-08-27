@@ -1,7 +1,7 @@
 ---
 name: "Arbour Hotel and Residence Pattaya"
 slug: "arbour-hotel-and-residence-pattaya"
-description: "Arbour Hotel and Residence Pattaya is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.9/5 from 12.025+ Google reviews."
+description: "Arbour Hotel and Residence Pattaya (Central Pattaya, Pattaya): 4.9/5 from 12,025 reviews. Where it sits, how the area works and when rates are lowest."
 rating: 4.9
 reviewsCount: 12025
 priceRange: "mid-range"
@@ -19,16 +19,20 @@ draft: false
 
 ## Overview
 
-Arbour Hotel and Residence Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.9/5 rating from 12.025 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Rated 4.9/5 from a large sample of 12,025 Google reviews, Arbour Hotel and Residence Pattaya reviews well across the board among mid-range hotels in the Central Pattaya area.
 
 ## Location
 
-The hotel is situated at 99 10 Pattaya 3rd Rd, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
+The hotel is at 99 10 Pattaya 3rd Rd, in Central Pattaya. The central district sits between Beach Road and Third Road, with Central Festival mall as the main landmark. Walking Street is roughly ten minutes south by baht bus, and the Soi Buakhao area with its night market is a short walk inland.
 
-## Guest-Friendly
+## Getting There
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with Arbour Hotel and Residence Pattaya before booking.
+Suvarnabhumi Airport is roughly 120 km north — about 90 minutes by taxi, or two hours on the scheduled airport coaches, which cost a fraction of a private car. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## How to Book
+## Guest-Friendly Policy
 
-Check the latest rates and availability on popular booking platforms. Prices vary significantly by season — the high season (November to February) typically commands premium rates, while the low season (June to September) offers the best deals.
+Policies vary by property and change over time. We have not verified whether Arbour Hotel and Residence Pattaya charges a joiner fee, so confirm it directly if you need certainty.
+
+## Booking & Rates
+
+Rates peak over the November–February high season and drop noticeably from June to September, when the monsoon keeps demand down. Mid-range rates in Pattaya swing widely with the calendar, so booking dates either side of a public holiday can make a substantial difference.

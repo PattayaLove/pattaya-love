@@ -1,7 +1,7 @@
 ---
 name: "Thai Garden Resort"
 slug: "thai-garden-resort"
-description: "Thai Garden Resort is a luxury resort hotel in Central Pattaya, Pattaya. Rated 4.5/5 from 1.798+ Google reviews."
+description: "Thai Garden Resort, a upper-tier stay in Central Pattaya, Pattaya. Guest score 4.5/5 across 1,798 reviews, plus season and booking notes."
 rating: 4.5
 reviewsCount: 1798
 priceRange: "luxury"
@@ -19,16 +19,20 @@ draft: false
 
 ## Overview
 
-Thai Garden Resort is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 1.798 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
+Rated 4.5/5 from 1,798 Google reviews, Thai Garden Resort reviews well across the board among upper-tier resort hotels in the Central Pattaya area.
 
 ## Location
 
-The hotel is situated at หมู่ที่ 5 179/168 N Pattaya Rd, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
+You will find it at หมู่ที่ 5 179/168 N Pattaya Rd in Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 10 baht, which makes getting around without a scooter straightforward.
 
-## Guest-Friendly
+## Getting There
 
-Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. We recommend confirming the guest policy directly with Thai Garden Resort before booking.
+Suvarnabhumi Airport is roughly 120 km north — about 90 minutes by taxi, or two hours on the scheduled airport coaches, which cost a fraction of a private car. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## How to Book
+## Guest-Friendly Policy
 
-Check the latest rates and availability on popular booking platforms. Prices vary significantly by season — the high season (November to February) typically commands premium rates, while the low season (June to September) offers the best deals.
+We have no confirmed guest policy on file for Thai Garden Resort. Guest-friendly arrangements are common in Pattaya, though some properties do charge a joiner fee — worth clarifying with reception or at the time of booking.
+
+## Booking & Rates
+
+Rates peak over the November–February high season and drop noticeably from June to September, when the monsoon keeps demand down. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.
