@@ -7,8 +7,11 @@ const hotels = defineCollection({
     name: z.string(),
     slug: z.string(),
     description: z.string(),
+    // Aggregated public score (Google). Drives the star display and aggregateRating.
     rating: z.number().min(0).max(5),
     reviewsCount: z.number().default(0),
+    // Our own verdict. Only set on pages we actually reviewed; drives the Review schema.
+    editorialRating: z.number().min(0).max(5).optional(),
     priceRange: z.enum(['budget', 'mid-range', 'luxury']),
     category: z.string().default('Hotel'),
     area: z.string(),

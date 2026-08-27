@@ -4,6 +4,7 @@ slug: "hard-rock-hotel"
 description: "Hard Rock Hotel Pattaya 2026 review — beachfront luxury on Beach Road with a massive pool, live music, and direct sand access. Rates and tips."
 rating: 4.5
 reviewsCount: 4923
+editorialRating: 4.3
 priceRange: "luxury"
 category: "Hotel"
 area: "Beach Road"

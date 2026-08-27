@@ -97,13 +97,15 @@ const hotelSchema = {
   },
   ...(data.phone ? { "telephone": data.phone } : {}),
   ...(data.website ? { "url": data.website } : {}),
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": String(data.rating),
-    "bestRating": "5",
-    "worstRating": "0",
-    "ratingCount": String(data.reviewsCount || 1)
-  },
+  ...(data.reviewsCount > 0 ? {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": String(data.rating),
+      "bestRating": "5",
+      "worstRating": "0",
+      "ratingCount": String(data.reviewsCount)
+    }
+  } : {}),
   "amenityFeature": data.amenities.map((amenity: string) => ({
     "@type": "LocationFeatureSpecification",
     "name": amenity,
@@ -111,7 +113,8 @@ const hotelSchema = {
   }))
 };
 
-const reviewSchema = {
+/* Only emitted where an editorial verdict exists — never derived from the Google score. */
+const reviewSchema = data.editorialRating ? {
   "@context": "https://schema.org",
   "@type": "Review",
   "itemReviewed": {
@@ -124,12 +127,12 @@ const reviewSchema = {
   },
   "reviewRating": {
     "@type": "Rating",
-    "ratingValue": String(data.rating),
+    "ratingValue": String(data.editorialRating),
     "bestRating": "5"
   },
   "datePublished": data.publishDate.toISOString(),
   "description": data.description
-};
+} : null;
 import Icon from '../../components/Icon.astro';
 ---
 
@@ -142,7 +145,7 @@ import Icon from '../../components/Icon.astro';
 
   <!-- Schema.org Hotel + Review -->
   <script type="application/ld+json" set:html={JSON.stringify(hotelSchema)} />
-  <script type="application/ld+json" set:html={JSON.stringify(reviewSchema)} />
+  {reviewSchema && <script type="application/ld+json" set:html={JSON.stringify(reviewSchema)} />}
 
   <!-- ═══════════════════════════════════════════════ -->
   <!-- 1. HERO                                         -->
