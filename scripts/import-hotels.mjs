@@ -6,6 +6,7 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
+import { buildBody, buildDescription } from './lib/hotel-copy.mjs';
 
 const INPUT = process.argv[2];
 if (!INPUT) {
@@ -81,62 +82,21 @@ function toSlug(title) {
     .slice(0, 60);
 }
 
-// ── SEO description with Tomorrowland ──
-function generateDescription(h, area, priceRange) {
-  const rating = h.totalScore.toFixed(1);
-  const reviews = h.reviewsCount || 0;
-  const priceLabel = priceRange === 'luxury' ? 'luxury' : priceRange === 'mid-range' ? 'mid-range' : 'budget-friendly';
-
-  // Areas near likely Tomorrowland venue
-  const tomorrowlandAreas = ['Jomtien', 'Na Jomtien', 'Pratamnak Hill', 'South Pattaya'];
-  const nearTomorrowland = tomorrowlandAreas.includes(area);
-
-  let desc = `${h.title} is a ${priceLabel} ${(h.categoryName || 'hotel').toLowerCase()} in ${area}, Pattaya. Rated ${rating}/5 from ${reviews.toLocaleString()}+ Google reviews.`;
-
-  if (nearTomorrowland) {
-    desc += ` Great location for Tomorrowland Thailand 2026 in November.`;
-  }
-
-  // Truncate to ~155 chars for SEO
-  if (desc.length > 160) {
-    desc = desc.slice(0, 157) + '...';
-  }
-
-  return desc;
-}
-
-// ── Body content ──
-function generateBody(h, area, priceRange) {
-  const tomorrowlandAreas = ['Jomtien', 'Na Jomtien', 'Pratamnak Hill', 'South Pattaya'];
-  const nearTomorrowland = tomorrowlandAreas.includes(area);
-
-  let body = `## Overview\n\n`;
-  body += `${h.title} is located in the ${area} area of Pattaya, one of Thailand's most popular coastal destinations. `;
-  body += `With a ${h.totalScore.toFixed(1)}/5 rating from ${(h.reviewsCount || 0).toLocaleString()} Google reviews, `;
-  body += `it's a solid ${priceRange} option for travelers visiting Pattaya in 2026.\n\n`;
-
-  if (h.street) {
-    body += `## Location\n\n`;
-    body += `The hotel is situated at ${h.street}, ${area}. `;
-    body += `This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.\n\n`;
-  }
-
-  if (nearTomorrowland) {
-    body += `## Tomorrowland Thailand 2026\n\n`;
-    body += `${h.title} is well-positioned for the historic **Tomorrowland Thailand 2026** festival coming to Pattaya in November 2026. `;
-    body += `The ${area} location offers convenient access to the expected festival grounds. Book early — hotels in this area will fill up fast for this landmark event.\n\n`;
-  }
-
-  body += `## Guest-Friendly\n\n`;
-  body += `Most hotels in Pattaya are guest-friendly, meaning visitors are welcome without additional fees. `;
-  body += `We recommend confirming the guest policy directly with ${h.title} before booking.\n\n`;
-
-  body += `## How to Book\n\n`;
-  body += `Check the latest rates and availability on popular booking platforms. Prices vary significantly by season — `;
-  body += `the high season (November to February) typically commands premium rates, `;
-  body += `while the low season (June to September) offers the best deals.\n`;
-
-  return body;
+// ── Page copy ──
+// Both live in scripts/lib/hotel-copy.mjs so imports and rewrites stay in sync.
+// Do not inline template text here again: identical copy across pages is what
+// made the previous batch of imports duplicates of one another.
+function toCopyInput(h, area, priceRange, slug) {
+  return {
+    name: h.title,
+    slug,
+    area,
+    street: h.street || '',
+    category: h.categoryName || 'Hotel',
+    priceRange,
+    rating: h.totalScore,
+    reviewsCount: h.reviewsCount || 0,
+  };
 }
 
 // ── Generate markdown files ──
@@ -155,8 +115,9 @@ for (const h of hotels) {
 
   const area = detectArea(h);
   const priceRange = detectPriceRange(h);
-  const description = generateDescription(h, area, priceRange);
-  const body = generateBody(h, area, priceRange);
+  const copyInput = toCopyInput(h, area, priceRange, slug);
+  const description = buildDescription(copyInput);
+  const body = buildBody(copyInput);
 
   const frontmatter = [
     '---',
