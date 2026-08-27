@@ -7,7 +7,7 @@ reviewsCount: 4923
 priceRange: "luxury"
 category: "Hotel"
 area: "Central Pattaya"
-address: "429 หมู่ที่ 9 Pattaya Sai Song Rd"
+address: "429 Moo 9, Pattaya Beach Road, Pattaya, Chonburi 20150, Thailand"
 phone: "+66 38 428 755"
 website: "https://hotel.hardrock.com/pattaya?utm_campaign=shrss_hotel_hard-rock-hotel-pattaya_websitelisting&utm_medium=referral&utm_source=gmb"
 googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hard%20Rock%20Hotel%20Pattaya&query_place_id=ChIJM9ybqwaWAjERoCUiQtBxBx0"
@@ -24,7 +24,7 @@ Hard Rock Hotel Pattaya is located in the Central Pattaya area of Pattaya, one o
 
 ## Location
 
-The hotel is situated at 429 หมู่ที่ 9 Pattaya Sai Song Rd, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
+The hotel is situated at 429 Moo 9, Pattaya Beach Road, Central Pattaya. This puts you within reach of Pattaya's main attractions, restaurants, and nightlife areas.
 
 ## Guest-Friendly
 
