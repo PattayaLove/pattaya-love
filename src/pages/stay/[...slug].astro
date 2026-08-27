@@ -73,6 +73,15 @@ const publishFormatted = data.publishDate.toLocaleDateString('en-US', {
   day: 'numeric',
 });
 
+/* ─── Street address for schema.org (strip redundant locality suffixes) ─── */
+const streetAddress = (data.address || '')
+  .replace(/,?\s*(Thailand|TH)\s*$/i, '')
+  .replace(/,?\s*\d{5}\s*$/, '')
+  .replace(/,?\s*(Chon\s?Buri|Chonburi)\s*$/i, '')
+  .replace(/,?\s*Pattaya\s*$/i, '')
+  .replace(/,\s*$/, '')
+  .trim();
+
 const hotelSchema = {
   "@context": "https://schema.org",
   "@type": "Hotel",
@@ -80,9 +89,14 @@ const hotelSchema = {
   "description": data.description,
   "address": {
     "@type": "PostalAddress",
+    ...(streetAddress ? { "streetAddress": streetAddress } : {}),
     "addressLocality": "Pattaya",
+    "addressRegion": "Chon Buri",
+    "postalCode": "20150",
     "addressCountry": "TH"
   },
+  ...(data.phone ? { "telephone": data.phone } : {}),
+  ...(data.website ? { "url": data.website } : {}),
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": String(data.rating),
@@ -368,6 +382,14 @@ import Icon from '../../components/Icon.astro';
             Agoda
           </a>
         </div>
+
+        <!-- Address -->
+        {data.address && (
+          <p class="text-white/60 text-xs text-center mb-4 flex items-center justify-center gap-1.5">
+            <Icon name="location_on" class="text-sm" />
+            {data.address}
+          </p>
+        )}
 
         <!-- Additional Links -->
         <div class="flex flex-wrap items-center justify-center gap-3">
