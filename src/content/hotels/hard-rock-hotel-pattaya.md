@@ -14,8 +14,8 @@ googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hard%20Rock%20Ho
 image: "/images/hotels/hard-rock-pattaya.JPG"
 amenities: []
 publishDate: 2026-04-04
-featured: true
-draft: false
+featured: false
+draft: true
 ---
 
 ## Overview

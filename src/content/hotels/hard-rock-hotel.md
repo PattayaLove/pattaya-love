@@ -2,9 +2,15 @@
 name: "Hard Rock Hotel Pattaya"
 slug: "hard-rock-hotel"
 description: "Hard Rock Hotel Pattaya 2026 review — beachfront luxury on Beach Road with a massive pool, live music, and direct sand access. Rates and tips."
-rating: 4.3
+rating: 4.5
+reviewsCount: 4923
 priceRange: "luxury"
+category: "Hotel"
 area: "Beach Road"
+address: "429 Moo 9, Pattaya Beach Road, Pattaya, Chonburi 20150, Thailand"
+phone: "+66 38 428 755"
+website: "https://hotel.hardrock.com/pattaya"
+googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hard%20Rock%20Hotel%20Pattaya&query_place_id=ChIJM9ybqwaWAjERoCUiQtBxBx0"
 image: "/images/venues/hard-rock-hotel-pattaya.webp"
 amenities: ["Pool", "Fitness", "Restaurant", "Bar", "Beach Access", "Live Music"]
 publishDate: 2026-04-04
@@ -16,7 +22,7 @@ The Hard Rock Hotel Pattaya is one of the most recognizable properties on Beach 
 
 ## Location
 
-The Hard Rock sits on Beach Road between Soi 8 and Soi 9, which places it squarely in central Pattaya. The beach is directly in front of the property, and the hotel has its own beach area with loungers and service.
+The Hard Rock sits at 429 Moo 9, Pattaya Beach Road, between Soi 8 and Soi 9, which places it squarely in central Pattaya. The beach is directly in front of the property, and the hotel has its own beach area with loungers and service.
 
 Walking Street is about 15 minutes south by baht bus. Soi 6 is roughly a 10-minute walk north. Central Festival mall is a five-minute drive or a short baht bus hop. The surrounding blocks are packed with restaurants, convenience stores, and smaller bars.
 

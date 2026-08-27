@@ -88,6 +88,11 @@
       "permanent": true
     },
     {
+      "source": "/stay/hard-rock-hotel-pattaya/",
+      "destination": "/stay/hard-rock-hotel/",
+      "permanent": true
+    },
+    {
       "source": "/onlyfans/:path*",
       "destination": "/",
       "permanent": true
