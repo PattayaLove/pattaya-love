@@ -38,3 +38,6 @@ dataset_crawler-google-places_*.json
 # vercel
 .vercel
 Pics/
+
+# accidental double-resized webp variants (see Pics/_webp-variants-unused)
+public/images/**/*-[0-9]*w-[0-9]*w.webp
