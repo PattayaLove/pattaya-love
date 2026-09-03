@@ -53,7 +53,7 @@ These are straight-line figures derived from the venue's published location. Roa
 
 ## What Should Decide It Instead
 
-**Getting back at three in the morning.** This is the real problem. Fifty thousand people leaving a field in the same hour, on roads that were not built for it. If you are not on an official shuttle, budget for a long wait and heavy Grab surge pricing. Staying somewhere with a lot of traffic passing through — Central Pattaya, Soi Buakhao — gives you more ways home than a quiet villa road.
+**Getting back at one in the morning.** This is the real problem. The music stops at 01:00 on Friday and Saturday and midnight on Sunday, so fifty thousand people leave a field inside the same half hour, on roads that were not built for it. If you are not on an official shuttle, budget for a long wait and heavy Grab surge pricing. Staying somewhere with a lot of traffic passing through — Central Pattaya, Soi Buakhao — gives you more ways home than a quiet villa road.
 
 **What you want in daylight.** You are in Pattaya for a week, at a festival for three nights. The hours you spend awake and not at Wisdom Valley outnumber the hours you spend there. Book for those.
 
@@ -87,7 +87,7 @@ That is the only Soi Buakhao property we currently publish. The [Soi Buakhao are
 
 ### Central Pattaya and Beach Road — most options, most traffic
 
-**About 16 km.** This is where the rooms are and where our coverage is deepest. It is also where transport is thickest, which helps at 3am, and where December traffic will be worst, which hurts every other hour.
+**About 16 km.** This is where the rooms are and where our coverage is deepest. It is also where transport is thickest, which helps at 01:00, and where December traffic will be worst, which hurts every other hour.
 
 Not for you if noise is a problem.
 
@@ -144,7 +144,7 @@ See the [Jomtien area guide](/areas/jomtien/).
 
 **We are not quoting December prices.** Anything published now for festival weekend is speculative, and we would rather tell you nothing than tell you something wrong. Check live rates and judge them against what the same room costs the week before — that gap is the festival premium, and you can decide whether it is worth paying.
 
-**Nail down how you get back before you book.** Not how you get there. Getting there is easy at any hour; getting back at 3am with 50,000 other people is the part that ruins trips.
+**Nail down how you get back before you book.** Not how you get there. Getting there is easy at any hour; getting back at 01:00 with 50,000 other people is the part that ruins trips.
 
 ## Frequently Asked Questions
 

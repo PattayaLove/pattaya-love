@@ -17,7 +17,7 @@ Last checked **3 September 2026**.
 
 Mid-December is the best weather Pattaya gets all year, which is presumably why the date was chosen. Warm dry days, low humidity by Thai standards, the monsoon finished, and a brief shower possible but not typical.
 
-The part people get wrong is the night. Wisdom Valley sits inland on rolling terrain rather than on the coast, and December evenings in Thailand's cool season drop enough that standing still in damp clothes at 2am is unpleasant. You will be sweating at 8pm and cold at 3am on the same night.
+The part people get wrong is the night. Wisdom Valley sits inland on rolling terrain rather than on the coast, and December evenings in Thailand's cool season drop enough that standing still in damp clothes at 2am is unpleasant. You will be sweating at 8pm and cold when the music stops at 01:00 on the same night.
 
 **Bring one warm layer.** A light hoodie or long-sleeve you can tie round your waist. This is the single item most people leave behind and want back.
 
@@ -33,10 +33,9 @@ The part people get wrong is the night. Wisdom Valley sits inland on rolling ter
 
 **For the daytime stages**
 
-- High-SPF sunscreen, and actually reapply it
 - A hat and sunglasses
-- A refillable water bottle
 - Electrolyte sachets. Heat plus dancing plus alcohol dehydrates faster than you notice
+- Sunscreen applied **before** you arrive. Liquids and aerosols are both on the prohibited list, so do not count on carrying a bottle in
 
 **Practical**
 
@@ -44,7 +43,43 @@ The part people get wrong is the night. Wisdom Valley sits inland on rolling ter
 - A power bank, charged
 - A crossbody bag or waist pack you can actually dance in
 - Passport photocopy in your bag, original in the hotel safe
-- Any personal medication in its original packaging
+- Prescribed medication **plus a valid medical certificate**. Without the certificate it will not come in — see below
+
+## What You Cannot Bring In
+
+The organisers publish a prohibited list, and some of it will surprise people who have done European festivals.
+
+- **Vapes and e-cigarettes**
+- **Personal food and drinks**
+- **Glass, cans and plastic bottles** — so no water bottle, refillable or otherwise
+- **Liquids** and **aerosols**
+- Drugs, except prescribed medication with a valid medical certificate
+- Animals, except guide dogs
+- Sticks and canes, excluding medical crutches and aids
+- Flags or shirts of football clubs
+- Banners, and anything carrying discriminatory or provocative text
+- Weapons, or any object usable as one
+- Fireworks and flares
+- Drones
+- Anything else the organisation judges dangerous
+
+Two of these catch people out repeatedly. **Vapes** are banned outright, which is not the case at every festival. And the bottle ban means the refillable bottle on every generic packing list is the wrong advice here — plan to drink what is sold on site, which you pay for with Pearls.
+
+Liquids and aerosols being on the list is why sunscreen goes on before you leave the hotel rather than into your bag. Check the [official list](https://faq.tomorrowlandthailand.com/hc/en-us) before you pack anything you would be sorry to surrender.
+
+## You Cannot Leave and Come Back
+
+There is no re-entry on the same day. Day passes allow no re-entry at all; three-day passes only let you return on a following day.
+
+Doors open at 13:00 and the music runs to 01:00, midnight on Sunday. That is up to twelve hours on site with no trip back to the hotel, so what you carry in has to cover the whole stretch — including the warm layer you will not want at 3pm and will want badly at midnight.
+
+**Check-in closes at 22:00** on Friday and Saturday and 21:00 on Sunday. Arrive after that and you do not get in.
+
+## Medication Needs Paperwork
+
+Tomorrowland runs a zero-tolerance drug policy, and it applies to your own prescriptions too. Prescribed medication is allowed **only with a valid medical certificate**.
+
+Original packaging is not enough. If you take anything prescribed, get a certificate from your doctor before you fly and carry it with the medication. This is a bureaucratic annoyance at home and a serious problem at a gate in Thailand.
 
 ## Bring ID, Not Just Your Ticket
 
@@ -109,6 +144,18 @@ No. The site is cashless and runs on Pearls loaded to your bracelet. You need Th
 ### What ID do I need?
 
 Photo ID proving you are 20 or older. The age minimum is 20, based on your birthday rather than your birth year.
+
+### Can I bring a water bottle?
+
+No. Glass, cans and plastic bottles are all on the prohibited list. Drinks are bought on site with Pearls.
+
+### Are vapes allowed?
+
+No. Vapes and e-cigarettes are explicitly prohibited.
+
+### Can I bring my own medication?
+
+Only with a valid medical certificate. Original packaging alone is not sufficient under the zero-tolerance policy.
 
 ### Is a rain poncho necessary in December?
 

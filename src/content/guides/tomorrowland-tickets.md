@@ -21,6 +21,8 @@ This catches people out because the Belgian edition admits 18-year-olds, and mos
 
 The cutoff is by birthday, not birth year. Someone born in 2006 gets in only if they have turned 20 *before* the festival. Turn 20 after 13 December and you are refused at the gate, ticket or no ticket.
 
+The organisers call it a strict policy and spell out that being accompanied by an adult makes no difference. Anyone born in 2006 or later who has not turned 20 is refused, full stop.
+
 If you are travelling in a mixed-age group, check every passport now. A refused entry after flights and hotels are paid is the most expensive mistake on this page.
 
 ## The Four Passes
@@ -47,6 +49,27 @@ It is not worth it if you plan to spend the weekend at the smaller stages. The C
 Three Day Passes cost 15,300 THB against 12,500 for the Full Madness. There is no scenario in which buying separate day passes for all three days makes sense.
 
 The Day Pass exists for people who are in Thailand anyway and want one night, or who could not commit to three. If you flew in for this, you want the three-day pass.
+
+## Hours, and the Check-In Cutoff Nobody Mentions
+
+| | Doors | Music ends | Check-in closes |
+|---|---|---|---|
+| Friday 11 Dec | 13:00 | 01:00 | 22:00 |
+| Saturday 12 Dec | 13:00 | 01:00 | 22:00 |
+| Sunday 13 Dec | 13:00 | 00:00 | 21:00 |
+
+**Miss check-in and you do not get in.** Access is denied after 22:00 on Friday and Saturday and after 21:00 on Sunday, regardless of what you paid.
+
+Read that against the traffic. If you plan to leave your hotel at 21:00 on Friday, you have given yourself one hour to cover 20 kilometres on roads carrying a festival crowd and a Thai long weekend. That is not enough margin. Aim to be through the gate by early evening.
+
+### There is no re-entry on the same day
+
+This is the rule that changes how you pack.
+
+- **Day Pass and Day Comfort:** no re-entry at all. Leave the site and you need a new pass to get back.
+- **Full Madness and Full Madness Comfort:** re-entry only on a following day, never the same day.
+
+So there is no nipping back to the hotel for a jacket, a charger, or a nap. Whatever you need between 13:00 and 01:00 comes in with you at the gate — and it has to pass the [prohibited items list](/guides/tomorrowland-packing-guide/).
 
 ## Packages
 
@@ -104,6 +127,10 @@ Only through the official Ticket Exchange in your Tomorrowland account. Passes b
 ### What is the difference between Full Madness and Full Madness Comfort?
 
 Both cover all three days. Comfort adds a fast-lane entrance, elevated main-stage viewing, a dedicated bar and toilets, and food service, for 7,700 THB more.
+
+### Can I leave and come back?
+
+Not on the same day. Day passes allow no re-entry at all; three-day passes allow re-entry only on a later day.
 
 ### Do I need cash at the festival?
 

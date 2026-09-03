@@ -33,6 +33,9 @@ This guide covers both. It is written from Pattaya and updated as the organisers
 | **Theme** | CONSCIENCIA |
 | **Capacity** | More than 50,000 people per day |
 | **Site** | 237 acres of hills and lakes |
+| **Hours** | Fri & Sat 13:00–01:00, Sun 13:00–00:00 |
+| **Check-in closes** | 22:00 Fri & Sat, 21:00 Sun. No entry after |
+| **Re-entry** | Not on the same day, whatever pass you hold |
 | **Ticket status** | Sold out. Official waiting list and Ticket Exchange only. |
 
 This is the first Tomorrowland edition staged anywhere in Thailand, and the largest music event the country has hosted. The CORE and Freedom stages are coming to Asia for the first time.
@@ -129,8 +132,7 @@ Short version below. The [full packing guide](/guides/tomorrowland-packing-guide
 - One warm layer for the night stages
 - Closed shoes with grip, not sandals
 - A compact rain poncho (umbrellas are useless in a crowd)
-- High-SPF sunscreen and a hat for the daytime stages
-- Refillable water bottle
+- Sunscreen applied before you arrive, and a hat for the daytime stages
 - Earplugs — this is a full Tomorrowland sound system
 - Portable charger
 - A crossbody bag or waist pack you can dance in

@@ -59,17 +59,21 @@ Treat all of these as September figures. Festival weekend will not be a normal w
 
 ## The Last Leg: Pattaya to Wisdom Valley
 
+Before anything else, one hard deadline: **check-in closes at 22:00 on Friday and Saturday and 21:00 on Sunday.** After that you are not getting in, whatever your pass cost. Doors open at 13:00 and the music runs to 01:00 (midnight on Sunday).
+
+Plan the outbound leg against the check-in time, not against the set you want to see. An hour of margin on a 20-kilometre run through festival traffic is not margin.
+
 Here is where the published information runs out.
 
-**The official shuttle** is the intended answer for most people. Vouchers are expected to be sold through your Tomorrowland account, with pick-ups at major hotel hubs across Pattaya. As of early September, routes, stops and times had not been published. This is the single most important thing still missing, and it should be your first move the moment it appears — a hotel two minutes from a stop beats a hotel three kilometres closer with no service.
+**The official shuttle** is the intended answer for most people. Vouchers are expected to be sold through your Tomorrowland account, with pick-ups at major hotel hubs across Pattaya. The organisers' own FAQ still says the shuttle schedule will follow closer to the festival, so as of early September there were no routes, stops or times to plan around. This is the single most important thing still missing, and it should be your first move the moment it appears — a hotel two minutes from a stop beats a hotel three kilometres closer with no service.
 
 **Grab** works throughout Pattaya and is the default fallback. Going out is straightforward. Coming back is not, and that is covered below.
 
-**A private car for the weekend** is the option most groups overlook. Split four ways it competes with three nights of surge-priced ride-hailing, and you are not standing in a field at 3am refreshing an app. Arrange it with your hotel rather than on the day.
+**A private car for the weekend** is the option most groups overlook. Split four ways it competes with three nights of surge-priced ride-hailing, and you are not standing in a field at 01:00 refreshing an app. Arrange it with your hotel rather than on the day.
 
 **Driving yourself** is possible and parking is reported to be available on site, though the details were not published as of early September. The obvious problem: this is a three-night electronic music festival. If you drive, someone in the car is not drinking, and Thai drink-driving enforcement around a major event will not be relaxed.
 
-**A rented motorbike** gets you through traffic that stops cars, which is genuinely useful here. It is also the wrong choice for most visitors. If you do not already ride confidently in Thailand, a 20-kilometre run on an unfamiliar highway at 3am, tired, in a crowd of other tired people, is not where you learn. Skip it.
+**A rented motorbike** gets you through traffic that stops cars, which is genuinely useful here. It is also the wrong choice for most visitors. If you do not already ride confidently in Thailand, a 20-kilometre run on an unfamiliar highway after midnight, tired, in a crowd of other tired people, is not where you learn. Skip it.
 
 **Baht buses do not go there.** The songthaew network runs fixed routes inside the city. Wisdom Valley is well outside it.
 
@@ -82,9 +86,9 @@ Going out is easy at any hour. Coming back is the part that ruins trips, and the
 What actually helps:
 
 - **Book the return shuttle, not just the outbound one**, as soon as they go on sale.
-- **Expect heavy surge pricing** on Grab at closing time all three nights, plus long waits for a driver to accept.
+- **Expect heavy surge pricing** on Grab at closing time all three nights, plus long waits for a driver to accept. Closing is 01:00 on Friday and Saturday, midnight on Sunday.
 - **Agree your return before you leave the hotel** if you have arranged a private car — including where exactly the driver will be, because "at the venue" means nothing on a 237-acre site.
-- **Consider staying later rather than leaving at peak.** The worst crush is in the first hour after the last set. A drink and 45 minutes of patience may beat two hours in a queue.
+- **Consider staying later rather than leaving at peak.** The worst crush is in the half hour after the last set. A drink and 45 minutes of patience may beat two hours in a queue.
 - **Do not count on walking any of it.** The venue is inland, the roads are not lit for pedestrians, and it is not a walkable distance from anywhere you would stay.
 
 ## Timing: Do Not Arrive on 10 or 11 December
