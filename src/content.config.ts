@@ -68,6 +68,16 @@ const guides = defineCollection({
     image: z.string().optional(),
     publishDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
+    // Set on guides that cover a dated, physical event. Drives Event schema.org output.
+    event: z.object({
+      name: z.string(),
+      startDate: z.coerce.date(),
+      endDate: z.coerce.date(),
+      venueName: z.string(),
+      venueAddress: z.string(),
+      url: z.string().url().optional(),
+      soldOut: z.boolean().default(false),
+    }).optional(),
     draft: z.boolean().default(false),
   }),
 });

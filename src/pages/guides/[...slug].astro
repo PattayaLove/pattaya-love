@@ -93,6 +93,34 @@ const articleSchema = {
   },
   "mainEntityOfPage": `https://pattaya.love/guides/${guide.data.slug}/`
 };
+
+/* ── Event schema — only on guides that declare an event in frontmatter ── */
+const ev = guide.data.event;
+const eventSchema = ev
+  ? {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": ev.name,
+      "description": guide.data.description,
+      "startDate": ev.startDate.toISOString().split('T')[0],
+      "endDate": ev.endDate.toISOString().split('T')[0],
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "image": guide.data.image ? `https://pattaya.love${guide.data.image}` : undefined,
+      "location": {
+        "@type": "Place",
+        "name": ev.venueName,
+        "address": ev.venueAddress,
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": ev.url,
+        "availability": ev.soldOut
+          ? "https://schema.org/SoldOut"
+          : "https://schema.org/InStock",
+      },
+    }
+  : null;
 import Icon from '../../components/Icon.astro';
 ---
 
@@ -105,6 +133,11 @@ import Icon from '../../components/Icon.astro';
 
   <!-- Schema.org Article -->
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <!-- Schema.org Event (guides with an event in frontmatter) -->
+  {eventSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(eventSchema)} />
+  )}
 
   <!-- ═══════════════════════════════════════════════ -->
   <!-- ARTICLE HEADER                                  -->
