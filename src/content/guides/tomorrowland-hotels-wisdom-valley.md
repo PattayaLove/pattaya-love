@@ -61,7 +61,7 @@ These are straight-line figures derived from the venue's published location. Roa
 
 ## Area by Area
 
-Scores below are aggregated Google ratings with review counts, so you can weigh how much each one is worth. One caveat we would rather state than hide: our published reviews are concentrated in Central Pattaya, and coverage is thinnest in exactly the areas nearest the venue. Where that is the case, we say so instead of padding the list.
+Scores below are aggregated Google ratings with review counts, so you can weigh how much each one is worth. One caveat we would rather state than hide: our published reviews are concentrated in Central Pattaya, and East Pattaya — the one area with a genuine distance advantage — has none at all. Where that is the case, we say so instead of padding the list.
 
 ### North Pattaya and Wongamat — nearest beach zone
 
@@ -81,9 +81,15 @@ Our published coverage in this zone is thin — three properties, all at the upp
 
 Not for you if you want to wake up and see water.
 
-- [Azure Hotel Pattaya](/stay/azure-hotel-pattaya-former-centara-azure/) — 4.2 (1,757 reviews)
+- [Holiday Inn Express Pattaya Central](/stay/holiday-inn-express-pattaya-central-by-ihg/) — 4.5 (1,629), the reliable-brand option
+- [Amethyst Hotel Pattaya](/stay/amethyst-hotel-pattaya/) — 4.6 (403)
+- [Azure Hotel Pattaya](/stay/azure-hotel-pattaya-former-centara-azure/) — 4.2 (1,757)
+- [LK Metropole](/stay/lk-metropole/) — 4.1 (770)
+- [D Hotel](/stay/d-hotel/) — 4.1 (406)
+- [Nature View Hotel Pattaya](/stay/nature-view-hotel-pattaya/) — 4.1 (356)
+- [Katesiree House](/stay/katesiree-house/) — 3.9 (335), the budget pick
 
-That is the only Soi Buakhao property we currently publish. The [Soi Buakhao area guide](/areas/soi-buakhao/) covers what the neighbourhood is actually like before you book blind.
+More on what the neighbourhood is actually like in the [Soi Buakhao area guide](/areas/soi-buakhao/).
 
 ### Central Pattaya and Beach Road — most options, most traffic
 
