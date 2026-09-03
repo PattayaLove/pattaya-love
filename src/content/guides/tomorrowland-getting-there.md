@@ -35,6 +35,12 @@ Look at the second column too. From U-Tapao, the venue and Pattaya city are the 
 
 The default for most international arrivals, about 120 km from Pattaya by road via Motorway 7. Airport buses run to Pattaya throughout the day and are the cheapest sensible option; taxis and pre-booked transfers go door to door for considerably more.
 
+**Immigration is the part worth planning around.** Arrivals on 10 and 11 December stack the festival crowd on top of a Thai long weekend, and Suvarnabhumi's queues are already the slowest part of the journey on an ordinary day. If you land on the 11th you also have the festival's 22:00 check-in cutoff waiting for you at the other end.
+
+A <a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F149789-airport-meet-and-greet-service-by-sawasdee-pass&amp;aff_label1=tml-getting-there" rel="sponsored nofollow" target="_blank">fast-track meet &amp; greet service</a> at Suvarnabhumi runs around 51 USD and walks you through immigration via the fast lane. On a normal arrival that is money for convenience. On 11 December, with a gate that closes at 22:00 and 20 kilometres still to cover, it is closer to insurance. Note that it is not instantly confirmed, so book it days ahead rather than from the plane.
+
+Better still, land on the 9th and the problem disappears.
+
 We keep current fares, operators and departure points in the [Bangkok to Pattaya transport guide](/guides/bangkok-to-pattaya/) rather than duplicating them here, because that page gets checked and this one would go stale.
 
 ## Don Mueang (DMK)
@@ -138,3 +144,5 @@ Roughly 90 minutes from Suvarnabhumi via Motorway 7 in normal conditions. Festiv
 - [The Days Around the Festival](/guides/tomorrowland-pattaya-itinerary/)
 - [Bangkok to Pattaya: Every Route Compared](/guides/bangkok-to-pattaya/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)
+
+*Some links on this page are affiliate links. If you book through them we earn a small commission at no extra cost to you, and it never affects what we recommend — see our [affiliate disclosure](/affiliate-disclosure/).*

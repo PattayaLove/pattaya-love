@@ -31,10 +31,10 @@ The area has its own ecosystem of restaurants, gyms, supermarkets (Makro, Lotus'
 
 East Pattaya is about living, not sightseeing. That said, the area is home to several attractions:
 
-- **Nong Nooch Tropical Garden** — A massive botanical garden with Thai cultural shows
+- **Nong Nooch Tropical Garden** — A massive botanical garden with Thai cultural shows (<a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F335-nong-nooch-tropical-garden-pattaya&amp;aff_label1=area-east-pattaya" rel="sponsored nofollow" target="_blank">tickets from ~11 USD</a>)
 - **Silverlake Vineyard** — Hilltop winery with panoramic views and a giant Buddha carved into the hillside
-- **Ramayana Water Park** — Thailand's largest water park
-- **Pattaya Floating Market** — Touristy but photogenic, especially the four-regions food section
+- **Ramayana Water Park** — Thailand's largest water park (<a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F2322-ramayana-water-park-pattaya&amp;aff_label1=area-east-pattaya" rel="sponsored nofollow" target="_blank">tickets from ~24 USD</a>)
+- **Pattaya Floating Market** — Touristy but photogenic, especially the four-regions food section (<a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F2920-floating-market-pattaya&amp;aff_label1=area-east-pattaya" rel="sponsored nofollow" target="_blank">tickets from ~3 USD</a>)
 
 ## Dining
 
@@ -47,3 +47,5 @@ You need your own transport on the Dark Side. Motorbike (200-300 THB/day) or car
 ## Who It's For
 
 Long-term expats, digital nomads on a budget, retirees, and anyone who wants to experience Thai life rather than tourist Thailand. Not recommended for short-stay tourists who want beach access and nightlife on foot.
+
+*Some links on this page are affiliate links. If you book through them we earn a small commission at no extra cost to you, and it never affects what we recommend — see our [affiliate disclosure](/affiliate-disclosure/).*

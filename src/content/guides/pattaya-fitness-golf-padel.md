@@ -185,7 +185,7 @@ Beyond hotel pools, Pattaya has a few options for serious lap swimming:
 
 - **Pattaya Sports Club** — 25m pool, open to non-members for a day fee
 - **Hotel day passes** — The Hilton, Centara, and Holiday Inn offer pool access from 300-500 THB
-- **Ramayana Water Park** — Not for laps, but the best water fun in the region
+- **Ramayana Water Park** — Not for laps, but the best water fun in the region (<a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F2322-ramayana-water-park-pattaya&amp;aff_label1=guide-fitness" rel="sponsored nofollow" target="_blank">tickets from ~24 USD</a>)
 
 ## Final Thoughts
 
@@ -196,3 +196,5 @@ Pattaya's fitness infrastructure rivals cities three times its size. The combina
 - [Best Beaches in Pattaya](/guides/pattaya-beaches/)
 - [Scooter Rental in Pattaya](/guides/pattaya-scooter-rental/)
 - [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)
+
+*Some links on this page are affiliate links. If you book through them we earn a small commission at no extra cost to you, and it never affects what we recommend — see our [affiliate disclosure](/affiliate-disclosure/).*

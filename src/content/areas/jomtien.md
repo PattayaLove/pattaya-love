@@ -41,13 +41,13 @@ For a bigger night out, Walking Street is a 100 to 150 THB Grab ride away. Many 
 
 Jomtien's location offers easy access to several attractions beyond the beach.
 
-**Pattaya Floating Market** is a short drive north and features canal-side shopping, food stalls, and cultural demonstrations. It is touristy but worth a visit.
+**Pattaya Floating Market** is a short drive north and features canal-side shopping, food stalls, and cultural demonstrations. It is touristy but worth a visit. <a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F2920-floating-market-pattaya&amp;aff_label1=area-jomtien" rel="sponsored nofollow" target="_blank">Entry tickets</a> run about 3 USD.
 
 **Buddha Mountain (Khao Chi Chan)** is a 20-minute drive south and features a massive laser-etched Buddha image on a cliff face. It is free to visit and makes for a good half-day trip.
 
 **Silverlake Vineyard** is nearby and offers a scenic stop with grape-tasting, photo opportunities, and a hilltop cafe overlooking the vineyard and a large lake.
 
-**Nong Nooch Tropical Garden** is one of Thailand's most impressive botanical gardens, located about 15 minutes from Jomtien by car. It includes cultural shows, gardens, and a small zoo.
+**Nong Nooch Tropical Garden** is one of Thailand's most impressive botanical gardens, located about 15 minutes from Jomtien by car. It includes cultural shows, gardens, and a small zoo. <a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F335-nong-nooch-tropical-garden-pattaya&amp;aff_label1=area-jomtien" rel="sponsored nofollow" target="_blank">Tickets</a> are around 11 USD.
 
 ## Who Jomtien Is For
 
@@ -74,3 +74,5 @@ Motorbike rental (200 to 300 THB/day) is popular in Jomtien and useful for explo
 Jomtien offers a genuine alternative to the intensity of central Pattaya. The beach is better, the pace is slower, and the value for money is hard to beat. You sacrifice the walkability to nightlife areas, but you gain a calmer, more comfortable base that is still connected to everything Pattaya offers.
 
 For first-time visitors who want to experience Walking Street and the city center, staying in central Pattaya makes sense. But for return visitors, long-stay travelers, and anyone who values beach quality and daily comfort, Jomtien is the smarter choice.
+
+*Some links on this page are affiliate links. If you book through them we earn a small commission at no extra cost to you, and it never affects what we recommend — see our [affiliate disclosure](/affiliate-disclosure/).*
