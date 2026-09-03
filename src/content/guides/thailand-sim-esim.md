@@ -1,153 +1,180 @@
 ---
 title: "Best SIM Card & eSIM for Thailand 2026 — Pattaya Internet Guide"
 slug: "thailand-sim-esim"
-description: "Which SIM card or eSIM to get for Thailand in 2026. AIS, TrueMove, DTAC packages compared, plus eSIM options, prices, and how to keep your Thai number long-term."
+description: "Which SIM or eSIM to get for Thailand. The daily throttle limits nobody publishes, why AIS sells eSIMs directly, and why most eSIM comparison sites are run by eSIM companies."
 category: "tips"
+image: "/images/areas/pattaya-city-sign.webp"
 publishDate: 2026-04-09
+updatedDate: 2026-09-03
 draft: false
 ---
 
-Having mobile data in Thailand is not optional — you need it for Grab, Google Maps, LINE (Thailand's default messaging app), and staying in touch. The good news is that Thai SIM cards are cheap, fast, and easy to get. This guide covers every option from airport SIM cards to eSIMs you can activate before you land.
+You need mobile data in Thailand. Grab, Google Maps and LINE all depend on it, and LINE in particular is not optional — hotels, restaurants and tour operators use it instead of email.
 
-## The Three Thai Providers
+The decision is smaller than most guides make it. Local SIM or eSIM, and if eSIM, which of about six providers. What actually separates them is not price, it is the daily throttle limit, and almost nobody puts that in a table.
 
-Thailand has three major mobile networks:
+Prices below were checked on **3 September 2026**. Thai operators change tourist packages several times a year and eSIM providers run near-permanent sales, so treat every figure as a starting point rather than a quote.
 
-**AIS** — the largest network with the best overall coverage, including rural areas and islands. Generally considered the most reliable choice for visitors traveling outside Bangkok and Pattaya.
+## Two Networks, Three Brands
 
-**TrueMove H** — strong coverage in urban areas and increasingly competitive with AIS. True and DTAC merged in 2023, but still operate separate brands and networks.
+The old advice about "the three Thai networks" is out of date. True and DTAC merged in 2023 into True Corporation. There are now **two networks**: AIS and True.
 
-**DTAC** — now part of the True Corporation group. DTAC's Happy Tourist SIM was long the default recommendation for visitors. Coverage is solid in cities but slightly weaker in remote areas compared to AIS.
+Three brands still sell tourist products:
 
-For Pattaya specifically, all three networks work well. You will have fast 4G/5G coverage across the city, on Koh Larn, and along the entire coast. The differences between providers only matter if you plan to travel to remote islands or national parks.
+- **AIS** — the largest network, best rural and island coverage. In Opensignal's June 2025 report on Thailand it took five outright category wins, more than anyone else.
+- **TrueMove H** — True's main brand. Strong in cities, fast 5G, full package lineup.
+- **DTAC** — now the entry-level range within True. Cheaper, and it rides the same infrastructure.
 
-## Tourist SIM Cards — Buy at the Airport
+For Pattaya itself the distinction barely matters; all of them give you fast 4G and 5G across the city and on Koh Larn. It starts to matter on remote islands and inland east of Sukhumvit, where AIS holds up best.
 
-The easiest option for most visitors. All major Thai airports have SIM card counters from AIS, TrueMove, and DTAC in the arrivals hall, staffed by English-speaking representatives who will install the card and test it before you leave.
+## Local SIM at the Airport
 
-**What you need:** Your passport. Thai law requires all SIM cards to be registered with identification.
+Still the cheapest way to get connected, and the only way to get a Thai phone number.
 
-### AIS Tourist Packages
+**Bring your passport.** Thai law requires every SIM to be registered to an identity document. The counters in the arrivals halls at Suvarnabhumi, Don Mueang and U-Tapao will install and test the card before you walk away.
 
-| Package | Data | Calls | Validity | Price |
-|---|---|---|---|---|
-| Starter | 1 GB | Pay per use | 1 day | 49 THB |
-| Traveller | Unlimited | Unlimited (AIS network) | 8 days | 299 THB |
-| Traveller | Unlimited | Unlimited (AIS network) | 15 days | 599 THB |
-| Traveller | Unlimited | Unlimited (all networks) | 30 days | 899 THB |
-| Premium | Unlimited 5G | Unlimited + intl. credit | 30 days | 1,599 THB |
+**What it costs:** tourist packages run roughly **299 to 1,199 THB** depending on validity, which is the range all the operators sit in. The cheap end is a short validity with a data allowance; the top end is a 30-day unlimited plan.
 
-AIS offers the widest range of packages and the best nationwide coverage. Their unlimited plans throttle to lower speeds after a daily fair-use amount, but for normal browsing, maps, and social media this is rarely noticeable.
+**A warning about the word "unlimited."** It is used loosely. The widely quoted 299 THB eight-day package is reported as 15 GB rather than genuinely unlimited, and the plans that are sold as unlimited apply a daily fair-use cap and then slow you down. Ask at the counter what the daily allowance is before you pick — that number matters more than the headline.
 
-### TrueMove H Tourist Packages
+We are not publishing a package-by-package price table. Operators change these several times a year, and a table that looks precise and is six months stale is worse than a range you know to verify.
 
-| Package | Data | Calls | Validity | Price |
-|---|---|---|---|---|
-| Tourist | Unlimited 5G | Unlimited + intl. credit | 8 days | 449 THB |
-| Tourist | Unlimited 5G | Unlimited + intl. credit | 15 days | 599 THB |
-| Tourist | Unlimited 5G | Unlimited + intl. credit | 30 days | 1,199 THB |
+## Local eSIM — The Option Most Guides Skip
 
-TrueMove includes free WiFi access at True hotspots and international calling credit in all tourist plans. Good choice if you need to make international calls.
+This is the gap in nearly every Thailand connectivity guide, including our own previous version: **the Thai operators sell eSIMs directly.** You do not have to choose between a physical SIM and an international reseller.
 
-### DTAC Happy Tourist SIM
+**AIS** sells tourist eSIM plans through its own online store. There are four, differing only in validity from 5 to 30 days, and all of them carry unlimited data plus unlimited calls within the AIS network. You buy online, get an activation email, and you are on Thailand's best-covered network without a reseller in the middle. You still need your passport and an eSIM-capable phone.
 
-| Package | Data | Calls | Validity | Price |
-|---|---|---|---|---|
-| Tourist | Unlimited | Unlimited + Asia calls | 8 days | 449 THB |
-| Tourist | Unlimited | Unlimited + Asia calls | 15 days | 599 THB |
-| Tourist | Unlimited | Unlimited + Asia calls | 30 days | 1,199 THB |
+**TrueMove H** also sells eSIM plans, reported at around $10 for 10 GB and $12 for 50 GB over 10 days.
 
-DTAC includes free minutes to several Asian countries (China, Hong Kong, South Korea, India, and others), making it interesting if you travel the region. No international call credit to Western countries though.
+**Why this matters:** international eSIM providers do not run their own networks in Thailand. They resell AIS, TrueMove or DTAC capacity. Buying directly from the operator cuts out that layer, usually gets you more data for the money, and puts you on a known network rather than whichever one the reseller negotiated.
 
-### Our Pick
+The trade-off is convenience. Reseller apps are slicker, support is in your language, and you can buy in your own currency without a Thai payment method. If that is worth a few dollars to you, the section below is for you.
 
-**AIS** is what we use and recommend. Best coverage, most flexible packages, and the most reliable network for Pattaya and the surrounding area. The 15-day unlimited plan at 599 THB hits the sweet spot for most visitors.
+## International eSIMs, Compared
+
+Prices as of 3 September 2026, for the common 10 GB / 30 days plan.
+
+| Provider | 10 GB / 30 days | Network used | Daily cap |
+|---|---|---|---|
+| Nomad | $10.00 | AIS + DTAC | 2 GB, then 512 kbps |
+| Saily | $10.99 | — | 5 GB |
+| Airalo | $11.00 | AIS + TrueMove H | 3 GB, then ~1 Mbps |
+| Ubigi | $12.00 | AIS + TrueMove H | None |
+
+For larger allowances, Airalo's 20 GB / 30 days is around $18 and Saily's around $19.99.
+
+**On unlimited plans:** Holafly runs on TrueMove H and DTAC and prices 30 days at about $73.90 — roughly $2.46 a day, and close to triple what a 20 GB fixed plan costs. It does not publish its throttle policy. Nomad has offered 10 days unlimited at around $16 on sale.
+
+### The throttle limit is the real difference
+
+Read that last column again, because it decides your experience more than the price does.
+
+**Ubigi is the only provider in this group with no daily cap.** Everyone else slows you down after a set amount each day, and Nomad's 2 GB then 512 kbps is restrictive if you use maps and video.
+
+Two GB sounds generous until you spend a day navigating with Google Maps, video-calling home and scrolling social media on a hotspot. If you are working remotely or sharing a connection, the cap matters far more than four dollars of headline price.
+
+### A note on where eSIM rankings come from
+
+Search "best eSIM for Thailand" and most of the top results are published by eSIM companies. Saily runs comparisons of Airalo and Holafly. Nomad publishes a "best eSIM for Thailand" guide. Holafly reviews AIS.
+
+They are not necessarily wrong, and the underlying prices are usually accurate. But a ranking written by a company that sells one of the options is not a neutral ranking, and the recommendation at the bottom is rarely a surprise. Check the throttle limit and the network yourself.
+
+We have no affiliate relationship with any eSIM provider. If that changes, it will say so on this page.
+
+## Which One Should You Actually Get
+
+**Get a local SIM at the airport if** you are staying more than about a week, or you want a Thai phone number. You need a Thai number for Grab and food delivery registration, and it is what hotels and restaurants will ask for. It is also the cheapest option.
+
+**Get an AIS eSIM directly if** your phone supports eSIM and you want the best network without the airport queue. This is the option we would pick for a two-week trip.
+
+**Get an international eSIM if** you are here a few days, want data working the moment the plane lands, or do not want to deal with a Thai storefront. Pick on the daily cap, not the price.
+
+**Get both if** you are here for a longer stay: an eSIM for the first day, a local SIM once you have settled and can visit a shop without your luggage.
+
+| | Local SIM | Operator eSIM | Reseller eSIM |
+|---|---|---|---|
+| **Cost** | Lowest | Low | Higher |
+| **Thai number** | Yes | Usually | No |
+| **Setup** | Passport, at a counter | Online, passport needed | Online, minutes |
+| **Network choice** | Yours | Yours | Whatever they resell |
+| **Best for** | Longer stays | Two weeks plus, eSIM phone | Short trips |
 
 ## Buying a SIM Outside the Airport
 
-If you did not grab a SIM at the airport, you have plenty of options in Pattaya:
+If you did not grab one on arrival:
 
-**7-Eleven** — Most branches sell prepaid SIM cards. The staff can help with activation, though English skills vary. Bring your passport.
+**7-Eleven** — most branches sell prepaid SIMs. Staff can usually help with activation, though English varies. Bring your passport.
 
-**Provider shops** — AIS, True, and DTAC all have branded shops in Terminal 21, Central Festival, and along major roads in Pattaya. These are the best option if you need help choosing a plan or have technical issues.
+**Operator shops** — AIS, True and DTAC all have branded stores in Terminal 21, Central Festival and along the main roads. Best option if you want help choosing or hit a technical problem.
 
-**Street vendors** — Some tourist areas have small phone shops selling SIM cards. Prices and legitimacy vary. Stick to official shops or 7-Eleven.
+**Street phone shops** — prices and legitimacy vary. Stick to official shops or 7-Eleven.
 
-## eSIM — Activate Before You Land
+## If You Are Here for Tomorrowland
 
-If your phone supports eSIM (most iPhones since XR, recent Samsung Galaxy and Google Pixel models), you can buy a Thailand data plan online and activate it before your flight. No physical card, no airport queue, no passport registration hassle.
+Sort this before the festival week, not during it.
 
-### Airalo
+You need data for the shuttle, for Grab at closing time, for maps on a 237-acre site, and for topping up your festival bracelet. Network congestion inside a crowd of 50,000 is real, so agree a meeting point with your group and a fallback that does not depend on a live connection.
 
-The budget-friendly option with flexible plans.
-
-- **1 GB / 7 days:** $4.50
-- **10 GB / 30 days:** $15
-- **20 GB / 30 days:** $24
-- **Unlimited / 15 days:** $19.95 (includes calls and SMS)
-
-Airalo uses the TrueMove/DTAC network in Thailand. Good city coverage, works well in Pattaya. Best value if you know roughly how much data you will use.
-
-### Holafly
-
-The "don't think about it" option with unlimited data.
-
-- **1 day:** $3.90
-- **5 days:** $19.50
-- **10 days:** $36.90
-- **20 days:** $62
-- **30 days:** $69
-
-Holafly offers truly unlimited data with no GB caps, but hotspot sharing is limited to 500 MB per day. They may throttle speeds after heavy usage under their fair-use policy. Good for heavy users who stream video or work remotely.
-
-### eSIM vs. Local SIM — Which to Choose?
-
-| | Local SIM | eSIM |
-|---|---|---|
-| **Price** | Cheaper (299–899 THB) | More expensive ($15–69) |
-| **Setup** | Need passport, 10 min at airport | Buy online, instant activation |
-| **Thai phone number** | Yes | Usually no |
-| **Calls** | Included | Data only (mostly) |
-| **Top up** | Easy, at any 7-Eleven | Buy new plan |
-| **Best for** | Longer stays, need Thai number | Short trips, convenience |
-
-**Get a local SIM if:** You stay more than a week, want a Thai phone number (needed for LINE, Grab registration, food delivery apps), or plan to return to Thailand regularly.
-
-**Get an eSIM if:** You are visiting for a few days, hate airport queues, or want data working the moment you land.
+The airport counters will be busy in the days before 11 December. An eSIM activated before you fly avoids that entirely — see our [Tomorrowland packing guide](/guides/tomorrowland-packing-guide/) for the rest of the practical list.
 
 ## Keeping Your Thai Number Long-Term
 
-If you visit Thailand regularly, keeping a Thai SIM card active between trips is easy and costs almost nothing.
+If you visit Thailand regularly, keeping a Thai SIM alive between trips costs almost nothing.
 
-**The rule is simple:** Every top-up extends your SIM validity by 30 days. The minimum top-up is just 10 THB — enough to keep the card alive for another month. As long as you top up at least once within the validity period, your number stays active.
+**The rule is simple:** every top-up extends validity by 30 days, and the minimum top-up is 10 THB. Top up once within the validity window and the number stays active.
 
-**Maximum validity is 12 months.** If your SIM goes 12 months without any activity (no top-up, no call, no data usage), the number is permanently deleted and cannot be recovered. Your remaining credit is also lost.
+**Maximum validity is 12 months.** If the SIM sees no activity for 12 months — no top-up, no call, no data — the number is permanently deleted along with any remaining credit.
 
-**How to top up from abroad:** Use the provider's app (myAIS, True iService, or DTAC app) with an international credit card, or use services like MobileTopup.com to send credit remotely. This means you can keep your Thai number alive from anywhere in the world for roughly 120 THB per year (10 THB per month).
+**Topping up from abroad:** use the operator app (myAIS, True iService, the DTAC app) with an international card, or a remote top-up service. Roughly 120 THB a year keeps a Thai number alive from anywhere.
 
-**Why bother?** Having a consistent Thai phone number means your Grab account, LINE contacts, food delivery apps, and banking registrations all stay intact between trips. It also means you arrive with a working phone number rather than starting fresh every time.
+**Why bother:** your Grab account, LINE contacts, delivery apps and any banking registration stay intact between trips, and you land with a working number instead of starting over.
 
-We use AIS and top up every few months to keep the number active. After years of visits, having the same Thai number makes everything smoother — Grab drivers can call you, restaurants can confirm reservations, and your LINE contacts stay connected.
+We use AIS and top up every few months. After years of visits, the same number makes everything smoother — drivers can call you, restaurants can confirm bookings, and your LINE contacts stay connected.
 
-## Data Speed and Coverage in Pattaya
+## Coverage in Pattaya
 
-Pattaya has excellent mobile coverage. All three networks deliver fast 4G/LTE throughout the city, and 5G is available in central areas and malls. Typical speeds:
+Coverage across the city is genuinely good on both networks.
 
-- **4G in Pattaya:** 20 to 80 Mbps download, more than enough for video calls and streaming
-- **5G in Pattaya:** 100 to 300 Mbps where available (Terminal 21, Central Festival, Beach Road area)
-- **Koh Larn:** 4G coverage from all networks, though speeds are lower than the mainland
-- **Rural areas east of Sukhumvit:** Coverage thins out in some spots, AIS is the most reliable here
+- **4G in Pattaya:** roughly 20 to 80 Mbps, ample for video calls and streaming
+- **5G:** 100 to 300 Mbps where available — Terminal 21, Central Festival, the Beach Road area
+- **Koh Larn:** 4G from both networks, slower than the mainland
+- **Inland east of Sukhumvit:** thins out in places, and AIS is the most reliable there. Worth knowing if you are heading to Wisdom Valley in December
 
 ## Quick Tips
 
-- **Unlock your phone before traveling.** Carrier-locked phones from some countries will not accept Thai SIM cards. Check with your provider before departure or use eSIM.
-- **Dual SIM phones** let you keep your home number active for receiving SMS (bank verification codes, etc.) while using a Thai SIM for data. Most modern phones support this.
-- **Download offline maps** in Google Maps for the Pattaya area before your trip, as a backup in case you have any connectivity gaps.
-- **WiFi is everywhere** in Pattaya — hotels, restaurants, malls, and even most bars offer free WiFi. But having mobile data for Grab and navigation while walking or riding is essential.
-- **LINE is Thailand's WhatsApp.** Everyone uses it — hotels, restaurants, tour operators, even government services. Register with your Thai number to get the full experience.
+- **Unlock your phone before travelling.** Carrier-locked handsets will not take a Thai SIM. Check before departure, or use an eSIM.
+- **Dual SIM** lets you keep your home number live for bank verification codes while running Thai data.
+- **Download offline maps** for the Pattaya area as a backup.
+- **WiFi is everywhere** — hotels, malls, restaurants, most bars. Mobile data is for when you are moving.
+- **LINE is Thailand's WhatsApp.** Register with your Thai number to get the full benefit.
+
+## Frequently Asked Questions
+
+### Is a local SIM or an eSIM cheaper in Thailand?
+
+A local SIM, usually by a wide margin. Tourist packages run 299 to 1,199 THB; international eSIMs start around $10 for 10 GB.
+
+### Can I buy an eSIM directly from a Thai operator?
+
+Yes. AIS sells tourist eSIM plans through its own store with validity from 5 to 30 days, and TrueMove H sells eSIMs too. This is usually better value than a reseller and puts you on a known network.
+
+### Which eSIM has no daily data limit?
+
+Of the main providers, Ubigi is the one that does not apply a daily cap. Airalo caps at 3 GB per day, Saily at 5 GB, and Nomad at 2 GB before throttling to 512 kbps.
+
+### Do I need a Thai phone number?
+
+For Grab and food delivery registration, effectively yes. Most data-only eSIMs do not give you one.
+
+### Which network is best for Pattaya?
+
+Any of them in the city. AIS if you are heading to islands or inland east of Sukhumvit.
 
 ## Related Guides
 
 - [First Time in Pattaya](/guides/first-time-pattaya/)
+- [Tomorrowland Thailand 2026: The Full Guide](/guides/tomorrowland-pattaya-2026/)
+- [Thai Banking and QR Payments](/guides/thai-banking-qr-payments/)
 - [Bangkok to Pattaya Transport](/guides/bangkok-to-pattaya/)
 - [Currency Converter](/tools/currency-converter/)
