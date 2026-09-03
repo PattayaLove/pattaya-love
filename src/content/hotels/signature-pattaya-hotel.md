@@ -23,7 +23,7 @@ Signature Pattaya Hotel is a mid-range hotel in the Central Pattaya area. It rat
 
 ## Location
 
-The address is 561 หมู่ที่ 10, Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 10 baht, which makes getting around without a scooter straightforward.
+The address is 561 หมู่ที่ 10, Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 15 baht, which makes getting around without a scooter straightforward.
 
 ## Getting There
 

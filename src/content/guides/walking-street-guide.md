@@ -116,7 +116,7 @@ Walking Street is well-policed and generally very safe. That said, a few precaut
 
 Walking Street is at the southern end of Beach Road in South Pattaya.
 
-- **Baht bus:** Take any baht bus heading south along Beach Road. Tell the driver "Walking Street" or press the buzzer when you see the arch entrance. Cost: 10 THB.
+- **Baht bus:** Take any baht bus heading south along Beach Road. Tell the driver "Walking Street" or press the buzzer when you see the arch entrance. Cost: 15 THB.
 - **Grab:** A Grab car or motorbike from central Pattaya costs 50 to 100 THB.
 - **On foot:** If your hotel is on Beach Road or Second Road in South Pattaya, Walking Street is likely within walking distance.
 

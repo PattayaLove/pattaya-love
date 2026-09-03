@@ -23,7 +23,7 @@ Mytt Hotel Pattaya is a upper-tier hotel in the Central Pattaya area. It rates w
 
 ## Location
 
-The address is 10 หมู่ 9 Pattaya Soi 3, Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 10 baht, which makes getting around without a scooter straightforward.
+The address is 10 หมู่ 9 Pattaya Soi 3, Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 15 baht, which makes getting around without a scooter straightforward.
 
 ## Getting There
 

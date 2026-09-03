@@ -23,7 +23,7 @@ Rated 4.2/5 from 2,562 Google reviews, Sunbeam Hotel Pattaya holds a dependable 
 
 ## Location
 
-The address is 217 27, Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 10 baht, which makes getting around without a scooter straightforward.
+The address is 217 27, Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 15 baht, which makes getting around without a scooter straightforward.
 
 ## Getting There
 

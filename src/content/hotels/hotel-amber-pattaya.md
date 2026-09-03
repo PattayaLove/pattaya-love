@@ -23,7 +23,7 @@ Set in the Central Pattaya area, Hotel Amber Pattaya is a mid-range hotel. It ra
 
 ## Location
 
-You will find it at 399/9-10 หมู่ที่ 9 Pattaya 3rd Rd in Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 10 baht, which makes getting around without a scooter straightforward.
+You will find it at 399/9-10 หมู่ที่ 9 Pattaya 3rd Rd in Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 15 baht, which makes getting around without a scooter straightforward.
 
 ## Getting There
 

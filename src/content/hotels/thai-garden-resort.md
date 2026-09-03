@@ -23,7 +23,7 @@ Rated 4.5/5 from 1,798 Google reviews, Thai Garden Resort reviews well across th
 
 ## Location
 
-You will find it at หมู่ที่ 5 179/168 N Pattaya Rd in Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 10 baht, which makes getting around without a scooter straightforward.
+You will find it at หมู่ที่ 5 179/168 N Pattaya Rd in Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 15 baht, which makes getting around without a scooter straightforward.
 
 ## Getting There
 

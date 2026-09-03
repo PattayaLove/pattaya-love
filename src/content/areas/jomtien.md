@@ -65,7 +65,7 @@ Jomtien appeals to a broad range of visitors.
 
 From Suvarnabhumi Airport, direct transfers to Jomtien take about 2 to 2.5 hours and cost 1,500 to 2,500 THB. From central Pattaya, a Grab ride to Jomtien runs 80 to 150 THB.
 
-Baht buses run along Jomtien Beach Road for 10 THB per ride. For getting to central Pattaya, baht buses travel over the Pratumnak hill, or you can use Grab for a fixed-price ride.
+Baht buses run along Jomtien Beach Road for 15 THB per ride. For getting to central Pattaya, baht buses travel over the Pratumnak hill, or you can use Grab for a fixed-price ride.
 
 Motorbike rental (200 to 300 THB/day) is popular in Jomtien and useful for exploring the surrounding attractions.
 

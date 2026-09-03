@@ -42,7 +42,7 @@ const num = (n) => Number(n || 0).toLocaleString('en-US');
 // ── Area notes: factual, no hotel-specific claims ──
 const AREA = {
   'Central Pattaya': [
-    'Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 10 baht, which makes getting around without a scooter straightforward.',
+    'Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 15 baht, which makes getting around without a scooter straightforward.',
     'The central district sits between Beach Road and Third Road, with Central Festival mall as the main landmark. Walking Street is roughly ten minutes south by baht bus, and the Soi Buakhao area with its night market is a short walk inland.',
     'Central Pattaya is the most connected part of the city: shopping at Central Festival, the beach a few blocks west, and the Soi Buakhao bar area inland. Baht buses circulate constantly along the one-way Beach Road–Second Road loop.',
   ],

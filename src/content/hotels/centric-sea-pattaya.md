@@ -20,7 +20,7 @@ Centric Sea Pattaya occupies one of the most desirable positions in the city, si
 
 The building is located on Pattaya Beach Road, which means the beach is literally across the street. Central Festival, Pattaya's largest shopping mall, is a five to seven minute walk south. The Hilton Pattaya, for reference, sits atop Central Festival, so Centric Sea shares essentially the same neighborhood advantages.
 
-Beach Road provides easy access to baht buses that run the length of Pattaya for 10 THB, connecting you to Walking Street in the south and Naklua in the north. Grab rides to anywhere in the central area rarely exceed 100 THB. The location is genuinely central, and this is reflected in both rental demand and pricing.
+Beach Road provides easy access to baht buses that run the length of Pattaya for 15 THB, connecting you to Walking Street in the south and Naklua in the north. Grab rides to anywhere in the central area rarely exceed 100 THB. The location is genuinely central, and this is reflected in both rental demand and pricing.
 
 ## The Building
 

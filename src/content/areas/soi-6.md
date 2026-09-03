@@ -74,7 +74,7 @@ Some bar groups have minimum lady drink requirements before barfines, others don
 - **Dress code: none.** Tank tops, shorts, and flip-flops are perfectly fine. Soi 6 is as casual as Pattaya gets.
 - **Pace yourself.** Cheap beer and good company have a way of turning afternoon drinks into an all-day session. Stay hydrated and eat something.
 - **Be respectful.** The staff create the atmosphere. Treat everyone with basic courtesy and you'll be welcomed back warmly.
-- **Grab and baht buses** work well for getting here. Baht buses along Beach Road or Second Road are 10 THB. Grab from anywhere in Pattaya is rarely more than 80 THB.
+- **Grab and baht buses** work well for getting here. Baht buses along Beach Road or Second Road are 15 THB. Grab from anywhere in Pattaya is rarely more than 80 THB.
 
 ## Where to Stay Nearby
 

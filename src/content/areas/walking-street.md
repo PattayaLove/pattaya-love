@@ -59,7 +59,7 @@ For more options across every budget, see our [hotels near Soi 6 guide](/guides/
 
 Walking Street is at the southern end of Beach Road. The entrance is marked by a large illuminated arch that is impossible to miss.
 
-- **Baht bus:** Any baht bus heading south on Beach Road will pass the entrance. Cost: 10 THB. Press the buzzer and tell the driver "Walking Street."
+- **Baht bus:** Any baht bus heading south on Beach Road will pass the entrance. Cost: 15 THB. Press the buzzer and tell the driver "Walking Street."
 - **Grab:** A ride from central Pattaya costs 50 to 100 THB.
 - **On foot:** From hotels in South Pattaya, Walking Street is usually within walking distance along Beach Road.
 

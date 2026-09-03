@@ -19,7 +19,7 @@ View Talay 6 is one of the most iconic residential buildings in Pattaya. Positio
 
 The building sits on Beach Road in central Pattaya, directly across from the beach. Central Festival shopping mall is roughly a five-minute walk south, which means you have immediate access to one of Thailand's best shopping complexes along with all its restaurants, cinema, and supermarket facilities.
 
-The beachfront promenade is at your doorstep, and baht buses running along Beach Road connect you to every part of Pattaya for 10 THB. Walking Street is a 15-minute ride south. Soi 6 and the Soi Buakhao nightlife area are easily accessible heading east. For a serviced apartment, the location is essentially unbeatable.
+The beachfront promenade is at your doorstep, and baht buses running along Beach Road connect you to every part of Pattaya for 15 THB. Walking Street is a 15-minute ride south. Soi 6 and the Soi Buakhao nightlife area are easily accessible heading east. For a serviced apartment, the location is essentially unbeatable.
 
 ## The Building
 

@@ -23,7 +23,7 @@ Rated 4.5/5 from a large sample of 5,297 Google reviews, Cape Dara Resort Pattay
 
 ## Location
 
-The hotel is at 256, 256 Na Kluea 20 Alley, in Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 10 baht, which makes getting around without a scooter straightforward.
+The hotel is at 256, 256 Na Kluea 20 Alley, in Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 15 baht, which makes getting around without a scooter straightforward.
 
 ## Getting There
 

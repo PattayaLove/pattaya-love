@@ -23,7 +23,7 @@ Beston Pattaya Hotel is a mid-range hotel in the Central Pattaya area. It holds 
 
 ## Location
 
-You will find it at 321 11 Tambol in Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 10 baht, which makes getting around without a scooter straightforward.
+You will find it at 321 11 Tambol in Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 15 baht, which makes getting around without a scooter straightforward.
 
 ## Getting There
 

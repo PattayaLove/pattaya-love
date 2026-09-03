@@ -50,7 +50,7 @@ For casual dining, the Central Festival food court downstairs offers dozens of T
 
 ## Nightlife Access
 
-Despite its upscale positioning, the Hilton is well-situated for Pattaya's nightlife. A baht bus from the front of Central Festival takes you to Walking Street in under 15 minutes for 10 THB. Grab rides to any nightlife area cost between 50 and 150 THB.
+Despite its upscale positioning, the Hilton is well-situated for Pattaya's nightlife. A baht bus from the front of Central Festival takes you to Walking Street in under 15 minutes for 15 THB. Grab rides to any nightlife area cost between 50 and 150 THB.
 
 The hotel itself maintains a discreet approach to guest-friendly policies. While it technically requires guest registration for visitors, enforcement is inconsistent, and most guests report no issues. It is not as explicitly guest-friendly as smaller hotels, but it is far from restrictive.
 

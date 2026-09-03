@@ -23,7 +23,7 @@ Garden Sea View Resort is a upper-tier resort hotel in the Central Pattaya area.
 
 ## Location
 
-The address is 207 1 M.5 Pattaya-Na Kluea Rd, Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 10 baht, which makes getting around without a scooter straightforward.
+The address is 207 1 M.5 Pattaya-Na Kluea Rd, Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 15 baht, which makes getting around without a scooter straightforward.
 
 ## Getting There
 

@@ -137,7 +137,7 @@ Despite the QR revolution, cash is still king in many situations:
 ### Where You Still Need Cash
 
 - Street food vendors (some have QR, many don't)
-- Baht buses (10 THB, cash only)
+- Baht buses (15 THB, cash only)
 - Small bars on [Soi 6](/areas/soi-6/) (most are cash-only)
 - Market vendors
 - Tipping

@@ -23,7 +23,7 @@ Holiday Inn Pattaya by IHG is a mid-range hotel in the Central Pattaya area. It 
 
 ## Location
 
-The hotel is at 463/68, 463/99, หมู่ที่ 9 Pattayasainueang, in Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 10 baht, which makes getting around without a scooter straightforward.
+The hotel is at 463/68, 463/99, หมู่ที่ 9 Pattayasainueang, in Central Pattaya. Central Pattaya puts Central Festival, the Beach Road promenade and the bar strips along Soi Buakhao within a short baht bus ride. Songthaews run the Beach Road–Second Road loop for 15 baht, which makes getting around without a scooter straightforward.
 
 ## Getting There
 
