@@ -4,6 +4,7 @@ slug: "pattaya-new-developments"
 description: "Every major condo project under construction in Pattaya right now. From ultra-luxury beachfront towers to affordable high-rises — prices, floors, completion dates, and what to expect."
 category: "tips"
 publishDate: 2026-04-07
+updatedDate: 2026-09-03
 draft: false
 ---
 
@@ -63,6 +64,59 @@ The tallest tower in North Pattaya at 56 floors, Once Wongamat has been generati
 Every unit comes with 100% sea views — a bold promise that the building's design and Wongamat's coastal orientation make possible. Units range from one-bedroom to three-bedroom configurations. Facilities include an infinity pool with ocean views, sky lounge, fitness center, spa and sauna, onsen baths, a mini theater, indoor kids zone, and 24-hour concierge service. The panoramic views from the upper floors — looking out over the Gulf of Thailand, Koh Larn, and the Pattaya skyline — will be among the best in the city.
 
 The sales gallery is open on-site next to the construction site on Pattaya-Na Kluea Road. The project also promotes eligibility for the Thailand Privilege Visa program (20+ year long-term visa), which is increasingly used by foreign property buyers to secure long-term residency.
+
+### Soondri Wongamat
+
+The most contested project on the Wongamat coast right now, and the one that needs the most context before anyone signs anything.
+
+**Project details:**
+
+- **Developer:** Craftsky Development Co., Ltd.
+- **Location:** Soi 16, Wongamat Beach, Naklua — beachfront plot between Park Beach Condominium and Wong Amat Tower
+- **Storeys:** 53 (main tower)
+- **Plot size:** 7,904.40 sqm, and notably narrow
+- **Total units:** 289 — 275 residential, 14 commercial
+- **Construction period:** Approximately 36 months
+- **EIA status:** In process. Project information was published in February 2026 as part of the environmental impact assessment, and hearings were still ahead
+- **Ownership:** Not published at the time of writing
+- **Price range:** Not published. The developer's own enquiry form offers budget bands from 9 million to over 150 million THB
+
+Beyond the tower, the plan includes a separate pet-friendly residential building, a standalone pool building with four basement levels, and three lower residential buildings of two and three storeys.
+
+**The history matters here.** This is the same plot where, twelve years earlier, Kingdom Property Public Limited failed to secure a building permit for a 52-storey tower called Mustique Wongamat Beach. The land sat undeveloped afterwards. In late January 2026 an excavator cleared the park-like site and its mature trees, demolishing a long-standing beach villa and its outbuildings; the project brochure reached neighbouring residents days later through the EIA process.
+
+**And there is organised opposition.** Residents of six neighbouring developments — among them Park Beach Condominium, Wong Amat Tower, Wong Amat Garden Beach Resort & Condominium and Silver Beach — have publicly criticised the plans. Their argument, as [reported by Der Farang](https://der-farang.com/de/pages/neues-condo-projekt-spaltet-wongamat), is pointed: the open gap between the existing buildings currently provides spacing, air circulation and sight lines to the sea, and a tower in that gap would remove exactly the privacy, nature and views the project markets. The condominium managements have said they will review the documents, submit statements and take part in the EIA hearings.
+
+None of that makes the project a bad buy. The plot is genuinely prime, the location is the best stretch of Wongamat, and objections to Pattaya towers are not unusual. But an EIA that is still open is a real variable in an off-plan purchase, and a buyer should price that in rather than discover it later. Ownership structure and foreign quota were not published — establish both in writing, and have a Thai property lawyer review the contract before any deposit. This is not legal advice.
+
+### LOVE IT Wongamat Beach
+
+A volume project at the accessible end of the market, and the naming deserves a note.
+
+**Project details:**
+
+- **Developer:** Global Top Group
+- **Location:** Na Kluea. The developer describes it as five minutes from Wongamat Beach — this is a near-beach project, not a beachfront one
+- **Storeys:** 24
+- **Land:** 5.5 Rai
+- **Total units:** 746
+- **Expected completion:** Reported as around 2029–2030
+- **Price range:** From approximately 2.34 to 5.2 million THB
+- **Status:** Pre-sale open
+
+**Unit types:**
+
+| Type | Bedrooms | Size |
+|---|---|---|
+| Studio | — | from 26 sqm |
+| Standard | 1 | approx. 39 sqm |
+| Standard | 2 | approx. 52 sqm |
+
+The positioning is wellness-led, with the usual resort facility set. Global Top Group has been building in Thailand for over 40 years and lists PropertyGuru Thailand Property Awards recognition.
+
+**Read the name carefully.** Wongamat's premium comes from beachfront scarcity, and this project carries the Wongamat name while sitting a five-minute drive back from the sand. That is not a criticism — a 26 sqm studio at 2.34 million THB is a different proposition from a beachfront tower and is priced accordingly. It is only a problem if you compare it against Once Wongamat or Riviera Palm Beach on price and conclude it is a bargain. It is a different product.
+
+At 746 units, resale and rental supply will be substantial when the building completes. If your case rests on rental yield, model it against the whole building coming to market at once rather than against today's Wongamat rents. Verify the ownership structure and foreign quota in writing before committing.
 
 ## Central Pattaya
 
