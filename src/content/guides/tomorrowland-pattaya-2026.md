@@ -49,6 +49,8 @@ Face value at that sale:
 | Full Madness Pass (all three days) | 12,500 THB |
 | Full Madness Comfort Pass (VIP) | 20,200 THB |
 
+**One rule to check before anything else: the minimum age is 20, not 18**, and it goes by your birthday rather than your birth year. Mixed-age group, check every passport now.
+
 Those were the original prices, not what you will pay now. Treat them as the benchmark for judging whether an offer you find is reasonable or predatory.
 
 ### The two legitimate routes left
@@ -64,6 +66,8 @@ Those were the original prices, not what you will pay now. Treat them as the ben
 Do not buy from third-party resale sites. Tomorrowland passes are personalised, and the organisation cancels tickets that change hands outside its own exchange. You find out at the gate, after the flight and the hotel are already paid for. If a listing does not live on tomorrowland.com, assume the money is gone.
 
 We have no affiliate relationship with any ticket seller and we are not going to send you to one.
+
+What each pass tier actually includes, whether Comfort is worth it, and how the cashless Pearls system works: [Tomorrowland tickets](/guides/tomorrowland-tickets/).
 
 ## Wisdom Valley: Where It Actually Is
 
@@ -119,6 +123,8 @@ The practical consequence: you are packing for heat during the day and for a gen
 
 ## What to Pack
 
+Short version below. The [full packing guide](/guides/tomorrowland-packing-guide/) covers what December nights actually feel like inland, the cashless site, and the insurance exclusions worth reading before you fly.
+
 - Lightweight, breathable clothing — cotton or moisture-wicking
 - One warm layer for the night stages
 - Closed shoes with grip, not sandals
@@ -132,7 +138,7 @@ The practical consequence: you are packing for heat during the day and for a gen
 
 ## The Days Around the Festival
 
-Flying this far for three days would be a waste. A few things worth building the trip around:
+Flying this far for three days would be a waste. We have a [day-by-day plan for the week around the festival](/guides/tomorrowland-pattaya-itinerary/); the short version:
 
 [Koh Larn](/guides/koh-larn-island-guide/) is a 30-minute ferry from Bali Hai pier and the fastest way to a proper beach day. Go on one of the days before the festival, not after.
 
@@ -193,6 +199,9 @@ Yes, with the usual precautions for any large tourist city: watch your belonging
 
 - [Where to Stay by Distance to Wisdom Valley](/guides/tomorrowland-hotels-wisdom-valley/)
 - [Getting to Tomorrowland: Airports and the Last 20 km](/guides/tomorrowland-getting-there/)
+- [Tomorrowland Tickets: The Four Tiers and the Age Rule](/guides/tomorrowland-tickets/)
+- [What to Pack and What Nobody Tells You](/guides/tomorrowland-packing-guide/)
+- [The Days Around the Festival](/guides/tomorrowland-pattaya-itinerary/)
 - [Where to Stay in Pattaya](/stay/)
 - [Bangkok to Pattaya: Every Route Compared](/guides/bangkok-to-pattaya/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)

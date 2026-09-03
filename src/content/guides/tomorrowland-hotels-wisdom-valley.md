@@ -172,6 +172,7 @@ You could, but three round trips of 90 minutes each way, ending in the early hou
 
 - [Tomorrowland Thailand 2026: The Full Guide](/guides/tomorrowland-pattaya-2026/)
 - [Getting to Tomorrowland: Airports and the Last 20 km](/guides/tomorrowland-getting-there/)
+- [The Days Around the Festival](/guides/tomorrowland-pattaya-itinerary/)
 - [Bangkok to Pattaya: Every Route Compared](/guides/bangkok-to-pattaya/)
 - [Where to Stay in Pattaya](/stay/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)

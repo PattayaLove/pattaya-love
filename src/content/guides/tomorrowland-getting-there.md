@@ -131,5 +131,6 @@ Roughly 90 minutes from Suvarnabhumi via Motorway 7 in normal conditions. Festiv
 
 - [Tomorrowland Thailand 2026: The Full Guide](/guides/tomorrowland-pattaya-2026/)
 - [Where to Stay by Distance to Wisdom Valley](/guides/tomorrowland-hotels-wisdom-valley/)
+- [The Days Around the Festival](/guides/tomorrowland-pattaya-itinerary/)
 - [Bangkok to Pattaya: Every Route Compared](/guides/bangkok-to-pattaya/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)
