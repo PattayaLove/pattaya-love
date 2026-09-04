@@ -45,24 +45,11 @@ Most mid-range and luxury hotels have fitness centers. The [Hilton](/stay/hilton
 
 ### Muay Thai & Boxing
 
-Pattaya has several excellent Muay Thai gyms offering everything from tourist-friendly beginner classes to serious fighter training.
+Pattaya has been a Muay Thai destination for decades, with Fairtex in Bang Lamung the best-known camp and several smaller gyms besides. Sessions start around 400 THB and monthly training runs roughly 10,000 to 15,000 THB, with accommodation packages costing considerably more.
 
-#### Fairtex Training Center
+Training also qualifies for Thailand's five-year DTV visa, which is why a lot of long-stayers end up here. That has its own complications, including a market selling visa letters dressed up as training packages, and two requirements added on 31 August 2026. It is all in our [Muay Thai guide](/guides/muay-thai-pattaya/).
 
-One of the most famous Muay Thai gyms in the world, located in North Pattaya/Soi [Naklua](/areas/naklua/) area. Fairtex has produced multiple world champions and offers training for all levels.
-
-- **Single session:** 500-800 THB
-- **Weekly package:** 3,000-4,000 THB
-- **Monthly:** 10,000-15,000 THB
-- **Includes:** Group classes, pad work, bag work, sparring (advanced)
-- **Accommodation:** On-site rooms available for training camps
-
-#### Pattaya Boxing World
-
-Another solid option for Muay Thai training. More intimate than Fairtex, with personalized attention from experienced trainers.
-
-- **Single session:** 400-600 THB
-- **Best for:** Beginners and intermediate fighters
+One correction worth making: **Pattaya Boxing World** is a stadium rather than a training gym — 600 seats, fights nightly from 20:00. Go to watch.
 
 ### CrossFit
 
