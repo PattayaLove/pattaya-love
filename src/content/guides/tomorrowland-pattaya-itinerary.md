@@ -111,6 +111,7 @@ No. The festival ends late Sunday. Give yourself Monday to recover and fly Tuesd
 - [Tomorrowland Thailand 2026: The Full Guide](/guides/tomorrowland-pattaya-2026/)
 - [Getting to Tomorrowland: Airports and the Last 20 km](/guides/tomorrowland-getting-there/)
 - [Koh Larn Island Guide](/guides/koh-larn-island-guide/)
+- [Christmas and New Year in Pattaya](/guides/christmas-new-year-pattaya/) — if you are extending past the festival
 - [Best Beaches in Pattaya](/guides/pattaya-beaches/)
 
 *Some links on this page are affiliate links. If you book through them we earn a small commission at no extra cost to you, and it never affects what we recommend — see our [affiliate disclosure](/affiliate-disclosure/).*
