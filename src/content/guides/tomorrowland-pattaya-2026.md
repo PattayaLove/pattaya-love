@@ -6,6 +6,7 @@ category: "general"
 image: "/images/areas/bali-hai-sunset.webp"
 publishDate: 2026-04-04
 updatedDate: 2026-09-03
+pricesCheckedAt: 2026-09-03
 event:
   name: "Tomorrowland Thailand 2026"
   startDate: 2026-12-11

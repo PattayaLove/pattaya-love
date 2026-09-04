@@ -6,6 +6,7 @@ category: "lifestyle"
 image: "/images/areas/pattaya-panorama.webp"
 publishDate: 2026-09-04
 updatedDate: 2026-09-04
+pricesCheckedAt: 2026-09-04
 draft: false
 ---
 

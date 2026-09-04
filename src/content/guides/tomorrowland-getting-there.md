@@ -6,6 +6,7 @@ category: "transport"
 image: "/images/areas/pattaya-city-sign.webp"
 publishDate: 2026-09-03
 updatedDate: 2026-09-03
+pricesCheckedAt: 2026-09-03
 draft: false
 ---
 

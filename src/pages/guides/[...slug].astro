@@ -41,6 +41,14 @@ const categoryColors: Record<string, string> = {
   lifestyle: 'bg-navy text-white',
 };
 
+/* Price stamps older than this are shown in amber — a visible nudge for us and
+   an honest signal for the reader. */
+const PRICE_STALE_DAYS = 180;
+const priceChecked = guide.data.pricesCheckedAt;
+const priceStale = priceChecked
+  ? (Date.now() - priceChecked.getTime()) / 86_400_000 > PRICE_STALE_DAYS
+  : false;
+
 const formatDate = (date: Date) =>
   date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
@@ -189,6 +197,12 @@ import Icon from '../../components/Icon.astro';
           <Icon name="schedule" class="text-base" />
           {readingTime} min read
         </span>
+        {priceChecked && (
+          <span class:list={['flex items-center gap-1.5', priceStale ? 'text-amber' : '']}>
+            <Icon name="payments" class="text-base" />
+            Prices checked {formatDate(priceChecked)}
+          </span>
+        )}
       </div>
     </div>
 

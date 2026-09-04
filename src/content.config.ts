@@ -68,6 +68,9 @@ const guides = defineCollection({
     image: z.string().optional(),
     publishDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
+    // When the prices on this page were last verified against reality. Drives the
+    // visible stamp. Absence is meaningful: nobody has checked them.
+    pricesCheckedAt: z.coerce.date().optional(),
     // Set on guides that cover a dated, physical event. Drives Event schema.org output.
     event: z.object({
       name: z.string(),
