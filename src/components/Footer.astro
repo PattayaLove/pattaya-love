@@ -10,6 +10,19 @@ const exploreLinks = [
   { label: 'Currency Converter', href: '/tools/currency-converter/' },
 ];
 
+/* Festival campaign strip. Runs until the event and is then deleted in one
+   piece — that is why it is not a fifth column in the grid below. */
+const FESTIVAL_OVER = new Date('2026-12-14');
+const showFestival = new Date() < FESTIVAL_OVER;
+const festivalLinks = [
+  { label: 'Full guide', href: '/guides/tomorrowland-pattaya-2026/' },
+  { label: 'Where to stay', href: '/guides/tomorrowland-hotels-wisdom-valley/' },
+  { label: 'Getting there', href: '/guides/tomorrowland-getting-there/' },
+  { label: 'Tickets', href: '/guides/tomorrowland-tickets/' },
+  { label: 'What to pack', href: '/guides/tomorrowland-packing-guide/' },
+  { label: 'The days around it', href: '/guides/tomorrowland-pattaya-itinerary/' },
+];
+
 const legalLinks = [
   { label: 'About', href: '/imprint/' },
   { label: 'Privacy Policy', href: '/privacy/' },
@@ -27,6 +40,27 @@ import Icon from './Icon.astro';
 
 <footer class="bg-navy relative grain">
   <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-8">
+    <!-- Festival strip — remove after 13 December 2026 -->
+    {showFestival && (
+      <div class="mb-16 rounded-2xl border border-white/10 bg-white/5 p-6 md:p-8">
+        <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-5">
+          <h4 class="font-headline text-lg font-bold text-white">Tomorrowland Thailand 2026</h4>
+          <p class="text-xs uppercase tracking-[0.2em] text-ink-faint">
+            Wisdom Valley &middot; 11&ndash;13 December
+          </p>
+        </div>
+        <ul class="flex flex-wrap gap-x-6 gap-y-3">
+          {festivalLinks.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-ink-faint hover:text-white transition-colors duration-200">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
     <!-- Main Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
       <!-- Brand Column -->
