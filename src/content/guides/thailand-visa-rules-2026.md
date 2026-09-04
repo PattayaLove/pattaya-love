@@ -104,6 +104,7 @@ Plan ahead, apply for the right visa before you travel, and you will have zero p
 
 ## Related Guides
 
-- [Pattaya Visa Guide](/guides/pattaya-visa-guide/) — every visa type, the immigration office, extensions and TM30
+- [Pattaya Visa Guide](/guides/pattaya-visa-guide/)
+- [Thailand Visa for Indian Passports](/guides/thailand-visa-for-indians/) — India keeps visa-free entry, with a shorter stay — every visa type, the immigration office, extensions and TM30
 - [Working Remotely from Pattaya](/guides/digital-nomad-pattaya/) — the five-year DTV for remote workers
 - [Muay Thai in Pattaya](/guides/muay-thai-pattaya/) — the DTV via soft power activities

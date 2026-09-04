@@ -170,7 +170,8 @@ For more general advice on planning your trip, see our [first-time Pattaya guide
 
 ## Related Guides
 
-- [Thailand Visa Rules: 30-Day Entry From 15 September 2026](/guides/thailand-visa-rules-2026/) — what changes in the coming weeks
+- [Thailand Visa Rules: 30-Day Entry From 15 September 2026](/guides/thailand-visa-rules-2026/)
+- [Thailand Visa for Indian Passports](/guides/thailand-visa-for-indians/) — India keeps visa-free entry, with a shorter stay — what changes in the coming weeks
 - [Working Remotely from Pattaya](/guides/digital-nomad-pattaya/) — the DTV for remote workers
 - [Muay Thai in Pattaya](/guides/muay-thai-pattaya/) — the DTV via soft power activities
 
