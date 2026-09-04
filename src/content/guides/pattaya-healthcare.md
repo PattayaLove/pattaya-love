@@ -84,7 +84,7 @@ Two things to check in your policy rather than assume:
 - **Intoxication exclusions.** Many travel policies decline claims for injuries sustained while drunk. In a city with Pattaya's nightlife, this is not a theoretical clause.
 - **Motorbike cover.** Most policies require a licence valid for the bike you are riding. Renting a scooter on a car licence, which is common here, can void the cover entirely.
 
-If you are not covered, <a href="https://ektatraveling.tpx.lu/2cvruph4" rel="sponsored nofollow" target="_blank">Ekta</a> sells policies aimed at travellers and long-stay visitors. Read its exclusions the same way — the two points above apply to every insurer, including that one.
+If you are not covered, <a href="https://ektatraveling.tpx.lu/2cvruph4" rel="sponsored nofollow" target="_blank">Ekta</a> sells policies aimed at travellers and long-stay visitors. It does **not** serve EU residents, so it is only useful if you are based outside the Union — check your own market otherwise. Read its exclusions the same way; the two points above apply to every insurer, including that one.
 
 Our [scooter rental guide](/guides/pattaya-scooter-rental/) covers the licence question in detail, because it is the most common way visitors end up both injured and uninsured.
 
