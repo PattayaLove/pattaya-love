@@ -473,10 +473,16 @@ import AreaMap from '../components/AreaMap.astro';
             Which one you pick changes the trip more than which hotel you book. The map is drawn
             from each district's real coordinates, so the distances are accurate.
           </p>
-          <a href="/areas/" class="group inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300">
-            All Area Guides
-            <Icon name="arrow_right_alt" class="text-lg" />
-          </a>
+          <div class="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
+            <a href="/areas/" class="group inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300">
+              All Area Guides
+              <Icon name="arrow_right_alt" class="text-lg" />
+            </a>
+            <a href="/guides/first-time-pattaya/" class="group inline-flex items-center gap-2 text-ink-muted font-bold text-sm uppercase tracking-widest hover:text-primary hover:gap-3 transition-all duration-300">
+              First Time Here?
+              <Icon name="arrow_right_alt" class="text-lg" />
+            </a>
+          </div>
         </div>
         <AreaMap class="w-full lg:w-[400px] shrink-0 reveal reveal-delay-1" />
       </div>
