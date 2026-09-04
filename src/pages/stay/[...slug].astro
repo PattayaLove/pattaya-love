@@ -25,6 +25,13 @@ const relatedHotels = allHotels
   .filter((h) => h.data.area === data.area && h.data.slug !== data.slug)
   .slice(0, 3);
 
+/* Same-area hotels for the comparison table. The current hotel stays in the list
+   so the reader can see where it sits rather than having to hold it in their head. */
+const comparisonHotels = [...allHotels]
+  .filter((h) => h.data.area === data.area)
+  .sort((a, b) => b.data.rating - a.data.rating || b.data.reviewsCount - a.data.reviewsCount)
+  .slice(0, 6);
+
 /* ─── Helpers ─── */
 const priceLabels: Record<string, string> = {
   budget: 'Budget-Friendly',
@@ -433,17 +440,52 @@ import Icon from '../../components/Icon.astro';
   </section>
 
   <!-- ═══════════════════════════════════════════════ -->
-  <!-- 6. COMPARISON PLACEHOLDER                       -->
+  <!-- 6. COMPARISON WITH SAME-AREA HOTELS             -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="max-w-3xl mx-auto px-6 lg:px-8 pb-16 reveal">
-    <div class="border border-surface-high rounded-2xl p-8 md:p-10 text-center">
-      <Icon name="compare_arrows" class="text-4xl text-ink-muted mb-4" />
-      <h3 class="font-headline text-xl font-bold text-ink mb-2">Compare with Similar Hotels</h3>
-      <p class="text-ink-muted text-sm max-w-md mx-auto">
-        Detailed side-by-side comparison of {data.area} hotels coming soon. Stay tuned for price, rating, and amenity breakdowns.
-      </p>
-    </div>
-  </section>
+  {comparisonHotels.length > 1 && (
+    <section class="max-w-3xl mx-auto px-6 lg:px-8 pb-16 reveal">
+      <div class="border border-surface-high rounded-2xl p-6 md:p-8">
+        <div class="flex items-center gap-3 mb-2">
+          <Icon name="compare_arrows" class="text-2xl text-ink-muted" />
+          <h3 class="font-headline text-xl font-bold text-ink">How it compares in {data.area}</h3>
+        </div>
+        <p class="text-ink-muted text-sm mb-6">
+          Aggregated Google scores with review counts, so you can see how much weight each rating carries.
+        </p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="text-left text-[11px] uppercase tracking-widest text-ink-muted border-b border-surface-high">
+                <th class="py-3 pr-4 font-headline">Hotel</th>
+                <th class="py-3 pr-4 font-headline whitespace-nowrap">Rating</th>
+                <th class="py-3 pr-4 font-headline whitespace-nowrap">Reviews</th>
+                <th class="py-3 font-headline whitespace-nowrap">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              {comparisonHotels.map((h) => {
+                const isCurrent = h.data.slug === data.slug;
+                return (
+                  <tr class:list={['border-b border-surface-high/50 last:border-0', isCurrent && 'bg-primary/5']}>
+                    <td class="py-3 pr-4">
+                      {isCurrent ? (
+                        <span class="font-bold text-ink">{h.data.name} <span class="text-primary text-xs font-bold uppercase tracking-widest ml-1">This one</span></span>
+                      ) : (
+                        <a href={`/stay/${h.data.slug}/`} class="text-ink hover:text-primary transition-colors">{h.data.name}</a>
+                      )}
+                    </td>
+                    <td class="py-3 pr-4 whitespace-nowrap text-ink-secondary">{h.data.rating.toFixed(1)}</td>
+                    <td class="py-3 pr-4 whitespace-nowrap text-ink-muted">{h.data.reviewsCount > 0 ? h.data.reviewsCount.toLocaleString('en-US') : '—'}</td>
+                    <td class="py-3 whitespace-nowrap text-ink-muted">{priceIcons[h.data.priceRange]}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- ═══════════════════════════════════════════════ -->
   <!-- 7. AUTHOR / EEAT BOX                           -->

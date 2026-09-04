@@ -2,7 +2,7 @@
 title: "Massage & Spa in Pattaya — Prices, Types & Best Spots 2026"
 slug: "pattaya-massage-spa"
 description: "Complete guide to massages in Pattaya 2026. Thai massage from 200 THB, oil massage, foot massage — prices, types, best areas, tipping, and what to expect."
-category: "tips"
+category: "lifestyle"
 image: "/images/guides/massage-prices.webp"
 publishDate: 2026-04-06
 draft: false

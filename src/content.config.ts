@@ -64,7 +64,7 @@ const guides = defineCollection({
     title: z.string(),
     slug: z.string(),
     description: z.string(),
-    category: z.enum(['nightlife', 'hotels', 'transport', 'food', 'tips', 'general']),
+    category: z.enum(['nightlife', 'hotels', 'transport', 'food', 'tips', 'general', 'lifestyle']),
     image: z.string().optional(),
     publishDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),

@@ -6,23 +6,23 @@ import { getCollection } from 'astro:content';
 
 const allGuides = await getCollection('guides', ({ data }) => !data.draft);
 const lifestyleGuides = allGuides
-  .filter((g) => ['tips', 'general'].includes(g.data.category))
+  .filter((g) => g.data.category === 'lifestyle')
   .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
 
 const topics = [
-  { icon: 'description', title: 'Visa & Immigration', desc: 'Tourist visas, extensions, retirement visas, and Elite visa options for long-term stays.', tag: 'Coming Soon' },
-  { icon: 'local_hospital', title: 'Healthcare', desc: 'International hospitals, dental clinics, health insurance, and medical tourism in Pattaya.', tag: 'Coming Soon' },
-  { icon: 'gavel', title: 'Legal Advice', desc: 'Property rental disputes, legal representation, and understanding Thai law as a foreigner.', tag: 'Coming Soon' },
-  { icon: 'two_wheeler', title: 'Scooter & Transport', desc: 'Renting a Honda PCX or Forza, driving licenses, insurance, and getting around safely.', tag: 'Coming Soon' },
-  { icon: 'apartment', title: 'Condos & Living', desc: 'Best condos for expats, rental prices, areas to live, and long-term lease tips.', tag: 'Coming Soon' },
-  { icon: 'account_balance', title: 'Banking & Finance', desc: 'Opening a Thai bank account, transferring money, and managing finances abroad.', tag: 'Coming Soon' },
+  { icon: 'description', title: 'Visa & Immigration', desc: 'Tourist visas, extensions, retirement and long-stay options, and what the current rules actually require.', href: '/guides/pattaya-visa-guide/' },
+  { icon: 'account_balance', title: 'Banking & Payments', desc: 'Opening a Thai account, moving money in, and why the country runs on QR codes rather than cards.', href: '/guides/thai-banking-qr-payments/' },
+  { icon: 'apartment', title: 'Condos & Living', desc: 'What foreigners can and cannot own, what rentals cost by area, and which developments are going up.', href: '/guides/pattaya-condos-real-estate/' },
+  { icon: 'two_wheeler', title: 'Scooter & Transport', desc: 'Renting, licences, insurance, and getting around a city built for two wheels without ending up in hospital.', href: '/guides/pattaya-scooter-rental/' },
+  { icon: 'wifi', title: 'SIM & Connectivity', desc: 'Local SIM or eSIM, the daily throttle limits nobody publishes, and how to keep a Thai number between trips.', href: '/guides/thailand-sim-esim/' },
+  { icon: 'spa', title: 'Wellness & Spa', desc: 'Where to get a proper Thai massage, what it should cost, and which places are worth returning to.', href: '/guides/pattaya-massage-spa/' },
 ];
 import Icon from '../../components/Icon.astro';
 ---
 
 <BaseLayout
-  title="Expat Life in Pattaya — Visa, Legal & Lifestyle Guides"
-  description="Practical guides for expats and long-term visitors in Pattaya. Visa, healthcare, legal advice, scooter rental, banking, and condo guides."
+  title="Expat Life in Pattaya — Visa, Banking & Living Guides"
+  description="Practical guides for expats and long-term visitors in Pattaya. Visa rules, Thai banking, condos, scooter rental, SIM cards, and where to actually get a massage."
 >
   <Navigation />
 
@@ -51,16 +51,19 @@ import Icon from '../../components/Icon.astro';
       <h2 class="text-3xl font-extrabold font-headline tracking-tight text-ink mb-10 reveal">Expat Essentials</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {topics.map((topic, i) => (
-          <div class={`reveal reveal-delay-${(i % 4) + 1} bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg transition-all duration-300`}>
+          <a
+            href={topic.href}
+            class={`reveal reveal-delay-${(i % 4) + 1} group block bg-surface-card rounded-2xl p-8 border border-surface-high/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300`}
+          >
             <div class="flex items-start justify-between mb-4">
               <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                 <Icon name={topic.icon} class="text-primary text-2xl" />
               </div>
-              <span class="text-[10px] font-bold uppercase tracking-widest text-ink-faint bg-surface-low px-3 py-1 rounded-full">{topic.tag}</span>
+              <Icon name="arrow_right_alt" class="text-ink-faint text-xl group-hover:text-primary transition-colors" />
             </div>
-            <h3 class="font-headline font-bold text-lg text-ink mb-2">{topic.title}</h3>
+            <h3 class="font-headline font-bold text-lg text-ink mb-2 group-hover:text-primary transition-colors">{topic.title}</h3>
             <p class="text-ink-muted text-sm leading-relaxed">{topic.desc}</p>
-          </div>
+          </a>
         ))}
       </div>
     </section>

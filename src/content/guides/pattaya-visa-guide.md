@@ -2,7 +2,7 @@
 title: "Thailand Visa Guide for Pattaya — Tourist, Retirement & Elite Visas 2026"
 slug: "pattaya-visa-guide"
 description: "All Thailand visa options explained for Pattaya visitors and expats. Tourist visa, visa exemption, retirement visa, Elite visa, and extension tips for 2026."
-category: "tips"
+category: "lifestyle"
 image: "/images/areas/pattaya-city-sign.webp"
 publishDate: 2026-04-04
 draft: false

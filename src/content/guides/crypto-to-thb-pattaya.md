@@ -2,7 +2,7 @@
 title: "Crypto to Thai Baht in Pattaya — Bitcoin & USDT Cash Guide 2026"
 slug: "crypto-to-thb-pattaya"
 description: "How to convert Bitcoin, USDT, and Ethereum to Thai Baht cash in Pattaya. OTC exchanges, Telegram process, fees, and step-by-step walkthrough."
-category: "tips"
+category: "lifestyle"
 image: "/images/guides/senate-exchange.JPG"
 publishDate: 2026-04-08
 draft: false
