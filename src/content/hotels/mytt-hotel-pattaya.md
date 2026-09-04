@@ -29,10 +29,6 @@ The address is 10 หมู่ 9 Pattaya Soi 3, Central Pattaya. Central Pattaya
 
 Most visitors arrive via Suvarnabhumi Airport, around 90 minutes away by taxi. Airport coaches run through the day and are the cheaper option. U-Tapao, south of the city, is closer at roughly 45 minutes. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## Guest-Friendly Policy
-
-Policies vary by property and change over time. We have not verified whether Mytt Hotel Pattaya charges a joiner fee, so confirm it directly if you need certainty.
-
 ## Booking & Rates
 
 Expect peak pricing between November and February. The low season from June to September brings the best rates alongside heavier afternoon rain. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

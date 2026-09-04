@@ -27,15 +27,11 @@ You will find it at 347/5 Jomtiensaineung Rd. Jomtien lies south of Pattaya Bay 
 
 ## Tomorrowland Thailand 2026
 
-**Tomorrowland Thailand 2026** comes to Pattaya in November 2026. The Jomtien end of the bay is expected to be within easy reach of the festival grounds. Accommodation across the city will book out well in advance for it, so if your trip overlaps with the festival dates, secure a room at Sea Breeze Jomtien Resort early rather than close to the date.
+**Tomorrowland Thailand 2026** runs 11–13 December at Wisdom Valley, inland from the coast at Khao Mai Kaeo. Measured against the site, the whole coastal strip falls inside a four-kilometre band, so no beach area is meaningfully closer than another — the [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) has the figures. Demand will be citywide rather than concentrated near the venue, so if your trip overlaps, book Sea Breeze Jomtien Resort well ahead rather than close to the date.
 
 ## Getting There
 
 Suvarnabhumi Airport is roughly 120 km north — about 90 minutes by taxi, or two hours on the scheduled airport coaches, which cost a fraction of a private car. Arriving from the north, ask to be dropped on Thappraya Road rather than at the main bus terminal — it saves an extra baht bus leg.
-
-## Guest-Friendly Policy
-
-We have no confirmed guest policy on file for Sea Breeze Jomtien Resort. Guest-friendly arrangements are common in Pattaya, though some properties do charge a joiner fee — worth clarifying with reception or at the time of booking.
 
 ## Booking & Rates
 

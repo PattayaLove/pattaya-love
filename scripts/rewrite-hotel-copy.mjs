@@ -26,6 +26,9 @@ const ALL = process.argv.includes('--all');
 
 /** Marker from the old import template. Its presence means the page is generated. */
 const BOILERPLATE = "This puts you within reach of Pattaya's main attractions";
+/** Marker the generator itself leaves, so already-generated pages can be refreshed
+    when the copy in hotel-copy.mjs changes. Hand-written reviews have neither. */
+const GENERATED = '## Booking & Rates';
 
 function parseFrontmatter(text) {
   const m = text.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
@@ -48,7 +51,7 @@ for (const file of readdirSync(HOTELS).filter((f) => f.endsWith('.md')).sort()) 
   const fm = parseFrontmatter(text);
   if (!fm) continue;
 
-  if (!text.includes(BOILERPLATE)) { skipped++; continue; }
+  if (!text.includes(BOILERPLATE) && !text.includes(GENERATED)) { skipped++; continue; }
   const isLive = fm.data.featured === 'true' && fm.data.draft === 'false';
   if (!ALL && !isLive) { skipped++; continue; }
 

@@ -161,14 +161,11 @@ function rates({ priceRange, slug }) {
   return `${season} ${tier}`.trim();
 }
 
-function tomorrowland({ name, area }) {
-  const near = area.includes('Jomtien') || area.includes('South') || area.includes('Pratumnak');
-  const where = near
-    ? 'The Jomtien end of the bay is expected to be within easy reach of the festival grounds.'
-    : 'The festival is expected to draw heavy demand across the whole of Pattaya, not just the areas closest to the site.';
-  return `**Tomorrowland Thailand 2026** comes to Pattaya in November 2026. ${where} Accommodation across the city will book out well in advance for it, so if your trip overlaps with the festival dates, secure a room at ${name} early rather than close to the date.`;
+function tomorrowland({ name }) {
+  return `**Tomorrowland Thailand 2026** runs 11–13 December at Wisdom Valley, inland from the coast at Khao Mai Kaeo. Measured against the site, the whole coastal strip falls inside a four-kilometre band, so no beach area is meaningfully closer than another — the [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) has the figures. Demand will be citywide rather than concentrated near the venue, so if your trip overlaps, book ${name} well ahead rather than close to the date.`;
 }
 
+/* Which pages carry the festival note. Not a proximity claim — see the copy above. */
 const TOMORROWLAND_AREAS = ['Jomtien', 'Na Jomtien', 'Pratumnak Hill', 'South Pattaya'];
 
 /** Full markdown body for a hotel page. */
@@ -180,11 +177,13 @@ export function buildBody(h) {
   if (h.tomorrowland ?? TOMORROWLAND_AREAS.includes(h.area)) {
     parts.push('## Tomorrowland Thailand 2026', '', tomorrowland(h), '');
   }
-  parts.push(
-    '## Getting There', '', gettingThere(h), '',
-    '## Guest-Friendly Policy', '', guestPolicy(h), '',
-    '## Booking & Rates', '', rates(h), '',
-  );
+  parts.push('## Getting There', '', gettingThere(h), '');
+  /* Joiner-fee policy is a real booking criterion at the mid and budget end and
+     out of place on a five-star family resort, so it is scoped by price tier. */
+  if (h.priceRange !== 'luxury') {
+    parts.push('## Guest-Friendly Policy', '', guestPolicy(h), '');
+  }
+  parts.push('## Booking & Rates', '', rates(h), '');
   return parts.join('\n').trimEnd() + '\n';
 }
 

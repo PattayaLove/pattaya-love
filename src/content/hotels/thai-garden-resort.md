@@ -29,10 +29,6 @@ You will find it at หมู่ที่ 5 179/168 N Pattaya Rd in Central Patt
 
 Suvarnabhumi Airport is roughly 120 km north — about 90 minutes by taxi, or two hours on the scheduled airport coaches, which cost a fraction of a private car. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## Guest-Friendly Policy
-
-We have no confirmed guest policy on file for Thai Garden Resort. Guest-friendly arrangements are common in Pattaya, though some properties do charge a joiner fee — worth clarifying with reception or at the time of booking.
-
 ## Booking & Rates
 
 Rates peak over the November–February high season and drop noticeably from June to September, when the monsoon keeps demand down. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

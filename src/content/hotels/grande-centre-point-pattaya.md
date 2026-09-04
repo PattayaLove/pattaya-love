@@ -29,10 +29,6 @@ You will find it at 456 in Central Pattaya. Central Pattaya puts Central Festiva
 
 Suvarnabhumi Airport is roughly 120 km north — about 90 minutes by taxi, or two hours on the scheduled airport coaches, which cost a fraction of a private car. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## Guest-Friendly Policy
-
-Policies vary by property and change over time. We have not verified whether Grande Centre Point Pattaya charges a joiner fee, so confirm it directly if you need certainty.
-
 ## Booking & Rates
 
 Expect peak pricing between November and February. The low season from June to September brings the best rates alongside heavier afternoon rain. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

@@ -29,10 +29,6 @@ The hotel is at 171 16 หมู่ที่ 10 Sip Chet, in Central Pattaya. Th
 
 From Bangkok, buses to Pattaya leave Ekkamai terminal throughout the day. From Suvarnabhumi Airport a taxi takes about 90 minutes, and U-Tapao is nearer still at around 45 minutes. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## Guest-Friendly Policy
-
-Policies vary by property and change over time. We have not verified whether Mind Resort Pattaya charges a joiner fee, so confirm it directly if you need certainty.
-
 ## Booking & Rates
 
 Expect peak pricing between November and February. The low season from June to September brings the best rates alongside heavier afternoon rain. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

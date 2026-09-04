@@ -30,10 +30,6 @@ You will find it at 888 หมู่ที่ 5 in Central Pattaya. The central 
 
 Suvarnabhumi Airport is roughly 120 km north — about 90 minutes by taxi, or two hours on the scheduled airport coaches, which cost a fraction of a private car. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## Guest-Friendly Policy
-
-Policies vary by property and change over time. We have not verified whether Grande Centre Point Space Pattaya charges a joiner fee, so confirm it directly if you need certainty.
-
 ## Booking & Rates
 
 High season runs November to February and carries the highest rates; June to September is the cheapest window, with rain most likely in the afternoons. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

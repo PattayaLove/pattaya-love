@@ -29,10 +29,6 @@ You will find it at 19 หมู่ที่ 1 Sukhumvit Rd in Central Pattaya. 
 
 Most visitors arrive via Suvarnabhumi Airport, around 90 minutes away by taxi. Airport coaches run through the day and are the cheaper option. U-Tapao, south of the city, is closer at roughly 45 minutes. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## Guest-Friendly Policy
-
-Most Pattaya hotels are guest-friendly and admit visitors without a joiner fee, but we have not independently confirmed the policy for Cholchan Pattaya Beach Resort. Check directly with the property before booking if this matters to you.
-
 ## Booking & Rates
 
 High season runs November to February and carries the highest rates; June to September is the cheapest window, with rain most likely in the afternoons. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

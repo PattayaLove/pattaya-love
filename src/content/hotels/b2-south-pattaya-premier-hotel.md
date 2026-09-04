@@ -27,7 +27,7 @@ The hotel is at 321/9 หมู่ที่ 10 หนองปรือ, in Sout
 
 ## Tomorrowland Thailand 2026
 
-**Tomorrowland Thailand 2026** comes to Pattaya in November 2026. The Jomtien end of the bay is expected to be within easy reach of the festival grounds. Accommodation across the city will book out well in advance for it, so if your trip overlaps with the festival dates, secure a room at B2 South Pattaya Premier Hotel early rather than close to the date.
+**Tomorrowland Thailand 2026** runs 11–13 December at Wisdom Valley, inland from the coast at Khao Mai Kaeo. Measured against the site, the whole coastal strip falls inside a four-kilometre band, so no beach area is meaningfully closer than another — the [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) has the figures. Demand will be citywide rather than concentrated near the venue, so if your trip overlaps, book B2 South Pattaya Premier Hotel well ahead rather than close to the date.
 
 ## Getting There
 

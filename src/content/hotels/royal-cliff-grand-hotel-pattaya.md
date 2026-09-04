@@ -29,10 +29,6 @@ The address is 353 Phra Tamnak, Central Pattaya. Central Pattaya is the most con
 
 From Bangkok, buses to Pattaya leave Ekkamai terminal throughout the day. From Suvarnabhumi Airport a taxi takes about 90 minutes, and U-Tapao is nearer still at around 45 minutes. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## Guest-Friendly Policy
-
-Most Pattaya hotels are guest-friendly and admit visitors without a joiner fee, but we have not independently confirmed the policy for Royal Cliff Grand Hotel Pattaya. Check directly with the property before booking if this matters to you.
-
 ## Booking & Rates
 
 Rates peak over the November–February high season and drop noticeably from June to September, when the monsoon keeps demand down. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

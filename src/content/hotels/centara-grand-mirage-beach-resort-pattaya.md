@@ -29,10 +29,6 @@ The hotel is at 277 หมู่ที่ 5, in Central Pattaya. Central Pattaya
 
 Suvarnabhumi Airport is roughly 120 km north — about 90 minutes by taxi, or two hours on the scheduled airport coaches, which cost a fraction of a private car. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## Guest-Friendly Policy
-
-Most Pattaya hotels are guest-friendly and admit visitors without a joiner fee, but we have not independently confirmed the policy for Centara Grand Mirage Beach Resort Pattaya. Check directly with the property before booking if this matters to you.
-
 ## Booking & Rates
 
 Expect peak pricing between November and February. The low season from June to September brings the best rates alongside heavier afternoon rain. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

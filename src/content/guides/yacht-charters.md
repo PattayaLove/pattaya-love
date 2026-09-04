@@ -14,7 +14,7 @@ Pattaya sits on the Gulf of Thailand with direct access to islands, hidden coves
 
 ### Bali Hai Pier — Ferries & Day Trips
 
-Bali Hai Pier is Pattaya's main public pier, located at the southern end of [Walking Street](/areas/walking-street/). This is where you catch ferries to Koh Larn (Coral Island) and book most tourist-oriented boat trips.
+Bali Hai Pier is Pattaya's main public pier, located at the southern end of Walking Street. This is where you catch ferries to Koh Larn (Coral Island) and book most tourist-oriented boat trips.
 
 **What departs from Bali Hai:**
 - Public ferries to Koh Larn (30 THB one-way, 45 minutes)

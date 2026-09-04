@@ -27,7 +27,7 @@ You will find it at 94 หมู่ที่ 1 ตําบล in Jomtien. Jomti
 
 ## Tomorrowland Thailand 2026
 
-**Tomorrowland Thailand 2026** comes to Pattaya in November 2026. The Jomtien end of the bay is expected to be within easy reach of the festival grounds. Accommodation across the city will book out well in advance for it, so if your trip overlaps with the festival dates, secure a room at Centara Life Maris Resort Jomtien Pattaya early rather than close to the date.
+**Tomorrowland Thailand 2026** runs 11–13 December at Wisdom Valley, inland from the coast at Khao Mai Kaeo. Measured against the site, the whole coastal strip falls inside a four-kilometre band, so no beach area is meaningfully closer than another — the [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) has the figures. Demand will be citywide rather than concentrated near the venue, so if your trip overlaps, book Centara Life Maris Resort Jomtien Pattaya well ahead rather than close to the date.
 
 ## Getting There
 

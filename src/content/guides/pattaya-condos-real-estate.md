@@ -48,7 +48,7 @@ Pattaya's geography stretches along approximately 15 kilometers of coastline, an
 
 ### Central Pattaya
 
-Central Pattaya along Beach Road and Second Road is the most convenient location — walking distance to malls, [nightlife](/nightlife/), and transport. The trade-off is noise and density, though modern condos are often set back from main roads with decent soundproofing. Rental demand here is consistently high.
+Central Pattaya along Beach Road and Second Road is the most convenient location — walking distance to malls, nightlife, and transport. The trade-off is noise and density, though modern condos are often set back from main roads with decent soundproofing. Rental demand here is consistently high.
 
 ### East Pattaya
 

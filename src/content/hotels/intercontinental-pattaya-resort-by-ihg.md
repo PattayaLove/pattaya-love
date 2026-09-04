@@ -29,10 +29,6 @@ The hotel is at Pattaya, 437 Phra Tamnak, in Central Pattaya. Central Pattaya is
 
 From Bangkok, buses to Pattaya leave Ekkamai terminal throughout the day. From Suvarnabhumi Airport a taxi takes about 90 minutes, and U-Tapao is nearer still at around 45 minutes. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
-## Guest-Friendly Policy
-
-Policies vary by property and change over time. We have not verified whether InterContinental Pattaya Resort by IHG charges a joiner fee, so confirm it directly if you need certainty.
-
 ## Booking & Rates
 
 High season runs November to February and carries the highest rates; June to September is the cheapest window, with rain most likely in the afternoons. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.
