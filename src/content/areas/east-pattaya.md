@@ -31,10 +31,10 @@ The area has its own ecosystem of restaurants, gyms, supermarkets (Makro, Lotus'
 
 East Pattaya is about living, not sightseeing. That said, the area is home to several attractions:
 
-- **Nong Nooch Tropical Garden** — A massive botanical garden with Thai cultural shows (<a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F335-nong-nooch-tropical-garden-pattaya&amp;aff_label1=area-east-pattaya" rel="sponsored nofollow" target="_blank">tickets from ~11 USD</a>)
+- **Nong Nooch Tropical Garden** — A massive botanical garden with Thai cultural shows (<a href="https://klook.tpx.lu/mazMR57O" rel="sponsored nofollow" target="_blank">tickets from ~11 USD</a>)
 - **Silverlake Vineyard** — Hilltop winery with panoramic views and a giant Buddha carved into the hillside
-- **Ramayana Water Park** — Thailand's largest water park (<a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F2322-ramayana-water-park-pattaya&amp;aff_label1=area-east-pattaya" rel="sponsored nofollow" target="_blank">tickets from ~24 USD</a>)
-- **Pattaya Floating Market** — Touristy but photogenic, especially the four-regions food section (<a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F2920-floating-market-pattaya&amp;aff_label1=area-east-pattaya" rel="sponsored nofollow" target="_blank">tickets from ~3 USD</a>)
+- **Ramayana Water Park** — Thailand's largest water park (<a href="https://klook.tpx.lu/vaIooWEC" rel="sponsored nofollow" target="_blank">tickets from ~24 USD</a>)
+- **Pattaya Floating Market** — Touristy but photogenic, especially the four-regions food section (<a href="https://klook.tpx.lu/BTXUzWQ8" rel="sponsored nofollow" target="_blank">tickets from ~3 USD</a>)
 
 ## Dining
 

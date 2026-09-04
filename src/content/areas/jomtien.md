@@ -41,13 +41,13 @@ For a bigger night out, Walking Street is a 100 to 150 THB Grab ride away. Many 
 
 Jomtien's location offers easy access to several attractions beyond the beach.
 
-**Pattaya Floating Market** is a short drive north and features canal-side shopping, food stalls, and cultural demonstrations. It is touristy but worth a visit. <a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F2920-floating-market-pattaya&amp;aff_label1=area-jomtien" rel="sponsored nofollow" target="_blank">Entry tickets</a> run about 3 USD.
+**Pattaya Floating Market** is a short drive north and features canal-side shopping, food stalls, and cultural demonstrations. It is touristy but worth a visit. <a href="https://klook.tpx.lu/khBgYAiF" rel="sponsored nofollow" target="_blank">Entry tickets</a> run about 3 USD.
 
 **Buddha Mountain (Khao Chi Chan)** is a 20-minute drive south and features a massive laser-etched Buddha image on a cliff face. It is free to visit and makes for a good half-day trip.
 
 **Silverlake Vineyard** is nearby and offers a scenic stop with grape-tasting, photo opportunities, and a hilltop cafe overlooking the vineyard and a large lake.
 
-**Nong Nooch Tropical Garden** is one of Thailand's most impressive botanical gardens, located about 15 minutes from Jomtien by car. It includes cultural shows, gardens, and a small zoo. <a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F335-nong-nooch-tropical-garden-pattaya&amp;aff_label1=area-jomtien" rel="sponsored nofollow" target="_blank">Tickets</a> are around 11 USD.
+**Nong Nooch Tropical Garden** is one of Thailand's most impressive botanical gardens, located about 15 minutes from Jomtien by car. It includes cultural shows, gardens, and a small zoo. <a href="https://klook.tpx.lu/DuZsBQW7" rel="sponsored nofollow" target="_blank">Tickets</a> are around 11 USD.
 
 ## Who Jomtien Is For
 

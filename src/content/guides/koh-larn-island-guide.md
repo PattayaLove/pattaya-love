@@ -50,7 +50,7 @@ Speedboats often go directly to Tawaen Beach rather than Na Ban pier, which can 
 
 Many Pattaya tour agencies offer Koh Larn day trip packages for 800 to 1,500 THB per person, including speedboat transfer, lunch, and activities like snorkeling or parasailing. These are convenient but lock you into a fixed schedule and specific beach.
 
-If you want one booked before you arrive, the <a href="https://affiliate.klook.com/redirect?aid=133759&amp;_currency=USD&amp;k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F1168-coral-island-snorkeling-tour-pattaya&amp;aff_label1=kohlarn-guide" rel="sponsored nofollow" target="_blank">full-day Koh Larn tour with water activities</a> runs around 25 USD, which sits at the bottom of that range. Worth comparing against simply taking the public ferry for 30 THB and arranging things yourself — which is what we do, and what the rest of this guide explains how to do.
+If you want one booked before you arrive, the <a href="https://klook.tpx.lu/aeVHWRZc" rel="sponsored nofollow" target="_blank">full-day Koh Larn tour with water activities</a> runs around 25 USD, which sits at the bottom of that range. Worth comparing against simply taking the public ferry for 30 THB and arranging things yourself — which is what we do, and what the rest of this guide explains how to do.
 
 ## Best Beaches
 
