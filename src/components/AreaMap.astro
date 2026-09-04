@@ -1,0 +1,234 @@
+---
+/**
+ * AreaMap — an SVG map of Pattaya's districts, drawn from real coordinates.
+ *
+ * No tile server, no mapping library, no third-party request. Positions are a
+ * plain equirectangular projection of the actual lat/lon of each area, with the
+ * longitude axis compressed by cos(latitude) so distances read correctly. The
+ * coastline is simplified — it is there for orientation, not navigation.
+ *
+ * Interaction is CSS only: hover states and links. That keeps it free of
+ * JavaScript, which is why it costs nothing in performance.
+ *
+ * Projection bounds (change these and every coordinate below must be recomputed):
+ *   lat 12.8730 – 12.9780,  lon 100.8522 – 100.9310,  viewBox 760 × 1039
+ *   Scale: 1 km ≈ 88.9 px
+ */
+
+interface Props {
+  /** Highlight one area, e.g. when embedded on that area's own page. */
+  active?: string;
+  class?: string;
+}
+const { active, class: className = '' } = Astro.props;
+
+const AREAS = [
+  { slug: 'wongamat', label: 'Wongamat', x: 364.6, y: 118.7, anchor: 'start' },
+  { slug: 'naklua', label: 'Naklua', x: 345.3, y: 178.1, anchor: 'start' },
+  { slug: 'soi-6', label: 'Soi 6', x: 316.3, y: 326.5, anchor: 'start' },
+  { slug: 'soi-buakhao', label: 'Soi Buakhao', x: 345.3, y: 494.8, anchor: 'start' },
+  { slug: 'walking-street', label: 'Walking Street', x: 162.0, y: 613.5, anchor: 'start' },
+  { slug: 'pratumnak', label: 'Pratumnak', x: 162.0, y: 712.5, anchor: 'start' },
+  { slug: 'jomtien', label: 'Jomtien', x: 239.2, y: 920.3, anchor: 'start' },
+  { slug: 'east-pattaya', label: 'East Pattaya', x: 702.1, y: 475.0, anchor: 'end' },
+];
+
+/* Landmarks with no page of their own — orientation only. */
+const LANDMARKS = [
+  { label: 'Central Pattaya', x: 239.2, y: 494.8, anchor: 'start' },
+  { label: 'Bali Hai Pier', x: 171.7, y: 653.1, anchor: 'start' },
+];
+
+const COAST =
+  '359.7,19.8 306.7,59.4 277.8,197.9 248.8,326.5 210.3,425.5 171.7,494.8 133.1,593.7 ' +
+  '123.5,672.9 75.2,752.0 113.8,791.6 191.0,870.8 258.5,949.9 316.3,1009.3';
+const SEA = COAST + ' 0,1009.3 0,19.8';
+
+const SCALE_PX = 178; // 2 km
+---
+
+<figure class:list={['area-map', className]}>
+  <svg viewBox="0 0 760 1039" role="img" aria-label="Map of Pattaya districts" class="w-full h-auto">
+    <title>Pattaya districts</title>
+
+    <polygon points={SEA} class="sea" />
+    <polyline points={COAST} class="coast" />
+
+    <!-- Gulf label -->
+    <text x="42" y="300" class="sea-label">Gulf of</text>
+    <text x="42" y="336" class="sea-label">Thailand</text>
+
+    <!-- Landmarks -->
+    {LANDMARKS.map((l) => (
+      <g class="landmark">
+        <circle cx={l.x} cy={l.y} r="5" />
+        <text x={l.anchor === 'end' ? l.x - 14 : l.x + 14} y={l.y + 6} text-anchor={l.anchor}>
+          {l.label}
+        </text>
+      </g>
+    ))}
+
+    <!-- Districts -->
+    {AREAS.map((a) => (
+      <a href={`/areas/${a.slug}/`} class:list={['district', active === a.slug && 'is-active']}>
+        <circle cx={a.x} cy={a.y} r="11" class="hit" />
+        <circle cx={a.x} cy={a.y} r="8" class="dot" />
+        <text x={a.anchor === 'end' ? a.x - 18 : a.x + 18} y={a.y + 8} text-anchor={a.anchor}>
+          {a.label}
+        </text>
+      </a>
+    ))}
+
+    <!-- Wisdom Valley sits well off the eastern edge; shown as a bearing, not a pin -->
+    <g class="offmap">
+      <line x1="712" y1="560" x2="748" y2="560" />
+      <polygon points="748,554 760,560 748,566" />
+      <text x="712" y="590">Wisdom Valley</text>
+      <text x="712" y="614" class="offmap-sub">≈16 km east</text>
+    </g>
+
+    <!-- Scale bar -->
+    <g class="scale">
+      <line x1="470" y1="990" x2={470 + SCALE_PX} y2="990" />
+      <line x1="470" y1="982" x2="470" y2="998" />
+      <line x1={470 + SCALE_PX} y1="982" x2={470 + SCALE_PX} y2="998" />
+      <text x={470 + SCALE_PX / 2} y="1020" text-anchor="middle">2 km</text>
+    </g>
+
+    <!-- North arrow -->
+    <g class="compass">
+      <line x1="700" y1="80" x2="700" y2="30" />
+      <polygon points="694,38 700,22 706,38" />
+      <text x="700" y="102" text-anchor="middle">N</text>
+    </g>
+  </svg>
+
+  <figcaption>
+    Districts positioned from their actual coordinates; the coastline is simplified.
+    Tap any district for the area guide.
+  </figcaption>
+</figure>
+
+<style>
+  .area-map {
+    margin: 0;
+    max-width: 560px;
+  }
+
+  .sea {
+    fill: var(--color-navy);
+    opacity: 0.07;
+  }
+  .coast {
+    fill: none;
+    stroke: var(--color-navy);
+    stroke-width: 2.5;
+    stroke-opacity: 0.35;
+    stroke-linejoin: round;
+  }
+  .sea-label {
+    fill: var(--color-navy);
+    opacity: 0.45;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+
+  .landmark circle {
+    fill: var(--color-ink-faint);
+  }
+  .landmark text {
+    fill: var(--color-ink-muted);
+    font-size: 21px;
+  }
+
+  .district {
+    cursor: pointer;
+  }
+  .district .hit {
+    fill: transparent;
+  }
+  .district .dot {
+    fill: var(--color-primary);
+    transition: r 0.2s ease;
+  }
+  .district text {
+    fill: var(--color-ink);
+    font-size: 24px;
+    font-weight: 700;
+    transition: fill 0.2s ease;
+  }
+  .district:hover .dot,
+  .district:focus-visible .dot {
+    r: 12;
+  }
+  .district:hover text,
+  .district:focus-visible text {
+    fill: var(--color-primary);
+  }
+  .district:focus-visible {
+    outline: none;
+  }
+  .district:focus-visible .hit {
+    stroke: var(--color-primary);
+    stroke-width: 3;
+  }
+  .district.is-active .dot {
+    r: 12;
+    stroke: var(--color-primary);
+    stroke-width: 6;
+    stroke-opacity: 0.25;
+  }
+  .district.is-active text {
+    fill: var(--color-primary);
+  }
+
+  .offmap line,
+  .offmap polygon {
+    stroke: var(--color-ink-faint);
+    fill: var(--color-ink-faint);
+    stroke-width: 2;
+  }
+  .offmap text {
+    fill: var(--color-ink-muted);
+    font-size: 21px;
+    font-weight: 600;
+    text-anchor: end;
+  }
+  .offmap .offmap-sub {
+    font-weight: 400;
+    font-size: 19px;
+  }
+
+  .scale line {
+    stroke: var(--color-ink-muted);
+    stroke-width: 2;
+  }
+  .scale text,
+  .compass text {
+    fill: var(--color-ink-muted);
+    font-size: 20px;
+  }
+  .compass line,
+  .compass polygon {
+    stroke: var(--color-ink-muted);
+    fill: var(--color-ink-muted);
+    stroke-width: 2;
+  }
+
+  figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.8125rem;
+    color: var(--color-ink-muted);
+    line-height: 1.5;
+  }
+
+  /* r is not animatable everywhere; fall back to a scale transform. */
+  @supports not (r: 12px) {
+    .district:hover .dot {
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: scale(1.35);
+    }
+  }
+</style>

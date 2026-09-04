@@ -82,6 +82,7 @@ const placeSchema = {
   }
 };
 import Icon from '../../components/Icon.astro';
+import AreaMap from '../../components/AreaMap.astro';
 ---
 
 <BaseLayout
@@ -156,6 +157,28 @@ import Icon from '../../components/Icon.astro';
       <div class="mt-10 pt-8 border-t border-surface-high flex items-center gap-3 text-ink-muted text-sm">
         <Icon name="calendar_today" class="text-lg" />
         Published {publishDate}
+      </div>
+    </div>
+  </section>
+
+    <!-- Where this area sits -->
+  <section class="bg-surface-card pb-16 lg:pb-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-10 lg:gap-14 items-center reveal">
+        <AreaMap active={area.data.slug} class="w-full lg:w-[380px] shrink-0" />
+        <div>
+          <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">
+            Orientation
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink mb-4">
+            Where {area.data.name} sits
+          </h2>
+          <p class="text-ink-secondary leading-relaxed">
+            Distances between districts on this map are accurate — they are drawn from real
+            coordinates rather than sketched. Pattaya is smaller than it looks on a booking site,
+            and which part you pick changes the trip more than most visitors expect.
+          </p>
+        </div>
       </div>
     </div>
   </section>

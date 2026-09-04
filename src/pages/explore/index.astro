@@ -29,6 +29,7 @@ const categoryLabels: Record<string, string> = {
   general: 'General', transport: 'Transport', food: 'Food & Drink', tips: 'Tips', lifestyle: 'Expat Life',
 };
 import Icon from '../../components/Icon.astro';
+import AreaMap from '../../components/AreaMap.astro';
 ---
 
 <BaseLayout
@@ -73,6 +74,22 @@ import Icon from '../../components/Icon.astro';
           All Areas <Icon name="arrow_right_alt" class="text-lg" />
         </a>
       </div>
+      <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto] gap-10 lg:gap-14 items-start mb-14 reveal">
+        <div>
+          <p class="text-ink-secondary leading-relaxed mb-4">
+            Pattaya reads as one strip on a booking site and behaves like several different towns.
+            Wongamat and Naklua sit north of the bay and stay quiet; Walking Street and Soi 6 are the
+            loud middle; Jomtien runs south with the wider beach; East Pattaya is inland and is where
+            people live rather than visit.
+          </p>
+          <p class="text-ink-secondary leading-relaxed">
+            The map is drawn from each district's real coordinates, so the distances between them are
+            accurate. Pick one to read the area guide.
+          </p>
+        </div>
+        <AreaMap class="w-full lg:w-[420px] shrink-0" />
+      </div>
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {allAreas.map((area, i) => (
           <a href={`/areas/${area.data.slug}/`} class={`reveal reveal-delay-${i + 1} group relative rounded-2xl overflow-hidden aspect-[4/3]`}>
