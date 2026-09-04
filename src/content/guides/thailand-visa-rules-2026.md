@@ -37,6 +37,14 @@ Thailand is moving to a tiered system:
 
 The cut from 93 eligible countries to 60 is the part that gets less attention than the day count, and it matters more: **33 nationalities lose visa-free access entirely** and now need a visa before travelling. If your passport is not from a major Western market, check the current list before you book anything.
 
+Still on the list: all 27 EU member states, the UK, the United States, Canada, Australia, New Zealand, Japan, Switzerland and India.
+
+### Two changes almost nobody mentions
+
+**The new exemption is for tourism only.** The outgoing 60-day rule also covered short business visits. From 15 September it does not — if you are coming for meetings, a conference or anything that reads as business at the desk, the visa-free route no longer covers you.
+
+**Land border entries are capped at two per calendar year** under the new exemption. Arriving by air is not limited. This ends the old border-run rhythm for anyone who was living on repeated overland entries.
+
 ## When Does This Take Effect?
 
 **15 September 2026.** The Royal Gazette publication happened on 31 August, and the Tourism Authority of Thailand confirmed the date on 1 September.
