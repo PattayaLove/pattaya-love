@@ -5,6 +5,7 @@ description: "Complete Pattaya shopping guide for 2026. Terminal 21, Central Fes
 category: "general"
 image: "/images/guides/terminal-21-pattaya.jpeg"
 publishDate: 2026-04-04
+updatedDate: 2026-09-04
 draft: false
 ---
 
@@ -47,22 +48,23 @@ The Instagram-famous mall where each floor is themed after a different city — 
 
 **Location:** North Pattaya, corner of Sukhumvit Road and Pattaya Nua. Grab or baht bus from Beach Road.
 
-### Central Marina
+### Central Marina Outlet
 
-Formerly known as Central Center Pattaya, this North Pattaya mall was renovated into an open-air lifestyle and shopping complex. It's smaller and more relaxed than Central Festival, with an outdoor market vibe that feels less corporate.
+The one to know if you are shopping for price rather than browsing. Central Pattana repositioned the site — formerly Central Center Pattaya — as an outlet, and that is now the reason to go rather than an afterthought.
 
 **What you'll find:**
-- Fashion and accessories (more affordable than Central Festival)
-- The outdoor night bazaar area with food stalls and live music
-- Robinson Department Store
-- IT City for electronics and phone accessories
-- Several good restaurants including Japanese, Thai, and Indian options
+- Over 100 stores of discounted brand-name fashion, sport and lifestyle goods, with reductions advertised up to 70%
+- A **Nike factory outlet**, Supersports, and Fit by Super Sport carrying Skechers, Umbro and K-Swiss
+- Big C Extra hypermarket for groceries at local prices
+- Mr. D.I.Y. for the cheap household things you did not plan to buy
+- A six-screen SFC cinema
+- The **Marina Night Market** in the evenings — street food, drinks and live music in the open-air section
 
 **Opening hours:** 11:00 – 22:00 daily
 
-**Why go:** More relaxed atmosphere than the mega-malls. The outdoor section with street food and live music is a pleasant evening activity.
+**Why go:** It is the only place in Pattaya where discounted brand stock is the point rather than a sale rack. The evening market makes it a reasonable place to spend a few hours rather than a quick errand.
 
-**Location:** North Pattaya, Second Road. Walking distance from Terminal 21.
+**Location:** North Pattaya, Second Road. Walking distance from Terminal 21, which makes doing both in one trip straightforward — full price at one end, outlet prices at the other.
 
 ### Royal Garden Plaza & Mike Shopping Mall
 
