@@ -116,6 +116,7 @@ Yes, and read the exclusions. Intoxication-related injury and riding a motorbike
 
 ## Related Guides
 
+- [IV Drips and Peptide Clinics: What to Ask First](/guides/pattaya-iv-therapy-peptides/)
 - [Renting a Scooter in Pattaya](/guides/pattaya-scooter-rental/)
 - [Thai Banking and QR Payments](/guides/thai-banking-qr-payments/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)
