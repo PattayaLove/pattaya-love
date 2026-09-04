@@ -1,7 +1,7 @@
 ---
 title: "Muay Thai in Pattaya: Gyms, Costs and the DTV Visa Route"
 slug: "muay-thai-pattaya"
-description: "Training Muay Thai is one of the activities that qualifies for Thailand's five-year DTV visa. What the gyms cost, what the visa actually requires, and why the cheap DTV packages are a bad idea."
+description: "Training Muay Thai qualifies for Thailand's five-year DTV visa. What the gyms cost, what the visa requires, and why the cheap DTV packages are a bad idea."
 category: "lifestyle"
 image: "/images/areas/pattaya-drone-sunset.webp"
 publishDate: 2026-09-04

@@ -1,7 +1,7 @@
 ---
-title: "Getting to Tomorrowland Thailand: Airports, Routes and the Last 20 Kilometres"
+title: "Getting to Tomorrowland: Airports and the Last 20 km"
 slug: "tomorrowland-getting-there"
-description: "U-Tapao sits almost exactly due south of Wisdom Valley, 31 km out — a third of the distance from Suvarnabhumi. And 10 December is a Thai public holiday, which changes when you should travel."
+description: "U-Tapao sits almost due south of Wisdom Valley, 31 km out against 87 from Suvarnabhumi. And 10 December is a Thai holiday, which changes when to travel."
 category: "transport"
 image: "/images/areas/pattaya-city-sign.webp"
 publishDate: 2026-09-03

@@ -1,7 +1,7 @@
 ---
 title: "Best Rooftop Bars & Restaurants in Pattaya 2026"
 slug: "rooftop-dining"
-description: "Pattaya's best rooftop bars and sky-high restaurants with panoramic views. From sunset cocktails to fine dining — the complete 2026 guide to elevated experiences."
+description: "Pattaya's best rooftop bars and sky-high restaurants with panoramic views, from sunset cocktails to fine dining. The complete 2026 guide."
 category: "food"
 image: "/images/guides/hilton-rooftop-laser.webp"
 publishDate: 2026-04-04

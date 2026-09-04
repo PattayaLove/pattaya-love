@@ -22,7 +22,9 @@ const {
   canonicalUrl,
 } = Astro.props;
 
-const siteTitle = `${title} | pattaya.love`;
+/* Google truncates around 60 characters. The brand suffix costs 15, so it is
+   only worth appending when the title itself leaves room for it. */
+const siteTitle = title.length <= 45 ? `${title} | pattaya.love` : title;
 const canonical = canonicalUrl || Astro.url.href;
 
 const websiteSchema = {

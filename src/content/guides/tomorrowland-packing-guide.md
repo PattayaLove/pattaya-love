@@ -1,7 +1,7 @@
 ---
-title: "Tomorrowland Thailand: What to Pack and What Nobody Tells You"
+title: "Tomorrowland Thailand: What to Pack, and What Nobody Says"
 slug: "tomorrowland-packing-guide"
-description: "Packing for a tropical Tomorrowland is not packing for Boom. December nights on an inland hill get genuinely cool, the site is cashless, and Thailand's drug laws do not soften for festivals."
+description: "Packing for a tropical Tomorrowland is not packing for Boom. December nights on an inland hill get cool, the site is cashless, and vapes are banned."
 category: "tips"
 image: "/images/areas/beach-panorama.webp"
 publishDate: 2026-09-03

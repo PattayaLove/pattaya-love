@@ -1,7 +1,7 @@
 ---
 title: "New Condo Developments in Pattaya — 2026/2027/2028"
 slug: "pattaya-new-developments"
-description: "Every major condo project under construction in Pattaya right now. From ultra-luxury beachfront towers to affordable high-rises — prices, floors, completion dates, and what to expect."
+description: "Every major condo project under construction in Pattaya, from ultra-luxury beachfront towers to affordable high-rises, with floors and completion dates."
 category: "lifestyle"
 publishDate: 2026-04-07
 updatedDate: 2026-09-03

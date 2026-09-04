@@ -1,5 +1,5 @@
 ---
-title: "Healthcare in Pattaya: Hospitals, Labs and What It Actually Costs"
+title: "Healthcare in Pattaya: Hospitals, Labs and Real Costs"
 slug: "pattaya-healthcare"
 description: "Which hospital to go to and when, what a private emergency visit is really like, where to get blood work done, and the pharmacy rules that changed in 2026."
 category: "lifestyle"

@@ -1,7 +1,7 @@
 ---
-title: "Working Remotely from Pattaya: Coworking, Internet and the DTV"
+title: "Working Remotely from Pattaya: Coworking and the DTV"
 slug: "digital-nomad-pattaya"
-description: "Pattaya has a smaller nomad scene than Chiang Mai and a five-year visa that covers remote work. What the DTV requires, where to work, and who the city genuinely does not suit."
+description: "Pattaya has a smaller nomad scene than Chiang Mai and a five-year visa covering remote work. What the DTV requires and who the city does not suit."
 category: "lifestyle"
 image: "/images/areas/jomtien-beach-day.webp"
 publishDate: 2026-09-04

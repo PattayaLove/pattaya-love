@@ -1,7 +1,7 @@
 ---
-title: "Thailand Visa Rules: 30-Day Visa-Free Entry From 15 September 2026"
+title: "Thailand Visa Rules: 30 Days From 15 September 2026"
 slug: "thailand-visa-rules-2026"
-description: "From 15 September 2026 visa-free entry drops from 60 to 30 days and the eligible list shrinks from 93 countries to 60. The confirmed date, who loses access, and how to stay longer in Pattaya."
+description: "From 15 September 2026 visa-free entry drops from 60 to 30 days and the eligible list shrinks from 93 countries to 60. What changes and how to stay longer."
 category: "lifestyle"
 image: "/images/guides/30days-visa.png"
 publishDate: 2026-05-20

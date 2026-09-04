@@ -1,7 +1,7 @@
 ---
 title: "Songkran in Pattaya 2026: Thailand's Wildest Water Festival"
 slug: "songkran-pattaya"
-description: "Songkran in Pattaya lasts longer than anywhere else in Thailand. Complete guide to dates, Wan Lai, best zones, survival tips, and what to expect April 11–19, 2026."
+description: "Songkran in Pattaya lasts longer than anywhere else in Thailand. Dates, Wan Lai, the best zones and survival tips for 11-19 April 2026."
 category: "general"
 publishDate: 2026-04-06
 draft: false

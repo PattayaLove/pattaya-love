@@ -1,7 +1,7 @@
 ---
-title: "Thailand Visa for Indian Passports: What Changes on 15 September 2026"
+title: "Thailand Visa for Indians: What Changes 15 September"
 slug: "thailand-visa-for-indians"
-description: "Indian passport holders keep visa-free entry to Thailand, but the stay drops from 60 to 30 days on 15 September and business visits are no longer covered. What immigration actually asks for, and how to stay longer."
+description: "Indian passports keep visa-free entry, but the stay drops to 30 days on 15 September and business visits are no longer covered. What immigration asks for."
 category: "lifestyle"
 image: "/images/areas/pattaya-beach-promenade.webp"
 publishDate: 2026-09-04

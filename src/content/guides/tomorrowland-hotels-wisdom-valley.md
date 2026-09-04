@@ -1,7 +1,7 @@
 ---
-title: "Tomorrowland Thailand: Where to Stay by Distance to Wisdom Valley"
+title: "Tomorrowland: Where to Stay by Distance to the Venue"
 slug: "tomorrowland-hotels-wisdom-valley"
-description: "We measured every Pattaya neighbourhood against the festival site. The whole beach strip sits within four kilometres of itself, Na Jomtien is the furthest point of all, and distance is not the variable you should be booking on."
+description: "We measured every Pattaya neighbourhood against the festival site. Na Jomtien is the furthest point of all, and distance is not what you should book on."
 category: "hotels"
 image: "/images/areas/central-pattaya-aerial.webp"
 publishDate: 2026-09-03

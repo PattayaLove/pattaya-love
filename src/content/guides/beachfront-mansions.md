@@ -1,7 +1,7 @@
 ---
 title: "Luxury Beachfront Villas & Mansions in Pattaya 2026"
 slug: "beachfront-mansions"
-description: "The most exclusive beachfront properties in Pattaya and Na Jomtien. Private pool villas, luxury mansions, and high-end rentals for the ultimate Thai coastal living."
+description: "The most exclusive beachfront properties in Pattaya and Na Jomtien: private pool villas, luxury mansions and high-end rentals on the Thai coast."
 category: "hotels"
 image: "/images/hotels/hotel-luxury-1.webp"
 publishDate: 2026-04-04
