@@ -94,33 +94,6 @@ const hotels = [
   },
 ];
 
-const areas = [
-  {
-    name: 'Walking Street',
-    tagline: 'The legendary nightlife strip',
-    venues: 24,
-    hotels: 12,
-    image: '/images/areas/walking-street.webp',
-    href: '/areas/walking-street/',
-  },
-  {
-    name: 'Soi 6',
-    tagline: 'The daytime hotspot',
-    venues: 18,
-    hotels: 8,
-    image: '/images/areas/soi-6.webp',
-    href: '/areas/soi-6/',
-  },
-  {
-    name: 'Jomtien Beach',
-    tagline: 'The relaxed alternative',
-    venues: 10,
-    hotels: 15,
-    image: '/images/areas/pattaya-beach.webp',
-    href: '/areas/jomtien/',
-  },
-];
-
 const amenityLabels: Record<string, string> = {
   pool: 'Pool', spa: 'Spa', wifi: 'WiFi', fitness_center: 'Gym',
   restaurant: 'Dining', beach_access: 'Beach', local_bar: 'Bar',
@@ -272,6 +245,7 @@ const journalArticles = [
 
 import OptImage from '../components/OptImage.astro';
 import Icon from '../components/Icon.astro';
+import AreaMap from '../components/AreaMap.astro';
 ---
 
 <BaseLayout
@@ -476,6 +450,39 @@ import Icon from '../components/Icon.astro';
   <!-- ═══════════════════════════════════════════════ -->
   <!-- 7. HOTEL SPOTLIGHT — Affiliate CTAs              -->
   <!-- ═══════════════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ORIENTATION MAP                                 -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto] gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
+            Know Where You Are
+          </span>
+          <h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-ink mb-6">
+            Pattaya is not one place
+          </h2>
+          <p class="text-ink-secondary text-lg leading-relaxed mb-5">
+            Booking sites show a single strip of coast. On the ground it behaves like several
+            separate towns: Wongamat and Naklua are quiet and residential, Walking Street and
+            Soi 6 are the loud middle, Jomtien runs south with the wider beach, and East Pattaya
+            is inland where people live rather than visit.
+          </p>
+          <p class="text-ink-secondary text-lg leading-relaxed mb-8">
+            Which one you pick changes the trip more than which hotel you book. The map is drawn
+            from each district's real coordinates, so the distances are accurate.
+          </p>
+          <a href="/areas/" class="group inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300">
+            All Area Guides
+            <Icon name="arrow_right_alt" class="text-lg" />
+          </a>
+        </div>
+        <AreaMap class="w-full lg:w-[400px] shrink-0 reveal reveal-delay-1" />
+      </div>
+    </div>
+  </section>
+
   <section class="py-24 md:py-32 bg-surface">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-14 gap-4 reveal">
