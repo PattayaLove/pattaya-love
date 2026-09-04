@@ -57,6 +57,8 @@ Monday is a write-off. Plan for it rather than fighting it.
 
 **Monday: the beach and a massage.** That is the whole plan and it is the right one.
 
+One practical note for your last day: hotel checkout is usually late morning and flights out of Bangkok tend to leave in the evening. <a href="https://radicalstorage.tpx.lu/tqyVewnp" rel="sponsored nofollow" target="_blank">Radical Storage</a> has drop-off points around Pattaya if you would rather not spend six hours attached to a suitcase.
+
 **Tuesday onward, if you have the days:**
 
 - **[Rooftop dining](/guides/rooftop-dining/)** — the city looks considerably better from 30 floors up, and after a festival weekend a quiet dinner with a view is the correct correction.
@@ -110,3 +112,5 @@ No. The festival ends late Sunday. Give yourself Monday to recover and fly Tuesd
 - [Getting to Tomorrowland: Airports and the Last 20 km](/guides/tomorrowland-getting-there/)
 - [Koh Larn Island Guide](/guides/koh-larn-island-guide/)
 - [Best Beaches in Pattaya](/guides/pattaya-beaches/)
+
+*Some links on this page are affiliate links. If you book through them we earn a small commission at no extra cost to you, and it never affects what we recommend — see our [affiliate disclosure](/affiliate-disclosure/).*

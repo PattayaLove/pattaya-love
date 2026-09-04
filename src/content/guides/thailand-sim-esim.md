@@ -58,8 +58,8 @@ Prices as of 3 September 2026, for the common 10 GB / 30 days plan.
 | Provider | 10 GB / 30 days | Network used | Daily cap |
 |---|---|---|---|
 | Nomad | $10.00 | AIS + DTAC | 2 GB, then 512 kbps |
-| Saily | $10.99 | — | 5 GB |
-| Airalo | $11.00 | AIS + TrueMove H | 3 GB, then ~1 Mbps |
+| <a href="https://saily.tpx.lu/AeKLX6Bz" rel="sponsored nofollow" target="_blank">Saily</a> | $10.99 | — | 5 GB |
+| <a href="https://airalo.tpx.lu/yZVagLCd" rel="sponsored nofollow" target="_blank">Airalo</a> | $11.00 | AIS + TrueMove H | 3 GB, then ~1 Mbps |
 | Ubigi | $12.00 | AIS + TrueMove H | None |
 
 For larger allowances, Airalo's 20 GB / 30 days is around $18 and Saily's around $19.99.
@@ -80,7 +80,7 @@ Search "best eSIM for Thailand" and most of the top results are published by eSI
 
 They are not necessarily wrong, and the underlying prices are usually accurate. But a ranking written by a company that sells one of the options is not a neutral ranking, and the recommendation at the bottom is rarely a surprise. Check the throttle limit and the network yourself.
 
-We have no affiliate relationship with any eSIM provider. If that changes, it will say so on this page.
+To be straight about our own position: we have affiliate links to Airalo and Saily, and none to Nomad, Ubigi or Holafly. That is a commercial fact, not a ranking. Ubigi is still the only one of the five without a daily cap, and buying an eSIM directly from AIS is still usually better value than any reseller — both of those sentences cost us money to write, and both stay.
 
 ## Which One Should You Actually Get
 
@@ -89,6 +89,8 @@ We have no affiliate relationship with any eSIM provider. If that changes, it wi
 **Get an AIS eSIM directly if** your phone supports eSIM and you want the best network without the airport queue. This is the option we would pick for a two-week trip.
 
 **Get an international eSIM if** you are here a few days, want data working the moment the plane lands, or do not want to deal with a Thai storefront. Pick on the daily cap, not the price.
+
+That last point is not hypothetical. An eSIM needs no queue, no passport registration and no counter staff willing to serve you — which matters on the days a shop turns you away. For a long stay AIS is still the better buy; for landing on a schedule, an eSIM removes a failure point.
 
 **Get both if** you are here for a longer stay: an eSIM for the first day, a local SIM once you have settled and can visit a shop without your luggage.
 
@@ -104,7 +106,9 @@ We have no affiliate relationship with any eSIM provider. If that changes, it wi
 
 If you did not grab one on arrival:
 
-**7-Eleven** — most branches sell prepaid SIMs. Staff can usually help with activation, though English varies. Bring your passport.
+**7-Eleven** — most branches sell prepaid SIMs, usually True. Bring your passport.
+
+It does not always work, and this is worth knowing before you rely on it. We have been turned away at a 7-Eleven and refused a SIM outright at a True shop, both recently and neither time with a reason given. Registration is a legal requirement and some counters simply will not do it for a foreigner. If your plan depends on being connected the day you land, do not make a shop your only plan.
 
 **Operator shops** — AIS, True and DTAC all have branded stores in Terminal 21, Central Festival and along the main roads. Best option if you want help choosing or hit a technical problem.
 
@@ -178,3 +182,5 @@ Any of them in the city. AIS if you are heading to islands or inland east of Suk
 - [Thai Banking and QR Payments](/guides/thai-banking-qr-payments/)
 - [Bangkok to Pattaya Transport](/guides/bangkok-to-pattaya/)
 - [Currency Converter](/tools/currency-converter/)
+
+*Some links on this page are affiliate links. If you book through them we earn a small commission at no extra cost to you, and it never affects what we recommend — see our [affiliate disclosure](/affiliate-disclosure/).*

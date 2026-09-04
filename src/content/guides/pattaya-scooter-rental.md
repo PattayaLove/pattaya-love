@@ -50,6 +50,8 @@ Established shops with a physical storefront and a fleet of well-maintained bike
 
 Some of the more reputable rental operations are found along Second Road between Soi 1 and Soi 10, as well as in the Jomtien area near Dongtan Beach.
 
+**Booking ahead:** <a href="https://bikesbooking.tpx.lu/iC5OqefY" rel="sponsored nofollow" target="_blank">BikesBooking</a> aggregates local rental shops and lets you reserve a specific model before you arrive. Useful in high season, when the good bikes go early. The trade-off is that you commit without seeing the bike, and inspecting it yourself is the single best defence against the deposit scams further down this page. Walking into an established shop remains our default.
+
 ## License Requirements
 
 Technically, you need a valid motorbike license from your home country plus an International Driving Permit (IDP) to legally ride in Thailand. The IDP must specifically include a motorcycle endorsement.
@@ -168,3 +170,5 @@ For scooters, insurance is almost never included. Your travel insurance may cove
 - **Drive on the LEFT** in Thailand
 - **Helmet is mandatory** — 500 THB fine without one
 - **Avoid leaving your passport** as deposit. Offer cash or a photocopy instead
+
+*Some links on this page are affiliate links. If you book through them we earn a small commission at no extra cost to you, and it never affects what we recommend — see our [affiliate disclosure](/affiliate-disclosure/).*
