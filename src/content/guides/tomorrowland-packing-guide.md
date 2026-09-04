@@ -122,6 +122,8 @@ Three days of heat, dancing, alcohol and very little sleep puts more people in a
 
 Pattaya has good private hospitals and they are not free. Check that your travel insurance actually covers you — many policies exclude injuries sustained while intoxicated, and some exclude festivals or "hazardous activities" outright. Read the exclusions rather than the summary page, and do it before you fly.
 
+If you are not covered yet, <a href="https://ektatraveling.tpx.lu/2cvruph4" rel="sponsored nofollow" target="_blank">Ekta</a> sells policies aimed at travellers and long-stay visitors. Read its exclusions the same way you would read anyone else's — the warning above applies to every insurer, including that one.
+
 Basic self-care that people skip: drink water between drinks, eat properly at least once a day, and take a break in shade during the afternoon. Pacing across three days beats going hard on Friday and writing off Saturday.
 
 ## What to Leave at the Hotel
@@ -171,3 +173,5 @@ Not always. Many policies exclude intoxication-related injury and some exclude f
 - [Tomorrowland Tickets: The Four Tiers](/guides/tomorrowland-tickets/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)
 - [Thai Banking and QR Payments](/guides/thai-banking-qr-payments/)
+
+*Some links on this page are affiliate links. If you book through them we earn a small commission at no extra cost to you, and it never affects what we recommend — see our [affiliate disclosure](/affiliate-disclosure/).*

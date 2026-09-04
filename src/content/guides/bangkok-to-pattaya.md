@@ -107,7 +107,7 @@ Several companies offer pre-booked private transfers. You will be met in the arr
 
 - **Price:** 1,500 to 2,500 THB (sedan) / 2,000 to 3,500 THB (SUV or van)
 - **Travel time:** 1.5 to 2 hours
-- **Providers:** KKday, Klook, GetTransfer, hotel concierge services
+- **Providers:** KKday, Klook, GetTransfer, <a href="https://kiwitaxi.tpx.lu/2LQrJp7J" rel="sponsored nofollow" target="_blank">Kiwitaxi</a>, hotel concierge services
 
 This is the most convenient option if you arrive late at night or have heavy luggage. The premium over a taxi is small for the added convenience.
 
@@ -168,3 +168,5 @@ Whichever option you choose, the journey is short and simple. You will be on Bea
 - [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)
 - [Scooter & Motorbike Rental in Pattaya](/guides/pattaya-scooter-rental/)
 - [Best Hotels in Pattaya](/stay/)
+
+*Some links on this page are affiliate links. If you book through them we earn a small commission at no extra cost to you, and it never affects what we recommend — see our [affiliate disclosure](/affiliate-disclosure/).*

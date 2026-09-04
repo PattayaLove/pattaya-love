@@ -59,7 +59,7 @@ U-Tapao sits roughly 45 km from Pattaya by road, typically 40 to 60 minutes depe
 - **Airport taxi counter** — a fixed fare of around 1,000 THB. No negotiation, no surprises.
 - **Metered taxi** — 600 to 800 THB when the driver runs the meter. Some will refuse and quote 1,000 or more instead. Your call whether the argument is worth 200 baht after a flight.
 - **Grab** — around 800 THB, and you see the price before you accept.
-- **Pre-booked private transfer** — from roughly 1,500 THB, worth it if you are landing late or travelling as a group with luggage.
+- **Pre-booked private transfer** — from roughly 1,500 THB, worth it if you are landing late or travelling as a group with luggage. <a href="https://kiwitaxi.tpx.lu/UCHSBG1U" rel="sponsored nofollow" target="_blank">Kiwitaxi</a> covers both Bangkok airports and U-Tapao, and you know the price before you land.
 
 Treat all of these as September figures. Festival weekend will not be a normal weekend, and anything quoted on the day may run higher.
 

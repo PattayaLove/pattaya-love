@@ -39,9 +39,12 @@ if (!token) {
   process.exit(1);
 }
 
-const urls = process.argv.slice(2);
+const args = process.argv.slice(2);
+const subArg = args.find((a) => a.startsWith('--sub='));
+const subId = subArg ? subArg.slice('--sub='.length) : null;
+const urls = args.filter((a) => !a.startsWith('--'));
 if (urls.length === 0) {
-  console.error('Usage: node scripts/tp-links.mjs <url> [<url> ...]   (max 10 per run)');
+  console.error('Usage: node scripts/tp-links.mjs [--sub=<placement>] <url> [<url> ...]   (max 10 per run)');
   process.exit(1);
 }
 if (urls.length > 10) {
@@ -51,6 +54,12 @@ if (urls.length > 10) {
 
 const API = process.env.TRAVELPAYOUTS_API_URL || 'https://api.travelpayouts.com/links/v1/create';
 
+/* Neither of these is a secret — both appear in every affiliate link the
+   network hands out, and trs is base64'd into the Drive script filename.
+   Override via env if they ever change. */
+const MARKER = Number(process.env.TRAVELPAYOUTS_MARKER || 773648);
+const TRS = Number(process.env.TRAVELPAYOUTS_TRS || 570162);
+
 const res = await fetch(API, {
   method: 'POST',
   headers: {
@@ -58,7 +67,12 @@ const res = await fetch(API, {
     'Content-Type': 'application/json',
     Accept: 'application/json',
   },
-  body: JSON.stringify({ links: urls.map((u) => ({ url: u })) }),
+  body: JSON.stringify({
+    trs: TRS,
+    marker: MARKER,
+    shorten: true,
+    links: urls.map((u) => (subId ? { url: u, sub_id: subId } : { url: u })),
+  }),
 });
 
 const body = await res.text();
@@ -80,4 +94,22 @@ try {
   process.exit(0);
 }
 
-console.log(JSON.stringify(data, null, 2));
+const links = data?.result?.links || [];
+if (links.length === 0) {
+  console.log(JSON.stringify(data, null, 2));
+  process.exit(0);
+}
+
+let failed = 0;
+for (const l of links) {
+  if (l.code === 'success') {
+    console.log(`OK    ${l.url}\n   -> ${l.partner_url}\n`);
+  } else {
+    failed++;
+    console.log(`FAIL  ${l.url}\n   -> ${l.message || l.code}\n`);
+  }
+}
+if (failed) {
+  console.log(`${failed} link(s) failed. "trs is not subscribed for brand" means the`);
+  console.log('program still needs connecting at app.travelpayouts.com/programs.');
+}
