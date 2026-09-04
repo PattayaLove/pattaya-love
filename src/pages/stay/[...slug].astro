@@ -27,11 +27,16 @@ const relatedHotels = allHotels
   .slice(0, 3);
 
 /* Same-area hotels for the comparison table. The current hotel stays in the list
-   so the reader can see where it sits rather than having to hold it in their head. */
-const comparisonHotels = [...allHotels]
+   so the reader can see where it sits rather than having to hold it in their head.
+   The window slides around the current hotel instead of always showing the area's
+   top six — otherwise, in an area like Central Pattaya with 41 properties, the
+   same six get every internal link and the other 35 get none. */
+const sameArea = [...allHotels]
   .filter((h) => h.data.area === data.area)
-  .sort((a, b) => b.data.rating - a.data.rating || b.data.reviewsCount - a.data.reviewsCount)
-  .slice(0, 6);
+  .sort((a, b) => b.data.rating - a.data.rating || b.data.reviewsCount - a.data.reviewsCount);
+const currentIndex = sameArea.findIndex((h) => h.data.slug === data.slug);
+const windowStart = Math.max(0, Math.min(currentIndex - 2, sameArea.length - 6));
+const comparisonHotels = sameArea.slice(windowStart, windowStart + 6);
 
 /* ─── Helpers ─── */
 const priceLabels: Record<string, string> = {
