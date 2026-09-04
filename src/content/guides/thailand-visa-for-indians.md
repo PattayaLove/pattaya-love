@@ -38,7 +38,7 @@ Our [full breakdown of the rule change](/guides/thailand-visa-rules-2026/) cover
 Most travellers walk through without being asked anything. Be able to produce all of it anyway, because the officer decides and there is no appeal at the desk.
 
 - **Passport valid at least six months** beyond your arrival date.
-- **Thailand Digital Arrival Card (TDAC)** — completed before you travel. This replaced the paper arrival card and is a common reason for delays among people who did not know it existed.
+- **Thailand Digital Arrival Card (TDAC)** — completed before you travel. This replaced the paper arrival card and is a common reason for delays among people who did not know it existed. The quickest way to file it is the **THIM app**, the Immigration Bureau's own app for iPhone and Android: point the camera at your passport, most fields fill themselves, done in about three minutes. It is free — see the warning below.
 - **Confirmed return or onward ticket.** A one-way booking is the single most common cause of denied boarding, and airlines check this before immigration ever sees you.
 - **Accommodation booking** for at least the first nights.
 - **Proof of funds.** Sources differ on the figure: commonly quoted as 10,000 THB per person or 20,000 per family, but the requirement stated for visa-exempt entry is **20,000 THB per person or 40,000 per family**. Plan for the higher number. Cash, or a bank statement you can open on your phone.

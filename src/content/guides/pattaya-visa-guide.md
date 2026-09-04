@@ -130,6 +130,18 @@ The immigration office serving Pattaya is located on **Soi 5, [Jomtien](/areas/j
 - **Bring passport photos.** Two 4x6 cm photos are required for most applications. Photo shops are available near the office.
 - **Processing time:** Extensions are usually processed same-day, though during peak season (November to February) it may take longer.
 
+## TDAC — Fill It In Before You Fly
+
+The **Thailand Digital Arrival Card** replaced the paper arrival card and is mandatory for everyone. It is a frequent cause of delay simply because people do not know it exists until they are standing in the queue.
+
+**The fastest way to file it is the THIM app** — Thailand Immigration Management, the Immigration Bureau's own app for iPhone and Android. You point the camera at your passport, most fields populate themselves, and the whole thing takes about three minutes. It is what we use.
+
+Two things worth being clear about:
+
+**THIM does not replace the TDAC.** The card is the requirement; the app is one way to submit it. You can also file it through the official web form.
+
+**Filing is free.** A cluster of third-party sites and apps charge a "service fee" for submitting a form that costs nothing. If you are being asked to pay, you are on the wrong one.
+
 ## TM30 — The Address Report Nobody Explains
 
 This is the requirement that quietly derails extensions and 90-day reports, because most people have never heard of it until it blocks something.
