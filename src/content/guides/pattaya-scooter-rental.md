@@ -88,7 +88,15 @@ Petrol stations are common along Sukhumvit Road and the main roads. In more cent
 
 Parking a scooter in Pattaya is generally easy. Most businesses, restaurants, and malls have free motorbike parking areas. Central Festival, Terminal 21, and other malls have dedicated covered motorbike parking.
 
-On the street, park where you see other bikes parked. Avoid blocking sidewalks or parking in marked no-parking zones. Fines are rare but towing does happen in some areas, especially near Walking Street.
+**Learn the kerb colours before you park on the street.** They are the actual rule, and they are enforced:
+
+- **Red and white** — no parking and no stopping, not even briefly. This is the one that gets bikes towed.
+- **Yellow and white** — you may stop to drop someone off, but not park.
+- **Black and white** — parking allowed.
+
+**Beach Road is being policed hard now.** Enforcement there has tightened considerably and motorbikes left on red-and-white kerbs are towed rather than warned. Fines start around 500 THB and climb once storage fees are added, and retrieving the bike costs you most of a day. Walking Street has long had the same problem.
+
+Away from marked kerbs the practical rule still holds: park where other bikes are already parked, never block a footpath, and check for signs — local rules override the kerb colour, particularly near markets and temples.
 
 ## Safety Tips
 
