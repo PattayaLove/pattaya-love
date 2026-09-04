@@ -104,6 +104,14 @@ import Footer from '../components/Footer.astro';
           <p>
             We use inline SVG icons on our website. These icons are embedded directly in the HTML and do not require any external font or resource loading. No data is transmitted to third parties for icon rendering.
           </p>
+
+          <h3 class="text-xl font-bold font-headline text-ink mt-8 mb-3">5.3 Affiliate Network Script (consent required)</h3>
+          <p>
+            If — and only if — you have given your consent, we load one script from our affiliate network <strong>Travelpayouts</strong> (domain: emrldtp.com). It allows our booking partners to attribute a referral to us when you book through a link on this site.
+          </p>
+          <p>
+            Loading the script transmits your IP address and browser information to the provider. Without your consent the script is not loaded and no connection to this provider is established. Details and withdrawal are in section 9.
+          </p>
         </section>
 
         <section>
@@ -145,12 +153,37 @@ import Footer from '../components/Footer.astro';
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">9. Cookies</h2>
+          <h2 class="text-2xl font-bold font-headline text-ink mt-12 mb-4">9. Cookies and Consent</h2>
           <p>
-            Our website does <strong>not</strong> use cookies for tracking or analytics purposes. We do not set any first-party or third-party cookies. No cookie consent banner is required.
+            <strong>Without your consent, this website sets no cookies and loads no third-party code.</strong> There is no analytics cookie, no advertising cookie and no cross-site tracking.
           </p>
           <p>
-            If you click on affiliate links, the destination website may set their own cookies according to their own privacy policy.
+            If you accept the banner shown on your first visit, we load the affiliate network script described in section 5.3. It stores the following on your device:
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li><code>am_user_session</code> — a cookie containing a random session identifier used to attribute a booking referral</li>
+            <li>one entry in your browser's local storage, set by the same provider</li>
+          </ul>
+          <p>
+            The legal basis is your consent under Art. 6(1)(a) GDPR. You can withdraw it at any time with immediate effect. Withdrawal does not affect the lawfulness of processing carried out before it.
+          </p>
+          <p>
+            <button
+              id="consent-reset"
+              type="button"
+              class="mt-2 px-5 h-11 rounded-full border border-surface-high text-ink text-sm font-bold uppercase tracking-widest hover:bg-surface-low transition-colors"
+            >
+              Change cookie settings
+            </button>
+          </p>
+          <script is:inline>
+            document.getElementById('consent-reset')?.addEventListener('click', function () {
+              if (window.plResetConsent) { window.plResetConsent(); }
+              else { try { localStorage.removeItem('pl-consent'); } catch (e) {} location.reload(); }
+            });
+          </script>
+          <p>
+            If you click on affiliate links, the destination website may set their own cookies according to their own privacy policy. We have no control over that processing.
           </p>
         </section>
 

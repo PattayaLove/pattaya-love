@@ -1,0 +1,101 @@
+---
+/**
+ * CookieConsent — self-contained consent gate for the Travelpayouts Drive script.
+ *
+ * Nothing external loads until the visitor accepts. Declining is one click and
+ * leaves the site with zero third-party requests, which is how it shipped
+ * before Drive was added.
+ *
+ * The decision lives in localStorage under `pl-consent`. window.plResetConsent()
+ * clears it so the privacy page can offer a withdrawal link.
+ */
+---
+
+<div
+  id="cookie-consent"
+  hidden
+  role="dialog"
+  aria-modal="false"
+  aria-labelledby="cookie-consent-title"
+  class="fixed inset-x-0 bottom-0 z-[200] bg-surface-card border-t border-surface-high shadow-[0_-8px_30px_rgba(0,0,0,0.08)]"
+>
+  <div class="max-w-5xl mx-auto px-6 py-5 md:py-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
+    <div class="flex-1">
+      <h2 id="cookie-consent-title" class="font-headline font-bold text-base text-ink mb-1">
+        Affiliate tracking
+      </h2>
+      <p class="text-sm text-ink-muted leading-relaxed">
+        We use one partner script that sets a cookie so booking partners can credit us
+        for referrals. It costs you nothing and we earn nothing without it. Decline and
+        the site loads no third-party code at all — everything else works the same.
+        <a href="/privacy/" class="text-primary underline underline-offset-2">Details</a>.
+      </p>
+    </div>
+    <div class="flex gap-3 shrink-0">
+      <button
+        id="cookie-decline"
+        type="button"
+        class="px-5 h-11 rounded-full border border-surface-high text-ink text-sm font-bold uppercase tracking-widest hover:bg-surface-low transition-colors"
+      >
+        Decline
+      </button>
+      <button
+        id="cookie-accept"
+        type="button"
+        class="px-5 h-11 rounded-full bg-primary text-white text-sm font-bold uppercase tracking-widest hover:bg-primary-hover transition-colors"
+      >
+        Accept
+      </button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var KEY = 'pl-consent';
+    var banner = document.getElementById('cookie-consent');
+
+    function read() {
+      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+    }
+    function write(v) {
+      try { localStorage.setItem(KEY, v); } catch (e) {}
+    }
+
+    /* Travelpayouts Drive — only ever called after an explicit accept. */
+    function loadPartnerScript() {
+      var s = document.createElement('script');
+      s.async = 1;
+      s.setAttribute('data-cmp-ab', '2');
+      s.src = 'https://emrldtp.com/NTcwMTYy.js?t=570162';
+      document.head.appendChild(s);
+    }
+
+    /* Lets the privacy page offer a withdrawal. */
+    window.plResetConsent = function () {
+      try { localStorage.removeItem(KEY); } catch (e) {}
+      location.reload();
+    };
+
+    var choice = read();
+    if (choice === 'accepted') { loadPartnerScript(); return; }
+    if (choice === 'declined') { return; }
+
+    if (!banner) return;
+    banner.hidden = false;
+
+    var accept = document.getElementById('cookie-accept');
+    var decline = document.getElementById('cookie-decline');
+
+    if (accept) accept.addEventListener('click', function () {
+      write('accepted');
+      banner.hidden = true;
+      loadPartnerScript();
+    });
+
+    if (decline) decline.addEventListener('click', function () {
+      write('declined');
+      banner.hidden = true;
+    });
+  })();
+</script>
