@@ -130,6 +130,22 @@ The immigration office serving Pattaya is located on **Soi 5, [Jomtien](/areas/j
 - **Bring passport photos.** Two 4x6 cm photos are required for most applications. Photo shops are available near the office.
 - **Processing time:** Extensions are usually processed same-day, though during peak season (November to February) it may take longer.
 
+## TM30 — The Address Report Nobody Explains
+
+This is the requirement that quietly derails extensions and 90-day reports, because most people have never heard of it until it blocks something.
+
+**What it is:** whenever a foreigner takes up residence at an address in Thailand, that address must be reported to Immigration within **24 hours**. Every move needs a new one — a new condo, a new hotel after a trip upcountry, a return from abroad to the same flat.
+
+**Whose job it is:** formally the landlord's, the property owner's or the hotel manager's, not yours. Hotels file it automatically. Private landlords frequently do not, and the consequence lands on you rather than on them.
+
+**What it costs when it is missed:** the responsible party faces a fine, typically 800 to 2,000 THB, and up to 10,000 where a hotel manager is liable. The bigger cost is practical — without a valid TM30 on file, Immigration can refuse to process your extension or your 90-day report, and you find out at the counter after queuing.
+
+**Do it yourself online.** Immigration runs a portal at [tm30.immigration.go.th](https://tm30.immigration.go.th/) where both owners and tenants can file. This is what we do rather than hoping the landlord got round to it. Register once, and each subsequent report takes a few minutes.
+
+If you are renting long-term, ask the landlord for the TM30 receipt when you move in. If they look blank, file it yourself and stop thinking about it.
+
+**Not the same as 90-day reporting.** TM30 reports *where you live* and belongs to the property owner. The 90-day report (form TM47) reports *that you are still here* and is your own obligation under the Immigration Act once you stay beyond 90 days on one permission. People conflate the two constantly and then miss one.
+
 ## Extension Process
 
 Whether you are on a visa exemption, tourist visa, or any other visa type, the extension process at Pattaya immigration follows the same basic steps.
@@ -153,6 +169,10 @@ The bottom line: do not overstay. If your visa is about to expire, either extend
 For more general advice on planning your trip, see our [first-time Pattaya guide](/guides/first-time-pattaya/) which covers accommodation, transport, and everything else you need for arrival.
 
 ## Related Guides
+
+- [Thailand Visa Rules: 30-Day Entry From 15 September 2026](/guides/thailand-visa-rules-2026/) — what changes in the coming weeks
+- [Working Remotely from Pattaya](/guides/digital-nomad-pattaya/) — the DTV for remote workers
+- [Muay Thai in Pattaya](/guides/muay-thai-pattaya/) — the DTV via soft power activities
 
 - [Thai Bank Account & QR Payments for Foreigners](/guides/thai-banking-qr-payments/)
 - [Bangkok to Pattaya — Transport Guide](/guides/bangkok-to-pattaya/)

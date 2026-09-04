@@ -1,14 +1,17 @@
 ---
-title: "Thailand Visa Rules 2026 — 60-Day Visa-Free Entry Is Over"
+title: "Thailand Visa Rules: 30-Day Visa-Free Entry From 15 September 2026"
 slug: "thailand-visa-rules-2026"
-description: "Thailand's Cabinet has ended the 60-day visa-free entry for 93 countries. Here's what changes, who's affected, and how to stay longer than 30 days in Pattaya."
+description: "From 15 September 2026 visa-free entry drops from 60 to 30 days and the eligible list shrinks from 93 countries to 60. The confirmed date, who loses access, and how to stay longer in Pattaya."
 category: "lifestyle"
 image: "/images/guides/30days-visa.png"
 publishDate: 2026-05-20
+updatedDate: 2026-09-04
 draft: false
 ---
 
-If you were planning a long stay in Pattaya without a visa, the rules just changed. On May 19, 2026, Thailand's Cabinet officially revoked the 60-day visa exemption that had been in place since July 2024. Most nationalities will be back to 30 days visa-free — and some will get even less.
+**The date is now confirmed: the new rules take effect on 15 September 2026.** The Ministry of Interior announcements were published in the Royal Gazette on 31 August and the Tourism Authority of Thailand confirmed the timing on 1 September.
+
+Thailand's Cabinet revoked the 60-day visa exemption on 19 May 2026, and this is when the replacement starts. Visa-free entry drops to 30 days, and the number of eligible countries falls from 93 to 60. Entries up to and including 14 September still get the old allowance.
 
 This guide breaks down what happened, who is affected, and what your options are if you want to stay longer.
 
@@ -24,19 +27,23 @@ Government data shows the average foreign tourist stays in Thailand for roughly 
 
 Thailand is moving to a tiered system:
 
-**30-day visa exemption** — applies to 54 countries and territories, covering most of Thailand's traditional tourism markets. This includes travelers from the United States, United Kingdom, Germany, France, Australia, Canada, Switzerland, and most EU member states.
+**30-day visa exemption** — 60 countries and territories, down from 93. This still covers Thailand's main tourism markets: the United States, United Kingdom, Germany, France, Australia, Canada, Switzerland and most EU member states.
 
-**30-day bilateral exemption** — applies to 9 countries including China, Hong Kong, Laos, Russia, and Vietnam.
+**15-day exemption** — Seychelles and Mauritius.
 
-**90-day bilateral exemption** — maintained for Argentina, Brazil, Chile, Peru, and South Korea.
+**Visa on Arrival** — Azerbaijan, Belarus and Serbia move into this category under the updated framework.
 
-**15-day exemption** — some countries will see their allowance shortened to just 15 days. The full list depends on the final Royal Gazette publication.
+**90-day bilateral exemption** — maintained for Argentina, Brazil, Chile, Peru and South Korea.
+
+The cut from 93 eligible countries to 60 is the part that gets less attention than the day count, and it matters more: **33 nationalities lose visa-free access entirely** and now need a visa before travelling. If your passport is not from a major Western market, check the current list before you book anything.
 
 ## When Does This Take Effect?
 
-The new rules become effective 15 days after publication in the Royal Gazette. The exact date has not been announced yet, but expect the changes to take effect in June or July 2026. Until then, the current 60-day exemption still applies.
+**15 September 2026.** The Royal Gazette publication happened on 31 August, and the Tourism Authority of Thailand confirmed the date on 1 September.
 
-We will update this guide as soon as the effective date is confirmed.
+Arrivals up to and including **14 September** are processed under the old rules and get the 60-day allowance. From the 15th, it is 30 days.
+
+If you are already in Thailand on a 60-day visa-free entry when the change lands, that entry is not shortened retroactively — but do not rely on our reading of that. Confirm it at [Pattaya Immigration](/guides/pattaya-visa-guide/) if your dates are tight.
 
 ## What This Means for Pattaya Visitors
 
@@ -86,3 +93,9 @@ If you are visiting Pattaya for a holiday, no. Thirty days is plenty for any vac
 If you are planning to live in Pattaya long-term, this is a signal to get your visa situation sorted properly. The era of endless visa-free entries and border runs is coming to an end — Thailand is tightening enforcement across the board.
 
 Plan ahead, apply for the right visa before you travel, and you will have zero problems.
+
+## Related Guides
+
+- [Pattaya Visa Guide](/guides/pattaya-visa-guide/) — every visa type, the immigration office, extensions and TM30
+- [Working Remotely from Pattaya](/guides/digital-nomad-pattaya/) — the five-year DTV for remote workers
+- [Muay Thai in Pattaya](/guides/muay-thai-pattaya/) — the DTV via soft power activities
