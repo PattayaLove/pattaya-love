@@ -75,6 +75,32 @@ const websiteSchema = {
 
     <!-- Schema.org WebSite -->
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+
+    <!-- ── Travelpayouts Drive ──
+         Loads an external script from emrldtp.com on every page. It converts
+         existing travel links into affiliate links and may insert its own links
+         into page copy. Sets cookies, so it needs consent handling before this
+         is defensible under GDPR — see the note in the commit message.
+         is:inline keeps Astro from bundling and rewriting the snippet.
+         To disable: delete this block. Nothing else depends on it. -->
+    <script
+      is:inline
+      nowprocket
+      data-noptimize="1"
+      data-cfasync="false"
+      data-wpfc-render="false"
+      seraph-accel-crit="1"
+      data-no-defer="1"
+      data-cmp-ab="2"
+    >
+      (function () {
+          var script = document.createElement("script");
+          script.async = 1;
+          script.setAttribute("data-cmp-ab","2");
+          script.src = 'https://emrldtp.com/NTcwMTYy.js?t=570162';
+          document.head.appendChild(script);
+      })();
+    </script>
   </head>
   <body class="antialiased">
     <slot />
