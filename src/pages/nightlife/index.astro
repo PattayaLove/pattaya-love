@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
@@ -51,6 +52,7 @@ import Icon from '../../components/Icon.astro';
 >
   <Navigation transparent />
 
+  <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Nightlife" }]} />
   <!-- ═══════════════════════════════════════════════ -->
   <!-- 1. HERO HEADER — Dark theme                     -->
   <!-- ═══════════════════════════════════════════════ -->

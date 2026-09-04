@@ -1,0 +1,36 @@
+---
+/**
+ * BreadcrumbSchema — BreadcrumbList JSON-LD for pages that show a breadcrumb.
+ *
+ * Google renders this as the site path in place of the raw URL in search
+ * results, which reads better and clicks better. The markup has to mirror what
+ * the visitor actually sees, so pass the same trail the visible nav renders.
+ *
+ * The final item is the current page and carries no URL, per the spec.
+ */
+
+interface Crumb {
+  name: string;
+  /** Absolute path, e.g. "/guides/". Omit on the last item. */
+  href?: string;
+}
+interface Props {
+  items: Crumb[];
+}
+const { items } = Astro.props;
+
+const SITE = 'https://www.pattaya.love';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.name,
+    ...(c.href ? { item: `${SITE}${c.href}` } : {}),
+  })),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

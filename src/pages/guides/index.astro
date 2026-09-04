@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
@@ -57,6 +58,7 @@ import Icon from '../../components/Icon.astro';
 >
   <Navigation />
 
+  <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Guides" }]} />
   <!-- ═══════════════════════════════════════════════ -->
   <!-- 1. HERO HEADER                                  -->
   <!-- ═══════════════════════════════════════════════ -->

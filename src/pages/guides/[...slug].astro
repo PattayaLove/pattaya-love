@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 import OptImage from '../../components/OptImage.astro';
@@ -140,6 +141,8 @@ import Icon from '../../components/Icon.astro';
   image={guide.data.image}
 >
   <Navigation />
+
+  <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Guides", href: "/guides/" }, { name: categoryLabels[guide.data.category] }]} />
 
   <!-- Schema.org Article -->
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
