@@ -35,7 +35,8 @@ const AREAS = [
 
 /* Landmarks with no page of their own — orientation only. */
 const LANDMARKS = [
-  { label: 'Central Pattaya', x: 239.2, y: 494.8, anchor: 'start' },
+  /* Same latitude as Soi Buakhao, so its label goes left to avoid the collision. */
+  { label: 'Central Pattaya', x: 239.2, y: 494.8, anchor: 'end' },
   { label: 'Bali Hai Pier', x: 171.7, y: 653.1, anchor: 'start' },
 ];
 
@@ -55,8 +56,8 @@ const SCALE_PX = 178; // 2 km
     <polyline points={COAST} class="coast" />
 
     <!-- Gulf label -->
-    <text x="42" y="300" class="sea-label">Gulf of</text>
-    <text x="42" y="336" class="sea-label">Thailand</text>
+    <text x="42" y="236" class="sea-label">Gulf of</text>
+    <text x="42" y="272" class="sea-label">Thailand</text>
 
     <!-- Landmarks -->
     {LANDMARKS.map((l) => (
@@ -78,6 +79,14 @@ const SCALE_PX = 178; // 2 km
         </text>
       </a>
     ))}
+
+    <!-- Koh Larn lies ~7 km west, off the map edge. Linked, since it has a guide. -->
+    <a href="/guides/koh-larn-island-guide/" class="offmap offmap-west">
+      <line x1="52" y1="612" x2="16" y2="612" />
+      <polygon points="16,606 4,612 16,618" />
+      <text x="8" y="648">Koh Larn</text>
+      <text x="8" y="672" class="offmap-sub">≈7 km west</text>
+    </a>
 
     <!-- Wisdom Valley sits well off the eastern edge; shown as a bearing, not a pin -->
     <g class="offmap">
@@ -194,6 +203,23 @@ const SCALE_PX = 178; // 2 km
     font-size: 21px;
     font-weight: 600;
     text-anchor: end;
+  }
+  .offmap-west text {
+    text-anchor: start;
+  }
+  a.offmap {
+    cursor: pointer;
+  }
+  a.offmap:hover text,
+  a.offmap:focus-visible text {
+    fill: var(--color-primary);
+  }
+  a.offmap:hover line,
+  a.offmap:hover polygon,
+  a.offmap:focus-visible line,
+  a.offmap:focus-visible polygon {
+    stroke: var(--color-primary);
+    fill: var(--color-primary);
   }
   .offmap .offmap-sub {
     font-weight: 400;
