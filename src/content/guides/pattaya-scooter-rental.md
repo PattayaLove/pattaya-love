@@ -72,6 +72,34 @@ Your options for coverage are:
 
 The safest approach is to carry proper travel insurance with motorbike coverage and a valid IDP before you ride.
 
+### Por Ror Bor — the compulsory cover you probably already have
+
+Every registered vehicle in Thailand carries **Por Ror Bor** (พ.ร.บ.), compulsory insurance under the Road Accident Victims Protection Act. If you rent, the bike has it.
+
+What it does and does not do is worth knowing before you need it:
+
+- It covers **injury to people only** — not your bike, not the other party's bike, not theft.
+- **30,000 THB** of medical cover if the accident was your fault; **80,000 THB** if it was not, and up to 500,000 THB for death or permanent disability.
+- Treatment can start before the paperwork is complete. Documents can follow.
+
+Thirty thousand baht goes further in a Thai hospital than the number suggests — it covers an emergency visit, X-rays and a splint comfortably. It does not cover surgery or a long admission, which is what your own policy is for.
+
+## What to Do After an Accident
+
+A reader in our Facebook group came off his bike in Pattaya recently and wrote up how it went. The sequence is worth knowing before you need it, because the order matters.
+
+**1. Check on the other person first.** Before the bike, before the photos.
+
+**2. Move the bikes off the road.** Then photograph the scene if you can.
+
+**3. Call your insurer.** If you have Thai motor cover, an assessor comes to the scene — in his case within about 25 minutes of the call. They handle the exchange with the other party and arrange recovery of the bike to an approved workshop. This is the part that surprises people used to European procedure.
+
+**4. Go to the police before the hospital.** This is the step people skip and then cannot undo. You need the police report to claim on Por Ror Bor for the medical costs. Reporting a road accident does not carry a fine or licence points in Thailand the way it might at home, so there is no reason to avoid it.
+
+**5. Then the hospital.** Bangkok Hospital Pattaya registers your insurance at check-in, and where Por Ror Bor covers the treatment there is nothing to settle at the desk. Our [healthcare guide](/guides/pattaya-healthcare/) covers what a visit there is actually like, including the interpreter service.
+
+**The thing to take from this:** the system works, and it works fastest for people who have Thai motor cover and go to the police first. Riding uninsured on a foreign licence and skipping the report is how the same accident turns into a much worse week.
+
 ## Helmet Law
 
 Helmets are mandatory in Thailand. The fine for riding without a helmet is 500 THB, and police checkpoints specifically look for this. More importantly, head injuries are the leading cause of death in Thai motorcycle accidents. Always wear a helmet, even for short trips.
