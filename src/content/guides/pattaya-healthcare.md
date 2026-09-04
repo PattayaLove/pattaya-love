@@ -84,7 +84,13 @@ Two things to check in your policy rather than assume:
 - **Intoxication exclusions.** Many travel policies decline claims for injuries sustained while drunk. In a city with Pattaya's nightlife, this is not a theoretical clause.
 - **Motorbike cover.** Most policies require a licence valid for the bike you are riding. Renting a scooter on a car licence, which is common here, can void the cover entirely.
 
-If you are not covered, <a href="https://ektatraveling.tpx.lu/2cvruph4" rel="sponsored nofollow" target="_blank">Ekta</a> sells policies aimed at travellers and long-stay visitors. It does **not** serve EU residents, so it is only useful if you are based outside the Union — check your own market otherwise. Read its exclusions the same way; the two points above apply to every insurer, including that one.
+**If you are travelling:** <a href="https://safetywing.com/nomad-insurance?selectedPlan=NOMAD_INSURANCE_ESSENTIAL&amp;referenceID=26593506&amp;utm_source=26593506&amp;utm_medium=Ambassador" rel="sponsored nofollow" target="_blank">SafetyWing Nomad Essential</a> is travel medical insurance for trips of 5 to 364 days, covers emergency treatment abroad, and takes applicants up to age 69. It sells to EU residents, which matters because several competitors do not.
+
+**If you live here:** <a href="https://explore.safetywing.com/nomad-insurance-complete?selectedPlan=NOMAD_INSURANCE_COMPLETE&amp;referenceID=26593506&amp;utm_source=26593506&amp;utm_medium=Ambassador" rel="sponsored nofollow" target="_blank">Nomad Complete</a> is a different product — closer to actual health insurance, covering routine care, check-ups and pre-existing conditions, and it works in your country of residence too. It costs several times the Essential plan. You can sign up until 64 and renew indefinitely after that, so if you are approaching that age it is worth starting sooner rather than later.
+
+**If you are based outside the EU:** <a href="https://ektatraveling.tpx.lu/2cvruph4" rel="sponsored nofollow" target="_blank">Ekta</a> is the other option we link. It does **not** serve EU residents at all, so for most European readers it is not available — for the UK, Australia, the Gulf and the US it is.
+
+Whichever you pick, read the exclusions rather than the summary page. The two points above apply to every insurer on this list.
 
 Our [scooter rental guide](/guides/pattaya-scooter-rental/) covers the licence question in detail, because it is the most common way visitors end up both injured and uninsured.
 
