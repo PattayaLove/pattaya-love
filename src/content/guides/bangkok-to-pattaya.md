@@ -103,13 +103,15 @@ You can book a Grab from the airport, but you will need to walk to the public pi
 
 ### Private Transfer (Pre-Booked)
 
-Several companies offer pre-booked private transfers. You will be met in the arrivals hall with a name sign and escorted to a waiting vehicle.
+The one option where the price, the car and the driver are settled before you land. You are met in the arrivals hall with a name sign and walked to the vehicle — no queue, no negotiation, no explaining your hotel to a driver who has never heard of it.
 
 - **Price:** 1,500 to 2,500 THB (sedan) / 2,000 to 3,500 THB (SUV or van)
 - **Travel time:** 1.5 to 2 hours
-- **Providers:** KKday, Klook, GetTransfer, <a href="https://kiwitaxi.tpx.lu/2LQrJp7J" rel="sponsored nofollow" target="_blank">Kiwitaxi</a>, hotel concierge services
+- **Worth it when:** you land late, travel as a group, or carry more luggage than fits in a taxi boot
 
-This is the most convenient option if you arrive late at night or have heavy luggage. The premium over a taxi is small for the added convenience.
+We link <a href="https://kiwitaxi.tpx.lu/2LQrJp7J" rel="sponsored nofollow" target="_blank">Kiwitaxi</a> because it quotes one all-in fare — tolls and meeting service included — and covers Suvarnabhumi, Don Mueang and U-Tapao alike. KKday, Klook and GetTransfer run the same route, and most hotels will send a car if you email ahead, usually at a markup.
+
+The premium over an airport taxi is 300 to 700 THB. On an afternoon arrival that is money for convenience. At two in the morning with a tired family and four suitcases, it is the difference between arriving and arguing.
 
 ## From Don Mueang Airport (DMK)
 
