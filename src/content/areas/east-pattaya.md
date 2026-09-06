@@ -31,10 +31,12 @@ The area has its own ecosystem of restaurants, gyms, supermarkets (Makro, Lotus'
 
 East Pattaya is about living, not sightseeing. That said, the area is home to several attractions:
 
-- **Nong Nooch Tropical Garden** — A massive botanical garden with Thai cultural shows (<a href="https://klook.tpx.lu/mazMR57O" rel="sponsored nofollow" target="_blank">tickets from ~11 USD</a>)
+- **Nong Nooch Tropical Garden** — A massive botanical garden with Thai cultural shows, around 11 USD
 - **Silverlake Vineyard** — Hilltop winery with panoramic views and a giant Buddha carved into the hillside
-- **Ramayana Water Park** — Thailand's largest water park (<a href="https://klook.tpx.lu/vaIooWEC" rel="sponsored nofollow" target="_blank">tickets from ~24 USD</a>)
-- **Pattaya Floating Market** — Touristy but photogenic, especially the four-regions food section (<a href="https://klook.tpx.lu/BTXUzWQ8" rel="sponsored nofollow" target="_blank">tickets from ~3 USD</a>)
+- **Ramayana Water Park** — Thailand's largest water park, around 24 USD
+- **Pattaya Floating Market** — Touristy but photogenic, especially the four-regions food section, from around 3 USD
+
+Nong Nooch and Ramayana both sit a 20-minute drive out and run to fixed schedules, so neither is a spontaneous afternoon — worth holding the ticket before you set off (<a href="https://klook.tpx.lu/mazMR57O" rel="sponsored nofollow" target="_blank">Nong Nooch</a>, <a href="https://klook.tpx.lu/vaIooWEC" rel="sponsored nofollow" target="_blank">Ramayana</a>). At the <a href="https://klook.tpx.lu/BTXUzWQ8" rel="sponsored nofollow" target="_blank">floating market</a> the question is not the queue but the package: entry ranges from a plain ticket to bundles with boat rides and shows, and it is easier to choose before you are standing at the counter.
 
 ## Dining
 

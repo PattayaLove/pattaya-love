@@ -41,13 +41,13 @@ For a bigger night out, Walking Street is a 100 to 150 THB Grab ride away. Many 
 
 Jomtien's location offers easy access to several attractions beyond the beach.
 
-**Pattaya Floating Market** is a short drive north and features canal-side shopping, food stalls, and cultural demonstrations. It is touristy but worth a visit. <a href="https://klook.tpx.lu/khBgYAiF" rel="sponsored nofollow" target="_blank">Entry tickets</a> run about 3 USD.
+**Pattaya Floating Market** is a short drive north and features canal-side shopping, food stalls, and cultural demonstrations. It is touristy but worth a visit. Pricing is the confusing part: <a href="https://klook.tpx.lu/khBgYAiF" rel="sponsored nofollow" target="_blank">plain entry</a> starts around 3 USD, but the counter also sells bundles with boat rides, costume photos and shows. Decide which one you want before you are in the queue for it.
 
 **Buddha Mountain (Khao Chi Chan)** is a 20-minute drive south and features a massive laser-etched Buddha image on a cliff face. It is free to visit and makes for a good half-day trip.
 
 **Silverlake Vineyard** is nearby and offers a scenic stop with grape-tasting, photo opportunities, and a hilltop cafe overlooking the vineyard and a large lake.
 
-**Nong Nooch Tropical Garden** is one of Thailand's most impressive botanical gardens, located about 15 minutes from Jomtien by car. It includes cultural shows, gardens, and a small zoo. <a href="https://klook.tpx.lu/DuZsBQW7" rel="sponsored nofollow" target="_blank">Tickets</a> are around 11 USD.
+**Nong Nooch Tropical Garden** is one of Thailand's most impressive botanical gardens, located about 15 minutes from Jomtien by car. It includes cultural shows, gardens, and a small zoo. The shows run at set times through the day rather than continuously, so check the schedule before you drive out — arriving at the wrong hour means seeing the gardens and missing the reason most people come. <a href="https://klook.tpx.lu/DuZsBQW7" rel="sponsored nofollow" target="_blank">Tickets</a> are around 11 USD.
 
 ## Who Jomtien Is For
 
