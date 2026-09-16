@@ -121,54 +121,16 @@ The most affordable quality option. A well-established course that's perfect for
 
 ## Padel
 
-Padel went from one indoor hall to four clubs in Pattaya in the space of about two years — Pratumnak, Jomtien, Sukhumvit and the lake in East Pattaya. Courts run 600 to 1,200 THB an hour, and every price below is for the court, not the player: split four ways that is 150 to 300 THB a head. All four rent rackets and all four coach.
+Padel went from one indoor hall to four clubs and fifteen courts in about two years. Courts run 600 to 1,200 THB an hour — for the court, not the player, so 150 to 300 THB a head with a full four.
 
-### Where to Play Padel
+| Club | Where | Courts | Court / hour | Book via |
+|---|---|---|---|---|
+| **Prime Padel** | Sukhumvit Soi 41 | 4, all covered | 800–1,200 THB | Playtomic |
+| **Chilli Padel** | Jomtien | 6 (5 roofed) | 1,000; 600 happy hour | Playtomic |
+| **Pattaya Padel Club** | Mabprachan Lake | 3 (2 roofed) | 600 day / 800 prime | WhatsApp |
+| **Play Padel** | Pratumnak | 2, indoor with AC | 1,200 THB | Direct |
 
-#### Play Padel — Pratumnak
-
-The original — their claim is first padel courts in Pattaya and first indoor courts in Thailand — and the only air-conditioned hall of the four: six AC units per court under an 11.5-metre roof. That is what the premium buys, and in April it is worth it.
-
-- **Court:** 1,200 THB per hour
-- **Hours:** 10:00 to 22:00 daily
-- **Rackets:** 100 THB per hour; demo models free for the first 15 minutes
-- **Coaching:** two licensed coaches, private lessons from 600 THB per hour
-- **Membership:** 1,000 THB a month takes 100 THB off every hour — pays for itself past ten hours
-- **Where:** Kasetsin Soi 3, off Pratumnak Hill. Expect car queues on long weekends, and the clock runs from the reservation time whether you are on court or not
-
-#### Chilli Padel — Jomtien
-
-The biggest, with six courts, five of them roofed with fans. Built as a club rather than a court rental: bar, pro shop, daily events, and a 90-minute intro session for anyone who has never held a racket.
-
-- **Court:** 1,000 THB per hour, 600 THB in happy hours
-- **Hours:** 07:00 to midnight daily — the earliest start and latest finish in town
-- **Coaching:** two pro coaches
-- **Playing solo:** turn up alone and they slot you into a community group or an Americano
-- **Where:** Bun Kanchana 3, Jomtien. Online booking with live availability; evenings go first
-
-#### Prime Padel — Sukhumvit 41
-
-Clubhouse, coffee, and a Saturday open-play rotation that is the quickest way into the local scene if you are only here for a week.
-
-- **Court:** 800 to 1,000 THB per hour depending on the time of day
-- **Hours:** 08:00 to 23:00 daily
-- **Where:** Sukhumvit Soi 41
-
-#### Pattaya Padel Club — Lake Mabprachan
-
-Out by the lake in [East Pattaya](/areas/east-pattaya/), which means a view across the water and the cheapest daytime rate in the city. If you can play at 11:00 on a weekday, this is where to do it.
-
-- **Court:** 600 THB per hour from 10:00 to 16:00; 800 THB before 10:00 and after 16:00
-- **Hours:** 07:00 to 22:00
-- **Coaching:** PADELMBA-certified coach on site
-- **Where:** Soi Mabprachan Larng 2, Pong. Book by WhatsApp
-
-### Padel Tips
-
-- **Midday outdoors is brutal** from March to May. That is the argument for Play Padel's air-conditioning, or a morning slot at the lake
-- **Rainy season:** Play Padel is fully indoor and Chilli has five roofed courts. The other two are open to the sky
-- **Cheapest hour in town:** 600 THB at the lake on a weekday daytime, or Chilli's happy hour — 150 THB each with a full court
-- **Be on time.** Play Padel bills from the reservation, not from when you walk on, and expects late players to cover the others
+The short version: Play Padel for air-conditioning in hot season, Chilli if you are arriving alone and want a game matched for you, the lake for the cheapest weekday court, Prime for the most structured coaching. Every club, every price, and how to find three other players are in the [padel guide](/guides/padel-pattaya/).
 
 ## Running & Cycling
 

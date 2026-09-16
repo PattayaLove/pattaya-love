@@ -38,6 +38,8 @@ East Pattaya is about living, not sightseeing. That said, the area is home to se
 
 Nong Nooch and Ramayana both sit a 20-minute drive out and run to fixed schedules, so neither is a spontaneous afternoon — worth holding the ticket before you set off (<a href="https://klook.tpx.lu/mazMR57O" rel="sponsored nofollow" target="_blank">Nong Nooch</a>, <a href="https://klook.tpx.lu/vaIooWEC" rel="sponsored nofollow" target="_blank">Ramayana</a>). At the <a href="https://klook.tpx.lu/BTXUzWQ8" rel="sponsored nofollow" target="_blank">floating market</a> the question is not the queue but the package: entry ranges from a plain ticket to bundles with boat rides and shows, and it is easier to choose before you are standing at the counter.
 
+For residents the more useful address is [Pattaya Padel Club](/guides/padel-pattaya/) on Mabprachan Lake — three courts with a view across the water and, at 600 THB a weekday daytime hour, the cheapest padel in the city.
+
 ## Dining
 
 The Dark Side food scene punches above its weight. Expat favorites include steak houses, Indian restaurants, and authentic Thai street food stalls that charge half of what Beach Road restaurants ask. The Soi Siam Country Club area has the highest concentration.

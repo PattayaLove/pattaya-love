@@ -59,7 +59,7 @@ Jomtien appeals to a broad range of visitors.
 
 **Couples** who want a beach holiday with the option to explore Pattaya's nightlife enjoy the best-of-both-worlds location.
 
-**Retirees and expats** make up a significant portion of Jomtien's long-term population. The area has a genuine community feel with regular meetups, sports clubs, and social groups.
+**Retirees and expats** make up a significant portion of Jomtien's long-term population. The area has a genuine community feel with regular meetups, sports clubs, and social groups — [Chilli Padel](/guides/padel-pattaya/), the largest padel club in the city, runs a social Americano every evening and matches solo players into games.
 
 ## Getting There and Around
 
