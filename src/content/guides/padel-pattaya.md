@@ -3,7 +3,7 @@ title: "Padel in Pattaya: Four Clubs Compared 2026"
 slug: "padel-pattaya"
 description: "Four padel clubs, fifteen courts, 600 to 1,200 THB an hour. Which one is indoor, which two book on Playtomic, and where to play at midday in April."
 category: "lifestyle"
-image: "/images/areas/pattaya-drone-sunset.webp"
+image: "/images/guides/prime-padel-court.webp"
 publishDate: 2026-09-16
 updatedDate: 2026-09-16
 pricesCheckedAt: 2026-09-16
@@ -30,6 +30,11 @@ Every price is for the court, not the player. Four of you on a 600 THB court is 
 ## Prime Padel — Sukhumvit 41
 
 Four panoramic courts, all under cover, with a proper clubhouse: café, pro shop, a racket test centre, lockers and changing rooms. It sits on Sukhumvit Soi 41 in the north of town, which makes it the easiest club to reach from Naklua, Wongamat or anywhere along Second Road.
+
+<figure style="margin: 2rem auto; max-width: 480px;">
+  <img src="/images/guides/prime-padel-court-portrait.webp" alt="Player with a padel racket on a blue court at Prime Padel Pattaya, glass walls and roof structure behind" loading="lazy" width="1050" height="1400" style="margin: 0; border-radius: 1rem;" />
+  <figcaption style="font-size: 0.8125rem; color: var(--color-ink-muted); margin-top: 0.75rem;">Prime Padel, June 2026. Our photo.</figcaption>
+</figure>
 
 Prime opened in spring 2026 and is the club with the most structured calendar. The week we checked had an open-play session on Saturday morning (three hours, 400 THB, twenty places), an intermediate Americano on Monday evening and a beginner-friendly one on Thursday, both 600 THB. Coaching is led by Joan Pou, a Spanish pro coach — group classes run 700 THB for an hour with four places, and a package of five private lessons is 10,000 THB.
 
