@@ -33,7 +33,7 @@ Four panoramic courts, all under cover, with a proper clubhouse: café, pro shop
 
 Prime opened in spring 2026 and is the club with the most structured calendar. The week we checked had an open-play session on Saturday morning (three hours, 400 THB, twenty places), an intermediate Americano on Monday evening and a beginner-friendly one on Thursday, both 600 THB. Coaching is led by Joan Pou, a Spanish pro coach — group classes run 700 THB for an hour with four places, and a package of five private lessons is 10,000 THB.
 
-- **Court:** 800 to 1,200 THB per hour depending on the time of day. Playtomic shows the live price for the slot you pick
+- **Court:** 800 to 1,200 THB per hour depending on the time of day. Playtomic shows the live price for the slot you pick. For a real number: our last hour there came to 1,400 THB all-in, court plus three rented rackets — 350 THB a head with four playing
 - **Hours:** 08:00 to 23:00 daily
 - **Book:** [Prime Padel on Playtomic](https://playtomic.com/clubs/prime-padel-pattaya) — instant confirmation, and the classes and Americanos are bookable in the same place
 - **Where:** 16/111 Sukhumvit Soi 41 — [map](https://www.google.com/maps?q=12.9473,100.9071)
@@ -115,7 +115,7 @@ In hot season, either book Play Padel or book the outdoor clubs before 10:00 and
 A visitor playing three times in a week, splitting courts four ways, racket rented:
 
 - **Court share:** 150 to 300 THB per session
-- **Racket:** 100 THB per hour at Play Padel; Prime and Chilli rent too, and Prime has a test centre where you can try before you buy
+- **Racket:** 100 THB per hour at Play Padel; Prime and Chilli rent too, and Prime has a test centre where you can try before you buy. An hour at Prime with three rented rackets cost us 1,400 THB in total, so budget around 350 THB a head if nobody brings their own
 - **An evening Americano:** 600 THB, which includes two hours of matched games
 
 Call it 1,000 to 2,000 THB for a week of padel, before drinks.
