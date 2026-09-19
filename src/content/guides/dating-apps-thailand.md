@@ -17,7 +17,7 @@ This guide covers the apps that actually matter in Thailand, what they cost, who
 | App | Best for | Cost | Pattaya reality |
 |---|---|---|---|
 | **ThaiFriendly** | Meeting Thai women fast, casual to serious | Free with limits; Premium ~$25/month, ~$100–120/year | The default app in Pattaya. Huge volume, high freelancer share |
-| **ThaiCupid** | Serious relationships, long-term | Gold/Platinum, cheapest on 12-month plans | Older, more relationship-minded members, many outside Pattaya |
+| **ThaiCupid** | Serious relationships, long-term | Gold ~$30/month, Platinum ~$35/month; ~$10–12.50/month on annual plans | Older, more relationship-minded members, many outside Pattaya |
 | **Tinder** | Biggest pool, tourists and expats | Free; Plus/Gold priced locally in THB | Busy in Pattaya, mixed intentions, lots of noise |
 | **Bumble** | Educated, English-speaking Thais | Free; paid tiers | Works in Bangkok, thin in Pattaya |
 | **Hinge** | Relationship-focused | Free; paid tiers | Bangkok only in practice |
@@ -64,9 +64,9 @@ Outside the freelancer share you will find university students, women working in
 <!-- TODO: swap for Cupid Media affiliate link once approved -->
 <a href="https://www.thaicupid.com/" rel="nofollow" target="_blank">ThaiCupid</a> is run by Cupid Media, an Australian company that has operated niche dating sites since 2002. It claims over three million members and, unlike ThaiFriendly, it is unmistakably a relationship site. Profiles are longer, questions about religion, children and whether you want to relocate are part of the setup, and the average age on both sides is higher.
 
-Free members can create a profile, browse and show interest, but real conversation requires a Gold or Platinum membership. Cupid Media prices its tiers in a way that punishes month-to-month buyers and rewards annual commitments; the 12-month Gold plan works out to roughly a third of the monthly rate. Platinum adds translation of messages, which is more useful than it sounds when the woman you are talking to writes in Thai.
+Free members can create a profile, browse and show interest, but can only message members who pay, and since most Thai women on the site are on free accounts, a foreign man on a free account can talk to almost nobody. Gold (around $30 a month, $60 for three months, $120 for a year) unlocks messaging; Platinum (around $35, $75 and $150) adds built-in translation of messages, which is more useful than it sounds when the woman you are talking to writes in Thai. Cupid Media discounts steeply for annual commitments and renews automatically, so buy the length you will use.
 
-The Pattaya angle: ThaiCupid has a dedicated Pattaya search, but the women here are less likely to be freelancers and more likely to be looking for a foreign husband. That cuts both ways. If you want a relationship, this is the better pool. If you want company for Friday night, you will find ThaiCupid slow and the women will find you disappointing.
+The Pattaya angle: ThaiCupid has a dedicated Pattaya search, but the women here are less likely to be freelancers and more likely to be looking for a foreign husband. That cuts both ways. If you want a relationship, this is the better pool. If you want company for Friday night, you will find ThaiCupid slow and the women will find you disappointing. The full breakdown of tiers, prices and who is on it is in our [ThaiCupid review](/guides/thaicupid-review/).
 
 ## Tinder — Everyone Has It, Nobody Trusts It
 
@@ -181,6 +181,7 @@ Use ThaiFriendly for volume and speed, ThaiCupid if you want something serious, 
 ## Related Guides
 
 - [ThaiFriendly Review 2026 — A Month on Pattaya's Busiest Dating App](/guides/thaifriendly-review/)
+- [ThaiCupid Review 2026 — The Serious Alternative to ThaiFriendly](/guides/thaicupid-review/)
 - [Pattaya Nightlife Prices — What Everything Costs in 2026](/guides/pattaya-nightlife-prices/)
 - [Hotels Near Soi 6 — Guest-Friendly Options](/guides/hotels-near-soi-6/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)

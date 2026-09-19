@@ -16,7 +16,7 @@ One thing up front, because it matters for how much weight you give the rest: I 
 
 **Worth it if** you are in Pattaya (or coming) and you want to talk to a lot of Thai women quickly, whether you are looking for a holiday companion, a date, or a girlfriend. Nothing else comes close on volume, and the women reply.
 
-**Not worth it if** you want a relationship-first pool with fewer freelancers, in which case ThaiCupid is the better fit, or if you refuse to pay anything, because the free tier is too limited to be useful for more than a look around.
+**Not worth it if** you want a relationship-first pool with fewer freelancers, in which case [ThaiCupid](/guides/thaicupid-review/) is the better fit, or if you refuse to pay anything, because the free tier is too limited to be useful for more than a look around.
 
 **Do this:** sign up through the app, verify your photo, and take the 7-day free Premium trial. That week tells you everything you need to know for your own situation, and it costs nothing if you set a reminder to cancel.
 
@@ -150,6 +150,7 @@ Just go in with your eyes open about who is on the other end. In Pattaya, with t
 ## Related Guides
 
 - [Dating Apps in Thailand 2026 — ThaiFriendly vs ThaiCupid vs Tinder](/guides/dating-apps-thailand/)
+- [ThaiCupid Review 2026 — The Serious Alternative to ThaiFriendly](/guides/thaicupid-review/)
 - [Pattaya Nightlife Prices — What Everything Costs in 2026](/guides/pattaya-nightlife-prices/)
 - [Hotels Near Soi 6 — Guest-Friendly Options](/guides/hotels-near-soi-6/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)
