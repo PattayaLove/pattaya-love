@@ -36,3 +36,5 @@ If you enjoy GoGo bars and want the full Walking Street experience, Sapphire des
 Arrive before 22:00 for the widest choice of seats. The venue gets progressively busier as the night goes on, peaking between 22:30 and midnight.
 
 Sapphire has been a consistent presence on Walking Street, but the rule about checking venue status before heading out applies here as well. Renovations, management changes, and seasonal adjustments can affect any venue on the strip, so a quick check of recent visitor reports is time well spent.
+
+For how GoGo bars work, what a night costs, and the other Walking Street bars we have reviewed, see our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/).

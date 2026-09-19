@@ -28,3 +28,5 @@ The bar features multiple stages with rotating dancers and regular shows through
 ## Tips
 
 Fahrenheit is a good mid-range GoGo option — quality entertainment without the premium pricing of the top-tier venues. Arrive before 22:00 for a seat with a good view of the stage.
+
+For how GoGo bars work, what a night costs, and the other Walking Street bars we have reviewed, see our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/).

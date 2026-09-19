@@ -36,3 +36,5 @@ Arriving early (around 20:30 to 21:00) is a good strategy if you want a front-ro
 Windmill's two-venue setup means that if one location is packed or not quite hitting the mark on a given night, you can try the other without abandoning the brand you came for.
 
 Venues on Walking Street are always subject to change. Even established names like Windmill can undergo renovations or temporary closures. Verifying current operating status, especially during the low season, is a habit worth maintaining.
+
+For how GoGo bars work, what a night costs, and the other Walking Street bars we have reviewed, see our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/).

@@ -38,7 +38,7 @@ Walking Street has a wide variety of nightlife venues. Understanding the differe
 
 These are the venues Walking Street is most known for. GoGo bars feature dancers performing on stage, typically in bikinis or themed costumes, with choreographed shows throughout the night. You sit at the bar or in booths, order drinks, and enjoy the entertainment.
 
-Popular GoGo bars include **Iron Club**, **Pin Up A Go Go**, **XS A Go Go**, **Windmill**, and **Sapphire Club**. Each has its own character, ranging from high-energy party atmospheres to more relaxed setups.
+Popular GoGo bars include **Iron Club**, **Pin Up A Go Go**, **XS A Go Go**, **Windmill**, and **Sapphire Club**. Each has its own character, ranging from high-energy party atmospheres to more relaxed setups. Our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/) explains how the bars work, what a night costs, and covers all eleven we have reviewed.
 
 **What to expect:** A hostess will greet you at the door. Inside, you will be offered a seat and handed a drink menu. Drink prices typically range from 160 to 250 THB for beer and 200 to 350 THB for cocktails. There is no cover charge at most GoGo bars. You are expected to order at least one drink.
 
@@ -142,6 +142,8 @@ Come with an open mind, a reasonable budget, and a sense of humor, and Walking S
 
 ## Related Guides
 
+- [GoGo Bars in Pattaya — Walking Street, LK Metro, Prices](/guides/gogo-bars-pattaya/)
 - [Pattaya Nightlife Prices — What Everything Costs](/guides/pattaya-nightlife-prices/)
+- [Guest-Friendly Hotels in Pattaya — No Joiner Fee, Verified](/guides/guest-friendly-hotels-pattaya/)
 - [Hotels Near Soi 6](/guides/hotels-near-soi-6/)
 - [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)

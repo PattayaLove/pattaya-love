@@ -46,3 +46,5 @@ Carry smaller bills (100s and 500s) for drinks and tips. Tipping dancers who imp
 ## The Verdict
 
 Iron Club is not the cheapest bar on Walking Street, nor is it the most extravagant. What it offers is consistency. The entertainment is reliably good, the drinks are fairly priced, and the staff know how to run a venue. After more than fifteen years on Walking Street, Iron Club continues to deliver a solid night out, and that kind of staying power speaks for itself.
+
+For how GoGo bars work, what a night costs, and the other Walking Street bars we have reviewed, see our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/).

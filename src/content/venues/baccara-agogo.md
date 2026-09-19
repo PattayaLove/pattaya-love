@@ -36,3 +36,5 @@ Baccara is an excellent choice if you are visiting a GoGo bar for the first time
 Keep smaller bills handy for drinks and tips. Tipping dancers who catch your eye is customary and appreciated, with 20 to 100 THB being the normal range.
 
 Even long-established venues like Baccara can be affected by seasonal closures or renovations. Confirming it is open before making it the centerpiece of your evening plan is always sensible, particularly during the low season months.
+
+For how GoGo bars work, what a night costs, and the other Walking Street bars we have reviewed, see our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/).

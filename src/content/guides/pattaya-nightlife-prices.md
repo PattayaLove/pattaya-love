@@ -141,6 +141,8 @@ For a full overview of Pattaya nightlife areas, including which venues to visit,
 
 ## Related Guides
 
+- [GoGo Bars in Pattaya — Walking Street, LK Metro, Prices](/guides/gogo-bars-pattaya/)
+- [Guest-Friendly Hotels in Pattaya — No Joiner Fee, Verified](/guides/guest-friendly-hotels-pattaya/)
 - [Hotels Near Soi 6](/guides/hotels-near-soi-6/)
 - [Thai Banking & QR Payments](/guides/thai-banking-qr-payments/)
 - [All Nightlife Venues](/nightlife/)

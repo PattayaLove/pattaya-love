@@ -39,3 +39,5 @@ No cover charge. Pricing is competitive and consistent with mid-tier Walking Str
 XS is a strong option if you have already seen the big-name GoGo bars like Pin Up and Iron Club and want something with a different feel. Arrive after 22:00 for the best experience, and grab a seat near the stage before the late-night rush.
 
 The staff are welcoming without being pushy, and the overall management keeps things running smoothly. It is a reliable choice for a good night out with a modern twist on the classic Walking Street experience.
+
+For how GoGo bars work, what a night costs, and the other Walking Street bars we have reviewed, see our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/).

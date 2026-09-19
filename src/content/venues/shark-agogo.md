@@ -36,3 +36,5 @@ The sweet spot for visiting is between 21:30 and midnight, when the shows are at
 Tipping individual dancers who impress you is welcome and appreciated. The standard range of 20 to 100 THB applies, and a friendly smile goes a long way.
 
 As always on Walking Street, venue status can change. Checking that Shark is open and operating normally before heading out is a quick step that can save you from a wasted trip, particularly outside of the peak tourist months.
+
+For how GoGo bars work, what a night costs, and the other Walking Street bars we have reviewed, see our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/).

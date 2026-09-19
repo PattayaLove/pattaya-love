@@ -36,3 +36,5 @@ If you are visiting Walking Street for the first time and feeling uncertain abou
 Peak times follow the Walking Street pattern: 22:00 to midnight for the liveliest atmosphere. Arriving around 20:30 to 21:00 gives you a quieter start and your choice of seating.
 
 As with all venues on Walking Street, Lighthouse is subject to the reality of Pattaya's nightlife: places open, close, and change. Verifying that Lighthouse is currently operational before making the walk is a simple precaution that can save you from disappointment, especially during off-peak months.
+
+For how GoGo bars work, what a night costs, and the other Walking Street bars we have reviewed, see our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/).

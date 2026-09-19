@@ -65,3 +65,5 @@ Be prepared for the venue to get very crowded after 23:00 on weekends. If you ar
 ## The Verdict
 
 Pin Up A Go Go has earned its status as a Walking Street institution. The combination of exceptional dancers, a well-designed venue, and a consistently electric atmosphere makes it one of the top two or three GoGo bars in all of Pattaya. If you only visit one GoGo bar during your trip, Pin Up should be at the top of the list.
+
+For how GoGo bars work, what a night costs, and the other Walking Street bars we have reviewed, see our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/).

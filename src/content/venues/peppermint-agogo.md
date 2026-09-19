@@ -36,3 +36,5 @@ If the middle-of-the-street GoGo bars are too packed on a busy night, walking th
 Arrive around 21:00 to 22:00 for the best combination of atmosphere and seat availability. The venue picks up steam as the evening progresses and peaks around 23:00 when the pre-club crowd is at its most energetic.
 
 Like every Walking Street venue, Peppermint's operating status can shift with the seasons and business conditions. Confirming it is open before heading that way is always a good idea, especially if you are visiting during the quieter months when some venues reduce hours or close temporarily.
+
+For how GoGo bars work, what a night costs, and the other Walking Street bars we have reviewed, see our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/).

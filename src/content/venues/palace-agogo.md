@@ -36,3 +36,5 @@ If the more famous GoGo bars have long waits or packed seating, Palace is an exc
 Arrive around 21:00 to 22:00 for the best seat selection. Smaller bills are useful for drinks and tipping, and the standard 20 to 100 THB tip range for dancers applies here as at most Walking Street venues.
 
 Walking Street establishments can change with little notice. Palace has maintained a steady presence, but confirming operating status remains a smart practice, particularly during the quieter months when some bars adjust their schedules.
+
+For how GoGo bars work, what a night costs, and the other Walking Street bars we have reviewed, see our [GoGo bars in Pattaya guide](/guides/gogo-bars-pattaya/).
