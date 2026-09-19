@@ -26,7 +26,7 @@ Before we get into the hotel list, this is worth clarifying. A "guest-friendly" 
 
 Most budget and mid-range hotels in Pattaya are guest-friendly by default. Some charge a joiner fee of 300 to 500 THB. A few upscale chains technically have policies against unregistered guests, but enforcement varies.
 
-When we list a hotel as guest-friendly below, it means that as of 2026, guests report no issues and no joiner fees unless noted otherwise.
+When we list a hotel as guest-friendly below, it means that as of 2026, guests report no issues and no joiner fees unless noted otherwise. For a city-wide list with each hotel's written policy, what happens at the front desk, and which resorts charge, see our [guest-friendly hotels in Pattaya](/guides/guest-friendly-hotels-pattaya/) guide.
 
 ## Budget Hotels (Under 1,000 THB/Night)
 
@@ -136,6 +136,7 @@ Pick the hotel that matches your budget and comfort needs, and you will have a s
 
 ## Related Guides
 
+- [Guest-Friendly Hotels in Pattaya — No Joiner Fee, Verified](/guides/guest-friendly-hotels-pattaya/)
 - [Walking Street Nightlife Guide](/guides/walking-street-guide/)
 - [Pattaya Nightlife Prices](/guides/pattaya-nightlife-prices/)
 - [All Hotels in Pattaya](/stay/)

@@ -129,7 +129,7 @@ Practical safety, whatever the app: meet in public the first time, do a short vi
 
 **Data.** You will be on the apps constantly. A [Thai SIM or eSIM](/guides/thailand-sim-esim/) with unlimited data costs less than one ThaiFriendly Premium month and saves you from hotel Wi-Fi.
 
-**Your hotel.** Most Pattaya hotels are guest-friendly, meaning a visitor can stay overnight at no extra charge, but the upmarket ones charge a joiner fee of 500 to 1,500 THB, and a few refuse guests altogether. Check before you book. Our [hotels near Soi 6](/guides/hotels-near-soi-6/) guide lists guest-friendly options, and every hotel page on this site notes the policy where we know it.
+**Your hotel.** Most Pattaya hotels are guest-friendly, meaning a visitor can stay overnight at no extra charge, but the upmarket ones charge a joiner fee of 500 to 1,500 THB, and a few refuse guests altogether. Check before you book. Our [guest-friendly hotels guide](/guides/guest-friendly-hotels-pattaya/) lists verified no-fee hotels by area, including the Hilton, and explains what happens at the front desk.
 
 **Where to meet.** Terminal 21 and Central Pattaya are the default first-date suggestions and for good reason: air-conditioned, public, food on every floor, easy to leave. For something better, a sunset drink at one of the [rooftop bars](/guides/rooftop-dining/) costs 250 to 500 THB a cocktail and makes an impression. Thai women generally prefer to eat Thai, so a good [local restaurant](/guides/pattaya-food-guide/) beats a steakhouse.
 
@@ -170,7 +170,7 @@ Some do, and in Pattaya a significant share of active profiles belong to freelan
 
 ### What is a joiner fee?
 
-A charge some hotels add when an overnight guest who is not registered to the room stays over, typically 500 to 1,500 THB in Pattaya. Most mid-range Pattaya hotels do not charge one. Check the hotel's policy before you book if you expect to have visitors.
+A charge some hotels add when an overnight guest who is not registered to the room stays over, typically 500 to 1,500 THB in Pattaya. Most mid-range Pattaya hotels do not charge one. Our [guest-friendly hotels guide](/guides/guest-friendly-hotels-pattaya/) has the verified list.
 
 ## Final Thoughts
 
@@ -182,6 +182,7 @@ Use ThaiFriendly for volume and speed, ThaiCupid if you want something serious, 
 
 - [ThaiFriendly Review 2026 — A Month on Pattaya's Busiest Dating App](/guides/thaifriendly-review/)
 - [ThaiCupid Review 2026 — The Serious Alternative to ThaiFriendly](/guides/thaicupid-review/)
+- [Guest-Friendly Hotels in Pattaya — No Joiner Fee, Verified](/guides/guest-friendly-hotels-pattaya/)
 - [Pattaya Nightlife Prices — What Everything Costs in 2026](/guides/pattaya-nightlife-prices/)
 - [Hotels Near Soi 6 — Guest-Friendly Options](/guides/hotels-near-soi-6/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)

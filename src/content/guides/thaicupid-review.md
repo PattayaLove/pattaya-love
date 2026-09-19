@@ -89,7 +89,7 @@ If your Thailand is Pattaya, ThaiCupid is a preparation tool, not a nightlife to
 
 The Pattaya pool is small and the women in it are not looking for a drink at midnight. What works, according to users who have done it, is starting two to four weeks before you fly: set your location to Pattaya or Chonburi, message a dozen women whose profiles you actually read, video-call the two or three who reply properly, and arrive with lunch already arranged. That is a completely different rhythm from ThaiFriendly, where the same result takes an hour on your first evening, and it produces a completely different kind of meeting.
 
-For the daytime dates that ThaiCupid generates, the usual Pattaya advice applies: Terminal 21 or Central Pattaya for a first coffee, a Thai restaurant rather than a steakhouse, and a [guest-friendly hotel](/guides/hotels-near-soi-6/) without a joiner fee if things go well. The [main guide](/guides/dating-apps-thailand/#practical-details-for-app-dates-in-pattaya) has the practical details.
+For the daytime dates that ThaiCupid generates, the usual Pattaya advice applies: Terminal 21 or Central Pattaya for a first coffee, a Thai restaurant rather than a steakhouse, and a [guest-friendly hotel](/guides/guest-friendly-hotels-pattaya/) without a joiner fee if things go well. The [main guide](/guides/dating-apps-thailand/#practical-details-for-app-dates-in-pattaya) has the practical details.
 
 ## Scams and Safety
 
@@ -150,5 +150,5 @@ Rarely. Thai women on ThaiCupid generally respond rather than initiate, and user
 
 - [ThaiFriendly Review 2026 — A Month on Pattaya's Busiest Dating App](/guides/thaifriendly-review/)
 - [Dating Apps in Thailand 2026 — ThaiFriendly vs ThaiCupid vs Tinder](/guides/dating-apps-thailand/)
-- [Hotels Near Soi 6 — Guest-Friendly Options](/guides/hotels-near-soi-6/)
+- [Guest-Friendly Hotels in Pattaya — No Joiner Fee, Verified](/guides/guest-friendly-hotels-pattaya/)
 - [First Time in Pattaya — What to Know Before You Land](/guides/first-time-pattaya/)
