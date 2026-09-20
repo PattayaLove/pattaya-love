@@ -146,4 +146,5 @@ Come with an open mind, a reasonable budget, and a sense of humor, and Walking S
 - [Pattaya Nightlife Prices — What Everything Costs](/guides/pattaya-nightlife-prices/)
 - [Guest-Friendly Hotels in Pattaya — No Joiner Fee, Verified](/guides/guest-friendly-hotels-pattaya/)
 - [Hotels Near Soi 6](/guides/hotels-near-soi-6/)
+- [Ladyboys in Pattaya — Tiffany's, Alcazar, Bars and Etiquette](/guides/ladyboys-pattaya/)
 - [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)

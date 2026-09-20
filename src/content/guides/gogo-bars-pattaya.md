@@ -119,7 +119,7 @@ Most of the friction visitors run into at GoGo bars comes from not knowing five 
 - **Count your chits.** Every drink adds a slip to the cup on your table. Before you pay, check the number of slips against the bill. Bill padding is uncommon at the bars on this page but not unheard of on the street.
 - **Say no clearly and early.** A dancer who sits down uninvited will expect a lady drink. "Not right now, thank you" is fine. Letting her sit for ten minutes and then refusing is where the friction starts.
 - **Know the difference between a GoGo bar and a coyote bar.** Coyote bars have dancers on a stage but they are not available for bar fines; it is a dance show, not a GoGo bar. Some venues on Soi Diamond and Second Road operate this way and are not always clear about it.
-- **Know which bars are ladyboy bars.** A handful of Walking Street GoGo bars are staffed entirely by ladyboys and say so at the door. None of the eleven bars above are among them. If it matters to you, look at the sign before you sit down.
+- **Know which bars are ladyboy bars.** A handful of Walking Street GoGo bars are staffed entirely by ladyboys and say so at the door. None of the eleven bars above are among them. If it matters to you, look at the sign before you sit down; our [ladyboys in Pattaya guide](/guides/ladyboys-pattaya/) lists where those bars are and covers Tiffany's and Alcazar.
 - **Do not arrive drunk.** The bars are dark, the drinks are strong, and the walk back to the hotel is long. Arriving sober and leaving merry is the right way round.
 - **Do not argue with the mamasan.** She runs the floor, she decides who sits where, and she has heard every argument. If there is a problem with a bill, ask for the manager calmly; if there is a problem with a bar fine, walk away and choose another bar.
 
@@ -183,4 +183,5 @@ The eleven reviews linked above go into each bar in detail, with current drink p
 - [Pattaya Nightlife Prices — What Everything Costs in 2026](/guides/pattaya-nightlife-prices/)
 - [Guest-Friendly Hotels in Pattaya — No Joiner Fee, Verified](/guides/guest-friendly-hotels-pattaya/)
 - [Soi Buakhao and LK Metro](/areas/soi-buakhao/)
+- [Ladyboys in Pattaya — Tiffany's, Alcazar, Bars and Etiquette](/guides/ladyboys-pattaya/)
 - [First Time in Pattaya — What to Know Before You Land](/guides/first-time-pattaya/)

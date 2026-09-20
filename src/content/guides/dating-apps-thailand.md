@@ -117,7 +117,7 @@ Pattaya dating apps are not dangerous, but they attract a predictable set of sca
 
 **The hotel-room theft.** A minority of freelancers work with a partner or simply wait for you to fall asleep. Keep valuables in the safe, keep your phone on you, and do not leave drinks unattended. This is standard Pattaya advice, and it applies to app dates as much as to bars.
 
-**Undisclosed ladyboys.** ThaiFriendly has a separate section for ladyboy profiles and Tinder has gender options, but not everyone uses them honestly. If it matters to you, a video call before meeting settles it, and asking politely is not considered rude in Thailand.
+**Undisclosed ladyboys.** ThaiFriendly has a separate section for ladyboy profiles and Tinder has gender options, but not everyone uses them honestly. If it matters to you, a video call before meeting settles it, and asking politely is not considered rude in Thailand. Our [ladyboys in Pattaya guide](/guides/ladyboys-pattaya/) covers the etiquette, the bars and why the ID card is the only reliable tell.
 
 **Fake profiles and stolen photos.** Reverse-image-search any profile that looks like a model shoot. On ThaiFriendly, the verified-photo badge is worth filtering for.
 
@@ -187,5 +187,6 @@ Use ThaiFriendly for volume and speed, ThaiCupid if you want something serious, 
 - [Pattaya Nightlife Prices — What Everything Costs in 2026](/guides/pattaya-nightlife-prices/)
 - [Hotels Near Soi 6 — Guest-Friendly Options](/guides/hotels-near-soi-6/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)
+- [Ladyboys in Pattaya — Tiffany's, Alcazar, Bars and Etiquette](/guides/ladyboys-pattaya/)
 - [First Time in Pattaya — What to Know Before You Land](/guides/first-time-pattaya/)
 - [Rooftop Bars and Dining in Pattaya](/guides/rooftop-dining/)
