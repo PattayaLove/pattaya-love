@@ -106,7 +106,7 @@ ThaiCupid does verify profiles, and its verified badge means a government ID was
 
 ## Verdict
 
-ThaiCupid is the right app for a specific person: a man who wants a Thai partner, not a Thai holiday, who can afford a few dollars a month for the duration, and who has the patience to write real messages and wait for real replies. For that person it is the best tool available, and its slowness and its paywall are features, because they are what keep the freelancers and the tourists on ThaiFriendly.
+ThaiCupid is the right app for a specific person: a man who wants a Thai partner, not a Thai holiday, who can afford a few dollars a month for the duration, and who has the patience to write real messages and wait for real replies. If that is you, read the [Thai girlfriend guide](/guides/thai-girlfriend-guide/) next; it covers what the app cannot, from family visits to sin sod. For that person it is the best tool available, and its slowness and its paywall are features, because they are what keep the freelancers and the tourists on ThaiFriendly.
 
 For a Pattaya visitor with two weeks and no particular agenda, it is the wrong app. ThaiFriendly will give you more in an evening than ThaiCupid gives you in a month, and the [ThaiFriendly review](/guides/thaifriendly-review/) explains what that evening actually looks like.
 
@@ -150,5 +150,6 @@ Rarely. Thai women on ThaiCupid generally respond rather than initiate, and user
 
 - [ThaiFriendly Review 2026 — A Month on Pattaya's Busiest Dating App](/guides/thaifriendly-review/)
 - [Dating Apps in Thailand 2026 — ThaiFriendly vs ThaiCupid vs Tinder](/guides/dating-apps-thailand/)
+- [Thai Girlfriend Guide 2026 — Pattaya, Money, Family, Red Flags](/guides/thai-girlfriend-guide/)
 - [Guest-Friendly Hotels in Pattaya — No Joiner Fee, Verified](/guides/guest-friendly-hotels-pattaya/)
 - [First Time in Pattaya — What to Know Before You Land](/guides/first-time-pattaya/)

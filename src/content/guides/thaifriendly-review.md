@@ -151,6 +151,7 @@ Just go in with your eyes open about who is on the other end. In Pattaya, with t
 
 - [Dating Apps in Thailand 2026 — ThaiFriendly vs ThaiCupid vs Tinder](/guides/dating-apps-thailand/)
 - [ThaiCupid Review 2026 — The Serious Alternative to ThaiFriendly](/guides/thaicupid-review/)
+- [Thai Girlfriend Guide 2026 — Pattaya, Money, Family, Red Flags](/guides/thai-girlfriend-guide/)
 - [Pattaya Nightlife Prices — What Everything Costs in 2026](/guides/pattaya-nightlife-prices/)
 - [Guest-Friendly Hotels in Pattaya — No Joiner Fee, Verified](/guides/guest-friendly-hotels-pattaya/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)

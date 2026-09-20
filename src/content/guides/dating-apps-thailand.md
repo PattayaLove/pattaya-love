@@ -176,12 +176,13 @@ A charge some hotels add when an overnight guest who is not registered to the ro
 
 Dating apps in Thailand are genuinely easier than dating apps almost anywhere else, and Pattaya is the most extreme version of that. Women will message you first, they will reply, and they will meet you. The catch is not getting a date; it is knowing what kind of date you are getting.
 
-Use ThaiFriendly for volume and speed, ThaiCupid if you want something serious, keep Tinder as a backup, and spend ten minutes learning the freelancer signals before you start messaging. Do that, and the apps will give you a better and more honest experience of Pattaya than the bars ever could.
+Use ThaiFriendly for volume and speed, ThaiCupid if you want something serious, keep Tinder as a backup, and spend ten minutes learning the freelancer signals before you start messaging. Do that, and the apps will give you a better and more honest experience of Pattaya than the bars ever could. If what you want is a girlfriend rather than a date, our [Thai girlfriend guide](/guides/thai-girlfriend-guide/) covers what comes after the app: money, family, and how to tell a relationship from an arrangement.
 
 ## Related Guides
 
 - [ThaiFriendly Review 2026 — A Month on Pattaya's Busiest Dating App](/guides/thaifriendly-review/)
 - [ThaiCupid Review 2026 — The Serious Alternative to ThaiFriendly](/guides/thaicupid-review/)
+- [Thai Girlfriend Guide 2026 — Pattaya, Money, Family, Red Flags](/guides/thai-girlfriend-guide/)
 - [Guest-Friendly Hotels in Pattaya — No Joiner Fee, Verified](/guides/guest-friendly-hotels-pattaya/)
 - [Pattaya Nightlife Prices — What Everything Costs in 2026](/guides/pattaya-nightlife-prices/)
 - [Hotels Near Soi 6 — Guest-Friendly Options](/guides/hotels-near-soi-6/)
