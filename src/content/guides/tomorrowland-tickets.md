@@ -5,7 +5,7 @@ description: "Four pass types from 5,100 to 20,200 THB, all sold out. What each 
 category: "general"
 image: "/images/areas/pattaya-skyline-sunset.webp"
 publishDate: 2026-09-03
-updatedDate: 2026-09-03
+updatedDate: 2026-09-20
 pricesCheckedAt: 2026-09-03
 draft: false
 ---
@@ -41,7 +41,7 @@ Face values from the March sale. These are not what a pass costs today — treat
 
 The Comfort tier is reported to include a fast-lane entrance, an elevated viewing area at the main stage, a dedicated bar, dedicated toilets, food service and bottle service.
 
-Whether that is worth 7,700 THB over the standard three-day pass depends on one thing: how much time you expect to spend queuing rather than dancing. At a 50,000-per-day site in tropical heat, the toilets and the bar queue are not a trivial consideration, and the elevated viewing area is the difference between seeing a main-stage headliner and seeing the back of a crowd.
+Whether that is worth 7,700 THB over the standard three-day pass depends on one thing: how much time you expect to spend queuing rather than dancing. At a site expecting more than 30,000 people a day in tropical heat, the toilets and the bar queue are not a trivial consideration, and the elevated viewing area is the difference between seeing a main-stage headliner and seeing the back of a crowd.
 
 It is not worth it if you plan to spend the weekend at the smaller stages. The Comfort areas are concentrated around the main stage, and you will be paying for infrastructure you walk past.
 
@@ -74,7 +74,7 @@ So there is no nipping back to the hotel for a jacket, a charger, or a nap. What
 
 ## Packages
 
-**Global Journey** bundles travel with entry. It costs more than a standalone pass and historically stays available longer, which makes it the most realistic route for anyone still looking in September.
+**Global Journey** bundles travel with entry. It costs more than a standalone pass and historically stays available longer, which makes it the most realistic route for anyone still looking in September. Festival director Paul Neuteboom was still presenting the Global Journey packages to Pattaya hoteliers on 17 September, which suggests the programme is live and being expanded locally rather than closed; check the official site before assuming it is gone.
 
 **Hotel packages** bundled accommodation and shuttle transport to the gate. They sold out on **28 February 2026**, before the ticket sale itself. If you missed them, you are booking your own room and arranging your own transport — see [where to stay by distance to Wisdom Valley](/guides/tomorrowland-hotels-wisdom-valley/) and [getting to Tomorrowland](/guides/tomorrowland-getting-there/).
 

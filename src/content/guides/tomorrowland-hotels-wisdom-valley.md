@@ -5,7 +5,7 @@ description: "We measured every Pattaya neighbourhood against the festival site.
 category: "hotels"
 image: "/images/areas/central-pattaya-aerial.webp"
 publishDate: 2026-09-03
-updatedDate: 2026-09-03
+updatedDate: 2026-09-20
 draft: false
 ---
 
@@ -43,7 +43,7 @@ These are straight-line figures derived from the venue's published location. Roa
 
 ## What This Actually Tells You
 
-**The entire coastal strip falls inside a four-kilometre band.** From Naklua at the north end to Jomtien at the south, the difference is about three kilometres of straight line. On a normal day that is maybe ten minutes. On a night when 50,000 people leave a field at the same time, it is noise. If you are choosing between two beachfront hotels on the basis of which is nearer the venue, you are optimising something that does not matter.
+**The entire coastal strip falls inside a four-kilometre band.** From Naklua at the north end to Jomtien at the south, the difference is about three kilometres of straight line. On a normal day that is maybe ten minutes. On a night when 30,000-plus people leave a field at the same time, it is noise. If you are choosing between two beachfront hotels on the basis of which is nearer the venue, you are optimising something that does not matter.
 
 **Na Jomtien is the furthest, not the nearest.** It sits south-southwest of the venue while everything else sits west of it, so you drive further and you drive across rather than straight in. It is a pleasant, quiet stretch of coast and there are good reasons to stay there. Proximity to Tomorrowland is not one of them, whatever the booking sites say.
 
@@ -144,13 +144,15 @@ See the [Jomtien area guide](/areas/jomtien/).
 
 ## Booking Strategy
 
-**Book refundable, book now.** Pattaya has thousands of rooms and it has never absorbed 50,000 extra people in one weekend. A refundable rate costs you nothing to hold and can be swapped when the shuttle map lands.
+**Book refundable, book now.** Pattaya has thousands of rooms and it has never absorbed 30,000-plus extra people a day for three days running. As of mid-September, three months out, the province counted 42,000 room-nights already reserved across Pattaya and Chonburi for the festival dates. A refundable rate costs you nothing to hold and can be swapped when the shuttle map lands.
+
+**If a hotel cancels on you to re-list at a higher rate, push back.** On 17 September the Chonburi governor told Pattaya's hotel operators, in a meeting with Tomorrowland and the Thai Hotels Association, that he expects reasonable prices, reliable bookings and consistent service for the festival. That is a public commitment. Quote it, contact the Tourism Authority of Thailand, and leave a review that says what happened. Pattaya has seen bookings cancelled and re-sold at peak events before; this time there is a name attached to the promise that it will not happen.
 
 **Expect the good mid-range to go first.** The 4.5-and-up properties with four-figure review counts are the ones that will disappear, because they are what everyone finds. Luxury holds longer at a price; budget holds longest and gets worst.
 
 **We are not quoting December prices.** Anything published now for festival weekend is speculative, and we would rather tell you nothing than tell you something wrong. Check live rates and judge them against what the same room costs the week before — that gap is the festival premium, and you can decide whether it is worth paying.
 
-**Nail down how you get back before you book.** Not how you get there. Getting there is easy at any hour; getting back at 01:00 with 50,000 other people is the part that ruins trips.
+**Nail down how you get back before you book.** Not how you get there. Getting there is easy at any hour; getting back at 01:00 with 30,000-plus other people is the part that ruins trips.
 
 ## Frequently Asked Questions
 

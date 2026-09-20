@@ -1,10 +1,11 @@
 ---
 title: "Thailand Visa Guide for Pattaya: Types, Extensions, TM30"
 slug: "pattaya-visa-guide"
-description: "All Thailand visa options explained for Pattaya visitors and expats. Tourist visa, visa exemption, retirement visa, Elite visa, and extension tips for 2026."
+description: "All Thailand visa options explained for Pattaya visitors and expats. Tourist visa, visa exemption, retirement visa, marriage visa (Non-O), Elite visa, TM30, and extension tips for 2026."
 category: "lifestyle"
 image: "/images/areas/pattaya-city-sign.webp"
 publishDate: 2026-04-04
+updatedDate: 2026-09-20
 draft: false
 ---
 
@@ -69,6 +70,29 @@ An alternative to the O-A is the Non-Immigrant O visa, which you can obtain by e
 ### 90-Day Reporting
 
 All retirement visa holders must report their address to immigration every 90 days. This can be done in person at the immigration office, by mail, or online through the TM47 system. Missing a report results in a 2,000 THB fine.
+
+## Marriage Visa (Non-Immigrant O Based on Marriage to a Thai National)
+
+There is no visa called a "marriage visa" in Thai law. What expats mean by it is a **Non-Immigrant O visa based on marriage to a Thai national**, extended one year at a time at your local immigration office. It has no minimum age, which makes it the main long-stay route for anyone under 50 who is married to a Thai.
+
+**Getting the initial Non-O.** Either apply at a Thai embassy or consulate in your home country with your marriage certificate, which gives you a 90-day Non-O to enter on, or enter Thailand on a visa exemption or tourist visa and convert to a Non-O at immigration. Conversion costs 2,000 THB and you need at least 15 days remaining on your current stay when you apply.
+
+**The one-year extension.** Once you hold a Non-O, you apply for a one-year extension of stay, fee **1,900 THB**. The financial requirement is one of two things, not a combination:
+
+- **400,000 THB** in a Thai bank account in your own name, seasoned for at least two months before the application, or
+- **40,000 THB per month** of income, shown through twelve months of bank statements with the deposits visible, plus an income letter from your embassy if yours still issues one.
+
+Experienced expats often advise holding 800,000 THB or 65,000 THB a month instead. Those are the retirement figures, not the marriage ones; the logic is that if you are over 50 and meet them, you can switch to a retirement extension at any time, which involves no home visit and no questions about the marriage. If you are under 50, the 400,000 and 40,000 figures are what apply.
+
+**The paperwork.** Marriage certificate (Kor Ror 3) and the marriage registration extract (Kor Ror 2), both recent; your spouse's ID card and house registration (tabien baan); your passport, TM6 if you have one, and current TM30 receipt; the lease or title deed for where you live; bank book, a bank letter dated the same day, and statements; a hand-drawn map to your home; passport photos of you; and **photos of the two of you together at home**, inside and outside, with the house number visible. Immigration compares these photos against the TM30 address and the lease. Take them properly.
+
+**What actually happens.** You apply with your spouse present. Both of you may be interviewed, separately or together. You receive a 30-day **"under consideration" stamp** and come back a month later, again with your spouse, for the full one-year stamp. In between, immigration may visit your home, often unannounced, and may ask your neighbours whether you live there as a couple. This is a check for sham marriages and it is applied to everyone; a genuine couple with a tidy file passes it without drama. Provincial offices, including Pattaya's, have a reputation for looking harder at the map and the photos than Bangkok does.
+
+**Re-entry permit.** A one-year extension is cancelled the moment you leave Thailand unless you hold a re-entry permit. Single re-entry is **1,000 THB**, multiple re-entry is **3,800 THB**, available at the immigration office or at the airport before departure. Get the multiple if you will leave more than once in the year. This is the mistake that costs people their visa most often.
+
+**Ongoing.** 90-day reporting applies as with every long-stay visa. The extension is tied to the marriage: if the marriage ends, so does the basis for the stay. A marriage visa does not include the right to work, but a work permit on this visa is easier to obtain than on most others, as the usual four-Thai-employees-per-foreigner rule is halved; ask a lawyer before relying on that.
+
+**In Pattaya**, marriage extensions are handled at the Jomtien immigration office (see below), which covers Chonburi province. Bring your spouse, bring every document in the list above, and bring a second copy of each.
 
 ## Thailand Elite Visa
 

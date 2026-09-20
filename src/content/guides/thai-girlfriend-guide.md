@@ -139,6 +139,8 @@ If it goes that far, marriage in Thailand is straightforward on paper and slow i
 
 A Thai marriage is recognised in your home country once registered with your embassy. Get a prenuptial agreement if you own property; Thai law splits assets acquired during marriage. Do not put land in her name expecting to control it; foreigners cannot own land in Thailand, and property put in a Thai spouse's name is hers. Many happy marriages have been built on a house that legally belongs to the wife. Many unhappy divorces have too.
 
+Marriage also opens the long-stay door. A **Non-Immigrant O visa based on marriage to a Thai national**, what everyone calls the marriage visa, is extended a year at a time for 1,900 THB with either 400,000 THB in a Thai bank or 40,000 THB a month in income, and it has no minimum age. It comes with a 30-day "under consideration" stamp, an interview, photos of the two of you at home that immigration checks against your TM30 and lease, and sometimes a visit from an officer who asks the neighbours whether you live there. A real couple passes without drama. Leave the country without a re-entry permit and the whole thing is cancelled. The [visa guide](/guides/pattaya-visa-guide/#marriage-visa-non-immigrant-o-based-on-marriage-to-a-thai-national) has the full document list and the Pattaya process.
+
 ## Frequently Asked Questions
 
 ### How do I find a Thai girlfriend in Pattaya?

@@ -5,14 +5,14 @@ description: "U-Tapao sits almost due south of Wisdom Valley, 31 km out against 
 category: "transport"
 image: "/images/areas/pattaya-city-sign.webp"
 publishDate: 2026-09-03
-updatedDate: 2026-09-03
+updatedDate: 2026-09-20
 pricesCheckedAt: 2026-09-03
 draft: false
 ---
 
 Getting to Tomorrowland Thailand is three separate problems, and almost every guide only solves the first two.
 
-Leg one is your flight. Leg two is airport to Pattaya, which is a well-worn route with plenty of options. Leg three is Pattaya to Wisdom Valley at night, with 50,000 other people — and that is the one that will actually decide how your weekend goes.
+Leg one is your flight. Leg two is airport to Pattaya, which is a well-worn route with plenty of options. Leg three is Pattaya to Wisdom Valley at night, with 30,000-plus other people — and that is the one that will actually decide how your weekend goes.
 
 Last checked **3 September 2026**.
 
