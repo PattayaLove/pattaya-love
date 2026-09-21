@@ -80,6 +80,8 @@ Opening a Thai bank account has become considerably harder, and the DTV specific
 
 Thailand runs on PromptPay QR far more than on cards, and a foreign card at a Thai ATM carries a per-withdrawal fee. Withdraw larger amounts less often.
 
+If you are paid in USDT, you have two routes and they are worth combining: an OTC exchange office for cash, and a crypto-funded Visa for everything with a card terminal. Our [crypto to Baht guide](/guides/crypto-to-thb-pattaya/#crypto-cards-spending-usdt-without-cashing-out) has the fees for both and the network trap that catches people on the card side.
+
 ## Who Pattaya Does Not Suit
 
 The honest version, because a guide that only lists advantages is not useful.
@@ -120,6 +122,7 @@ Smaller than Chiang Mai or Bangkok. Growing, but if community is your main crite
 - [Thailand Visa Rules 2026](/guides/thailand-visa-rules-2026/)
 - [Best SIM Card & eSIM for Thailand](/guides/thailand-sim-esim/)
 - [Thai Banking and QR Payments](/guides/thai-banking-qr-payments/)
+- [Crypto to Thai Baht in Pattaya](/guides/crypto-to-thb-pattaya/)
 - [Healthcare in Pattaya](/guides/pattaya-healthcare/)
 
 *Nothing here is legal or immigration advice. Requirements change and the consequences of getting them wrong are yours — confirm with a Thai embassy or a licensed visa agent.*

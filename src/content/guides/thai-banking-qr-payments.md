@@ -158,6 +158,10 @@ Good rates, multiple currency accounts, works well for travel spending via their
 
 Slow (2-5 days), expensive (fees from both banks), poor exchange rates. Avoid unless you have no other option.
 
+### Crypto-Funded Cards
+
+If your money is already in USDT, a crypto-funded Visa such as Karta lets you pay by card at 1.5% without converting to fiat first — cheaper than an OTC exchange office for anything with a terminal, though poor for ATM cash. Details, fees and the network to avoid are in our [crypto to Baht guide](/guides/crypto-to-thb-pattaya/#crypto-cards-spending-usdt-without-cashing-out).
+
 ## Final Thoughts
 
 The Thai payment landscape is evolving fast. The Wise integration launching in May 2026 is the biggest development for Western visitors in years — it essentially gives you a Thai QR payment capability without needing a Thai bank account.
@@ -167,5 +171,6 @@ For now, the practical advice is: **carry cash for small transactions, use Wise 
 ## Related Guides
 
 - [Pattaya Visa Guide — Tourist, Retirement & Elite Visas](/guides/pattaya-visa-guide/)
+- [Crypto to Thai Baht in Pattaya — OTC Exchanges & Crypto Cards](/guides/crypto-to-thb-pattaya/)
 - [Pattaya Nightlife Prices — What Everything Costs](/guides/pattaya-nightlife-prices/)
 - [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)
