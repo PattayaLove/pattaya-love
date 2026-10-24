@@ -79,6 +79,25 @@ const websiteSchema = {
     <!-- Schema.org WebSite -->
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 
+    <!-- Stay22 LinkSwap: turns Booking/Agoda/etc. links into affiliate links (AID pattaya).
+         Spark (auto-inserted links/widgets) and Nova (pop-ups) are switched off. -->
+    <script is:inline>
+      (function (s, t, a, y, twenty, two) {
+        s.Stay22 = s.Stay22 || {};
+        s.Stay22.params = {
+          lmaID: '6adc628b3328c789d7243ee5',
+          // Hub settings override `enabled`, but excludes are merged, so '://' blocks Spark on every URL
+          inline: { excludes: ['://'], hyperlink: { enabled: false }, widgets: { enabled: false } },
+          nova: { disabledDevices: ['desktop', 'tablet', 'mobile'] },
+        };
+        twenty = t.createElement(a);
+        two = t.getElementsByTagName(a)[0];
+        twenty.async = 1;
+        twenty.src = y;
+        two.parentNode.insertBefore(twenty, two);
+      })(window, document, 'script', 'https://lma.stay22.com/letmeallez.js');
+    </script>
+
   </head>
   <body class="antialiased">
     <slot />
