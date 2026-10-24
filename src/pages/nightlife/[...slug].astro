@@ -96,7 +96,7 @@ import Icon from '../../components/Icon.astro';
   <!-- ═══════════════════════════════════════════════ -->
   <!-- HERO — Full-width venue image, dark overlay     -->
   <!-- ═══════════════════════════════════════════════ -->
-  <header class="relative h-[520px] lg:h-[600px] w-full flex items-end overflow-hidden">
+  <header class="relative h-[520px] lg:h-[600px] short-landscape:h-[480px] w-full flex items-end overflow-hidden">
     <img
       src={venue.data.image || (venue.data.area === 'Walking Street' ? '/images/areas/walking-street-night.webp' : venue.data.area === 'Soi 6' ? '/images/areas/soi-6.webp' : '/images/areas/walking-street.webp')}
       alt={venue.data.name}

@@ -630,6 +630,20 @@ import Icon from '../../components/Icon.astro';
     font-size: 0.9375rem;
   }
 
+  /* Narrow phones (iPhone Duo folded, SE): scroll wide tables instead of the page */
+  @media (max-width: 640px) {
+    .article-content :global(table) {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .article-content :global(th),
+    .article-content :global(td) {
+      padding: 0.625rem 0.75rem;
+    }
+  }
+
   .article-content :global(th) {
     text-align: left;
     font-family: var(--font-headline);

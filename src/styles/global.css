@@ -35,8 +35,12 @@
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Low landscape screens (iPhone Duo unfolded, iPad landscape): shorter heroes */
+@custom-variant short-landscape (@media (min-width: 900px) and (max-height: 760px) and (orientation: landscape));
+
 /* Base Styles */
 html {
+  text-size-adjust: 100%;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -241,6 +245,20 @@ body {
 
 .editorial-content tbody tr:hover {
   background: var(--color-surface-low);
+}
+
+/* Narrow phones (iPhone Duo folded, SE): scroll wide tables instead of the page */
+@media (max-width: 640px) {
+  .editorial-content table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .editorial-content thead th,
+  .editorial-content tbody td {
+    padding: 0.625rem 0.75rem;
+  }
 }
 
 .editorial-content code {
