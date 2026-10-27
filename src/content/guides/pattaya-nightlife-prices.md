@@ -16,11 +16,11 @@ Beer prices are the easiest way to gauge how expensive an area is. The same bott
 
 ### Walking Street
 
-[Walking Street](/areas/walking-street/) is the most expensive nightlife zone in Pattaya, and beer prices reflect that. In the beer bars and open-air venues along the strip, expect to pay 120 to 150 THB for a standard domestic beer (Chang, Leo, Singha). GoGo bars charge 150 to 180 THB for the same beer. Imported beers like Heineken or Tiger run 160 to 220 THB. Nightclubs on Walking Street sometimes include entry fees with a drink, typically 200 to 300 THB.
+[Walking Street](/areas/walking-street/) is the most expensive nightlife zone in Pattaya, and beer prices reflect that. In the beer bars and open-air venues along the strip, expect to pay 120 to 150 THB for a standard domestic beer (Chang, Leo, Singha). GoGo bars charge 150 to 180 THB for the same beer. Imported beers like Heineken or Tiger run 160 to 220 THB. Nightclubs on Walking Street sometimes include entry fees with a drink, typically 200 to 300 THB. Club profiles: [Lucifer Dance Club](/nightlife/lucifer-dance-club/), [Insomnia Club](/nightlife/insomnia-club/), [808 Club](/nightlife/808-club/), [Myst Dance Club](/nightlife/myst-dance-club/) and [Republic Dance Club](/nightlife/republic-dance-club/).
 
 ### Soi 6
 
-[Soi 6](/areas/soi-6/) is significantly cheaper. A domestic beer at most bars costs 80 to 120 THB. Happy hour promotions, common in the afternoon when Soi 6 is at its busiest, can bring prices down to 60 to 80 THB. The atmosphere is casual and the small bars are competitive with each other, which keeps prices lower.
+[Soi 6](/areas/soi-6/) is significantly cheaper. A domestic beer at most bars costs 80 to 120 THB. Happy hour promotions, common in the afternoon when Soi 6 is at its busiest, can bring prices down to 60 to 80 THB. The atmosphere is casual and the small bars are competitive with each other, which keeps prices lower. Individual bar profiles with opening hours and price level include [Ma-Mao Bar](/nightlife/soi6-mamao-bar/), [Thai Rose](/nightlife/soi6-thai-rose/), [Wicked](/nightlife/soi6-wicked/), [Spinners](/nightlife/soi6-spinners/), [Bandits Hideout](/nightlife/soi6-bandits-hideout/), [Miyu](/nightlife/soi6-miyu/), [Kawaii Bar](/nightlife/soi6-kawaii-bar/) and [Lisa Bar](/nightlife/soi6-lisa-bar/).
 
 ### Soi Buakhao and LK Metro
 
@@ -28,7 +28,7 @@ The [Soi Buakhao](/areas/soi-buakhao/) area including LK Metro and the surroundi
 
 ### Jomtien
 
-The beer bars in [Jomtien](/areas/jomtien/) are similarly priced to Soi Buakhao, with domestic beers at 70 to 100 THB. There are fewer venues overall, but the ones that exist tend to be laid-back and friendly with loyal regular crowds.
+The beer bars in [Jomtien](/areas/jomtien/) are similarly priced to Soi Buakhao, with domestic beers at 70 to 100 THB. There are fewer venues overall, but the ones that exist tend to be laid-back and friendly with loyal regular crowds. For a day at the beach rather than a bar, see [Alexa Beach Club](/nightlife/alexa-beach-club/) on Jomtien Beach.
 
 ## Cocktails
 

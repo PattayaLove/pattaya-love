@@ -5,6 +5,7 @@ import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 import OptImage from '../../components/OptImage.astro';
 import { getCollection, render } from 'astro:content';
+import { rotateFrom } from '../../utils/nearby';
 
 /* ── Static paths ── */
 export async function getStaticPaths() {
@@ -69,18 +70,23 @@ if (guide.body) {
   }
 }
 
-/* ── Related articles (same category, exclude current) ── */
+/* ── Related articles: three per page, rotating through the category ──
+   Newest-first with `.slice(0, 3)` meant the three newest guides of a category were
+   linked from every other guide in it. Starting after the current guide and wrapping
+   around spreads those links across the whole category. */
 const allGuides = await getCollection('guides', ({ data }) => !data.draft);
-const relatedArticles = allGuides
-  .filter((g) => g.data.category === guide.data.category && g.data.slug !== guide.data.slug)
-  .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime())
-  .slice(0, 3);
+const guidesNewestFirst = [...allGuides].sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+const isCurrentGuide = (g: (typeof allGuides)[number]) => g.data.slug === guide.data.slug;
+const relatedArticles = rotateFrom(
+  guidesNewestFirst.filter((g) => g.data.category === guide.data.category),
+  isCurrentGuide,
+  3
+);
 
 // If not enough from same category, backfill with recent from other categories
 const backfill = relatedArticles.length < 3
-  ? allGuides
-      .filter((g) => g.data.slug !== guide.data.slug && !relatedArticles.some((r) => r.data.slug === g.data.slug))
-      .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime())
+  ? guidesNewestFirst
+      .filter((g) => !isCurrentGuide(g) && !relatedArticles.some((r) => r.data.slug === g.data.slug))
       .slice(0, 3 - relatedArticles.length)
   : [];
 const displayRelated = [...relatedArticles, ...backfill];

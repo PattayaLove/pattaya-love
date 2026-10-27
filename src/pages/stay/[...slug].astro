@@ -5,6 +5,7 @@ import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 import OptImage from '../../components/OptImage.astro';
 import { getCollection, render } from 'astro:content';
+import { rotateFrom, bySlug } from '../../utils/nearby';
 
 /* ─── Static Paths ─── */
 export async function getStaticPaths() {
@@ -20,11 +21,31 @@ const { hotel } = Astro.props;
 const { data } = hotel;
 const { Content } = await render(hotel);
 
-/* ─── Related Hotels (same area, excluding current) ─── */
+/* ─── Related Hotels: six links per page ───
+   Same-area hotels first, walking the list from the current hotel onwards and wrapping
+   around, so every hotel is linked from six sibling pages instead of the same three
+   always getting every link. Areas with fewer than six hotels are topped up with hotels
+   of the same price range from elsewhere. */
 const allHotels = await getCollection('hotels', ({ data: d }) => !d.draft && d.featured);
-const relatedHotels = allHotels
-  .filter((h) => h.data.area === data.area && h.data.slug !== data.slug)
-  .slice(0, 3);
+const RELATED_COUNT = 6;
+const isCurrentHotel = (h: (typeof allHotels)[number]) => h.data.slug === data.slug;
+const sameAreaRelated = rotateFrom(
+  allHotels.filter((h) => h.data.area === data.area).sort(bySlug),
+  isCurrentHotel,
+  RELATED_COUNT
+);
+const relatedTopUp = sameAreaRelated.length < RELATED_COUNT
+  ? rotateFrom(
+      // The current hotel sits in the pool only to fix the starting point of the rotation.
+      allHotels
+        .filter((h) => isCurrentHotel(h) || (h.data.area !== data.area && h.data.priceRange === data.priceRange))
+        .sort(bySlug),
+      isCurrentHotel,
+      RELATED_COUNT - sameAreaRelated.length
+    )
+  : [];
+const relatedHotels = [...sameAreaRelated, ...relatedTopUp];
+const relatedIsSameArea = relatedTopUp.length === 0;
 
 /* Same-area hotels for the comparison table. The current hotel stays in the list
    so the reader can see where it sits rather than having to hold it in their head.
@@ -520,7 +541,7 @@ import Icon from '../../components/Icon.astro';
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="flex items-end justify-between mb-10 reveal">
           <div>
-            <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">More in {data.area}</span>
+            <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">{relatedIsSameArea ? `More in ${data.area}` : 'More Hotels'}</span>
             <h2 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-ink">
               Related Hotels
             </h2>

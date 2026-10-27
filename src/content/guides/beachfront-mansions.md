@@ -26,6 +26,7 @@ The hillside between Pattaya and Jomtien offers elevated ocean-view properties w
 
 - **Price range:** Rental from 30,000 THB/month, purchase from 15M THB
 - **Best for:** Couples and retirees seeking peace with easy city access
+- **On this site:** the [Luxury Pool Villa Pratumnak](/stay/luxury-pool-villa-pratumnak/) listing, a private pool villa on the hill with three bedrooms and ocean views
 
 ### [Wongamat](/areas/wongamat/) — Beachfront Elegance
 
