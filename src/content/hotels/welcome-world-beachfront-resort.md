@@ -1,7 +1,7 @@
 ---
 name: "Welcome World Beachfront Resort"
 slug: "welcome-world-beachfront-resort"
-description: "Welcome World Beachfront Resort is a luxury resort hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1.393+ Google reviews."
+description: "Welcome World Beachfront Resort is a luxury resort hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1,393+ Google reviews."
 rating: 4.2
 reviewsCount: 1393
 priceRange: "luxury"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Welcome World Beachfront Resort is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1.393 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
+Welcome World Beachfront Resort is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1,393 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
 
 ## Location
 

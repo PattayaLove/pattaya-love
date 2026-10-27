@@ -1,7 +1,7 @@
 ---
 name: "Bay Beach Resort"
 slug: "bay-beach-resort"
-description: "Bay Beach Resort is a budget-friendly hotel in Jomtien, Pattaya. Rated 3.9/5 from 1.176+ Google reviews."
+description: "Bay Beach Resort is a budget-friendly hotel in Jomtien, Pattaya. Rated 3.9/5 from 1,176+ Google reviews."
 rating: 3.9
 reviewsCount: 1176
 priceRange: "budget"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Bay Beach Resort is located in the Jomtien area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.9/5 rating from 1.176 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
+Bay Beach Resort is located in the Jomtien area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.9/5 rating from 1,176 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
 
 ## Location
 
@@ -26,7 +26,7 @@ The hotel is situated at 132/3, 277/9 หมู่ที่ 12 14 Jomtiensaineun
 
 ## Tomorrowland Thailand 2026
 
-Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Jomtien Beach the drive is about 24 km / 34 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the measured ranking by area.
+Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Jomtien Beach the drive is about 24 km / 34 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the straight-line ranking by area.
 
 ## Guest-Friendly
 

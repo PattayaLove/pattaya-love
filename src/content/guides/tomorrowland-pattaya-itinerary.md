@@ -43,7 +43,7 @@ Three nights, and the mistake everyone makes is treating night one like the only
 
 **Pace the first night.** The headliners are spread across three days, the heat is real, and going full intensity on Friday buys you a wasted Saturday.
 
-**Sleep in the daytime, properly.** This is the argument for a quieter area — Pratamnak, Wongamat, Jomtien — over a room above a bar strip. Three days on four hours' sleep in 30-degree heat catches up fast.
+**Sleep in the daytime, properly.** This is the argument for a quieter area — Pratumnak, Wongamat, Jomtien — over a room above a bar strip. Three days on four hours' sleep in 30-degree heat catches up fast.
 
 **Eat one real meal a day.** Not festival food, not at 4am. Somewhere with a chair.
 

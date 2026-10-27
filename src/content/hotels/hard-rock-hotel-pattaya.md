@@ -1,7 +1,7 @@
 ---
 name: "Hard Rock Hotel Pattaya"
 slug: "hard-rock-hotel-pattaya"
-description: "Hard Rock Hotel Pattaya is a luxury hotel in Central Pattaya, Pattaya. Rated 4.5/5 from 4.923+ Google reviews."
+description: "Hard Rock Hotel Pattaya is a luxury hotel in Central Pattaya, Pattaya. Rated 4.5/5 from 4,923+ Google reviews."
 rating: 4.5
 reviewsCount: 4923
 priceRange: "luxury"
@@ -20,7 +20,7 @@ draft: true
 
 ## Overview
 
-Hard Rock Hotel Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 4.923 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
+Hard Rock Hotel Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 4,923 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
 
 ## Location
 

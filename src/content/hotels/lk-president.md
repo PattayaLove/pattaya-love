@@ -1,7 +1,7 @@
 ---
 name: "LK President"
 slug: "lk-president"
-description: "LK President is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.3/5 from 1.367+ Google reviews."
+description: "LK President is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.3/5 from 1,367+ Google reviews."
 rating: 4.3
 reviewsCount: 1367
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-LK President is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.3/5 rating from 1.367 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+LK President is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.3/5 rating from 1,367 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

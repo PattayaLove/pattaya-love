@@ -1,7 +1,7 @@
 ---
 name: "Flipper House Hotel"
 slug: "flipper-house-hotel"
-description: "Flipper House Hotel is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.9/5 from 1.375+ Google reviews."
+description: "Flipper House Hotel is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.9/5 from 1,375+ Google reviews."
 rating: 3.9
 reviewsCount: 1375
 priceRange: "budget"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Flipper House Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.9/5 rating from 1.375 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
+Flipper House Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.9/5 rating from 1,375 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
 
 ## Location
 

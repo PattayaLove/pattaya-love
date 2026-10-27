@@ -1,7 +1,7 @@
 ---
 name: "Boutique City Hotel Pattaya"
 slug: "boutique-city-hotel-pattaya"
-description: "Boutique City Hotel Pattaya is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.7/5 from 1.318+ Google reviews."
+description: "Boutique City Hotel Pattaya is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.7/5 from 1,318+ Google reviews."
 rating: 3.7
 reviewsCount: 1318
 priceRange: "budget"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Boutique City Hotel Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.7/5 rating from 1.318 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
+Boutique City Hotel Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.7/5 rating from 1,318 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
 
 ## Location
 

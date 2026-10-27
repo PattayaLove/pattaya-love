@@ -1,7 +1,7 @@
 ---
 name: "Grande Caribbean Condo"
 slug: "grande-caribbean-condo"
-description: "Grande Caribbean Condo is a luxury resort hotel in Central Pattaya, Pattaya. Rated 4.3/5 from 1.299+ Google reviews."
+description: "Grande Caribbean Condo is a luxury resort hotel in Central Pattaya, Pattaya. Rated 4.3/5 from 1,299+ Google reviews."
 rating: 4.3
 reviewsCount: 1299
 priceRange: "luxury"
@@ -17,7 +17,7 @@ draft: false
 
 ## Overview
 
-Grande Caribbean Condo is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.3/5 rating from 1.299 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
+Grande Caribbean Condo is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.3/5 rating from 1,299 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
 
 ## Location
 

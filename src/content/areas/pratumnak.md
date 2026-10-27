@@ -33,7 +33,7 @@ Pratumnak punches above its weight for dining. The hilltop has several excellent
 
 ## Tomorrowland Thailand 2026
 
-Pratumnak's strategic position between Pattaya and Jomtien makes it an excellent base for Tomorrowland Thailand 2026 in November. Close enough to the expected festival grounds in the Jomtien/Na Jomtien area, but quieter than staying in the middle of the action.
+Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi), not in the Jomtien/Na Jomtien area. From Pattaya City the drive is about 21 km / 23 minutes and from Jomtien Beach about 24 km / 34 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Pratumnak lies between the two; we have no separate figure for it. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the straight-line ranking by area.
 
 ## Getting Around
 

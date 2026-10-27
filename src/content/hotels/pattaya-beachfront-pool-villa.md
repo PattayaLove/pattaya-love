@@ -37,7 +37,7 @@ Na Jomtien's beach is quieter and less developed than Pattaya Beach or even Jomt
 
 ## Tomorrowland 2026
 
-Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Na Jomtien the drive is about 32 km / 30 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com), which is not closer than the city centre (about 21 km / 23 minutes from Pattaya City). Book the villa for the quiet beachfront, not for proximity to the venue, and sort out transport in advance. Festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the measured ranking by area.
+Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Na Jomtien the drive is about 32 km / 30 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com), which is not closer than the city centre (about 21 km / 23 minutes from Pattaya City). Book the villa for the quiet beachfront, not for proximity to the venue, and sort out transport in advance. Festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the straight-line ranking by area.
 
 ## Pricing and Booking
 

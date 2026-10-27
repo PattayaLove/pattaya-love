@@ -1,7 +1,7 @@
 ---
 name: "U Jomtien Pattaya"
 slug: "u-jomtien-pattaya"
-description: "U Jomtien Pattaya is a mid-range hotel in Jomtien, Pattaya. Rated 4.5/5 from 1.134+ Google reviews."
+description: "U Jomtien Pattaya is a mid-range hotel in Jomtien, Pattaya. Rated 4.5/5 from 1,134+ Google reviews."
 rating: 4.5
 reviewsCount: 1134
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-U Jomtien Pattaya is located in the Jomtien area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 1.134 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+U Jomtien Pattaya is located in the Jomtien area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 1,134 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 
@@ -26,7 +26,7 @@ The hotel is situated at 101 หมู่1 Jomtiensaineung Rd, Jomtien. This put
 
 ## Tomorrowland Thailand 2026
 
-Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Jomtien Beach the drive is about 24 km / 34 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the measured ranking by area.
+Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Jomtien Beach the drive is about 24 km / 34 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the straight-line ranking by area.
 
 ## Guest-Friendly
 

@@ -1,7 +1,7 @@
 ---
 name: "Zand Morada Pattaya"
 slug: "zand-morada-pattaya"
-description: "Zand Morada Pattaya is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1.489+ Google reviews."
+description: "Zand Morada Pattaya is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1,489+ Google reviews."
 rating: 4.2
 reviewsCount: 1489
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Zand Morada Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1.489 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Zand Morada Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1,489 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

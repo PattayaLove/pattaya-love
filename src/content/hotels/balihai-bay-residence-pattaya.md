@@ -1,7 +1,7 @@
 ---
 name: "Balihai Bay Residence Pattaya"
 slug: "balihai-bay-residence-pattaya"
-description: "Balihai Bay Residence Pattaya is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.0/5 from 1.117+ Google reviews."
+description: "Balihai Bay Residence Pattaya is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.0/5 from 1,117+ Google reviews."
 rating: 4
 reviewsCount: 1117
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Balihai Bay Residence Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.0/5 rating from 1.117 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Balihai Bay Residence Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.0/5 rating from 1,117 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

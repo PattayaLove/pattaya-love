@@ -1,7 +1,7 @@
 ---
 name: "Tsix5 Hotel"
 slug: "tsix5-hotel"
-description: "Tsix5 Hotel is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1.183+ Google reviews."
+description: "Tsix5 Hotel is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1,183+ Google reviews."
 rating: 4.2
 reviewsCount: 1183
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Tsix5 Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1.183 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Tsix5 Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1,183 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

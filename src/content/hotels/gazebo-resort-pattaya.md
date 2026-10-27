@@ -1,7 +1,7 @@
 ---
 name: "Gazebo Resort, Pattaya"
 slug: "gazebo-resort-pattaya"
-description: "Gazebo Resort, Pattaya is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.6/5 from 1.228+ Google reviews."
+description: "Gazebo Resort, Pattaya is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.6/5 from 1,228+ Google reviews."
 rating: 3.6
 reviewsCount: 1228
 priceRange: "budget"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Gazebo Resort, Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.6/5 rating from 1.228 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
+Gazebo Resort, Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.6/5 rating from 1,228 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
 
 ## Location
 

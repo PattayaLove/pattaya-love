@@ -1,7 +1,7 @@
 ---
 name: "Brighton Grand Hotel & Convention Pattaya"
 slug: "brighton-grand-hotel-convention-pattaya"
-description: "Brighton Grand Hotel & Convention Pattaya is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.3/5 from 1.646+ Google reviews."
+description: "Brighton Grand Hotel & Convention Pattaya is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.3/5 from 1,646+ Google reviews."
 rating: 4.3
 reviewsCount: 1646
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Brighton Grand Hotel & Convention Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.3/5 rating from 1.646 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Brighton Grand Hotel & Convention Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.3/5 rating from 1,646 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 
