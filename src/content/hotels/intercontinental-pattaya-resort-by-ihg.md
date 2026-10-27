@@ -29,6 +29,12 @@ The hotel is at Pattaya, 437 Phra Tamnak, in Central Pattaya. Central Pattaya is
 
 From Bangkok, buses to Pattaya leave Ekkamai terminal throughout the day. From Suvarnabhumi Airport a taxi takes about 90 minutes, and U-Tapao is nearer still at around 45 minutes. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
+## Tomorrowland Thailand 2026
+
+Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Pattaya City the drive is about 21 km / 23 minutes, and from Jomtien Beach about 24 km / 34 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Pratamnak Hill lies between the two; we have no separate figure for it. Festival days will be slower.
+
+InterContinental Pattaya Resort is offered in packages by official Tomorrowland travel partners (as of October 2026): [BeatsPass](https://www.beatspass.com/tomorrowland-packages) lists it among its Tomorrowland Thailand 2026 accommodation options, and Tomorrowland names BeatsPass as an official Travel Partner on its [travel partner page](https://thailand.tomorrowland.com/en/sales-info/official-travel-partners/). Tomorrowland itself has not published a list of its hotel-package hotels. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only. Without a package, plan on Grab or Bolt and expect surge pricing after closing. Checked 27 October 2026. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the measured ranking by area.
+
 ## Booking & Rates
 
 High season runs November to February and carries the highest rates; June to September is the cheapest window, with rain most likely in the afternoons. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

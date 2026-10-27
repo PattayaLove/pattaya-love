@@ -41,7 +41,7 @@ The area is well-connected to the rest of Pattaya. Terminal 21 shopping mall is 
 
 ## Tomorrowland 2026
 
-For visitors planning around events, the Tomorrowland Thailand 2026 festival site is located in the greater Pattaya area. Wongamat's northern position means you avoid the worst of the traffic congestion that southern areas experience during major events, while still being within reasonable travel distance to festival grounds.
+The festival takes place **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Pattaya City the drive is about 21 km / 23 minutes, and from Pattaya North Bus Terminal about 16 km / 19 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). We have no separate figure for Wongamat, and festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing.
 
 ## Investment Potential
 

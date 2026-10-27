@@ -1,7 +1,7 @@
 ---
 name: "Key Residence Pattaya"
 slug: "key-residence-pattaya"
-description: "Key Residence Pattaya is a mid-range hotel in Pratamnak Hill, Pattaya. Rated 5.0/5 from 5+ Google reviews. Great location for Tomorrowland Thailand 2026 in N..."
+description: "Key Residence Pattaya is a mid-range hotel in Pratamnak Hill, Pattaya. Rated 5.0/5 from 5+ Google reviews."
 rating: 5
 reviewsCount: 5
 priceRange: "mid-range"
@@ -25,7 +25,7 @@ The hotel is situated at 353, Nongpru, 69 Pratumnak soi4 Rd, Pratamnak Hill. Thi
 
 ## Tomorrowland Thailand 2026
 
-Key Residence Pattaya is well-positioned for the historic **Tomorrowland Thailand 2026** festival coming to Pattaya in November 2026. The Pratamnak Hill location offers convenient access to the expected festival grounds. Book early — hotels in this area will fill up fast for this landmark event.
+Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Pattaya City the drive is about 21 km / 23 minutes, and from Jomtien Beach about 24 km / 34 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Pratamnak Hill lies between the two; we have no separate figure for it. Festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the measured ranking by area.
 
 ## Guest-Friendly
 

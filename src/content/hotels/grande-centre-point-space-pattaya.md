@@ -30,6 +30,12 @@ You will find it at 888 หมู่ที่ 5 in Central Pattaya. The central 
 
 Suvarnabhumi Airport is roughly 120 km north — about 90 minutes by taxi, or two hours on the scheduled airport coaches, which cost a fraction of a private car. The main bus terminal on North Pattaya Road is a short baht bus ride from here.
 
+## Tomorrowland Thailand 2026
+
+Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Pattaya City the drive is about 21 km / 23 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Festival days will be slower.
+
+Grande Centre Point Space Pattaya is offered in packages by official Tomorrowland travel partners (as of October 2026): [Revel Travel](https://reveltravels.com/product/tomorrowland-thailand-2026-11-dec-13-dec-2026-package-4n-5d/) lists it among its Tomorrowland Thailand 2026 accommodation options, and Tomorrowland names Revel Travel as an official Travel Partner on its [travel partner page](https://thailand.tomorrowland.com/en/sales-info/official-travel-partners/). Tomorrowland itself has not published a list of its hotel-package hotels. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only. Without a package, plan on Grab or Bolt and expect surge pricing after closing. Checked 27 October 2026. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the measured ranking by area.
+
 ## Booking & Rates
 
 High season runs November to February and carries the highest rates; June to September is the cheapest window, with rain most likely in the afternoons. Upper-tier properties discount most aggressively in the low season, which is when the gap to mid-range pricing narrows the most.

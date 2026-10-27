@@ -1,7 +1,7 @@
 ---
 name: "Marine Plaza Hotel"
 slug: "marine-plaza-hotel"
-description: "Marine Plaza Hotel is a budget-friendly hotel in Pratamnak Hill, Pattaya. Rated 3.8/5 from 665+ Google reviews. Great location for Tomorrowland Thailand 2026..."
+description: "Marine Plaza Hotel is a budget-friendly hotel in Pratamnak Hill, Pattaya. Rated 3.8/5 from 665+ Google reviews."
 rating: 3.8
 reviewsCount: 665
 priceRange: "budget"
@@ -26,7 +26,7 @@ The hotel is situated at Marine Plaza Hotel 200 Pratamnak Rd, Pratamnak Hill. Th
 
 ## Tomorrowland Thailand 2026
 
-Marine Plaza Hotel is well-positioned for the historic **Tomorrowland Thailand 2026** festival coming to Pattaya in November 2026. The Pratamnak Hill location offers convenient access to the expected festival grounds. Book early — hotels in this area will fill up fast for this landmark event.
+Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Pattaya City the drive is about 21 km / 23 minutes, and from Jomtien Beach about 24 km / 34 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Pratamnak Hill lies between the two; we have no separate figure for it. Festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the measured ranking by area.
 
 ## Guest-Friendly
 
