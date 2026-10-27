@@ -103,6 +103,8 @@ A traditional treatment where heated cloth bundles filled with Thai herbs are pr
 - **Tip in cash** directly to the therapist, not to the shop
 - Tipping is appreciated but not mandatory. There is no percentage convention.
 
+**My own habit:** I always tip at least 50 THB, and if the massage was really good I am happy to give 100 THB.
+
 ### What to Expect
 
 1. Choose your massage type at reception and confirm the price
@@ -156,7 +158,7 @@ We have no sourced couples price. Spas list their treatments on their own menus,
 
 ### How much should I tip?
 
-50-100 THB for an hour is normal. Hand it to the therapist directly.
+50-100 THB for an hour is normal. Hand it to the therapist directly. I always give at least 50 THB, and 100 THB when the massage was very good.
 
 ### Do I need to book a massage in Pattaya?
 
