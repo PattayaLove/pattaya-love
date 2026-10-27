@@ -1,7 +1,7 @@
 ---
 name: "Royal Heritage Pavilion Jomtien"
 slug: "royal-heritage-pavilion-jomtien"
-description: "Royal Heritage Pavilion Jomtien is a luxury resort hotel in Jomtien, Pattaya. Rated 3.9/5 from 417+ Google reviews. Great location for Tomorrowland Thailand ..."
+description: "Royal Heritage Pavilion Jomtien is a luxury resort hotel in Jomtien, Pattaya. Rated 3.9/5 from 417+ Google reviews."
 rating: 3.9
 reviewsCount: 417
 priceRange: "luxury"
@@ -26,7 +26,7 @@ The hotel is situated at 246/89 หมู่ที่ 12 ถนน เรีย�
 
 ## Tomorrowland Thailand 2026
 
-Royal Heritage Pavilion Jomtien is well-positioned for the historic **Tomorrowland Thailand 2026** festival coming to Pattaya in November 2026. The Jomtien location offers convenient access to the expected festival grounds. Book early — hotels in this area will fill up fast for this landmark event.
+Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Jomtien Beach the drive is about 24 km / 34 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the measured ranking by area.
 
 ## Guest-Friendly
 

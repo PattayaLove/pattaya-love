@@ -1,7 +1,7 @@
 ---
 name: "Del Mar Rooms"
 slug: "del-mar-rooms"
-description: "Del Mar Rooms is a mid-range hotel in South Pattaya, Pattaya. Rated 4.3/5 from 28+ Google reviews. Great location for Tomorrowland Thailand 2026 in November."
+description: "Del Mar Rooms is a mid-range hotel in South Pattaya, Pattaya. Rated 4.3/5 from 28+ Google reviews."
 rating: 4.3
 reviewsCount: 28
 priceRange: "mid-range"
@@ -26,7 +26,7 @@ The hotel is situated at 247/83-84 Moo.10 Soi.Yensabai South Pattaya, South Patt
 
 ## Tomorrowland Thailand 2026
 
-Del Mar Rooms is well-positioned for the historic **Tomorrowland Thailand 2026** festival coming to Pattaya in November 2026. The South Pattaya location offers convenient access to the expected festival grounds. Book early — hotels in this area will fill up fast for this landmark event.
+Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Pattaya City the drive is about 21 km / 23 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). We have no separate figure for South Pattaya. Festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the measured ranking by area.
 
 ## Guest-Friendly
 

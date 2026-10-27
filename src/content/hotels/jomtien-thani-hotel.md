@@ -1,7 +1,7 @@
 ---
 name: "Jomtien Thani Hotel"
 slug: "jomtien-thani-hotel"
-description: "Jomtien Thani Hotel is a mid-range hotel in Jomtien, Pattaya. Rated 4.1/5 from 1.168+ Google reviews. Great location for Tomorrowland Thailand 2026 in November."
+description: "Jomtien Thani Hotel is a mid-range hotel in Jomtien, Pattaya. Rated 4.1/5 from 1.168+ Google reviews."
 rating: 4.1
 reviewsCount: 1168
 priceRange: "mid-range"
@@ -26,7 +26,7 @@ The hotel is situated at หมู่ที่ 12 75/261 Jomtiensaineung Rd, Jom
 
 ## Tomorrowland Thailand 2026
 
-Jomtien Thani Hotel is well-positioned for the historic **Tomorrowland Thailand 2026** festival coming to Pattaya in November 2026. The Jomtien location offers convenient access to the expected festival grounds. Book early — hotels in this area will fill up fast for this landmark event.
+Tomorrowland Thailand runs **11–13 December 2026** at Wisdom Valley, inland near Khao Mai Kaeo (Bang Lamung, Chonburi). From Jomtien Beach the drive is about 24 km / 34 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Festival days will be slower. The official Hotel Packages, which include the free shuttle, sold out in February 2026, and the shuttle is for package guests only (as of October 2026). Plan on Grab or Bolt and expect surge pricing after closing. See our [distance breakdown](/guides/tomorrowland-hotels-wisdom-valley/) for the measured ranking by area.
 
 ## Guest-Friendly
 
