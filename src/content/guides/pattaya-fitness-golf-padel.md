@@ -164,6 +164,7 @@ Pattaya's fitness infrastructure rivals cities three times its size. The combina
 
 - [Best Beaches in Pattaya](/guides/pattaya-beaches/)
 - [Scooter Rental in Pattaya](/guides/pattaya-scooter-rental/)
+- [Massage Prices in Pattaya: Thai, Oil, Foot and Spa](/guides/pattaya-massage-spa/)
 - [First Time in Pattaya — Beginner Guide](/guides/first-time-pattaya/)
 
 *Some links on this page are affiliate links. If you book through them we earn a small commission at no extra cost to you, and it never affects what we recommend — see our [affiliate disclosure](/affiliate-disclosure/).*

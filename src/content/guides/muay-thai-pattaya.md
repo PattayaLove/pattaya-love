@@ -119,6 +119,7 @@ Often not. Combat sports are a common exclusion and sparring is sometimes exclud
 - [Thailand Visa Rules 2026](/guides/thailand-visa-rules-2026/)
 - [Healthcare in Pattaya: Hospitals, Labs and What It Costs](/guides/pattaya-healthcare/)
 - [Fitness, Golf and Padel in Pattaya](/guides/pattaya-fitness-golf-padel/)
+- [Massage Prices in Pattaya: Thai, Oil, Foot and Spa](/guides/pattaya-massage-spa/)
 - [Padel in Pattaya: Four Clubs Compared 2026](/guides/padel-pattaya/)
 - [Renting a Scooter in Pattaya](/guides/pattaya-scooter-rental/)
 
