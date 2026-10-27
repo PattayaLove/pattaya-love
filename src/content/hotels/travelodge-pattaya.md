@@ -1,7 +1,7 @@
 ---
 name: "Travelodge Pattaya"
 slug: "travelodge-pattaya"
-description: "Travelodge Pattaya is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1.227+ Google reviews."
+description: "Travelodge Pattaya is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1,227+ Google reviews."
 rating: 4.2
 reviewsCount: 1227
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Travelodge Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1.227 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Travelodge Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1,227 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

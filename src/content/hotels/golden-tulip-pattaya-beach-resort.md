@@ -1,7 +1,7 @@
 ---
 name: "Golden Tulip Pattaya Beach Resort"
 slug: "golden-tulip-pattaya-beach-resort"
-description: "Golden Tulip Pattaya Beach Resort is a mid-range hotel in Naklua, Pattaya. Rated 4.3/5 from 1.280+ Google reviews."
+description: "Golden Tulip Pattaya Beach Resort is a mid-range hotel in Naklua, Pattaya. Rated 4.3/5 from 1,280+ Google reviews."
 rating: 4.3
 reviewsCount: 1280
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Golden Tulip Pattaya Beach Resort is located in the Naklua area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.3/5 rating from 1.280 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Golden Tulip Pattaya Beach Resort is located in the Naklua area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.3/5 rating from 1,280 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

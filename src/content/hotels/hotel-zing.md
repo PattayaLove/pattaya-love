@@ -1,7 +1,7 @@
 ---
 name: "Hotel Zing"
 slug: "hotel-zing"
-description: "Hotel Zing is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.0/5 from 1.547+ Google reviews."
+description: "Hotel Zing is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.0/5 from 1,547+ Google reviews."
 rating: 4
 reviewsCount: 1547
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Hotel Zing is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.0/5 rating from 1.547 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Hotel Zing is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.0/5 rating from 1,547 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

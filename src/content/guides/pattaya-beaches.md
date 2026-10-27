@@ -92,7 +92,7 @@ South of Jomtien, [Na Jomtien](/areas/jomtien/) is Pattaya's fastest-developing 
 
 **Facilities:** Sparse compared to Jomtien. Some beach restaurants, but you won't find the dense vendor scene. Bring your own supplies.
 
-**Tomorrowland 2026:** Na Jomtien is expected to be near the **[Tomorrowland Thailand 2026](/guides/tomorrowland-pattaya-2026/)** festival grounds in November. The area will see a massive influx of visitors during the festival, but outside of that event window, it remains peaceful.
+**Tomorrowland 2026:** **[Tomorrowland Thailand 2026](/guides/tomorrowland-pattaya-2026/)** runs 11–13 December 2026 at Wisdom Valley, inland near Khao Mai Kaeo. Na Jomtien is not close to it: the drive is about 32 km / 30 minutes in normal traffic (Google Maps snapshot, 17 October 2026, as published by wisdomvalleyhotels.com). Book Na Jomtien for the quiet, not for proximity (see [where to stay by distance](/guides/tomorrowland-hotels-wisdom-valley/)).
 
 **Best for:** Solitude seekers, property investors checking out the area, Tomorrowland attendees.
 

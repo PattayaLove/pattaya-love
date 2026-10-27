@@ -5,7 +5,7 @@ description: "U-Tapao sits almost due south of Wisdom Valley, 31 km out against 
 category: "transport"
 image: "/images/areas/pattaya-city-sign.webp"
 publishDate: 2026-09-03
-updatedDate: 2026-09-20
+updatedDate: 2026-10-27
 pricesCheckedAt: 2026-09-03
 draft: false
 ---
@@ -72,7 +72,7 @@ Plan the outbound leg against the check-in time, not against the set you want to
 
 Here is where the published information runs out.
 
-**The official shuttle** is the intended answer for most people. Vouchers are expected to be sold through your Tomorrowland account, with pick-ups at major hotel hubs across Pattaya. The organisers' own FAQ still says the shuttle schedule will follow closer to the festival, so as of early September there were no routes, stops or times to plan around. This is the single most important thing still missing, and it should be your first move the moment it appears — a hotel two minutes from a stop beats a hotel three kilometres closer with no service.
+**The official shuttle** is only for guests with a Tomorrowland Hotel Package. The free daily shuttle is included in those packages, which sold out in February 2026, and we have found no separate shuttle ticket for other guests. The organisers' [shuttle FAQ](https://faq.tomorrowlandthailand.com/hc/en-us/articles/45506173287956-When-are-the-daily-shuttles-from-the-hotel-to-Tomorrowland-Thailand) says the schedule will follow closer to the festival, and we found no published pick-up points, routes or times as of 27 October 2026. If you are not in a package, plan the journey as if there were no official shuttle: Grab, Bolt or a pre-booked private car.
 
 **Grab** works throughout Pattaya and is the default fallback. Going out is straightforward. Coming back is not, and that is covered below.
 
@@ -92,7 +92,7 @@ Going out is easy at any hour. Coming back is the part that ruins trips, and the
 
 What actually helps:
 
-- **Book the return shuttle, not just the outbound one**, as soon as they go on sale.
+- **Sort the return before the outbound.** With a Hotel Package, check the return shuttle times as soon as they are published. Without one, arrange a private car or accept the Grab queue.
 - **Expect heavy surge pricing** on Grab at closing time all three nights, plus long waits for a driver to accept. Closing is 01:00 on Friday and Saturday, midnight on Sunday.
 - **Agree your return before you leave the hotel** if you have arranged a private car — including where exactly the driver will be, because "at the venue" means nothing on a 237-acre site.
 - **Consider staying later rather than leaving at peak.** The worst crush is in the half hour after the last set. A drink and 45 minutes of patience may beat two hours in a queue.
@@ -120,7 +120,7 @@ U-Tapao (UTP), at about 31 km straight line and a reported 30-minute drive. Suva
 
 ### How do I get from my hotel to Wisdom Valley?
 
-Official shuttles with pick-ups at major hotel hubs are expected, sold through your Tomorrowland account. Routes had not been published as of 3 September 2026. Grab is the fallback; a private car booked for the weekend is the option most groups should consider and usually do not.
+The official free shuttle is for Hotel Package guests only, and those packages sold out in February 2026. Routes had not been published as of 27 October 2026. Everyone else should treat Grab or Bolt as the default; a private car booked for the weekend is the option most groups should consider and usually do not.
 
 ### Can I take a baht bus to the festival?
 

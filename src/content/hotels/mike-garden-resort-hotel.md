@@ -1,7 +1,7 @@
 ---
 name: "Mike Garden Resort Hotel"
 slug: "mike-garden-resort-hotel"
-description: "Mike Garden Resort Hotel is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1.391+ Google reviews."
+description: "Mike Garden Resort Hotel is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1,391+ Google reviews."
 rating: 4.2
 reviewsCount: 1391
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Mike Garden Resort Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1.391 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Mike Garden Resort Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1,391 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

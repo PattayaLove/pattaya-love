@@ -1,7 +1,7 @@
 ---
 name: "Flipper Lodge Hotel"
 slug: "flipper-lodge-hotel"
-description: "Flipper Lodge Hotel is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.1/5 from 1.070+ Google reviews."
+description: "Flipper Lodge Hotel is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.1/5 from 1,070+ Google reviews."
 rating: 4.1
 reviewsCount: 1070
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Flipper Lodge Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.1/5 rating from 1.070 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Flipper Lodge Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.1/5 rating from 1,070 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

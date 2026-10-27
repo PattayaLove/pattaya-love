@@ -62,7 +62,7 @@ Yachts range from 40-foot day cruisers to 80-foot+ superyachts. Multi-day charte
 
 **Booking tips:**
 - Book at least 2-4 weeks in advance, especially in high season (November-February)
-- During [Tomorrowland Thailand 2026](/guides/tomorrowland-pattaya-2026/) in November, expect premium pricing and limited availability
+- Around [Tomorrowland Thailand 2026](/guides/tomorrowland-pattaya-2026/) (11–13 December), book early; demand in Pattaya will be higher than usual
 - Most reputable operators are based at Ocean Marina — avoid random touts on the street
 - Ask about insurance coverage, cancellation policies, and what's included in the price
 

@@ -1,7 +1,7 @@
 ---
 name: "Miracle Suites"
 slug: "miracle-suites"
-description: "Miracle Suites is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.0/5 from 1.184+ Google reviews."
+description: "Miracle Suites is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.0/5 from 1,184+ Google reviews."
 rating: 4
 reviewsCount: 1184
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Miracle Suites is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.0/5 rating from 1.184 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Miracle Suites is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.0/5 rating from 1,184 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

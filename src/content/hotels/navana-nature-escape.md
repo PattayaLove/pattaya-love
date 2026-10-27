@@ -1,7 +1,7 @@
 ---
 name: "Navana Nature Escape"
 slug: "navana-nature-escape"
-description: "Navana Nature Escape is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.5/5 from 1.514+ Google reviews."
+description: "Navana Nature Escape is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.5/5 from 1,514+ Google reviews."
 rating: 4.5
 reviewsCount: 1514
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Navana Nature Escape is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 1.514 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Navana Nature Escape is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 1,514 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

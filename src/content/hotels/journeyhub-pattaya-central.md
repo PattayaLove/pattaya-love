@@ -1,7 +1,7 @@
 ---
 name: "Journeyhub Pattaya Central"
 slug: "journeyhub-pattaya-central"
-description: "Journeyhub Pattaya Central is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.6/5 from 1.637+ Google reviews."
+description: "Journeyhub Pattaya Central is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.6/5 from 1,637+ Google reviews."
 rating: 4.6
 reviewsCount: 1637
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Journeyhub Pattaya Central is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.6/5 rating from 1.637 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Journeyhub Pattaya Central is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.6/5 rating from 1,637 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

@@ -1,7 +1,7 @@
 ---
 name: "Hotel Baraquda Heeton Pattaya by Compass Hospitality"
 slug: "hotel-baraquda-heeton-pattaya-by-compass-hospitality"
-description: "Hotel Baraquda Heeton Pattaya by Compass Hospitality is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.5/5 from 1.335+ Google reviews."
+description: "Hotel Baraquda Heeton Pattaya by Compass Hospitality is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.5/5 from 1,335+ Google reviews."
 rating: 4.5
 reviewsCount: 1335
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Hotel Baraquda Heeton Pattaya by Compass Hospitality is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 1.335 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Hotel Baraquda Heeton Pattaya by Compass Hospitality is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 1,335 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

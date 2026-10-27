@@ -1,7 +1,7 @@
 ---
 name: "Basaya Beach Hotel & Resort"
 slug: "basaya-beach-hotel-resort"
-description: "Basaya Beach Hotel & Resort is a luxury resort hotel in Beach Road, Pattaya. Rated 3.8/5 from 1.316+ Google reviews."
+description: "Basaya Beach Hotel & Resort is a luxury resort hotel in Beach Road, Pattaya. Rated 3.8/5 from 1,316+ Google reviews."
 rating: 3.8
 reviewsCount: 1316
 priceRange: "luxury"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Basaya Beach Hotel & Resort is located in the Beach Road area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.8/5 rating from 1.316 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
+Basaya Beach Hotel & Resort is located in the Beach Road area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.8/5 rating from 1,316 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
 
 ## Location
 

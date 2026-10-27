@@ -1,7 +1,7 @@
 ---
 name: "Mike Beach Resort"
 slug: "mike-beach-resort"
-description: "Mike Beach Resort is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.1/5 from 1.027+ Google reviews."
+description: "Mike Beach Resort is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.1/5 from 1,027+ Google reviews."
 rating: 4.1
 reviewsCount: 1027
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Mike Beach Resort is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.1/5 rating from 1.027 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Mike Beach Resort is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.1/5 rating from 1,027 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

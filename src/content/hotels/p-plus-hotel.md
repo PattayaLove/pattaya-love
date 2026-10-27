@@ -1,7 +1,7 @@
 ---
 name: "P Plus Hotel"
 slug: "p-plus-hotel"
-description: "P Plus Hotel is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.7/5 from 1.169+ Google reviews."
+description: "P Plus Hotel is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.7/5 from 1,169+ Google reviews."
 rating: 3.7
 reviewsCount: 1169
 priceRange: "budget"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-P Plus Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.7/5 rating from 1.169 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
+P Plus Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.7/5 rating from 1,169 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
 
 ## Location
 

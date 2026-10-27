@@ -1,7 +1,7 @@
 ---
 name: "Areca Lodge Pattaya"
 slug: "areca-lodge-pattaya"
-description: "Areca Lodge Pattaya is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1.143+ Google reviews."
+description: "Areca Lodge Pattaya is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.2/5 from 1,143+ Google reviews."
 rating: 4.2
 reviewsCount: 1143
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Areca Lodge Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1.143 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+Areca Lodge Pattaya is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.2/5 rating from 1,143 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

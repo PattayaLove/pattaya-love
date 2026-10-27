@@ -1,7 +1,7 @@
 ---
 name: "The Heritage Pattaya Beachfront Resort"
 slug: "the-heritage-pattaya-beachfront-resort"
-description: "The Heritage Pattaya Beachfront Resort is a luxury resort hotel in Central Pattaya, Pattaya. Rated 4.5/5 from 1.588+ Google reviews."
+description: "The Heritage Pattaya Beachfront Resort is a luxury resort hotel in Central Pattaya, Pattaya. Rated 4.5/5 from 1,588+ Google reviews."
 rating: 4.5
 reviewsCount: 1588
 priceRange: "luxury"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-The Heritage Pattaya Beachfront Resort is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 1.588 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
+The Heritage Pattaya Beachfront Resort is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.5/5 rating from 1,588 Google reviews, it's a solid luxury option for travelers visiting Pattaya in 2026.
 
 ## Location
 

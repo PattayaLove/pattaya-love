@@ -1,7 +1,7 @@
 ---
 name: "LK Emerald Beach"
 slug: "lk-emerald-beach"
-description: "LK Emerald Beach is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.6/5 from 1.086+ Google reviews."
+description: "LK Emerald Beach is a mid-range hotel in Central Pattaya, Pattaya. Rated 4.6/5 from 1,086+ Google reviews."
 rating: 4.6
 reviewsCount: 1086
 priceRange: "mid-range"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-LK Emerald Beach is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.6/5 rating from 1.086 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
+LK Emerald Beach is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 4.6/5 rating from 1,086 Google reviews, it's a solid mid-range option for travelers visiting Pattaya in 2026.
 
 ## Location
 

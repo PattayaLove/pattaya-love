@@ -65,7 +65,7 @@ Expect beach club pricing — higher than a standard Walking Street beer bar, bu
 - **Reserve a sunbed** on weekends and holidays — the beachfront fills up fast
 - **Dress code:** Relaxed. Beach attire is perfectly fine during the day, smart casual works for evening
 - **Combine it:** Start at Byblos for sunset, then walk straight into Walking Street for the rest of the night — the location couldn't be more convenient
-- **Tomorrowland 2026:** Expect Byblos to host pre-parties and special events during Tomorrowland Thailand in November 2026
+- **Tomorrowland 2026:** Tomorrowland Thailand runs 11–13 December 2026 at Wisdom Valley. We have not seen any announced Byblos events for those dates, so check their social media
 
 ## Who It's For
 

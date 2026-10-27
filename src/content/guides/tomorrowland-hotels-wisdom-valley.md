@@ -5,7 +5,7 @@ description: "We measured every Pattaya neighbourhood against the festival site.
 category: "hotels"
 image: "/images/areas/central-pattaya-aerial.webp"
 publishDate: 2026-09-03
-updatedDate: 2026-09-20
+updatedDate: 2026-10-27
 draft: false
 ---
 
@@ -35,7 +35,7 @@ Straight-line distance from each neighbourhood to the venue, rounded to the near
 | Soi Buakhao | 15 km | E |
 | Central Pattaya / Beach Road | 16 km | E |
 | Walking Street / South Pattaya | 17 km | ENE |
-| Pratamnak Hill | 17.5 km | ENE |
+| Pratumnak Hill | 17.5 km | ENE |
 | Jomtien Beach | 17.5 km | ENE |
 | Na Jomtien | 18.5 km | NE |
 
@@ -49,11 +49,11 @@ These are straight-line figures derived from the venue's published location. Roa
 
 **East Pattaya is the only zone that is genuinely closer** — about three and a half kilometres nearer than anything on the water, and pointed the right way. We have to be straight with you here: we have not reviewed hotels in East Pattaya, so we cannot recommend specific properties in the one area where the geography is actually on your side. If you book there, you are on your own for quality. Read our [East Pattaya area guide](/areas/east-pattaya/) for what the neighbourhood is like.
 
-**The shuttle map is the missing variable.** As of early September the organisers have not published pick-up points or routes. Shuttle vouchers are expected to be sold through your Tomorrowland account, with pick-ups at major hotel hubs. When that map appears it will matter far more than any of the numbers above, because a hotel two minutes from a pick-up point beats a hotel three kilometres closer with no service. We will update this page the day it is published.
+**The shuttle is for package guests only.** Tomorrowland's free daily shuttle is part of its official Hotel Packages, which sold out in February 2026; we have found no separate shuttle ticket for other guests. The organisers' [shuttle FAQ](https://faq.tomorrowlandthailand.com/hc/en-us/articles/45506173287956-When-are-the-daily-shuttles-from-the-hotel-to-Tomorrowland-Thailand) says the schedule will follow closer to the festival, and we found no published pick-up points or routes as of 27 October 2026. If you hold a package, the hotel is allocated by the organiser within your chosen category, so the table below matters less to you than the shuttle does. If you booked independently, the table matters, and a plan for the drive home matters more.
 
 ## What Should Decide It Instead
 
-**Getting back at one in the morning.** This is the real problem. The music stops at 01:00 on Friday and Saturday and midnight on Sunday, so fifty thousand people leave a field inside the same half hour, on roads that were not built for it. If you are not on an official shuttle, budget for a long wait and heavy Grab surge pricing. Staying somewhere with a lot of traffic passing through — Central Pattaya, Soi Buakhao — gives you more ways home than a quiet villa road.
+**Getting back at one in the morning.** This is the real problem. The music stops at 01:00 on Friday and Saturday and midnight on Sunday, so fifty thousand people leave a field inside the same half hour, on roads that were not built for it. If you are not on the package shuttle, budget for a long wait and heavy Grab surge pricing. Staying somewhere with a lot of traffic passing through — Central Pattaya, Soi Buakhao — gives you more ways home than a quiet villa road.
 
 **What you want in daylight.** You are in Pattaya for a week, at a festival for three nights. The hours you spend awake and not at Wisdom Valley outnumber the hours you spend there. Book for those.
 
@@ -120,7 +120,7 @@ Read the [Walking Street guide](/guides/walking-street-guide/) before committing
 
 ### Jomtien — best beach, longest drive
 
-**About 17.5 km.** A proper wide beach, a long promenade, a calmer crowd, good value. It is second-furthest from the venue, and leaving Jomtien on a festival night means the shuttle or a long wait.
+**About 17.5 km.** A proper wide beach, a long promenade, a calmer crowd, good value. It is second-furthest from the venue, and leaving Jomtien on a festival night means a package shuttle or a long wait.
 
 Book here if the beach week is the point and the festival is the excuse. Do not book here because someone told you it was close.
 
@@ -166,7 +166,7 @@ No. At roughly 18.5 km it is the furthest Pattaya area from the venue. Sites lis
 
 ### Should I book near a shuttle stop instead?
 
-Yes, once the stops are published. Shuttle pick-up points are expected at major hotel hubs and will matter more than raw distance. They had not been announced as of 3 September 2026.
+Only if you hold an official Hotel Package, and then the organiser allocates the hotel within your chosen category. The free shuttle is part of those packages, which sold out in February 2026. Without a package there is no official shuttle to book near, so plan on Grab, Bolt or a private car. Pick-up points and routes had not been published as of 27 October 2026.
 
 ### How far is the venue from Bangkok?
 

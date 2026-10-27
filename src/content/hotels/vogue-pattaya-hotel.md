@@ -1,7 +1,7 @@
 ---
 name: "Vogue Pattaya Hotel"
 slug: "vogue-pattaya-hotel"
-description: "Vogue Pattaya Hotel is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.8/5 from 1.040+ Google reviews."
+description: "Vogue Pattaya Hotel is a budget-friendly hotel in Central Pattaya, Pattaya. Rated 3.8/5 from 1,040+ Google reviews."
 rating: 3.8
 reviewsCount: 1040
 priceRange: "budget"
@@ -18,7 +18,7 @@ draft: false
 
 ## Overview
 
-Vogue Pattaya Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.8/5 rating from 1.040 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
+Vogue Pattaya Hotel is located in the Central Pattaya area of Pattaya, one of Thailand's most popular coastal destinations. With a 3.8/5 rating from 1,040 Google reviews, it's a solid budget option for travelers visiting Pattaya in 2026.
 
 ## Location
 
