@@ -44,19 +44,19 @@ Popular GoGo bars include **Iron Club**, **Pin Up A Go Go**, **XS A Go Go**, **W
 
 ### Beer Bars
 
-Smaller, open-air bars with a more casual atmosphere. Beer bars are scattered throughout Walking Street and are the best option for a relaxed drink without the intensity of a GoGo bar. Many have pool tables, live music, or big-screen TVs showing sports.
+Smaller, open-air bars with a more casual atmosphere. Beer bars are scattered throughout Walking Street and are the best option for a relaxed drink without the intensity of a GoGo bar. Many have pool tables, live music, or big-screen TVs showing sports. We have profiles for [The Beer Garden](/nightlife/beer-garden-walking-street/), an open-air beer bar complex at the start of the strip, and [Monkey Bar](/nightlife/monkey-bar-walking-street/), a casual beer bar near the far end. For the cheaper Soi 6 version of a beer bar, start with [Ma-Mao Bar](/nightlife/soi6-mamao-bar/) or [Thai Rose](/nightlife/soi6-thai-rose/).
 
 Beer prices at beer bars tend to be slightly lower, starting from 80 to 120 THB for a domestic beer.
 
 ### Nightclubs
 
-Walking Street has several large nightclubs that attract both tourists and locals. **Lucifer** (also known as Club Insomnia in its various incarnations), **Differ**, and **Hollywood** are among the most established.
+Walking Street has several large nightclubs that attract both tourists and locals. **Lucifer** (also known as Club Insomnia in its various incarnations), **Differ**, and **Hollywood** are among the most established. Our own club profiles cover [Lucifer Dance Club](/nightlife/lucifer-dance-club/), [Insomnia Club](/nightlife/insomnia-club/), [808 Club](/nightlife/808-club/), [Myst Dance Club](/nightlife/myst-dance-club/) (upscale, premium sound) and [Republic Dance Club](/nightlife/republic-dance-club/) (hip hop and R&B).
 
 Clubs typically open later (around 23:00) and stay open until 03:00 or beyond. Expect cover charges of 200 to 500 THB on busy nights, often including one drink. Music ranges from EDM to hip-hop to Thai pop, depending on the venue and the night.
 
 ### Restaurants and Seafood
 
-Not everything on Walking Street revolves around bars. Several restaurants line the street, including seafood spots where you can pick live prawns and fish from tanks and have them prepared to order. Prices are higher than elsewhere in Pattaya, but the experience of dining on the famous strip has its own appeal.
+Not everything on Walking Street revolves around bars. Several restaurants line the street, including seafood spots where you can pick live prawns and fish from tanks and have them prepared to order. Prices are higher than elsewhere in Pattaya, but the experience of dining on the famous strip has its own appeal. [Byblos Beach Bar & Restaurant](/nightlife/byblos-beach-bar/) is a beachfront bar and restaurant on Walking Street with live music and DJs. For a daytime alternative, [Lay Beach Club](/nightlife/lay-beach-club/) near Soi 6 has an infinity pool overlooking the sea, and [Alexa Beach Club](/nightlife/alexa-beach-club/) sits on Jomtien Beach.
 
 ## Drink Prices (2026 Estimates)
 

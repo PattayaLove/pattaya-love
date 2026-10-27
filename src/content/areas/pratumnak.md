@@ -25,7 +25,7 @@ Pratumnak is residential and relaxed. Tree-lined streets, ocean viewpoints, and 
 
 ## Where to Stay
 
-The Royal Cliff resort complex dominates the area — four connected properties ranging from the family-friendly Beach Hotel to the ultra-luxury Royal Wing. Boutique options like the Cross Pattaya and various Airbnb pool villas offer alternatives.
+The Royal Cliff resort complex dominates the area — four connected properties ranging from the family-friendly Beach Hotel to the ultra-luxury Royal Wing. Boutique options like the Cross Pattaya and various Airbnb pool villas offer alternatives. The [Luxury Pool Villa Pratumnak](/stay/luxury-pool-villa-pratumnak/) is a three-bedroom private pool villa with ocean views.
 
 ## Dining
 

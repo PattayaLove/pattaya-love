@@ -139,5 +139,6 @@ Massage in Pattaya is one of those experiences that ruins you for going home. On
 ## Related Guides
 
 - [Gyms, Golf & Padel in Pattaya](/guides/pattaya-fitness-golf-padel/)
+- [IV Drips and Peptide Clinics in Pattaya: What to Ask First](/guides/pattaya-iv-therapy-peptides/)
 - [Cheap Eats in Pattaya](/guides/cheap-eats-pattaya/)
 - [First Time in Pattaya](/guides/first-time-pattaya/)

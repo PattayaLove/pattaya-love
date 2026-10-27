@@ -23,6 +23,10 @@ The crowd is a mix of long-term expats, repeat visitors, and first-timers who st
 
 The street has a loyal following. Many Pattaya regulars will tell you they spend more time on Soi 6 than anywhere else in the city. The community feel is genuine — bartenders remember names, and friendships form quickly over shared rounds.
 
+## Bars With Their Own Profile
+
+Every bar on this page has its own profile with opening hours and price level. The ones readers open most often are [Ma-Mao Bar](/nightlife/soi6-mamao-bar/), [Thai Rose](/nightlife/soi6-thai-rose/), [Spinners](/nightlife/soi6-spinners/), [Wicked](/nightlife/soi6-wicked/), [Miyu](/nightlife/soi6-miyu/), [Bandits Hideout](/nightlife/soi6-bandits-hideout/) and [Kawaii Bar](/nightlife/soi6-kawaii-bar/). Others worth a look are [Lisa Bar](/nightlife/soi6-lisa-bar/), [Oppa Bar](/nightlife/soi6-oppa-bar/), [Exotica](/nightlife/soi6-exotica/), [Panda Bar Red](/nightlife/soi6-panda-bar-red/), [Panda Bar Blue](/nightlife/soi6-panda-bar-blue/), [Showgirls](/nightlife/soi6-showgirls/) and [Flirt](/nightlife/soi6-flirt/). For what a round costs across Pattaya, see the [nightlife prices guide](/guides/pattaya-nightlife-prices/).
+
 ## When to Go
 
 This is what makes Soi 6 unique: it is primarily a daytime venue. Most bars open between 12:00 and 13:00, and the peak hours run from mid-afternoon (around 14:00) through early evening (19:00 to 20:00).

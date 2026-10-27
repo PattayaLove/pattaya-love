@@ -20,6 +20,8 @@ Soi 6 is not just about the bars. Its central location makes it a strategic base
 
 This part of town also has a high density of restaurants, convenience stores, laundries, and pharmacies, which makes daily life simple and affordable. It is one of the few areas where you can genuinely walk to everything you need.
 
+If you want to see the street before you book, the [Soi 6 area guide](/areas/soi-6/) lists every bar, with profiles for [Ma-Mao Bar](/nightlife/soi6-mamao-bar/), [Thai Rose](/nightlife/soi6-thai-rose/), [Wicked](/nightlife/soi6-wicked/) and [Spinners](/nightlife/soi6-spinners/).
+
 ## What Does Guest-Friendly Mean?
 
 Before we get into the hotel list, this is worth clarifying. A "guest-friendly" hotel is one that allows you to bring a guest (typically a Thai national) back to your room without charging an extra "joiner fee" or refusing entry.
