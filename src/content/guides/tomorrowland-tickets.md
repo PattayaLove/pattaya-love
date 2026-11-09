@@ -5,7 +5,7 @@ description: "Four pass types from 5,100 to 20,200 THB, all sold out. What each 
 category: "general"
 image: "/images/areas/pattaya-skyline-sunset.webp"
 publishDate: 2026-09-03
-updatedDate: 2026-09-20
+updatedDate: 2026-11-09
 pricesCheckedAt: 2026-09-03
 draft: false
 ---
@@ -80,7 +80,7 @@ So there is no nipping back to the hotel for a jacket, a charger, or a nap. What
 
 ## Your Ticket Is Personalised
 
-Tomorrowland passes carry a name. You will receive an email with a link to personalise your Festival Passes; as of early September that window had not opened yet.
+Tomorrowland passes carry a name. Buyers received an email with a link to personalise their Festival Passes, and the official opening-hours page is blunt about why it matters: access is only possible with a Festival Pass registered in your name. Log in to your Tomorrowland account now and check that every pass in your order shows the right person.
 
 Two rules matter:
 
@@ -103,7 +103,7 @@ Practical consequences:
 
 Two legitimate routes remain, and both live inside your Tomorrowland account.
 
-**The official waiting list.** Register and wait. When a buyer surrenders a pass, it is reoffered to the list at original face value. No guarantee, no cost, and it is real.
+**The official waiting list.** When a buyer surrenders a pass, it is reoffered to the list at original face value. No guarantee, no cost, and it is real. Registration is reported to have closed at the end of August, so it only helps if you signed up in time; offers from the list can still arrive until shortly before the festival.
 
 **The official Ticket Exchange.** Tomorrowland's own resale desk. Passes sold through it transfer properly, with the name changed correctly, and stay valid at the gate.
 
