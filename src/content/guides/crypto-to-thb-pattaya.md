@@ -10,7 +10,7 @@ draft: false
 
 More and more visitors and expats in Pattaya hold their money in crypto rather than traditional bank accounts. Whether you are a digital nomad paid in USDT, a long-term traveler who stores value in Bitcoin, or simply someone who wants to avoid international bank transfer fees, converting cryptocurrency to Thai Baht cash is straightforward in Pattaya — if you know where to go.
 
-This guide covers the practical options for turning your crypto into spendable Baht, from walk-in OTC exchanges to online platforms and Bitcoin ATMs.
+This guide covers the practical options for turning your crypto into spendable Baht, from walk-in OTC exchanges to online platforms and Bitcoin ATMs. Thailand is also piloting an official tourist app, [WORPT, under the Tourist DigiPay sandbox](/guides/worpt-tourist-digipay/), that converts USDT or USDC to baht for PromptPay payments — still a pilot, and not yet confirmed in Pattaya.
 
 ## OTC Exchange Offices in Pattaya
 
@@ -120,6 +120,16 @@ The practical split: **card for anything with a terminal, OTC for cash.** Used t
 
 <!-- TODO (Philipp): Erfahrungswerte nachreichen — KYC-Dauer real, erste THB-Zahlung mit Apple Pay (wo, hat es geklappt, welcher Kurs wurde abgerechnet), DCC-Prompt am Terminal, Top-up-Netzwerk das genutzt wurde -->
 
+## Official sandbox: WORPT and Tourist DigiPay
+
+Since this guide was first written, Thailand has launched a government sandbox aimed at foreign tourists who hold stablecoins. The consumer app is **WORPT**. You verify with a face scan and an e-passport chip, deposit **USDT or USDC** from an external wallet, convert to baht, and pay via PromptPay QR — no Thai bank account required, and the merchant receives baht.
+
+The operator has said the conversion fee is **initially 1.5%**, which is in the same ballpark as a crypto card payment and cheaper than a typical OTC cash spread. A Visa prepaid card has been talked about as a later add-on, but as of mid-November 2026 that had not been clearly confirmed as already in users' hands.
+
+Two caveats matter in Pattaya. This is still a sandbox, so rules and fees can change. And the coverage we checked names **The Mall Group in Bangkok** as the first retail partner; it does not mention Pattaya. Do not treat WORPT as a replacement for cash or a card until you have seen it work here.
+
+The full picture — who is behind the app, how onboarding works, and the sources — is in our [WORPT and Tourist DigiPay guide](/guides/worpt-tourist-digipay/).
+
 ## Fees Compared
 
 | Method | Typical Fee | Speed | Minimum |
@@ -130,6 +140,7 @@ The practical split: **card for anything with a terminal, OTC for cash.** Used t
 | Bitcoin ATM | 5–10% | Instant | Low limits |
 | Crypto card (Karta) — card payment | 1.5% | Instant | 5 USDT card fee, KYC |
 | Crypto card (Karta) — ATM cash | 2.5% + 1 USDT + ATM fee (~5–6% all in) | Instant | 250 USDT cap per withdrawal |
+| WORPT (Tourist DigiPay sandbox) | 1.5% conversion fee, initially, as stated by the operator in November 2026 | After app onboarding | Pilot; USDT and USDC named; Pattaya acceptance unconfirmed |
 
 The online exchanges look cheaper on paper, but they require a Thai bank account and KYC verification — not practical for short-term visitors. For tourists and people without a Thai bank account, OTC offices are the most practical choice for cash despite the higher spread. For the part of your spending that goes through a card terminal, a crypto card is the cheapest route of all.
 
@@ -160,6 +171,7 @@ If your crypto holdings are in Bitcoin or Ethereum, consider converting to USDT 
 
 ## Related Guides
 
+- [WORPT App & Tourist DigiPay — pay with USDT via PromptPay](/guides/worpt-tourist-digipay/)
 - [Thai Baht Currency Converter](/tools/currency-converter/)
 - [Thai Banking and QR Payments](/guides/thai-banking-qr-payments/)
 - [Digital Nomad Guide to Pattaya](/guides/digital-nomad-pattaya/)

@@ -109,7 +109,7 @@ The Thai Baht (THB) is the local currency. ATMs are on every corner, but they ch
 
 **Tip:** Many visitors now use Wise (formerly TransferWise) debit cards for the best exchange rates and zero ATM markup. See our [Thai banking & QR payments guide](/guides/thai-banking-qr-payments/) for more options.
 
-**Crypto holders:** If you hold Bitcoin, USDT, or Ethereum, you can convert directly to Thai Baht cash at OTC exchange offices in Pattaya. The process takes minutes. See our [Crypto to Thai Baht guide](/guides/crypto-to-thb-pattaya/) for details.
+**Crypto holders:** If you hold Bitcoin, USDT, or Ethereum, you can convert directly to Thai Baht cash at OTC exchange offices in Pattaya. The process takes minutes. See our [Crypto to Thai Baht guide](/guides/crypto-to-thb-pattaya/) for details. Thailand is also piloting an official tourist app, [WORPT](/guides/worpt-tourist-digipay/), that converts USDT or USDC to baht for PromptPay payments. It is still a sandbox, and we have not confirmed it works in Pattaya.
 
 ## SIM Cards and Internet
 
