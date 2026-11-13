@@ -11,6 +11,9 @@ import type { ImageMetadata } from 'astro';
 import classicVegas from '../assets/images/shirts/motif-classic-vegas.png';
 import neonClub from '../assets/images/shirts/motif-neon-club.png';
 import desertGold from '../assets/images/shirts/motif-desert-gold.png';
+import classicVegasThumb from '../assets/images/shirts/thumb-classic-vegas.png';
+import neonClubThumb from '../assets/images/shirts/thumb-neon-club.png';
+import desertGoldThumb from '../assets/images/shirts/thumb-desert-gold.png';
 
 export interface ShirtMotif {
   slug: string;
@@ -20,6 +23,11 @@ export interface ShirtMotif {
   /** Background the transparent motif is previewed on, roughly the shirt colour. */
   previewBg: 'light' | 'dark';
   image: ImageMetadata;
+  /**
+   * 300 px version for the design picker tiles, used as a plain file.
+   * Both images come from scripts/shirt-images.mjs.
+   */
+  thumb: ImageMetadata;
   /** Two ink colours of the motif, used for the glow behind the product preview. */
   glow: [string, string];
   /**
@@ -38,6 +46,7 @@ export const motifs: ShirtMotif[] = [
     shirtColors: 'White or grey shirt',
     previewBg: 'light',
     image: classicVegas,
+    thumb: classicVegasThumb,
     glow: ['#E8B52A', '#CB151B'],
   },
   {
@@ -47,6 +56,7 @@ export const motifs: ShirtMotif[] = [
     shirtColors: 'Black shirt',
     previewBg: 'dark',
     image: neonClub,
+    thumb: neonClubThumb,
     glow: ['#F32291', '#02C4D3'],
   },
   {
@@ -56,6 +66,7 @@ export const motifs: ShirtMotif[] = [
     shirtColors: 'Black shirt',
     previewBg: 'dark',
     image: desertGold,
+    thumb: desertGoldThumb,
     glow: ['#DDAA37', '#F6EBD2'],
   },
 ];

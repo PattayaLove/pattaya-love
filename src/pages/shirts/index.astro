@@ -171,7 +171,7 @@ const designCss = motifs
                   <Image
                     src={s.src}
                     alt={s.alt}
-                    widths={[400, 640, 864]}
+                    widths={[640, 828]}
                     sizes="(max-width: 960px) 72vw, 340px"
                     format="webp"
                     quality={76}
@@ -200,7 +200,7 @@ const designCss = motifs
                   <Image
                     src={m.image}
                     alt={`${m.name} design on a ${m.previewBg === 'dark' ? 'black' : 'white'} shirt: Welcome to Fabulous Las Vaginas, Pattaya`}
-                    widths={[480, 800, 1200]}
+                    widths={[640, 828, 1200]}
                     sizes="(max-width: 960px) 72vw, 430px"
                     format="webp"
                     quality={84}
@@ -227,7 +227,14 @@ const designCss = motifs
                       />
                       <span class="lv-design__tile">
                         <span class:list={['lv-design__thumb', `lv-design__thumb--${m.previewBg}`]}>
-                          <Image src={m.image} alt="" widths={[160, 320]} sizes="110px" format="webp" quality={80} />
+                          <img
+                            src={m.thumb.src}
+                            width={m.thumb.width}
+                            height={m.thumb.height}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                          />
                         </span>
                         {m.name}
                       </span>
