@@ -1,0 +1,99 @@
+---
+/**
+ * Thank-you page after an "I want this one" click on /shirts/.
+ * One static page per motif + size, so Vercel Web Analytics counts each
+ * combination as its own path. noindex, not in the sitemap.
+ */
+import { Image } from 'astro:assets';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import Footer from '../../../../components/Footer.astro';
+import TeeCollar from '../../../../components/shirts/TeeCollar.astro';
+import { motifs, sizes, NOTIFY_EMAIL, type ShirtMotif, type ShirtSize } from '../../../../data/shirts';
+import '@fontsource/chonburi/latin-400.css';
+import '../../../../styles/shirts.css';
+
+export function getStaticPaths() {
+  return motifs.flatMap((motif) =>
+    sizes.map((size) => ({
+      params: { motif: motif.slug, size: size.slug },
+      props: { motif, size },
+    })),
+  );
+}
+
+interface Props {
+  motif: ShirtMotif;
+  size: ShirtSize;
+}
+
+const { motif, size } = Astro.props;
+const sizeText = size.slug === 'any' ? 'size not decided yet' : `size ${size.label}`;
+const subject = `Las Vaginas shirt – ${motif.name} – ${size.slug === 'any' ? 'size tbd' : size.label}`;
+const body = `Hi pattaya.love,\n\nplease let me know when the ${motif.name} shirt (${sizeText}) launches.\n\nThanks!`;
+const mailto = `mailto:${NOTIFY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+---
+
+<BaseLayout
+  title={`${motif.name} — noted!`}
+  description="Thanks for your interest in the Las Vaginas shirts. Get notified when the first run launches."
+  noindex
+>
+  <div class="lv">
+    <header class="lv-top">
+      <div class="lv-wrap lv-top__row">
+        <a href="/" class="lv-top__logo">
+          <img src="/images/brand/logo-white.svg" alt="pattaya.love home" width="103" height="56" />
+        </a>
+        <a href="/shirts/#designs" class="lv-top__link">Back to the designs</a>
+      </div>
+    </header>
+
+    <main class="lv-thanks" style={`--glow-a:${motif.glow[0]}`}>
+      <div class="lv-wrap lv-thanks__grid">
+        <div>
+          <p class="lv-status">
+            <span class="lv-status__bulb" aria-hidden="true"></span>
+            Vote counted
+          </p>
+          <h1>Good taste. Questionable, but good.</h1>
+          <p class="lv-thanks__lede">
+            We have counted your vote for <strong>{motif.name}</strong>, {sizeText}.
+            Nothing is charged and nothing is ordered — you just helped us decide what to print.
+          </p>
+
+          <div class="lv-notify">
+            <h2>Get notified at launch</h2>
+            <p>
+              Want a heads-up when the first run is ready? Send us a quick email — the subject is
+              already filled in. We only use your address to tell you about the launch.
+            </p>
+            <a href={mailto} class="lv-btn">Email us to get notified</a>
+            <p class="lv-notify__note">
+              Opens your email app. Or write to <b>{NOTIFY_EMAIL}</b> yourself.
+            </p>
+          </div>
+
+          <p class="lv-back">
+            Like another one too? <a href="/shirts/#designs">Back to the designs</a>
+          </p>
+        </div>
+
+        <figure class:list={['lv-tee', `lv-tee--${motif.previewBg}`]}>
+          <TeeCollar />
+          <Image
+            src={motif.image}
+            alt={`${motif.name} design on a ${motif.previewBg === 'dark' ? 'black' : 'white'} shirt`}
+            widths={[480, 800]}
+            sizes="(max-width: 960px) 270px, 340px"
+            format="webp"
+            quality={84}
+            class="lv-tee__motif"
+          />
+          <figcaption>Mockup</figcaption>
+        </figure>
+      </div>
+    </main>
+  </div>
+
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,962 @@
+/*
+ * Las Vaginas shirts (/shirts/ and /shirts/interest/…).
+ * The page is the sign at night: colours are the print's own inks,
+ * the lit bulbs are the only thing that moves on its own.
+ * Everything is scoped under .lv so nothing leaks into the rest of the site.
+ */
+
+.lv {
+  --lv-night: #061a2d;
+  --lv-night-deep: #030f1b;
+  --lv-ink: #092e4c;
+  --lv-cream: #f6ebd2;
+  --lv-red: #cb151b;
+  --lv-bulb: #e8b52a;
+  --lv-bulb-lit: #ffd45c;
+  --lv-text: rgba(246, 235, 210, 0.8);
+  --lv-text-quiet: rgba(246, 235, 210, 0.58);
+  --lv-line: rgba(246, 235, 210, 0.16);
+  --lv-display: 'Chonburi', 'Plus Jakarta Sans', Georgia, serif;
+  --lv-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+
+  background: var(--lv-night);
+  color: var(--lv-text);
+  font-family: var(--lv-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.lv-wrap {
+  width: min(100% - 2.5rem, 72rem);
+  margin-inline: auto;
+}
+
+.lv h1,
+.lv h2,
+.lv h3 {
+  font-family: var(--lv-display);
+  font-weight: 400;
+  color: var(--lv-cream);
+  text-wrap: balance;
+}
+
+.lv h2 {
+  font-size: clamp(2rem, 1.2rem + 3.2vw, 3.25rem);
+  line-height: 1.08;
+}
+
+.lv a:focus-visible,
+.lv summary:focus-visible,
+.lv input:focus-visible + span {
+  outline: 3px solid var(--lv-cream);
+  outline-offset: 3px;
+}
+
+/* ── Button: a lit sign ─────────────────────────────────────────── */
+
+.lv-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 999px;
+  background: var(--lv-bulb);
+  color: var(--lv-night-deep);
+  font-family: var(--lv-sans);
+  font-size: 1.0625rem;
+  font-weight: 800;
+  letter-spacing: 0.005em;
+  text-decoration: none;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    0 10px 34px -8px rgba(232, 181, 42, 0.6);
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+}
+.lv-btn:hover {
+  background: var(--lv-bulb-lit);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 12px 44px -6px rgba(255, 212, 92, 0.8);
+}
+.lv-btn:active {
+  transform: translateY(1px);
+}
+.lv-btn--wide {
+  width: 100%;
+}
+.lv-btn--red {
+  background: var(--lv-red);
+  color: var(--lv-cream);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 10px 30px -10px rgba(203, 21, 27, 0.7);
+}
+.lv-btn--red:hover {
+  background: #e01d24;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    0 12px 36px -8px rgba(203, 21, 27, 0.85);
+}
+
+/* ── Slim header ────────────────────────────────────────────────── */
+
+.lv-top {
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: 5;
+}
+.lv-top__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.25rem;
+}
+.lv-top__logo img {
+  display: block;
+  height: 4.75rem;
+  width: auto;
+  margin-left: -1.1rem;
+}
+.lv-top__link {
+  color: var(--lv-cream);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--lv-bulb);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
+}
+.lv-top__link:hover {
+  color: var(--lv-bulb-lit);
+}
+
+/* ── Hero ───────────────────────────────────────────────────────── */
+
+.lv-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0 2.75rem;
+  background:
+    radial-gradient(ellipse 90% 34% at 50% 26%, rgba(232, 181, 42, 0.2), transparent 70%),
+    linear-gradient(180deg, var(--lv-night-deep) 0%, var(--lv-night) 58%, #24143a 100%);
+}
+.lv-hero__grid {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+.lv-hero__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.lv-hero h1 {
+  font-size: clamp(2.25rem, 1.15rem + 3.4vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.005em;
+  margin-bottom: 1.5rem;
+}
+.lv-status {
+  order: 5;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.75rem;
+  padding: 0.4rem 0.9rem 0.4rem 0.75rem;
+  border: 1px solid var(--lv-line);
+  border-radius: 999px;
+  color: var(--lv-cream);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.lv-status__bulb {
+  flex: none;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--lv-bulb-lit);
+  box-shadow: 0 0 10px 2px rgba(255, 212, 92, 0.8);
+}
+.lv-lede {
+  order: 4;
+  max-width: 34rem;
+  margin-top: 1.75rem;
+  font-size: 1.125rem;
+}
+.lv-hero__cta {
+  order: 3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem 1.25rem;
+}
+.lv-hero__cta p {
+  color: var(--lv-text-quiet);
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+.lv-hero__cta strong {
+  display: block;
+  color: var(--lv-cream);
+  font-weight: 700;
+}
+.lv-facts {
+  order: 6;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.75rem;
+  color: var(--lv-cream);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.lv-facts li {
+  padding-inline: 0.7rem;
+  border-left: 1px solid var(--lv-line);
+}
+.lv-facts li:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.lv-sign {
+  order: -1;
+  width: min(100%, 17rem);
+  margin-inline: auto;
+}
+.lv-sign svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 26px rgba(232, 181, 42, 0.38));
+  animation: lv-switch-on 1.7s linear both;
+}
+/* The bulbs chase round the sign in three phases. */
+.lv-sign #lampen circle,
+.lv-sign #giebel-lampen circle {
+  animation: lv-bulb 1.8s linear infinite;
+  animation-delay: 1.7s;
+}
+.lv-sign #lampen circle:nth-child(3n + 2),
+.lv-sign #giebel-lampen circle:nth-child(3n + 2) {
+  animation-delay: 2.3s;
+}
+.lv-sign #lampen circle:nth-child(3n),
+.lv-sign #giebel-lampen circle:nth-child(3n) {
+  animation-delay: 2.9s;
+}
+@keyframes lv-bulb {
+  0%, 58% { fill: #fffdf0; }
+  66%, 92% { fill: #c2901c; }
+  100% { fill: #fffdf0; }
+}
+/* One flicker when the page opens, like a sign being switched on. */
+@keyframes lv-switch-on {
+  0% { opacity: 0.1; }
+  9% { opacity: 0.95; }
+  13% { opacity: 0.18; }
+  22% { opacity: 1; }
+  26% { opacity: 0.35; }
+  36%, 100% { opacity: 1; }
+}
+
+@media (min-width: 60rem) {
+  .lv-hero {
+    padding: 8.5rem 0 5.5rem;
+    background:
+      radial-gradient(ellipse 46% 52% at 74% 46%, rgba(232, 181, 42, 0.2), transparent 70%),
+      linear-gradient(180deg, var(--lv-night-deep) 0%, var(--lv-night) 58%, #24143a 100%);
+  }
+  .lv-facts {
+    font-size: 0.9375rem;
+  }
+  .lv-facts li {
+    padding-inline: 1rem;
+  }
+  .lv-hero__grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 3rem;
+  }
+  .lv-status {
+    order: 0;
+    margin: 0 0 1.5rem;
+  }
+  .lv-lede {
+    order: 2;
+    margin: 0 0 2rem;
+  }
+  .lv-hero__cta {
+    order: 3;
+  }
+  .lv-sign {
+    order: 0;
+    width: 100%;
+    max-width: 36rem;
+    margin-inline: auto 0;
+  }
+}
+
+/* ── Photo strip ────────────────────────────────────────────────── */
+
+.lv-strip {
+  padding: 4rem 0 4.5rem;
+  background: linear-gradient(180deg, #24143a 0%, var(--lv-night) 22rem);
+}
+.lv-strip__head {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+.lv-strip__head p {
+  max-width: 34rem;
+}
+.lv-strip__row {
+  display: flex;
+  gap: 0.875rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-inline: 1.25rem;
+  scroll-padding-inline: 1.25rem;
+  scrollbar-width: none;
+}
+.lv-strip__row::-webkit-scrollbar {
+  display: none;
+}
+.lv-shot {
+  flex: none;
+  width: min(72vw, 19rem);
+  scroll-snap-align: start;
+}
+.lv-shot a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.lv-shot__img {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: var(--lv-ink);
+}
+.lv-shot__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.lv-shot a:hover img {
+  transform: scale(1.035);
+}
+.lv-shot__tag {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(3, 15, 27, 0.7);
+  color: var(--lv-cream);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.lv-shot figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+.lv-shot figcaption b {
+  display: block;
+  color: var(--lv-cream);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.25em;
+  transition: text-decoration-color 0.15s ease;
+}
+.lv-shot a:hover figcaption b {
+  text-decoration-color: var(--lv-bulb);
+}
+
+@media (min-width: 60rem) {
+  .lv-strip {
+    padding: 5rem 0 6rem;
+  }
+  .lv-strip__head {
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  .lv-strip__row {
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr 3fr;
+    gap: 1rem;
+    align-items: start;
+    width: min(100% - 2.5rem, 72rem);
+    margin-inline: auto;
+    padding-inline: 0;
+    overflow: visible;
+  }
+  .lv-shot {
+    width: auto;
+  }
+  .lv-shot--wide .lv-shot__img {
+    aspect-ratio: 1 / 1;
+  }
+  /* Stagger the row so it reads as a contact sheet, not a grid. */
+  .lv-shot:nth-child(even) {
+    margin-top: 2.5rem;
+  }
+}
+
+/* ── Configurator ───────────────────────────────────────────────── */
+
+.lv-pick {
+  padding: 4rem 0 4.5rem;
+  scroll-margin-top: 1rem;
+  background: var(--lv-night);
+}
+.lv-pick > .lv-wrap > h2 {
+  margin-bottom: 2rem;
+}
+.lv-cfg {
+  --glow-a: #e8b52a;
+  --glow-b: #cb151b;
+  display: grid;
+  gap: 2rem;
+}
+
+/* Stage: a close-up of the shirt's chest. */
+.lv-cfg__stage {
+  position: relative;
+  display: grid;
+}
+.lv-cfg__stage::before {
+  content: '';
+  position: absolute;
+  inset: -7% -6%;
+  z-index: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(closest-side at 28% 36%, var(--glow-a), transparent),
+    radial-gradient(closest-side at 74% 66%, var(--glow-b), transparent);
+  filter: blur(40px);
+  opacity: 0.6;
+}
+.lv-tee {
+  position: relative;
+  z-index: 1;
+  grid-area: 1 / 1;
+  aspect-ratio: 1 / 1.04;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease, visibility 0.35s;
+}
+.lv-tee--light {
+  --fabric: #f2f0ea;
+  --fabric-rib: #e6e3db;
+  --fabric-back: #d5d1c7;
+  --fabric-stitch: rgba(0, 0, 0, 0.16);
+  background:
+    radial-gradient(120% 80% at 26% 0%, #ffffff, transparent 62%),
+    linear-gradient(180deg, transparent 55%, rgba(60, 50, 30, 0.1)),
+    var(--fabric);
+}
+.lv-tee--dark {
+  --fabric: #151518;
+  --fabric-rib: #1d1d21;
+  --fabric-back: #0a0a0c;
+  --fabric-stitch: rgba(255, 255, 255, 0.14);
+  background:
+    radial-gradient(120% 80% at 26% 0%, rgba(255, 255, 255, 0.09), transparent 62%),
+    linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, 0.35)),
+    var(--fabric);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+/* Cotton weave. */
+.lv-tee::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 140px;
+}
+.lv-tee__collar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 44%;
+  height: auto;
+  transform: translateX(-50%);
+}
+.lv-tee__motif {
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  width: 76%;
+  height: auto;
+  transform: translateX(-50%);
+}
+.lv-tee figcaption {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(3, 15, 27, 0.7);
+  color: var(--lv-cream);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Panel */
+.lv-cfg__panel {
+  display: grid;
+  gap: 1.75rem;
+  align-content: start;
+}
+.lv-cfg legend {
+  margin-bottom: 0.7rem;
+  color: var(--lv-cream);
+  font-size: 0.9375rem;
+  font-weight: 800;
+}
+.lv-designs__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+.lv-design {
+  cursor: pointer;
+}
+.lv-design input,
+.lv-size input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.lv-design__tile {
+  display: block;
+  padding: 0.5rem 0.5rem 0.7rem;
+  border: 2px solid var(--lv-line);
+  border-radius: 1rem;
+  color: var(--lv-text);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+.lv-design__thumb {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1.12;
+  margin-bottom: 0.55rem;
+  border-radius: 0.6rem;
+}
+.lv-design__thumb--light {
+  background: #f2f0ea;
+}
+.lv-design__thumb--dark {
+  background: #151518;
+}
+.lv-design__thumb img {
+  width: 84%;
+  height: auto;
+}
+.lv-design:hover .lv-design__tile {
+  border-color: rgba(246, 235, 210, 0.45);
+}
+.lv-design input:checked + .lv-design__tile {
+  border-color: var(--lv-bulb);
+  background: rgba(232, 181, 42, 0.1);
+  color: var(--lv-cream);
+}
+
+.lv-desc {
+  display: none;
+}
+.lv-desc h3 {
+  font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.375rem);
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
+}
+.lv-desc__shirt {
+  margin-top: 0.6rem;
+  color: var(--lv-cream);
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.lv-sizes__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.lv-size {
+  cursor: pointer;
+}
+.lv-size span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.25rem;
+  min-height: 2.875rem;
+  padding: 0 1rem;
+  border: 2px solid var(--lv-line);
+  border-radius: 999px;
+  color: var(--lv-cream);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+.lv-size:hover span {
+  border-color: rgba(246, 235, 210, 0.45);
+}
+.lv-size input:checked + span {
+  border-color: var(--lv-cream);
+  background: var(--lv-cream);
+  color: var(--lv-night-deep);
+}
+
+.lv-buy {
+  display: grid;
+  gap: 0.9rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--lv-line);
+}
+.lv-price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.75rem;
+  color: var(--lv-text-quiet);
+  font-size: 0.9375rem;
+}
+.lv-price strong {
+  color: var(--lv-cream);
+  font-family: var(--lv-display);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.lv-buy__note {
+  color: var(--lv-text-quiet);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.lv-specs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.55rem 1.5rem;
+  font-size: 0.9375rem;
+}
+.lv-specs dt {
+  color: var(--lv-text-quiet);
+}
+.lv-specs dd {
+  color: var(--lv-cream);
+}
+
+@media (min-width: 60rem) {
+  .lv-pick {
+    padding: 5rem 0 7rem;
+  }
+  .lv-pick > .lv-wrap > h2 {
+    margin-bottom: 3rem;
+  }
+  .lv-cfg {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 4rem;
+    align-items: start;
+  }
+  .lv-cfg__stage {
+    position: sticky;
+    top: 1.5rem;
+  }
+}
+
+/* ── How it works ───────────────────────────────────────────────── */
+
+.lv-steps {
+  padding: 4rem 0;
+  border-top: 1px solid var(--lv-line);
+}
+.lv-steps h2 {
+  margin-bottom: 2.25rem;
+}
+.lv-steps ol {
+  display: grid;
+  gap: 2rem;
+  counter-reset: lv-step;
+}
+.lv-steps li {
+  counter-increment: lv-step;
+  display: grid;
+  grid-template-columns: 3.25rem 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0 1rem;
+}
+.lv-steps li::before {
+  content: counter(lv-step);
+  grid-row: span 2;
+  color: var(--lv-bulb);
+  font-family: var(--lv-display);
+  font-size: 3.5rem;
+  line-height: 0.9;
+}
+.lv-steps h3 {
+  font-family: var(--lv-sans);
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
+}
+
+@media (min-width: 60rem) {
+  .lv-steps {
+    padding: 6rem 0;
+  }
+  .lv-steps ol {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* ── FAQ ────────────────────────────────────────────────────────── */
+
+.lv-faq {
+  padding: 4rem 0 5rem;
+  border-top: 1px solid var(--lv-line);
+}
+.lv-faq__grid {
+  display: grid;
+  gap: 2rem;
+}
+.lv-faq details {
+  border-bottom: 1px solid var(--lv-line);
+}
+.lv-faq details:first-of-type {
+  border-top: 1px solid var(--lv-line);
+}
+.lv-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.15rem 0;
+  color: var(--lv-cream);
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.3;
+  cursor: pointer;
+  list-style: none;
+}
+.lv-faq summary::-webkit-details-marker {
+  display: none;
+}
+.lv-faq summary svg {
+  flex: none;
+  font-size: 1.5rem;
+  color: var(--lv-bulb);
+  transition: transform 0.2s ease;
+}
+.lv-faq details[open] summary svg {
+  transform: rotate(180deg);
+}
+.lv-faq details p {
+  max-width: 40rem;
+  padding-bottom: 1.35rem;
+}
+
+@media (min-width: 60rem) {
+  .lv-faq {
+    padding: 6rem 0 7rem;
+  }
+  .lv-faq__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+    gap: 4rem;
+  }
+}
+
+/* ── Closing band: the sign face in daylight ────────────────────── */
+
+.lv-close {
+  padding: 4.5rem 0;
+  background: var(--lv-cream);
+  color: var(--lv-ink);
+  text-align: center;
+}
+.lv .lv-close h2 {
+  color: var(--lv-ink);
+  font-size: clamp(2.5rem, 1.4rem + 5vw, 5rem);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.lv-close p {
+  max-width: 30rem;
+  margin: 0 auto 2rem;
+  font-size: 1.125rem;
+}
+.lv-close a:focus-visible {
+  outline-color: var(--lv-ink);
+}
+
+@media (min-width: 60rem) {
+  .lv-close {
+    padding: 7rem 0;
+  }
+}
+
+/* ── Sticky bar on phones ───────────────────────────────────────── */
+
+.lv-sticky {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 1.25rem calc(0.7rem + env(safe-area-inset-bottom));
+  background: rgba(3, 15, 27, 0.94);
+  border-top: 1px solid var(--lv-line);
+  backdrop-filter: blur(12px);
+  transform: translateY(110%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.lv-sticky.is-on {
+  transform: none;
+}
+.lv-sticky p {
+  color: var(--lv-text-quiet);
+  font-size: 0.8125rem;
+  line-height: 1.3;
+}
+.lv-sticky strong {
+  display: block;
+  color: var(--lv-cream);
+  font-size: 0.9375rem;
+}
+.lv-sticky .lv-btn {
+  flex: none;
+  min-height: 2.875rem;
+  padding-inline: 1.4rem;
+  font-size: 0.9375rem;
+}
+@media (min-width: 60rem) {
+  .lv-sticky {
+    display: none;
+  }
+}
+
+/* ── Thank-you page ─────────────────────────────────────────────── */
+
+.lv-thanks {
+  padding: 6.5rem 0 4rem;
+  background: linear-gradient(180deg, var(--lv-night-deep), var(--lv-night));
+}
+.lv-thanks__grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+.lv-thanks h1 {
+  font-size: clamp(2.25rem, 1.3rem + 4.2vw, 4rem);
+  line-height: 1.05;
+  margin: 1.25rem 0 1.25rem;
+}
+.lv-thanks .lv-status {
+  margin: 0;
+}
+.lv-thanks__lede {
+  max-width: 34rem;
+  font-size: 1.125rem;
+}
+.lv-thanks__lede strong {
+  color: var(--lv-cream);
+}
+.lv-thanks .lv-tee {
+  grid-area: auto;
+  width: min(100%, 22rem);
+  margin-inline: auto;
+  opacity: 1;
+  visibility: visible;
+}
+.lv-notify {
+  margin-top: 2.25rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--lv-line);
+}
+.lv-notify h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.6rem;
+}
+.lv-notify p {
+  max-width: 34rem;
+}
+.lv-notify .lv-btn {
+  margin: 1.5rem 0 0.9rem;
+}
+.lv-notify__note,
+.lv-back {
+  color: var(--lv-text-quiet);
+  font-size: 0.9375rem;
+}
+.lv-notify__note b {
+  color: var(--lv-cream);
+}
+.lv-back {
+  margin-top: 2rem;
+}
+.lv-back a {
+  color: var(--lv-cream);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--lv-bulb);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
+}
+
+@media (min-width: 60rem) {
+  .lv-thanks {
+    padding: 9rem 0 7rem;
+    background:
+      radial-gradient(ellipse 42% 60% at 80% 42%, color-mix(in srgb, var(--glow-a, #e8b52a) 24%, transparent), transparent 70%),
+      linear-gradient(180deg, var(--lv-night-deep), var(--lv-night));
+  }
+  .lv-thanks__grid {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    gap: 4rem;
+  }
+  .lv-thanks .lv-tee {
+    width: 100%;
+    margin-inline: 0;
+  }
+}
+
+/* ── Motion preferences ─────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .lv-sign svg,
+  .lv-sign #lampen circle,
+  .lv-sign #giebel-lampen circle {
+    animation: none;
+  }
+  .lv-tee,
+  .lv-sticky,
+  .lv-shot__img img,
+  .lv-btn {
+    transition: none;
+  }
+}

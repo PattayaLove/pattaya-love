@@ -1,0 +1,431 @@
+---
+/**
+ * Landing page for the "Las Vaginas" shirts.
+ * noindex, not in the sitemap, not linked from navigation or footer —
+ * reachable only via the direct link.
+ *
+ * Two modes, decided by src/data/shirts.ts:
+ *  - pre-launch (default): the button counts interest via
+ *    /shirts/interest/<motif>/<size>/.
+ *  - shop live: as soon as every motif has a `shopUrl`, the button links to
+ *    the print partner's shop instead. Update the FAQ and price copy then.
+ */
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Footer from '../../components/Footer.astro';
+import Icon from '../../components/Icon.astro';
+import TeeCollar from '../../components/shirts/TeeCollar.astro';
+import { motifs, sizes, plannedPrice, interestPath, shopLive } from '../../data/shirts';
+import signSvg from '../../assets/images/shirts/sign-classic-vegas.svg?raw';
+import bahtBus from '../../assets/images/shirts/photo-baht-bus-gold.jpg';
+import flatlay from '../../assets/images/shirts/photo-flatlay-classic.jpg';
+import beerBar from '../../assets/images/shirts/photo-beer-bar-neon.jpg';
+import beachNeon from '../../assets/images/shirts/photo-beach-neon.jpg';
+import '@fontsource/chonburi/latin-400.css';
+import '../../styles/shirts.css';
+
+// The hero sign is the real print file, inlined so its bulbs can be animated.
+const sign = signSvg
+  .replace(/<\?xml[^>]*\?>\s*/, '')
+  .replace(/<title>[\s\S]*?<\/title>\s*/, '')
+  .replace('<svg ', '<svg aria-hidden="true" focusable="false" ');
+
+const [priceThb, priceEur] = plannedPrice.split(' / ');
+
+const shots = [
+  {
+    src: bahtBus,
+    motif: 'desert-gold',
+    name: 'Desert Gold',
+    line: 'On the last baht bus home.',
+    alt: 'Mockup: man in the Desert Gold shirt laughing with two friends in a Pattaya baht bus at night',
+    wide: false,
+  },
+  {
+    src: flatlay,
+    motif: 'classic-vegas',
+    name: 'Classic Vegas',
+    line: 'Beach bar, one Leo in.',
+    alt: 'Mockup: folded white Classic Vegas shirt on a wooden table with a Leo beer, baht notes and sunglasses',
+    wide: true,
+  },
+  {
+    src: beerBar,
+    motif: 'neon-club',
+    name: 'Neon Club',
+    line: 'Beer bar, some time after midnight.',
+    alt: 'Mockup: couple at a Pattaya beer bar, he wears the Neon Club shirt',
+    wide: false,
+  },
+  {
+    src: beachNeon,
+    motif: 'neon-club',
+    name: 'Neon Club',
+    line: 'The beach at 5 am.',
+    alt: 'Mockup: three friends laughing on the beach at dawn, one in the Neon Club shirt',
+    wide: false,
+  },
+];
+
+const faqs = [
+  {
+    q: 'Can I buy one right now?',
+    a: 'Not yet. This is a pre-launch interest page. Nothing is for sale and nothing can be paid here. We count which design and size people pick, and if enough of you want one, we print a limited first run.',
+  },
+  {
+    q: 'What will the shirts be made of?',
+    a: 'Planned: a soft, heavy cotton tee with a large chest print (about 29 cm wide). We will confirm material and print method after the first test prints — and only show real photos then.',
+  },
+  {
+    q: 'How much will it cost?',
+    a: `The planned price is around ${plannedPrice}. That is a guide, not an offer — the final price depends on the print run.`,
+  },
+  {
+    q: 'Shipping or pickup?',
+    a: 'Still open. Pickup in Pattaya is the likely start; shipping within Thailand and abroad depends on demand.',
+  },
+  {
+    q: 'Are those real photos?',
+    a: 'No — they are mockups. The designs are real; the shirts do not exist yet. That is the whole point of this page.',
+  },
+];
+
+const first = motifs[0];
+const ctaHref = shopLive ? first.shopUrl : interestPath(first.slug, 'any');
+
+// One rule set per motif: the checked design shows its shirt, its text and its glow.
+const designCss = motifs
+  .map((m) => {
+    const on = `.lv-cfg:has(input[name="design"][value="${m.slug}"]:checked)`;
+    return `${on}{--glow-a:${m.glow[0]};--glow-b:${m.glow[1]}}${on} .lv-tee[data-d="${m.slug}"]{opacity:1;visibility:visible}${on} .lv-desc[data-d="${m.slug}"]{display:block}`;
+  })
+  .join('');
+---
+
+<BaseLayout
+  title="Las Vaginas Shirts — Pre-Launch"
+  description="Welcome to Fabulous Las Vaginas, Pattaya. Three shirt designs, one limited first run — pick your favourite and get notified at launch."
+  noindex
+>
+  <style is:inline set:html={designCss} />
+
+  <div class="lv">
+    <header class="lv-top">
+      <div class="lv-wrap lv-top__row">
+        <a href="/" class="lv-top__logo">
+          <img src="/images/brand/logo-white.svg" alt="pattaya.love home" width="103" height="56" />
+        </a>
+        <a href="#designs" class="lv-top__link">See the three designs</a>
+      </div>
+    </header>
+
+    <section class="lv-hero">
+      <div class="lv-wrap lv-hero__grid">
+        <div class="lv-hero__copy">
+          {!shopLive && (
+            <p class="lv-status">
+              <span class="lv-status__bulb" aria-hidden="true"></span>
+              Pre-launch. Enough votes and we print.
+            </p>
+          )}
+          <h1>What happens in Pattaya stays in Pattaya. The shirt comes home.</h1>
+          <p class="lv-lede">
+            The world’s most famous welcome sign, moved to where it makes more sense.
+            Three designs, one limited first run. Tell us which one you would actually wear.
+          </p>
+          <div class="lv-hero__cta">
+            <a href="#designs" class="lv-btn" data-cta-watch>Pick your design</a>
+            <p>
+              <strong>{priceThb} planned</strong>
+              {shopLive ? 'Printed to order.' : 'Nothing to pay today.'}
+            </p>
+          </div>
+          <ul class="lv-facts">
+            <li>{motifs.length} designs</li>
+            <li>Sizes S to XXL</li>
+            <li>29 cm chest print</li>
+          </ul>
+        </div>
+
+        <div
+          class="lv-sign"
+          role="img"
+          aria-label="Retro roadside sign with lit bulbs: Welcome to Fabulous Las Vaginas, Pattaya"
+          set:html={sign}
+        />
+      </div>
+    </section>
+
+    <main>
+      <section class="lv-strip" aria-labelledby="lv-strip-h">
+        <div class="lv-wrap lv-strip__head">
+          <h2 id="lv-strip-h">Field tested (sort of)</h2>
+          <p>
+            How we picture them out in the wild. These are mockups — real photos follow once
+            the first samples are printed.
+          </p>
+        </div>
+        <div class="lv-strip__row">
+          {shots.map((s) => (
+            <figure class:list={['lv-shot', s.wide && 'lv-shot--wide']}>
+              <a href="#designs" data-pick={s.motif}>
+                <div class="lv-shot__img">
+                  <Image
+                    src={s.src}
+                    alt={s.alt}
+                    widths={[400, 640, 864]}
+                    sizes="(max-width: 960px) 72vw, 340px"
+                    format="webp"
+                    quality={76}
+                  />
+                  <span class="lv-shot__tag">Mockup</span>
+                </div>
+                <figcaption>
+                  <b>{s.name}</b>
+                  {s.line}
+                </figcaption>
+              </a>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section id="designs" class="lv-pick" aria-labelledby="lv-pick-h">
+        <div class="lv-wrap">
+          <h2 id="lv-pick-h">Three signs. Pick yours.</h2>
+
+          <div class="lv-cfg">
+            <div class="lv-cfg__stage">
+              {motifs.map((m, i) => (
+                <figure class:list={['lv-tee', `lv-tee--${m.previewBg}`]} data-d={m.slug}>
+                  <TeeCollar />
+                  <Image
+                    src={m.image}
+                    alt={`${m.name} design on a ${m.previewBg === 'dark' ? 'black' : 'white'} shirt: Welcome to Fabulous Las Vaginas, Pattaya`}
+                    widths={[480, 800, 1200]}
+                    sizes="(max-width: 960px) 72vw, 430px"
+                    format="webp"
+                    quality={84}
+                    loading={i === 0 ? 'eager' : 'lazy'}
+                    class="lv-tee__motif"
+                  />
+                  <figcaption>Mockup</figcaption>
+                </figure>
+              ))}
+            </div>
+
+            <div class="lv-cfg__panel">
+              <fieldset class="lv-designs">
+                <legend>Design</legend>
+                <div class="lv-designs__list">
+                  {motifs.map((m, i) => (
+                    <label class="lv-design">
+                      <input
+                        type="radio"
+                        name="design"
+                        value={m.slug}
+                        checked={i === 0}
+                        data-shop-url={m.shopUrl}
+                      />
+                      <span class="lv-design__tile">
+                        <span class:list={['lv-design__thumb', `lv-design__thumb--${m.previewBg}`]}>
+                          <Image src={m.image} alt="" widths={[160, 320]} sizes="110px" format="webp" quality={80} />
+                        </span>
+                        {m.name}
+                      </span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <div aria-live="polite">
+                {motifs.map((m) => (
+                  <div class="lv-desc" data-d={m.slug}>
+                    <h3>{m.name}</h3>
+                    <p>{m.tagline}</p>
+                    <p class="lv-desc__shirt">{m.shirtColors}</p>
+                  </div>
+                ))}
+              </div>
+
+              {!shopLive && (
+                <fieldset class="lv-sizes">
+                  <legend>Size</legend>
+                  <div class="lv-sizes__list">
+                    {sizes.map((s) => (
+                      <label class="lv-size">
+                        <input type="radio" name="size" value={s.slug} checked={s.slug === 'any'} />
+                        <span>{s.label}</span>
+                      </label>
+                    ))}
+                  </div>
+                </fieldset>
+              )}
+
+              <div class="lv-buy">
+                <p class="lv-price">
+                  <strong>{priceThb}</strong>
+                  {priceEur}, planned price
+                </p>
+                <a
+                  href={ctaHref}
+                  id="lv-cta"
+                  class="lv-btn lv-btn--wide"
+                  rel={shopLive ? 'noopener' : 'nofollow'}
+                  target={shopLive ? '_blank' : undefined}
+                  data-mode={shopLive ? 'shop' : 'interest'}
+                  data-cta-watch
+                >
+                  {shopLive ? 'Buy this shirt' : 'I want this one'}
+                </a>
+                <p class="lv-buy__note">
+                  {shopLive
+                    ? 'Opens our print partner’s shop. Size, payment and shipping happen there.'
+                    : 'Counts as your vote. No payment, no account.'}
+                </p>
+              </div>
+
+              <dl class="lv-specs">
+                <dt>Fabric</dt>
+                <dd>Soft, heavy cotton (planned)</dd>
+                <dt>Print</dt>
+                <dd>Chest print, about 29 cm wide</dd>
+                <dt>Run</dt>
+                <dd>Small and limited</dd>
+                <dt>Getting it</dt>
+                <dd>Pickup in Pattaya first, shipping if demand is there</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {!shopLive && (
+        <section class="lv-steps" aria-labelledby="lv-steps-h">
+          <div class="lv-wrap">
+            <h2 id="lv-steps-h">How this works</h2>
+            <ol>
+              <li>
+                <h3>Pick a design and a size</h3>
+                <p>One tap on the button. Nothing to pay, nothing to sign up for.</p>
+              </li>
+              <li>
+                <h3>We count the picks</h3>
+                <p>Every pick tells us which design and which sizes are worth printing.</p>
+              </li>
+              <li>
+                <h3>Enough picks, and we print</h3>
+                <p>A limited first run. Ask for a launch email on the next page and we tell you when it drops.</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+      )}
+
+      <section class="lv-faq" aria-labelledby="lv-faq-h">
+        <div class="lv-wrap lv-faq__grid">
+          <h2 id="lv-faq-h">The small print</h2>
+          <div>
+            {faqs.map((f) => (
+              <details>
+                <summary>
+                  {f.q}
+                  <Icon name="expand_more" />
+                </summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="lv-close" aria-labelledby="lv-close-h">
+        <div class="lv-wrap">
+          <h2 id="lv-close-h">Drive carefully. Come back soon.</h2>
+          <p>That is what the back of the original sign says. Ours says: pick a shirt first.</p>
+          <a href="#designs" class="lv-btn lv-btn--red" data-cta-watch>Pick your design</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="lv-sticky" id="lv-sticky" hidden>
+      <p>
+        <strong>Las Vaginas shirts</strong>
+        {priceThb} planned
+      </p>
+      <a href="#designs" class="lv-btn" tabindex="-1">Pick yours</a>
+    </div>
+  </div>
+
+  <Footer />
+</BaseLayout>
+
+<script is:inline>
+  (function () {
+    var cfg = document.querySelector('.lv-cfg');
+    var cta = document.getElementById('lv-cta');
+    if (!cfg || !cta) return;
+
+    function picked(name) {
+      var el = cfg.querySelector('input[name="' + name + '"]:checked');
+      return el ? el.value : null;
+    }
+
+    // Keep the button's link in sync with the chosen design and size.
+    function sync() {
+      var motif = picked('design');
+      if (cta.getAttribute('data-mode') === 'shop') {
+        var input = cfg.querySelector('input[name="design"]:checked');
+        var url = input && input.getAttribute('data-shop-url');
+        if (url) cta.setAttribute('href', url);
+        return;
+      }
+      cta.setAttribute('href', '/shirts/interest/' + motif + '/' + (picked('size') || 'any') + '/');
+    }
+    cfg.addEventListener('change', sync);
+    sync();
+
+    // Custom event for Vercel Web Analytics (only recorded on Pro; the
+    // /shirts/interest/<motif>/<size>/ page view is the Hobby-plan signal).
+    cta.addEventListener('click', function () {
+      sync();
+      try {
+        if (window.va) {
+          window.va('event', {
+            name: cta.getAttribute('data-mode') === 'shop' ? 'shirt_shop_click' : 'shirt_interest',
+            data: { motif: picked('design'), size: picked('size') || 'any' },
+          });
+        }
+      } catch (e) {}
+    });
+
+    // A photo preselects the design it shows.
+    document.querySelectorAll('[data-pick]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        var input = cfg.querySelector('input[name="design"][value="' + link.getAttribute('data-pick') + '"]');
+        if (input) {
+          input.checked = true;
+          sync();
+        }
+      });
+    });
+
+    // Phones: show the bottom bar whenever no other button is on screen.
+    var bar = document.getElementById('lv-sticky');
+    if (!bar || !('IntersectionObserver' in window)) return;
+    bar.hidden = false;
+    var onScreen = new Set();
+    var watcher = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) onScreen.add(e.target);
+        else onScreen.delete(e.target);
+      });
+      var show = onScreen.size === 0 && window.scrollY > 200;
+      bar.classList.toggle('is-on', show);
+      bar.querySelector('a').tabIndex = show ? 0 : -1;
+    });
+    document.querySelectorAll('[data-cta-watch], .lv-sizes, .lv-designs').forEach(function (el) {
+      watcher.observe(el);
+    });
+  })();
+</script>
