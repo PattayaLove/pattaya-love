@@ -74,8 +74,12 @@ export const sizes: ShirtSize[] = [
   { slug: 'any', label: 'Not sure yet' },
 ];
 
-/** Shown as a planned price only — not an offer, nothing can be paid. */
-export const plannedPrice = '~690 THB / ~19 €';
+/**
+ * Shown as a planned price only — not an offer, nothing can be paid.
+ * US dollars only: the shirts ship worldwide from a print partner in the US.
+ * Shipping comes on top.
+ */
+export const plannedPrice = '$29';
 
 export const interestPath = (motif: string, size: string) => `/shirts/interest/${motif}/${size}/`;
 
