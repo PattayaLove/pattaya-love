@@ -1,9 +1,10 @@
 ---
 title: "Bangkok to Pattaya — Transport Guide 2026"
 slug: "bangkok-to-pattaya"
-description: "How to get from Bangkok to Pattaya in 2026. Compare buses, minivans, taxis, private transfers, and the new train — with real prices, travel times, and pro tips."
+description: "How to get from Bangkok to Pattaya in 2026. Buses, minivans, taxis, Grab and private transfers from the city and both airports, with real prices, travel times and tips."
 category: "transport"
 publishDate: 2026-04-04
+updatedDate: 2026-11-13
 image: "/images/guides/pattaya-bus-terminal.webp"
 draft: false
 ---
@@ -135,6 +136,12 @@ A Grab or taxi from Don Mueang to Pattaya is possible but more expensive due to 
 ### Private Transfer
 
 Pre-booked transfers from Don Mueang typically cost 2,000 to 3,000 THB and are the easiest option for late-night arrivals.
+
+## What About the High-Speed Train?
+
+You may have read about a high-speed line linking Don Mueang, Suvarnabhumi and U-Tapao airports. Do not plan around it. As of late October 2026 the project's future is uncertain: the CP Group-led consortium that holds the contract has asked to terminate it, citing difficulty securing bank financing. The State Railway of Thailand has not accepted that as a valid termination, and the government is reconsidering the project, including a slower, redesigned line.
+
+For travellers, nothing changes in the short term. The road options above are how you get to Pattaya, and they will be for the foreseeable future. Source: [Pattaya Mail, 27 October 2026](https://www.pattayamail.com/latestnews/news/thailand-rethinks-three-airport-high-speed-rail-project-after-cp-seeks-contract-termination-569842).
 
 ## Tips for Avoiding Scams
 

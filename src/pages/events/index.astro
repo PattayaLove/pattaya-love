@@ -1,0 +1,173 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import Icon from '../../components/Icon.astro';
+import { upcomingEvents, formatEventDates, statusLabel, pattayaToday } from '../../data/events';
+
+/* Filtered at build time; the inline script below repeats the filter in the
+   browser so a stale build never leads with an event that is already over. */
+const today = pattayaToday();
+const list = upcomingEvents(today);
+
+const siteUrl = Astro.site?.origin ?? 'https://www.pattaya.love';
+
+/* schema.org Event for every dated entry. "Expected" entries are left out:
+   marking unconfirmed dates as a scheduled event would be a false claim. */
+const eventSchemas = list
+  .filter((e) => e.status !== 'expected')
+  .map((e) => ({
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: e.name,
+    description: e.description,
+    startDate: e.startDate,
+    endDate: e.endDate,
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    ...(e.free ? { isAccessibleForFree: true } : {}),
+    location: {
+      '@type': 'Place',
+      name: e.venue,
+      address: e.address,
+    },
+    url: e.guide ? `${siteUrl}${e.guide.href}` : e.source.url,
+  }));
+
+const monthKey = (d: string) => d.slice(0, 7);
+const monthLabel = (d: string) =>
+  new Date(`${d}T12:00:00Z`).toLocaleDateString('en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+const months = [...new Set(list.map((e) => monthKey(e.startDate)))];
+---
+
+<BaseLayout
+  title="Pattaya Events Calendar 2026–2027"
+  description="What's on in Pattaya: Loy Krathong, the International Fireworks Festival, Wonderfruit, Tomorrowland, the New Year countdown and more — dates, venues and sources."
+>
+  <Navigation />
+
+  <BreadcrumbSchema items={[{ name: 'Home', href: '/' }, { name: 'Events' }]} />
+  {eventSchemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+
+  <header class="relative w-full pt-32 pb-16 md:pt-40 md:pb-20 bg-navy overflow-hidden grain">
+    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8">
+      <nav class="mb-8" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-xs text-white/50 font-medium">
+          <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+          <li><Icon name="chevron_right" class="text-[10px]" /></li>
+          <li class="text-white/80">Events</li>
+        </ol>
+      </nav>
+      <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-primary-light mb-4 block">
+        What's On
+      </span>
+      <h1 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-5">
+        Pattaya Events Calendar
+      </h1>
+      <p class="text-white/60 text-lg max-w-2xl leading-relaxed">
+        Festivals, concerts and public celebrations in and around Pattaya. Every entry carries a
+        source, and only dates we could confirm are listed as confirmed. Past events drop off
+        automatically.
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 lg:px-8 py-16 md:py-20">
+    <p id="events-empty" class:list={['text-ink-secondary', list.length ? 'hidden' : '']}>
+      No upcoming events listed right now. Check back soon.
+    </p>
+
+    {months.map((m) => (
+      <section class="mb-14" data-month={m}>
+        <h2 class="font-headline text-2xl md:text-3xl font-extrabold tracking-tight text-ink mb-2">
+          {monthLabel(`${m}-01`)}
+        </h2>
+        <div class="h-1 w-14 bg-primary mb-8 rounded-full"></div>
+
+        <ol class="space-y-5">
+          {list.filter((e) => monthKey(e.startDate) === m).map((e) => (
+            <li
+              class="event-item bg-surface-card rounded-2xl p-6 md:p-7 shadow-[0_4px_15px_-3px_rgba(0,0,0,0.08)]"
+              data-end={e.endDate}
+            >
+              <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mb-3">
+                <span class="flex items-center gap-1.5 text-sm font-bold text-primary">
+                  <Icon name="calendar_today" class="text-base" />
+                  <time datetime={e.startDate}>{formatEventDates(e)}</time>
+                </span>
+                {statusLabel[e.status] && (
+                  <span class="text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1 rounded-full bg-amber/15 text-amber">
+                    {statusLabel[e.status]}
+                  </span>
+                )}
+                {e.free && (
+                  <span class="text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1 rounded-full bg-surface-high text-ink-secondary">
+                    Free
+                  </span>
+                )}
+              </div>
+
+              <h3 class="font-headline text-xl font-bold text-ink mb-1">
+                {e.guide ? (
+                  <a href={e.guide.href} class="hover:text-primary transition-colors">{e.name}</a>
+                ) : e.name}
+              </h3>
+              <p class="flex items-start gap-1.5 text-sm text-ink-muted mb-3">
+                <Icon name="location_on" class="text-base shrink-0 mt-0.5" />
+                {e.venue}
+              </p>
+              <p class="text-ink-secondary leading-relaxed mb-4">{e.description}</p>
+
+              <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+                {e.guide && (
+                  <a href={e.guide.href} class="inline-flex items-center gap-1 font-bold text-primary hover:gap-2 transition-all">
+                    {e.guide.label} <Icon name="arrow_right_alt" class="text-lg" />
+                  </a>
+                )}
+                <a href={e.source.url} target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-ink-muted hover:text-primary transition-colors">
+                  Source: {e.source.label} <Icon name="open_in_new" class="text-sm" />
+                </a>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+
+    <section class="mt-16 pt-10 border-t border-surface-high">
+      <h2 class="font-headline text-xl font-bold text-ink mb-3">Planning around the events</h2>
+      <p class="text-ink-secondary leading-relaxed mb-4">
+        Event weekends fill the beachfront first. Book refundable rates and compare areas in
+        <a href="/stay/" class="text-primary font-semibold hover:underline">where to stay in Pattaya</a>,
+        and check the routes in <a href="/guides/bangkok-to-pattaya/" class="text-primary font-semibold hover:underline">Bangkok to Pattaya</a>.
+        Know of an event we are missing? Tell us in the
+        <a href="https://www.facebook.com/groups/pattaya.love" target="_blank" rel="noopener noreferrer" class="text-primary font-semibold hover:underline">pattaya.love Facebook group</a>.
+      </p>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script is:inline>
+  (function () {
+    var today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Bangkok' });
+    var items = document.querySelectorAll('.event-item');
+    var shown = 0;
+    items.forEach(function (el) {
+      if (el.getAttribute('data-end') < today) el.remove();
+      else shown++;
+    });
+    document.querySelectorAll('[data-month]').forEach(function (sec) {
+      if (!sec.querySelector('.event-item')) sec.remove();
+    });
+    if (!shown) {
+      var empty = document.getElementById('events-empty');
+      if (empty) empty.classList.remove('hidden');
+    }
+  })();
+</script>

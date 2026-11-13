@@ -173,6 +173,8 @@ Not always. Many policies exclude intoxication-related injury and some exclude f
 
 ## Related Guides
 
+- [Wonderfruit 2026: The Other Festival, One Week Earlier](/guides/wonderfruit-2026/)
+- [Pattaya Events Calendar](/events/)
 - [Tomorrowland Thailand 2026: The Full Guide](/guides/tomorrowland-pattaya-2026/)
 - [Tomorrowland Tickets: The Four Tiers](/guides/tomorrowland-tickets/)
 - [Thailand SIM Cards and eSIMs](/guides/thailand-sim-esim/)

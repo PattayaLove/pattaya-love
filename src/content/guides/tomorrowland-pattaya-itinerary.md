@@ -25,6 +25,8 @@ The full airport comparison, including why U-Tapao beats Bangkok for this trip, 
 
 ## Before: Wednesday and Thursday
 
+**Coming early for Wonderfruit?** It runs from 3 to 7 December at The Fields, Siam Country Club, so the two festivals fit into one trip with three days in between. Tickets, shuttle and where to stay: [Wonderfruit 2026](/guides/wonderfruit-2026/).
+
 The two days before are for adjusting, not for going hard. Save it.
 
 **[Koh Larn](/guides/koh-larn-island-guide/)** is the single best use of a pre-festival day. A 30-minute ferry from Bali Hai pier puts you on white sand and clear water, and it is a genuinely different place from the mainland rather than a bolt-on. Go on Wednesday or Thursday — going after the festival means dragging yourself onto a boat when you want a bed.
@@ -108,6 +110,8 @@ No. The festival ends late Sunday. Give yourself Monday to recover and fly Tuesd
 
 ## Related Guides
 
+- [Wonderfruit 2026: The Other Festival, One Week Earlier](/guides/wonderfruit-2026/)
+- [Pattaya Events Calendar](/events/)
 - [Tomorrowland Thailand 2026: The Full Guide](/guides/tomorrowland-pattaya-2026/)
 - [Getting to Tomorrowland: Airports and the Last 20 km](/guides/tomorrowland-getting-there/)
 - [Koh Larn Island Guide](/guides/koh-larn-island-guide/)
