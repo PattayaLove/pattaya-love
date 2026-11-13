@@ -111,6 +111,12 @@ A newer fintech solution targeting Western travelers specifically.
 **Pros:** No Thai bank account or e-wallet needed, works with Western cards
 **Cons:** Newer service, availability at all merchants not guaranteed, transaction fees may apply
 
+### WORPT (Tourist DigiPay sandbox)
+
+A newer official route if your money is already in **USDT or USDC**. WORPT is a consumer app inside Thailand's Tourist DigiPay sandbox. Foreign tourists verify with a face scan and an e-passport chip, convert supported stablecoins to baht, and pay via PromptPay QR without a Thai bank account. The merchant receives baht. The conversion fee has been stated as **initially 1.5%**.
+
+It is still a pilot, and the first named retail partner is **The Mall Group in Bangkok**. We have not seen confirmation that it is usable day to day in Pattaya. Full details and sources are in our [WORPT and Tourist DigiPay guide](/guides/worpt-tourist-digipay/).
+
 ### Alipay+ Partner Wallets
 
 If you have an account with any Alipay+ partner wallet — GCash (Philippines), Touch 'n Go (Malaysia), KakaoPay (Korea), or others — you can scan Thai QR codes at participating merchants.
@@ -164,12 +170,13 @@ If your money is already in USDT, a crypto-funded Visa such as Karta lets you pa
 
 ## Final Thoughts
 
-The Thai payment landscape is evolving fast. The Wise integration launching in May 2026 is the biggest development for Western visitors in years — it essentially gives you a Thai QR payment capability without needing a Thai bank account.
+The Thai payment landscape is evolving fast. The Wise integration launching in May 2026 is the biggest development for Western visitors in years — it essentially gives you a Thai QR payment capability without needing a Thai bank account. For visitors who already hold USDT or USDC, the [WORPT Tourist DigiPay app](/guides/worpt-tourist-digipay/) is a separate official sandbox that aims to do the same from stablecoins; it is still a pilot.
 
 For now, the practical advice is: **carry cash for small transactions, use Wise or TrueMoney for QR payments, and don't count on opening a Thai bank account unless you have a long-term visa.** The days of walking into a bank with a tourist visa and walking out with an account are over.
 
 ## Related Guides
 
+- [WORPT App & Tourist DigiPay — pay with USDT via PromptPay](/guides/worpt-tourist-digipay/)
 - [Pattaya Visa Guide — Tourist, Retirement & Elite Visas](/guides/pattaya-visa-guide/)
 - [Crypto to Thai Baht in Pattaya — OTC Exchanges & Crypto Cards](/guides/crypto-to-thb-pattaya/)
 - [Pattaya Nightlife Prices — What Everything Costs](/guides/pattaya-nightlife-prices/)
