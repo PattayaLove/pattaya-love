@@ -135,16 +135,29 @@
 /* ── Hero ───────────────────────────────────────────────────────── */
 
 .lv-hero {
+  /* How much of the first screen the cookie banner covers. 0 once it is gone. */
+  --lv-covered: 0px;
   position: relative;
   overflow: hidden;
-  padding: 6rem 0 2.75rem;
+  padding: 5.5rem 0 2.75rem;
   background:
     radial-gradient(ellipse 90% 34% at 50% 26%, rgba(232, 181, 42, 0.2), transparent 70%),
     linear-gradient(180deg, var(--lv-night-deep) 0%, var(--lv-night) 58%, #24143a 100%);
 }
+/* The banner (CookieConsent.astro) is about 244px tall on phones and
+   168px from tablet width up. While it is open, the hero makes room so the
+   button stays in view; it relaxes again when the banner is dismissed. */
+body:has(#cookie-consent:not([hidden])) .lv-hero {
+  --lv-covered: 15.25rem;
+}
+@media (min-width: 48rem) {
+  body:has(#cookie-consent:not([hidden])) .lv-hero {
+    --lv-covered: 10.5rem;
+  }
+}
 .lv-hero__grid {
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
 }
 .lv-hero__copy {
@@ -153,7 +166,8 @@
   align-items: flex-start;
 }
 .lv-hero h1 {
-  font-size: clamp(2.25rem, 1.15rem + 3.4vw, 4rem);
+  /* Also capped by the viewport height, for short laptop windows. */
+  font-size: clamp(2.25rem, min(1.15rem + 3.4vw, 8.5svh), 4rem);
   line-height: 1.05;
   letter-spacing: -0.005em;
   margin-bottom: 1.5rem;
@@ -224,8 +238,12 @@
 
 .lv-sign {
   order: -1;
-  width: min(100%, 17rem);
+  /* On phones the sign takes the height that is left once the headline and
+     the button (about 24rem) have their place on the first screen. */
+  width: clamp(6rem, (100svh - var(--lv-covered) - 24rem) * 1.09, 17rem);
+  max-width: 100%;
   margin-inline: auto;
+  transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .lv-sign svg {
   display: block;
@@ -265,7 +283,7 @@
 
 @media (min-width: 60rem) {
   .lv-hero {
-    padding: 8.5rem 0 5.5rem;
+    padding: 7.5rem 0 5rem;
     background:
       radial-gradient(ellipse 46% 52% at 74% 46%, rgba(232, 181, 42, 0.2), transparent 70%),
       linear-gradient(180deg, var(--lv-night-deep) 0%, var(--lv-night) 58%, #24143a 100%);
@@ -284,18 +302,12 @@
     order: 0;
     margin: 0 0 1.5rem;
   }
-  .lv-lede {
-    order: 2;
-    margin: 0 0 2rem;
-  }
-  .lv-hero__cta {
-    order: 3;
-  }
   .lv-sign {
     order: 0;
     width: 100%;
     max-width: 36rem;
     margin-inline: auto 0;
+    transition: none;
   }
 }
 
@@ -956,6 +968,7 @@
   .lv-tee,
   .lv-sticky,
   .lv-shot__img img,
+  .lv-sign,
   .lv-btn {
     transition: none;
   }
