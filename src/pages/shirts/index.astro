@@ -30,8 +30,6 @@ const sign = signSvg
   .replace(/<title>[\s\S]*?<\/title>\s*/, '')
   .replace('<svg ', '<svg aria-hidden="true" focusable="false" ');
 
-const [priceThb, priceEur] = plannedPrice.split(' / ');
-
 const shots = [
   {
     src: bahtBus,
@@ -78,11 +76,11 @@ const faqs = [
   },
   {
     q: 'How much will it cost?',
-    a: `The planned price is around ${plannedPrice}. That is a guide, not an offer — the final price depends on the print run.`,
+    a: `The planned price is ${plannedPrice} plus shipping. That is a guide, not an offer — the final price is set at launch.`,
   },
   {
-    q: 'Shipping or pickup?',
-    a: 'Still open. Pickup in Pattaya is the likely start; shipping within Thailand and abroad depends on demand.',
+    q: 'Where do you ship?',
+    a: 'Worldwide is the plan. Our print partner is in the US, so delivery outside the US takes longer and shipping costs more. A Thailand-made option may follow later.',
   },
   {
     q: 'Are those real photos?',
@@ -136,7 +134,7 @@ const designCss = motifs
           <div class="lv-hero__cta">
             <a href="#designs" class="lv-btn" data-cta-watch>Pick your design</a>
             <p>
-              <strong>{priceThb} planned</strong>
+              <strong>{plannedPrice} planned</strong>
               {shopLive ? 'Printed to order.' : 'Nothing to pay today.'}
             </p>
           </div>
@@ -264,8 +262,8 @@ const designCss = motifs
 
               <div class="lv-buy">
                 <p class="lv-price">
-                  <strong>{priceThb}</strong>
-                  {priceEur}, planned price
+                  <strong>{plannedPrice}</strong>
+                  planned price, plus shipping
                 </p>
                 <a
                   href={ctaHref}
@@ -293,7 +291,7 @@ const designCss = motifs
                 <dt>Run</dt>
                 <dd>Small and limited</dd>
                 <dt>Getting it</dt>
-                <dd>Pickup in Pattaya first, shipping if demand is there</dd>
+                <dd>Worldwide shipping from our print partner in the US</dd>
               </dl>
             </div>
           </div>
@@ -351,7 +349,7 @@ const designCss = motifs
     <div class="lv-sticky" id="lv-sticky" hidden>
       <p>
         <strong>Las Vaginas shirts</strong>
-        {priceThb} planned
+        {plannedPrice} planned
       </p>
       <a href="#designs" class="lv-btn" tabindex="-1">Pick yours</a>
     </div>
