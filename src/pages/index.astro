@@ -246,6 +246,9 @@ const journalArticles = [
 import OptImage from '../components/OptImage.astro';
 import Icon from '../components/Icon.astro';
 import AreaMap from '../components/AreaMap.astro';
+import { upcomingEvents, formatEventDates } from '../data/events';
+
+const nextEvents = upcomingEvents().slice(0, 3);
 ---
 
 <BaseLayout
@@ -337,6 +340,40 @@ import AreaMap from '../components/AreaMap.astro';
       </div>
     </div>
   </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 2a. WHAT'S ON — next three events from /events/  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  {nextEvents.length > 0 && (
+    <section class="max-w-7xl mx-auto px-6 lg:px-8 mt-16 md:mt-20 reveal">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="font-headline text-2xl font-bold tracking-tight text-ink">What's On in Pattaya</h2>
+        <a href="/events/" class="group flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-3 transition-all duration-300">
+          All Events
+          <Icon name="arrow_right_alt" class="text-lg" />
+        </a>
+      </div>
+      <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        {nextEvents.map((e) => (
+          <li class="whats-on-item" data-end={e.endDate}>
+            <a href={e.guide?.href ?? '/events/'} class="group block h-full rounded-2xl border border-surface-high bg-surface-card p-5 hover:border-primary/40 transition-colors duration-300">
+              <span class="text-[10px] uppercase font-bold text-primary tracking-widest">{formatEventDates(e)}</span>
+              <p class="font-headline font-bold text-ink mt-1 group-hover:text-primary transition-colors">{e.name}</p>
+              <p class="text-xs text-ink-muted mt-1 line-clamp-1">{e.venue}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <script is:inline>
+        (function () {
+          var today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Bangkok' });
+          document.querySelectorAll('.whats-on-item').forEach(function (el) {
+            if (el.getAttribute('data-end') < today) el.remove();
+          });
+        })();
+      </script>
+    </section>
+  )}
 
   <!-- ═══════════════════════════════════════════════ -->
   <!-- 2b. FEATURED EVENT — Tomorrowland Spotlight      -->

@@ -171,6 +171,8 @@ What that means in practice: prices will rise for the festival weekend, but ther
 
 ## The Days Around the Festival
 
+**Wonderfruit** runs the week before, 3 to 7 December at The Fields, Siam Country Club. If you are flying in anyway, the two fit into one trip — see our [Wonderfruit 2026 guide](/guides/wonderfruit-2026/) and the full [Pattaya events calendar](/events/).
+
 Flying this far for three days would be a waste. We have a [day-by-day plan for the week around the festival](/guides/tomorrowland-pattaya-itinerary/); the short version:
 
 [Koh Larn](/guides/koh-larn-island-guide/) is a 30-minute ferry from Bali Hai pier and the fastest way to a proper beach day. Go on one of the days before the festival, not after.
@@ -234,6 +236,8 @@ Yes, with the usual precautions for any large tourist city: watch your belonging
 
 ## Related Guides
 
+- [Wonderfruit 2026: The Other Festival, One Week Earlier](/guides/wonderfruit-2026/)
+- [Pattaya Events Calendar](/events/)
 - [Where to Stay by Distance to Wisdom Valley](/guides/tomorrowland-hotels-wisdom-valley/)
 - [Getting to Tomorrowland: Airports and the Last 20 km](/guides/tomorrowland-getting-there/)
 - [Tomorrowland Tickets: The Four Tiers and the Age Rule](/guides/tomorrowland-tickets/)

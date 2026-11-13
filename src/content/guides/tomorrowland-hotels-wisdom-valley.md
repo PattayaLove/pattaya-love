@@ -178,6 +178,8 @@ You could, but three round trips of 90 minutes each way, ending in the early hou
 
 ## Related Guides
 
+- [Wonderfruit 2026: The Other Festival, One Week Earlier](/guides/wonderfruit-2026/)
+- [Pattaya Events Calendar](/events/)
 - [Tomorrowland Thailand 2026: The Full Guide](/guides/tomorrowland-pattaya-2026/)
 - [Getting to Tomorrowland: Airports and the Last 20 km](/guides/tomorrowland-getting-there/)
 - [The Days Around the Festival](/guides/tomorrowland-pattaya-itinerary/)

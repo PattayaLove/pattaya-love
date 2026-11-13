@@ -150,6 +150,8 @@ Roughly 90 minutes from Suvarnabhumi via Motorway 7 in normal conditions. Festiv
 
 ## Related Guides
 
+- [Wonderfruit 2026: The Other Festival, One Week Earlier](/guides/wonderfruit-2026/)
+- [Pattaya Events Calendar](/events/)
 - [Tomorrowland Thailand 2026: The Full Guide](/guides/tomorrowland-pattaya-2026/)
 - [Where to Stay by Distance to Wisdom Valley](/guides/tomorrowland-hotels-wisdom-valley/)
 - [The Days Around the Festival](/guides/tomorrowland-pattaya-itinerary/)
