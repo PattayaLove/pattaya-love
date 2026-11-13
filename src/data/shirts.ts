@@ -20,6 +20,14 @@ export interface ShirtMotif {
   /** Background the transparent motif is previewed on, roughly the shirt colour. */
   previewBg: 'light' | 'dark';
   image: ImageMetadata;
+  /** Two ink colours of the motif, used for the glow behind the product preview. */
+  glow: [string, string];
+  /**
+   * Product URL in the print partner's shop. While it is missing, the button
+   * counts interest instead (/shirts/interest/<motif>/<size>/). Once every
+   * motif has one, /shirts/ switches from "vote" to "buy".
+   */
+  shopUrl?: string;
 }
 
 export const motifs: ShirtMotif[] = [
@@ -30,6 +38,7 @@ export const motifs: ShirtMotif[] = [
     shirtColors: 'White or grey shirt',
     previewBg: 'light',
     image: classicVegas,
+    glow: ['#E8B52A', '#CB151B'],
   },
   {
     slug: 'neon-club',
@@ -38,6 +47,7 @@ export const motifs: ShirtMotif[] = [
     shirtColors: 'Black shirt',
     previewBg: 'dark',
     image: neonClub,
+    glow: ['#F32291', '#02C4D3'],
   },
   {
     slug: 'desert-gold',
@@ -46,6 +56,7 @@ export const motifs: ShirtMotif[] = [
     shirtColors: 'Black shirt',
     previewBg: 'dark',
     image: desertGold,
+    glow: ['#DDAA37', '#F6EBD2'],
   },
 ];
 
@@ -67,5 +78,8 @@ export const sizes: ShirtSize[] = [
 export const plannedPrice = '~690 THB / ~19 €';
 
 export const interestPath = (motif: string, size: string) => `/shirts/interest/${motif}/${size}/`;
+
+/** True once every motif links to the print partner's shop. */
+export const shopLive = motifs.every((m) => Boolean(m.shopUrl));
 
 export const NOTIFY_EMAIL = 'info@pattaya.love';

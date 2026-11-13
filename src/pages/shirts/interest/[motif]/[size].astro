@@ -6,10 +6,11 @@
  */
 import { Image } from 'astro:assets';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
-import Navigation from '../../../../components/Navigation.astro';
 import Footer from '../../../../components/Footer.astro';
-import Icon from '../../../../components/Icon.astro';
+import TeeCollar from '../../../../components/shirts/TeeCollar.astro';
 import { motifs, sizes, NOTIFY_EMAIL, type ShirtMotif, type ShirtSize } from '../../../../data/shirts';
+import '@fontsource/chonburi/latin-400.css';
+import '../../../../styles/shirts.css';
 
 export function getStaticPaths() {
   return motifs.flatMap((motif) =>
@@ -37,54 +38,62 @@ const mailto = `mailto:${NOTIFY_EMAIL}?subject=${encodeURIComponent(subject)}&bo
   description="Thanks for your interest in the Las Vaginas shirts. Get notified when the first run launches."
   noindex
 >
-  <Navigation />
-
-  <header class="relative w-full pt-28 pb-14 md:pt-36 md:pb-20 bg-navy overflow-hidden grain">
-    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy"></div>
-    <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 grid md:grid-cols-[1fr_280px] gap-10 items-center">
-      <div>
-        <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-primary-light mb-4 block">
-          Noted
-        </span>
-        <h1 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-5">
-          Good taste. Questionable, but good.
-        </h1>
-        <p class="text-white/70 text-lg leading-relaxed">
-          We have counted your vote for <strong class="text-white">{motif.name}</strong>, {sizeText}.
-          Nothing is charged and nothing is ordered — you just helped us decide what to print.
-        </p>
+  <div class="lv">
+    <header class="lv-top">
+      <div class="lv-wrap lv-top__row">
+        <a href="/" class="lv-top__logo">
+          <img src="/images/brand/logo-white.svg" alt="pattaya.love home" width="103" height="56" />
+        </a>
+        <a href="/shirts/#designs" class="lv-top__link">Back to the designs</a>
       </div>
-      <div class:list={['rounded-3xl p-5', motif.previewBg === 'dark' ? 'bg-navy-light' : 'bg-white']}>
-        <Image src={motif.image} alt={`${motif.name} shirt design`} widths={[280, 560]} sizes="280px" format="webp" quality={82} class="w-full h-auto" />
+    </header>
+
+    <main class="lv-thanks" style={`--glow-a:${motif.glow[0]}`}>
+      <div class="lv-wrap lv-thanks__grid">
+        <div>
+          <p class="lv-status">
+            <span class="lv-status__bulb" aria-hidden="true"></span>
+            Vote counted
+          </p>
+          <h1>Good taste. Questionable, but good.</h1>
+          <p class="lv-thanks__lede">
+            We have counted your vote for <strong>{motif.name}</strong>, {sizeText}.
+            Nothing is charged and nothing is ordered — you just helped us decide what to print.
+          </p>
+
+          <div class="lv-notify">
+            <h2>Get notified at launch</h2>
+            <p>
+              Want a heads-up when the first run is ready? Send us a quick email — the subject is
+              already filled in. We only use your address to tell you about the launch.
+            </p>
+            <a href={mailto} class="lv-btn">Email us to get notified</a>
+            <p class="lv-notify__note">
+              Opens your email app. Or write to <b>{NOTIFY_EMAIL}</b> yourself.
+            </p>
+          </div>
+
+          <p class="lv-back">
+            Like another one too? <a href="/shirts/#designs">Back to the designs</a>
+          </p>
+        </div>
+
+        <figure class:list={['lv-tee', `lv-tee--${motif.previewBg}`]}>
+          <TeeCollar />
+          <Image
+            src={motif.image}
+            alt={`${motif.name} design on a ${motif.previewBg === 'dark' ? 'black' : 'white'} shirt`}
+            widths={[480, 800]}
+            sizes="(max-width: 960px) 270px, 340px"
+            format="webp"
+            quality={84}
+            class="lv-tee__motif"
+          />
+          <figcaption>Mockup</figcaption>
+        </figure>
       </div>
-    </div>
-  </header>
-
-  <main class="max-w-3xl mx-auto px-6 lg:px-8 py-16 md:py-20">
-    <div class="bg-surface-card rounded-3xl border border-surface-high p-6 md:p-8 shadow-[0_4px_15px_-3px_rgba(0,0,0,0.08)]">
-      <h2 class="font-headline text-2xl font-bold text-ink mb-3">Get notified at launch</h2>
-      <p class="text-ink-secondary leading-relaxed mb-6">
-        Want a heads-up when the first run is ready? Send us a quick email — the subject is
-        already filled in. We only use your address to tell you about the launch.
-      </p>
-      <a
-        href={mailto}
-        class="inline-flex items-center justify-center gap-2 px-7 h-12 rounded-full bg-primary text-white text-sm font-bold uppercase tracking-widest hover:bg-primary-hover transition-colors"
-      >
-        <Icon name="mail" class="text-lg" /> Notify me
-      </a>
-      <p class="text-xs text-ink-muted mt-4">
-        Opens your email app. Or write to <span class="font-semibold">{NOTIFY_EMAIL}</span> yourself.
-      </p>
-    </div>
-
-    <p class="mt-10 text-ink-secondary">
-      Like another one too?
-      <a href="/shirts/#designs" class="inline-flex items-center gap-1 font-bold text-primary hover:gap-2 transition-all">
-        Back to the designs <Icon name="arrow_right_alt" class="text-lg" />
-      </a>
-    </p>
-  </main>
+    </main>
+  </div>
 
   <Footer />
 </BaseLayout>
