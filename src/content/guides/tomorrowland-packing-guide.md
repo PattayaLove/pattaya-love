@@ -5,7 +5,7 @@ description: "Packing for a tropical Tomorrowland is not packing for Boom. Decem
 category: "tips"
 image: "/images/areas/beach-panorama.webp"
 publishDate: 2026-09-03
-updatedDate: 2026-09-03
+updatedDate: 2026-11-09
 draft: false
 ---
 
@@ -132,10 +132,10 @@ Basic self-care that people skip: drink water between drinks, eat properly at le
 
 ## What to Leave at the Hotel
 
-- Your passport. A copy is enough
+- Your passport, unless it is the only official photo ID you have for the age check at the gate (see above)
 - Anything valuable you would be upset to lose in a crowd
 - Glass, in any form — it is prohibited at Tomorrowland events
-- Large bags. Check the current bag policy on the [official FAQ](https://faq.tomorrowlandthailand.com/hc/en-us) before you pack one; the Thailand rules had not been fully published as of early September
+- Large bags. Check the current bag policy on the [official FAQ](https://faq.tomorrowlandthailand.com/hc/en-us) before you pack one. If you need to store a jacket or a bag on site, lockers are sold in advance through the festival's Add-on Sale, with sizes and prices published closer to the dates
 
 ## Frequently Asked Questions
 

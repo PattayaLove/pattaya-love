@@ -5,7 +5,7 @@ description: "Tomorrowland Thailand runs 11-13 December at Wisdom Valley near Pa
 category: "general"
 image: "/images/areas/bali-hai-sunset.webp"
 publishDate: 2026-04-04
-updatedDate: 2026-09-20
+updatedDate: 2026-11-09
 pricesCheckedAt: 2026-09-03
 event:
   name: "Tomorrowland Thailand 2026"
@@ -20,9 +20,9 @@ draft: false
 
 Tomorrowland Thailand sold out. All three days, in under an hour, back in March.
 
-So if you are reading this in September, you are in one of two situations. Either you hold a pass and now need to solve accommodation and transport in a city that has never absorbed a crowd like this. Or you do not hold one, and you want to know whether there is still a legitimate way in.
+With a month to go, you are in one of two situations. Either you hold a pass and now need to solve accommodation and transport in a city that has never absorbed a crowd like this. Or you do not hold one, and you want to know whether there is still a legitimate way in.
 
-This guide covers both. It is written from Pattaya and updated as the organisers release details. Last checked: **20 September 2026**, after the province published its first official attendance and hotel-booking figures.
+This guide covers both. It is written from Pattaya and updated as the organisers release details. Last checked: **9 November 2026**, after the festival published its arrival plan for guests without a Hotel Package. Set times are still to come.
 
 ## The Essentials
 
@@ -32,7 +32,7 @@ This guide covers both. It is written from Pattaya and updated as the organisers
 | **Venue** | Wisdom Valley, Khao Mai Kaew, Bang Lamung District, Chonburi |
 | **Distance** | Roughly 30 minutes from central Pattaya, roughly 90 minutes from Suvarnabhumi (BKK) |
 | **Theme** | CONSCIENCIA |
-| **Attendance** | More than 30,000 visitors a day expected (Chonburi governor, September 2026); site capacity reported at 50,000 |
+| **Attendance** | 50,000 tickets a day sold, up to 150,000 entries over the weekend (organiser, November 2026) |
 | **Site** | 237 acres of hills and lakes |
 | **Hours** | Fri & Sat 13:00–01:00, Sun 13:00–00:00 |
 | **Check-in closes** | 22:00 Fri & Sat, 21:00 Sun. No entry after |
@@ -59,11 +59,11 @@ Those were the original prices, not what you will pay now. Treat them as the ben
 
 ### The two legitimate routes left
 
-**The official waiting list.** You register inside your account on tomorrowland.com. When a buyer surrenders a pass, it is offered on to the list at original face value. This is slow and there is no guarantee, but it is free and it is real.
+**The official waiting list.** It lives inside your account on tomorrowland.com. When a buyer surrenders a pass, it is offered on to the list at original face value. Registration for the list is reported to have closed at the end of August, so this only helps if you signed up in time. Check your account and email; sales from the list can still come through until shortly before the festival.
 
 **The official Ticket Exchange.** Tomorrowland runs its own resale desk. Passes sold through it transfer properly and stay valid.
 
-**Global Journey packages** bundle travel with entry, cost more, and historically stay available after standalone tickets are gone. If you are still hunting in September, this is the route most likely to actually work.
+**Global Journey packages** bundle travel with entry, cost more, and historically stay available after standalone tickets are gone. If you are still hunting this late, check what is left directly with the official travel partners.
 
 ### What not to do
 
@@ -83,7 +83,7 @@ That puts it inland, roughly due east of the coast. It is not on the beach and i
 
 The site itself covers 237 acres of hills and lakes, which is what allows the full Tomorrowland production to land here rather than a scaled-down touring version.
 
-What is still unpublished as of early September: the shuttle route map, gate locations, and set times. Those are the pieces that will determine which neighbourhoods are genuinely convenient. We will update this section the day they appear.
+On 7 November the festival published its arrival plan: everyone without a package comes in through the **West Entrance**, with a taxi drop-off, an Official Taxi zone for the way home, a pick-up zone for pre-booked cars, and parking only with a voucher bought in advance. The details are in [getting to Tomorrowland](/guides/tomorrowland-getting-there/). Still unpublished as of 9 November: the package shuttle timetable and the set times. We will update this section when they appear.
 
 ## Where to Stay
 
@@ -139,7 +139,22 @@ Short version below. The [full packing guide](/guides/tomorrowland-packing-guide
 - A crossbody bag or waist pack you can dance in
 - Cash as well as cards, and a photocopy of your passport with the original left in the hotel safe
 
-## The Numbers, as of September 2026
+## The Numbers
+
+### November 2026: a loss this year, and conditions for the next five
+
+In November, Rachata Thunyavuthi, a board member of the Thai festival company WEAREONE.WORLD (Thailand), set out the business side to the Thai business paper Bangkok Biznews ([summarised in German by Der Farang](https://der-farang.com/de/pages/tomorrowlands-zukunft-haengt-von-premiere-ab), 11 November 2026):
+
+- **All tickets for 50,000 visitors a day are sold**, which means up to 150,000 entries across the three days.
+- **The first edition will lose money** despite selling out. Costs have risen from 1.6 billion to about **2 billion THB**, partly because December is peak season for event equipment in Asia and stage technology has to be brought in from Singapore and Malaysia.
+- **The government backs the festival from 2026 to 2030 with 2 billion THB in total**, 400 million a year. The organisers say it does not cover the start-up costs.
+- **The company is 85 percent Belgian and 15 percent Thai**, a joint venture promoted by the Board of Investment rather than a licence deal.
+- **The five years are not automatic.** The Belgian partners want to stay, on condition that the authorities keep their promises and the first edition runs smoothly.
+- **Two weekends in 2027 depend on December going well.** If it does, the organisers estimate the economic effect could rise from about 5 to up to 10 billion THB.
+- **A campsite with 5,000 to 10,000 tents is being considered** to ease the shortage of rooms. There is no camping this year.
+- The organisers had already **warned hotels in October against excessive price rises**, because some ticket buyers had underestimated how tight accommodation would be.
+
+### September 2026: the first official figures
 
 On 17 September, Tomorrowland's Thailand team, the Belgian embassy, the Tourism Authority of Thailand and the Thai Hotels Association briefed Pattaya's hotel operators at Wisdom Valley. The figures that came out of that meeting, via Chonburi governor Naris Niramaiwong, are the first official ones and they change the picture for anyone still planning.
 
@@ -148,11 +163,11 @@ On 17 September, Tomorrowland's Thailand team, the Belgian embassy, the Tourism 
 - The province puts the **economic effect of the first edition at more than 5 billion THB**, of which 1.4 to 1.5 billion is direct visitor spending on hotels, food, transport, Koh Larn boats and massage.
 - **More than 7,500 jobs** are expected, in staging, transport, catering, security and medical teams, with training through a Tomorrowland Academy.
 - The agreement between Tomorrowland and Thailand runs **five years**.
-- **2027 is planned as six festival days across two weekends**, which the province expects to push hotel demand to around 90,000 room-nights.
+- **2027 was presented as six festival days across two weekends**, which the province expects to push hotel demand to around 90,000 room-nights. The organisers have since made this conditional on a successful first edition (see above).
 
 Festival director Paul Neuteboom presented the Global Journey travel packages to the hoteliers at the same meeting. The governor's message to the hotels was pointed: he asked for reasonable prices, reliable bookings and consistent service, and said the visitor experience "begins and ends in the hotel room, the lobby and the smile of the staff."
 
-What that means in practice: prices will rise for the festival weekend, but there is now public, political pressure on hotels not to cancel confirmed bookings and re-list rooms at higher rates, a practice Pattaya has seen before at peak events. If a hotel tries it on you, you have the governor's own words to quote back. And if you miss this year entirely, 2027 gives you two weekends to aim at.
+What that means in practice: prices will rise for the festival weekend, but there is now public, political pressure on hotels not to cancel confirmed bookings and re-list rooms at higher rates, a practice Pattaya has seen before at peak events. If a hotel tries it on you, you have the governor's own words to quote back. And if you miss this year entirely, 2027 may give you two weekends to aim at, if the first edition goes well.
 
 ## The Days Around the Festival
 
@@ -203,7 +218,11 @@ Wisdom Valley, at Khao Mai Kaew in Bang Lamung district, Chonburi. It is inland,
 
 ### How do I get from my hotel to the festival?
 
-Shuttle routes have not been published yet. Official hotel packages included transport but sold out in February. Grab operates throughout Pattaya and will surge hard at closing time each night. We will update this page when the routes are confirmed.
+Without a Hotel Package, by taxi, Grab, Bolt or a pre-booked car to the West Entrance, where the festival has a drop-off zone and an Official Taxi zone for the way home. Driving yourself needs a parking voucher bought in advance. Grab will surge hard at closing time each night, so plan the return before you leave. Details in [getting to Tomorrowland](/guides/tomorrowland-getting-there/).
+
+### When are the set times published?
+
+Not yet, as of 9 November 2026. The festival says they will come closer to the dates. Day-by-day lineup splits circulating online are unofficial until then.
 
 ### What is the weather like in December?
 
