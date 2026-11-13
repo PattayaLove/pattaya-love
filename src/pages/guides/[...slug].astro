@@ -91,6 +91,8 @@ const backfill = relatedArticles.length < 3
   : [];
 const displayRelated = [...relatedArticles, ...backfill];
 
+const siteUrl = Astro.site?.origin ?? 'https://www.pattaya.love';
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -101,14 +103,14 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "pattaya.love Editorial Team",
-    "url": "https://pattaya.love/about/"
+    "url": `${siteUrl}/about/`
   },
   "publisher": {
     "@type": "Organization",
     "name": "pattaya.love",
-    "url": "https://pattaya.love"
+    "url": siteUrl
   },
-  "mainEntityOfPage": `https://pattaya.love/guides/${guide.data.slug}/`
+  "mainEntityOfPage": `${siteUrl}/guides/${guide.data.slug}/`
 };
 
 /* ── Event schema — only on guides that declare an event in frontmatter ── */
@@ -123,7 +125,7 @@ const eventSchema = ev
       "endDate": ev.endDate.toISOString().split('T')[0],
       "eventStatus": "https://schema.org/EventScheduled",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "image": guide.data.image ? `https://pattaya.love${guide.data.image}` : undefined,
+      "image": guide.data.image ? new URL(guide.data.image, Astro.site).href : undefined,
       "location": {
         "@type": "Place",
         "name": ev.venueName,
