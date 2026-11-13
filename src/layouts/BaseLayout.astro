@@ -13,6 +13,8 @@ interface Props {
   description: string;
   image?: string;
   canonicalUrl?: string;
+  /** Keep a page out of search engines (test pages, pre-launch pages). */
+  noindex?: boolean;
 }
 
 const {
@@ -20,6 +22,7 @@ const {
   description,
   image = '/og-default.jpg',
   canonicalUrl,
+  noindex = false,
 } = Astro.props;
 
 /* Google truncates around 60 characters. The brand suffix costs 15, so it is
@@ -58,6 +61,7 @@ const websiteSchema = {
     <title>{siteTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />

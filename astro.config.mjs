@@ -12,7 +12,12 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      // /shirts/ is a noindex pre-launch interest test; keep it out of the sitemap.
+      filter: (page) => !new URL(page).pathname.startsWith('/shirts/'),
+    }),
+  ],
   adapter: vercel({
     imageService: true,
     webAnalytics: { enabled: true },

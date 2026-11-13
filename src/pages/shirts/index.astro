@@ -1,0 +1,243 @@
+---
+/**
+ * Pre-launch interest test for the "Las Vaginas" shirts.
+ * noindex, not in the sitemap, not linked from navigation or footer —
+ * reachable only via the direct test link.
+ */
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import Icon from '../../components/Icon.astro';
+import { motifs, sizes, plannedPrice, interestPath } from '../../data/shirts';
+import bahtBus from '../../assets/images/shirts/photo-baht-bus-gold.jpg';
+import flatlay from '../../assets/images/shirts/photo-flatlay-classic.jpg';
+import beerBar from '../../assets/images/shirts/photo-beer-bar-neon.jpg';
+import beachNeon from '../../assets/images/shirts/photo-beach-neon.jpg';
+
+const gallery = [
+  { src: beerBar, alt: 'Neon Club shirt on a night out at a Pattaya beer bar' },
+  { src: flatlay, alt: 'Classic Vegas shirt on a white tee, flat lay with a Leo beer' },
+  { src: beachNeon, alt: 'Neon Club shirt on the beach at 5am' },
+];
+
+const faqs = [
+  {
+    q: 'Can I buy one right now?',
+    a: 'Not yet. This is a pre-launch interest page. Nothing is for sale and nothing can be paid here. We count which design and size people pick, and if enough of you want one, we print a limited first run.',
+  },
+  {
+    q: 'What will the shirts be made of?',
+    a: 'Planned: a soft, heavy cotton tee with a large chest print (about 29 cm wide). We will confirm material and print method after the first test prints — and only show real photos then.',
+  },
+  {
+    q: 'How much will it cost?',
+    a: `The planned price is around ${plannedPrice}. That is a guide, not an offer — the final price depends on the print run.`,
+  },
+  {
+    q: 'Shipping or pickup?',
+    a: 'Still open. Pickup in Pattaya is the likely start; shipping within Thailand and abroad depends on demand.',
+  },
+  {
+    q: 'Are those real photos?',
+    a: 'No — they are mockups. The designs are real; the shirts do not exist yet. That is the whole point of this page.',
+  },
+];
+---
+
+<BaseLayout
+  title="Las Vaginas Shirts — Pre-Launch"
+  description="Welcome to Fabulous Las Vaginas, Pattaya. Three shirt designs, one limited first run — pick your favourite and get notified at launch."
+  noindex
+>
+  <Navigation />
+
+  <!-- Hero -->
+  <header class="relative w-full pt-28 pb-14 md:pt-36 md:pb-20 bg-navy overflow-hidden grain">
+    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
+      <div>
+        <span class="font-headline text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-primary-light mb-4 block">
+          Pre-launch · Limited first run
+        </span>
+        <h1 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-5 leading-[1.05]">
+          Welcome to Fabulous <span class="text-coral">Las Vaginas</span>
+        </h1>
+        <p class="text-white/70 text-lg leading-relaxed mb-8 max-w-xl">
+          What happens in Pattaya stays in Pattaya. The shirt, however, comes home with you.
+          We are planning a small first print run — pick the design you would actually wear and
+          we will tell you when it drops.
+        </p>
+        <a
+          href="#designs"
+          class="inline-flex items-center gap-2 px-7 h-12 rounded-full bg-primary text-white text-sm font-bold uppercase tracking-widest hover:bg-primary-hover transition-colors"
+        >
+          Pick your design <Icon name="expand_more" class="text-xl" />
+        </a>
+        <p class="text-white/40 text-xs mt-5">No payment, no account. Just tell us what you like.</p>
+      </div>
+      <div class="relative">
+        <Image
+          src={bahtBus}
+          alt="Desert Gold shirt on a night ride in a Pattaya baht bus"
+          widths={[480, 864]}
+          sizes="(max-width: 768px) 100vw, 50vw"
+          format="webp"
+          quality={78}
+          loading="eager"
+          fetchpriority="high"
+          class="w-full max-w-md mx-auto md:ml-auto rounded-3xl shadow-2xl object-cover aspect-[3/4]"
+        />
+        <span class="absolute bottom-3 right-3 md:right-6 text-[10px] uppercase tracking-widest bg-black/50 text-white/80 px-2.5 py-1 rounded-full">
+          Mockup
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Designs -->
+    <section id="designs" class="max-w-6xl mx-auto px-6 lg:px-8 py-16 md:py-20 scroll-mt-20">
+      <h2 class="font-headline text-3xl md:text-4xl font-extrabold tracking-tight text-ink mb-2">Three designs. Pick one.</h2>
+      <div class="h-1 w-14 bg-primary mb-4 rounded-full"></div>
+      <p class="text-ink-secondary leading-relaxed mb-10 max-w-2xl">
+        Choose a size (or “not sure yet”) and hit the button. That is our signal to print it.
+        Planned price {plannedPrice} — a guide only, not an offer.
+      </p>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        {motifs.map((m) => (
+          <article class="flex flex-col bg-surface-card rounded-3xl overflow-hidden shadow-[0_4px_15px_-3px_rgba(0,0,0,0.08)] border border-surface-high">
+            <div class:list={['p-6 flex items-center justify-center aspect-[12/11]', m.previewBg === 'dark' ? 'bg-navy' : 'bg-surface-low']}>
+              <Image
+                src={m.image}
+                alt={`${m.name} — Welcome to Fabulous Las Vaginas, Pattaya shirt design`}
+                widths={[400, 800]}
+                sizes="(max-width: 768px) 90vw, 360px"
+                format="webp"
+                quality={82}
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="font-headline text-xl font-bold text-ink mb-1">{m.name}</h3>
+              <p class="text-xs font-bold uppercase tracking-[0.15em] text-primary mb-3">{m.shirtColors}</p>
+              <p class="text-ink-secondary leading-relaxed mb-5 flex-1">{m.tagline}</p>
+
+              <fieldset class="mb-5">
+                <legend class="text-xs font-semibold text-ink-muted mb-2">Your size</legend>
+                <div class="flex flex-wrap gap-2">
+                  {sizes.map((s) => (
+                    <label class="cursor-pointer">
+                      <input
+                        type="radio"
+                        name={`size-${m.slug}`}
+                        value={s.slug}
+                        class="peer sr-only"
+                        data-size-for={m.slug}
+                        checked={s.slug === 'any'}
+                      />
+                      <span class="inline-flex items-center justify-center min-w-11 h-9 px-3 rounded-full border border-surface-high text-sm font-semibold text-ink-secondary peer-checked:bg-ink peer-checked:text-white peer-checked:border-ink peer-focus-visible:ring-2 peer-focus-visible:ring-primary transition-colors">
+                        {s.label}
+                      </span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+
+              <p class="text-sm text-ink-muted mb-4">
+                Planned price <strong class="text-ink">{plannedPrice}</strong>
+              </p>
+              <a
+                href={interestPath(m.slug, 'any')}
+                rel="nofollow"
+                data-interest={m.slug}
+                class="inline-flex items-center justify-center gap-2 h-12 rounded-full bg-primary text-white text-sm font-bold uppercase tracking-widest hover:bg-primary-hover transition-colors"
+              >
+                I want this one <Icon name="arrow_forward" class="text-lg" />
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Lifestyle -->
+    <section class="bg-surface-low">
+      <div class="max-w-6xl mx-auto px-6 lg:px-8 py-16 md:py-20">
+        <h2 class="font-headline text-3xl md:text-4xl font-extrabold tracking-tight text-ink mb-2">Field tested (sort of)</h2>
+        <div class="h-1 w-14 bg-primary mb-4 rounded-full"></div>
+        <p class="text-ink-secondary leading-relaxed mb-10 max-w-2xl">
+          How we imagine them out in the wild. These are mockups — real photos follow once the
+          first samples are printed.
+        </p>
+        <div class="grid gap-4 sm:grid-cols-3">
+          {gallery.map((g) => (
+            <figure class="rounded-2xl overflow-hidden bg-surface-high">
+              <Image
+                src={g.src}
+                alt={g.alt}
+                widths={[400, 864]}
+                sizes="(max-width: 640px) 100vw, 33vw"
+                format="webp"
+                quality={75}
+                class="w-full h-full object-cover aspect-[3/4]"
+              />
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="max-w-3xl mx-auto px-6 lg:px-8 py-16 md:py-20">
+      <h2 class="font-headline text-3xl md:text-4xl font-extrabold tracking-tight text-ink mb-2">The small print</h2>
+      <div class="h-1 w-14 bg-primary mb-8 rounded-full"></div>
+      <div class="space-y-3">
+        {faqs.map((f) => (
+          <details class="group bg-surface-card rounded-2xl border border-surface-high px-6 py-4">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-headline font-bold text-ink">
+              {f.q}
+              <Icon name="expand_more" class="text-2xl text-ink-muted shrink-0 transition-transform group-open:rotate-180" />
+            </summary>
+            <p class="text-ink-secondary leading-relaxed mt-3">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script is:inline>
+  (function () {
+    function interestHref(motif, size) {
+      return '/shirts/interest/' + motif + '/' + size + '/';
+    }
+    function selectedSize(motif) {
+      var el = document.querySelector('input[name="size-' + motif + '"]:checked');
+      return el ? el.value : 'any';
+    }
+    // Keep each button's link in sync with the chosen size.
+    document.querySelectorAll('input[data-size-for]').forEach(function (input) {
+      input.addEventListener('change', function () {
+        var motif = input.getAttribute('data-size-for');
+        var btn = document.querySelector('a[data-interest="' + motif + '"]');
+        if (btn) btn.setAttribute('href', interestHref(motif, selectedSize(motif)));
+      });
+    });
+    // Custom event for Vercel Web Analytics (only recorded on Pro; the
+    // /shirts/interest/<motif>/<size>/ page view is the Hobby-plan signal).
+    document.querySelectorAll('a[data-interest]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var motif = btn.getAttribute('data-interest');
+        var size = selectedSize(motif);
+        btn.setAttribute('href', interestHref(motif, size));
+        try {
+          if (window.va) window.va('event', { name: 'shirt_interest', data: { motif: motif, size: size } });
+        } catch (e) {}
+      });
+    });
+  })();
+</script>
