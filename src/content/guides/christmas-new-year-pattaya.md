@@ -3,7 +3,7 @@ title: "Christmas and New Year in Pattaya: What Actually Happens"
 slug: "christmas-new-year-pattaya"
 description: "Christmas is not a public holiday in Thailand. New Year is, and Pattaya's countdown at Bali Hai is among the country's largest. What to expect, what to avoid."
 category: "general"
-image: "/images/areas/pattaya-skyline-sunset.webp"
+image: "/images/guides/editorial-2026/christmas-new-year-pattaya.webp"
 publishDate: 2026-09-04
 updatedDate: 2026-09-04
 draft: false

@@ -3,6 +3,7 @@ title: "Thai Girlfriend Guide 2026: Pattaya, Money, Family, Red Flags"
 slug: "thai-girlfriend-guide"
 description: "How to find a Thai girlfriend in Pattaya rather than a freelancer, what money and family actually mean in a Thai relationship, sin sod, long distance, and the signs that tell you which one you have."
 category: "lifestyle"
+image: "/images/guides/editorial-2026/thai-girlfriend-guide.webp"
 publishDate: 2026-09-19
 updatedDate: 2026-09-19
 draft: false

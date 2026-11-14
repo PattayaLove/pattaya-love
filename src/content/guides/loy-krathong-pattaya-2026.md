@@ -3,7 +3,7 @@ title: "Loy Krathong 2026 in Pattaya: Where, When, How to Join"
 slug: "loy-krathong-pattaya-2026"
 description: "Loy Krathong 2026 in Pattaya is on Tuesday 24 November at Lan Pho Park in Naklua, with an eco-themed festival on Koh Larn on 23–24 November. Where to go, etiquette, lantern rules."
 category: "general"
-image: "/images/areas/sunset-pattaya-beach.webp"
+image: "/images/guides/editorial-2026/loy-krathong-pattaya-2026.webp"
 publishDate: 2026-11-13
 updatedDate: 2026-11-13
 event:

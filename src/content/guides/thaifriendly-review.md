@@ -3,6 +3,7 @@ title: "ThaiFriendly Review 2026: A Month on Pattaya's Busiest Dating App"
 slug: "thaifriendly-review"
 description: "Is ThaiFriendly worth it? I used it for a month in Pattaya, including the 7-day free Premium trial. Response rates, the freelancer share, what Premium costs, and how to get the trial."
 category: "lifestyle"
+image: "/images/guides/editorial-2026/thaifriendly-review.webp"
 publishDate: 2026-09-19
 updatedDate: 2026-09-19
 draft: false

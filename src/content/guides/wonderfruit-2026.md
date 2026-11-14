@@ -3,7 +3,7 @@ title: "Wonderfruit 2026: Tickets, Getting There, Where to Stay"
 slug: "wonderfruit-2026"
 description: "Wonderfruit runs 3–7 December 2026 at The Fields, Siam Country Club, near Pattaya. Which passes are left, shuttle and parking, where to stay, and the Tomorrowland double."
 category: "general"
-image: "/images/areas/pattaya-panorama.webp"
+image: "/images/guides/editorial-2026/wonderfruit-2026.webp"
 publishDate: 2026-11-13
 updatedDate: 2026-11-13
 pricesCheckedAt: 2026-11-13

@@ -3,6 +3,7 @@ title: "Guest-Friendly Hotels in Pattaya 2026: No Joiner Fee, Verified"
 slug: "guest-friendly-hotels-pattaya"
 description: "Which Pattaya hotels let an overnight guest stay for free, which charge a joiner fee, what happens at the front desk, and how to ask before you book. Verified list by area."
 category: "hotels"
+image: "/images/guides/editorial-2026/guest-friendly-hotels-pattaya.webp"
 publishDate: 2026-09-19
 updatedDate: 2026-09-19
 draft: false

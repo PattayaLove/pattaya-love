@@ -3,7 +3,7 @@ title: "Tomorrowland Thailand 2026: Tickets, Hotels, Travel"
 slug: "tomorrowland-pattaya-2026"
 description: "Tomorrowland Thailand runs 11-13 December at Wisdom Valley near Pattaya and sold out in under an hour. Where tickets stand, where to stay, how to get there."
 category: "general"
-image: "/images/areas/bali-hai-sunset.webp"
+image: "/images/guides/editorial-2026/tomorrowland-pattaya-2026.webp"
 publishDate: 2026-04-04
 updatedDate: 2026-11-09
 pricesCheckedAt: 2026-09-03

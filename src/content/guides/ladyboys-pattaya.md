@@ -3,6 +3,7 @@ title: "Ladyboys in Pattaya 2026: Tiffany's, Alcazar, Bars and Etiquette"
 slug: "ladyboys-pattaya"
 description: "Tiffany's Show and Alcazar Cabaret compared with 2026 showtimes and prices, where ladyboy bars are and how they are marked, what kathoey means in Thailand, and how to behave. Honest, not prurient."
 category: "general"
+image: "/images/guides/editorial-2026/ladyboys-pattaya.webp"
 publishDate: 2026-09-20
 updatedDate: 2026-09-20
 draft: false
