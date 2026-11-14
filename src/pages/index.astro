@@ -113,7 +113,7 @@ const trendingItems = [
     label: 'Tools',
     title: 'Currency Converter',
     href: '/tools/currency-converter/',
-    image: '/images/trending/villa.webp',
+    image: '/images/homepage/editorial-2026/trending-currency-converter.webp',
   },
   {
     label: 'Real Estate',
@@ -153,7 +153,7 @@ const siloSections = [
     featureCta: 'Read the Guide',
     featureHref: '/guides/beachfront-mansions/',
     href: '/stay/',
-    image: '/images/categories/stay.webp',
+    image: '/images/homepage/editorial-2026/stay-na-jomtien.webp',
     imageAlt: 'Luxury villa with infinity pool overlooking the Gulf',
     imageRight: true,
   },
@@ -168,8 +168,8 @@ const siloSections = [
     featureCta: 'View Editorial',
     featureHref: '/guides/secret-sandbars/',
     href: '/explore/',
-    image: '/images/categories/explore.webp',
-    imageAlt: 'Tropical islands and turquoise waters near Pattaya',
+    image: '/images/homepage/editorial-2026/explore-koh-larn.webp',
+    imageAlt: 'Turquoise bay and white beach on Koh Larn',
     imageRight: false,
   },
   {
@@ -183,7 +183,7 @@ const siloSections = [
     featureCta: 'Read More',
     featureHref: '/guides/walking-street-guide/',
     href: '/nightlife/',
-    image: '/images/areas/walking-street.webp',
+    image: '/images/homepage/editorial-2026/nightlife-walking-street.webp',
     imageAlt: 'Vibrant Pattaya nightlife scene with neon lights',
     imageRight: true,
   },
@@ -198,8 +198,8 @@ const siloSections = [
     featureCta: 'Read the Guide',
     featureHref: '/guides/pattaya-new-developments/',
     href: '/lifestyle/',
-    image: '/images/categories/lifestyle.webp',
-    imageAlt: 'Relaxed lifestyle and wellness in Pattaya',
+    image: '/images/homepage/editorial-2026/lifestyle-pattaya-condo.webp',
+    imageAlt: 'Condo balcony with a view over Pattaya Bay',
     imageRight: false,
   },
 ];
@@ -211,7 +211,9 @@ const journalArticles = [
     title: 'Songkran 2026: Thailand\'s Wildest Water Festival',
     description: 'Pattaya celebrates Songkran longer than anywhere else — nine days of water fights, from April 11 to the epic Wan Lai finale on April 19.',
     href: '/guides/songkran-pattaya/',
-    image: '/images/trending/rooftop-dining.webp',
+    image: '/images/homepage/editorial-2026/journal-songkran.webp',
+    width: 1086,
+    height: 1448,
     aspect: 'aspect-[3/4]',
   },
   {
@@ -220,7 +222,9 @@ const journalArticles = [
     title: 'New Condo Developments Reshaping Pattaya\'s Skyline',
     description: 'From the 67-floor Grand Solaire to the ultra-luxury Riviera Palm Beach — every major project under construction right now.',
     href: '/guides/pattaya-new-developments/',
-    image: '/images/areas/pattaya-skyline-blue.webp',
+    image: '/images/homepage/editorial-2026/journal-condo-developments.webp',
+    width: 1254,
+    height: 1254,
     aspect: 'aspect-square',
   },
   {
@@ -229,7 +233,9 @@ const journalArticles = [
     title: 'Crypto to Cash: Converting Bitcoin & USDT in Pattaya',
     description: 'Walk-in OTC exchanges, Telegram process, fees compared — how to get Thai Baht from your crypto wallet in minutes.',
     href: '/guides/crypto-to-thb-pattaya/',
-    image: '/images/guides/senate-exchange.JPG',
+    image: '/images/homepage/editorial-2026/journal-crypto-thb.webp',
+    width: 1122,
+    height: 1402,
     aspect: 'aspect-[4/5]',
   },
   {
@@ -238,7 +244,9 @@ const journalArticles = [
     title: 'Koh Larn: The Perfect Day Trip from Pattaya',
     description: '',
     href: '/guides/koh-larn-island-guide/',
-    image: '/images/areas/koh-larn.jpeg',
+    image: '/images/homepage/editorial-2026/journal-koh-larn.webp',
+    width: 1024,
+    height: 1536,
     aspect: 'aspect-[2/3]',
   },
 ];
@@ -263,8 +271,8 @@ const nextEvents = upcomingEvents().slice(0, 3);
   <header class="relative h-[700px] lg:h-[750px] short-landscape:h-[600px] w-full flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0">
       <img
-        src="/images/areas/pattaya-drone-sunset-1200w.webp"
-        srcset="/images/areas/pattaya-drone-sunset-800w.webp 800w, /images/areas/pattaya-drone-sunset-1200w.webp 1200w, /images/areas/pattaya-drone-sunset.webp 1920w"
+        src="/images/homepage/editorial-2026/hero-pattaya-bay-1200w.webp"
+        srcset="/images/homepage/editorial-2026/hero-pattaya-bay-800w.webp 800w, /images/homepage/editorial-2026/hero-pattaya-bay-1200w.webp 1200w, /images/homepage/editorial-2026/hero-pattaya-bay.webp 1914w"
         sizes="100vw"
         alt="Aerial drone panorama of Pattaya Bay at sunset"
         class="w-full h-full object-cover"
@@ -624,6 +632,8 @@ const nextEvents = upcomingEvents().slice(0, 3);
             <div class="overflow-hidden rounded-2xl md:rounded-3xl mb-5">
               <img
                 src={article.image}
+                width={article.width}
+                height={article.height}
                 alt={article.title}
                 class:list={['w-full object-cover group-hover:scale-105 transition-transform duration-700', article.aspect]}
                 loading="lazy"
