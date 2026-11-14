@@ -3,6 +3,7 @@ title: "WORPT App & Tourist DigiPay Thailand: Pay with USDT via PromptPay"
 slug: "worpt-tourist-digipay"
 description: "How Thailand's Tourist DigiPay sandbox and the WORPT app let foreign visitors convert USDT or USDC into baht and pay via PromptPay QR, without a Thai bank account. What is confirmed as of November 2026, and what is still a pilot."
 category: "lifestyle"
+image: "/images/guides/editorial-2026/worpt-tourist-digipay.webp"
 publishDate: 2026-11-13
 draft: false
 ---

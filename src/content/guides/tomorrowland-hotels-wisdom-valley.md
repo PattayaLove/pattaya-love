@@ -3,7 +3,7 @@ title: "Tomorrowland: Where to Stay by Distance to the Venue"
 slug: "tomorrowland-hotels-wisdom-valley"
 description: "We measured every Pattaya neighbourhood against the festival site. Na Jomtien is the furthest point of all, and distance is not what you should book on."
 category: "hotels"
-image: "/images/areas/central-pattaya-aerial.webp"
+image: "/images/guides/editorial-2026/tomorrowland-hotels-wisdom-valley.webp"
 publishDate: 2026-09-03
 updatedDate: 2026-11-09
 draft: false

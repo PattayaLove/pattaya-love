@@ -230,6 +230,9 @@ import Icon from '../../components/Icon.astro';
             height={600}
           />
         </div>
+        {guide.data.image.includes('/editorial-2026/') && (
+          <p class="mt-3 text-xs text-ink-muted text-right">Illustrative image, not a photo of a specific place or event.</p>
+        )}
       </div>
     )}
   </header>

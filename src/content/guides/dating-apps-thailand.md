@@ -3,6 +3,7 @@ title: "Dating Apps in Thailand 2026: ThaiFriendly vs ThaiCupid vs Tinder"
 slug: "dating-apps-thailand"
 description: "ThaiFriendly, ThaiCupid, Tinder, Bumble — which Thai dating app actually works in Pattaya, what Premium costs, how to spot freelancers and scams before you meet."
 category: "lifestyle"
+image: "/images/guides/editorial-2026/dating-apps-thailand.webp"
 publishDate: 2026-09-19
 updatedDate: 2026-09-19
 draft: false

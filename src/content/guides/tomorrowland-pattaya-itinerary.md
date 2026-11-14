@@ -3,7 +3,7 @@ title: "The Days Around Tomorrowland: What to Do in Pattaya"
 slug: "tomorrowland-pattaya-itinerary"
 description: "Arrive by Wednesday 9 December — the 10th is a Thai public holiday. How to spend the days either side of three nights at Wisdom Valley."
 category: "general"
-image: "/images/areas/jomtien-beach-palms.webp"
+image: "/images/guides/editorial-2026/tomorrowland-pattaya-itinerary.webp"
 publishDate: 2026-09-03
 updatedDate: 2026-09-03
 draft: false

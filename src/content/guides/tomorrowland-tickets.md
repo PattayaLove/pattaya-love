@@ -3,7 +3,7 @@ title: "Tomorrowland Tickets: Tiers, Prices and the Age Rule"
 slug: "tomorrowland-tickets"
 description: "Four pass types from 5,100 to 20,200 THB, all sold out. What each includes, why the minimum age is 20 rather than 18, and the two legitimate routes left."
 category: "general"
-image: "/images/areas/pattaya-skyline-sunset.webp"
+image: "/images/guides/editorial-2026/tomorrowland-tickets.webp"
 publishDate: 2026-09-03
 updatedDate: 2026-11-09
 pricesCheckedAt: 2026-09-03

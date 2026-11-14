@@ -3,7 +3,7 @@ title: "Best SIM Card & eSIM for Thailand 2026"
 slug: "thailand-sim-esim"
 description: "Which SIM or eSIM to get for Thailand: the daily throttle limits nobody publishes, and why AIS sells eSIMs directly at better value than resellers."
 category: "lifestyle"
-image: "/images/areas/pattaya-city-sign.webp"
+image: "/images/guides/editorial-2026/thailand-sim-esim.webp"
 publishDate: 2026-04-09
 updatedDate: 2026-09-03
 pricesCheckedAt: 2026-09-03

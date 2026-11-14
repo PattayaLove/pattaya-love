@@ -3,6 +3,7 @@ title: "ThaiCupid Review 2026: The Serious Alternative to ThaiFriendly"
 slug: "thaicupid-review"
 description: "ThaiCupid costs, Gold vs Platinum, who is actually on it, and how it compares with ThaiFriendly for a Pattaya visitor. A research-based review, not a paid one."
 category: "lifestyle"
+image: "/images/guides/editorial-2026/thaicupid-review.webp"
 publishDate: 2026-09-19
 updatedDate: 2026-09-19
 draft: false

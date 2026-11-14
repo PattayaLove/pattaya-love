@@ -3,7 +3,7 @@ title: "IV Drips and Peptide Clinics in Pattaya: What to Ask First"
 slug: "pattaya-iv-therapy-peptides"
 description: "Pattaya has a growing market for IV therapy and peptide protocols. What is on offer, where the approval status really stands, and what to ask first."
 category: "lifestyle"
-image: "/images/areas/pattaya-panorama.webp"
+image: "/images/guides/editorial-2026/pattaya-iv-therapy-peptides.webp"
 publishDate: 2026-09-04
 updatedDate: 2026-09-04
 pricesCheckedAt: 2026-09-04

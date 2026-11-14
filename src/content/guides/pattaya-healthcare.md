@@ -3,7 +3,7 @@ title: "Healthcare in Pattaya: Hospitals, Labs and Real Costs"
 slug: "pattaya-healthcare"
 description: "Which hospital to go to and when, what a private emergency visit is really like, where to get blood work done, and the pharmacy rules that changed in 2026."
 category: "lifestyle"
-image: "/images/areas/pattaya-skyline-blue.webp"
+image: "/images/guides/editorial-2026/pattaya-healthcare.webp"
 publishDate: 2026-09-04
 updatedDate: 2026-09-04
 draft: false
